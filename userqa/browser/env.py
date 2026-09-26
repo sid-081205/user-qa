@@ -209,6 +209,7 @@ class BrowserEnv:
         self._capture_count = 0
         self._downloads: list = []
         self._pdf_tabs: list[tuple[Page, Optional[Page]]] = []
+        self._new_tabs: list[tuple[Page, Optional[Page]]] = []
         self._files_seen: set[str] = set()
         self._srcs_seen: set[str] = set()
         self.files: list[dict] = []
@@ -253,17 +254,30 @@ class BrowserEnv:
         page.on("download", lambda d: self._downloads.append(d))
 
     def _on_new_page(self, page: Page) -> None:
-        opener = self.page
+        # Waiting for the tab to load here would block inside Playwright's event dispatch and let the agent
+        # observe a half-loaded tab (e.g. a slow PDF viewer); tabs are classified in _triage_tabs instead.
+        self._new_tabs.append((page, self.page))
         self._wire(page)
         self.page = page
-        try:
-            page.wait_for_load_state("domcontentloaded", timeout=15000)
-        except PWError:
-            pass
-        if self._is_pdf(page):
-            self._pdf_tabs.append((page, opener))
-        else:
-            self._events.append(f"A new browser tab opened ({page.url}); you are now looking at it.")
+
+    def _triage_tabs(self) -> None:
+        while self._new_tabs:
+            page, opener = self._new_tabs.pop(0)
+            if page.is_closed():
+                if self.page is page and opener is not None and not opener.is_closed():
+                    self.page = opener
+                continue
+            deadline = time.time() + 20
+            while page.url in ("", "about:blank") and time.time() < deadline:
+                page.wait_for_timeout(250)
+            try:
+                page.wait_for_load_state("domcontentloaded", timeout=max(1000, int((deadline - time.time()) * 1000)))
+            except PWError:
+                pass
+            if self._is_pdf(page):
+                self._pdf_tabs.append((page, opener))
+            else:
+                self._events.append(f"A new browser tab opened ({page.url}); you are now looking at it.")
 
     @staticmethod
     def _is_pdf(page: Page) -> bool:
@@ -807,6 +821,11 @@ class BrowserEnv:
         the output assessment reviews like any on-page output.
         """
         caps: list[dict] = []
+        try:
+            self.page.wait_for_timeout(100)  # the sync API only delivers queued events (new tabs, downloads) inside a call
+        except PWError:
+            pass
+        self._triage_tabs()
         while self._downloads:
             d = self._downloads.pop(0)
             name = re.sub(r"[^\w.\-]+", "_", d.suggested_filename or "download")
@@ -831,6 +850,18 @@ class BrowserEnv:
                     pass
                 self.page = opener
                 self._events.append("You finished reading the PDF and went back to the website's tab.")
+        if self._is_pdf(self.page):
+            url = self.page.url
+            data = self._fetch_bytes(url, [self.page])
+            if data and data[:4] == b"%PDF":
+                path = self._file_path(Path(urlparse(url).path).name or "document.pdf", ".pdf")
+                path.write_bytes(data)
+                caps += self._file_captures(path, origin=url, how="opened in this tab")
+            try:
+                if self.page.go_back(wait_until="domcontentloaded", timeout=15000) is not None:
+                    self._events.append("You finished reading the PDF and went back to the previous page.")
+            except PWError:
+                pass
         try:
             srcs = self.page.evaluate(
                 "Array.from(document.querySelectorAll('embed,object,iframe')).map(e => e.src || e.data || '')"

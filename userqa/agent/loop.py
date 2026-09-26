@@ -173,6 +173,7 @@ class PersonaAgent:
         trace_path = self.run_dir / "trace.jsonl"
         for step in range(1, self.cfg.max_steps + 1):
             self.result.steps = step
+            self._collect_files()
             obs = self.env.observe(attention=self.persona.attention, max_text=self.cfg.max_page_text, with_screenshot=True)
             shot_path = self.env.save_screenshot(obs.screenshot, f"step_{step:02d}.jpg") if obs.screenshot else None
             new_page = obs.page_key not in self.result.pages
