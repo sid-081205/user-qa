@@ -304,8 +304,8 @@ def reading_age(persona: Persona, inputs: list[dict]) -> Optional[float]:
 
 def _element(i: dict) -> Optional[tuple]:
     """The form element an input went into, when it was recorded (a label alone is ambiguous: every scene's edit box
-    can be called "Narrative Text")."""
-    return (i.get("page"), i["id"]) if i.get("id") is not None else None
+    can be called "Narrative Text"). Element numbers are only stable within one visit."""
+    return (i.get("visit"), i.get("page"), i["id"]) if i.get("id") is not None else None
 
 
 def _inputs_text(inputs: list[dict]) -> str:
@@ -318,12 +318,16 @@ def _inputs_text(inputs: list[dict]) -> str:
         shown = "(you cleared this field)" if v is None or str(v) == "" else f'"{str(v)[:1500]}"'
         trunc = f"  [NOTE: the site cut this to {i['truncated_to']} characters]" if i.get("truncated_to") else ""
         later = "  [you changed this field later; only your last entry counts]" if _element(i) and last[_element(i)] != n else ""
-        when = f" (step {i['step']})" if i.get("step") else ""
+        tags = (["earlier visit"] if i.get("visit") else []) + ([f"step {i['step']}"] if i.get("step") else [])
+        when = f" ({', '.join(tags)})" if tags else ""
         lines.append(f'- {i.get("field")}{when}: {shown}{trunc}{later}')
     labels = [str(i.get("field")) for i in inputs]
     if len(set(labels)) < len(labels):
         lines.append("(Inputs are listed in the order you gave them. Where you filled in the same field again, the site kept only your last entry; "
                      "a field with the same name on another scene or page is a different field.)")
+    if any(i.get("visit") for i in inputs):
+        lines.append("(Inputs marked 'earlier visit' are what you entered on a previous visit, when what you are reviewing was first made. "
+                     "They came from you just as much as today's; where you changed something today, the newer entry counts.)")
     return "\n".join(lines)
 
 

@@ -59,6 +59,29 @@ def previous_visit_note(prev: Path) -> str:
     return "\n".join(bits)
 
 
+def _run_path(ref: Optional[str]) -> Optional[Path]:
+    if not ref:
+        return None
+    p = Path(ref)
+    return p if p.is_absolute() else ROOT / p
+
+
+def earlier_inputs(prev: Optional[Path], depth: int = 5) -> list[dict]:
+    """Everything a returning user entered on their earlier visits, oldest first and tagged with the visit.
+
+    Without these, the output assessment of a revisit sees only today's edits and calls wording the user gave when
+    the book was first made the website's invention."""
+    if not prev or depth <= 0 or not (Path(prev) / "session.json").exists():
+        return []
+    prev = Path(prev)
+    cfg = json.loads((prev / "config.json").read_text()) if (prev / "config.json").exists() else {}
+    older = earlier_inputs(_run_path(cfg.get("previous_run")), depth - 1)
+    inputs = json.loads((prev / "session.json").read_text()).get("inputs") or []
+    if (prev / "trace.jsonl").exists():
+        backfill_input_context(inputs, [json.loads(ln) for ln in (prev / "trace.jsonl").read_text().splitlines()])
+    return older + [{**i, "visit": prev.name} for i in inputs]
+
+
 def run_session(
     site: dict,
     persona: Persona,
@@ -197,7 +220,8 @@ def run_session(
     llm.max_calls = max(llm.max_calls, llm.usage.calls + extra_budget)
     assessment: dict[str, Any] = {}
     try:
-        assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, session.inputs, session.captures, session.output_reactions)
+        assessment = OutputAssessor(llm, run_dir, vision=vision).assess(
+            persona, earlier_inputs(previous_run) + session.inputs, session.captures, session.output_reactions)
     except BudgetExceeded:
         assessment = {"skipped": True, "reason": "LLM budget exhausted"}
     (run_dir / "output_assessment.json").write_text(json.dumps(assessment, indent=2, ensure_ascii=False))
@@ -259,6 +283,7 @@ def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: O
     persona = load_persona(str(run_dir / "persona.yaml"))
     trace = [json.loads(ln) for ln in (run_dir / "trace.jsonl").read_text().splitlines()] if (run_dir / "trace.jsonl").exists() else []
     backfill_input_context(session.get("inputs") or [], trace)
+    inputs = earlier_inputs(_run_path(cfg.get("previous_run"))) + (session.get("inputs") or [])
     captures = []
     for c in session.get("captures") or []:
         t = run_dir / c.get("dir", "") / "text.txt"
@@ -267,7 +292,7 @@ def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: O
                     log_path=run_dir / "llm_calls.jsonl", temperature=float(cfg.get("temperature", 0.7)))
     vision = bool(cfg.get("vision", True)) if vision is None else vision
     if variant:
-        assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, session.get("inputs") or [], captures, session.get("output_reactions") or [])
+        assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, inputs, captures, session.get("output_reactions") or [])
         assessment["variant"] = {"name": variant, "vision": vision, "llm_usage": llm.usage.to_json()}
         (run_dir / f"output_assessment.{variant}.json").write_text(json.dumps(assessment, indent=2, ensure_ascii=False))
         log(f"[reassess:{variant}] {run_dir.name}: {len(assessment.get('parts') or [])} parts, LLM calls {llm.usage.calls}")
@@ -275,7 +300,7 @@ def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: O
     for name in ("output_assessment.json", "debrief.json", "summary.json"):
         if (run_dir / name).exists() and (name != "debrief.json" or with_debrief):
             (run_dir / name).with_suffix(".prev.json").write_text((run_dir / name).read_text())
-    assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, session.get("inputs") or [], captures, session.get("output_reactions") or [])
+    assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, inputs, captures, session.get("output_reactions") or [])
     (run_dir / "output_assessment.json").write_text(json.dumps(assessment, indent=2, ensure_ascii=False))
     debrief = json.loads((run_dir / "debrief.json").read_text()) if (run_dir / "debrief.json").exists() else {}
     if with_debrief:

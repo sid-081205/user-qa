@@ -17,7 +17,7 @@ from userqa.evaluation.output_assessor import (
     expected_names,
     reading_age,
 )
-from userqa.runner import backfill_input_context
+from userqa.runner import backfill_input_context, earlier_inputs
 
 PAGE_1 = "Oliver ran up the green hill with Grandma Maggie on a windy Sunday morning.\nThe blue kite tugged at the string like a puppy that wanted to play."
 PAGE_2 = "They sat on the bench and shared warm scones while the kite danced above them.\nGrandma told Oliver how she first flew it when she was a little girl."
@@ -132,6 +132,38 @@ def test_inputs_text_marks_cleared_and_replaced_entries():
     assert lines[2] == '- Character description (step 11): "Grandma Maggie, Oliver\'s grandmother"'
     assert lines[3] == "- Teller’s age (step 12): (you cleared this field)"
     assert "a field with the same name on another scene or page is a different field" in lines[4]
+
+
+def test_inputs_text_marks_inputs_from_an_earlier_visit():
+    export = "site.test/book/:id/export | Export"
+    txt = _inputs_text([
+        {"field": "Story", "value": "Today we climb the same hill together", "step": 7, "page": "site.test/create | Create", "id": 54, "visit": "run-1"},
+        {"field": "Title", "value": "Grandpa's Blue Kite", "step": 9, "page": export, "id": 64, "visit": "run-1"},
+        {"field": "Title", "value": "The Blue Kite", "step": 20, "page": export, "id": 64},
+    ])
+    lines = txt.splitlines()
+    assert lines[0] == '- Story (earlier visit, step 7): "Today we climb the same hill together"'
+    assert lines[1] == '- Title (earlier visit, step 9): "Grandpa\'s Blue Kite"'
+    assert lines[2] == '- Title (step 20): "The Blue Kite"'
+    assert "changed this field later" not in txt
+    assert "earlier visit' are what you entered on a previous visit" in lines[-1]
+    assert "earlier visit" not in _inputs_text([{"field": "Title", "value": "The Blue Kite", "step": 20, "page": export, "id": 64}])
+
+
+def test_earlier_inputs_follow_the_chain_of_previous_visits(tmp_path):
+    def run(name, inputs, previous=None):
+        d = tmp_path / name
+        d.mkdir()
+        (d / "session.json").write_text(json.dumps({"inputs": inputs}))
+        (d / "config.json").write_text(json.dumps({"previous_run": str(previous) if previous else None}))
+        return d
+
+    first = run("run-1", [{"field": "Story", "action": "type", "value": "One summer", "step": 7, "page": "p", "id": 54}])
+    second = run("run-2", [{"field": "Title", "action": "type", "value": "The Blue Kite", "step": 20, "page": "q", "id": 64}], first)
+    got = earlier_inputs(second)
+    assert [(i["field"], i["visit"]) for i in got] == [("Story", "run-1"), ("Title", "run-2")]
+    assert earlier_inputs(None) == [] and earlier_inputs(tmp_path / "missing") == []
+    assert "visit" not in json.loads((first / "session.json").read_text())["inputs"][0]
 
 
 def test_inputs_text_never_merges_same_named_fields_without_element_ids():
