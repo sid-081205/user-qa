@@ -320,7 +320,7 @@ class BrowserEnv:
         return out
 
     # ---------------------------------------------------------- observing
-    def observe(self, attention: str = "full", max_text: int = 9000, with_screenshot: bool = True, include_full_text: bool = False) -> Observation:
+    def observe(self, attention: str = "full", max_text: int = 9000, with_screenshot: bool = True, include_full_text: bool = True) -> Observation:
         self._settle(quiet_ms=300, max_ms=3000)
         raw = None
         for _ in range(3):
@@ -486,7 +486,7 @@ class BrowserEnv:
         data = {}
         try:
             val = loc.input_value(timeout=2000)
-            if info.get("type") != "password" and len(val) < len(text) * 0.9:
+            if info.get("type") != "password" and len(val) < len(text):
                 msg += f" -- but the box now only shows {len(val)} characters; the end of what you typed was cut off: ...{val[-60:]!r}"
                 data["truncated_to"] = len(val)
         except PWError:
