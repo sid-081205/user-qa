@@ -129,6 +129,12 @@ def _prose(text: str) -> str:
     return "\n".join(keep)
 
 
+def _artifact_id(capture: dict) -> str:
+    """Pages of one downloaded file share an artifact; on-page captures are grouped by page path."""
+    u = urlparse(capture.get("url", ""))
+    return f"file:{u.netloc}" if u.scheme == "file" else u.path
+
+
 def _supersede(captures: list[dict], texts: list[str]) -> list[int]:
     """Indices of captures to keep: drop a capture whose prose a later capture of the same page contains.
 
@@ -136,13 +142,12 @@ def _supersede(captures: list[dict], texts: list[str]) -> list[int]:
     is not a separate part of the artifact, and counting it would duplicate every part.
     """
     prose = [set(_prose(t).splitlines()) for t in texts]
+    where = [(urlparse(c.get("url", "")).netloc, urlparse(c.get("url", "")).path) for c in captures]
     keep = []
-    for i, c in enumerate(captures):
-        path = urlparse(c.get("url", "")).path
+    for i in range(len(captures)):
         words = sum(len(ln.split()) for ln in prose[i])
         later = words >= 20 and any(
-            urlparse(captures[j].get("url", "")).path == path and len(prose[i] & prose[j]) >= 0.8 * len(prose[i])
-            for j in range(i + 1, len(captures))
+            where[j] == where[i] and len(prose[i] & prose[j]) >= 0.8 * len(prose[i]) for j in range(i + 1, len(captures))
         )
         if not later:
             keep.append(i)
@@ -263,7 +268,7 @@ class OutputAssessor:
         kept = _supersede(captures, texts)
         superseded = [c.get("label", "") for i, c in enumerate(captures) if i not in kept]
         captures, texts = [captures[i] for i in kept], [texts[i] for i in kept]
-        prose_parts = [{"part": c.get("label") or f"capture {i + 1}", "text": _prose(t)} for i, (c, t) in enumerate(zip(captures, texts))]
+        prose_parts = [{"part": c.get("label") or f"capture {i + 1}", "text": _prose(t), "artifact": _artifact_id(c)} for i, (c, t) in enumerate(zip(captures, texts))]
         names = expected_names(persona, inputs)
         age = reading_age(persona, inputs)
         m = metrics.analyse_parts(prose_parts, names, age)

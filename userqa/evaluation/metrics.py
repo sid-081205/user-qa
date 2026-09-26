@@ -117,17 +117,19 @@ def placeholders(text: str) -> list[str]:
     return hits[:20]
 
 
-def repeated_sentences(parts: list[str], min_words: int = 6) -> list[str]:
-    seen: dict[str, int] = {}
+def repeated_sentences(parts: list[str], min_words: int = 6, artifacts: Optional[list[str]] = None) -> list[str]:
+    """Sentences that recur in a different part of the same artifact (a PDF of a web book is not a repeat)."""
+    seen: dict[tuple[str, str], int] = {}
     reps = []
     for i, part in enumerate(parts):
+        art = artifacts[i] if artifacts else ""
         for s in _SENT.findall(part):
             norm = re.sub(r"\W+", " ", s.lower()).strip()
             if len(norm.split()) < min_words:
                 continue
-            if norm in seen and seen[norm] != i:
+            if (art, norm) in seen and seen[(art, norm)] != i:
                 reps.append(s.strip())
-            seen.setdefault(norm, i)
+            seen.setdefault((art, norm), i)
     return reps[:10]
 
 
@@ -169,7 +171,7 @@ def unexpected_names(output_text: str, expected_names: Iterable[str], min_count:
 
 
 def analyse_parts(parts: list[dict], expected_names: Iterable[str], reading_age: Optional[float]) -> dict:
-    """``parts`` = [{"part": "Page 1", "text": "..."}]."""
+    """``parts`` = [{"part": "Page 1", "text": "...", "artifact": "optional id of the file/page it belongs to"}]."""
     expected_names = list(expected_names)
     full = "\n".join(p.get("text", "") for p in parts)
     overall = readability(full)
@@ -185,7 +187,7 @@ def analyse_parts(parts: list[dict], expected_names: Iterable[str], reading_age:
         "names": name_fidelity(full, expected_names),
         "unexpected_capitalised_names": unexpected_names(full, expected_names),
         "placeholders": placeholders(full),
-        "repeated_sentences": repeated_sentences([p.get("text", "") for p in parts]),
+        "repeated_sentences": repeated_sentences([p.get("text", "") for p in parts], artifacts=[str(p.get("artifact", "")) for p in parts]),
         "truncated_ending": truncated_ending(full),
         "out_of_dictionary_words": unknown_words(full, expected_names),
     }
