@@ -228,7 +228,7 @@ class PersonaAgent:
                     continue
                 res = self.env.execute(a)
                 results.append(res)
-                self._record_input(a, res)
+                self._record_input(a, res, step, obs.page_key)
                 self._collect_files()
                 if kind in ("wait", "wait_for_change") and res.data.get("waited_s"):
                     self.result.waits.append({"step": step, "seconds": res.data["waited_s"], "timeout": res.data.get("timeout", False), "url": obs.url})
@@ -372,17 +372,19 @@ class PersonaAgent:
             if self.cfg.abandon_mode == "stop":
                 self.result.status = "abandoned"
 
-    def _record_input(self, a: dict, res: ActionResult) -> None:
+    def _record_input(self, a: dict, res: ActionResult, step: int, page_key: str) -> None:
         kind = str(a.get("type", "")).lower()
         info = self.env._info(a.get("id")) if a.get("id") is not None else None
         field_name = (info or {}).get("name") or (info or {}).get("placeholder") or f"[{a.get('id')}]"
+        where = {"step": step, "page": page_key, "id": a.get("id")}
         if kind in INPUT_ACTIONS and res.ok:
             value = str(a.get("text") or "") if kind == "type" else a.get("option") or a.get("value") or a.get("file")
             if (info or {}).get("type") == "password":
                 value = "(password)"
-            self.result.inputs.append({"field": field_name, "action": kind, "value": value, **({"truncated_to": res.data["truncated_to"]} if res.data.get("truncated_to") else {})})
+            self.result.inputs.append({"field": field_name, "action": kind, "value": value, **where,
+                                       **({"truncated_to": res.data["truncated_to"]} if res.data.get("truncated_to") else {})})
         elif kind == "click" and res.ok and info and info.get("role") in ("radio", "checkbox"):
-            self.result.inputs.append({"field": field_name, "action": "choose", "value": info.get("value") or field_name})
+            self.result.inputs.append({"field": field_name, "action": "choose", "value": info.get("value") or field_name, **where})
 
     def _capture(self, label: str) -> None:
         try:

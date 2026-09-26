@@ -116,11 +116,13 @@ def test_scripted_session_end_to_end(tmp_path, tiny_site, browser_available, mon
     assert [c["purpose"] for c in llm.calls] == ["step", "step", "step", "output_assessment", "debrief", "fidelity_audit"]
     assert n_images(llm.calls[0]["messages"]) == 1
     assert "FAILED - blocked by safety policy (would spend money or be irreversible" in prompt_text(llm.calls[1]["messages"])
-    assert 'Child\'s first name: "Oliver"' in prompt_text(llm.calls[3]["messages"])
+    assert 'Child\'s first name (step 2): "Oliver"' in prompt_text(llm.calls[3]["messages"])
 
     session = json.loads((run_dir / "session.json").read_text())
     assert session["status"] == "done" and session["steps"] == 3
-    assert session["inputs"] == [{"field": "Child's first name", "action": "type", "value": "Oliver"}]
+    [entry] = session["inputs"]
+    assert {k: entry[k] for k in ("field", "action", "value", "step")} == {"field": "Child's first name", "action": "type", "value": "Oliver", "step": 2}
+    assert isinstance(entry["id"], int) and entry["page"].startswith("127.0.0.1:")
     assert len(session["captures"]) == 1
     assert "Oliver found a blue kite" in (run_dir / session["captures"][0]["dir"] / "text.txt").read_text()
 

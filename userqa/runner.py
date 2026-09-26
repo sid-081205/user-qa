@@ -12,7 +12,7 @@ from typing import Any, Optional
 
 import yaml
 
-from .agent.loop import AgentConfig, PersonaAgent
+from .agent.loop import INPUT_ACTIONS, AgentConfig, PersonaAgent
 from .browser.env import BrowserEnv, SafetyPolicy
 from .evaluation.fidelity import audit_fidelity
 from .evaluation.issues import cluster_issues, flatten_issues
@@ -229,6 +229,22 @@ def run_session(
     return run_dir
 
 
+def backfill_input_context(inputs: list[dict], trace: list[dict]) -> list[dict]:
+    """Add the step, screen and element id to inputs of runs recorded before they were logged, from the trace.
+
+    Every successful type/select/set_range/upload action in the trace produced exactly one input, in order."""
+    if not inputs or any("id" in i for i in inputs):
+        return inputs
+    acts = [(t["step"], t.get("page_key"), r["action"].get("id")) for t in trace if "error" not in t
+            for r in t.get("results", []) if r.get("ok") and str(r["action"].get("type", "")).lower() in INPUT_ACTIONS]
+    typed = [i for i in inputs if i.get("action") in INPUT_ACTIONS]
+    if len(acts) != len(typed):
+        return inputs
+    for i, (step, page, element) in zip(typed, acts):
+        i.update(step=step, page=page, id=element)
+    return inputs
+
+
 def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: Optional[bool] = None, variant: str = "") -> Path:
     """Re-run the post-session output assessment (and optionally the debrief) of a finished run.
 
@@ -241,6 +257,8 @@ def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: O
     cfg = json.loads((run_dir / "config.json").read_text())
     session = json.loads((run_dir / "session.json").read_text())
     persona = load_persona(str(run_dir / "persona.yaml"))
+    trace = [json.loads(ln) for ln in (run_dir / "trace.jsonl").read_text().splitlines()] if (run_dir / "trace.jsonl").exists() else []
+    backfill_input_context(session.get("inputs") or [], trace)
     captures = []
     for c in session.get("captures") or []:
         t = run_dir / c.get("dir", "") / "text.txt"
@@ -261,7 +279,6 @@ def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: O
     (run_dir / "output_assessment.json").write_text(json.dumps(assessment, indent=2, ensure_ascii=False))
     debrief = json.loads((run_dir / "debrief.json").read_text()) if (run_dir / "debrief.json").exists() else {}
     if with_debrief:
-        trace = [json.loads(ln) for ln in (run_dir / "trace.jsonl").read_text().splitlines()]
         output_summary = json.dumps({k: assessment.get(k) for k in ("overall_reaction", "criteria", "top_changes", "keepsake_worthiness")}, ensure_ascii=False)
         debrief = run_debrief(llm, persona, journey_digest(trace, session.get("pages") or {}, session.get("waits") or []), output_summary)
         (run_dir / "debrief.json").write_text(json.dumps(debrief, indent=2, ensure_ascii=False))

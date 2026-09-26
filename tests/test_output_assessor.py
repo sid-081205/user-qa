@@ -17,6 +17,7 @@ from userqa.evaluation.output_assessor import (
     expected_names,
     reading_age,
 )
+from userqa.runner import backfill_input_context
 
 PAGE_1 = "Oliver ran up the green hill with Grandma Maggie on a windy Sunday morning.\nThe blue kite tugged at the string like a puppy that wanted to play."
 PAGE_2 = "They sat on the bench and shared warm scones while the kite danced above them.\nGrandma told Oliver how she first flew it when she was a little girl."
@@ -118,13 +119,43 @@ def test_reading_age_ignores_the_storytellers_age(persona):
 
 
 def test_inputs_text_marks_cleared_and_replaced_entries():
-    txt = _inputs_text([{"field": "Teller’s age", "value": "5"}, {"field": "Title", "value": "The Blue Kite"}, {"field": "Teller’s age", "value": None}])
+    create = "site.test/create | Create"
+    txt = _inputs_text([
+        {"field": "Character description", "value": "Oliver, age 5", "step": 9, "page": create, "id": 66},
+        {"field": "Character description", "value": "Grandma Maggie, my grandmother", "step": 10, "page": create, "id": 70},
+        {"field": "Character description", "value": "Grandma Maggie, Oliver's grandmother", "step": 11, "page": create, "id": 70},
+        {"field": "Teller’s age", "value": None, "step": 12, "page": create, "id": 80},
+    ])
     lines = txt.splitlines()
-    assert lines[0] == '- Teller’s age: "5"  [you changed this later; only your last entry counts]'
-    assert lines[1] == '- Title: "The Blue Kite"'
-    assert lines[2] == "- Teller’s age: (you cleared this field)"
+    assert lines[0] == '- Character description (step 9): "Oliver, age 5"'
+    assert lines[1] == '- Character description (step 10): "Grandma Maggie, my grandmother"  [you changed this field later; only your last entry counts]'
+    assert lines[2] == '- Character description (step 11): "Grandma Maggie, Oliver\'s grandmother"'
+    assert lines[3] == "- Teller’s age (step 12): (you cleared this field)"
+    assert "a field with the same name on another scene or page is a different field" in lines[4]
+
+
+def test_inputs_text_never_merges_same_named_fields_without_element_ids():
+    txt = _inputs_text([{"field": "Narrative Text", "value": "Scene 1 text"}, {"field": "Narrative Text", "value": "Scene 2 text"}])
+    assert "changed this field later" not in txt
+    assert txt.splitlines()[:2] == ['- Narrative Text: "Scene 1 text"', '- Narrative Text: "Scene 2 text"']
     assert "truncated" not in _inputs_text([{"field": "Idea", "value": "x" * 10}])
     assert "cut this to 200" in _inputs_text([{"field": "Idea", "value": "x" * 10, "truncated_to": 200}])
+
+
+def test_backfill_recovers_step_screen_and_element_from_the_trace():
+    trace = [
+        {"step": 1, "page_key": "a | Home", "results": [{"action": {"type": "click", "id": 3}, "ok": True}]},
+        {"step": 2, "error": "timeout"},
+        {"step": 3, "page_key": "a/create | Create", "results": [{"action": {"type": "type", "id": 24, "text": "One summer"}, "ok": True},
+                                                                  {"action": {"type": "type", "id": 25, "text": "x"}, "ok": False},
+                                                                  {"action": {"type": "set_range", "id": 30, "value": 5}, "ok": True}]},
+    ]
+    inputs = [{"field": "Story", "action": "type", "value": "One summer"}, {"field": "Watercolor", "action": "choose", "value": "watercolor"},
+              {"field": "Reading age", "action": "set_range", "value": 5}]
+    backfill_input_context(inputs, trace)
+    assert [(i.get("step"), i.get("page"), i.get("id")) for i in inputs] == [(3, "a/create | Create", 24), (None, None, None), (3, "a/create | Create", 30)]
+    mismatched = [{"field": "Story", "action": "type", "value": "One summer"}]
+    assert backfill_input_context(mismatched, trace + trace) == [{"field": "Story", "action": "type", "value": "One summer"}]
 
 
 def test_compact_parts_keeps_the_review_and_drops_verbatim_text():
