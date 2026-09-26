@@ -16,6 +16,7 @@ import re
 from collections import Counter
 from pathlib import Path
 from typing import Any, Optional
+from urllib.parse import urlparse
 
 from ..llm import LLMClient, LLMError, image_part
 from ..personas.schema import Persona
@@ -128,6 +129,26 @@ def _prose(text: str) -> str:
     return "\n".join(keep)
 
 
+def _supersede(captures: list[dict], texts: list[str]) -> list[int]:
+    """Indices of captures to keep: drop a capture whose prose a later capture of the same page contains.
+
+    Outputs are often captured while still being generated and again when finished; the earlier state
+    is not a separate part of the artifact, and counting it would duplicate every part.
+    """
+    prose = [set(_prose(t).splitlines()) for t in texts]
+    keep = []
+    for i, c in enumerate(captures):
+        path = urlparse(c.get("url", "")).path
+        words = sum(len(ln.split()) for ln in prose[i])
+        later = words >= 20 and any(
+            urlparse(captures[j].get("url", "")).path == path and len(prose[i] & prose[j]) >= 0.8 * len(prose[i])
+            for j in range(i + 1, len(captures))
+        )
+        if not later:
+            keep.append(i)
+    return keep
+
+
 def expected_names(persona: Persona, inputs: list[dict]) -> list[str]:
     names: list[str] = []
     dc = persona.domain_context or {}
@@ -200,6 +221,34 @@ def _measurements_text(m: dict) -> str:
     return "\n".join(lines)
 
 
+def _part_key(name: str) -> str:
+    """'Page 9 (Scene 9)' and 'Scene 9' name the same part: key on the most specific numbered label."""
+    n = str(name or "").lower()
+    nums = re.findall(r"(scene|page|spread|chapter)\s*(\d+)", n)
+    if nums:
+        kind, num = next(((k, v) for k, v in nums if k == "scene"), nums[-1])
+        return f"{kind} {int(num)}"
+    return re.sub(r"[^a-z0-9]+", " ", n).strip()
+
+
+def _merge_parts(parts: list, new: list) -> list:
+    """Append a batch's parts, folding any part that was already reviewed into the earlier review."""
+    out = list(parts)
+    index = {_part_key(p.get("part", "")): p for p in out if isinstance(p, dict)}
+    for p in new:
+        if not isinstance(p, dict):
+            continue
+        prev = index.get(_part_key(p.get("part", "")))
+        if prev is None:
+            out.append(p)
+            index[_part_key(p.get("part", ""))] = p
+            continue
+        prev["image_refs"] = list(dict.fromkeys((prev.get("image_refs") or []) + (p.get("image_refs") or [])))
+        if not prev.get("picture_description") and p.get("picture_description"):
+            prev["picture_description"] = p["picture_description"]
+    return out
+
+
 class OutputAssessor:
     def __init__(self, llm: LLMClient, run_dir: Path, max_images_per_call: int = 12, vision: bool = True):
         self.llm = llm
@@ -211,6 +260,9 @@ class OutputAssessor:
         if not captures:
             return {"skipped": True, "reason": "the session never reached any generated output"}
         texts = _strip_boilerplate(captures)
+        kept = _supersede(captures, texts)
+        superseded = [c.get("label", "") for i, c in enumerate(captures) if i not in kept]
+        captures, texts = [captures[i] for i in kept], [texts[i] for i in kept]
         prose_parts = [{"part": c.get("label") or f"capture {i + 1}", "text": _prose(t)} for i, (c, t) in enumerate(zip(captures, texts))]
         names = expected_names(persona, inputs)
         age = reading_age(persona, inputs)
@@ -250,7 +302,8 @@ class OutputAssessor:
         if reactions:
             meas_txt += "\n- Your in-the-moment reactions while viewing it: " + " | ".join(r["reaction"][:200] for r in reactions[:6])
         rubric = "\n".join(f"{k}: {v}" for k, v in CRITERIA.items())
-        result: dict[str, Any] = {"measurements": m, "inputs": inputs, "expected_names": names, "reading_age": age}
+        result: dict[str, Any] = {"measurements": m, "inputs": inputs, "expected_names": names, "reading_age": age,
+                                  "superseded_captures": superseded}
         try:
             if len(images) <= self.max_images:
                 data = self._judge(persona.name, profile, inputs_txt, meas_txt, "\n\n".join(artifact_blocks), rubric, images, 0, with_globals=True)
@@ -261,9 +314,11 @@ class OutputAssessor:
                 for b in range(0, len(images), self.max_images):
                     batch = images[b : b + self.max_images]
                     lo, hi = b + 1, b + len(batch)
-                    header = f"(You are now looking at pictures I{lo}-I{hi}; review the parts of the output that these pictures belong to, plus any text-only parts in between.)\n\n"
+                    done = [str(p.get("part", "")) for p in parts if isinstance(p, dict)]
+                    header = (f"(You are now looking at pictures I{lo}-I{hi}; review the parts of the output that these pictures belong to, plus any text-only parts in between."
+                              + (f" You have ALREADY reviewed these parts - do not review them again: {'; '.join(done)}." if done else "") + ")\n\n")
                     data = self._judge(persona.name, profile, inputs_txt, meas_txt, header + "\n\n".join(artifact_blocks), rubric, batch, b, with_globals=False)
-                    parts += (data or {}).get("parts", []) if isinstance(data, dict) else []
+                    parts = _merge_parts(parts, (data or {}).get("parts", []) if isinstance(data, dict) else [])
                     artifact_type = artifact_type or (data or {}).get("artifact_type", "")
                 synth = self._synthesise(persona.name, profile, inputs_txt, meas_txt, parts, rubric)
                 result.update(synth if isinstance(synth, dict) else {})
