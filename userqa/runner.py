@@ -207,6 +207,50 @@ def run_session(
     return run_dir
 
 
+def reassess_run(run_dir: Path, with_debrief: bool = False, log=print) -> Path:
+    """Re-run the post-session output assessment (and optionally the debrief) of a finished run.
+
+    Used when the assessment stage changes after sessions were collected: the browsing session itself
+    is not repeated, so live sites are not visited (or charged) again.
+    """
+    load_env_file()
+    run_dir = Path(run_dir)
+    cfg = json.loads((run_dir / "config.json").read_text())
+    session = json.loads((run_dir / "session.json").read_text())
+    persona = load_persona(str(run_dir / "persona.yaml"))
+    captures = []
+    for c in session.get("captures") or []:
+        t = run_dir / c.get("dir", "") / "text.txt"
+        captures.append({**c, "text": t.read_text() if t.exists() else ""})
+    llm = LLMClient(model=cfg.get("model", DEFAULT_MODEL), fallbacks=cfg.get("fallbacks"), max_calls=12,
+                    log_path=run_dir / "llm_calls.jsonl", temperature=float(cfg.get("temperature", 0.7)))
+    vision = bool(cfg.get("vision", True))
+    for name in ("output_assessment.json", "debrief.json", "summary.json"):
+        if (run_dir / name).exists() and (name != "debrief.json" or with_debrief):
+            (run_dir / name).with_suffix(".prev.json").write_text((run_dir / name).read_text())
+    assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, session.get("inputs") or [], captures, session.get("output_reactions") or [])
+    (run_dir / "output_assessment.json").write_text(json.dumps(assessment, indent=2, ensure_ascii=False))
+    debrief = json.loads((run_dir / "debrief.json").read_text()) if (run_dir / "debrief.json").exists() else {}
+    if with_debrief:
+        trace = [json.loads(ln) for ln in (run_dir / "trace.jsonl").read_text().splitlines()]
+        output_summary = json.dumps({k: assessment.get(k) for k in ("overall_reaction", "criteria", "top_changes", "keepsake_worthiness")}, ensure_ascii=False)
+        debrief = run_debrief(llm, persona, journey_digest(trace, session.get("pages") or {}, session.get("waits") or []), output_summary)
+        (run_dir / "debrief.json").write_text(json.dumps(debrief, indent=2, ensure_ascii=False))
+    fidelity = json.loads((run_dir / "fidelity.json").read_text()) if (run_dir / "fidelity.json").exists() else {}
+    old = json.loads((run_dir / "summary.json").read_text()) if (run_dir / "summary.json").exists() else {}
+    summary = build_summary(run_dir, persona, session, assessment, debrief, fidelity, llm, old.get("wall_seconds", 0), cfg.get("model", DEFAULT_MODEL))
+    if old.get("llm_usage"):
+        summary["llm_usage"] = old["llm_usage"]
+        summary["llm_usage_reassess"] = llm.usage.to_json()
+    summary["reassessed"] = True
+    (run_dir / "summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False))
+    from .report.render import render_report
+
+    render_report(run_dir)
+    log(f"[reassess] {run_dir.name}: {len(assessment.get('parts') or [])} parts, superseded {assessment.get('superseded_captures')}, LLM calls {llm.usage.calls}")
+    return run_dir
+
+
 def build_summary(run_dir, persona, session, assessment, debrief, fidelity, llm, seconds, model) -> dict:
     issues = flatten_issues(session["pages"])
     unique = cluster_issues(issues)

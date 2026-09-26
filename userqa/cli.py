@@ -62,6 +62,10 @@ def main(argv=None) -> int:
     rep = sub.add_parser("report", help="re-render a run's report")
     rep.add_argument("run_dir")
 
+    ra = sub.add_parser("reassess", help="re-run a finished run's output assessment without browsing again")
+    ra.add_argument("run_dirs", nargs="+")
+    ra.add_argument("--with-debrief", action="store_true", help="also re-run the SUS/UEQ-S debrief")
+
     sub.add_parser("quota", help="show OpenRouter key limits / free-model quota")
 
     a = ap.parse_args(argv)
@@ -110,6 +114,12 @@ def main(argv=None) -> int:
 
         render_report(Path(a.run_dir))
         print(Path(a.run_dir) / "report.html")
+        return 0
+    if a.cmd == "reassess":
+        from .runner import reassess_run
+
+        for d in a.run_dirs:
+            reassess_run(Path(d), with_debrief=a.with_debrief)
         return 0
     if a.cmd == "quota":
         q = LLMClient(max_calls=0).quota()
