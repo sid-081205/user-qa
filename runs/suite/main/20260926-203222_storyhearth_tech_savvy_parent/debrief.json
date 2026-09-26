@@ -1,0 +1,194 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not want to use StoryHearth regularly because the generated book was not faithful, coherent or print-worthy.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The form itself is fairly compact, but silent truncation, a bad relationship default and a regeneration workflow make the product unnecessarily difficult to use.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "The main actions were obvious, but unclear errors, inaccessible fields and weak feedback prevented me from finding it genuinely easy to use.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I would not need technical support to complete the form; the software defects and output quality are the site's responsibility, not a skills problem.",
+      "rating": 1
+    },
+    {
+      "item": 5,
+      "reason": "The individual steps appeared connected, but lost or corrupted form data, ignored settings and the unexplained profile sync error showed poor integration.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The selected relationship, illustration style, character descriptions, retained form data and generated output all contradicted the inputs or earlier interface states.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people could complete the form, but they would not quickly recognise serious mistakes such as unresolved placeholders, altered characters and an incomplete ending.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "Recovering from silent truncation and being offered only paid whole-book regeneration were especially cumbersome.",
+      "rating": 4
+    },
+    {
+      "item": 9,
+      "reason": "I felt more suspicious and frustrated than confident once the site ignored explicit inputs and gave vague privacy information.",
+      "rating": 1
+    },
+    {
+      "item": 10,
+      "reason": "The workflow did not require much training, but I had to learn a lot about the product's failures by inspecting the output and terms.",
+      "rating": 3
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 6
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 5
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 5
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 6
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 3
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 3
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 5
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 5
+    }
+  ],
+  "nps": 0,
+  "interview": {
+    "purpose": "StoryHearth is meant to create personalised, illustrated storybooks featuring the user and their family, with a printable or hard-cover edition. In principle, that is useful for parents who want a keepsake built around a real family memory, especially for younger children.",
+    "worst_moment": "The generated book was the worst moment: Zara had the wrong appearance, the selected watercolour style was ignored, Dad was replaced by an invented uncle, central objects were misunderstood, and the final sentence was unfinished. The undefined child-photo retention policy was nearly as serious.",
+    "best_moment": "The best moment was reaching the storybook preview because I was genuinely curious to see whether the system could turn the cardboard-rocket memory into a coherent space story. The concept was promising, but the result immediately exposed major generation defects.",
+    "abandon": "In real life, I would probably have abandoned the process after seeing the book preview, or at least after the incomplete ending and mismatched illustrations. Paying for a hardcover after that would feel irrational, and the £45.97 checkout reinforced that decision.",
+    "missing": "I expected the system to preserve my full memory, follow the relationship and character details, keep Zara visually consistent, honour the selected art style, and make a specific object or scene editable or regenerable. I also expected clear answers before upload about whether Zara's photos are used for training, who processes them, how long they are retained, and how deletion works.",
+    "trust": "I would not trust StoryHearth with Zara's information or photos. The upload screen gave no privacy assurance, and the privacy notice only said images may be retained and used to improve the service, without a defined retention period or named processors.",
+    "willingness_to_pay": "I would pay for a genuinely polished keepsake, but I would not pay for this output. I would need a real preview of the final quality and a fair price; a hard cover around £25–30 before shipping would be more acceptable, with the option to repair and approve individual pages before ordering.",
+    "output_verdict": "The output is not print-worthy and does not represent the story I supplied. It mostly used keywords while producing incorrect characters, disconnected scenes, adult language, unresolved placeholders, a typo, an unfinished sentence and misleading illustrations. I would not pay £45.97 for it."
+  },
+  "recommendations": [
+    {
+      "change": "Generate a faithful, coherent story that preserves the supplied family relationships, pronouns, memory, central objects and beginning-to-ending plot.",
+      "page": "Generated storybook preview",
+      "why": "The current book omits Dad, invents an uncle, changes Zara's name and loses the cardboard-rocket adventure.",
+      "priority": "high"
+    },
+    {
+      "change": "Keep Zara visually consistent with her specified black puffs, purple glasses and astronaut hoodie, and make the purple sock a recognisable flag.",
+      "page": "Generated storybook preview",
+      "why": "The defining character and object details are the reason a personalised keepsake is valuable; ignoring them makes the images generic and inaccurate.",
+      "priority": "high"
+    },
+    {
+      "change": "Run an output preflight check that removes unresolved placeholders, spelling errors, repeated sentences, wrong names, wrong pronouns and incomplete sentences before presenting the book.",
+      "page": "Generated storybook preview",
+      "why": "The current output contains obvious template and language defects that should never reach a checkout page.",
+      "priority": "high"
+    },
+    {
+      "change": "Stop silently truncating the memory and story fields; show character counts, preserve the full value after Back, and provide a clear way to replace the entire affected text safely.",
+      "page": "Create your book — Story details",
+      "why": "Silent data loss is a basic trust failure and directly damages fidelity to the user's memory.",
+      "priority": "high"
+    },
+    {
+      "change": "Provide specific privacy disclosures before child-photo upload, including training use, retention period, processors, deletion rights and whether images are used to improve the service.",
+      "page": "Optional photo upload and Privacy",
+      "why": "Zara is a child, and the current policy does not provide enough information to make an informed decision.",
+      "priority": "high"
+    },
+    {
+      "change": "Honour the selected illustration style and clearly show the actual selected style throughout generation and the finished book.",
+      "page": "Reading level and illustration style / Generated storybook preview",
+      "why": "Selecting watercolour and receiving flat pop-art or vector-style images is a direct contradiction that damages trust.",
+      "priority": "high"
+    },
+    {
+      "change": "Set relationship defaults safely, require confirmation for contradictory character setups, and provide description fields for all characters where needed.",
+      "page": "Create your book — Characters",
+      "why": "The default Grandparent relationship created the wrong family structure before I corrected it, and there was no field for the second character's description.",
+      "priority": "medium"
+    },
+    {
+      "change": "Add targeted editing and regeneration controls for a single image, character, object or scene rather than exposing only whole-book regeneration.",
+      "page": "Generated storybook preview",
+      "why": "A good overall story should not be lost because one page has a visual or text error, and paid whole-book regeneration is a poor workaround.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace the raw sync error with an actionable message that explains whether the profile is affected, whether creation is safe, and how to recover.",
+      "page": "My books",
+      "why": "A raw Windows-style error is alarming and leaves me guessing whether my family data is reliable.",
+      "priority": "high"
+    },
+    {
+      "change": "Add text-based loading status, generation stages, an estimated wait and a cancel or back control.",
+      "page": "Book generation loading",
+      "why": "A spinner without status or recovery options makes the system feel fragile and gives me no control while waiting.",
+      "priority": "medium"
+    },
+    {
+      "change": "Make hardcover price visible next to the order action, uncheck paid gift wrap by default, and explain shipping basis and delivery scope.",
+      "page": "Generated storybook preview and Hardcover checkout",
+      "why": "The checkout introduced a hidden £12.99 gift-wrap charge and did not make the £24.99 book plus £12.99 shipping cost clear beforehand.",
+      "priority": "medium"
+    },
+    {
+      "change": "Use persistent visible labels for form controls, including the photo upload field, and improve footer contrast and accessible descriptions.",
+      "page": "Login, Create your book, Optional photo upload and StoryHearth landing page",
+      "why": "Placeholder-only labels, an unlabelled upload and low-contrast links create unnecessary accessibility problems.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace opaque marketing terms with plain descriptions of the generation process and what the product actually does.",
+      "page": "StoryHearth landing page",
+      "why": "“Multimodal generative narrative engine” and “lived-experience corpus” sound like jargon rather than useful product information.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "Promising concept, broken execution: the product ignored my inputs, misrepresented the family memory and failed the basic quality and privacy checks needed for a personalised children's keepsake.",
+  "sus_score": {
+    "score": 30.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 1.6,
+    "mean_negative_items": 3.2,
+    "inconsistent_pairs": 1,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": 1.5,
+    "hedonic": 0.0,
+    "overall": 0.75
+  }
+}

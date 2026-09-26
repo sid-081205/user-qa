@@ -1,0 +1,16 @@
+{
+  "label": "The Magical Adventrue of Lily page 6",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_07/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_07/img_00.jpg",
+      "alt": "Lily and Uncle Bartholomew",
+      "w": 531,
+      "h": 348
+    }
+  ],
+  "dir": "artifacts/capture_07"
+}

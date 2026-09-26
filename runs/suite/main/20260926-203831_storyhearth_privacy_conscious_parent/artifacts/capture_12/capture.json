@@ -1,0 +1,17 @@
+{
+  "label": "auto: The Magical Adventrue of Nikolai",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_12/view_00.jpg",
+    "artifacts/capture_12/view_01.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_12/img_00.jpg",
+      "alt": "The End",
+      "w": 714,
+      "h": 469
+    }
+  ],
+  "dir": "artifacts/capture_12"
+}

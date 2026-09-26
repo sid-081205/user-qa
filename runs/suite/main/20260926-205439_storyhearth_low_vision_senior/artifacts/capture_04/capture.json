@@ -1,0 +1,16 @@
+{
+  "label": "The Magical Adventrue of Lily page 3",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_04/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_04/img_00.jpg",
+      "alt": "Lily at Harold's workshop shed and the Norfolk fields",
+      "w": 531,
+      "h": 348
+    }
+  ],
+  "dir": "artifacts/capture_04"
+}

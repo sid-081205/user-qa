@@ -1,0 +1,811 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 222,
+      "sentences": 14,
+      "avg_sentence_words": 15.9,
+      "flesch_reading_ease": 65.4,
+      "fk_grade": 8.1,
+      "polysyllabic_ratio": 0.108,
+      "long_words": [
+        "Bartholomew",
+        "crepuscular",
+        "ephemeral",
+        "existential",
+        "ineffable",
+        "inexplicable",
+        "juxtaposing",
+        "luminescence",
+        "melancholy",
+        "trepidation"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 7.0,
+    "per_part": [
+      {
+        "part": "auto: The Magical Adventrue of Zara",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 2",
+        "words": 8,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.8,
+        "flesch_reading_ease": 82.4
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 3",
+        "words": 42,
+        "avg_sentence_words": 21.0,
+        "fk_grade": 8.1,
+        "flesch_reading_ease": 74.7
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 4",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.3,
+        "flesch_reading_ease": -31.2
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 5",
+        "words": 32,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 4.7,
+        "flesch_reading_ease": 90.1
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 6",
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 6.5,
+        "flesch_reading_ease": 60.5
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 7",
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.1,
+        "flesch_reading_ease": 84.2
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 8",
+        "words": 42,
+        "avg_sentence_words": 21.0,
+        "fk_grade": 8.1,
+        "flesch_reading_ease": 74.7
+      },
+      {
+        "part": "The Magical Adventrue of Zara page 9",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.9,
+        "flesch_reading_ease": 74.3
+      },
+      {
+        "part": "auto: Checkout",
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 9.1,
+        "flesch_reading_ease": 49.5
+      }
+    ],
+    "names": {
+      "Dad (Daniel)": {
+        "token": "(Daniel)",
+        "mentions": 0,
+        "near_miss_variants": []
+      },
+      "Zara": {
+        "token": "Zara",
+        "mentions": 10,
+        "near_miss_variants": [
+          "Zar"
+        ]
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Zar",
+      "Bartholomew",
+      "Magical",
+      "Adventrue"
+    ],
+    "placeholders": [
+      "{{recipient_name}}",
+      "{{sender_name}}",
+      "{recipient_name}",
+      "{sender_name}"
+    ],
+    "repeated_sentences": [
+      "Once upon a time, in The living room, where we built a cardboard rocket from boxes during a thunderstorm, there lived a curious child named Zara."
+    ],
+    "truncated_ending": true,
+    "out_of_dictionary_words": [
+      "crepuscular"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Zara"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "7"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "Black hair in two puffs, purple glasses, astronaut hoodie"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Dad (Daniel)"
+    },
+    {
+      "field": "Relationship",
+      "action": "select",
+      "value": "Parent"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "The living room, where we built a cardboard rocket from boxes during a thunderstorm"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "A purple sock used as a flag"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Zara and her dad built a cardboard rocket in the living room during a thunderstorm and \"flying\" it to the Moon, where they plant a flag made from her favourite purple sock. It matters because it was one of our favourite shared adventures and Zara felt brave enough to imagine travelling to space with me.",
+      "truncated_to": 200
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "expected_names": [
+    "Zara",
+    "Dad (Daniel)"
+  ],
+  "reading_age": 7.0,
+  "superseded_captures": [],
+  "version_changes": [],
+  "artifact_type": "AI-generated personalised children's storybook and checkout page",
+  "parts": [
+    {
+      "part": "Cover",
+      "text": "A StoryHearth original\nIllustration style: Pop-art comic",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "A simple flat-vector scene showing a small child labelled Zara, a house-like structure with a rocket-shaped tower, a bright sun, and a purple object shaped like the letter J rather than a sock. The child has no visible black hair in two puffs, no purple glasses, and no astronaut hoodie.",
+      "reaction": "This is not a convincing cover for Zara's book. The misspelled title, wrong-looking child, dubious rocket, and purple J instead of a sock make it look like a generic template rather than something made for my daughter.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The supplied description was \"Black hair in two puffs, purple glasses, astronaut hoodie\", but the illustrated Zara has none of those features.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested object was \"A purple sock used as a flag\", but the image visibly shows a purple J-shaped mark.",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "The title is \"The Magical Adventrue of Zara\"; \"Adventrue\" is misspelled.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The cover image does not show a living-room cardboard rocket, Dad, or a recognisable sock flag.",
+          "severity": 4
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The illustration is extremely generic and visually inconsistent with the stated Pop-art comic style and with the requested watercolour style.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "Zara is named on the cover.",
+        "The image has a clear, simple child-friendly composition."
+      ],
+      "suggested_change": "Redesign the cover around Zara and Daniel building the cardboard rocket in the living room during a thunderstorm, with Zara's black puffs, purple glasses, astronaut hoodie, and the purple sock visibly tied to a stick as a flag. Correct the title to \"The Magical Adventure of Zara\".",
+      "rewrite": "The Magical Adventure of Zara"
+    },
+    {
+      "part": "Title page",
+      "text": "For {{recipient_name}}, with love from {{sender_name}}",
+      "image_refs": [
+        "I2"
+      ],
+      "picture_description": "The StoryHearth book preview page shows the title \"The Magical Adventrue of Zara\", a large white panel containing the unresolved dedication, a 2/9 page indicator, and buttons for regenerating the entire book or ordering the hardcover.",
+      "reaction": "This is an obvious production failure. The unresolved template variables are not a personalised dedication, and the preview also makes the misspelled title prominent again.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The page visibly contains \"{{recipient_name}}\" and \"{{sender_name}}\" instead of names.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "Daniel and Zara's relationship is not used in the dedication.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The site offers \"Regenerate entire book – £4.99\" but no visible control for correcting one page or one field.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The preview panel contains no illustration supporting the intended personal dedication.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The intended dedication format is clear."
+      ],
+      "suggested_change": "Replace the unresolved variables with the actual names and add a small illustration of Zara and Daniel holding the purple sock flag beside the cardboard rocket.",
+      "rewrite": "For Zara, with love from Dad"
+    },
+    {
+      "part": "Page 1",
+      "text": "Once upon a time, in The living room, where we built a cardboard rocket from boxes during a thunderstorm, there lived a curious child named Zara. Zara was 7 years old and loved nothing more than A purple sock used as a flag.",
+      "image_refs": [
+        "I3"
+      ],
+      "picture_description": "The same simple outdoor cover scene is repeated: a small child labelled Zara stands near a house-like rocket structure under a sunny sky, with a purple J-shaped object nearby. There is no living room, cardboard boxes, Dad, thunderstorm, purple glasses, black puffs, or astronaut hoodie.",
+      "reaction": "The text starts to include the supplied facts, but it reads like fields were pasted into a template rather than turned into a story. The picture is essentially the cover repeated and does not depict the memory at all.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested cardboard rocket built from boxes during a thunderstorm is not shown or meaningfully dramatised.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "\"Dad (Daniel)\" appears nowhere in the nine-page output.",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "The sentence uses awkward input fragments: \"in The living room\" and \"A purple sock used as a flag\" with capitalised \"The\" and \"A\".",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The first page repeats the cover image instead of establishing the requested memory.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text describes a living room and thunderstorm, while the image shows an outdoor sunny scene.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The illustrated child does not match Zara's supplied appearance.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "Zara's first name and age are used.",
+        "The thunderstorm and purple sock details are present in the text."
+      ],
+      "suggested_change": "Show the actual memory in a warm living room during a thunderstorm, with Zara and Dad building a clearly recognisable cardboard rocket from boxes. Introduce the purple sock as a flag naturally rather than as a field value.",
+      "rewrite": "On a stormy afternoon, Zara and Dad turned the living room into a space station. They stacked boxes, cut a doorway, and counted down from five. \"Blast off!\" Zara shouted, holding her purple sock like a flag. She was not quite brave yet, but with Dad beside her, she felt ready to fly.",
+      "metrics": {
+        "words": 42,
+        "avg_sentence_words": 21.0,
+        "fk_grade": 8.1,
+        "flesch_reading_ease": 74.7
+      }
+    },
+    {
+      "part": "Page 2",
+      "text": "One evening Zara gazed upward. The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.",
+      "image_refs": [
+        "I4"
+      ],
+      "picture_description": "A purple-to-pink sky with stars appears behind the same generic child and house-like rocket. There is no thunderstorm, rocket-building activity, Dad, sock flag, or clear evidence that the child matches Zara.",
+      "reaction": "This sentence is far too advanced and awkward for a seven-year-old. It sounds like a thesaurus-generated paragraph dropped into a children's book.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "The text uses \"ephemeral luminescence\", \"crepuscular firmament\", \"juxtaposing ineffable wonder\" and \"existential trepidation\".",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "The automated analysis reports a Flesch-Kincaid grade of 8.1, above the requested age 7.0, and flags multiple four-or-more-syllable words.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested memory of Zara feeling brave enough to imagine travelling to space with Dad is replaced by abstract melancholy and does not mention Dad.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The picture shows a static night sky rather than Zara and Dad looking up after building the rocket.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The night sky is visually quiet and could support a reflective space-themed moment."
+      ],
+      "suggested_change": "Replace the abstract vocabulary with simple, concrete language that connects the thunderstorm, the cardboard rocket, and Zara's growing confidence.",
+      "rewrite": "Zara looked out of the window. The storm flashed behind the clouds, and the cardboard rocket stood ready in the living room. \"I think I can do it,\" she whispered. Dad smiled and handed her the purple sock flag.",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.3,
+        "flesch_reading_ease": -31.2
+      }
+    },
+    {
+      "part": "Page 3",
+      "text": "Then the rain began to pour. Big grey drops splashed into the puddles as Zar pulled up their hood and ran for shelter, holding A purple sock used as a flag tight.",
+      "image_refs": [
+        "I5"
+      ],
+      "picture_description": "The image repeats the sunny cover scene with the same child, house-like rocket, and purple J-shaped object. There are no raindrops, puddles, visible sock, or reliable Zara features.",
+      "reaction": "This is another direct text-image contradiction: the story says heavy rain, but the picture is bright and sunny. \"Zar\" is a near-miss typo, and the pronoun changes imply a different, unclear version of Zara.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"Zar\" appears instead of \"Zara\".",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"their hood\" is inconsistent with the surrounding text and the supplied representation of Zara; the phrase also does not match the visible image.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text says \"rain began to pour\" and \"puddles\", while the picture has a clear sun and no rain.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The purple object is still a J-shaped mark rather than a sock flag.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The child remains bald-looking, without black puffs, purple glasses, or the astronaut hoodie.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The sentence attempts to include rain and the purple sock detail."
+      ],
+      "suggested_change": "Correct Zara's name and pronouns, and show the rain, puddle, cardboard rocket, and clearly recognisable sock flag in the illustration.",
+      "rewrite": "Then the rain came down hard. Zara pulled on her astronaut hood and held the purple sock flag tightly as she hurried back into the living room. Dad was waiting beside the cardboard rocket.",
+      "metrics": {
+        "words": 32,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 4.7,
+        "flesch_reading_ease": 90.1
+      }
+    },
+    {
+      "part": "Page 4",
+      "text": "Uncle Bartholomew\nSuddenly, Uncle Bartholomew appeared with a lantern. \"Zara, follow me!\" he called, and she followed him along the winding path.",
+      "image_refs": [
+        "I6"
+      ],
+      "picture_description": "A tall bald adult labelled \"Uncle Bartholomew\" and a smaller child labelled Zara stand beside the house-like structure. The adult holds a small yellow square that is only loosely suggestive of a lantern; the scene does not show Daniel.",
+      "reaction": "I did not ask for Uncle Bartholomew, and this invents an important adult character in a personal family story. The new figure displaces Dad without explanation.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "\"Uncle Bartholomew\" is not in the supplied story; the requested participant was Dad, Daniel.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "Daniel is absent and has been replaced by an unrelated uncle.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The story moves from the living-room rocket to a winding path and forest with no explanation of how or why Zara left Dad behind.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text calls for a winding path and lantern, but the picture shows a flat yard and a small yellow rectangle.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The newly introduced uncle is a generic bald figure, while Zara again lacks her defining appearance.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The image at least depicts two characters, one of whom is labelled Zara."
+      ],
+      "suggested_change": "Remove Uncle Bartholomew and replace this passage with Daniel helping Zara carry or adjust the cardboard rocket. Keep every character and action grounded in the supplied family memory.",
+      "rewrite": "\"Ready for blast-off?\" Dad asked. Zara nodded. Together they lifted the cardboard rocket, checked the purple sock flag, and counted down from five.",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 6.5,
+        "flesch_reading_ease": 60.5
+      }
+    },
+    {
+      "part": "Page 5",
+      "text": "Deep in the woods, the shadows grew teeth and whispered that no one would find Zara again. Zara clutched a shiny red balloon and trembled in the dark.",
+      "image_refs": [
+        "I7"
+      ],
+      "picture_description": "Zara stands at night near three simple trees under a crescent moon, with a red balloon. There are no visible toothed shadows or whispering woods, and the scene does not show Dad or the rocket.",
+      "reaction": "This introduces a threatening, unrelated forest adventure and a red balloon that never existed in the requested memory. The wording may be a little frightening for a seven-year-old, especially because the story is supposed to be about family courage.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The woods, threatening shadows, and red balloon are invented major elements absent from the supplied story.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The central relationship between Zara and Dad is still missing.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The story has moved from a living room and cardboard rocket to \"Deep in the woods\" without a causal transition.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image includes a red balloon and trees, but not the \"shadows grew teeth\" or whispering danger described in the text.",
+          "severity": 3
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "The phrase \"no one would find Zara again\" introduces abandonment or danger that is not resolved in the supplied family context.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The image provides a clear night-time outdoor setting."
+      ],
+      "suggested_change": "Remove the invented threatening forest and balloon. Return to the cardboard rocket, where Dad can help Zara overcome her uncertainty and plant or display the sock flag.",
+      "rewrite": "For a moment, Zara felt unsure. The rocket was enormous, and the storm was loud. Dad held her hand. \"We do not have to be brave all at once,\" he said. Together they counted to five and pretended to fly.",
+      "metrics": {
+        "words": 28,
+        "avg_sentence_words": 14.0,
+        "fk_grade": 4.6,
+        "flesch_reading_ease": 86.9
+      }
+    },
+    {
+      "part": "Page 6",
+      "text": "Once upon a time, in The living room, where we built a cardboard rocket from boxes during a thunderstorm, there lived a curious child named Zara. At last the sun came out, and Zara skipped all the way home, happier than ever.",
+      "image_refs": [
+        "I8"
+      ],
+      "picture_description": "The cover image is repeated again, with the same generic child, house-like rocket, purple J-shaped object, bright sun, and green ground. The cardboard rocket, living room, Dad, and sock flag are absent.",
+      "reaction": "The story repeats its opening almost word for word and then jumps to a happy ending. That is not a real resolution to the rocket-building memory, and the image is another unchanged template.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "The opening sentence is repeated on page 6, creating a circular but non-functional structure.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The page still does not show or develop Dad, the cardboard rocket built from boxes, or the purple sock flag as intended.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The page says Zara is going home, but the image merely repeats the cover scene and gives no sense of a journey home.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The same bald-looking generic child is reused, without Zara's specified puffs, glasses, or hoodie.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The final mood is explicitly positive.",
+        "The image does show sunlight, matching the sentence that the sun came out."
+      ],
+      "suggested_change": "Use this page for the actual resolution: Zara and Dad finish the rocket, attach the purple sock flag, and imagine flying to the Moon together. Do not repeat the opening sentence.",
+      "rewrite": "When the sun came out, Zara and Dad carried their cardboard rocket to the window. Zara tied the purple sock to a stick and planted it proudly in a little mound of soil. \"Mission complete,\" she said, smiling.",
+      "metrics": {
+        "words": 42,
+        "avg_sentence_words": 21.0,
+        "fk_grade": 8.1,
+        "flesch_reading_ease": 74.7
+      }
+    },
+    {
+      "part": "Page 7",
+      "text": "The End\nAnd from that day on, whenever Zara looked up at the sky, they would always remember\nThe End",
+      "image_refs": [
+        "I9"
+      ],
+      "picture_description": "An orange sunset background shows the same generic child beside the same house-like rocket and purple J-shaped object. The image itself displays \"The End\", but the body text contains an unfinished sentence and repeats the closing phrase.",
+      "reaction": "This is visibly unfinished. The sentence stops after \"remember\", and the awkward pronoun \"they\" again makes the ending feel copied from a generic template rather than written about Zara.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The sentence ends with \"they would always remember\" without an object or final punctuation.",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"The End\" appears twice on the same page.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The unfinished sentence gives the book no clear emotional conclusion.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The ending never names Dad or explicitly says that Zara remembered the shared adventure with him.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The illustration's embedded \"The End\" matches the heading, but the illustration does not depict the promised memory or a completed rocket mission.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The sunset background is a calm visual ending.",
+        "The intended space theme is retained in the final image."
+      ],
+      "suggested_change": "Complete the sentence, remove the duplicate \"The End\", and end with a specific memory involving Zara and Dad and their cardboard Moon adventure.",
+      "rewrite": "The End\nFrom that day on, whenever Zara looked up at the sky, she remembered the cardboard rocket, the purple sock flag, and Dad's hand holding hers while they counted down to blast-off.",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.9,
+        "flesch_reading_ease": 74.3
+      }
+    },
+    {
+      "part": "Checkout",
+      "text": "Checkout\nYour price is reserved for 09:42\nHardcover: The Magical Adventrue of Zara\t£24.99\n Premium gift wrap\t£7.99\nShipping & handling\t£12.99\nTotal\t£45.97\nDelivery\nAddress\nPayment\nCard number\nExpiry\nCVC\nPay now",
+      "image_refs": [
+        "I10",
+        "I11"
+      ],
+      "picture_description": "A StoryHearth checkout page shows a countdown, the hardcover price, a checked premium gift-wrap option, shipping and handling, a total of £45.97, address and payment fields, and an orange \"Pay now\" button. The title is misspelled, and the checkout does not display any visible explanation of how child photos or personal data are handled.",
+      "reaction": "£45.97 is a lot to pay for a nine-page result with placeholders, invented characters, broken ending, and almost none of Zara's defining details. I also still have no answer to the basic question of what happens to a child's photos or whether they are used for training.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The checkout repeats the misspelled product title \"The Magical Adventrue of Zara\".",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The page presents the flawed book for purchase without warning about the unresolved placeholders, missing details, or incomplete ending.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The premium gift wrap is selected and adds £7.99, increasing the already problematic £37.98 product-plus-shipping total to £45.97.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The checkout is a web interface rather than an illustration, but the product title and page content are visibly inconsistent with the quality promised by the purchase flow.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The prices and total are clearly itemised.",
+        "The gift-wrap selection is visible rather than hidden."
+      ],
+      "suggested_change": "Do not offer checkout until the book has been reviewed. Correct the title, remove placeholders, complete the story, and show a prominent privacy notice explaining retention, deletion, and training use of uploaded child photos. Keep gift wrap optional and unselected unless the user explicitly chooses it.",
+      "rewrite": "",
+      "metrics": {
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 9.1,
+        "flesch_reading_ease": 49.5
+      }
+    }
+  ],
+  "criteria": {
+    "fidelity": {
+      "evidence": "Zara's name and age appear, and the thunderstorm, living room, and purple sock are copied into the text. However, Daniel is absent, the cardboard rocket is not built or meaningfully shown, Zara's appearance is not followed, and an invented Uncle Bartholomew takes over the story.",
+      "score": 1
+    },
+    "coherence": {
+      "evidence": "The output repeats the opening sentence, shifts from the living room to unrelated woods, introduces a balloon and an unexplained uncle, and ends with an unfinished sentence: \"they would always remember\".",
+      "score": 1
+    },
+    "age_fit": {
+      "evidence": "The automated readability is grade 8.1 for a requested reading age of 7.0, and the prose uses words such as \"ephemeral\", \"crepuscular\", \"ineffable\", \"existential\", and \"trepidation\". The threatening line about no one finding Zara is also poorly matched to the intended gentle family memory.",
+      "score": 1
+    },
+    "language": {
+      "evidence": "The book contains unresolved placeholders, the typo \"Adventrue\", the near-miss \"Zar\", awkward input fragments, a repeated sentence, and an unfinished final sentence. These are not cosmetic issues; they make the artifact visibly broken.",
+      "score": 1
+    },
+    "text_image_fit": {
+      "evidence": "The rain page shows a sunny sky, the living-room page shows an outdoor yard, the sock is repeatedly rendered as a purple J, and most pages reuse the same generic cover image. The threatening shadows described on the woods page are not depicted.",
+      "score": 1
+    },
+    "character_consistency": {
+      "evidence": "Zara is repeatedly shown as the same bald-looking generic child, without the requested black hair in two puffs, purple glasses, or astronaut hoodie. The newly invented Uncle Bartholomew also does not have a coherent visual identity beyond a label.",
+      "score": 1
+    },
+    "visual_quality": {
+      "evidence": "The illustrations are extremely simple and generic, repeat the same house-like rocket across nearly every page, contain a J-shaped substitute for the sock, and do not demonstrate the requested visual style or generation consistency. The text and images also contain visible production defects.",
+      "score": 1
+    },
+    "emotional_resonance": {
+      "evidence": "The intended message was that Zara felt brave imagining space travel with Dad, but Dad never appears. The unrelated uncle, threatening woods, generic art, and broken ending make the result impersonal rather than keepsake-worthy.",
+      "score": 1
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "Zara's first name is used throughout most of the text.",
+      "Zara's age of 7 is stated.",
+      "The thunderstorm is named.",
+      "The living-room setting is named.",
+      "The purple sock is named as a flag in two pages, although it is not rendered correctly.",
+      "Premium gift wrap was selected and charged."
+    ],
+    "missing": [
+      "Dad, Daniel, and the parent relationship.",
+      "The actual cardboard rocket built from boxes.",
+      "The act of building the rocket together.",
+      "The pretend flight to the Moon.",
+      "The planting or display of the purple sock flag.",
+      "The reason the memory matters: Zara felt brave imagining travelling to space with Dad.",
+      "Zara's black hair in two puffs.",
+      "Zara's purple glasses.",
+      "Zara's astronaut hoodie.",
+      "A complete, coherent ending."
+    ],
+    "changed": [
+      "The living room was turned into an outdoor sunny scene.",
+      "The purple sock became a purple J-shaped mark.",
+      "The cardboard rocket became an unclear house with a tower.",
+      "Daniel was replaced in the narrative by Uncle Bartholomew.",
+      "Zara's appearance and pronouns were changed or made inconsistent.",
+      "The warm shared adventure was changed into an unrelated forest scare."
+    ],
+    "invented": [
+      "Uncle Bartholomew.",
+      "A lantern.",
+      "A winding path.",
+      "Deep woods with shadows that grow teeth.",
+      "A shiny red balloon.",
+      "The threat that no one would find Zara again."
+    ]
+  },
+  "safety_concerns": [
+    "The line \"the shadows grew teeth and whispered that no one would find Zara again\" is mildly frightening and introduces an unresolved danger in a book intended for a seven-year-old.",
+    "No inappropriate sexual, violent, or graphic content is visible.",
+    "The output does not answer the stated data-handling concern: there is no visible explanation of whether a child's uploaded photos are used for training, how long they are retained, or how they can be deleted."
+  ],
+  "overall_reaction": "I would not print this as written. It looks like an unreviewed template failure: Dad is missing, Zara does not look like the child I described, the sock is a purple J, and the story invents an uncle and a frightening forest instead of retelling our rocket adventure. The unresolved placeholders and incomplete final sentence are unacceptable in a paid keepsake. I also still have no clear answer about retention or training use of a child's photos.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — I would not pay £45.97 for a nine-page book with a misspelled title, broken text, missing Dad, wrong-looking Zara, incorrect special object, and no meaningful use of the supplied memory.",
+  "top_changes": [
+    "Use Daniel as the central companion and remove the invented Uncle Bartholomew, woods, lantern, and red balloon.",
+    "Redesign Zara consistently with black hair in two puffs, purple glasses, and the astronaut hoodie, using the same reference and character rules on every page.",
+    "Show the real cardboard rocket, the living room, the thunderstorm, the box construction, and the purple sock as a clearly recognisable flag.",
+    "Replace the advanced, incoherent prose with simple age-7 language and tell a complete beginning, middle, and end about Zara feeling brave with Dad.",
+    "Remove every placeholder, correct \"Adventrue\" to \"Adventure\", fix \"Zar\", remove repeated sentences, and finish the last sentence properly.",
+    "Add a clear privacy and data-retention notice before checkout, including whether child photos are used for training, how long they are stored, and how a parent can request deletion.",
+    "Require human or automated quality checks before payment: no unresolved variables, no spelling errors, no unfinished sentences, no invented central characters, and no text-image contradictions."
+  ],
+  "images": [
+    {
+      "ref": "I1",
+      "path": "artifacts/capture_01/img_00.jpg",
+      "desc": "capture 1, 714x469, alt \"Cover\""
+    },
+    {
+      "ref": "I2",
+      "path": "artifacts/capture_03/view_00.jpg",
+      "desc": "capture 2, screenshot of the page"
+    },
+    {
+      "ref": "I3",
+      "path": "artifacts/capture_04/img_00.jpg",
+      "desc": "capture 3, 714x469, alt \"Zara at The living room, where we built a cardboard rocket f\""
+    },
+    {
+      "ref": "I4",
+      "path": "artifacts/capture_05/img_00.jpg",
+      "desc": "capture 4, 714x469, alt \"Zara looking at the evening sky\""
+    },
+    {
+      "ref": "I5",
+      "path": "artifacts/capture_06/img_00.jpg",
+      "desc": "capture 5, 714x469, alt \"Zara outside\""
+    },
+    {
+      "ref": "I6",
+      "path": "artifacts/capture_07/img_00.jpg",
+      "desc": "capture 6, 714x469, alt \"Zara and Uncle Bartholomew\""
+    },
+    {
+      "ref": "I7",
+      "path": "artifacts/capture_08/img_00.jpg",
+      "desc": "capture 7, 714x469, alt \"Zara in the dark woods\""
+    },
+    {
+      "ref": "I8",
+      "path": "artifacts/capture_09/img_00.jpg",
+      "desc": "capture 8, 714x469, alt \"Zara going home\""
+    },
+    {
+      "ref": "I9",
+      "path": "artifacts/capture_10/img_00.jpg",
+      "desc": "capture 9, 714x469, alt \"The End\""
+    },
+    {
+      "ref": "I10",
+      "path": "artifacts/capture_13/view_00.jpg",
+      "desc": "capture 10, screenshot of the page"
+    },
+    {
+      "ref": "I11",
+      "path": "artifacts/capture_13/view_01.jpg",
+      "desc": "capture 10, screenshot of the page"
+    }
+  ],
+  "variant": {
+    "name": "vision2",
+    "vision": true,
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 9369,
+      "completion_tokens": 7063,
+      "seconds": 50.7,
+      "by_purpose": {
+        "output_assessment": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

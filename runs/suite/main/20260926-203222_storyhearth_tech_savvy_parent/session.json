@@ -1,0 +1,1650 @@
+{
+  "status": "done",
+  "steps": 16,
+  "site_model": {
+    "what_it_is": "A web service that creates personalised, illustrated family storybooks from supplied characters, memories, places, and treasured objects.",
+    "who_it_is_for": "Families wanting personalised stories featuring their children and other relatives or pets.",
+    "value_proposition": "Turn a family memory into a custom illustrated digital storybook, with printed hardcover options.",
+    "main_tasks": [
+      "Log in",
+      "Add family characters",
+      "Describe a memory",
+      "Generate and read an illustrated preview",
+      "Find the price of a printed hardcover"
+    ],
+    "pricing_model": "A free digital preview is advertised; a separate Pricing link and printed hardcovers are mentioned, but no actual price is visible here.",
+    "trust_signals": [
+      "The service describes a concrete three-step workflow",
+      "It claims generation takes about a minute",
+      "It offers a free digital preview",
+      "Privacy, Terms, and Contact links are present"
+    ],
+    "fit_for_me": "Potentially a good fit for a space-themed story for Zara, but I need to assess character consistency, story quality, editing controls, and privacy before trusting it with family photos."
+  },
+  "pages": {
+    "127.0.0.1:8765/ | Your family's stories, bound for generations.": {
+      "page_key": "127.0.0.1:8765/ | Your family's stories, bound for generations.",
+      "url": "http://127.0.0.1:8765/",
+      "title": "StoryHearth – Personalised storybooks starring your family",
+      "first_step": 1,
+      "screenshot": "screenshots/step_01.jpg",
+      "observation": "The StoryHearth landing page explains a three-step service for turning family memories into illustrated books, with links to pricing, login, and creation. It also shows a three-step workflow, testimonials, FAQs, and footer links.",
+      "think_aloud": "The product sounds relevant, but the phrase “multimodal generative narrative engine” and “lived-experience corpus” is needless AI jargon. I want to see the actual workflow and quality, so I’ll log in first with the supplied account.",
+      "emotion": "curious",
+      "valence": 1,
+      "review": {
+        "page_name": "StoryHearth landing page",
+        "purpose": "Introduce the personalised family-story service and direct visitors to creation, pricing, or account login.",
+        "what_is_happening": "A static marketing page presents the proposition, primary calls to action, workflow, testimonials, FAQs, and legal/contact links. The supplied account has not yet been used.",
+        "first_impression": "Clean enough and the task is immediately apparent, but the AI-heavy copy sounds engineered rather than warm or trustworthy. The promise is clear: family memories become illustrated books, but the actual quality and privacy handling remain unknown.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would try creating a story because the three-step process sounds straightforward and directly matches what I want for Zara.",
+          "q2_notice_control": "Yes. The prominent “Proceed →” control and separate “Log in” button are both obvious.",
+          "q3_label_matches_goal": "“Proceed →” is broadly understandable, though “Create my story” would be more specific. “Log in” exactly matches my immediate goal."
+        },
+        "issues": [
+          {
+            "title": "Marketing copy uses opaque technical jargon",
+            "evidence": "“Leverage our multimodal generative narrative engine to synthesise bespoke, heirloom-grade story artefacts from your household's lived-experience corpus.”",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "This sounds like a vague AI claim and does not tell me what inputs are used, how the story is generated, or why the result will actually be good.",
+            "fix": "Replace this with plain language, for example: “Turn a family memory into a personalised illustrated story featuring your child.”",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Hero image has no accessible description",
+            "evidence": "[image (no description) 430x440]",
+            "code": "ACC",
+            "severity": 1,
+            "why_it_matters_to_me": "The large image gives no textual indication to assistive technology and appears to be a generic illustration rather than evidence of the actual product.",
+            "fix": "Add meaningful alt text if it conveys content, or mark it explicitly decorative with alt=\"\" if it is purely ornamental.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "Editing control is deferred behind an FAQ",
+            "evidence": "[9] button \"Can I edit the story?\"",
+            "code": "H6",
+            "severity": 2,
+            "why_it_matters_to_me": "Whether I can correct or regenerate a problematic page is a key decision criterion, but this is not surfaced in the main workflow.",
+            "fix": "State near “We write & illustrate” that generated stories can be edited or regenerated, with a direct link to an example or editing explanation.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The primary login and creation paths are visible without hunting.",
+          "The three-step workflow sets a clear expectation.",
+          "The page explicitly says the digital preview is free.",
+          "Privacy, Terms, and Contact links are available in the footer."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 1,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [
+            {
+              "src": "http://127.0.0.1:8765/assets/hero.svg",
+              "size": "430x440"
+            }
+          ],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/login.html | Welcome back": {
+      "page_key": "127.0.0.1:8765/login.html | Welcome back",
+      "url": "http://127.0.0.1:8765/login.html",
+      "title": "Log in – StoryHearth",
+      "first_step": 2,
+      "screenshot": "screenshots/step_02.jpg",
+      "observation": "A StoryHearth login page displays email and password fields, a prominent \"Log in\" button, an account-creation link, and privacy, terms, and contact links. The form is empty and ready for authentication.",
+      "think_aloud": "Straightforward and visually clean. I can immediately see the login action, but the inputs have placeholders rather than proper visible labels, and the footer text looks very faint. I’m entering the supplied account details now.",
+      "emotion": "neutral",
+      "valence": 0,
+      "review": {
+        "page_name": "Log in",
+        "purpose": "Authenticate an existing StoryHearth customer so they can create and manage a personalised family storybook.",
+        "what_is_happening": "The page presents an empty email/password login form, a registration alternative, and supporting policy/contact links.",
+        "first_impression": "Clean, conventional, and efficient. The main action is obvious, although the fields are not programmatically or visibly labelled and the footer is unusually washed out.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I immediately want to log in and test the actual story-generation workflow.",
+          "q2_notice_control": "Yes, the two central fields and large \"Log in\" button are the first obvious controls.",
+          "q3_label_matches_goal": "Yes, the placeholders \"Email\" and \"Password\" describe the expected values, though persistent visible labels would be better."
+        },
+        "issues": [
+          {
+            "title": "Login fields have no persistent labels",
+            "evidence": "[5] and [6] are textboxes with no label, using only placeholders \"Email\" and \"Password\".",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "Placeholder-only labelling weakens accessibility and makes the fields less robust once text is entered.",
+            "fix": "Add persistent visible <label> elements for \"Email\" and \"Password\", and associate each label with its input using for/id. Keep placeholders only as examples where useful.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer links have very low contrast",
+            "evidence": "The bottom links \"Privacy\", \"Terms\", and \"Contact\" appear extremely faint against the pale background.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "I can barely read these trust-related links, which matters on a site handling children's photos and personal memories.",
+            "fix": "Use a substantially darker text colour that meets WCAG contrast requirements and verify the disabled-looking treatment is intentional.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The primary login button is large, clearly labelled, and easy to locate.",
+          "The layout is uncluttered and the form hierarchy is immediately understandable.",
+          "The page offers a direct route to create an account for new users."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 2,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": [
+            {
+              "id": 5,
+              "placeholder": "Email"
+            },
+            {
+              "id": 6,
+              "placeholder": "Password"
+            }
+          ]
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/dashboard.html | Welcome back, Demo": {
+      "page_key": "127.0.0.1:8765/dashboard.html | Welcome back, Demo",
+      "url": "http://127.0.0.1:8765/dashboard.html",
+      "title": "My books – StoryHearth",
+      "first_step": 3,
+      "screenshot": "screenshots/step_03.jpg",
+      "observation": "The login completed and the account dashboard now shows “Welcome back, Demo,” no existing books, and a prominent “+ Create a new book” action. An orange banner reports “Error 0x80070057: profile sync incomplete.”, which suggests the login succeeded but some account data failed to load or sync.",
+      "think_aloud": "I’m logged in, but that raw Windows-style error is a poor sign. “Profile sync incomplete” is ambiguous: it doesn’t say whether my saved family details are affected or whether I can still create the book. The create button is obvious, so I’ll continue and see whether the sync problem actually matters.",
+      "emotion": "annoyed",
+      "valence": -1,
+      "review": {
+        "page_name": "My books dashboard",
+        "purpose": "Shows the signed-in user’s existing storybooks and provides the main action for creating a new one.",
+        "what_is_happening": "The site has opened the signed-in dashboard, says there are no books, and offers a button to create one. A visible error says that profile sync is incomplete.",
+        "first_impression": "The layout is clean and the next action is obvious, but the raw hexadecimal error and vague “profile sync incomplete” message feel like an internal failure leaked into the UI.",
+        "walkthrough": {
+          "q1_would_try": "Yes. I want to create Zara’s book, and the dashboard appears to be the right place to start.",
+          "q2_notice_control": "Yes. The prominent orange “+ Create a new book” button is immediately visible.",
+          "q3_label_matches_goal": "Yes. “Create a new book” exactly describes the action I need to take."
+        },
+        "issues": [
+          {
+            "title": "Raw error code and vague sync warning",
+            "evidence": "“Error 0x80070057: profile sync incomplete.”",
+            "code": "H9",
+            "severity": 3,
+            "why_it_matters_to_me": "I cannot tell whether my family profile is incomplete, stale, or safe to use, and that uncertainty is especially unhelpful when I’m about to supply details about my child.",
+            "fix": "Replace the hexadecimal code with a plain-language message such as “We couldn’t refresh your saved profile. Your book has not been changed. Retry.” Add a working Retry control and explain which account details are affected.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Potential profile reliability and privacy uncertainty",
+            "evidence": "“profile sync incomplete” immediately after logging in",
+            "code": "TRUST",
+            "severity": 3,
+            "why_it_matters_to_me": "Before entering Zara’s details, I need confidence that the site isn’t working from stale or incomplete profile data and isn’t silently duplicating it.",
+            "fix": "Clearly state whether profile sync is required, whether data was saved, and whether the user can continue safely; provide retry and support options.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer text has very low contrast",
+            "evidence": "“Privacy”, “Terms”, “Contact” and “© 2026 StoryHearth Ltd.” appear extremely faint.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "I want easy access to the privacy and terms information before sharing my child’s information.",
+            "fix": "Use WCAG-compliant text contrast and a darker footer treatment while preserving the current restrained design.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The successful-login state is obvious.",
+          "The primary “+ Create a new book” action is prominent and clearly labelled.",
+          "The empty library is represented plainly rather than adding unnecessary onboarding."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 7
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 8
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Who's the star of the story?": {
+      "page_key": "127.0.0.1:8765/create.html | Who's the star of the story?",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 4,
+      "screenshot": "screenshots/step_04.jpg",
+      "observation": "The create-book flow has opened a character setup form. It asks for the child’s name, age, pronouns, appearance, plus a second character and their relationship; all fields are currently empty or left on default selections.",
+      "think_aloud": "This is a clean, compact form, but the default relationship of “Grandparent” is actively dangerous because I’m entering Dad. I’m also slightly annoyed that my saved profile hasn’t prefilled Zara, especially after the sync error. I’ll set the important visual details now and correct the relationship to Parent.",
+      "emotion": "annoyed",
+      "valence": -1,
+      "review": {
+        "page_name": "Create your book — characters",
+        "purpose": "Collect the main child and another character’s details before generating the personalised storybook.",
+        "what_is_happening": "The form presents fields for the child’s name, age, pronouns and appearance, followed by a second character’s name and relationship. The relationship currently defaults to “Grandparent,” and the other character’s description is not requested on this step.",
+        "first_impression": "Visually simple and easy to scan, but the preselected “Grandparent” relationship is a bad default, and the form does not explain how these details will affect character consistency.",
+        "walkthrough": {
+          "q1_would_try": "Yes, because this is the obvious setup step and the controls are all visible.",
+          "q2_notice_control": "Yes, I immediately noticed the textboxes, dropdowns and orange “Next” button.",
+          "q3_label_matches_goal": "Mostly. The child fields match my goal, but “Who else is in the story?” is vague about whether I can add a full name and appearance, and it provides no field for Dad’s appearance."
+        },
+        "issues": [
+          {
+            "title": "Wrong default relationship creates a contradictory character setup",
+            "evidence": "[11] Relationship is selected as “Grandparent” by default while the adjacent field says [10] “Who else is in the story?”",
+            "code": "H5",
+            "severity": 3,
+            "why_it_matters_to_me": "If I fail to notice and change it, the generator will model Dad as a grandparent rather than Zara’s father.",
+            "fix": "Use “Select…” as the initial relationship value and require an explicit choice before continuing.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "No description field for the second character",
+            "evidence": "[10] “Who else is in the story?” and [11] “Relationship” are the only controls for the second person; there is no appearance field.",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "I need Dad to be a tall man with short hair, a short beard and a grey jumper so he remains recognisable across pages.",
+            "fix": "Add an optional “What do they look like?” field for the second character.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer text and links have very low contrast",
+            "evidence": "The footer links “Privacy”, “Terms” and “Contact” appear extremely faint against the background.",
+            "code": "ACC",
+            "severity": 1,
+            "why_it_matters_to_me": "Privacy matters here because this concerns my child’s details, but the relevant link is hard to see and read.",
+            "fix": "Use WCAG-compliant text contrast and visibly increase the footer link contrast.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The primary fields and Next action are visible without scrolling.",
+          "Labels are mostly explicit and the form has a simple visual hierarchy.",
+          "The child’s appearance is optional, which suits quick setup."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Your story": {
+      "page_key": "127.0.0.1:8765/create.html | Your story",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 5,
+      "screenshot": "screenshots/step_05.jpg",
+      "observation": "The second step of the book creator asks for the setting, a special object, and the family memory. All three fields are empty, with Back and Next controls available.",
+      "think_aloud": "This is a sensible progression and the labels are clear. I’ll give the model the concrete setting, object, and memory rather than vague prompts, then generate the book and judge whether it actually follows them.",
+      "emotion": "curious",
+      "valence": 1,
+      "review": {
+        "page_name": "Story details",
+        "purpose": "Collect the setting, meaningful object, and source memory needed to generate a personalised story.",
+        "what_is_happening": "The form has three empty inputs: story location, special object, and a larger memory textarea. Back and Next controls sit below the fields.",
+        "first_impression": "Clean and focused. The three questions are immediately understandable, unlike the vague AI language on the landing page; the footer links are again extremely faint.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I want to supply the specific memory and see whether the generated book remains faithful to it.",
+          "q2_notice_control": "Yes, the fields are prominent and the orange Next button is the obvious primary control.",
+          "q3_label_matches_goal": "Yes. “Tell us the memory or idea behind your story” maps directly to what I need, while the first two fields are concise prompts rather than opaque AI terminology."
+        },
+        "issues": [
+          {
+            "title": "Footer navigation has very low contrast",
+            "evidence": "The footer labels “Privacy”, “Terms”, “Contact” and “© 2026 StoryHearth Ltd.” are rendered in extremely faint grey.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "The privacy link is important given that this flow involves a child’s appearance and family memories, but it is difficult to see or read.",
+            "fix": "Use WCAG-compliant text contrast for footer links and copyright text, ideally with a clearly visible focus and hover state.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The form is compact and avoids unnecessary explanation.",
+          "Visible labels clearly identify every input.",
+          "The large textarea supports a detailed memory prompt.",
+          "Back gives me control without abandoning the draft."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "Back preserves a corrupted truncated memory",
+          "evidence": "Textbox [18] still ends with “It matters because it was o” and has no character counter or truncation warning.",
+          "code": "H3",
+          "severity": 3,
+          "why_it_matters_to_me": "Returning to correct a field can leave the book prompt subtly wrong without making the loss obvious.",
+          "fix": "Store the full field value separately, restore it after Back, and display a live character counter plus a warning when content is truncated.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 0,
+            "verified": false
+          },
+          "step": 7
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    },
+    "127.0.0.1:8765/create.html | Choose the look & feel": {
+      "page_key": "127.0.0.1:8765/create.html | Choose the look & feel",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 6,
+      "screenshot": "screenshots/step_06.jpg",
+      "observation": "The book-creation flow has advanced to a “Choose the look & feel” step with reading-level radios, illustration-style radios, and Back/Next controls. The current defaults are “Lexile 200L–500L” and “Watercolour — soft and dreamy.”",
+      "think_aloud": "The controls are clear, but I caught a more important defect on the previous step: the memory field silently truncated my 304-character input to 200 and cut off the end. I’m going Back to fix that before generating, because faithful source material matters more than choosing a style now.",
+      "emotion": "annoyed",
+      "valence": -1,
+      "review": {
+        "page_name": "Reading level and illustration style",
+        "purpose": "Choose the intended reading difficulty and visual treatment before generating the storybook.",
+        "what_is_happening": "Four Lexile reading-level options and three illustration styles are presented as radio groups. Lexile 200L–500L and Watercolour are currently selected, with Back and Next buttons below.",
+        "first_impression": "Compact, uncluttered, and easy to scan. The explicit labels are good, though “Choose the look & feel” is broader than the actual controls on this step.",
+        "walkthrough": {
+          "q1_would_try": "Yes, after I have verified the truncated memory text.",
+          "q2_notice_control": "Yes, both radio groups and the Back/Next buttons are prominent.",
+          "q3_label_matches_goal": "Mostly. The style labels match, but “Choose the look & feel” is vague; I would rather it say “Reading level & illustration style.”"
+        },
+        "issues": [
+          {
+            "title": "Heading does not precisely describe the controls",
+            "evidence": "“Choose the look & feel”",
+            "code": "H2",
+            "severity": 1,
+            "why_it_matters_to_me": "It makes the configuration sound more extensive than the two visible settings.",
+            "fix": "Rename the heading to “Choose the reading level and illustration style.”",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "No explanation of Lexile bands for lay users",
+            "evidence": "“Lexile BR–200L”, “Lexile 200L–500L”, “Lexile 500L–800L”, and “Lexile 800L+”",
+            "code": "CONTENT",
+            "severity": 1,
+            "why_it_matters_to_me": "As a technical user I recognise Lexile, but a parent choosing for a seven-year-old should not need decoding knowledge to make the right choice.",
+            "fix": "Add plain-English age or reading-ability descriptions beside each Lexile range, such as “Early reader” and “Independent chapter-book reader.”",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The selected states are immediately visible.",
+          "Radio groups make it clear that only one reading level and one illustration style can be chosen.",
+          "Back and Next are clearly available.",
+          "The layout is restrained and free of promotional clutter."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "Story field silently truncates valid input",
+          "evidence": "The memory box now only shows 200 characters and the entered text ends with: “…favourite purple sock. It matters because it was o”",
+          "code": "H5",
+          "severity": 3,
+          "why_it_matters_to_me": "The site accepted my action and advanced without warning that it had altered the core source memory, which will directly degrade the generated story.",
+          "fix": "Show a live character counter before the limit, enforce the documented limit when input or submission begins, and block progression until the text fits or provide a non-destructive way to save longer text.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 0,
+            "verified": false
+          },
+          "step": 6
+        },
+        {
+          "title": "Truncation occurred after submission without feedback",
+          "evidence": "The typed 304-character value was accepted, but the box “only shows 200 characters” and the final sentence was cut off.",
+          "code": "H1",
+          "severity": 3,
+          "why_it_matters_to_me": "There is no visible system-status message saying that the story was shortened, so the site appears to have worked normally when it did not preserve what I entered.",
+          "fix": "After validation, show “Story shortened to 200 characters” beside an error and focus the truncated field; never silently alter submitted content.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 0,
+            "verified": false
+          },
+          "step": 6
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    },
+    "127.0.0.1:8765/create.html | Add a photo (optional)": {
+      "page_key": "127.0.0.1:8765/create.html | Add a photo (optional)",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 9,
+      "screenshot": "screenshots/step_09.jpg",
+      "observation": "The final creation step offers an optional child photo upload and a prominent “Create my book” action, with Back available. No file is selected, and the page provides no visible explanation of how a child’s photo would be stored, used for AI training, or deleted.",
+      "think_aloud": "I’m skipping the upload because it’s optional and this page gives me no privacy assurance for Zara’s image; I’d want that clarified before uploading. The final action is obvious, so I’ll create the book without a photo and judge whether the described text keeps her visually consistent.",
+      "emotion": "suspicious",
+      "valence": 0,
+      "review": {
+        "page_name": "Optional photo upload",
+        "purpose": "Allows the user to optionally upload a child photo before generating the personalised book.",
+        "what_is_happening": "The user is on the final creation step, with no photo chosen, and can go Back or create the book without one.",
+        "first_impression": "The layout is clean and the main button is obvious, but a child-photo uploader without a nearby privacy explanation is a red flag. I’m not comfortable uploading Zara’s image until I know how it is used and retained.",
+        "walkthrough": {
+          "q1_would_try": "I would click “Create my book” now, but not upload a photo without clearer data-handling information.",
+          "q2_notice_control": "Yes, the prominent “Create my book” button is immediately visible, and the optional file picker is also visible.",
+          "q3_label_matches_goal": "Yes, “Create my book” clearly matches my goal. The upload instruction also says the photo may help the illustrations resemble the child, though the claim is vague."
+        },
+        "issues": [
+          {
+            "title": "Child-photo privacy handling is not disclosed before upload",
+            "evidence": "The page says “Upload a clear photo of your child's face” but provides no nearby statement about training use, retention, third-party processing, or deletion.",
+            "code": "TRUST",
+            "severity": 3,
+            "why_it_matters_to_me": "This is my child’s biometric-adjacent personal data, and the site does not give me enough information to make an informed choice.",
+            "fix": "Place a concise privacy summary beside the uploader stating whether photos are used for model training, who can process them, where they are stored, how long they are retained, and how a user requests deletion.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "File upload has no accessible label",
+            "evidence": "[30] is shown as “file-upload (no label)” while the visible control only says “Choose file” and “No file chosen.”",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "An unlabelled native file control is harder to identify with assistive technology and gives the optional input no explicit context.",
+            "fix": "Add a visible or programmatically associated label such as “Child photo” and include accepted file types, maximum size, and basic photo guidance.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 2,
+              "verified": false
+            }
+          },
+          {
+            "title": "Likeness claim is vague and unsupported",
+            "evidence": "“Upload a clear photo of your child's face so the illustrations look like them.”",
+            "code": "CONTENT",
+            "severity": 1,
+            "why_it_matters_to_me": "I want to know what “look like them” means, especially because character consistency is the main quality issue I expect from this product.",
+            "fix": "State that the photo is used as visual reference for the generated child character and avoid implying guaranteed facial accuracy.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer links have very low contrast",
+            "evidence": "“Privacy”, “Terms”, and “Contact” appear extremely faint in the footer, while [13] and [14] show that relevant policies are linked there.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "The privacy link is especially important before uploading a child’s photo, but it is difficult to see.",
+            "fix": "Use the same dark body-text colour for footer links, verify WCAG contrast, and make keyboard focus states clearly visible.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The upload is clearly marked optional, so the journey is not forced to include a child’s photo.",
+          "“Create my book” is prominent and its label precisely describes the next action.",
+          "A visible Back button preserves user control before generation."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": "The missing privacy disclosure blocks uploading a child photo, but not creating a digital preview from the supplied written description."
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 1,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | ": {
+      "page_key": "127.0.0.1:8765/create.html | ",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 10,
+      "screenshot": "screenshots/step_10.jpg",
+      "observation": "The create page has switched to a loading state with an animated circular spinner inside a large bordered panel. Navigation and footer links remain visible, but there is no visible text explaining what is being generated or how long it may take.",
+      "think_aloud": "The click did trigger something, but this is weak system feedback. I can infer generation from the spinner and the context, yet the page gives me no status, progress, timeout expectation, or cancel control, so I’m going to wait briefly rather than assume it is broken.",
+      "emotion": "impatient",
+      "valence": -1,
+      "review": {
+        "page_name": "Book generation loading",
+        "purpose": "Process the submitted family-memory details and generate the personalised book.",
+        "what_is_happening": "The create form has been replaced by a generic animated spinner. No generated book or preview is available yet, and the page contains no visible generation message, progress indicator, estimated time, retry control, or cancel/back action.",
+        "first_impression": "The spinner is clean enough, but this is opaque and under-communicated. I know the product is probably generating because I clicked “Create my book”, but the interface has been stripped down to an ambiguous loop.",
+        "walkthrough": {
+          "q1_would_try": "Yes, but I would only wait for a short period without more context because the screen gives no confidence about progress.",
+          "q2_notice_control": "No relevant progress or cancel control is visible; only the animated spinner can be noticed.",
+          "q3_label_matches_goal": "No. There is no label or status message, so the visual does not tell me that my family story is being turned into pages, nor whether the optional-photo decision was accepted."
+        },
+        "issues": [
+          {
+            "title": "Loading state has no text or stage information",
+            "evidence": "The central bordered panel contains only an animated circular spinner.",
+            "code": "H1",
+            "severity": 2,
+            "why_it_matters_to_me": "I cannot tell whether it is generating the book, saving my truncated prompt, or stalled—especially after the earlier silent truncation and profile-sync error.",
+            "fix": "Show a live status such as “Creating Zara’s story” followed by discrete stages like “Building the story”, “Illustrating 8 pages”, and “Almost ready”, plus an estimated time.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "No cancel or back control while waiting",
+            "evidence": "No Cancel, Back, or “work in background” control appears beside the spinner.",
+            "code": "H3",
+            "severity": 2,
+            "why_it_matters_to_me": "I am trapped in an opaque state and cannot safely exercise browser navigation or recover if generation stalls.",
+            "fix": "Provide Cancel and Back controls, and explain whether cancelling preserves the entered story details.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 0,
+              "verified": false
+            }
+          },
+          {
+            "title": "Footer and inactive elements have extremely low contrast",
+            "evidence": "“Privacy”, “Terms”, “Contact”, and “© 2026 StoryHearth Ltd.” are rendered in barely visible pale grey.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "Even the privacy link relevant to Zara’s data is difficult to find and read.",
+            "fix": "Use WCAG AA contrast for footer text and links, including default and visited states.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The animation makes some feedback visible immediately.",
+          "The loading panel is visually restrained and does not add distracting marketing content.",
+          "Global navigation remains available, including “My books” and “Pricing”."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/book.html | The Magical Adventrue of Zara": {
+      "page_key": "127.0.0.1:8765/book.html | The Magical Adventrue of Zara",
+      "url": "http://127.0.0.1:8765/book.html",
+      "title": "Your storybook – StoryHearth",
+      "first_step": 11,
+      "screenshot": "screenshots/step_11.jpg",
+      "observation": "The generated 9-page digital preview has loaded, currently showing page 1 of 9: the cover of “The Magical Adventrue of Zara.” The illustration is a simple pop-art scene containing Zara, a rocket-like object, and a purple sock, with next-page and paid regeneration controls available.",
+      "think_aloud": "This is already off. Zara looks nothing like the girl I described—no black puffs, purple glasses, or astronaut hoodie—and the output says “Pop-art comic” even though I selected watercolour. The title has the typo “Adventrue,” the rocket looks like a house, and the purple object is reduced to a literal “J,” so I’m going to read all nine pages before judging it.",
+      "emotion": "frustrated",
+      "valence": -2,
+      "review": {
+        "page_name": "Generated storybook preview",
+        "purpose": "Present the generated nine-page storybook so the user can inspect every page before ordering a hardcover.",
+        "what_is_happening": "The completed preview is open on page 1 of 9. The cover contains a generated illustration and title; controls allow forward navigation, paid whole-book regeneration, and ordering a hardcover.",
+        "first_impression": "The player is easy to understand, but the first page fails the basic fidelity test: Zara’s defining appearance is absent, the style appears wrong, the title is misspelled, and the illustration is crude and semantically confused.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would read through all nine pages now because I need to judge consistency, faithfulness, and suitability for a seven-year-old.",
+          "q2_notice_control": "Yes, the right-arrow button and “1 / 9” counter are immediately visible.",
+          "q3_label_matches_goal": "The arrow clearly advances through the preview, but the labels “Regenerate entire book – $4.99” and “Order hardcover” do not reveal what can be edited locally before paying."
+        },
+        "issues": [
+          {
+            "title": "Generated protagonist does not match the supplied appearance",
+            "evidence": "The supplied description was “Black hair in two puffs, purple glasses, astronaut hoodie,” but the cover depicts a generic short-haired figure with no glasses or hoodie.",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "A personalised book where the named child does not look like the child is a fundamental failure, not a minor generation defect.",
+            "fix": "Use appearance constraints during every page generation and run a consistency check against each character profile before publishing the preview.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 0,
+              "verified": false
+            }
+          },
+          {
+            "title": "Output style contradicts the selected style",
+            "evidence": "The preview states “Illustration style: Pop-art comic,” while I selected watercolour on the look-and-feel step.",
+            "code": "H2",
+            "severity": 3,
+            "why_it_matters_to_me": "It shows that my explicit presentation choice is not being honoured, undermining confidence in the rest of the generation pipeline.",
+            "fix": "Pass the selected style into generation, label the result with the actual style used, and prevent previewing if output style validation fails.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Generated title contains an obvious misspelling",
+            "evidence": "The title reads “The Magical Adventrue of Zara” twice.",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "This looks unprofessional and is especially visible on a paid printed cover.",
+            "fix": "Run spelling and title validation before showing the cover, with a direct edit/regenerate-title option before purchase.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The central memory objects are visually misunderstood",
+            "evidence": "The cover shows what looks like a house with a rocket attached, while a standalone purple “J” is presented instead of clearly depicting a purple sock used as a flag.",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "The supplied cardboard rocket and favourite sock are central to our memory; generic or incorrect substitutes will make the book feel unlike us.",
+            "fix": "Preserve the specified object relationships and use targeted prompts plus image checks for “cardboard rocket,” “purple sock,” and “sock used as a flag.”",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "Only whole-book regeneration is exposed and it is paid",
+            "evidence": "[8] “Regenerate entire book – $4.99”",
+            "code": "H3",
+            "severity": 2,
+            "why_it_matters_to_me": "If one page has a bad face, object, or line of text, I should be able to edit or regenerate that page rather than paying to reroll everything.",
+            "fix": "Provide per-page regenerate and edit controls, show their cost before activation, and retain successful pages when another page is changed.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Hardcover price is not shown beside the order action",
+            "evidence": "[9] “Order hardcover” is visible only below the fold, while [8] shows a $4.99 regeneration price without context.",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "The prominent $4.99 can look like the book price, and I cannot compare print cost with regeneration cost from this view.",
+            "fix": "Keep the preview focused, then show a clear product summary and full hardcover price breakdown before checkout.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The 1-of-9 counter gives a clear indication of preview length.",
+          "Forward and backward navigation controls are easy to find.",
+          "The book can be inspected before navigating to checkout."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "Final-page sentence is incomplete",
+          "evidence": "“And from that day on, whenever Zara looked up at the sky, they would always remember”",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "The final sentence ends without stating what Zara remembers, so the book is visibly unfinished rather than polished.",
+          "fix": "Validate generated sentences for syntactic completion and regenerate or flag incomplete output before presenting the preview.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 12
+        },
+        {
+          "title": "Zara is referred to as “they” despite supplied she/her pronouns",
+          "evidence": "“whenever Zara looked up at the sky, they would always remember”",
+          "code": "CONTENT",
+          "severity": 2,
+          "why_it_matters_to_me": "Zara is my daughter and uses she/her, so getting this wrong personally damages trust in the personalisation.",
+          "fix": "Use the supplied child pronouns consistently in the generation prompt and post-generation checks.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 12
+        },
+        {
+          "title": "Final image remains inconsistent with the requested style",
+          "evidence": "The cover and final image are flat, outlined vector-style illustrations despite watercolour being selected.",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "The product has ignored an explicit presentation choice, so I cannot trust the style controls or pay $4.99 for regeneration based on vague claims.",
+          "fix": "Pass the selected style into every image-generation call and validate the resulting style before loading the book.",
+          "evidence_check": {
+            "quotes": 0,
+            "verified": null
+          },
+          "step": 12
+        },
+        {
+          "title": "Footer legal and contact links have very low contrast",
+          "evidence": "The footer labels “Privacy”, “Terms”, and “Contact” are rendered in extremely faint text against the white background.",
+          "code": "ACC",
+          "severity": 1,
+          "why_it_matters_to_me": "I can find the privacy information, but these are exactly the links I need when deciding whether to provide a child’s photo or purchase.",
+          "fix": "Use WCAG-compliant text and link contrast, with a clearly visible hover or focus state.",
+          "evidence_check": {
+            "quotes": 3,
+            "found": 3,
+            "verified": true
+          },
+          "step": 13
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 2,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 3
+    },
+    "127.0.0.1:8765/checkout.html | Checkout": {
+      "page_key": "127.0.0.1:8765/checkout.html | Checkout",
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "title": "Checkout – StoryHearth",
+      "first_step": 14,
+      "screenshot": "screenshots/step_14.jpg",
+      "observation": "The checkout shows the hardcover at £24.99, shipping and handling at £12.99, and a pre-selected £7.99 premium gift wrap, producing a £45.97 total. A 09:57 reservation timer is running, and address and payment fields are empty.",
+      "think_aloud": "There it is: £45.97, with gift wrap silently pre-selected. I’m unchecking that so I can see the genuine unavoidable cost, then I’ll inspect the rest of checkout without entering any personal or payment details.",
+      "emotion": "annoyed",
+      "valence": -1,
+      "review": {
+        "page_name": "Hardcover checkout",
+        "purpose": "Configure delivery and payment for a printed hardcover copy.",
+        "what_is_happening": "The page itemises the £24.99 hardcover and £12.99 shipping, with a £7.99 premium gift wrap option already checked, for a £45.97 total. It also collects an address and card details, while a 09:57 price-reservation timer runs.",
+        "first_impression": "The arithmetic is clear, but the default £7.99 add-on makes the total feel padded. At least there’s no hidden fee beyond the explicitly listed shipping and gift wrap.",
+        "walkthrough": {
+          "q1_would_try": "Yes, but only to inspect the cost; I would not pay for this book after the poor preview.",
+          "q2_notice_control": "Yes, the checked “Premium gift wrap” checkbox is immediately visible in the price summary.",
+          "q3_label_matches_goal": "The label and separate £7.99 price clearly describe the charge, although it should not have been selected by default."
+        },
+        "issues": [
+          {
+            "title": "Paid gift wrap is pre-selected by default",
+            "evidence": "[6] checkbox “Premium gift wrap” (checked), with “£7.99” added and “Total £45.97”.",
+            "code": "DECEPTIVE",
+            "severity": 3,
+            "why_it_matters_to_me": "I would have to notice and remove an extra service I did not ask for; the default total is £7.99 higher than necessary.",
+            "fix": "Default this optional add-on to unchecked and make any change update the total immediately with a short confirmation.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          },
+          {
+            "title": "Shipping cost is not qualified by destination or service",
+            "evidence": "“Shipping & handling £12.99” is shown before an address has been entered.",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "I cannot tell whether £12.99 is universal, a UK estimate, or one delivery tier, so I cannot judge the final landed cost confidently.",
+            "fix": "State what the charge covers, such as “UK standard tracked shipping,” and explain whether the amount changes after the address is entered.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Reservation countdown may create unnecessary urgency",
+            "evidence": "“Your price is reserved for 09:57” is presented prominently in red at the top.",
+            "code": "DECEPTIVE",
+            "severity": 1,
+            "why_it_matters_to_me": "It pressures me before I have even reviewed delivery terms or decided whether the generated book is worth buying.",
+            "fix": "Use neutral wording or omit the countdown until the user expresses clear intent to purchase, and explain exactly what expires.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The hardcover, gift wrap, shipping, and total are itemised visibly.",
+          "Prices are in pounds and the total arithmetic is correct.",
+          "The page does not request card details before showing the price."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "Artificial reservation countdown lacks context",
+          "evidence": "“Your price is reserved for 09:37”",
+          "code": "DECEPTIVE",
+          "severity": 2,
+          "why_it_matters_to_me": "It creates pressure to buy, but I cannot tell whether the price genuinely changes, whether the timer resets, or what happens when it reaches zero.",
+          "fix": "Explain exactly how long the price is guaranteed and what the price becomes afterwards; avoid urgency unless there is a real deadline.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 15
+        },
+        {
+          "title": "Footer links have very low contrast",
+          "evidence": "The bottom links “Privacy”, “Terms”, and “Contact” appear very faint against the white footer.",
+          "code": "ACC",
+          "severity": 2,
+          "why_it_matters_to_me": "The privacy and terms links are difficult to notice and read, particularly when I need to assess data handling before using the service.",
+          "fix": "Use WCAG-compliant link contrast and visible keyboard focus states.",
+          "evidence_check": {
+            "quotes": 3,
+            "found": 3,
+            "verified": true
+          },
+          "step": 15
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    },
+    "127.0.0.1:8765/privacy.html | Privacy notice": {
+      "page_key": "127.0.0.1:8765/privacy.html | Privacy notice",
+      "url": "http://127.0.0.1:8765/privacy.html",
+      "title": "Privacy – StoryHearth",
+      "first_step": 16,
+      "screenshot": "screenshots/step_16.jpg",
+      "observation": "The Privacy notice explains that StoryHearth processes names, stories, and uploaded photographs, but gives only vague statements about retention and technology partners. A short Terms section says previews are provided as-is and printed orders become non-refundable once production begins.",
+      "think_aloud": "This is technically worse than the sparse upload screen, because it confirms that Zara’s images may be retained and used to improve the service without defining how long they remain or who processes them. “May be processed by our technology partners” is not good enough for a child’s data, and “Digital previews are provided as-is” tries to disclaim the broken output I’ve just read.",
+      "emotion": "suspicious",
+      "valence": -2,
+      "review": {
+        "page_name": "Privacy notice",
+        "purpose": "Explain how StoryHearth handles account details, family stories, and uploaded child photographs, and present the associated terms.",
+        "what_is_happening": "I reached a standalone legal-information page. It acknowledges processing of names, stories, and photographs, states that uploaded images may be retained and handled by technology partners, and states that printed orders are non-refundable after production begins.",
+        "first_impression": "The page is clean and easy to scan, but it reads more like a disclaimer than a usable privacy notice. The retention wording, unspecified partners, and “as-is” preview term are exactly the wrong things to say about a child’s photos and a visibly faulty generated book.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would immediately look for retention, training use, deletion, processor, and rights details after being invited to upload Zara’s photo.",
+          "q2_notice_control": "Yes, the navigation and checkout both provided a visible “Privacy” link, and it led here.",
+          "q3_label_matches_goal": "The label “Privacy” matches what I wanted to inspect, but the page title “Privacy notice” overpromises the amount of actual notice supplied."
+        },
+        "issues": [
+          {
+            "title": "Child-photo retention period is undefined",
+            "evidence": "“Uploaded images may be retained to improve our services”",
+            "code": "TRUST",
+            "severity": 4,
+            "why_it_matters_to_me": "Zara is seven, and an undefined retention period for her photograph means I cannot meaningfully control how long the image or derived data is kept.",
+            "fix": "State a specific retention period for originals, generated derivatives, backups, and deleted-account data, and explain what happens when the account or book is deleted.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Secondary processing is vague",
+            "evidence": "“may be processed by our technology partners”",
+            "code": "TRUST",
+            "severity": 3,
+            "why_it_matters_to_me": "I cannot assess a child’s data if the recipients, purposes, locations, and safeguards are unknown.",
+            "fix": "Name the processing categories and vendors where practical, list their countries or transfer mechanism, and specify that partner access is limited to providing the service.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Use for service improvement is not distinguished from model training",
+            "evidence": "“retained to improve our services”",
+            "code": "TRUST",
+            "severity": 4,
+            "why_it_matters_to_me": "“Improve our services” could include human review, analytics, or model training. I would not upload a child’s image without an unambiguous prohibition or opt-in choice.",
+            "fix": "State plainly whether customer photos and generated images are used for AI training, human review, or product analytics. If they are, require an explicit opt-in and never bundle consent with book creation.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "No practical privacy rights or controls",
+            "evidence": "The notice contains no stated access, correction, deletion, portability, objection, or automated decision-making process.",
+            "code": "TRUST",
+            "severity": 3,
+            "why_it_matters_to_me": "I expect direct controls to remove Zara’s photographs and generated derivatives, rather than only an email contact.",
+            "fix": "Add direct account and book deletion controls, explain how to request a copy or correction of data, identify any legal exceptions, and provide a functioning privacy-request channel.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "The legal page conflates privacy and commercial terms",
+            "evidence": "The same page shows “# Privacy notice” and “## Terms,” with [7] “Terms” linking to /privacy.html#terms.",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "A short commercial disclaimer attached to privacy information makes both subjects easier to skim and less trustworthy.",
+            "fix": "Separate privacy information from full terms of sale, with distinct pages and clear headings.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          },
+          {
+            "title": "Faulty-output liability is disclaimed too broadly",
+            "evidence": "“Digital previews are provided as-is.”",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "A generated preview with a misspelled title, mismatched style, inconsistent character, and broken final sentence should not be treated as categorically exempt from correction or review.",
+            "fix": "Explain that customers can review, regenerate, edit, or report errors before ordering, and that printing is based on the version the customer approves.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Low-contrast footer text",
+            "evidence": "The footer links “Privacy,” “Terms,” “Contact,” and “© 2026 StoryHearth Ltd.” appear very faint against the white background.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "The legal and contact information is harder to read and the footer controls are less obviously interactive.",
+            "fix": " Use WCAG AA contrast, a visible hover/focus state, and adequately sized footer links.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page is plainly labelled and the navigation action worked.",
+          "It explicitly acknowledges that names, stories, and uploaded photographs are processed rather than claiming there is no collection.",
+          "The content is concise enough to scan quickly."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": "I have already completed the required journey, but I would definitely avoid uploading Zara’s photo or buying while the retention and training language remains this ambiguous."
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 6
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 7
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 8
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    }
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Zara"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "7"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "Black hair in two puffs, purple glasses, astronaut hoodie"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Dad (Daniel)"
+    },
+    {
+      "field": "Relationship",
+      "action": "select",
+      "value": "Parent"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "The living room, where we built a cardboard rocket from boxes during a thunderstorm"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "A purple sock used as a flag"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Zara and her dad built a cardboard rocket in the living room during a thunderstorm and \"flying\" it to the Moon, where they plant a flag made from her favourite purple sock. It matters because it was one of our favourite shared adventures and Zara felt brave enough to imagine travelling to space with me.",
+      "truncated_to": 200
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "captures": [
+    {
+      "label": "auto: The Magical Adventrue of Zara",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_01/view_00.jpg",
+        "artifacts/capture_01/view_01.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_01/img_00.jpg",
+          "alt": "Cover",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_01",
+      "text_chars": 317
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 2",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_03/view_00.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_03",
+      "text_chars": 250
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 3",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_04/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_04/img_00.jpg",
+          "alt": "Zara at The living room, where we built a cardboard rocket from boxes during a thunderstorm",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_04",
+      "text_chars": 425
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 4",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_05/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_05/img_00.jpg",
+          "alt": "Zara looking at the evening sky",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_05",
+      "text_chars": 385
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 5",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_06/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_06/img_00.jpg",
+          "alt": "Zara outside",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_06",
+      "text_chars": 363
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 6",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_07/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_07/img_00.jpg",
+          "alt": "Zara and Uncle Bartholomew",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_07",
+      "text_chars": 346
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 7",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_08/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_08/img_00.jpg",
+          "alt": "Zara in the dark woods",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_08",
+      "text_chars": 356
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 8",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_09/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_09/img_00.jpg",
+          "alt": "Zara going home",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_09",
+      "text_chars": 426
+    },
+    {
+      "label": "The Magical Adventrue of Zara page 9",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_10/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_10/img_00.jpg",
+          "alt": "The End",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_10",
+      "text_chars": 301
+    },
+    {
+      "label": "auto: Checkout",
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "views": [
+        "artifacts/capture_13/view_00.jpg",
+        "artifacts/capture_13/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_13",
+      "text_chars": 303
+    }
+  ],
+  "output_reactions": [
+    {
+      "step": 11,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "The cover is a poor match: wrong-looking Zara, wrong style, misspelled title, a dubious rocket, and a purple “J” rather than a clearly recognisable sock. I need to inspect all remaining pages for consistency and faithfulness before deciding whether this is merely bad or completely unusable."
+    },
+    {
+      "step": 12,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "I finished all nine pages and the result is not print-worthy: the title is misspelled, Zara changes or loses her defining features, Dad and the requested cardboard-rocket memory are weakly represented, the chosen watercolour style was ignored, and the final sentence is incomplete. I would not order this for Zara."
+    },
+    {
+      "step": 13,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "I would not print this as written. The nine-page result misses the supplied character details and special object, contradicts the selected watercolour style, and ends with the incomplete sentence: “And from that day on, whenever Zara looked up at the sky, they would always remember”. The title also misspells “Adventure” as “Adventrue”."
+    },
+    {
+      "step": 14,
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "reaction": "The checkout confirms that the flawed generated book, “The Magical Adventrue of Zara,” would cost £37.98 before the unwanted gift wrap, or £45.97 as presented. I still would not buy this output."
+    }
+  ],
+  "abandonment": null,
+  "final_summary": "Created and reviewed the complete nine-page personalised book, checked the privacy notice, and verified the unavoidable hardcover cost of £37.98 (£24.99 book plus £12.99 shipping) after removing the pre-selected £7.99 gift wrap. No payment was made.",
+  "waits": [
+    {
+      "step": 10,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "duration_s": 249.7,
+  "env": {
+    "http_errors": [],
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "page_loads": [
+      {
+        "url": "http://127.0.0.1:8765/",
+        "seconds": 1.03
+      }
+    ],
+    "captcha": []
+  }
+}

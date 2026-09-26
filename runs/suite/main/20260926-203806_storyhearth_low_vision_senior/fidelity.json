@@ -1,0 +1,48 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "The participant stays focused on making a suitable book for Lily about Conker, inspecting all nine pages and checking the final cost rather than exploring unrelated features (steps 1, 10–15)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "He gathers substantial information before acting: he reads the form prompts, checks that entered details remain, rewrites the memory to fit the limit, verifies the illustration choice, reviews every page, and checks checkout charges and totals (steps 4–15)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "He is cautious about unfamiliar or technical language and often seeks reassurance, such as worrying that “Profile sync incomplete” means he did something wrong (steps 1, 3, 8). However, he generally persists independently and rarely blames himself, which is somewhat stronger than the specified low self-efficacy facet."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "He avoids irreversible or unclear consequences throughout: he leaves payment details blank, unticks the unrequested gift wrap, checks the total, and does not press “Pay now” (steps 13–15). He also avoids the optional photo upload and is wary of unexplained technical messages."
+    },
+    "learning_style": {
+      "score": 4,
+      "why": "He follows the process sequentially, using the form as a set of steps, checking that information is preserved after going back, and moving carefully through reading level, illustrations, generation, and checkout (steps 4–10). The process orientation is strong, though the participant does not always explicitly request step-by-step instructions."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The speech is slow, plain-spoken and consistently uses Harold’s practical workshop perspective, with phrases such as “like filling in the details on a drawing,” “climbing a ladder,” “measure,” and “another cut of the workshop” (steps 1, 4, 6, 13). It sounds like him, although some thoughts are somewhat polished or incomplete because of truncation."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific: he is creating a gift for Lily, uses the exact Conker memory, identifies his shed and the Norfolk fields, and reflects on his 200% zoom, visual limitations, desire for independence, and long experience measuring and making things (steps 1, 4–7, 11–15)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural and grounded in the supplied life details rather than relying on broad stereotypes. Some accessibility difficulties are conveniently repeated across many steps, but the concrete reasoning and workshop language keep it from feeling excessively exaggerated.",
+    "examples": [
+      "Repeatedly naming pale or faint text as difficult to read across the home page, forms, preview, and checkout.",
+      "Using the same “workshop,” “cut,” and “ladder” metaphors in several reflections."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 2,
+    "why": "There is little direct knowledge leakage: Harold does not use hidden URLs, developer terminology, or claims of advanced software expertise. The main mild issue is his confident interpretation of “Lexile BR–200L” as the appropriate starting level for a four-year-old despite describing Lexile as unfamiliar (step 8), though this could plausibly come from the visible options or prior guidance."
+  },
+  "realism_overall": {
+    "score": 4,
+    "why": "The sequence is plausible for a cautious older user with central vision loss: he can complete a lengthy form with persistence, but notices contrast, small controls, technical errors, generated-content mistakes, and unexpected charges. The main slight weakness is that he completes a fairly complex workflow with very little need for assistance, despite his low confidence with unfamiliar software."
+  }
+}

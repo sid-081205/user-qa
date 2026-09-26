@@ -1,0 +1,182 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "The idea was useful, but the finished story and checkout made me unlikely to use it again.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The form was short, but the jargon, wrapped navigation and unclear errors made it feel more complicated than it needed to be.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "Creating the book was fairly quick, but the preview and checkout were frustrating to use.",
+      "rating": 3
+    },
+    {
+      "item": 4,
+      "reason": "I could manage the basic process without technical help.",
+      "rating": 1
+    },
+    {
+      "item": 5,
+      "reason": "The main steps followed each other, but the selected style did not carry through to the book.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The wrong style, spelling mistakes, broken text and inconsistent details made the site feel unreliable.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people could get started quickly, although the confusing story output and checkout would need fixing.",
+      "rating": 3
+    },
+    {
+      "item": 8,
+      "reason": "It became awkward when I had to check every page before seeing the price and remove the unwanted gift wrap.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I was confident filling in the basic details, but the errors and checkout made me hesitant overall.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not need to learn much to complete the form, just deal with several unclear or broken details.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 6
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 5
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 4
+    }
+  ],
+  "nps": 1,
+  "interview": {
+    "purpose": "It is for making a personalised birthday storybook with your child as the main character. I can imagine it being useful for parents looking for a quick, meaningful present.",
+    "worst_moment": "The generated book was the worst moment. I chose crayon style and got pop-art artwork, the title was misspelled, the story was frightening and unrelated in places, and the final sentence stopped halfway through.",
+    "best_moment": "The best moment was entering Aarav's details, Rory, Abbey Park and the cloud-shape memory. That part felt quick and exciting because I could see a real birthday present taking shape.",
+    "abandon": "I would probably have abandoned it at the preview. Reading nine pages only to find the important memory missing, with errors and a price hidden at the end, is too much effort for a present.",
+    "missing": "I expected Meera to be included and the birthday memory to be the heart of the story. I also needed the final price before spending all that time creating the book, and a clear explanation of the photo privacy.",
+    "trust": "I was happy to enter the fictional family details, but I would not have trusted it with a child's photo without clear privacy information. The unexplained profile sync error and misleading gift-wrap selection also made me cautious.",
+    "willingness_to_pay": "Not for this version. Even a basic finished book would need to be around £25 including delivery to feel fair, and I would pay more only if the story really captured our memory, looked like the chosen style, and had no obvious errors.",
+    "output_verdict": "It was recognisably about Aarav, but it felt like an unproofed draft rather than a keepsake. I would be too disappointed and embarrassed to give it to him for his birthday."
+  },
+  "recommendations": [
+    {
+      "change": "Rewrite the story around the supplied memory, with Aarav teaching Meera to find shapes in the clouds at Abbey Park on his fifth birthday.",
+      "page": "Generated storybook preview",
+      "why": "This is the personal part I wanted to buy. The current story leaves out Meera and turns the memory into something unrelated.",
+      "priority": "high"
+    },
+    {
+      "change": "Proofread the title and every page: fix “Adventrue”, “Aara”, possessives, pronouns, repeated text and the unfinished final sentence.",
+      "page": "Generated storybook preview",
+      "why": "The obvious mistakes make the present feel cheap and made me question whether the rest could be trusted.",
+      "priority": "high"
+    },
+    {
+      "change": "Match the generated artwork to the selected crayon style and keep Aarav, Meera and Rory visually consistent.",
+      "page": "Generated storybook preview",
+      "why": "The pictures are part of the gift. Getting pop-art instead of crayon, with generic characters, was disappointing.",
+      "priority": "high"
+    },
+    {
+      "change": "Use short, concrete sentences suitable for a five-year-old and remove frightening or unrelated events such as the threatening woods and storm.",
+      "page": "Generated storybook preview",
+      "why": "I need something gentle and readable for Aarav, not difficult vocabulary or a scary plot.",
+      "priority": "high"
+    },
+    {
+      "change": "Never pre-select premium gift wrap, and show the full price including delivery before I start creating the book.",
+      "page": "Home page and Hardcover checkout",
+      "why": "I need to know what it costs before spending ten minutes on a present. A £45.97 total with gift wrap already ticked felt like a trap.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain what the paid regeneration button changes, how much it costs, and whether it is the only way to fix mistakes.",
+      "page": "Generated storybook preview",
+      "why": "I would not pay £4.99 without knowing what would improve, especially when the basic output was already wrong.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove the unexplained profile sync error or explain plainly whether any details were affected.",
+      "page": "My books dashboard",
+      "why": "An error after a successful login immediately makes me wonder whether my account or family details are safe.",
+      "priority": "high"
+    },
+    {
+      "change": "Add clear privacy reassurance before the optional photo upload, including how the photo is used, stored and deleted.",
+      "page": "Optional photo upload",
+      "why": "A child's photo is much more sensitive than basic story details, so I need to know what happens to it.",
+      "priority": "high"
+    },
+    {
+      "change": "Make the phone navigation fit properly and keep menu items on predictable lines.",
+      "page": "All mobile pages",
+      "why": "The wrapped navigation looks broken on my small phone and makes the site feel less trustworthy.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace jargon with plain language and give a short explanation beside the reading-level choices.",
+      "page": "Home page and Reading level and illustration",
+      "why": "“Multimodal generative narrative engine” means nothing to me, and I had to guess what the reading-level labels meant.",
+      "priority": "medium"
+    },
+    {
+      "change": "Make the next-page control a clearly labelled button and keep the gift-wrap checkbox attached to its label.",
+      "page": "Generated storybook preview and Hardcover checkout",
+      "why": "I use my phone one-handed, so unclear controls are easy to tap in the wrong place.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "Quick to start and full of promise, but the unfinished, inaccurate story and sneaky checkout mean I would not give this to Aarav.",
+  "sus_score": {
+    "score": 45.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.4,
+    "mean_negative_items": 2.8,
+    "inconsistent_pairs": 1,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -1.0,
+    "hedonic": 1.0,
+    "overall": 0.0
+  }
+}

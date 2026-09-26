@@ -1,0 +1,3704 @@
+{
+  "status": "done",
+  "steps": 30,
+  "site_model": {
+    "what_it_is": "A signed-in library of family storybooks created from supplied memories.",
+    "who_it_is_for": "People who want to turn family memories into personal illustrated storybooks.",
+    "value_proposition": "Creates a keepsake storybook with scenes and illustrations based on a family memory.",
+    "main_tasks": [
+      "Open an existing storybook",
+      "Review and edit its scenes",
+      "Continue to personalisation, preview, PDF, or export",
+      "Create another storybook"
+    ],
+    "pricing_model": "The header shows a balance of $4.00 in credits, but this page does not explain what the balance can buy or what further output may cost.",
+    "trust_signals": [
+      "I remain signed in",
+      "The saved storybook is labelled with a style, scene count, and creation time",
+      "The credit balance is visible in the header"
+    ],
+    "fit_for_me": "This is directly relevant because it provides access to the family storybook I previously made and should let me continue personalising it before creating a preview or export."
+  },
+  "pages": {
+    "ourlegacy.family/storybooks | My Storybooks": {
+      "page_key": "ourlegacy.family/storybooks | My Storybooks",
+      "url": "https://ourlegacy.family/storybooks",
+      "title": "My Storybooks | OurLegacy",
+      "first_step": 1,
+      "screenshot": "screenshots/step_01.jpg",
+      "observation": "The signed-in “My Storybooks” page lists one saved storybook, “Grandpa’s Blue Kite,” with a watercolor cover, 10 scenes, and a creation time. The page also shows $4.00 credits, a “Create New” button, and a “Storybook options” control.",
+      "think_aloud": "I can see the book I made last time, and its title is immediately recognisable. I want to open “Grandpa’s Blue Kite” to go to its final output or export step and see what can be corrected before I spend any credits or money.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "My Storybooks",
+        "purpose": "Provides access to storybooks already created in the account.",
+        "what_is_happening": "The page shows one saved item, “Grandpa’s Blue Kite,” represented by a watercolor cover. Its card says “Waterbook,” “10 scenes,” and “22 minutes ago,” with a separate three-dot “Storybook options” control.",
+        "first_impression": "This is pleasantly clear and familiar. The book title and cover stand out, although the style label “Waterbook” sounds as though it may be a spelling mistake.",
+        "walkthrough": {
+          "q1_would_try": "Yes. I want to reopen the storybook to continue to its remaining step.",
+          "q2_notice_control": "Yes. The title “Grandpa’s Blue Kite” is presented as a link, both in the card text and twice in the underlying controls.",
+          "q3_label_matches_goal": "Yes. The storybook title clearly identifies the item I made last time, although the repeated links are unnecessary."
+        },
+        "issues": [
+          {
+            "title": "The illustration style is labelled with a questionable word",
+            "evidence": "The card says “Waterbook”; the screenshot appears to show “Waterbook,” while the page text reports “Watercolor.”",
+            "code": "CONTENT",
+            "severity": 1,
+            "why_it_matters_to_me": "I notice spelling and wording errors, and this makes the otherwise polished site look less carefully made.",
+            "fix": "Correct the style label to “Watercolor” and ensure the label is generated from an approved list of style names.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 1,
+              "verified": false
+            }
+          },
+          {
+            "title": "The meaning of the $4.00 balance is not explained",
+            "evidence": "The header shows “$4.00” linking to billing, but the storybook card does not say whether this is a credit balance, what it covers, or whether export is included.",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "Before using a new website’s output or export step, I need to know exactly what is paid for and whether I could be surprised by a cost later.",
+            "fix": "Label the balance clearly, such as “$4.00 story credits,” and state on the storybook card what actions are included and what further actions cost.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The three-dot options control lacks a visible name",
+            "evidence": "[9] button “Storybook options” appears only as a vertical three-dot mark in the card.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "I cannot see what the dots offer, so I would be cautious about opening them because the consequences are unclear.",
+            "fix": "Give the control a visible “Options” label as well as an accessible name, and open a clearly titled menu that explains the available actions.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page has a clean, calm layout with strong contrast and large readable text.",
+          "The storybook title and cover are easy to recognise.",
+          "The card provides useful basic status information: style, scene count, and creation time.",
+          "There is a clear route to reopen the existing storybook."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 1,
+        "small_targets": 0,
+        "low_contrast_texts": 1,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "|",
+              "ratio": 1.26,
+              "font_px": 14
+            }
+          ],
+          "unnamed_controls": [
+            {
+              "id": 4,
+              "role": "button",
+              "tag": "button"
+            }
+          ],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148 | Grandpa's Blue Kite": {
+      "page_key": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148 | Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "title": "Review Storybook | OurLegacy",
+      "first_step": 2,
+      "screenshot": "screenshots/step_02.jpg",
+      "observation": "The Review Storybook page displays “Grandpa’s Blue Kite” as complete, with ten illustrated scenes arranged in a two-column page. The “Export Storybook” button is visible at the top, and each scene has an “Options for Scene” button; the visible text and pictures still contain the incorrect invented Grandpa story rather than my daughter’s requested family relationships.",
+      "think_aloud": "I can see that my book has opened for review, but I am still disappointed by the story itself. Scene 1 says “Grandpa’s daddy” and shows a man and a child, which is not the memory I gave. Before exporting, I want to see what the scene options actually allow me to change, especially the family names and the pictures.",
+      "emotion": "frustrated",
+      "valence": -1,
+      "review": {
+        "page_name": "Review Storybook",
+        "purpose": "Review the completed storybook, edit individual scenes, and proceed to export or output.",
+        "what_is_happening": "The storybook is marked Complete and the page shows ten scene cards with text and illustrations. A prominent Export Storybook link is available, while each scene has a separate options button for possible changes.",
+        "first_impression": "The page is neat and easy to scan, and the storybook has clearly reopened. However, seeing “Grandpa’s Blue Kite” and the first scenes immediately reminds me that the important family relationships are still wrong.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would try opening the options for the first scene because I need to correct the people and relationships before making an export.",
+          "q2_notice_control": "Yes, I noticed the “Options for Scene 1” button above the first scene.",
+          "q3_label_matches_goal": "Partly. “Options for Scene 1” tells me there are controls, but it does not tell me whether I can change the wording, the people, or the illustration."
+        },
+        "issues": [
+          {
+            "title": "The story has the wrong family relationships",
+            "evidence": "Scene 1 text: “One summer, Grandpa’s daddy made something very special.” Scene 2 text: “Grandpa and his daddy carried it up the big windy hill...”",
+            "code": "CONTENT",
+            "severity": 4,
+            "why_it_matters_to_me": "This is not my family’s memory. My father made the kite, I was the child, and Oliver is my grandson; this version invents a different family history.",
+            "fix": "Allow the text in every scene to be edited directly, and clearly show which changes are saved before export.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "The scene options do not explain what can be changed",
+            "evidence": "The control is labelled only “Options for Scene 1”.",
+            "code": "H2",
+            "severity": 2,
+            "why_it_matters_to_me": "I do not know whether “Options” means changing words, changing the picture, or starting again. I need a clear description before I click.",
+            "fix": "Label the controls with the exact actions, such as “Edit text” and “Edit illustration”, and state whether a credit will be used.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The first visible illustration does not represent the requested characters",
+            "evidence": "The Scene 1 image shows a child and an adult man, while the requested memory is Margaret as a child with her father and the present-day story should feature Oliver and Grandma Maggie.",
+            "code": "CONTENT",
+            "severity": 4,
+            "why_it_matters_to_me": "I want this to be a personal keepsake for Oliver, not a book about a different family.",
+            "fix": "Provide a visible character-correction tool or a scene-level redraw option, with the requested relationships and appearances clearly repeated in the editing instructions.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "The review page gives no warning that the output may still be incorrect",
+            "evidence": "The book is labelled “Complete” even though the visible text begins with “Grandpa’s daddy” and contradicts the requested family story.",
+            "code": "H5",
+            "severity": 3,
+            "why_it_matters_to_me": "“Complete” makes me think the site has finished correctly, when the most important parts still need attention.",
+            "fix": "Do not imply completion until the user has reviewed the story, or show a clear reminder that the generated relationships and illustrations should be checked before export.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The title and “Complete” status are easy to find.",
+          "The scene cards make the text and pictures easy to compare.",
+          "There is a clearly visible “Export Storybook” control.",
+          "The page has a clean layout with readable text and good contrast."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "Saved text is not reflected on the review page",
+          "evidence": "Scene 1 displays “One summer, Grandpa’s daddy made something very special.” after Save",
+          "code": "H9",
+          "severity": 3,
+          "why_it_matters_to_me": "I cannot tell whether my correction was lost or whether I have misunderstood the editing process, and the book would still contain the wrong family relationship.",
+          "fix": "Show a clear “Text updated” confirmation and immediately display the new sentence after saving; if saving failed, explain why and keep my typed text in the box.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 5
+        },
+        {
+          "title": "Scene 1 illustration still contradicts the requested memory",
+          "evidence": "The Scene 1 image shows a man and a young child, and the scene text still identifies “Grandpa’s daddy”",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "This is supposed to be my memory of my father making the kite for me as a child, so the picture must show that relationship clearly.",
+          "fix": "Provide an image-editing or regeneration control that can specifically correct the people and relationship, then show a preview before replacing the illustration.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 5
+        },
+        {
+          "title": "Image change instruction does not explain the character identities",
+          "evidence": "The text box only says “Describe what to change” and the example is “Make the sky more blue, add a rainbow in the background...”",
+          "code": "CONTENT",
+          "severity": 2,
+          "why_it_matters_to_me": "I need to correct the family relationships, not merely the colours. I am wary of relying on the picture generator unless I can clearly state who each person is.",
+          "fix": "Include examples showing that people can be described by their relationships and appearance, for example “Show Grandma Maggie as the little girl and her father making the kite.”",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 2,
+            "verified": true
+          },
+          "step": 7
+        },
+        {
+          "title": "No visible indication of the credit cost of updating an image",
+          "evidence": "The “Update Image” button is visible beside the instruction box, but no cost is shown.",
+          "code": "VALUE",
+          "severity": 2,
+          "why_it_matters_to_me": "I only have $4.00 in free credits, and I do not want to discover that an update consumes more than I expected.",
+          "fix": "State the credit cost beside the Update Image button, or explain it before the update is confirmed.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 7
+        },
+        {
+          "title": "Image update gave no clear success message",
+          "evidence": "After using “Update Image,” the page only showed a new Scene 1 picture and [34] “2 versions”; there was no message such as “Image updated” or explanation of the selected version.",
+          "code": "H1",
+          "severity": 2,
+          "why_it_matters_to_me": "I cannot tell whether the site saved my requested change or merely created another version, and I do not know which picture will be used.",
+          "fix": "After regeneration, show a clear confirmation, identify the currently selected version, and offer a simple comparison of all versions with Keep selected.",
+          "evidence_check": {
+            "quotes": 3,
+            "found": 1,
+            "verified": false
+          },
+          "step": 8
+        },
+        {
+          "title": "The revised image does not visibly retain an identifiable child",
+          "evidence": "The regenerated Scene 1 shows an unidentified little girl with my father; the child has no short silver hair, round glasses, or blue cardigan, although those adult traits were unnecessarily included in my instruction.",
+          "code": "CONTENT",
+          "severity": 1,
+          "why_it_matters_to_me": "The family relationship is now more plausible, but the child could be any little girl and there is no visible feature tying her to me.",
+          "fix": "Preserve a recognisable likeness from the original memory or earlier version when possible, while correctly understanding that the child is a younger version of Grandma Maggie.",
+          "evidence_check": {
+            "quotes": 0,
+            "verified": null
+          },
+          "step": 8
+        },
+        {
+          "title": "The image-version control lacks a simple descriptive label",
+          "evidence": "[34] is exposed as a long instruction beginning “Scene 1 image, version 2 of 2. Show Grandma Maggie as the little girl with short silver hair…” rather than simply as the image itself.",
+          "code": "ACC",
+          "severity": 2,
+          "why_it_matters_to_me": "I can see the picture and the version tabs, but the long technical description makes the control unnecessarily difficult to understand.",
+          "fix": "Use a concise accessible name such as “Version 2 of 2 for Scene 1,” with the full generation instruction in supporting information rather than as the control name.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 9
+        },
+        {
+          "title": "The revised instruction was contradictory for a childhood scene",
+          "evidence": "The Scene 1 image description says “Show Grandma Maggie as the little girl with short silver hair, round glasses and a blue cardigan”.",
+          "code": "CONTENT",
+          "severity": 2,
+          "why_it_matters_to_me": "As a little girl I would not have had present-day silver hair, glasses, or the same cardigan, so this wording produced a visually generic child rather than a consistent representation of me.",
+          "fix": "Let me distinguish childhood appearance from present-day appearance and offer a simple instruction template, such as “Margaret as a little girl in period clothes; Grandma Maggie today with silver hair, round glasses, and a blue cardigan.”",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 9
+        },
+        {
+          "title": "Scene 2 picture has the wrong child",
+          "evidence": "Scene 2 image shows a young boy with my father, while the corrected text says “My father and I carried it.”",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "I was the little girl in this memory, so the current picture changes the family story and would be upsetting to Oliver.",
+          "fix": "Regenerate Scene 2 with my father carrying the blue kite and little Margaret accompanying him on the hill behind the farmhouse.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 13
+        },
+        {
+          "title": "Scene 1's accessible description is incomplete and confusing",
+          "evidence": "The Scene 1 image control is described as “Scene 1 image, version 2 of 2. Show Grandma Maggie as the little girl with short silver hair, round glasses and a blue cardigan, even though”",
+          "code": "ACC",
+          "severity": 2,
+          "why_it_matters_to_me": "The description cuts off after “even though”, so I cannot understand what the current image is meant to show, and this makes the picture less clear to anyone using assistive technology.",
+          "fix": "Provide a complete, concise alternative description of the current picture, followed by a separate description of the requested change.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 14
+        },
+        {
+          "title": "Scene 2 image still does not show little Margaret",
+          "evidence": "Scene 2's displayed picture shows a man and a child who appears to be a boy, while the text says 'My father and I'.",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "This memory is about my father and me as a child, so a boy in the picture changes the family story.",
+          "fix": "Use Scene 2's image-edit control to specify that the child is little Margaret, with my father, carrying the blue kite on the windy hill.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 15
+        },
+        {
+          "title": "Scene 2 image still shows the wrong child",
+          "evidence": "Scene 2 image, version 2 of 2: the child visibly appears to be a boy, while the corrected text says “My father and I”.",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "The family story is about my father and me when I was a little girl, so this picture makes the book feel like someone else’s story.",
+          "fix": "Regenerate the image with an explicit instruction that the child is a little girl, not a boy, and that she is carrying the kite with her father.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 16
+        },
+        {
+          "title": "Later scenes retain the original incorrect relationships",
+          "evidence": "Scene 3: “Grandpa’s daddy threw the kite…”; Scene 5: “Now Grandpa was old…”; Scene 8: “Grandpa helped Oliver…”",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "I need the whole book to tell my family’s story, not a version about an invented grandfather and his father.",
+          "fix": "Edit each remaining scene individually to identify my father and me in the past, and Grandma Maggie with Oliver in the present.",
+          "evidence_check": {
+            "quotes": 3,
+            "found": 3,
+            "verified": true
+          },
+          "step": 16
+        },
+        {
+          "title": "The remaining scenes still contain the wrong family story",
+          "evidence": "Scene 3 says “Grandpa's daddy threw the kite up into the wind,” Scene 4 says “Grandpa's daddy showed him how to hold the string,” and Scene 5 says “Now Grandpa was old — and he had a grandson of his own.”",
+          "code": "CONTENT",
+          "severity": 4,
+          "why_it_matters_to_me": "These sentences still make my father into an invented grandfather and remove me from the memory. The book is not a keepsake for my family until these relationships are corrected.",
+          "fix": "Edit every remaining scene's text to identify my father, little Margaret, present-day Grandma Maggie and Oliver correctly.",
+          "evidence_check": {
+            "quotes": 3,
+            "found": 3,
+            "verified": true
+          },
+          "step": 17
+        },
+        {
+          "title": "The output remains unsuitable while the later scenes are unchanged",
+          "evidence": "Scenes 3–10 are still marked with the old story text, including “Grandpa” and “Grandpa's daddy.”",
+          "code": "VALUE",
+          "severity": 4,
+          "why_it_matters_to_me": "I would be spending time and possibly free credits on a book that does not represent the family memory I want to pass on.",
+          "fix": "Provide a clear warning or validation before Export Storybook that scenes may still need editing, and allow each scene to be reviewed before export.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 2,
+            "verified": true
+          },
+          "step": 17
+        },
+        {
+          "title": "Later scenes still contain incorrect family relationships",
+          "evidence": "Scene 3 says “Grandpa’s daddy threw the kite”; Scene 4 says “Grandpa’s daddy showed him how to hold the string”; Scene 5 says “Grandpa was old”; Scene 8 says “Grandpa helped Oliver hold the string.”",
+          "code": "CONTENT",
+          "severity": 4,
+          "why_it_matters_to_me": "This is the central family history I want to pass on. These sentences make my father into an invented grandfather and remove the child-me, Margaret, from the story.",
+          "fix": "Correct Scenes 3–8 so my father is the maker, I am the child, Oliver is my grandson, and I am present with him in the present-day scenes.",
+          "evidence_check": {
+            "quotes": 4,
+            "found": 4,
+            "verified": true
+          },
+          "step": 18
+        },
+        {
+          "title": "The output step is not clearly explained",
+          "evidence": "The control is labelled “Export Storybook,” but no visible text explains whether it will create a preview, a PDF, or both, or whether it will use the current selected versions.",
+          "code": "H2",
+          "severity": 2,
+          "why_it_matters_to_me": "I want to know what I will receive and what I am committing to before pressing an unfamiliar output control.",
+          "fix": "Label the control with the exact action, such as “Create PDF preview,” and explain whether selected image versions and edits are included.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 18
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 1,
+        "small_targets": 0,
+        "low_contrast_texts": 1,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Create",
+              "ratio": 4.14,
+              "font_px": 14,
+              "id": 10
+            }
+          ],
+          "unnamed_controls": [
+            {
+              "id": 4,
+              "role": "button",
+              "tag": "button"
+            }
+          ],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 18
+    },
+    "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite": {
+      "page_key": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "title": "OurLegacy - Turn your family story into a keepsake book",
+      "first_step": 19,
+      "screenshot": "screenshots/step_19.jpg",
+      "observation": "The Output step is open for “Grandpa’s Blue Kite.” It offers a watermarked 32-page PDF preview, several personalisation fields, a cover-image change control, a Generate PDF button, and a disabled printed-hardcover order showing $59 and “Printing is coming soon.”",
+      "think_aloud": "I have reached the final step, and it is refreshingly clear that a PDF preview is available before ordering anything. I do not want to use the $59 printed book, but I should personalise the preview carefully and then examine every page. I will first read the rest of this page so that I do not overlook the cost or instructions.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Book output and personalisation",
+        "purpose": "To personalise the storybook’s cover information, generate a watermarked PDF preview, and offer a printed-hardcopy purchase.",
+        "what_is_happening": "The page shows personalisation fields for title, author, teller’s age, story date, dedication, ownership, and cover image, followed by PDF generation. A $59 hardcover is also shown, but ordering is disabled and printing is described as coming soon.",
+        "first_impression": "This looks orderly and fairly understandable, although the title field is empty despite the existing book title, and I want to see the remaining instructions before pressing Generate PDF.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would try personalising the PDF preview because it is explicitly described as showing the exact book that could be printed.",
+          "q2_notice_control": "I notice the labelled textboxes, the Change button for the cover image, and the Generate PDF button.",
+          "q3_label_matches_goal": "Yes. The labels are plain and mostly match what I want, though “Teller’s age” is less familiar than “Grandma Maggie’s age.”"
+        },
+        "issues": [
+          {
+            "title": "Existing title is not carried into the blank title field",
+            "evidence": "The page heading says “Grandpa’s Blue Kite,” but [64] is an empty textbox with placeholder “Grandpa’s Blue Kite.”",
+            "code": "H6",
+            "severity": 2,
+            "why_it_matters_to_me": "I may wonder whether the preview will have the wrong title, and I have to remember to type it again.",
+            "fix": "Populate the title field with the existing book title, or make clear that the grey text is an example and the field is intentionally blank.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "The printed-book promise conflicts with the disabled order control",
+            "evidence": "[72] “Order Printed Book” is disabled, while the page also says “Printing is coming soon.”",
+            "code": "H1",
+            "severity": 2,
+            "why_it_matters_to_me": "The $59 price attracts attention, but I cannot tell whether ordering is unavailable, still being prepared, or merely disabled because the preview is unfinished.",
+            "fix": "Label the section clearly as unavailable and explain that ordering will open later, or remove the purchase panel until printing is available.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The progress indicator clearly shows Create and Review completed and Output as the current step.",
+          "The PDF preview is described as watermarked and as representing the exact book that could be printed.",
+          "The $59 hardcover price is visible before any order action, and I have not been asked for payment details."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "The pre-filled story date appears to be the current date",
+          "evidence": "[67] “Story told on” has value “2026-09-26”",
+          "code": "CONTENT",
+          "severity": 2,
+          "why_it_matters_to_me": "This is a memory from my childhood rather than something told on today, and I do not know the exact year.",
+          "fix": "Do not default a historical family memory to today's date; leave it blank or ask whether it should be the date the story was told to Oliver.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 2,
+            "verified": true
+          },
+          "step": 20
+        },
+        {
+          "title": "The output page still calls the book “Grandpa's Blue Kite”",
+          "evidence": "The page heading reads “Grandpa's Blue Kite” even though the title field contains “The Blue Kite”.",
+          "code": "H4",
+          "severity": 2,
+          "why_it_matters_to_me": "This makes me wonder whether my title change has been applied to the actual book or only to one field.",
+          "fix": "Update the book heading to match the personalised title, or explain clearly that the heading is the original project name and the cover title has been changed.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 2,
+            "verified": true
+          },
+          "step": 21
+        },
+        {
+          "title": "The cover image generation status is not clear",
+          "evidence": "Under “Cover image” the button [83] says “Generation in progress...” while the cover is shown as “Scene 8”.",
+          "code": "H1",
+          "severity": 1,
+          "why_it_matters_to_me": "I cannot tell whether the cover is being changed, whether it is still being prepared, or whether the display is temporarily out of date.",
+          "fix": "Show a clear progress message such as “Preparing the PDF and cover” and explain when generation is complete.",
+          "evidence_check": {
+            "quotes": 3,
+            "found": 3,
+            "verified": true
+          },
+          "step": 21
+        },
+        {
+          "title": "Personalised title is not reflected in the page heading",
+          "evidence": "The heading still says “Grandpa's Blue Kite” while the Title field and generated export use “The Blue Kite.”",
+          "code": "H4",
+          "severity": 2,
+          "why_it_matters_to_me": "The inconsistent title makes me doubt whether the correct title has carried through to every part of the product.",
+          "fix": "Use the current personalised title for the storybook page heading as soon as the title is saved or the PDF is generated.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 2,
+            "verified": true
+          },
+          "step": 22
+        },
+        {
+          "title": "The label “Teller’s age” is unclear",
+          "evidence": "[78] is labelled “Teller’s age” and contains 5, although the story is for five-year-old Oliver and was told by Margaret.",
+          "code": "H2",
+          "severity": 2,
+          "why_it_matters_to_me": "I entered 5 because it describes Oliver’s reading age, but the label suggests that I, Margaret, am five, which is not what the book means.",
+          "fix": "Label this field “Child’s age” or “Reader’s age,” or explain precisely whose age is being requested.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 22
+        },
+        {
+          "title": "The PDF gives Margaret's age as five",
+          "evidence": "The opening reads “The Blue Kite told by Margaret Ellison, age 5,” while the field [78] is labelled “Teller’s age” and contains “5.”",
+          "code": "H2",
+          "severity": 3,
+          "why_it_matters_to_me": "It presents me as a five-year-old, when I am 71, and Oliver is the five-year-old. That undermines an immediate family keepsake.",
+          "fix": "Clarify the field as “Age of the person telling the story,” and either allow adult ages or explain that this field is intended for the child narrator. In this book it should say 71.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 1,
+            "verified": false
+          },
+          "step": 23
+        },
+        {
+          "title": "The output heading does not match the personalised book",
+          "evidence": "The page still says “# Grandpa's Blue Kite” although [76] contains “The Blue Kite” and the generated export is described as having a custom title.",
+          "code": "H4",
+          "severity": 2,
+          "why_it_matters_to_me": "It makes me wonder whether my title change was applied consistently or whether the old book title is still lurking somewhere.",
+          "fix": "After personalising, update the storybook heading itself to “The Blue Kite,” or explain clearly that the heading is the original project name.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 2,
+            "verified": true
+          },
+          "step": 23
+        },
+        {
+          "title": "The personalised PDF still contains the unresolved family errors",
+          "evidence": "The output was generated after only Scenes 1 and 2 were changed; Scenes 3–10 had not been corrected, and the cover is [81] “Scene 8.”",
+          "code": "CONTENT",
+          "severity": 4,
+          "why_it_matters_to_me": "The remaining pages still present the wrong people and relationships, Oliver does not retain his curly brown hair, freckles and green wellies, and the invented grandfather remains. This is not yet a keepsake I would give him.",
+          "fix": "Allow every scene to be reviewed and revised from the export, or warn before PDF generation that uncorrected scenes will be included. I should be able to choose an appropriate final scene as the cover and regenerate the PDF after correcting all ten scenes.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 23
+        },
+        {
+          "title": "The page heading contradicts the personalised title",
+          "evidence": "The heading says \"Grandpa's Blue Kite\" while the Title field says \"The Blue Kite.\"",
+          "code": "H4",
+          "severity": 1,
+          "why_it_matters_to_me": "It makes me briefly wonder whether my title change was applied throughout the export page.",
+          "fix": "Use the current personalised title in the page heading, or show the original working title separately with a clear label.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 2,
+            "verified": true
+          },
+          "step": 25
+        },
+        {
+          "title": "Exports are distinguished only by timestamp",
+          "evidence": "Two entries both say \"pdf\" and \"2.4 MB\" at \"8:57 PM\" and \"8:56 PM,\" with no indication that the first is the corrected export.",
+          "code": "H6",
+          "severity": 2,
+          "why_it_matters_to_me": "I have to rely on the time to avoid downloading the wrong version, which is especially confusing after correcting an error.",
+          "fix": "Label exports as \"Latest\" and \"Previous,\" and include the changed preview details or an explicit version note.",
+          "evidence_check": {
+            "quotes": 0,
+            "verified": null
+          },
+          "step": 25
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 1,
+        "small_targets": 1,
+        "low_contrast_texts": 2,
+        "tiny_texts": 2,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Create",
+              "ratio": 4.14,
+              "font_px": 14,
+              "id": 61
+            },
+            {
+              "text": "Review",
+              "ratio": 4.14,
+              "font_px": 14,
+              "id": 62
+            }
+          ],
+          "unnamed_controls": [
+            {
+              "id": 4,
+              "role": "button",
+              "tag": "button"
+            }
+          ],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 8
+    },
+    "93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/:id-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf | ": {
+      "page_key": "93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/:id-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf | ",
+      "url": "https://93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/0bc53638-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf",
+      "title": "",
+      "first_step": 26,
+      "screenshot": "screenshots/step_26.jpg",
+      "observation": "The corrected 32-page PDF is open in the browser's PDF viewer, showing page 1, the title page. The title is “The Blue Kite,” the credit reads “told by Margaret Ellison,” and the incorrect “age 5” has been removed. A diagonal “Our Legacy Preview” watermark and “PREVIEW · NOT FOR RESALE · OURLEGACY.FAMILY” make the non-purchased status clear.",
+      "think_aloud": "Oh, the age mistake has been corrected: Margaret Ellison is now named as the teller without being made into a five-year-old. I shall now turn through all 32 pages and check the text and every picture again, especially whether the corrected second scene has remained in the PDF.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Corrected PDF title page",
+        "purpose": "To open and inspect the newly regenerated 32-page storybook PDF.",
+        "what_is_happening": "The PDF viewer displays page 1 of 32. The title is “The Blue Kite,” it is “told by Margaret Ellison,” the date is September 2026, and the preview/not-for-resale watermark is visible.",
+        "first_impression": "This is a much better title page. The awkward “Margaret Ellison, age 5” has disappeared, and the credit now makes it clear that I am the person telling Oliver the story.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would turn through all 32 pages now to check the correction and every scene.",
+          "q2_notice_control": "The page indicator “1 / 32” and the browser PDF navigation controls make it clear that this is a multipage document.",
+          "q3_label_matches_goal": "The visible title and author credit match my intended personalisation, although the PDF viewer itself offers no plainly named “next page” control."
+        },
+        "issues": [
+          {
+            "title": "Page navigation controls are not clearly labelled",
+            "evidence": "The viewer shows “1 / 32” and compact toolbar icons, but the available page controls are represented only by iframes [1] and [2] in the page description.",
+            "code": "H2",
+            "severity": 1,
+            "why_it_matters_to_me": "I want to be certain that I inspect every page, but I cannot easily tell from the page what the toolbar icons do without experimenting.",
+            "fix": "Give the viewer’s page controls clear text labels or tooltips such as “Previous page” and “Next page,” and state whether all 32 pages have been viewed.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 0,
+              "verified": false
+            }
+          },
+          {
+            "title": "Preview watermark is very faint",
+            "evidence": "The large diagonal “Our Legacy Preview” text is extremely pale against the white title page.",
+            "code": "ACC",
+            "severity": 1,
+            "why_it_matters_to_me": "I can make it out here, but weaker contrast could make the non-resale status less obvious to others.",
+            "fix": "Use slightly darker but still unobtrusive watermark text with sufficient contrast.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 0,
+              "verified": false
+            }
+          }
+        ],
+        "positives": [
+          "The regenerated PDF opened successfully.",
+          "The title is now “The Blue Kite.”",
+          "The credit correctly says “told by Margaret Ellison” and no longer attaches Oliver's age to me.",
+          "The page indicator confirms that the complete preview has 32 pages."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "The PDF review control did not page through the whole document",
+          "evidence": "flip_through reported “you paged through 1 pages” while the viewer clearly shows “1 / 32”.",
+          "code": "H1",
+          "severity": 2,
+          "why_it_matters_to_me": "I cannot judge whether all the people, pictures, words, and ending are correct if the viewer stops after one page.",
+          "fix": "Make the review action advance through all available PDF pages and clearly indicate which pages have been inspected.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 0,
+            "verified": false
+          },
+          "step": 27
+        },
+        {
+          "title": "The PDF viewer has no obvious next-page control",
+          "evidence": "Only two embedded frames are offered as controls, and the visible toolbar has no clearly labelled next-page button.",
+          "code": "H3",
+          "severity": 3,
+          "why_it_matters_to_me": "I need to inspect every page and picture before judging the keepsake, but I cannot easily tell how to move onward.",
+          "fix": "Provide clearly labelled previous and next controls in the embedded preview, and make keyboard page navigation work reliably.",
+          "evidence_check": {
+            "quotes": 0,
+            "verified": null
+          },
+          "step": 28
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 0,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 3
+    }
+  },
+  "inputs": [
+    {
+      "field": "Narrative Text",
+      "action": "type",
+      "value": "One summer, my father made me something very special. He cut up an old blue shirt and made it into a kite!"
+    },
+    {
+      "field": "Describe what to change",
+      "action": "type",
+      "value": "Show Grandma Maggie as the little girl with short silver hair, round glasses and a blue cardigan, even though she is remembering being a child. Show her father, an older Welsh man, making the blue kite from an old blue shirt. Do not show Grandpa or any invented family members. Keep the warm farmhouse setting and make the kite clearly recognisable."
+    },
+    {
+      "field": "Narrative Text",
+      "action": "type",
+      "value": "The blue kite was ready! My father and I carried it up the big windy hill behind the old farmhouse."
+    },
+    {
+      "field": "Describe what to change",
+      "action": "type",
+      "value": "Show little Margaret as the child, not a boy. She has short silver hair, round glasses, and wears a blue cardigan, and she is carrying the blue kite together with her father, who made it. They are walking up the windy hill behind the old farmhouse in Wales."
+    },
+    {
+      "field": "Describe what to change",
+      "action": "type",
+      "value": "Replace the boy with little Margaret, a young girl, clearly not a boy. She is my father's daughter and the child who carried the blue kite with him on the windy Welsh hill. Keep my father and the blue kite. Do not show any elderly grandfather."
+    },
+    {
+      "field": "Title",
+      "action": "type",
+      "value": "The Blue Kite"
+    },
+    {
+      "field": "Author",
+      "action": "type",
+      "value": "Margaret Ellison"
+    },
+    {
+      "field": "Teller’s age",
+      "action": "type",
+      "value": "5"
+    },
+    {
+      "field": "Dedication",
+      "action": "type",
+      "value": "For Oliver, with love from Grandma Maggie. May we always keep the old blue kite safe."
+    },
+    {
+      "field": "This book belongs to",
+      "action": "type",
+      "value": "Oliver Ellison"
+    },
+    {
+      "field": "Teller’s age",
+      "action": "type",
+      "value": null
+    }
+  ],
+  "captures": [
+    {
+      "label": "auto: My Storybooks",
+      "url": "https://ourlegacy.family/storybooks",
+      "views": [
+        "artifacts/capture_01/view_00.jpg",
+        "artifacts/capture_01/view_01.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_01/img_00.jpg",
+          "alt": "Grandpa's Blue Kite",
+          "w": 366,
+          "h": 274
+        }
+      ],
+      "dir": "artifacts/capture_01",
+      "text_chars": 127
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_02/view_00.jpg",
+        "artifacts/capture_02/view_01.jpg",
+        "artifacts/capture_02/view_02.jpg",
+        "artifacts/capture_02/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_02/img_00.jpg",
+          "alt": "Scene 1: One summer, Grandpa's daddy made something very special. He cut up an old blue s",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_02/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_02",
+      "text_chars": 1259
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_03/view_00.jpg",
+        "artifacts/capture_03/view_01.jpg",
+        "artifacts/capture_03/view_02.jpg",
+        "artifacts/capture_03/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_03/img_00.jpg",
+          "alt": "Scene 1: One summer, Grandpa's daddy made something very special. He cut up an old blue s",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_03/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_03",
+      "text_chars": 1280
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_04/view_00.jpg",
+        "artifacts/capture_04/view_01.jpg",
+        "artifacts/capture_04/view_02.jpg",
+        "artifacts/capture_04/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_04/img_00.jpg",
+          "alt": "Scene 1: One summer, Grandpa's daddy made something very special. He cut up an old blue s",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_04/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_04",
+      "text_chars": 1185
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_05/view_00.jpg",
+        "artifacts/capture_05/view_01.jpg",
+        "artifacts/capture_05/view_02.jpg",
+        "artifacts/capture_05/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_05/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_05/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_05",
+      "text_chars": 1256
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_06/view_00.jpg",
+        "artifacts/capture_06/view_01.jpg",
+        "artifacts/capture_06/view_02.jpg",
+        "artifacts/capture_06/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_06/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_06/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_06",
+      "text_chars": 1277
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_07/view_00.jpg",
+        "artifacts/capture_07/view_01.jpg",
+        "artifacts/capture_07/view_02.jpg",
+        "artifacts/capture_07/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_07/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_07/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_07",
+      "text_chars": 1308
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_08/view_00.jpg",
+        "artifacts/capture_08/view_01.jpg",
+        "artifacts/capture_08/view_02.jpg",
+        "artifacts/capture_08/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_08/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_08/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_08",
+      "text_chars": 1267
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_09/view_00.jpg",
+        "artifacts/capture_09/view_01.jpg",
+        "artifacts/capture_09/view_02.jpg",
+        "artifacts/capture_09/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_09/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_09/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_09",
+      "text_chars": 1263
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_10/view_00.jpg",
+        "artifacts/capture_10/view_01.jpg",
+        "artifacts/capture_10/view_02.jpg",
+        "artifacts/capture_10/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_10/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_10/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_10",
+      "text_chars": 1284
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_11/view_00.jpg",
+        "artifacts/capture_11/view_01.jpg",
+        "artifacts/capture_11/view_02.jpg",
+        "artifacts/capture_11/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_11/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_11/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_11",
+      "text_chars": 1193
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_12/view_00.jpg",
+        "artifacts/capture_12/view_01.jpg",
+        "artifacts/capture_12/view_02.jpg",
+        "artifacts/capture_12/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_12/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_12/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_12",
+      "text_chars": 1257
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_13/view_00.jpg",
+        "artifacts/capture_13/view_01.jpg",
+        "artifacts/capture_13/view_02.jpg",
+        "artifacts/capture_13/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_13/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_13/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_13",
+      "text_chars": 1278
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_14/view_00.jpg",
+        "artifacts/capture_14/view_01.jpg",
+        "artifacts/capture_14/view_02.jpg",
+        "artifacts/capture_14/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_14/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_14/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_14",
+      "text_chars": 1309
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_15/view_00.jpg",
+        "artifacts/capture_15/view_01.jpg",
+        "artifacts/capture_15/view_02.jpg",
+        "artifacts/capture_15/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_15/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_15/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_15",
+      "text_chars": 1268
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_16/view_00.jpg",
+        "artifacts/capture_16/view_01.jpg",
+        "artifacts/capture_16/view_02.jpg",
+        "artifacts/capture_16/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_16/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_16/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_16",
+      "text_chars": 1285
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_17/view_00.jpg",
+        "artifacts/capture_17/view_01.jpg",
+        "artifacts/capture_17/view_02.jpg",
+        "artifacts/capture_17/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_17/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_17/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_17",
+      "text_chars": 1316
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_18/view_00.jpg",
+        "artifacts/capture_18/view_01.jpg",
+        "artifacts/capture_18/view_02.jpg",
+        "artifacts/capture_18/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_18/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_18/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_18",
+      "text_chars": 1268
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "views": [
+        "artifacts/capture_19/view_00.jpg",
+        "artifacts/capture_19/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_19",
+      "text_chars": 603
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "views": [
+        "artifacts/capture_20/view_00.jpg",
+        "artifacts/capture_20/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_20",
+      "text_chars": 692
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 1 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-1",
+      "views": [
+        "artifacts/capture_21/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_21/view_00.jpg",
+          "alt": "PDF page 1",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_21",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:0",
+      "text_chars": 156
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 2 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-2",
+      "views": [
+        "artifacts/capture_22/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_22/view_00.jpg",
+          "alt": "PDF page 2",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_22",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:1",
+      "text_chars": 98
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 3 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-3",
+      "views": [
+        "artifacts/capture_23/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_23/view_00.jpg",
+          "alt": "PDF page 3",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_23",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:2",
+      "text_chars": 171
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 4 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-4",
+      "views": [
+        "artifacts/capture_24/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_24/view_00.jpg",
+          "alt": "PDF page 4",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_24",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:3",
+      "text_chars": 103
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 5 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-5",
+      "views": [
+        "artifacts/capture_25/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_25/view_00.jpg",
+          "alt": "PDF page 5",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_25",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:4",
+      "text_chars": 127
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 6 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-6",
+      "views": [
+        "artifacts/capture_26/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_26/view_00.jpg",
+          "alt": "PDF page 6",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_26",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:5",
+      "text_chars": 192
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 7 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-7",
+      "views": [
+        "artifacts/capture_27/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_27/view_00.jpg",
+          "alt": "PDF page 7",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_27",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:6",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 8 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-8",
+      "views": [
+        "artifacts/capture_28/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_28/view_00.jpg",
+          "alt": "PDF page 8",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_28",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:7",
+      "text_chars": 185
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 9 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-9",
+      "views": [
+        "artifacts/capture_29/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_29/view_00.jpg",
+          "alt": "PDF page 9",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_29",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:8",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 10 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-10",
+      "views": [
+        "artifacts/capture_30/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_30/view_00.jpg",
+          "alt": "PDF page 10",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_30",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:9",
+      "text_chars": 187
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 11 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-11",
+      "views": [
+        "artifacts/capture_31/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_31/view_00.jpg",
+          "alt": "PDF page 11",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_31",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:10",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 12 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-12",
+      "views": [
+        "artifacts/capture_32/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_32/view_00.jpg",
+          "alt": "PDF page 12",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_32",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:11",
+      "text_chars": 197
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 13 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-13",
+      "views": [
+        "artifacts/capture_33/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_33/view_00.jpg",
+          "alt": "PDF page 13",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_33",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:12",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 14 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-14",
+      "views": [
+        "artifacts/capture_34/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_34/view_00.jpg",
+          "alt": "PDF page 14",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_34",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:13",
+      "text_chars": 188
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 15 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-15",
+      "views": [
+        "artifacts/capture_35/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_35/view_00.jpg",
+          "alt": "PDF page 15",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_35",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:14",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 16 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-16",
+      "views": [
+        "artifacts/capture_36/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_36/view_00.jpg",
+          "alt": "PDF page 16",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_36",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:15",
+      "text_chars": 194
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 17 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-17",
+      "views": [
+        "artifacts/capture_37/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_37/view_00.jpg",
+          "alt": "PDF page 17",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_37",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:16",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 18 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-18",
+      "views": [
+        "artifacts/capture_38/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_38/view_00.jpg",
+          "alt": "PDF page 18",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_38",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:17",
+      "text_chars": 178
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 19 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-19",
+      "views": [
+        "artifacts/capture_39/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_39/view_00.jpg",
+          "alt": "PDF page 19",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_39",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:18",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 20 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-20",
+      "views": [
+        "artifacts/capture_40/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_40/view_00.jpg",
+          "alt": "PDF page 20",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_40",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:19",
+      "text_chars": 190
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 21 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-21",
+      "views": [
+        "artifacts/capture_41/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_41/view_00.jpg",
+          "alt": "PDF page 21",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_41",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:20",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 22 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-22",
+      "views": [
+        "artifacts/capture_42/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_42/view_00.jpg",
+          "alt": "PDF page 22",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_42",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:21",
+      "text_chars": 188
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 23 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-23",
+      "views": [
+        "artifacts/capture_43/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_43/view_00.jpg",
+          "alt": "PDF page 23",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_43",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:22",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 24 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-24",
+      "views": [
+        "artifacts/capture_44/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_44/view_00.jpg",
+          "alt": "PDF page 24",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_44",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:23",
+      "text_chars": 199
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 25 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-25",
+      "views": [
+        "artifacts/capture_45/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_45/view_00.jpg",
+          "alt": "PDF page 25",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_45",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:24",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 26 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-26",
+      "views": [
+        "artifacts/capture_46/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_46/view_00.jpg",
+          "alt": "PDF page 26",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_46",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:25",
+      "text_chars": 126
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 27 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-27",
+      "views": [
+        "artifacts/capture_47/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_47/view_00.jpg",
+          "alt": "PDF page 27",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_47",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:26",
+      "text_chars": 966
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 28 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-28",
+      "views": [
+        "artifacts/capture_48/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_48/view_00.jpg",
+          "alt": "PDF page 28",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_48",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:27",
+      "text_chars": 182
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 29 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-29",
+      "views": [
+        "artifacts/capture_49/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_49/view_00.jpg",
+          "alt": "PDF page 29",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_49",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:28",
+      "text_chars": 195
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 30 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-30",
+      "views": [
+        "artifacts/capture_50/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_50/view_00.jpg",
+          "alt": "PDF page 30",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_50",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:29",
+      "text_chars": 180
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 31 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-31",
+      "views": [
+        "artifacts/capture_51/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_51/view_00.jpg",
+          "alt": "PDF page 31",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_51",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:30",
+      "text_chars": 253
+    },
+    {
+      "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 32 of 32",
+      "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-32",
+      "views": [
+        "artifacts/capture_52/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_52/view_00.jpg",
+          "alt": "PDF page 32",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_52",
+      "source": "file",
+      "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:31",
+      "text_chars": 273
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "views": [
+        "artifacts/capture_54/view_00.jpg",
+        "artifacts/capture_54/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_54",
+      "text_chars": 711
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "views": [
+        "artifacts/capture_55/view_00.jpg",
+        "artifacts/capture_55/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_55",
+      "text_chars": 829
+    },
+    {
+      "label": "auto: ",
+      "url": "https://93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/0bc53638-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf",
+      "views": [
+        "artifacts/capture_56/view_00.jpg",
+        "artifacts/capture_56/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_56",
+      "text_chars": 0
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 1 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-1",
+      "views": [
+        "artifacts/capture_60/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_60/view_00.jpg",
+          "alt": "PDF page 1",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_60",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:0",
+      "text_chars": 149
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 2 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-2",
+      "views": [
+        "artifacts/capture_61/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_61/view_00.jpg",
+          "alt": "PDF page 2",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_61",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:1",
+      "text_chars": 98
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 3 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-3",
+      "views": [
+        "artifacts/capture_62/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_62/view_00.jpg",
+          "alt": "PDF page 3",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_62",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:2",
+      "text_chars": 171
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 4 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-4",
+      "views": [
+        "artifacts/capture_63/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_63/view_00.jpg",
+          "alt": "PDF page 4",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_63",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:3",
+      "text_chars": 103
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 5 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-5",
+      "views": [
+        "artifacts/capture_64/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_64/view_00.jpg",
+          "alt": "PDF page 5",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_64",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:4",
+      "text_chars": 127
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 6 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-6",
+      "views": [
+        "artifacts/capture_65/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_65/view_00.jpg",
+          "alt": "PDF page 6",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_65",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:5",
+      "text_chars": 192
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 7 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-7",
+      "views": [
+        "artifacts/capture_66/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_66/view_00.jpg",
+          "alt": "PDF page 7",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_66",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:6",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 8 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-8",
+      "views": [
+        "artifacts/capture_67/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_67/view_00.jpg",
+          "alt": "PDF page 8",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_67",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:7",
+      "text_chars": 185
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 9 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-9",
+      "views": [
+        "artifacts/capture_68/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_68/view_00.jpg",
+          "alt": "PDF page 9",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_68",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:8",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 10 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-10",
+      "views": [
+        "artifacts/capture_69/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_69/view_00.jpg",
+          "alt": "PDF page 10",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_69",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:9",
+      "text_chars": 187
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 11 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-11",
+      "views": [
+        "artifacts/capture_70/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_70/view_00.jpg",
+          "alt": "PDF page 11",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_70",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:10",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 12 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-12",
+      "views": [
+        "artifacts/capture_71/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_71/view_00.jpg",
+          "alt": "PDF page 12",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_71",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:11",
+      "text_chars": 197
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 13 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-13",
+      "views": [
+        "artifacts/capture_72/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_72/view_00.jpg",
+          "alt": "PDF page 13",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_72",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:12",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 14 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-14",
+      "views": [
+        "artifacts/capture_73/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_73/view_00.jpg",
+          "alt": "PDF page 14",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_73",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:13",
+      "text_chars": 188
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 15 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-15",
+      "views": [
+        "artifacts/capture_74/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_74/view_00.jpg",
+          "alt": "PDF page 15",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_74",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:14",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 16 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-16",
+      "views": [
+        "artifacts/capture_75/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_75/view_00.jpg",
+          "alt": "PDF page 16",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_75",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:15",
+      "text_chars": 194
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 17 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-17",
+      "views": [
+        "artifacts/capture_76/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_76/view_00.jpg",
+          "alt": "PDF page 17",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_76",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:16",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 18 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-18",
+      "views": [
+        "artifacts/capture_77/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_77/view_00.jpg",
+          "alt": "PDF page 18",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_77",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:17",
+      "text_chars": 178
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 19 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-19",
+      "views": [
+        "artifacts/capture_78/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_78/view_00.jpg",
+          "alt": "PDF page 19",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_78",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:18",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 20 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-20",
+      "views": [
+        "artifacts/capture_79/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_79/view_00.jpg",
+          "alt": "PDF page 20",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_79",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:19",
+      "text_chars": 190
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 21 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-21",
+      "views": [
+        "artifacts/capture_80/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_80/view_00.jpg",
+          "alt": "PDF page 21",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_80",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:20",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 22 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-22",
+      "views": [
+        "artifacts/capture_81/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_81/view_00.jpg",
+          "alt": "PDF page 22",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_81",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:21",
+      "text_chars": 188
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 23 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-23",
+      "views": [
+        "artifacts/capture_82/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_82/view_00.jpg",
+          "alt": "PDF page 23",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_82",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:22",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 24 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-24",
+      "views": [
+        "artifacts/capture_83/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_83/view_00.jpg",
+          "alt": "PDF page 24",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_83",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:23",
+      "text_chars": 199
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 25 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-25",
+      "views": [
+        "artifacts/capture_84/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_84/view_00.jpg",
+          "alt": "PDF page 25",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_84",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:24",
+      "text_chars": 84
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 26 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-26",
+      "views": [
+        "artifacts/capture_85/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_85/view_00.jpg",
+          "alt": "PDF page 26",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_85",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:25",
+      "text_chars": 126
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 27 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-27",
+      "views": [
+        "artifacts/capture_86/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_86/view_00.jpg",
+          "alt": "PDF page 27",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_86",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:26",
+      "text_chars": 959
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 28 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-28",
+      "views": [
+        "artifacts/capture_87/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_87/view_00.jpg",
+          "alt": "PDF page 28",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_87",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:27",
+      "text_chars": 182
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 29 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-29",
+      "views": [
+        "artifacts/capture_88/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_88/view_00.jpg",
+          "alt": "PDF page 29",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_88",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:28",
+      "text_chars": 195
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 30 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-30",
+      "views": [
+        "artifacts/capture_89/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_89/view_00.jpg",
+          "alt": "PDF page 30",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_89",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:29",
+      "text_chars": 180
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 31 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-31",
+      "views": [
+        "artifacts/capture_90/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_90/view_00.jpg",
+          "alt": "PDF page 31",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_90",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:30",
+      "text_chars": 253
+    },
+    {
+      "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 32 of 32",
+      "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-32",
+      "views": [
+        "artifacts/capture_91/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_91/view_00.jpg",
+          "alt": "PDF page 32",
+          "w": 1100,
+          "h": 831
+        }
+      ],
+      "dir": "artifacts/capture_91",
+      "source": "file",
+      "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:31",
+      "text_chars": 266
+    },
+    {
+      "label": "auto: Grandpa's Blue Kite",
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "views": [
+        "artifacts/capture_93/view_00.jpg",
+        "artifacts/capture_93/view_01.jpg",
+        "artifacts/capture_93/view_02.jpg",
+        "artifacts/capture_93/view_03.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_93/img_00.jpg",
+          "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_01.jpg",
+          "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_02.jpg",
+          "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_03.jpg",
+          "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_04.jpg",
+          "alt": "Scene 5: Many, many years went by. Now Grandpa was old — and he had a grandson of his own",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_05.jpg",
+          "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_06.jpg",
+          "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_07.jpg",
+          "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_08.jpg",
+          "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+          "w": 402,
+          "h": 301
+        },
+        {
+          "path": "artifacts/capture_93/img_09.jpg",
+          "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+          "w": 402,
+          "h": 301
+        }
+      ],
+      "dir": "artifacts/capture_93",
+      "text_chars": 1272
+    }
+  ],
+  "output_reactions": [
+    {
+      "step": 1,
+      "url": "https://ourlegacy.family/storybooks",
+      "reaction": "The cover is attractive and the blue kite is easy to see, but it shows an adult man and a child rather than the present-day relationship I need. I will open the storybook because I still expect the site to let me correct the scenes and ending."
+    },
+    {
+      "step": 2,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The output is attractive and the sentences are gentle, but I do not recognise my family in it. The invented Grandpa has replaced the correct relationships, so I need to correct the scenes before exporting."
+    },
+    {
+      "step": 3,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The generated output is attractive, but Scene 1 is not my family story: it says “Grandpa’s daddy” and shows the wrong people. I need to correct the text and image before I can regard it as a keepsake."
+    },
+    {
+      "step": 4,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The illustration and wording are still wrong, but the editing field gives me a clear opportunity to correct the family relationships."
+    },
+    {
+      "step": 5,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The pictures remain attractive and the sentences are gentle, but the output still does not represent my family correctly. I recognise the blue kite and the Welsh hill, but the people and relationships are wrong."
+    },
+    {
+      "step": 6,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The corrected first sentence is much better, but the picture still shows a boy rather than me as a little girl. The remaining story continues with the wrong family relationships."
+    },
+    {
+      "step": 7,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The new Scene 1 picture is attractive and now shows a father and a child making a blue kite indoors, which is much more like my memory. I still need to inspect the revised image carefully and correct the remaining scenes, which still call my father “Grandpa's daddy” and invent a present-day grandfather."
+    },
+    {
+      "step": 8,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The revised Scene 1 is warm and attractive, and the man-and-child relationship now feels much closer to my memory. However, I would still like to compare its two versions, and the rest of the book remains unacceptable because it replaces me and my father with “Grandpa and his daddy.”"
+    },
+    {
+      "step": 9,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "Version 2 of Scene 1 is warmer and now shows my father making the kite with a little girl, which I can recognise as the intended memory. It is not yet a finished family keepsake because the remaining nine scenes still substitute Grandpa and his daddy for my father and me."
+    },
+    {
+      "step": 10,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "Scene 2 remains unsuitable for my family story. The hill and farmhouse are pleasant, but the text changes my father into “Grandpa” and his father, while the picture seems to show an older grandfather and a child. I need to correct both."
+    },
+    {
+      "step": 11,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The existing storybook still contains the wrong relationships: Scene 2 says “Grandpa and his daddy” and its picture shows a man and a boy, rather than my father and me as a child. This is not yet personal enough to be my family keepsake."
+    },
+    {
+      "step": 12,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The corrected Scene 2 sentence is good, but its illustration still shows a small boy rather than me as a little girl, so it does not yet feel like our true family memory."
+    },
+    {
+      "step": 13,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The text now reads correctly, but Scene 2's picture is still wrong because it makes me into a boy."
+    },
+    {
+      "step": 14,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The illustrations are attractive, but Scene 2 still shows a boy rather than little Margaret, so the family story is not yet right."
+    },
+    {
+      "step": 15,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The revised words are a real improvement, and the pictures are attractive, but I still would not recognise the story as mine while the child in Scene 2 is presented as a boy."
+    },
+    {
+      "step": 16,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The two corrected scenes have a gentle, attractive style, but the pictures still do not faithfully represent the family relationships, and the scenes below visibly contain the old “Grandpa’s daddy” and “Grandpa helped Oliver” story."
+    },
+    {
+      "step": 17,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The pictures are attractive and the first two texts are now clearer, but the book is not yet right. Scene 1 and Scene 2 still do not show the requested people accurately, and Scenes 3–10 visibly preserve the invented grandfather and the wrong family relationships. I do not want to export this yet."
+    },
+    {
+      "step": 18,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The corrected Scene 2 image is promising: I can recognise a girl and my father with the blue kite on the Welsh hill. However, the book as a whole is still not my family story because several later scenes say “Grandpa’s daddy” and make Grandpa the present-day companion rather than my father and me."
+    },
+    {
+      "step": 21,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "reaction": "The personalised title and dedication are present, which is encouraging, but I have not yet been able to examine the completed 32-page preview."
+    },
+    {
+      "step": 22,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "reaction": "A personalised 32-page watermarked PDF has been generated and is ready to download. I am pleased it exists, but I must inspect every page before judging whether the corrections to the family relationships and Oliver’s appearance have carried through."
+    },
+    {
+      "step": 23,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "reaction": "The PDF is attractive, calm and easy to read, and it has a proper ending, but it is not yet recognisably my family's story. Most importantly, it calls me “age 5,” keeps the invented grandfather, and does not consistently show Oliver as my little grandson in green wellies. I would be disappointed and embarrassed to give this to him in its present form."
+    },
+    {
+      "step": 24,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "reaction": "The cover choices and the ten scene thumbnails are visible again. I can now see that the cover is Scene 8, but I still need to correct the mistaken age before judging the regenerated PDF."
+    },
+    {
+      "step": 25,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "reaction": "The regenerated export is ready, but I must inspect every page again because correcting the age does not remedy the picture and relationship errors I found before."
+    },
+    {
+      "step": 26,
+      "url": "https://93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/0bc53638-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf",
+      "reaction": "The corrected title page is dignified and personal, and the age error has genuinely been fixed. The lettering and spacing look pleasing, although I now need to inspect all 32 pages before deciding whether the rest is worthy of our family."
+    },
+    {
+      "step": 27,
+      "url": "https://93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/0bc53638-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf",
+      "reaction": "The corrected title page is neat and no longer gives Margaret an age of five. It looks personal enough at this stage, but the rest of the generated book still needs careful inspection."
+    },
+    {
+      "step": 28,
+      "url": "https://93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/0bc53638-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf",
+      "reaction": "The corrected title page is right, but the rest of the 32-page book remains uninspected."
+    },
+    {
+      "step": 29,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export",
+      "reaction": "The corrected title page is good, and many of the pictures are attractive, but the finished 32-page book still does not represent our family correctly. The invented grandfather remains in the present-day story instead of five-year-old Oliver with brown curly hair, freckles, green wellies, and Grandma Maggie in her blue cardigan. It therefore does not feel personal enough for me to treasure or recommend."
+    },
+    {
+      "step": 30,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+      "reaction": "The pictures are attractive and the prose is calm, but the finished book still substitutes an invented Grandpa for Grandma Maggie, changes my father into the grandfather, and gives Oliver the wrong relationships. I would not treasure or print this version in its present form."
+    }
+  ],
+  "abandonment": null,
+  "final_summary": "Completed the export step, personalised the title, author, dedication and cover, corrected the teller-age error, regenerated and viewed the 32-page PDF, and reviewed the story and pictures. No real payment was made. The output remains unacceptable because it has the wrong family relationships and omits Grandma Maggie as the central figure.",
+  "waits": [
+    {
+      "step": 7,
+      "seconds": 27.0,
+      "timeout": false,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148"
+    },
+    {
+      "step": 14,
+      "seconds": 24.0,
+      "timeout": false,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148"
+    },
+    {
+      "step": 17,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148"
+    },
+    {
+      "step": 21,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export"
+    },
+    {
+      "step": 24,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export"
+    }
+  ],
+  "duration_s": 567.9,
+  "env": {
+    "http_errors": [],
+    "console_errors": [
+      "WebSocket connection to 'wss://api.inngest.com/v1/realtime/connect?token=<redacted>",
+      "WebSocket error observed: Event",
+      "WebSocket connection to 'wss://api.inngest.com/v1/realtime/connect?token=<redacted>",
+      "WebSocket error observed: Event",
+      "WebSocket connection to 'wss://api.inngest.com/v1/realtime/connect?token=<redacted>",
+      "WebSocket error observed: Event"
+    ],
+    "page_loads": [
+      {
+        "url": "https://ourlegacy.family/storybooks",
+        "seconds": 5.28
+      }
+    ],
+    "captcha": [],
+    "files": [
+      {
+        "file": "artifacts/files/01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf",
+        "kind": "PDF",
+        "origin": "https://93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/0bc53638-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf",
+        "how": "opened in a new tab",
+        "pages": 32,
+        "bytes": 2470641
+      },
+      {
+        "file": "artifacts/files/02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf",
+        "kind": "PDF",
+        "origin": "https://93sepmzq3cnhzfe1.public.blob.vercel-storage.com/production/storybooks/0bc53638-4e6d-4682-afe2-f4bfda08a148/exports/storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf",
+        "how": "opened in a new tab",
+        "pages": 32,
+        "bytes": 2470376
+      }
+    ]
+  }
+}

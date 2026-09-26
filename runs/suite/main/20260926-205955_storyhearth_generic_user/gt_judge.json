@@ -1,0 +1,376 @@
+{
+ "n_findings": 74,
+ "model": "stealth/space-bunny-alpha",
+ "judgements": [
+  {
+   "f": "F1",
+   "defect": "U2",
+   "class": "matched"
+  },
+  {
+   "f": "F2",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F3",
+   "defect": "U4",
+   "class": "matched"
+  },
+  {
+   "f": "F4",
+   "defect": "U5",
+   "class": "matched"
+  },
+  {
+   "f": "F5",
+   "defect": "U3",
+   "class": "matched"
+  },
+  {
+   "f": "F6",
+   "defect": "U6",
+   "class": "matched"
+  },
+  {
+   "f": "F7",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F8",
+   "defect": "U3",
+   "class": "matched"
+  },
+  {
+   "f": "F9",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F10",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F11",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F12",
+   "defect": "U3",
+   "class": "matched"
+  },
+  {
+   "f": "F13",
+   "defect": "U9",
+   "class": "matched"
+  },
+  {
+   "f": "F14",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F15",
+   "defect": "U3",
+   "class": "matched"
+  },
+  {
+   "f": "F16",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F17",
+   "defect": "O1",
+   "class": "matched"
+  },
+  {
+   "f": "F18",
+   "defect": "O14",
+   "class": "matched"
+  },
+  {
+   "f": "F19",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F20",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F21",
+   "defect": "O13",
+   "class": "matched"
+  },
+  {
+   "f": "F22",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F23",
+   "defect": "U14",
+   "class": "matched"
+  },
+  {
+   "f": "F24",
+   "defect": "U14",
+   "class": "matched"
+  },
+  {
+   "f": "F25",
+   "defect": null,
+   "class": "incorrect"
+  },
+  {
+   "f": "F26",
+   "defect": "O1",
+   "class": "matched"
+  },
+  {
+   "f": "F27",
+   "defect": "O1",
+   "class": "matched"
+  },
+  {
+   "f": "F28",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F29",
+   "defect": "O14",
+   "class": "matched"
+  },
+  {
+   "f": "F30",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F31",
+   "defect": "O2",
+   "class": "matched"
+  },
+  {
+   "f": "F32",
+   "defect": "O2",
+   "class": "matched"
+  },
+  {
+   "f": "F33",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F34",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F35",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F36",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F37",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F38",
+   "defect": "O8",
+   "class": "matched"
+  },
+  {
+   "f": "F39",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F40",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F41",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F42",
+   "defect": "O3",
+   "class": "matched"
+  },
+  {
+   "f": "F43",
+   "defect": "O10",
+   "class": "matched"
+  },
+  {
+   "f": "F44",
+   "defect": "O11",
+   "class": "matched"
+  },
+  {
+   "f": "F45",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F46",
+   "defect": "O6",
+   "class": "matched"
+  },
+  {
+   "f": "F47",
+   "defect": "O4",
+   "class": "matched"
+  },
+  {
+   "f": "F48",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F49",
+   "defect": "O6",
+   "class": "matched"
+  },
+  {
+   "f": "F50",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F51",
+   "defect": "O9",
+   "class": "matched"
+  },
+  {
+   "f": "F52",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F53",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F54",
+   "defect": "O12",
+   "class": "matched"
+  },
+  {
+   "f": "F55",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F56",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F57",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F58",
+   "defect": "O13",
+   "class": "matched"
+  },
+  {
+   "f": "F59",
+   "defect": "O13",
+   "class": "matched"
+  },
+  {
+   "f": "F60",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F61",
+   "defect": "O13",
+   "class": "matched"
+  },
+  {
+   "f": "F62",
+   "defect": "O5",
+   "class": "matched"
+  },
+  {
+   "f": "F63",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F64",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F65",
+   "defect": "O14",
+   "class": "matched"
+  },
+  {
+   "f": "F66",
+   "defect": "O2",
+   "class": "matched"
+  },
+  {
+   "f": "F67",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F68",
+   "defect": "O6",
+   "class": "matched"
+  },
+  {
+   "f": "F69",
+   "defect": null,
+   "class": "valid_unseeded"
+  },
+  {
+   "f": "F70",
+   "defect": "O11",
+   "class": "matched"
+  },
+  {
+   "f": "F71",
+   "defect": "O1",
+   "class": "matched"
+  },
+  {
+   "f": "F72",
+   "defect": "O9",
+   "class": "matched"
+  },
+  {
+   "f": "F73",
+   "defect": "O9",
+   "class": "matched"
+  },
+  {
+   "f": "F74",
+   "defect": "O9",
+   "class": "matched"
+  }
+ ]
+}

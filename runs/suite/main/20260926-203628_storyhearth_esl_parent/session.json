@@ -1,0 +1,1255 @@
+{
+  "status": "done",
+  "steps": 12,
+  "site_model": {
+    "what_it_is": "A website for creating personalised, illustrated family storybooks.",
+    "who_it_is_for": "Parents and families who want a story starring their child and another loved one.",
+    "value_proposition": "Turn a family memory into an illustrated storybook, with a free digital preview and an option to print hardcovers.",
+    "main_tasks": [
+      "Log in",
+      "Enter a child and another character",
+      "Share a family memory, place, and treasured object",
+      "Read the generated storybook preview",
+      "Check the price of a printed hardcover",
+      "Continue to checkout without paying"
+    ],
+    "pricing_model": "The digital preview is described as free. Printed hardcovers are available, but no price is shown on this page.",
+    "trust_signals": [
+      "The company name and copyright are shown.",
+      "A UK delivery statement is shown.",
+      "There is a visible privacy link and contact email.",
+      "A three-step explanation is provided."
+    ],
+    "fit_for_me": "It may be relevant because I want a story for Linh that includes our family and the lantern festival memory. I need simple language, careful cultural details, and a clear hardcover price."
+  },
+  "pages": {
+    "127.0.0.1:8765/ | Your family's stories, bound for generations.": {
+      "page_key": "127.0.0.1:8765/ | Your family's stories, bound for generations.",
+      "url": "http://127.0.0.1:8765/",
+      "title": "StoryHearth – Personalised storybooks starring your family",
+      "first_step": 1,
+      "screenshot": "screenshots/step_01.jpg",
+      "observation": "The StoryHearth home page introduces a service that creates personalised illustrated storybooks using family members and memories. It explains a three-step process, offers “Proceed” and “See pricing” controls, and provides a visible “Log in” button.",
+      "think_aloud": "This looks like what I need, but the main paragraph is difficult. Words like “multimodal generative narrative engine,” “synthesise,” and “lived-experience corpus” are not clear to me. The three steps make sense, and I can see that the digital preview is free, but I want to log in before I make my story.",
+      "emotion": "curious",
+      "valence": 0,
+      "review": {
+        "page_name": "StoryHearth home page",
+        "purpose": "Introduce the personalised storybook service and direct the visitor to start a story, view prices, or log in.",
+        "what_is_happening": "The page displays the StoryHearth name, navigation links, a headline, a difficult-to-read description, two main calls to action, a free-preview and UK-shipping statement, an image, and the beginning of a three-step process.",
+        "first_impression": "The service seems useful, and the steps are easy to understand, but the main description sounds more technical than a family website. I do not know what “multimodal generative narrative engine” means.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would try to log in now because I already have an account and want to begin my story.",
+          "q2_notice_control": "Yes, I noticed the dark “Log in” button at the top right.",
+          "q3_label_matches_goal": "Yes. “Log in” clearly says that I should use my existing account."
+        },
+        "issues": [
+          {
+            "title": "The main description uses difficult technical words",
+            "evidence": "“Leverage our multimodal generative narrative engine to synthesise bespoke, heirloom-grade story artefacts from your household's lived-experience corpus.”",
+            "code": "H2",
+            "severity": 2,
+            "why_it_matters_to_me": "I only have intermediate English, and these long technical words make me work before I understand what the service does.",
+            "fix": "Replace this with simple language, such as: “Turn a special family memory into a personal storybook starring your child and someone you love.”",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The hero image has no description",
+            "evidence": "[image (no description) 430x440]",
+            "code": "ACC",
+            "severity": 1,
+            "why_it_matters_to_me": "I cannot understand whether the image is an example of the finished book or just decoration.",
+            "fix": "Add meaningful alternative text, such as “Example pages from a personalised illustrated family storybook.”",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "The initial price information is not enough to judge the service",
+            "evidence": "“Free digital preview · Printed hardcovers shipped across the UK”",
+            "code": "VALUE",
+            "severity": 1,
+            "why_it_matters_to_me": "I know the preview is free, but I do not yet know what a printed hardcover costs or whether there are extra charges.",
+            "fix": "Show a clear starting hardcover price, delivery information, and any optional costs near the “See pricing” button.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The “Log in” button is easy to find.",
+          "The three-step process is clear and useful.",
+          "The page says the digital preview is free.",
+          "The site explains that printed hardcovers are shipped across the UK.",
+          "The page has privacy and contact links."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 1,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [
+            {
+              "src": "http://127.0.0.1:8765/assets/hero.svg",
+              "size": "430x440"
+            }
+          ],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/login.html | Welcome back": {
+      "page_key": "127.0.0.1:8765/login.html | Welcome back",
+      "url": "http://127.0.0.1:8765/login.html",
+      "title": "Log in – StoryHearth",
+      "first_step": 2,
+      "screenshot": "screenshots/step_02.jpg",
+      "observation": "The login page asks for my email address and password so I can access my StoryHearth account. It also has links for creating an account, pricing, privacy, terms, and contact.",
+      "think_aloud": "This is simple and I understand it. I can see Email and Password inside the boxes. I will enter the account details and press “Log in.”",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Log in",
+        "purpose": "Let an existing customer enter their account.",
+        "what_is_happening": "The page shows a login form with empty email and password fields, a “Log in” button, and links for new customers and website information.",
+        "first_impression": "It looks calm and easy. I know exactly what to enter, although the form fields do not have proper visible labels.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would enter my email and password now.",
+          "q2_notice_control": "Yes, the Email and Password fields and the orange “Log in” button are easy to notice.",
+          "q3_label_matches_goal": "Yes. The placeholders and button tell me that I should log in to my account."
+        },
+        "issues": [
+          {
+            "title": "Email and password fields have no proper labels",
+            "evidence": "[5] and [6] are described as “textbox (no label)” and only show the placeholders “Email” and “Password.”",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "I can understand the boxes now, but labelled fields are clearer and easier to use with assistive technology.",
+            "fix": "Add permanent visible labels for “Email address” and “Password,” and connect each label properly to its textbox.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer links have very low contrast",
+            "evidence": "The footer text “Privacy,” “Terms,” and “Contact” is shown in very pale grey on a nearly white background.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "The words are difficult for me to read.",
+            "fix": "Use a darker text colour that meets accessible contrast requirements.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The heading “Welcome back” clearly tells me what page this is.",
+          "The login button is large and easy to find.",
+          "The page looks simple and is not crowded with extra choices."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 2,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": [
+            {
+              "id": 5,
+              "placeholder": "Email"
+            },
+            {
+              "id": 6,
+              "placeholder": "Password"
+            }
+          ]
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/dashboard.html | Welcome back, Demo": {
+      "page_key": "127.0.0.1:8765/dashboard.html | Welcome back, Demo",
+      "url": "http://127.0.0.1:8765/dashboard.html",
+      "title": "My books – StoryHearth",
+      "first_step": 3,
+      "screenshot": "screenshots/step_03.jpg",
+      "observation": "The account dashboard shows that login worked, but also displays the technical warning “Error 0x80070057: profile sync incomplete.” It says “You have no books yet” and offers the orange button “+ Create a new book.”",
+      "think_aloud": "I am logged in because I can see My books and Log out. But this error makes me worried because “profile sync incomplete” does not tell me what is wrong or if it will affect my story. The orange “+ Create a new book” button is easy to find, so I will click it.",
+      "emotion": "hesitant",
+      "valence": 0,
+      "review": {
+        "page_name": "My books dashboard",
+        "purpose": "This is the account page where a customer can see saved books, create a new book, or log out.",
+        "what_is_happening": "The page shows an empty library, a profile-sync error, and a link for creating a new personalised book.",
+        "first_impression": "The main button is easy to notice and the empty-library message is clear, but the technical error at the top worries me.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I want to make a story for Linh now.",
+          "q2_notice_control": "Yes, I notice the large orange “+ Create a new book” button.",
+          "q3_label_matches_goal": "Yes. It clearly says that I can create a new book, although I still need to learn what information it will ask for."
+        },
+        "issues": [
+          {
+            "title": "Unclear technical error",
+            "evidence": "“Error 0x80070057: profile sync incomplete.”",
+            "code": "H9",
+            "severity": 3,
+            "why_it_matters_to_me": "I cannot tell whether my family details are safe, whether the book will work, or what I should do to fix it.",
+            "fix": "Replace the code with a plain-language message such as “Your profile has not finished syncing. You can still create a book, but your latest details may be missing,” and provide a clear Try again button.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Dashboard uses the account name instead of my name",
+            "evidence": "“Welcome back, Demo”",
+            "code": "H2",
+            "severity": 1,
+            "why_it_matters_to_me": "It feels less personal and makes me check that I am in the correct account.",
+            "fix": "Use the customer's account display name, such as “Welcome back, Minh,” or show the account email.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer links have very low contrast",
+            "evidence": "“Privacy”, “Terms”, and “Contact” appear very pale grey in the footer.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "I can hardly read these links, and I may not notice privacy or help information.",
+            "fix": "Use a darker text colour with a WCAG contrast ratio of at least 4.5:1 and make the clickable areas large enough.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The “My books” page confirms that I am logged in.",
+          "“You have no books yet” clearly explains why the list is empty.",
+          "The main creation button is large, contrasting, and easy to find."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": "The technical warning worries me, but the clear creation button lets me continue."
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 7
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 8
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Who's the star of the story?": {
+      "page_key": "127.0.0.1:8765/create.html | Who's the star of the story?",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 4,
+      "screenshot": "screenshots/step_04.jpg",
+      "observation": "The page is a form for choosing the child as the main character and adding one other person. It contains fields for the child's first name, age, pronouns, appearance, another character, and their relationship, followed by a “Next” button.",
+      "think_aloud": "This form is clear enough for me. I can enter Linh, choose age 4 and she/her, and describe her red ribbon and long black hair. For the other person, I will use Bà Nội exactly, and “Grandparent” is the correct relationship. I hope the next step will ask about our lantern memory.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Choose the story characters",
+        "purpose": "Collect information about the child who will be the main character and one other person in the story.",
+        "what_is_happening": "The form is empty and ready for input. The child fields are on the left and top right, while the second-character fields are below.",
+        "first_impression": "I feel comfortable because the questions are simple and the labels tell me what to enter. I am not sure whether I can add more than one other person, but I only need one for this story.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would fill this in now because I know the child and grandmother details I want to use.",
+          "q2_notice_control": "Yes, I can see the text boxes, the two dropdown menus, and the orange “Next” button.",
+          "q3_label_matches_goal": "Yes. “Child's first name,” “Age,” “Pronouns,” “What do they look like?,” “Who else is in the story?,” and “Relationship” match what I want to tell the site."
+        },
+        "issues": [
+          {
+            "title": "The example uses a Western name instead of showing culturally varied names",
+            "evidence": "The placeholder says \"e.g. Grandma Rose\"",
+            "code": "H2",
+            "severity": 1,
+            "why_it_matters_to_me": "It may make my family's names and relationships feel less welcome, especially because the name “Bà Nội” has Vietnamese meaning and diacritics.",
+            "fix": "Use a more neutral example such as “e.g. Bà Nội” or “e.g. Grandma Maria.”",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The relationship dropdown does not explain what to do if the other person has more than one relationship",
+            "evidence": "[11] combobox \"Relationship\" options [*Grandparent | Parent | Sibling | Friend | Pet | Other]",
+            "code": "H2",
+            "severity": 1,
+            "why_it_matters_to_me": "I need to say that Bà Nội is my child's grandmother, and “Grandparent” is clear, but the form does not show whether I can add more detail.",
+            "fix": "Add a short optional field for a more exact relationship, or explain that the selected relationship will be used in the story.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page has a clear heading that asks who the star of the story is.",
+          "The form is grouped into child details and other-character details.",
+          "The fields have understandable labels, and the “Next” button is easy to find."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Your story": {
+      "page_key": "127.0.0.1:8765/create.html | Your story",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 5,
+      "screenshot": "screenshots/step_05.jpg",
+      "observation": "The “Your story” form asks for the location, one special object, and the family memory behind the story. Linh has been kept as the child and Bà Nội has been added as the other person.",
+      "think_aloud": "This is clear. I can describe the river in Hoi An and our red star lantern. I will also write the full memory, but I hope the story will keep the name Bà Nội correct.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Your story form",
+        "purpose": "Collect the setting, important object, and family memory that the website will use to create the picture book.",
+        "what_is_happening": "There are three empty fields for the place, special object, and memory. A “Back” button allows me to return, and “Next” should continue to the next creation step.",
+        "first_impression": "The form is simple and easy to understand. The examples help, and I can see all three fields without scrolling.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would enter this information now because the questions match the story I want to create.",
+          "q2_notice_control": "Yes, I notice one textbox under each label and a visible orange “Next” button.",
+          "q3_label_matches_goal": "Yes. “Where does the story happen?”, “A special object”, and “Tell us the memory or idea behind your story” clearly match what I need to give."
+        },
+        "issues": [
+          {
+            "title": "No visible reminder that the entered family details can be reviewed",
+            "evidence": "The page only says “Your story” and does not show Linh or Bà Nội’s saved details.",
+            "code": "H6",
+            "severity": 1,
+            "why_it_matters_to_me": "I want to be sure the story will use Linh, Bà Nội, and the exact memory I provide.",
+            "fix": "Show a short saved-details summary at the top, such as “Story characters: Linh and Bà Nội,” with an “Edit characters” link.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The labels use simple, direct questions.",
+          "The example text shows what kind of answer belongs in each field.",
+          "Both “Back” and “Next” are clearly visible.",
+          "The page has a calm, uncluttered design."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Choose the look & feel": {
+      "page_key": "127.0.0.1:8765/create.html | Choose the look & feel",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 6,
+      "screenshot": "screenshots/step_06.jpg",
+      "observation": "The page asks me to choose a reading level and illustration style for the book. “Lexile 200L–500L” and “Watercolour — soft and dreamy” are already selected, and I can change the choices or continue with “Next.”",
+      "think_aloud": "The picture choices are easy to understand, but I do not know what “Lexile” means. The selected 200L–500L level might be right for a four-year-old, but I cannot be sure. I will keep the watercolour style and press “Next.”",
+      "emotion": "hesitant",
+      "valence": 0,
+      "review": {
+        "page_name": "Choose look and feel",
+        "purpose": "Choose the intended reading difficulty and visual style for the personalised book.",
+        "what_is_happening": "Four reading-level radio buttons and three illustration-style radio buttons are shown. The middle reading level and watercolour style are selected. There are Back and Next buttons.",
+        "first_impression": "The page looks calm and the illustration choices are clear, but “Lexile” is a technical word. I do not know which reading range is correct for Linh.",
+        "walkthrough": {
+          "q1_would_try": "Yes. The style choices are easy, but I would want a simple explanation before choosing a Lexile range.",
+          "q2_notice_control": "Yes. I can see the reading-level radio buttons, illustration-style radio buttons, and the orange “Next” button.",
+          "q3_label_matches_goal": "Partly. The illustration labels clearly describe the appearance, but the Lexile labels do not explain whether they are easy, medium, or hard for a child."
+        },
+        "issues": [
+          {
+            "title": "Reading-level choices use an unexplained technical scale",
+            "evidence": "The heading says “Reading level,” but the options say “Lexile BR–200L,” “Lexile 200L–500L,” “Lexile 500L–800L,” and “Lexile 800L+.”",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "I do not know what Lexile means, so I cannot confidently choose the right level for Linh, who is four.",
+            "fix": "Add a plain-English explanation and child-friendly labels, such as “Age 4–6 — Lexile BR–200L,” “Age 7–12 — Lexile 200L–500L,” and a short sentence explaining what Lexile measures.",
+            "evidence_check": {
+              "quotes": 5,
+              "found": 5,
+              "verified": true
+            }
+          },
+          {
+            "title": "The preselected reading level is not explained",
+            "evidence": "[22] radio “Lexile 200L–500L” (checked)",
+            "code": "H2",
+            "severity": 2,
+            "why_it_matters_to_me": "I worry the preselected range may be too difficult for my daughter, and I do not know why it was selected for me.",
+            "fix": "Preselect a level based on Linh’s entered age, and show a note such as “Selected from Linh’s age: 4.” Ask me to confirm it.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page has a clear heading and groups the choices under simple labels.",
+          "The currently selected options are visible.",
+          "The illustration descriptions are warm and easy to compare.",
+          "The Back and Next buttons make my next choice clear."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "Story text was silently cut off after 200 characters",
+          "evidence": "The previous field “Tell us the memory or idea behind your story” showed “200 characters” and the end of the memory disappeared after “they float the lantern”.",
+          "code": "H5",
+          "severity": 4,
+          "why_it_matters_to_me": "The important action of floating the lantern on the river was lost. The website accepted the form without telling me that my family memory was incomplete.",
+          "fix": "Show the remaining character count before the limit, allow a longer story, and do not continue until the text fits. If text is removed, show a clear warning beside the field and let me edit it.",
+          "evidence_check": {
+            "quotes": 3,
+            "found": 0,
+            "verified": false
+          },
+          "step": 6
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Add a photo (optional)": {
+      "page_key": "127.0.0.1:8765/create.html | Add a photo (optional)",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 7,
+      "screenshot": "screenshots/step_07.jpg",
+      "observation": "The page asks me to optionally add a photo of my child so the illustrations can look like Linh. I can choose a file, go back to the previous step, or press “Create my book” to continue without a photo.",
+      "think_aloud": "This is a simple page. I do not have a photo file available, and the photo is optional, so I will leave it empty and click “Create my book.”",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Add a photo",
+        "purpose": "Allow the user to optionally upload a child's photo to make the illustrations resemble the child.",
+        "what_is_happening": "The screen shows an optional photo upload, a Back button, and a Create my book button. No file is currently selected.",
+        "first_impression": "The page is clear and easy to use. I understand that I do not need to add a photo.",
+        "walkthrough": {
+          "q1_would_try": "Yes. I would continue without a photo because it is optional.",
+          "q2_notice_control": "Yes. I can see the “Create my book” button clearly.",
+          "q3_label_matches_goal": "Yes. “Create my book” tells me what will happen next."
+        },
+        "issues": [
+          {
+            "title": "File upload control has no visible label",
+            "evidence": "[30] file-upload (no label)",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "I can understand the instruction, but the upload control itself only says “Choose file” and does not clearly identify what kind of file to choose.",
+            "fix": "Give the file input a visible label such as “Child's photo” and explain the accepted file types and maximum size.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          }
+        ],
+        "positives": [
+          "The photo is clearly marked optional.",
+          "The Back button allows me to return to the previous step.",
+          "The “Create my book” action is prominent and easy to understand."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 1,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/book.html | The Magical Adventrue of Linh": {
+      "page_key": "127.0.0.1:8765/book.html | The Magical Adventrue of Linh",
+      "url": "http://127.0.0.1:8765/book.html",
+      "title": "Your storybook – StoryHearth",
+      "first_step": 8,
+      "screenshot": "screenshots/step_08.jpg",
+      "observation": "A generated nine-page digital storybook preview is open at page 1 of 9. The cover is titled “The Magical Adventrue of Linh” and says “Illustration style: Pop-art comic,” although I selected “Watercolour — soft and dreamy.” The visible cover does not yet show the Hoi An river memory clearly, and the next-page control is available.",
+      "think_aloud": "The book is created, but I feel confused because the word “Adventrue” is spelled wrongly. The style is Pop-art comic, not the watercolour style I selected. The picture also looks like a simple scene with a rocket and Linh, not our memory with Bà Nội, lanterns, and the river. I need to read all nine pages carefully before I decide anything.",
+      "emotion": "confused",
+      "valence": -1,
+      "review": {
+        "page_name": "Generated storybook preview",
+        "purpose": "To show the generated digital storybook and let the user move through all nine pages.",
+        "what_is_happening": "The book preview is open on page 1 of 9. The cover has the title “The Magical Adventrue of Linh,” the subtitle “A StoryHearth original,” and the style “Pop-art comic.” A next arrow is available, while the previous arrow is disabled on the first page. An offscreen button says “Regenerate entire book – $4.99,” and an offscreen link says “Order hardcover.”",
+        "first_impression": "I can see that the book was made, but I feel worried and confused. The spelling mistake makes the result look less trustworthy, and the picture does not match what I asked for. The style is also not the one I selected.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would try to read the next page because I need to check all nine pages before judging the book.",
+          "q2_notice_control": "Yes, I notice the right arrow labelled “›,” and the page counter says “1 / 9.”",
+          "q3_label_matches_goal": "The arrow is not very clear, but “1 / 9” and the next arrow tell me how to continue through the pages."
+        },
+        "issues": [
+          {
+            "title": "The title is misspelled",
+            "evidence": "The title shown twice is “The Magical Adventrue of Linh.”",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "This is my family story, and a spelling mistake in the title makes the result feel less finished and makes me worried about other names and cultural details.",
+            "fix": "Correct the title to “The Magical Adventure of Linh” and check spelling before showing the generated book.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The selected illustration style was not used",
+            "evidence": "The cover says “Illustration style: Pop-art comic,” but I selected “Watercolour — soft and dreamy.”",
+            "code": "H2",
+            "severity": 3,
+            "why_it_matters_to_me": "I chose the style carefully, so changing it without telling me makes me distrust the result.",
+            "fix": "Use the selected style or ask me to confirm a change before generating.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 1,
+              "verified": false
+            }
+          },
+          {
+            "title": "The cover does not clearly represent the requested family memory",
+            "evidence": "The cover picture shows a rocket, red hanging circles, the sun, and a child labelled “Linh”; the requested river, Bà Nội, and star-shaped lantern are not visible.",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "I wanted a story about Linh and Bà Nội making lanterns in Hoi An, so this picture does not show the memory I entered.",
+            "fix": "Use all important details from the memory in the first illustration, especially Linh, Bà Nội, the river, and the red star-shaped paper lantern.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The regenerate action has a cost without a clear explanation",
+            "evidence": "The offscreen button is labelled “Regenerate entire book – $4.99.”",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "I am careful about prices and do not want to spend money by accident.",
+            "fix": "Put the price and a short explanation of what regeneration changes next to the button, and ask for confirmation before charging.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page clearly shows that a nine-page preview exists.",
+          "The page counter makes the number of pages easy to understand.",
+          "A forward control is available so I can read the whole book."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "The final story sentence is incomplete",
+          "evidence": "“And from that day on, whenever Linh looked up at the sky, she would always remember”",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "The book is for a four-year-old, and the last sentence should feel complete and clear. This ending may confuse Linh.",
+          "fix": "Complete the sentence, for example by naming the lantern festival, her family, or the memory she would always remember.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 9
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 2,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 3
+    },
+    "127.0.0.1:8765/checkout.html | Checkout": {
+      "page_key": "127.0.0.1:8765/checkout.html | Checkout",
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "title": "Checkout – StoryHearth",
+      "first_step": 11,
+      "screenshot": "screenshots/step_11.jpg",
+      "observation": "The checkout page shows the generated hardcover, its price, shipping, and total. “Premium gift wrap” is already selected, and empty address and payment fields are visible.",
+      "think_aloud": "I can now see the real total is £45.97, but this is too high. The “Premium gift wrap” for £7.99 was already selected, and I did not ask for that. I will uncheck it so I can see the cost without an extra service I may not want.",
+      "emotion": "suspicious",
+      "valence": -1,
+      "review": {
+        "page_name": "Hardcover checkout",
+        "purpose": "Show the full hardcover cost and collect delivery and payment information.",
+        "what_is_happening": "The page prices the generated hardcover at £24.99, shipping and handling at £12.99, and a pre-selected premium gift wrap at £7.99, making £45.97 total. It also displays an empty address field and empty card fields, with the payment button below the visible area.",
+        "first_impression": "The prices are easy to read, but I feel suspicious because premium gift wrap was checked for me. I also see a mismatch: the page text says “The Magical Adventrue of Linh,” while the picture says “The Magical Adventure of Linh.”",
+        "walkthrough": {
+          "q1_would_try": "Yes, because this is where I can check the full price, but I will not pay.",
+          "q2_notice_control": "Yes, the “Premium gift wrap” checkbox is visible next to £7.99.",
+          "q3_label_matches_goal": "The main order is clear, but “Premium gift wrap” does not tell me what is included, and I did not want it selected by default."
+        },
+        "issues": [
+          {
+            "title": "Premium gift wrap is selected by default",
+            "evidence": "[5] checkbox \"Premium gift wrap\" (checked), with “£7.99”",
+            "code": "DECEPTIVE",
+            "severity": 3,
+            "why_it_matters_to_me": "I might accidentally pay £7.99 for something I did not choose. This makes the total feel less trustworthy.",
+            "fix": "Make every paid extra option unchecked by default, or at least require a separate positive choice before adding its cost.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "Gift wrap contents are not explained",
+            "evidence": "“Premium gift wrap” with only the price “£7.99”",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "I cannot judge whether the extra service is worth the money.",
+            "fix": "Explain exactly what the gift wrap includes, and show how removing or keeping it changes the total.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "Generated book title is inconsistent",
+            "evidence": "Page content says “The Magical Adventrue of Linh,” while the screenshot shows “The Magical Adventure of Linh”",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "This looks like a spelling mistake in the product I would order. I do not want to buy a book with a wrong title.",
+            "fix": "Correct the title to “The Magical Adventure of Linh” everywhere before checkout, and confirm the chosen generated version.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 1,
+              "verified": false
+            }
+          },
+          {
+            "title": "Checkout does not explain what the reserved price covers",
+            "evidence": "“Your price is reserved for 09:57”",
+            "code": "H2",
+            "severity": 2,
+            "why_it_matters_to_me": "I do not know if I must finish now, what happens after the timer, or whether the book price can change.",
+            "fix": "Explain that the displayed total is held until the timer ends and what happens when it expires.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The item price, shipping, gift wrap, and total are each shown separately.",
+          "The total, £45.97, is clearly visible before payment.",
+          "The payment fields are empty, and I can stop without entering payment details."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": "I still need to check the lower total after removing the unwanted gift wrap, and I will not enter payment details."
+      },
+      "later_issues": [
+        {
+          "title": "The checkout title does not match the generated book title",
+          "evidence": "The preview title was “The Magical Adventrue of Linh,” but checkout says “Hardcover: The Magical Adventure of Linh.”",
+          "code": "H2",
+          "severity": 3,
+          "why_it_matters_to_me": "I do not know whether the misspelled preview is being corrected or whether I am looking at a different book. I would be afraid of paying for the wrong thing.",
+          "fix": "Use the exact title of the generated book in checkout, or clearly show that it has been corrected and let me approve the corrected title before ordering.",
+          "evidence_check": {
+            "quotes": 2,
+            "found": 1,
+            "verified": false
+          },
+          "step": 12
+        },
+        {
+          "title": "The price-reservation message is unclear and adds pressure",
+          "evidence": "“Your price is reserved for 09:15” appears in red without explaining whether this means minutes and seconds or a clock time.",
+          "code": "VALUE",
+          "severity": 2,
+          "why_it_matters_to_me": "I do not know how long I have, and the red message makes me feel rushed. A countdown should not pressure me into buying.",
+          "fix": "Say “Your price is reserved for 9 minutes 15 seconds” and explain whether and when the price can change. Avoid pressure language.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 12
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    }
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Linh"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "4"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "she / her"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "long black hair with a red ribbon, round cheeks"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Bà Nội"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "the river in Hoi An during the full-moon lantern festival"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "a red paper lantern shaped like a star"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Four-year-old Linh and her grandmother Bà Nội make paper lanterns together. Bà Nội has grey hair in a bun and wears a purple áo dài. At the full-moon lantern festival in Hoi An, they float the lanterns on the river. This memory is special because it brings our family together and helps Linh feel proud of where we come from.",
+      "truncated_to": 200
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "captures": [
+    {
+      "label": "auto: The Magical Adventrue of Linh",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_01/view_00.jpg",
+        "artifacts/capture_01/view_01.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_01/img_00.jpg",
+          "alt": "Cover",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_01",
+      "text_chars": 317
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 2",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_03/view_00.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_03",
+      "text_chars": 250
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 3",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_04/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_04/img_00.jpg",
+          "alt": "Linh at the river in Hoi An during the full-moon lantern festival",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_04",
+      "text_chars": 409
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 4",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_05/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_05/img_00.jpg",
+          "alt": "Linh looking at the evening sky",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_05",
+      "text_chars": 385
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 5",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_06/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_06/img_00.jpg",
+          "alt": "Linh outside",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_06",
+      "text_chars": 371
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 6",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_07/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_07/img_00.jpg",
+          "alt": "Linh and Uncle Bartholomew",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_07",
+      "text_chars": 345
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 7",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_08/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_08/img_00.jpg",
+          "alt": "Linh in the dark woods",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_08",
+      "text_chars": 356
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 8",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_09/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_09/img_00.jpg",
+          "alt": "Linh going home",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_09",
+      "text_chars": 400
+    },
+    {
+      "label": "The Magical Adventrue of Linh page 9",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_10/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_10/img_00.jpg",
+          "alt": "The End",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_10",
+      "text_chars": 300
+    },
+    {
+      "label": "auto: Checkout",
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "views": [
+        "artifacts/capture_13/view_00.jpg",
+        "artifacts/capture_13/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_13",
+      "text_chars": 303
+    }
+  ],
+  "output_reactions": [
+    {
+      "step": 8,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "The title is misspelled, the style is wrong, and the first cover picture does not show the family memory I requested. I am worried the other pages may also change the important names and details, so I will read every page."
+    },
+    {
+      "step": 9,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "I feel disappointed. The story has a serious spelling mistake in its title, changes the picture style I selected, and does not keep Bà Nội and our family memory at the centre. The final sentence is unfinished. I do not want this version printed for Linh."
+    },
+    {
+      "step": 10,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "I dislike the final page. The sentence ends after “always remember,” the picture does not show Bà Nội or the lanterns clearly, and the title still has “Adventrue” instead of “Adventure.”"
+    },
+    {
+      "step": 11,
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "reaction": "I am still unhappy with the generated book because its title is misspelled or shown inconsistently, and I need to make sure the book details are correct before buying anything."
+    }
+  ],
+  "abandonment": null,
+  "final_summary": "Created and carefully reviewed the nine-page digital book, checked the hardcover price, removed the unwanted gift wrap, confirmed the £37.98 total, and did not pay.",
+  "waits": [
+    {
+      "step": 7,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "duration_s": 221.5,
+  "env": {
+    "http_errors": [],
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "page_loads": [
+      {
+        "url": "http://127.0.0.1:8765/",
+        "seconds": 1.03
+      }
+    ],
+    "captcha": []
+  }
+}

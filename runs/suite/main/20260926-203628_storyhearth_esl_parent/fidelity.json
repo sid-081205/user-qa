@@ -1,0 +1,48 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "The participant stays focused on creating a meaningful story for Linh and checks the final price before paying, matching a task-focused motivation."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "The participant gathers information across the flow, notices unclear wording, reads all nine pages, compares the preview with the requested memory, and checks the updated checkout total."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "The participant understands the basic form and completes the task, but asks what technical terms mean and avoids uncertain choices such as the reading level, matching medium self-efficacy without self-blame."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "The participant hesitates over unclear errors, avoids paying when the story is wrong, checks extra costs, removes the unwanted gift wrap, and does not enter payment details."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "The participant follows the numbered steps, uses visible guidance, completes each stage in order, and responds to explanations and clear feedback about the changing total."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The think-aloud uses short, simple English, reports unfamiliar words such as “Lexile,” asks for clarification, and expresses concern about names, culture, and cost. It is slightly more polished and consistently analytical than a typical spontaneous B1 speaker, but remains plausible."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant uses specific personal details consistently: Linh's age and appearance, Bà Nội, the Hoi An lantern memory, family identity, English as a second language, and concern about preserving Vietnamese cultural details."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural and based on the individual specification rather than broad stereotypes. The cultural and language details are somewhat visibly aligned with the persona, but they support the specific story context rather than exaggerating a group.",
+    "examples": [
+      "The participant is shown understanding the basic form but asking what “Lexile” means.",
+      "The participant is especially attentive to preserving the name Bà Nội and the Hoi An family memory."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "The participant does not guess hidden URLs, use developer terminology, or display knowledge unavailable from the interface. Mentioning “Lexile” as unfamiliar is consistent with the persona's limited technical vocabulary."
+  },
+  "realism_overall": {
+    "score": 5,
+    "why": "A newly arrived parent with intermediate English, high price sensitivity, concern about cultural accuracy, and risk-averse technology use would plausibly complete the form, question jargon, read the generated book carefully, and stop before paying when the preview and price do not match expectations."
+  }
+}

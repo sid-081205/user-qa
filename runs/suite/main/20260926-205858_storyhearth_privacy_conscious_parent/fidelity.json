@@ -1,0 +1,44 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "The participant consistently focused on obtaining a comforting, age-appropriate story about Nikolai while pursuing clear information about privacy, price, cancellation, and data handling (steps 1, 4–8, 12–14)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She systematically inspected the claims, form fields, selected values, generated output, checkout breakdown, and privacy notice before deciding whether to proceed (steps 1–14). Her concerns about missing details, undefined terms, and inconsistencies are consistent with comprehensive processing."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "She handled the forms confidently and explained her reasoning, while acknowledging uncertainty around unfamiliar concepts such as “Lexile” and the error code (steps 2, 3, 7). She did not blame herself when the system failed or produced an incorrect result."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She avoided uploading Nikolai’s photo until privacy terms were clear, declined unclear or potentially costly actions, questioned the generation process, unticked the preselected add-on, and refused to trust the countdown or vague privacy language (steps 8, 9, 12–14)."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She preferred clear labels, explicit consequences, plain explanations, and step-by-step progress. She responded well to visible selected values and rejected unsupported technical language, unclear loading, and unexplained choices (steps 1, 4–9)."
+    }
+  },
+  "voice_consistency": {
+    "score": 5,
+    "why": "The think-aloud is measured, sceptical, and precise throughout, with attention to exact wording such as “profile sync incomplete,” “May be retained,” and “Your price is reserved for 09:57” (steps 3, 12, 14). The language sounds like someone accustomed to reviewing contracts and privacy notices."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific to Elena: she repeatedly refers to Nikolai, his age and school anxiety, the smooth grey brave stone, the rainy school gate, and the importance of protecting a child’s data (steps 4, 6, 8, 10–11)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is strongly aligned with the privacy-conscious, anti-dark-pattern persona, but it is somewhat idealized: she detects nearly every suspicious pattern and articulates a comprehensive concern almost immediately in each step. That makes her feel unusually vigilant compared with a typical real user, though still plausible for this occupation and history."
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear evidence of knowledge outside the supplied persona or the visible website content. She investigated terminology rather than claiming expertise, and did not guess hidden URLs or exploit system information."
+  },
+  "realism_overall": {
+    "score": 5,
+    "why": "The session is highly plausible for a risk-averse paralegal and parent who researches before uploading a child’s details. The sequence of checking privacy, skipping the photo, completing the narrative, noticing output inconsistencies, inspecting checkout, unticking the add-on, and then reviewing the privacy notice is coherent and believable."
+  }
+}

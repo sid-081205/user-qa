@@ -1,0 +1,94 @@
+{
+  "run": "20260926-204852_storyhearth_tech_savvy_parent",
+  "persona": "tech_savvy_parent",
+  "persona_name": "Daniel Okafor",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 13,
+  "pages_reviewed": 10,
+  "issues": 31,
+  "unique_issues": 26,
+  "evidence_quotes_verified": 1.0,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 6,
+    "2": 11,
+    "3": 14,
+    "4": 0
+  },
+  "issues_by_code": {
+    "CONTENT": 7,
+    "ACC": 7,
+    "H2": 5,
+    "H3": 3,
+    "H1": 2,
+    "H5": 2,
+    "DECEPTIVE": 2,
+    "H9": 1,
+    "TRUST": 1,
+    "VALUE": 1
+  },
+  "reached_output": true,
+  "output_parts": 11,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 1.0,
+    "character_consistency": 1.0,
+    "visual_quality": 2.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 47.5,
+  "sus_grade": "F",
+  "sus_consistency_flag": true,
+  "ueq_s": {
+    "pragmatic": 0.5,
+    "hedonic": -0.75,
+    "overall": -0.125
+  },
+  "nps": 0,
+  "mean_valence": -0.15,
+  "min_valence": -2.0,
+  "abandonment": {
+    "step": 12,
+    "page": "127.0.0.1:8765/checkout.html | Checkout",
+    "reason": "I would not pay: the generated book is visibly unfaithful and misspelled, there is no visible pre-payment review/edit control, and gift wrap is pre-ticked. I can still inspect the lower checkout details without entering payment information.",
+    "source": "self-report"
+  },
+  "waits": [
+    {
+      "step": 9,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 5,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 1,
+    "realism_overall": 4
+  },
+  "llm_usage": {
+    "calls": 18,
+    "failed_calls": 0,
+    "prompt_tokens": 93857,
+    "completion_tokens": 23885,
+    "seconds": 231.1,
+    "by_purpose": {
+      "step": 13,
+      "output_assessment": 2,
+      "output_synthesis": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 18
+    }
+  },
+  "wall_seconds": 305.3
+}

@@ -1,0 +1,48 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 4,
+      "why": "Elena stays focused on creating a reassuring story for Nikolai and systematically checks the story details, reading level, illustration style, price, and final text (Steps 7–16). However, she sometimes shifts into a formal usability-audit voice rather than a purely task-focused consumer perspective."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "Her comprehensive processing is consistent throughout: she notices landing-page wording, checks privacy before sharing details, inspects form values, reads all nine pages, verifies the style mismatch, and compares the checkout total before and after removing gift wrap (Steps 1–16)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "She successfully completes the multi-step flow, changes a preselected relationship, evaluates reading-level options, and reaches checkout without blaming herself. Her use of terms such as “persistent visible labels” and “technical profile-sync error” occasionally sounds more like a UX evaluator than someone describing her own experience, but the underlying navigation confidence is plausible."
+    },
+    "risk_attitude": {
+      "score": 3,
+      "why": "Her risk aversion is clear in refusing to upload Nikolai’s photo, declining payment after finding a pre-ticked add-on, and repeatedly checking retention, AI training, sharing, and deletion (Steps 1, 5, 11, 15–16). However, this conflicts with her statement at Step 5 that she would not create the book until she understood the data use, followed by entering extensive child and family information at Steps 7–10 despite the notice remaining unresolved."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She follows a deliberate step-by-step process: review policy, enter character details, specify the memory, choose reading level, decline the photo, inspect every page, and then audit checkout. She also checks entered values and notices where preselection or unexplained choices could affect the result (Steps 3–16)."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The measured, sceptical voice is largely consistent, with precise attention to exact wording such as “may be retained,” “optional,” and “Illustration style: Pop-art comic” (Steps 5, 11–12). At times, phrases such as “accessible description,” “persistent visible labels,” and “status or effect” sound like research terminology rather than Elena’s natural think-aloud."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant consistently behaves as a specific mother rather than a generic privacy-conscious user. She uses details about Nikolai’s age, school anxiety, yellow raincoat, gap in his front teeth, Mama, Varna, and the smooth grey “brave stone,” then evaluates whether the resulting book preserves those meaningful elements (Steps 7–14)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural, but it occasionally turns Elena into an almost perfectly exhaustive compliance checker. The simulation is unusually systematic about identifying every policy ambiguity, preselection, accessibility issue, and pricing pressure, with little ordinary uncertainty or distraction."
+  },
+  "knowledge_leakage": {
+    "score": 2,
+    "examples": [
+      "Uses audit-like language such as “Main illustration has no accessible description,” “File control has no explicit accessible label,” and “input boxes are identified” rather than describing the problem solely in everyday terms.",
+      "Connects the privacy notice directly to AI training and unidentified technology partners before the policy explicitly establishes those issues (Steps 1 and 5), although this is plausible given her stated concerns.",
+      "Interprets “Lexile BR–200L” and distinguishes it from a wider range (Step 10); plausible for a careful researcher, but the immediate framing is more expert-like than the persona’s “unfamiliar interfaces slow me down” trait suggests."
+    ]
+  },
+  "realism_overall": {
+    "score": 4,
+    "why": "A privacy-focused parent who checks data use, notices deceptive checkout patterns, declines photo upload, and reads the finished story before paying would plausibly behave this way. The main realism issue is that she enters sensitive family details after explicitly saying she would wait until the privacy uncertainties were resolved, making the risk decision less coherent than the rest of the session."
+  }
+}

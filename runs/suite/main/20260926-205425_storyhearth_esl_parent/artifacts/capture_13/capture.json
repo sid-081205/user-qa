@@ -1,0 +1,10 @@
+{
+  "label": "auto: Simple pricing",
+  "url": "http://127.0.0.1:8765/pricing.html",
+  "views": [
+    "artifacts/capture_13/view_00.jpg",
+    "artifacts/capture_13/view_01.jpg"
+  ],
+  "images": [],
+  "dir": "artifacts/capture_13"
+}

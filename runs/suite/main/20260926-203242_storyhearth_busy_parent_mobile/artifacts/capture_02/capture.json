@@ -1,0 +1,16 @@
+{
+  "label": "The Magical Adventrue of Aarav page 1",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_02/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_02/img_00.jpg",
+      "alt": "Cover",
+      "w": 296,
+      "h": 194
+    }
+  ],
+  "dir": "artifacts/capture_02"
+}

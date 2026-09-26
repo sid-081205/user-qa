@@ -1,0 +1,599 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 189,
+      "sentences": 14,
+      "avg_sentence_words": 13.5,
+      "flesch_reading_ease": 63.8,
+      "fk_grade": 7.7,
+      "polysyllabic_ratio": 0.122,
+      "long_words": [
+        "Bartholomew",
+        "crepuscular",
+        "ephemeral",
+        "existential",
+        "ineffable",
+        "inexplicable",
+        "juxtaposing",
+        "luminescence",
+        "melancholy",
+        "trepidation"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 5.0,
+    "per_part": [
+      {
+        "part": "auto: The Magical Adventrue of Aarav",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 2",
+        "words": 8,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.8,
+        "flesch_reading_ease": 82.4
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 3",
+        "words": 31,
+        "avg_sentence_words": 15.5,
+        "fk_grade": 7.2,
+        "flesch_reading_ease": 71.0
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 4",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.3,
+        "flesch_reading_ease": -31.2
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 5",
+        "words": 31,
+        "avg_sentence_words": 15.5,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.2
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 6",
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 6.5,
+        "flesch_reading_ease": 60.5
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 7",
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.1,
+        "flesch_reading_ease": 84.2
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 8",
+        "words": 32,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      },
+      {
+        "part": "The Magical Adventrue of Aarav page 9",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.9,
+        "flesch_reading_ease": 74.3
+      }
+    ],
+    "names": {
+      "Aarav": {
+        "token": "Aarav",
+        "mentions": 11,
+        "near_miss_variants": [
+          "Aara",
+          "Aarav's"
+        ]
+      },
+      "Meera": {
+        "token": "Meera",
+        "mentions": 0,
+        "near_miss_variants": []
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Abbey",
+      "Park",
+      "Leicester",
+      "Rory",
+      "Aara",
+      "Bartholomew"
+    ],
+    "placeholders": [
+      "{{recipient_name}}",
+      "{{sender_name}}",
+      "{recipient_name}",
+      "{sender_name}"
+    ],
+    "repeated_sentences": [
+      "Once upon a time, in Abbey Park in Leicester, there lived a curious child named Aarav."
+    ],
+    "truncated_ending": true,
+    "out_of_dictionary_words": [
+      "crepuscular"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Aarav"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "5"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "he / him"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "Short black hair, big brown eyes, red dinosaur t-shirt"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Meera"
+    },
+    {
+      "field": "Relationship",
+      "action": "select",
+      "value": "Sibling"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "Abbey Park in Leicester"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "Aarav's red toy dinosaur called Rory"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Aarav teaching his little sister Meera to find shapes in the clouds at the park near our house on his fifth birthday. I want Aarav to be the hero."
+    },
+    {
+      "field": "Lexile BR–200L",
+      "action": "choose",
+      "value": "BR-200L"
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "expected_names": [
+    "Aarav",
+    "Meera"
+  ],
+  "reading_age": 5.0,
+  "superseded_captures": [],
+  "version_changes": [],
+  "artifact_type": "Personalised children's birthday storybook",
+  "parts": [
+    {
+      "part": "Cover",
+      "text": "A StoryHearth original\nIllustration style: Pop-art comic",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "The image itself is not visible in the capture; the only available description is \"Cover.\"",
+      "reaction": "The title is bright and recognisable, but \"Adventrue\" immediately looks careless. I also asked for a Watercolour style, so seeing \"Pop-art comic\" is disappointing.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"The Magical Adventrue of Aarav\"",
+          "severity": 2
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "\"Illustration style: Pop-art comic\" conflicts with the Watercolour style I selected.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "Aarav's name is prominent in the title.",
+        "The cover identifies this as a StoryHearth original."
+      ],
+      "suggested_change": "Correct the title to \"The Magical Adventure of Aarav\" and render the illustrations in the selected Watercolour style.",
+      "rewrite": "The Magical Adventure of Aarav\nA StoryHearth original\nIllustration style: Watercolour"
+    },
+    {
+      "part": "Dedication",
+      "text": "For {{recipient_name}}, with love from {{sender_name}}",
+      "image_refs": [],
+      "picture_description": "No picture is provided.",
+      "reaction": "This is exactly the kind of unfinished template I do not want to give as a birthday present. It makes the book look broken rather than personal.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"For {{recipient_name}}, with love from {{sender_name}}\"",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The website did not replace the recipient and sender placeholders with actual names.",
+          "severity": 3
+        }
+      ],
+      "strengths": [],
+      "suggested_change": "Replace the placeholders with the intended recipient and sender names, or remove this page if those names were not supplied.",
+      "rewrite": "For Aarav, with love from Mum"
+    },
+    {
+      "part": "Page 1",
+      "text": "Once upon a time, in Abbey Park in Leicester, there lived a curious child named Aarav. Aarav was 5 years old and loved nothing more than Aarav's red toy dinosaur called Rory.",
+      "image_refs": [
+        "I2"
+      ],
+      "picture_description": "The image itself is not visible; the alt text says \"Aarav at Abbey Park in Leicester.\"",
+      "reaction": "This part uses the park, Leicester, Aarav's age, and Rory, so it is recognisably about him. However, the repeated name and the slightly awkward phrase \"nothing more than\" make it feel machine-written rather than like a birthday story.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The page uses Aarav, age 5, Abbey Park in Leicester, and the red toy dinosaur Rory, but does not use the supplied description of his appearance.",
+          "severity": 1
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"Aarav was 5 years old and loved nothing more than Aarav's red toy dinosaur called Rory.\"",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "Aarav's name and age are correct.",
+        "The setting and special object are included.",
+        "Rory's red colour and dinosaur identity are retained."
+      ],
+      "suggested_change": "Use Aarav's appearance naturally and simplify the sentence for a five-year-old listener.",
+      "rewrite": "Once upon a time, in Abbey Park in Leicester, there lived a curious boy called Aarav. Aarav was five. He had short black hair, big brown eyes, and wore a red dinosaur T-shirt. His favourite toy was a little red dinosaur called Rory.",
+      "metrics": {
+        "words": 31,
+        "avg_sentence_words": 15.5,
+        "fk_grade": 7.2,
+        "flesch_reading_ease": 71.0
+      }
+    },
+    {
+      "part": "Page 2",
+      "text": "One evening Aarav gazed upward. The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.",
+      "image_refs": [
+        "I3"
+      ],
+      "picture_description": "The image itself is not visible; the alt text says \"Aarav looking at the evening sky.\"",
+      "reaction": "This is far too difficult for Aarav and not what I wanted for his birthday. The words \"ephemeral,\" \"crepuscular,\" and \"existential trepidation\" would be completely out of place in a five-year-old's bedtime story.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "\"The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "The sentence contains several long, difficult words and is grammatically far above the requested reading age.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The image description and text both concern Aarav looking at the sky."
+      ],
+      "suggested_change": "Replace the sentence with simple language about clouds and shapes, and bring Meera into the birthday memory.",
+      "rewrite": "That evening, Aarav looked up at the sky. He saw big, puffy clouds that looked like animals and silly shapes. \"Meera, quick!\" he called. \"Let's find a dragon in the clouds!\"",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.3,
+        "flesch_reading_ease": -31.2
+      }
+    },
+    {
+      "part": "Page 3",
+      "text": "Then the rain began to pour. Big grey drops splashed into the puddles as Aara pulled up his hood and ran for shelter, holding Aarav's red toy dinosaur called Rory tight.",
+      "image_refs": [
+        "I4"
+      ],
+      "picture_description": "The image itself is not visible; the alt text says \"Aarav outside.\"",
+      "reaction": "The rain and Rory are easy to follow, but \"Aara\" is not my son's name. That spelling error would be noticed immediately, especially on a present meant to be kept.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "\"Aara pulled up his hood\" changes the supplied name Aarav.",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"holding Aarav's red toy dinosaur called Rory tight\" is awkward word order.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The alt text only says \"Aarav outside\" and does not confirm that the image shows rain, puddles, a hood, or Rory.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The rain creates a simple action for the story.",
+        "Rory is still present and correctly named."
+      ],
+      "suggested_change": "Correct Aarav's name and make the sentence sound natural and age-appropriate.",
+      "rewrite": "Then the rain began to pour. Big grey drops splashed in the puddles. Aarav pulled up his hood and ran for shelter, holding Rory tight.",
+      "metrics": {
+        "words": 31,
+        "avg_sentence_words": 15.5,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.2
+      }
+    },
+    {
+      "part": "Page 4",
+      "text": "Uncle Bartholomew\nSuddenly, Uncle Bartholomew appeared with a lantern. \"Aarav, follow me!\" he called, and she followed him along the winding path.",
+      "image_refs": [
+        "I5"
+      ],
+      "picture_description": "The image itself is not visible; the alt text says \"Aarav and Uncle Bartholomew.\"",
+      "reaction": "Uncle Bartholomew was never mentioned in the story I requested, and \"she followed him\" is confusing because Aarav is a boy. This page feels as if a different story has been inserted.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "\"Uncle Bartholomew\" is an invented character not present in the supplied family details.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "\"he called, and she followed him\" switches from Aarav's male pronouns to \"she.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "Aarav is established as a boy but is referred to as \"she.\"",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The lantern and winding path could provide a clear visual action if they belonged in the story."
+      ],
+      "suggested_change": "Remove the invented uncle and keep the park, Meera, Rory, and cloud-shape game at the centre of the story.",
+      "rewrite": "Aarav looked for Meera beside the path. \"Come back, Meera!\" he called. Rory pointed towards a big cloud that looked just like a dinosaur.",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 6.5,
+        "flesch_reading_ease": 60.5
+      }
+    },
+    {
+      "part": "Page 5",
+      "text": "Deep in the woods, the shadows grew teeth and whispered that no one would ever find Aarav again. Aarav clutched a shiny red balloon and trembled in the dark.",
+      "image_refs": [
+        "I6"
+      ],
+      "picture_description": "The image itself is not visible; the alt text says \"Aarav in the dark woods.\"",
+      "reaction": "This is frightening rather than cosy, and it changes the gentle park birthday memory into a threatening adventure. The red balloon is also not the red dinosaur I asked for.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "\"the shadows grew teeth and whispered that no one would ever find Aarav again\"",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The story moves from Abbey Park to \"Deep in the woods\" and replaces Rory with \"a shiny red balloon.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "There is no explanation for why Aarav has left the park, entered the woods, or acquired a balloon.",
+          "severity": 3
+        }
+      ],
+      "strengths": [],
+      "suggested_change": "Replace the threatening woods scene with a safe, playful search for cloud shapes with Meera in Abbey Park.",
+      "rewrite": "Aarav and Meera walked a little farther into the park. The trees made spots of light on the grass. Rory pointed at the clouds, and Aarav laughed. \"That one looks like a rocket!\"",
+      "metrics": {
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.1,
+        "flesch_reading_ease": 84.2
+      }
+    },
+    {
+      "part": "Page 6",
+      "text": "Once upon a time, in Abbey Park in Leicester, there lived a curious child named Aarav. At last the sun came out, and Aarav skipped all the way home, happier than ever.",
+      "image_refs": [
+        "I7"
+      ],
+      "picture_description": "The image itself is not visible; the alt text says \"Aarav going home.\"",
+      "reaction": "The ending is very short and repeats the opening almost word for word. It does bring Aarav home happily, but it does not mention Meera, the cloud game, Rory, or why the day was special.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "\"Once upon a time, in Abbey Park in Leicester, there lived a curious child named Aarav\" repeats the opening of Page 1.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The supplied birthday memory about Aarav teaching Meera to find shapes in the clouds is absent from the ending.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "\"At last the sun came out, and Aarav skipped all the way home, happier than ever\" is generic and does not make the sibling memory meaningful.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The paragraph has a clear concluding action.",
+        "Aarav's positive ending is appropriate in tone."
+      ],
+      "suggested_change": "End with the actual birthday memory and show Aarav helping Meera recognise a cloud shape.",
+      "rewrite": "When the sun came out, Aarav showed Meera one last cloud. \"That looks like a dinosaur,\" he said. \"Just like Rory!\" Meera smiled, and Aarav felt proud. It was a very happy birthday.",
+      "metrics": {
+        "words": 32,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      }
+    },
+    {
+      "part": "End page",
+      "text": "The End\nAnd from that day on, whenever Aarav looked up at the sky, he would always remember\nThe End",
+      "image_refs": [
+        "I8"
+      ],
+      "picture_description": "The image itself is not visible; the alt text says \"The End.\"",
+      "reaction": "The final sentence stops in the middle and never says what Aarav remembered. Repeating \"The End\" makes the ending look unfinished, not like a polished keepsake.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"he would always remember\" ends without an object or final punctuation, and \"The End\" is printed twice.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The sentence is grammatically incomplete and the ending is duplicated.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The missing memory prevents a meaningful final reflection on Aarav's birthday with Meera.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The idea of remembering the day could provide a thoughtful ending if completed."
+      ],
+      "suggested_change": "Complete the sentence, remove the duplicate ending, and name the shared memory.",
+      "rewrite": "The End\nFrom that day on, whenever Aarav looked up at the sky, he remembered teaching Meera how to find shapes in the clouds—and how much he loved being her big brother.",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.9,
+        "flesch_reading_ease": 74.3
+      }
+    }
+  ],
+  "criteria": {
+    "fidelity": {
+      "evidence": "The output uses Aarav, age five, Abbey Park in Leicester, and Rory, but omits Meera entirely, omits the sibling relationship and cloud-shape birthday memory, fails to use the appearance details, changes \"Aarav\" to \"Aara,\" and invents Uncle Bartholomew, the woods, and a balloon.",
+      "score": 2
+    },
+    "coherence": {
+      "evidence": "The opening and ending are present, but the story jumps from a park to threatening woods, introduces an unexplained uncle, changes Aarav's pronoun to \"she,\" repeats the opening sentence, and ends with an incomplete thought.",
+      "score": 2
+    },
+    "age_fit": {
+      "evidence": "The requested reading age is 5, but the prose includes \"ephemeral luminescence,\" \"crepuscular firmament,\" \"ineffable wonder,\" and \"existential trepidation,\" as well as threatening shadows with teeth.",
+      "score": 1
+    },
+    "language": {
+      "evidence": "There are unresolved template placeholders, the title misspells \"Adventure,\" Aarav becomes \"Aara,\" the pronoun changes to \"she,\" the final sentence is incomplete, and \"The End\" is duplicated.",
+      "score": 1
+    },
+    "text_image_fit": {
+      "evidence": "The actual pictures are not visible in the captures, so alignment between the images and the text cannot be reliably judged. The available alt text is too limited to verify every scene.",
+      "score": "n/a"
+    },
+    "character_consistency": {
+      "evidence": "The actual character images are not visible, so visual consistency cannot be judged. The text does establish Aarav as a boy but then incorrectly refers to him as \"she.\"",
+      "score": "n/a"
+    },
+    "visual_quality": {
+      "evidence": "The actual illustrations are not visible, so artefacts such as distorted faces or extra fingers cannot be assessed. However, the output labels the style as \"Pop-art comic\" despite Watercolour having been selected.",
+      "score": "n/a"
+    },
+    "emotional_resonance": {
+      "evidence": "The story is loosely centred on Aarav, but it excludes Meera and the specific loving memory of teaching her to find cloud shapes. The threatening woods, invented characters, and unfinished ending make it unsuitable as a personal birthday keepsake.",
+      "score": 1
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "Aarav's first name and age of five.",
+      "Abbey Park in Leicester.",
+      "The red toy dinosaur Rory.",
+      "The broad idea that Aarav is the hero."
+    ],
+    "missing": [
+      "Meera's name.",
+      "Meera's relationship to Aarav as his little sister.",
+      "The memory of Aarav teaching Meera to find shapes in the clouds on his fifth birthday.",
+      "Aarav's short black hair, big brown eyes, and red dinosaur T-shirt.",
+      "The requested Watercolour illustration style.",
+      "The apparent Premium gift-wrap selection."
+    ],
+    "changed": [
+      "Aarav is changed to \"Aara\" on Page 3.",
+      "Aarav is referred to as \"she\" on Page 4.",
+      "The gentle cloud-gazing memory is replaced by a dark, frightening woods adventure.",
+      "Rory is replaced by a shiny red balloon on Page 5."
+    ],
+    "invented": [
+      "Uncle Bartholomew.",
+      "A dark woods setting with shadows that grow teeth.",
+      "A red balloon.",
+      "A threat that no one would ever find Aarav again."
+    ]
+  },
+  "safety_concerns": [
+    "The phrase \"the shadows grew teeth and whispered that no one would ever find Aarav again\" is frightening for a five-year-old and does not feel like a suitable gentle birthday bedtime story.",
+    "The book contains unresolved template placeholders, but no unsafe personal data is exposed in the captured story pages."
+  ],
+  "overall_reaction": "I can see why the website personalised Aarav's name and Rory, but it has missed the most important part of the story: Meera and the cloud game that made the day special. The spelling mistakes, broken placeholders, wrong pronouns, frightening scenes, and unfinished ending would make me wary of keeping or paying for it. I would want the whole book corrected and previewed again before considering it as a birthday present.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — I would not pay for a book with unresolved placeholders, name errors, an invented threatening plot, and an incomplete ending when the requested birthday memory is missing.",
+  "top_changes": [
+    "Rewrite the entire story around Aarav teaching Meera to find shapes in the clouds at Abbey Park on his fifth birthday.",
+    "Correct \"Adventrue\" to \"Adventure\" and fix all instances of \"Aara\" and the incorrect \"she\" pronoun.",
+    "Remove Uncle Bartholomew, the threatening woods, and the red balloon, and use Rory and the park consistently.",
+    "Replace the template placeholders with the intended names and complete the ending properly.",
+    "Use simple vocabulary and sentences suitable for a five-year-old, and apply the selected Watercolour style.",
+    "Provide a full page-by-page preview with visible images before purchase, including the final image showing Aarav, Meera, Rory, and Abbey Park."
+  ],
+  "images": [],
+  "variant": {
+    "name": "novision",
+    "vision": false,
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 2493,
+      "completion_tokens": 4704,
+      "seconds": 33.3,
+      "by_purpose": {
+        "output_assessment": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

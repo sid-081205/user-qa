@@ -1,0 +1,93 @@
+{
+  "run": "20260926-203831_storyhearth_privacy_conscious_parent",
+  "persona": "privacy_conscious_parent",
+  "persona_name": "Elena Petrova",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 16,
+  "pages_reviewed": 10,
+  "issues": 34,
+  "unique_issues": 31,
+  "evidence_quotes_verified": 0.812,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 4,
+    "2": 18,
+    "3": 10,
+    "4": 2
+  },
+  "issues_by_code": {
+    "CONTENT": 10,
+    "ACC": 5,
+    "H2": 4,
+    "VALUE": 4,
+    "TRUST": 4,
+    "H9": 2,
+    "DECEPTIVE": 2,
+    "H1": 1,
+    "H5": 1,
+    "H6": 1
+  },
+  "reached_output": true,
+  "output_parts": 10,
+  "output_criteria": {
+    "fidelity": 2.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 2.0,
+    "character_consistency": 2.0,
+    "visual_quality": 1.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 27.5,
+  "sus_grade": "F",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": -1.5,
+    "hedonic": 0.0,
+    "overall": -0.75
+  },
+  "nps": 1,
+  "mean_valence": -0.44,
+  "min_valence": -2.0,
+  "abandonment": {
+    "step": 5,
+    "page": "127.0.0.1:8765/privacy.html | Privacy notice",
+    "reason": "The privacy notice is too vague about retention, technology partners, AI use and deletion to share sensitive information about my child.",
+    "source": "self-report"
+  },
+  "waits": [
+    {
+      "step": 11,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 4,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 2,
+    "realism_overall": 4
+  },
+  "llm_usage": {
+    "calls": 19,
+    "failed_calls": 0,
+    "prompt_tokens": 100527,
+    "completion_tokens": 25796,
+    "seconds": 310.9,
+    "by_purpose": {
+      "step": 16,
+      "output_assessment": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 19
+    }
+  },
+  "wall_seconds": 404.0
+}

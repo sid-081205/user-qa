@@ -1,0 +1,73 @@
+{
+  "label": "auto: Grandpa's Blue Kite",
+  "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+  "views": [
+    "artifacts/capture_17/view_00.jpg",
+    "artifacts/capture_17/view_01.jpg",
+    "artifacts/capture_17/view_02.jpg",
+    "artifacts/capture_17/view_03.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_17/img_00.jpg",
+      "alt": "Scene 1: One summer, my father made me something very special. He cut up an old blue shir",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_01.jpg",
+      "alt": "Scene 2: The blue kite was ready! My father and I carried it up the big windy hill behind",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_02.jpg",
+      "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went \u2014 dancing in",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_03.jpg",
+      "alt": "Scene 4: Grandpa's daddy showed him how to hold the string. 'Let out a little more when t",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_04.jpg",
+      "alt": "Scene 5: Many, many years went by. Now Grandpa was old \u2014 and he had a grandson of his own",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_05.jpg",
+      "alt": "Scene 6: The next day, they went back to Wales! Oliver put on his green wellies and they ",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_06.jpg",
+      "alt": "Scene 7: Up the big hill they climbed together. The wind was blowing just like it did lon",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_07.jpg",
+      "alt": "Scene 8: Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_08.jpg",
+      "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_17/img_09.jpg",
+      "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+      "w": 402,
+      "h": 301
+    }
+  ],
+  "dir": "artifacts/capture_17"
+}

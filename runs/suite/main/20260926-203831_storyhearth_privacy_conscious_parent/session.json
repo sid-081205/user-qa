@@ -1,0 +1,1448 @@
+{
+  "status": "done",
+  "steps": 16,
+  "site_model": {
+    "what_it_is": "A website that generates personalised, illustrated family storybooks and apparently offers printed hardcovers.",
+    "who_it_is_for": "Families wanting stories featuring their children and other relatives or pets.",
+    "value_proposition": "Turn a family memory into a bespoke illustrated storybook that can be previewed digitally and potentially printed as an heirloom.",
+    "main_tasks": [
+      "Log in",
+      "Describe the child and another character",
+      "Provide details of a family memory",
+      "Generate and read a storybook preview",
+      "Check the price of a printed hardcover"
+    ],
+    "pricing_model": "The page says there is a free digital preview, but it gives no actual printed-book price here.",
+    "trust_signals": [
+      "A visible Privacy link",
+      "A visible Terms link",
+      "A visible Contact email",
+      "Claims of a free digital preview and UK shipping",
+      "A company footer naming StoryHearth Ltd"
+    ],
+    "fit_for_me": "Potentially a good fit because it promises a reassuring story about Nikolai at his new school, but I do not yet trust it enough to enter family information or upload anything."
+  },
+  "pages": {
+    "127.0.0.1:8765/ | Your family's stories, bound for generations.": {
+      "page_key": "127.0.0.1:8765/ | Your family's stories, bound for generations.",
+      "url": "http://127.0.0.1:8765/",
+      "title": "StoryHearth – Personalised storybooks starring your family",
+      "first_step": 1,
+      "screenshot": "screenshots/step_01.jpg",
+      "observation": "StoryHearth’s public landing page presents personalised family storybooks, a three-step creation process, pricing and login links, and claims a free digital preview with UK-wide printed hardcover shipping.",
+      "think_aloud": "The service sounds relevant to what I want, but “multimodal generative narrative engine” and “household’s lived-experience corpus” sound deliberately technical rather than reassuring. Before sharing anything about Nikolai, I want to read the privacy information and understand exactly what happens to photographs and personal details.",
+      "emotion": "suspicious",
+      "valence": 0,
+      "review": {
+        "page_name": "StoryHearth landing page",
+        "purpose": "Explain the service, show how creation works, and direct visitors to creation, pricing, privacy, and login.",
+        "what_is_happening": "The landing page advertises AI-generated family stories, offers “Proceed” and “See pricing” controls, explains three creation steps, includes testimonials and FAQ links, and provides Privacy, Terms, and Contact links below the fold.",
+        "first_impression": "It looks warm and professionally designed, but the jargon in the main description immediately makes me cautious about what data is collected and how it is used.",
+        "walkthrough": {
+          "q1_would_try": "Not yet. I would inspect Privacy and Terms before creating a story or entering family information.",
+          "q2_notice_control": "Yes, I notice “Proceed,” “See pricing,” and the footer links for “Privacy” and “Terms.”",
+          "q3_label_matches_goal": "“Proceed” is too vague about what happens next, while “See pricing” clearly suggests viewing costs; “Privacy” and “Terms” are the relevant labels for my immediate concern."
+        },
+        "issues": [
+          {
+            "title": "Overly technical language obscures what is shared with the service",
+            "evidence": "“Leverage our multimodal generative narrative engine to synthesise bespoke, heirloom-grade story artefacts from your household's lived-experience corpus.”",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "I am being asked to think about my child's data, and corporate jargon does not tell me what information is collected, retained, shared, or used to train AI.",
+            "fix": "Replace this with plain language, for example: “Tell us about a family memory. We use the details you provide to create a story and illustrations for you only.” Link directly to a clear data-use summary.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Main illustration has no accessible description",
+            "evidence": "[image (no description) 430x440]",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "The image gives no information to anyone using a screen reader and appears unexplained to me visually as well.",
+            "fix": "Add concise alternative text describing the relevant book-preview illustration, or mark it as decorative if it adds no information.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "Creation action does not disclose the next step",
+            "evidence": "[5] link “Proceed →”",
+            "code": "H2",
+            "severity": 1,
+            "why_it_matters_to_me": "I cannot tell whether I will be logging in, uploading photographs, or immediately sharing child data.",
+            "fix": "Rename the link “Start your story” and state beneath it: “You’ll sign in and enter family details; you can review privacy information first.”",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Printed price is not visible on the landing page",
+            "evidence": "“Free digital preview · Printed hardcovers shipped across the UK”",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "I need to know whether this is a genuinely free service or an expensive printed product before investing time and sharing personal information.",
+            "fix": "Show a clear “Digital preview: free; hardcover from £X” statement and link to the full price list.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The three-step explanation is easy to scan.",
+          "The page explicitly says the digital preview is free.",
+          "Privacy, Terms, and Contact links are present without requiring account creation.",
+          "The overall design is calm and family-oriented, with no visible countdown or false scarcity."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 1,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [
+            {
+              "src": "http://127.0.0.1:8765/assets/hero.svg",
+              "size": "430x440"
+            }
+          ],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    },
+    "127.0.0.1:8765/login.html | Welcome back": {
+      "page_key": "127.0.0.1:8765/login.html | Welcome back",
+      "url": "http://127.0.0.1:8765/login.html",
+      "title": "Log in – StoryHearth",
+      "first_step": 3,
+      "screenshot": "screenshots/step_03.jpg",
+      "observation": "The StoryHearth login page has loaded, with a card containing Email and Password fields, a “Log in” button, and links to account creation, Privacy, Terms, and Contact.",
+      "think_aloud": "The page is simple and the “Log in” control is obvious. I can see the Privacy and Terms links in the footer, but I’ll deal with those before entering sensitive family information. The form itself looks straightforward, although the input boxes are identified only by placeholders rather than proper labels.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Log in",
+        "purpose": "Allow an existing StoryHearth customer to access their account.",
+        "what_is_happening": "The page displays empty email and password fields and a login button. Navigation and policy links are visible above and below the login card.",
+        "first_impression": "It looks calm, uncluttered and easy to understand. Privacy and Terms are available without creating another account, which is a good sign.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I am ready to log in using the account details supplied for this study.",
+          "q2_notice_control": "Yes, the Email and Password fields and the orange “Log in” button are visually prominent.",
+          "q3_label_matches_goal": "Yes, although the fields have placeholders rather than persistent visible labels."
+        },
+        "issues": [
+          {
+            "title": "Email and password fields lack persistent visible labels",
+            "evidence": "Items [5] and [6] are described as textboxes with no label and rely on the placeholders “Email” and “Password”.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "Placeholders are less accessible and can be forgotten once typing begins, especially for people using assistive technology or returning to the form.",
+            "fix": "Add persistent visible labels such as “Email address” and “Password” associated with the controls, while retaining placeholders only as supplementary examples.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The primary login action is large and clearly labelled.",
+          "Privacy and Terms links are visible in the footer.",
+          "The page is visually restrained and contains no urgency messaging or distracting sign-ups.",
+          "The account-creation link is clearly separated as optional."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 2,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": [
+            {
+              "id": 5,
+              "placeholder": "Email"
+            },
+            {
+              "id": 6,
+              "placeholder": "Password"
+            }
+          ]
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/dashboard.html | Welcome back, Demo": {
+      "page_key": "127.0.0.1:8765/dashboard.html | Welcome back, Demo",
+      "url": "http://127.0.0.1:8765/dashboard.html",
+      "title": "My books – StoryHearth",
+      "first_step": 4,
+      "screenshot": "screenshots/step_04.jpg",
+      "observation": "The login succeeded and the dashboard says “Welcome back, Demo” and “You have no books yet.” A prominent warning reads “Error 0x80070057: profile sync incomplete,” while a “+ Create a new book” control is available.",
+      "think_aloud": "I can see that I am logged in, but that technical error is not reassuring. Before I enter anything about Nikolai, I want to read the Privacy link and check what happens to photos, the memory, and generated stories. I will not create the book until I understand that.",
+      "emotion": "suspicious",
+      "valence": -1,
+      "review": {
+        "page_name": "My books dashboard",
+        "purpose": "This page confirms the signed-in account and provides access to create or manage family storybooks.",
+        "what_is_happening": "The site says the account has no books and offers a button to create one. A warning reports an incomplete profile sync, but it provides no plain-language explanation or recovery action.",
+        "first_impression": "The basic layout is easy to understand, but the raw hexadecimal error immediately makes me wonder whether my account or any future family data is incomplete.",
+        "walkthrough": {
+          "q1_would_try": "I would not enter Nikolai's information yet; I would first investigate the profile-sync warning and read the privacy policy.",
+          "q2_notice_control": "Yes, the “+ Create a new book” control is prominent, and the “Privacy” link is visible in the footer.",
+          "q3_label_matches_goal": "Yes, “Create a new book” clearly matches my goal, although I do not yet trust the creation process enough to use it."
+        },
+        "issues": [
+          {
+            "title": "Unexplained technical profile-sync error",
+            "evidence": "“Error 0x80070057: profile sync incomplete.”",
+            "code": "H9",
+            "severity": 3,
+            "why_it_matters_to_me": "I cannot tell whether this concerns login data, family information, or some other profile field. An unexplained failure makes me fear that something may be lost or recorded incorrectly.",
+            "fix": "Replace the code with a plain-language message explaining what did not sync, whether any information was lost, and give a clear Retry or Contact support action.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Technical error shown without status or effect",
+            "evidence": "The warning only says “profile sync incomplete” and does not state whether the rest of the account works.",
+            "code": "H1",
+            "severity": 3,
+            "why_it_matters_to_me": "I do not know whether it is safe to create a book or whether my details will be incomplete.",
+            "fix": "Add a short impact statement, such as “Your saved account details are safe. Some optional profile fields are temporarily unavailable,” and show a current status.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer links have very low contrast",
+            "evidence": "The visible “Privacy,” “Terms,” and “Contact” links are extremely pale against the footer background.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "The privacy link is important to me, and I had to focus on the faint footer to notice it.",
+            "fix": "Use darker, higher-contrast text and meet WCAG contrast requirements for all footer links.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The successful-login state is explicit with “Welcome back, Demo.”",
+          "The “+ Create a new book” control is visible and plainly labelled.",
+          "Privacy, Terms, and Contact links are available without creating another book."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": "The raw error is worrying, but the task is still accessible and I can investigate before sharing data."
+      },
+      "later_issues": [
+        {
+          "title": "Technical error remains unexplained",
+          "evidence": "“Error 0x80070057: profile sync incomplete.”",
+          "code": "H9",
+          "severity": 2,
+          "why_it_matters_to_me": "An unexplained error about profile syncing makes me question whether my account and family information will be saved reliably.",
+          "fix": "Explain in plain English what the error means, say whether any information was affected, and provide a retry or support option.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 6
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 7
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 8
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    },
+    "127.0.0.1:8765/privacy.html | Privacy notice": {
+      "page_key": "127.0.0.1:8765/privacy.html | Privacy notice",
+      "url": "http://127.0.0.1:8765/privacy.html",
+      "title": "Privacy – StoryHearth",
+      "first_step": 5,
+      "screenshot": "screenshots/step_05.jpg",
+      "observation": "The screen is a short privacy notice and terms section stating that StoryHearth processes names, stories and uploaded photographs, may retain images to improve its services, and may use technology partners. It also says digital previews are provided as-is and printed orders are non-refundable once production begins.",
+      "think_aloud": "This is not a privacy notice detailed enough for me. “May be retained,” “may be processed by our technology partners” and “improve our services” do not tell me who the partners are, whether photos train AI, how long they are kept, or how I can get them deleted. I also do not want to upload Nikolai’s photograph until those answers are clear.",
+      "emotion": "suspicious",
+      "valence": -2,
+      "review": {
+        "page_name": "Privacy and terms",
+        "purpose": "To explain how StoryHearth handles family information, photographs, previews and printed orders.",
+        "what_is_happening": "I am viewing a short privacy notice and terms summary. No form or account controls are present, and there is no clear route to request deletion or ask questions about data handling.",
+        "first_impression": "I expected a proper privacy policy with specific retention periods, named or clearly described recipients, deletion rights, and details about automated processing. Instead I see broad and potentially alarming wording, so I do not trust it enough to upload a child’s data.",
+        "walkthrough": {
+          "q1_would_try": "No. I would not upload Nikolai’s photo or submit his story after reading this.",
+          "q2_notice_control": "I noticed the Privacy, Terms and Contact links, and the Terms link is present, but there is no delete-data control or privacy settings link.",
+          "q3_label_matches_goal": "The heading “Privacy notice” matches the broad goal, but the content does not clearly answer what happens to my child’s information."
+        },
+        "issues": [
+          {
+            "title": "Data retention and deletion are unspecified",
+            "evidence": "“Uploaded images may be retained to improve our services”",
+            "code": "TRUST",
+            "severity": 4,
+            "why_it_matters_to_me": "I need to know how long Nikolai’s photo and story will be kept and whether I can delete them.",
+            "fix": "State specific retention periods for each type of data, explain when deletion occurs, and provide a clear account or contact process to request deletion.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Technology partners are unidentified",
+            "evidence": "“may be processed by our technology partners”",
+            "code": "TRUST",
+            "severity": 4,
+            "why_it_matters_to_me": "I cannot assess who can see my child’s photograph or whether it is used for AI training without knowing the recipients.",
+            "fix": "Name the relevant processors and describe their role, location, data categories, and whether uploaded images or generated content are used to train AI or improve models.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Purpose of image processing is too vague",
+            "evidence": "“to create your book” and “improve our services”",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "Creating my book is understandable, but “improve our services” is broad enough that I do not know what secondary use is occurring.",
+            "fix": "Separate essential processing from optional model training or product improvement, state the purposes plainly, and require an explicit opt-in for any optional use.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "Terms are not a substitute for full terms",
+            "evidence": "“Digital previews are provided as-is.”",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "I need to know what happens if a generated book contains errors or does not meet the agreed description, and I need clear terms before ordering.",
+            "fix": "Provide complete terms covering preview limitations, errors, corrections, production approval, cancellation, refunds, delivery and customer support.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Cancellation and refund limitation is abrupt",
+            "evidence": "“Printed orders are non-refundable once production begins.”",
+            "code": "VALUE",
+            "severity": 3,
+            "why_it_matters_to_me": "This is a significant restriction and I cannot judge the real cost and risk without knowing the production start point, cancellation rules and what happens if the book is damaged or incorrect.",
+            "fix": "Explain the exact production stage, show cancellation and refund rules before checkout, and state remedies for damaged, delayed or materially incorrect books.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page has a clear Privacy heading.",
+          "It explicitly mentions names, stories and uploaded photographs.",
+          "A Contact link is available.",
+          "The wording does not show obvious countdown pressure or a pre-ticked consent box."
+        ],
+        "would_abandon_here": true,
+        "abandon_reason": "The privacy notice is too vague about retention, technology partners, AI use and deletion to share sensitive information about my child."
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 6
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 7
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 8
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Who's the star of the story?": {
+      "page_key": "127.0.0.1:8765/create.html | Who's the star of the story?",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 7,
+      "screenshot": "screenshots/step_07.jpg",
+      "observation": "The screen is a short form for identifying the child, describing their appearance, and naming another person in the story. The relationship menu is already set to “Grandparent” even though that has not been chosen by me.",
+      "think_aloud": "This form is easy to understand, and I can see the controls I need. However, “Relationship” is already set to “Grandparent”; I will change that to “Parent” so it accurately describes Mama. I am still cautious about entering personal family details because the privacy notice has not adequately explained retention, AI training, or deletion.",
+      "emotion": "hesitant",
+      "valence": 0,
+      "review": {
+        "page_name": "Create your book – character details",
+        "purpose": "Collect basic details about the child and another person before moving on to the family-memory story.",
+        "what_is_happening": "The form asks for the child's first name, age, pronouns, optional appearance, another character, and that character's relationship. A “Next” button advances the process.",
+        "first_impression": "The form is visually clear and manageable, but I noticed immediately that “Grandparent” is preselected in the relationship menu, making me check that it is not carried forward incorrectly.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would enter the basic character details because the fields match what the story needs.",
+          "q2_notice_control": "Yes, I noticed the name, age, pronouns, appearance, other-character, and relationship controls, plus the “Next” button.",
+          "q3_label_matches_goal": "Mostly. “Who else is in the story?” fits, but asking only for a relationship without a specific “Mama” option makes the Parent category feel slightly generic."
+        },
+        "issues": [
+          {
+            "title": "Relationship is preselected without a choice",
+            "evidence": "[11] displays “Grandparent” as the selected option before I make a selection.",
+            "code": "H5",
+            "severity": 2,
+            "why_it_matters_to_me": "A preselected answer can silently put inaccurate information about my family into a personalised story, and it recalls the sort of default choices I distrust.",
+            "fix": "Default the relationship field to “Select…” and make the user choose a value explicitly.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "No reminder of data-use limits before personal details",
+            "evidence": "The form immediately requests a child's name, age, pronouns and appearance, while the only policy information is in the footer links “Privacy” and “Terms”.",
+            "code": "TRUST",
+            "severity": 2,
+            "why_it_matters_to_me": "Before entering details about Nikolai, I want a concise reminder of how this information will be used, whether it is used to train AI, and how it can be deleted.",
+            "fix": "Add a short notice above the form stating what happens to the supplied details, whether they are used for AI training, and how to access or delete them, with a direct link to the full privacy notice.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "Mother is not named as a relationship option",
+            "evidence": "[11] offers “Grandparent | Parent | Sibling | Friend | Pet | Other” rather than a specific “Mother” option.",
+            "code": "H2",
+            "severity": 1,
+            "why_it_matters_to_me": "Mama is a character in our memory, and “Parent” is technically correct but less natural and precise than “Mother.”",
+            "fix": "Include role-specific choices such as “Mother,” “Father,” or “Parent,” while keeping the categories understandable.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 1,
+              "verified": false
+            }
+          }
+        ],
+        "positives": [
+          "The heading clearly explains the purpose of the form.",
+          "The fields are plainly labelled and laid out in a logical order.",
+          "The appearance field is explicitly marked optional.",
+          "The “Next” button is visually prominent and easy to find."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    },
+    "127.0.0.1:8765/create.html | Your story": {
+      "page_key": "127.0.0.1:8765/create.html | Your story",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 9,
+      "screenshot": "screenshots/step_09.jpg",
+      "observation": "The story-details step asks where the story happens, what special object is involved, and for the family memory behind the story. The three fields are currently empty, with Back and Next controls visible.",
+      "think_aloud": "This step is straightforward and the wording feels personal rather than technical. I can put Nikolai at the gate of his new school, give him the smooth grey “brave stone” from Varna, and explain that Mama gave it to him on his first morning when he felt frightened.",
+      "emotion": "reassured",
+      "valence": 2,
+      "review": {
+        "page_name": "Story details",
+        "purpose": "Collect the setting, meaningful object, and family memory that the website will use to create Nikolai's personalised storybook.",
+        "what_is_happening": "The form offers three empty text fields for the location, special object, and memory, followed by Back and Next buttons. No generated story or preview is present yet.",
+        "first_impression": "The form is calm, clear, and uncluttered. The questions feel relevant to making the story meaningful, and there are no pressure messages or unnecessary options.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would enter these details now because the prompts directly match the story I want to create.",
+          "q2_notice_control": "Yes, I can clearly see one textbox for each of the three questions, plus a prominent “Next” button.",
+          "q3_label_matches_goal": "Yes. “Where does the story happen?”, “A special object”, and “Tell us the memory or idea behind your story” all match what I want to provide."
+        },
+        "issues": [
+          {
+            "title": "Fields are not marked optional",
+            "evidence": "[16] “Where does the story happen?”, [17] “A special object”, and [18] “Tell us the memory or idea behind your story” have no “optional” label.",
+            "code": "CONTENT",
+            "severity": 1,
+            "why_it_matters_to_me": "It is unclear whether all three fields are compulsory, particularly because the previous appearance field was explicitly marked “(optional)”. I cannot tell whether one small omission will prevent me from continuing.",
+            "fix": "Mark every non-essential field “(optional)”; otherwise, explain which fields are required before the form is completed.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 3,
+              "verified": false
+            }
+          }
+        ],
+        "positives": [
+          "The prompts are plain, warm, and relevant to a family memory.",
+          "The layout is uncluttered and the input controls are large and easy to identify.",
+          "A visible “Back” button gives me control without losing this step.",
+          "There are no pre-ticked choices, false urgency, or other pressure tactics on this screen."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Choose the look & feel": {
+      "page_key": "127.0.0.1:8765/create.html | Choose the look & feel",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 10,
+      "screenshot": "screenshots/step_10.jpg",
+      "observation": "The screen lets me choose a reading level and illustration style for the book. “Lexile 200L–500L” and “Watercolour — soft and dreamy” are preselected, with Back and Next buttons available.",
+      "think_aloud": "This is a simple design, and the illustration choices are pleasant. For Nikolai at age six, I would prefer the lower “Lexile BR–200L” option rather than a wide 200L–500L range. The labels use Lexile terminology without telling me what that means in ordinary words, so I have to make an assumption.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Choose look and feel",
+        "purpose": "Choose the intended reading level and visual style for the personalised book.",
+        "what_is_happening": "Four reading-level radio options and three illustration-style options are shown. The middle reading level and watercolour style are currently selected, and the user can go back or continue.",
+        "first_impression": "The page is orderly and not overwhelming. The storybook-style choices feel suitable, although “Lexile” may not mean much to an ordinary parent.",
+        "walkthrough": {
+          "q1_would_try": "Yes. I want a book that suits Nikolai’s age and looks comforting rather than frightening.",
+          "q2_notice_control": "Yes. The radio buttons and the “Next” button are clearly visible.",
+          "q3_label_matches_goal": "Partly. The illustration labels are clear, but the Lexile ranges do not plainly say “for children who can read independently” or “best read aloud to a child.”"
+        },
+        "issues": [
+          {
+            "title": "Reading-level labels require specialist knowledge",
+            "evidence": "“Reading level” followed by “Lexile BR–200L” and “Lexile 200L–500L”",
+            "code": "H2",
+            "severity": 2,
+            "why_it_matters_to_me": "I want to choose a genuinely appropriate level for a six-year-old, but the site does not explain what BR–200L or 200L–500L means in practical terms.",
+            "fix": "Show plain-language guidance, such as “Read independently” and “Read with an adult,” and recommend a level based on the child’s age while allowing me to override it.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          },
+          {
+            "title": "Preselected options are not explained",
+            "evidence": "[22] “Lexile 200L–500L” (checked) and [25] “Watercolour — soft and dreamy” (checked)",
+            "code": "H6",
+            "severity": 1,
+            "why_it_matters_to_me": "I can accept the choices, but I cannot tell whether they were intelligently recommended or simply the site defaults.",
+            "fix": "Label preselected options as “Recommended for age 6” or “Default choice,” and briefly explain the recommendation.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The choices are presented in two clearly separated groups.",
+          "Each illustration style has a helpful plain-language description.",
+          "The controls have large, visible targets.",
+          "Back and Next provide straightforward navigation."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Add a photo (optional)": {
+      "page_key": "127.0.0.1:8765/create.html | Add a photo (optional)",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 11,
+      "screenshot": "screenshots/step_11.jpg",
+      "observation": "The final creation step offers an optional child photo upload, with Back and “Create my book” buttons. No file is selected, so the book can be created from the supplied descriptions and memory without uploading an image.",
+      "think_aloud": "I am not uploading a photograph of Nikolai. The privacy notice still does not clearly say whether images are used to train AI, who receives them, how long they are kept, or how deletion works, and “optional” is not enough to remove that concern. I will leave the upload empty and create the book from the written details instead.",
+      "emotion": "suspicious",
+      "valence": -1,
+      "review": {
+        "page_name": "Optional photo upload",
+        "purpose": "Offer a final optional photo for likeness-based illustrations and let the user submit the book for generation.",
+        "what_is_happening": "The page asks the user to optionally upload a clear photo of the child's face. No photo is selected, and the available actions are “Back” and “Create my book.”",
+        "first_impression": "The choice is simple and genuinely optional, but I do not trust the upload because the nearby screen gives no photo-specific explanation about AI training, sharing, retention, or deletion.",
+        "walkthrough": {
+          "q1_would_try": "I would create the book without uploading because I can describe Nikolai's appearance and the privacy notice has not earned my trust regarding facial images.",
+          "q2_notice_control": "Yes, the file chooser is visible under the instruction, and “Create my book” is prominent on the right.",
+          "q3_label_matches_goal": "Mostly. “Create my book” clearly expresses the final action, while the native “Choose file” control is weak and the upload has no visible field label."
+        },
+        "issues": [
+          {
+            "title": "Photo upload lacks specific privacy disclosure",
+            "evidence": "“Upload a clear photo of your child's face so the illustrations look like them.” The page itself does not explain whether the image is used for AI training, who can access it, how long it is retained, or how it can be deleted.",
+            "code": "TRUST",
+            "severity": 3,
+            "why_it_matters_to_me": "A child's photograph is sensitive personal information, and I will not upload it without knowing these consequences.",
+            "fix": "Place a concise disclosure beside the upload stating whether photos train AI, named categories of processors or recipients, retention periods, deletion rights, and whether deleting the book also deletes the original. Link to the detailed privacy notice.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "File control has no explicit accessible label",
+            "evidence": "[30] file-upload (no label), with only the native text “Choose file”",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "A visible field label and accessible control name would make it clear what kind of file is being selected and why.",
+            "fix": "Add a visible label such as “Child photo (optional)” and give the upload an explicit accessible name, accepted file formats, file-size limit, and alternative-text instructions.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 0,
+              "verified": false
+            }
+          },
+          {
+            "title": "Footer text has weak contrast",
+            "evidence": "The “Privacy,” “Terms,” and “Contact” links and “© 2026 StoryHearth Ltd.” appear extremely faint against the background.",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "Important legal and contact links are difficult to see, particularly when I am specifically checking privacy terms.",
+            "fix": "Use WCAG-compliant text and link colours with sufficient contrast, and make the targets large enough to activate comfortably.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The heading clearly says the photo is optional, so I do not feel forced to provide it.",
+          "The “Back” button allows me to return and review the preceding choices.",
+          "“Create my book” clearly communicates the final action.",
+          "The written description route means I can proceed without uploading sensitive information."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 1,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/book.html | The Magical Adventrue of Nikolai": {
+      "page_key": "127.0.0.1:8765/book.html | The Magical Adventrue of Nikolai",
+      "url": "http://127.0.0.1:8765/book.html",
+      "title": "Your storybook – StoryHearth",
+      "first_step": 12,
+      "screenshot": "screenshots/step_12.jpg",
+      "observation": "The generated book preview has loaded. It is titled “The Magical Adventrue of Nikolai,” shows 9 pages, and displays a simple pop-art comic cover with Nikolai near a school-like building and a grey stone. The next-page control is available, and links for pricing, privacy, terms, and ordering a hardcover are below the fold.",
+      "think_aloud": "The book has been generated, so the creation step worked, but I am immediately concerned. I selected “Watercolour — soft and dreamy,” yet the preview says “Illustration style: Pop-art comic.” The title also contains the typo “Adventrue.” I need to read through every page carefully before deciding whether this is usable.",
+      "emotion": "confused",
+      "valence": -1,
+      "review": {
+        "page_name": "Generated storybook preview",
+        "purpose": "To present the generated personal storybook and allow the user to page through the preview, regenerate it, or proceed to a hardcover order.",
+        "what_is_happening": "A nine-page preview titled “The Magical Adventrue of Nikolai” is displayed. The cover says “A StoryHearth original” and “Illustration style: Pop-art comic,” despite the previously selected watercolour style. The current page is 1 of 9, the previous-page control is disabled, and the next-page control is active. Lower on the page are a paid regeneration option, an “Order hardcover” link, and privacy, terms, and contact links.",
+        "first_impression": "I can see that the book was made, but the mismatch between my selected “Watercolour — soft and dreamy” style and the stated “Pop-art comic” style makes me distrust the generation. “The Magical Adventrue” looks careless rather than comforting.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would try reading the next pages because I need to check whether the story actually includes Nikolai, Mama, the rainy school gate, and the brave stone.",
+          "q2_notice_control": "Yes, I notice the right-facing next-page button and the “1 / 9” page indicator.",
+          "q3_label_matches_goal": "The “›” control is understandable as the next-page control, although the button has no descriptive text and the disabled previous control is only an arrow."
+        },
+        "issues": [
+          {
+            "title": "Selected illustration style was not applied",
+            "evidence": "The page says “Illustration style: Pop-art comic,” while the earlier selection was “Watercolour — soft and dreamy.”",
+            "code": "H2",
+            "severity": 3,
+            "why_it_matters_to_me": "I chose the style specifically to make the book feel gentle and suitable for a six-year-old. An unexpected style suggests the result may not reflect my choices.",
+            "fix": "Apply the selected style to the generated book and, if the style cannot be reproduced, explain the substitution before generation.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 1,
+              "verified": false
+            }
+          },
+          {
+            "title": "Typographical error in the book title",
+            "evidence": "The cover and heading read “The Magical Adventrue of Nikolai.”",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "It makes the personalised book look unfinished and less trustworthy, especially when this may be printed.",
+            "fix": "Use a spelling check and correct “Adventrue” to “Adventure” before displaying or printing the title.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The cover does not clearly show the requested school-gate memory",
+            "evidence": "The cover shows a simple house-like building, Nikolai, a sun, and a grey stone, but not a clear school gate or rainy setting.",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "The memory was about Nikolai’s first morning at a new school on a rainy morning. The cover does not yet make that personal connection obvious.",
+            "fix": "Ensure the cover and story consistently represent the specified place, weather, and key memory, while explaining any creative deviations.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          },
+          {
+            "title": "Paid regeneration option is prominent before I have inspected the book",
+            "evidence": "[8] “Regenerate entire book – $4.99” appears below the preview.",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "I want to assess the book and its pricing before spending anything, and the regeneration price needs to be clearly explained.",
+            "fix": "Explain what regeneration changes, whether it replaces the existing book, and the full cost before presenting the paid control. Do not imply that regeneration is necessary unless the output is visibly faulty.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page clearly shows that a nine-page book was generated.",
+          "The page counter makes the length of the preview clear.",
+          "There is an obvious next-page control, and a return to “My books” is available.",
+          "The privacy, terms, and contact links remain accessible from the preview."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "Generated cover does not reflect the supplied character details",
+          "evidence": "I entered “blond straight hair, gap in his front teeth, yellow raincoat,” but the cover shows Nikolai with blond hair, no visible gap in his front teeth, and no yellow raincoat.",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "This is Nikolai's personal story, and the cover should not look as though the details I carefully supplied were ignored.",
+          "fix": "Use the supplied appearance details consistently across the cover and story, and tell the user which details could not be represented.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 0,
+            "verified": false
+          },
+          "step": 13
+        },
+        {
+          "title": "The final sentence is incomplete",
+          "evidence": "“And from that day on, whenever Nikolai looked up at the sky, he would always remember”",
+          "code": "CONTENT",
+          "severity": 3,
+          "why_it_matters_to_me": "It leaves the most important final thought unfinished, making the book feel careless rather than comforting or reassuring.",
+          "fix": "Generate a complete final sentence that identifies what Nikolai remembered and connect it explicitly to bravery and the stone.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 14
+        },
+        {
+          "title": "The ending introduces an unrelated idea",
+          "evidence": "“whenever Nikolai looked up at the sky”",
+          "code": "CONTENT",
+          "severity": 2,
+          "why_it_matters_to_me": "The supplied memory concerns a rainy school gate and a stone from Varna, not the sky, so the ending does not feel personal.",
+          "fix": "Ground the final page in the rainy school gate, Mama, the smooth grey brave stone, and Nikolai feeling brave.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 14
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 2,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 3
+    },
+    "127.0.0.1:8765/checkout.html | Checkout": {
+      "page_key": "127.0.0.1:8765/checkout.html | Checkout",
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "title": "Checkout – StoryHearth",
+      "first_step": 15,
+      "screenshot": "screenshots/step_15.jpg",
+      "observation": "The checkout shows the generated hardcover for £24.99, with £12.99 shipping and handling. A “Premium gift wrap” charge of £7.99 has been pre-selected, bringing the displayed total to £45.97, and a 09:57 price-reservation countdown is active.",
+      "think_aloud": "There it is: the checkout makes the optional gift wrap look as though I selected it, but the box was already ticked. That means the real checkout total is being presented as £45.97 rather than £37.98, and the countdown adds pressure. I will not enter an address or payment details; I can untick the add-on to confirm the cost without it.",
+      "emotion": "annoyed",
+      "valence": -2,
+      "review": {
+        "page_name": "Hardcover checkout",
+        "purpose": "Collect delivery and payment details so the selected hardcover can be purchased.",
+        "what_is_happening": "The page displays the hardcover price, an active reservation countdown, a pre-checked optional gift-wrap charge, shipping, and a total, followed by empty address and payment fields.",
+        "first_impression": "The arithmetic is visible, but I do not trust the total because “Premium gift wrap” was checked without my consent and the countdown is pressuring me to hurry.",
+        "walkthrough": {
+          "q1_would_try": "I would only try the gift-wrap checkbox to reveal the cost without it; I would not proceed to payment or order this poor preview.",
+          "q2_notice_control": "Yes, the checked “Premium gift wrap” checkbox is immediately visible between the book price and shipping charge.",
+          "q3_label_matches_goal": "The label identifies the add-on, but its checked state does not honestly represent my choice; I want the base hardcover and delivery cost."
+        },
+        "issues": [
+          {
+            "title": "Optional gift wrap is pre-selected",
+            "evidence": "[6] checkbox \"Premium gift wrap\" (checked), with \"£7.99\" added and \"Total £45.97\"",
+            "code": "DECEPTIVE",
+            "severity": 3,
+            "why_it_matters_to_me": "I am not comfortable being charged for something I did not choose, and it makes the advertised checkout total misleading.",
+            "fix": "Default every optional add-on to unchecked, make it a separate clearly labelled section, and update the total only after an affirmative choice.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 3,
+              "verified": true
+            }
+          },
+          {
+            "title": "Countdown timer creates purchase pressure",
+            "evidence": "\"Your price is reserved for 09:57\"",
+            "code": "DECEPTIVE",
+            "severity": 2,
+            "why_it_matters_to_me": "I distrust artificial urgency, especially before I have even inspected the finished book or final terms.",
+            "fix": "Remove the countdown. If a genuine reservation is necessary, state exactly what is reserved, until when, and under what conditions it ends.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Base delivery-inclusive price is not made prominent",
+            "evidence": "\"Hardcover £24.99\", \"Shipping & handling £12.99\", and \"Total £45.97\"",
+            "code": "VALUE",
+            "severity": 2,
+            "why_it_matters_to_me": "I need to distinguish the product price, unavoidable delivery charge and optional extras without doing my own arithmetic.",
+            "fix": "Show a clear subtotal, separately identify delivery and optional extras, and state the payable total before checkout starts.",
+            "evidence_check": {
+              "quotes": 3,
+              "found": 2,
+              "verified": false
+            }
+          },
+          {
+            "title": "Poorly generated book title is carried into the order",
+            "evidence": "\"Hardcover: The Magical Adventrue of Nikolai\"",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "The misspelling makes the product look unfinished and would be embarrassing in a physical book.",
+            "fix": "Allow correction of the title and validate spelling before allowing an order.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The item and individual charges are shown with pound values.",
+          "The gift-wrap checkbox is visible rather than buried.",
+          "Address and payment fields are still empty, so I can inspect pricing without committing to anything."
+        ],
+        "would_abandon_here": true,
+        "abandon_reason": "I would not continue to payment because gift wrap was pre-selected and the generated book itself has the wrong illustration style, misses key character details, and contains a misspelled title and unfinished text."
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    }
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Nikolai"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "6"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "he / him"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "blond straight hair, gap in his front teeth, yellow raincoat"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Mama"
+    },
+    {
+      "field": "Relationship",
+      "action": "select",
+      "value": "Parent"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "the gate of his new school on a rainy morning"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "the smooth grey \"brave stone\" from the beach in Varna"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Nikolai's first morning at his new school, when he was scared, and his mum gave him a small smooth stone from their holiday beach to keep in his pocket for courage."
+    },
+    {
+      "field": "Lexile BR–200L",
+      "action": "choose",
+      "value": "BR-200L"
+    },
+    {
+      "field": "Watercolour — soft and dreamy",
+      "action": "choose",
+      "value": "Watercolour"
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "captures": [
+    {
+      "label": "auto: The Magical Adventrue of Nikolai",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_01/view_00.jpg",
+        "artifacts/capture_01/view_01.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_01/img_00.jpg",
+          "alt": "Cover",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_01",
+      "text_chars": 329
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 2",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_04/view_00.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_04",
+      "text_chars": 253
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 3",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_05/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_05/img_00.jpg",
+          "alt": "Nikolai at the gate of his new school on a rainy morning",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_05",
+      "text_chars": 424
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 4",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_06/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_06/img_00.jpg",
+          "alt": "Nikolai looking at the evening sky",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_06",
+      "text_chars": 394
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 5",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_07/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_07/img_00.jpg",
+          "alt": "Nikolai outside",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_07",
+      "text_chars": 395
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 6",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_08/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_08/img_00.jpg",
+          "alt": "Nikolai and Uncle Bartholomew",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_08",
+      "text_chars": 355
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 7",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_09/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_09/img_00.jpg",
+          "alt": "Nikolai in the dark woods",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_09",
+      "text_chars": 368
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 8",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_10/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_10/img_00.jpg",
+          "alt": "Nikolai going home",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_10",
+      "text_chars": 400
+    },
+    {
+      "label": "The Magical Adventrue of Nikolai page 9",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_11/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_11/img_00.jpg",
+          "alt": "The End",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_11",
+      "text_chars": 308
+    },
+    {
+      "label": "auto: Checkout",
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "views": [
+        "artifacts/capture_13/view_00.jpg",
+        "artifacts/capture_13/view_01.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_13",
+      "text_chars": 306
+    }
+  ],
+  "output_reactions": [
+    {
+      "step": 12,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "The first generated page is recognisable as Nikolai, and the grey stone appears, but it is a basic pop-art image rather than the soft watercolour I selected. The title error and lack of a clearly recognisable school gate or rainy morning make me uneasy, but I will read the remaining pages before judging the whole book."
+    },
+    {
+      "step": 13,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "The title has an obvious misspelling in “Adventrue,” and the promised watercolour style has become a flat, simple Pop-art comic. The cover also fails to show Nikolai's yellow raincoat, so this is not yet a reassuring or personalised result."
+    },
+    {
+      "step": 14,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "Having read all nine pages, I feel let down. The book does preserve Nikolai’s name, he/him pronouns and the basic new-school theme, but the misspelled title, wrong selected art style, missing visual details and weak, unfinished ending make this a poor product for a six-year-old who needs reassurance."
+    },
+    {
+      "step": 15,
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "reaction": "The generated book is now being offered as a £24.99 hardcover, but seeing the misspelled “The Magical Adventrue of Nikolai” in checkout reinforces how unfinished it feels."
+    }
+  ],
+  "abandonment": {
+    "step": 5,
+    "page": "127.0.0.1:8765/privacy.html | Privacy notice",
+    "reason": "The privacy notice is too vague about retention, technology partners, AI use and deletion to share sensitive information about my child.",
+    "source": "self-report"
+  },
+  "final_summary": "Read all nine pages, checked the hardcover cost, identified the pre-selected £7.99 gift-wrap add-on, and stopped before payment.",
+  "waits": [
+    {
+      "step": 11,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "duration_s": 287.2,
+  "env": {
+    "http_errors": [],
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "page_loads": [
+      {
+        "url": "http://127.0.0.1:8765/",
+        "seconds": 1.03
+      }
+    ],
+    "captcha": []
+  }
+}

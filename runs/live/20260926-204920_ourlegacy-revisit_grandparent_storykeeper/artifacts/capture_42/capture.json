@@ -1,0 +1,18 @@
+{
+  "label": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 22 of 32",
+  "url": "file://01_storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf/page-22",
+  "views": [
+    "artifacts/capture_42/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_42/view_00.jpg",
+      "alt": "PDF page 22",
+      "w": 1100,
+      "h": 831
+    }
+  ],
+  "dir": "artifacts/capture_42",
+  "source": "file",
+  "dedupe_key": "314132896aef53228f477406a38d90561b9bd50e:21"
+}

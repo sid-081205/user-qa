@@ -1,0 +1,194 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not like to use it frequently unless it produced a book that was true to our family story.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The editing and saving process was more complicated than I expected, particularly with the pictures and version choices.",
+      "rating": 4
+    },
+    {
+      "item": 3,
+      "reason": "I could follow the basic process, but some controls and instructions were not clear.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I would probably have needed help from a technically confident person to understand the image editing and PDF controls fully.",
+      "rating": 4
+    },
+    {
+      "item": 5,
+      "reason": "The review and export stages fitted together, but the changes did not carry through the whole book consistently.",
+      "rating": 3
+    },
+    {
+      "item": 6,
+      "reason": "The family relationships, title, age information, pictures and text contradicted one another repeatedly.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "I do not think most people would find it very quick, because the important errors and unclear controls require careful checking.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "I found it awkward to correct a story across many scenes and to check whether the final PDF had really changed.",
+      "rating": 4
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably capable while editing, but I did not feel confident that the site was producing a reliable keepsake.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I had to learn how the image versions, saving, regeneration and PDF viewing worked before I could judge the result.",
+      "rating": 4
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 5
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 5
+    }
+  ],
+  "nps": 2,
+  "interview": {
+    "purpose": "This is a website for turning a family memory into a personalised storybook for a child. It seems intended for parents and grandparents who want to preserve a special story as a keepsake.",
+    "worst_moment": "The most frustrating moment was reviewing the finished PDF and finding that later scenes still had the wrong family relationships, even after I had corrected the earlier text and pictures. I also found the page-turning controls unclear, so I was not sure I had properly checked all 32 pages at first.",
+    "best_moment": "The best moment was when the second Scene 2 version finally showed a little girl with my father, the blue kite and the Welsh hill. The artwork was attractive, and the PDF preview also let me inspect the result before ordering anything.",
+    "abandon": "I think I would seriously have given up after seeing the final book still centred on an invented Grandpa instead of Oliver and me. The work was already lengthy, and the result did not feel safe to present as our family history.",
+    "missing": "I expected to be able to correct every scene's wording, characters, relationships and illustrations and see the whole book update together. I also expected clear instructions about what each option changes, what the credits cost, and how to read and download the complete PDF.",
+    "trust": "I was willing to use the website because it explained that the PDF could be reviewed before ordering, but I did not fully trust it with our family's story. The invented characters, wrong ages and unclear saving messages made me worry that I might overlook another important error.",
+    "willingness_to_pay": "I would pay for a finished printed keepsake if the whole book were accurate and the price and delivery were clearly explained. I would feel comfortable paying around $30 to $40 for a carefully checked personal book, but the $59 printed book would need a clear explanation of exactly what was included.",
+    "output_verdict": "The pictures are warm and attractive, and the blue kite and Welsh setting are easy to recognise. However, the book still tells the wrong family story, with Grandpa, the wrong child and inconsistent characters, so it is not yet a keepsake I could give to Oliver."
+  },
+  "recommendations": [
+    {
+      "change": "Correct every scene so my father makes the kite, little Margaret is clearly the child in the childhood scenes, and present-day Margaret and Oliver are the central characters; remove all invented Grandpa references.",
+      "page": "Review Storybook, all scenes",
+      "why": "These errors change the people and relationships at the heart of the memory, so I could not give the book to Oliver.",
+      "priority": "high"
+    },
+    {
+      "change": "Make each scene's Edit Text and Edit Image controls explain what they change, and show which changes have saved successfully.",
+      "page": "Review Storybook",
+      "why": "I could not tell whether my corrections had been accepted, and I did not want to make the same mistake again.",
+      "priority": "high"
+    },
+    {
+      "change": "Add a clear warning that the generated story may contain incorrect characters or relationships and must be checked scene by scene before export.",
+      "page": "Review Storybook",
+      "why": "A beautiful-looking preview made me trust the book before I realised how much of the family story was wrong.",
+      "priority": "high"
+    },
+    {
+      "change": "Use The Blue Kite consistently in the interface, PDF cover, page heading and export screen instead of continuing to show Grandpa's Blue Kite.",
+      "page": "Book output and personalisation",
+      "why": "The contradictory title makes the finished book look careless and undermines my confidence in the personalisation.",
+      "priority": "high"
+    },
+    {
+      "change": "Correct the storyteller information so Margaret is not labelled as five years old, and clarify that Oliver is the five-year-old.",
+      "page": "Book output and personalisation and PDF title page",
+      "why": "The age mistake is a basic factual error about our family and would be embarrassing and confusing in a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Provide a complete final-PDF check with clearly labelled next and previous page controls, a visible page number, and a way to jump to any page.",
+      "page": "Corrected PDF title page",
+      "why": "I need to inspect all 32 pages myself before deciding whether the book is suitable for Oliver.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the $4.00 credit balance and show the cost of every image update before I click, including whether an update uses a credit and what happens if it does not work.",
+      "page": "My Storybooks and Review Storybook",
+      "why": "I want to know exactly what I am spending and avoid unexpected costs, especially on a pension.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the image-version choices with plain labels such as Version 1, Version 2 and Latest, and show when a new image is ready.",
+      "page": "Review Storybook",
+      "why": "The words '2 versions' and the version control did not tell me which picture was newest or which one I was viewing.",
+      "priority": "medium"
+    },
+    {
+      "change": "Give the scene options meaningful names and explain which parts of the illustration can be changed, such as the child, adult, object, setting and action.",
+      "page": "Review Storybook",
+      "why": "I was trying to correct specific identities, but the site did not make clear whether those details were available to edit.",
+      "priority": "medium"
+    },
+    {
+      "change": "Give the three-dot control a visible name or replace it with a plainly labelled Options button.",
+      "page": "My Storybooks",
+      "why": "An unexplained symbol is difficult to recognise, especially when I am looking for a safe, understandable way to manage a book.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain why the printed book cannot be ordered when the order control is disabled, and state the contents, price and delivery time for the $59 option.",
+      "page": "Book output and personalisation",
+      "why": "I need to know what I am being offered before I consider paying anything.",
+      "priority": "medium"
+    },
+    {
+      "change": "Label exports with a clear version name or date such as Corrected PDF - 14 March, rather than relying only on a timestamp.",
+      "page": "Book output and personalisation",
+      "why": "I need to be certain that I am opening the latest corrected version and not an earlier PDF.",
+      "priority": "medium"
+    },
+    {
+      "change": "Make the preview watermark and small text more visible, and enlarge small controls and text where possible.",
+      "page": "Corrected PDF title page and Review Storybook",
+      "why": "Very faint or tiny text is difficult for me to read and does not give me confidence that I have seen the complete book.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "The website made a pretty book with a lovely blue kite, but it did not yet make my family's story true, so I would not give it to Oliver.",
+  "sus_score": {
+    "score": 25.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.2,
+    "mean_negative_items": 4.2,
+    "inconsistent_pairs": 0,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -1.0,
+    "hedonic": 0.75,
+    "overall": -0.125
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "Priya stays task-focused throughout, moving quickly toward making Aarav's birthday present and checking the total before paying. She pushes through several forms because the goal matters, but stops when the price and generated result are unsatisfactory (Steps 4-12)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She skims and acts on prominent cues such as the orange button, simple fields, and clear Next buttons (Steps 1, 3, 5, 8). She notices the important mismatches, including the wrong style, spelling error, pre-selected gift wrap, shipping cost, and unexplained fee, without dwelling on secondary details."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "She handles the forms competently and continues when controls are merely unclear, but her hesitation over the sync error, unfamiliar reading-level jargon, and generated output reflects moderate rather than high confidence (Steps 3, 7, 9-11). She does not blame herself, which is appropriate for a medium self-efficacy persona."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She is consistently risk-averse around unclear costs and consequences: she questions the sync error, declines photo upload to avoid delay, refuses regeneration because of the charge, unchecks gift wrap, and will not enter payment details (Steps 3, 8-12)."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She follows the interface step by step, using the visible progression from login to characters, story details, appearance, preview, and checkout (Steps 2-12). She prefers simple, clear choices and reacts negatively when the interface makes meaning or scope unclear."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The short, informal, slightly tired think-aloud voice is sustained well, especially in lines such as 'I’ll press Next' and 'I won’t enter any payment details' (Steps 5, 8, 12). A few phrases are more evaluative and polished than Priya's likely natural speech, such as 'the relationship box is not clearly scoped' and 'the actual hardcover total,' but the overall voice remains consistent."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific: she is making a present for Aarav, includes Meera as his sibling, uses Abbey Park, Rory, and the cloud-shape memory, and is constrained by childcare, phone use, and her family budget (Steps 4, 6, 10-12). These details arise from the persona rather than generic shopping behaviour."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural and grounded in individual circumstances, with only a mild 'disorganized busy mum' stereotype emerging from the rushed phone use and birthday context. The detailed family facts and specific purchase reasoning keep it from feeling exaggerated.",
+    "examples": [
+      "Using a small phone while trying to complete a meaningful birthday purchase quickly (Steps 1, 8).",
+      "Immediately checking and removing the pre-selected gift wrap because she is price-sensitive (Step 11)."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear use of knowledge or skills that Priya would not plausibly have. She identifies visible interface problems, reacts to displayed pricing, and does not use developer terminology, hidden URLs, or technical implementation knowledge."
+  },
+  "realism_overall": {
+    "score": 5,
+    "why": "The sequence is highly plausible for a time-pressed, price-sensitive smartphone user: she completes the flow because the present is important, becomes suspicious at the output and checkout, and stops before paying when the total is too high or unclear (Steps 8-12). The 21-second wait and willingness to abandon unsuitable generated content also fit the persona's low patience and high time pressure."
+  }
+}

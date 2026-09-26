@@ -1,0 +1,176 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would like a personalised story for Nikolai, but I would not want to use this version frequently because the result and the data practices were not trustworthy.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The technical wording, unclear fields and unexplained errors made the site feel more complicated than necessary.",
+      "rating": 4
+    },
+    {
+      "item": 3,
+      "reason": "The basic steps were understandable, but the labels, reading-level choices, sync error and mismatched book preview made the whole experience less easy.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I did not need technical support to complete the main flow, although I needed a technical explanation for the persistent sync error.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The pages were logically connected, but the selected relationship, illustration style and character details were not reliably carried into the book.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The wrong illustration style, changing name, incorrect pronoun, preselected gift wrap and unexplained errors created too much inconsistency.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Someone patient might work through the form, but most people would be unsure about the privacy implications, reading-level labels and checkout total.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "It was not especially cumbersome to reach checkout, but having to investigate the story quality and hidden costs made the process feel awkward.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident completing the forms, but not confident using the service or paying for the result.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not have to learn very much technically, but I had to investigate a great deal before deciding what was being collected and what I would pay.",
+      "rating": 4
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 2
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 2
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 4
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 4
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 4
+    }
+  ],
+  "nps": 1,
+  "interview": {
+    "purpose": "This is a service for creating personalised children's storybooks featuring a child and meaningful memories, apparently for parents or other family members. The idea could be lovely, especially for a child like Nikolai, but it needs honest data practices and dependable results.",
+    "worst_moment": "The most frustrating moment was the generated preview: I chose soft watercolour illustrations, but received crude pop-art images, while the title contained “Adventrue,” Nikolai became “Nikola,” his pronoun changed to “she,” and the story ended with an unfinished sentence. The pre-ticked gift wrap and countdown at checkout were also seriously objectionable.",
+    "best_moment": "The best moment was seeing that the story had retained Nikolai, the new school, Varna and the brave stone in its premise. The story details were easy to enter, and the wording about the school morning felt personal and relevant.",
+    "abandon": "I would have given up before uploading a photograph, because the privacy notice did not say clearly whether images train AI, who receives them, how long they are kept or how to delete them. I might also have abandoned the purchase after seeing the poor preview, but the pre-ticked gift wrap and pressure timer had already made me unwilling to enter payment details.",
+    "missing": "I expected a gentle, coherent story about Nikolai's first rainy morning, with Mama giving him the Varna stone and helping him take one brave step. I also expected clear information about data use, retention, deletion, cancellation, returns and the actual delivered price, plus a book that respected my selected style and character details.",
+    "trust": "No, not with Nikolai's information or my family's. The phrases “may be retained,” “may be processed by our technology partners” and “improve our services” are too vague, and I still could not tell whether uploaded photographs are used to train AI. I also did not trust a purchase page that used a pre-ticked add-on and a countdown timer.",
+    "willingness_to_pay": "I would consider paying around £20 to £30 for a genuinely good personalised keepsake, but I would want the exact price, delivery, cancellation and refund terms shown without pressure first. I might pay more for high-quality illustrations and a carefully checked story, but not for the result shown here.",
+    "output_verdict": "I recognise Nikolai, Varna and the brave stone, but this is not the reassuring story I asked for. The missing Mama, invented characters, changing pronoun, unresolved placeholders, threatening imagery, incorrect illustrations and unfinished ending would make it unsuitable as a keepsake for my son."
+  },
+  "recommendations": [
+    {
+      "change": "Rewrite and check the entire story before showing it, removing unresolved placeholders, spelling errors, invented threatening characters and the unfinished ending; use simple language suitable for a six-year-old.",
+      "page": "Your storybook",
+      "why": "The current story is incoherent and contains obvious errors, so it would be embarrassing and confusing for Nikolai and unsuitable as a personal keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Generate illustrations in the selected soft watercolour style, with consistent Nikolai, straight blond hair, visible tooth gap, yellow raincoat, school gate, rainy weather and the grey brave stone in the correct hands.",
+      "page": "Choose look and feel and Your storybook",
+      "why": "The visual result did not match either my chosen style or the details I supplied, which undermines the personal value of the book.",
+      "priority": "high"
+    },
+    {
+      "change": "State clearly whether photos are used for AI training, identify every recipient or technology partner, explain retention periods and provide an obvious deletion process.",
+      "page": "Privacy and terms; Optional photo upload",
+      "why": "I will not upload a child's photograph while phrases such as “may be processed” and “improve our services” leave the important consequences unknown.",
+      "priority": "high"
+    },
+    {
+      "change": "Add a mandatory name, pronoun, placeholder and proof-reading check, and prevent purchase when those checks fail.",
+      "page": "Your storybook and Checkout",
+      "why": "Nikolai became “Nikola,” his pronoun changed, and “Adventrue” was carried into the order. These are basic trust and quality failures.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove the countdown timer, explain all preselected options, show the base price prominently and make gift wrap opt-in with no hidden additions.",
+      "page": "Hardcover checkout",
+      "why": "The pre-ticked gift wrap increased the total from £37.98 to £45.97 and the timer applied pressure. That is exactly the kind of deceptive pattern that makes me leave.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain data use again immediately before entering personal family details and provide persistent, accessible labels for all fields and file controls.",
+      "page": "Create your book – character details; Optional photo upload",
+      "why": "The site should not rely on a distant privacy page when it is asking for sensitive information about a child.",
+      "priority": "high"
+    },
+    {
+      "change": "Do not preselect a relationship, and include “Mother” as a relationship option; explain which fields are required and which are optional.",
+      "page": "Create your book – character details; Story details",
+      "why": "“Grandparent” was selected by default, and the form did not clearly distinguish required information from optional information.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace the unexplained technical sync error with a plain-language status, or remove it if it has no effect on the account.",
+      "page": "My books",
+      "why": "An unexplained error makes me wonder whether my data or account is safe, even when the rest of the page appears to work.",
+      "priority": "medium"
+    },
+    {
+      "change": "Describe reading levels in ordinary language and explain any preselected appearance or illustration options.",
+      "page": "Choose look and feel",
+      "why": "Lexile ranges require specialist knowledge, and unexplained defaults made me unsure what had been selected for Nikolai.",
+      "priority": "medium"
+    },
+    {
+      "change": "Improve accessible labels, illustration descriptions and footer contrast, and tell users what happens after they choose the main creation action.",
+      "page": "All pages, especially Log in, landing page and footer",
+      "why": "Clear labels and visible links are important for understanding the service, especially when the site is asking for family information.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "A promising idea, but I would not trust it with Nikolai's details or pay for a book that changes his name, ignores my instructions and uses pressure at checkout.",
+  "sus_score": {
+    "score": 27.5,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 1.8,
+    "mean_negative_items": 3.6,
+    "inconsistent_pairs": 1,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -1.5,
+    "hedonic": 0.0,
+    "overall": -0.75
+  }
+}

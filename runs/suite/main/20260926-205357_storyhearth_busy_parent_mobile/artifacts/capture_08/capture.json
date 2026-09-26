@@ -1,0 +1,16 @@
+{
+  "label": "The Magical Adventrue of Aarav page 7",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_08/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_08/img_00.jpg",
+      "alt": "Aarav in the dark woods",
+      "w": 296,
+      "h": 194
+    }
+  ],
+  "dir": "artifacts/capture_08"
+}

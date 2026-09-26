@@ -1,0 +1,188 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not want to use this website frequently because it did not preserve the people and relationships in my family memory.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "I did not find the website unnecessarily complex; the steps were generally orderly and understandable.",
+      "rating": 2
+    },
+    {
+      "item": 3,
+      "reason": "I thought the website was fairly easy to use, although the final storybook was disappointing and the processing was unclear.",
+      "rating": 4
+    },
+    {
+      "item": 4,
+      "reason": "I would probably not need a technical person for the basic process, though clearer explanations would have helped.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The functions were mostly integrated, but the timeout and contradictory generation messages made me less certain that they were working properly.",
+      "rating": 3
+    },
+    {
+      "item": 6,
+      "reason": "There was considerable inconsistency, especially in the family relationships, generation status, repeated scenes, and the character shown in the pictures.",
+      "rating": 4
+    },
+    {
+      "item": 7,
+      "reason": "I imagine most people could learn the website quickly because the forms and buttons were fairly straightforward.",
+      "rating": 4
+    },
+    {
+      "item": 8,
+      "reason": "I did not find the website cumbersome while entering the story, but the unclear character card and the correction of the relationship were awkward.",
+      "rating": 2
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident entering the information, but the unexpected story changes and unclear processing status reduced my confidence.",
+      "rating": 3
+    },
+    {
+      "item": 10,
+      "reason": "I did not have to learn a great deal before getting started, although I needed to read the instructions carefully to understand the cost and privacy.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 5
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 2
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 4
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 4
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 5
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 4
+    }
+  ],
+  "nps": 2,
+  "interview": {
+    "purpose": "This website is for turning a family memory into a personalised children's storybook that a parent, grandparent, or relative can give to a child. It seems especially suitable for families who want a keepsake based on a real story rather than a completely invented tale.",
+    "worst_moment": "The most frustrating moment was seeing the completed story after the wait. It changed my father into an invented Grandpa, made me disappear from the childhood scenes, and failed to show Oliver and me flying the kite together. The website had told somebody else's family story instead of mine.",
+    "best_moment": "The best moment was entering our real kite memory and seeing that the blue kite, old shirt, Welsh farmhouse, hill, and green wellies had inspired attractive watercolour pictures. The illustrations were warm and made me think the idea could become a lovely book.",
+    "abandon": "I would probably not have given up while filling in the form, although the timeout at the verification stage worried me. I would seriously have considered giving up when the finished book had the wrong family relationships, because that is the whole purpose of a family keepsake.",
+    "missing": "I expected to be able to review and correct the generated story before accepting it, including the names and relationships of every person. I also expected a proper cover image, an explanation of how long processing would take, and clearer information about editing the characters and removing errors.",
+    "trust": "I was willing to enter the family story without uploading photographs, and I trusted the free credit for the $1.00 generation because the balance was shown. However, I was cautious about the lack of a privacy explanation beside the email and character details, and I would want to know exactly how children's information was being used before uploading photographs.",
+    "willingness_to_pay": "I would consider paying $1.00 for a finished, accurate book covered by the free credit, but I would want to see the corrected story first. I would pay more only if I could edit the book, choose the characters carefully, and be certain that the final keepsake was faithful to my memory; even then, a fair price would probably be no more than $5.00.",
+    "output_verdict": "The watercolours and read-aloud language were pleasant, but the result is not a keepsake I would accept. It preserved some objects and places while changing the central people and relationships, so it felt like another family's story rather than mine."
+  },
+  "recommendations": [
+    {
+      "change": "Correct the family relationships and preserve the exact three-generation chain: my father taught me to fly the kite, I tell Oliver the memory, and I help Oliver fly it.",
+      "page": "Generated storybook review",
+      "why": "This is the most important fault. A keepsake that gets the family relationships wrong is not personal and would be upsetting to give to Oliver.",
+      "priority": "high"
+    },
+    {
+      "change": "Add clear review and editing controls before accepting the book, including a way to change names, relationships, characters, places, and the title.",
+      "page": "Generated storybook review",
+      "why": "I need to check and correct the story rather than being shown a finished version that has silently changed my memory.",
+      "priority": "high"
+    },
+    {
+      "change": "Show the supplied character descriptions consistently, especially Margaret's short silver hair, round glasses, and blue cardigan, and Oliver's curly hair, freckles, and green wellies.",
+      "page": "Generated storybook review",
+      "why": "The pictures should represent the people I described, not replace Margaret with an unrelated white-haired man.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain exactly what $1.00 will charge, how free credit is used, and what happens if the generation fails.",
+      "page": "Home page and My Storybooks dashboard",
+      "why": "I want to be certain that I will not accidentally spend money and understand why the balance changed.",
+      "priority": "high"
+    },
+    {
+      "change": "Provide a short privacy explanation beside the email field and before any upload or character information is submitted.",
+      "page": "Create your account and Create your storybook",
+      "why": "I am willing to share information when the reason is clear, but I do not want to give details about my family blindly.",
+      "priority": "high"
+    },
+    {
+      "change": "Give clear processing information, including an estimated waiting time, whether the page must remain open, and a reliable success or failure message.",
+      "page": "Storybook analysis",
+      "why": "The repeated spinners and timeout made me wonder whether the code had really been accepted and whether the book was still being made.",
+      "priority": "medium"
+    },
+    {
+      "change": "Make character and photograph options clearly optional, and explain exactly what a photograph is used for.",
+      "page": "Create your storybook",
+      "why": "The wording made me hesitate about uploading pictures of Oliver, and the purpose of doing so was not clear.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain the Add Character button and avoid leaving an unexplained blank character card.",
+      "page": "Create your storybook",
+      "why": "I thought the button had already added a character, but it left me with another blank card and made the process unnecessarily awkward.",
+      "priority": "medium"
+    },
+    {
+      "change": "Set the reading age to Oliver's age by default when his age is entered, and provide a clear control for changing it.",
+      "page": "Create your storybook",
+      "why": "The default reading level should match the child the story is intended for.",
+      "priority": "medium"
+    },
+    {
+      "change": "Add a proper cover image and remove duplicated final scenes.",
+      "page": "Generated storybook review",
+      "why": "A keepsake needs the dignity of a proper cover, and the repeated scenes made the ending look unfinished.",
+      "priority": "medium"
+    },
+    {
+      "change": "Improve the smaller labels and controls, especially the resend option and account menu, and use a larger high-contrast font throughout.",
+      "page": "Verify your email and My Storybooks dashboard",
+      "why": "Small, low-contrast items are difficult for me to notice and make the site feel less reassuring.",
+      "priority": "low"
+    },
+    {
+      "change": "Provide a text description for the main demonstration video and use a demonstration that better represents different kinds of family memories.",
+      "page": "Home page",
+      "why": "The missing description makes the video less accessible, and the example family did not help me imagine my own story clearly.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "The website was pleasantly calm to use and produced lovely pictures, but I cannot recommend a family keepsake that changes my father, my own role, and Oliver's family story.",
+  "sus_score": {
+    "score": 60.0,
+    "grade": "D",
+    "above_average_68": false,
+    "mean_positive_items": 3.2,
+    "mean_negative_items": 2.4,
+    "inconsistent_pairs": 1,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -0.5,
+    "hedonic": 0.25,
+    "overall": -0.125
+  }
+}

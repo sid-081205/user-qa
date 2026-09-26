@@ -1,0 +1,677 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 216,
+      "sentences": 14,
+      "avg_sentence_words": 15.4,
+      "flesch_reading_ease": 67.8,
+      "fk_grade": 7.6,
+      "polysyllabic_ratio": 0.111,
+      "long_words": [
+        "Bartholomew",
+        "crepuscular",
+        "ephemeral",
+        "existential",
+        "ineffable",
+        "inexplicable",
+        "juxtaposing",
+        "luminescence",
+        "melancholy",
+        "trepidation"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 4.0,
+    "per_part": [
+      {
+        "part": "auto: The Magical Adventrue of Linh",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 2",
+        "words": 8,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.8,
+        "flesch_reading_ease": 82.4
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 3",
+        "words": 39,
+        "avg_sentence_words": 19.5,
+        "fk_grade": 7.4,
+        "flesch_reading_ease": 76.4
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 4",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 19.8,
+        "flesch_reading_ease": -27.4
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 5",
+        "words": 33,
+        "avg_sentence_words": 16.5,
+        "fk_grade": 5.1,
+        "flesch_reading_ease": 87.5
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 6",
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 64.7
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 7",
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 90.0
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 8",
+        "words": 38,
+        "avg_sentence_words": 19.0,
+        "fk_grade": 7.0,
+        "flesch_reading_ease": 78.5
+      },
+      {
+        "part": "The Magical Adventrue of Linh page 9",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      },
+      {
+        "part": "auto: Checkout",
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 8.0,
+        "flesch_reading_ease": 57.2
+      }
+    ],
+    "names": {
+      "Linh": {
+        "token": "Linh",
+        "mentions": 10,
+        "near_miss_variants": [
+          "Lin"
+        ]
+      },
+      "Bà Nội (Grandma)": {
+        "token": "Bà",
+        "mentions": 0,
+        "near_miss_variants": []
+      },
+      "Bà Nội": {
+        "token": "Bà",
+        "mentions": 0,
+        "near_miss_variants": []
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Hoi",
+      "Lin",
+      "Bartholomew",
+      "Magical",
+      "Adventrue"
+    ],
+    "placeholders": [
+      "{{recipient_name}}",
+      "{{sender_name}}",
+      "{recipient_name}",
+      "{sender_name}"
+    ],
+    "repeated_sentences": [
+      "Once upon a time, in the river in Hoi An during the full-moon lantern festival, there lived a curious child named Linh."
+    ],
+    "truncated_ending": true,
+    "out_of_dictionary_words": [
+      "crepuscular",
+      "full-moon"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Linh"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "4"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "she / her"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "long black hair with a red ribbon, round cheeks"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Bà Nội"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "the river in Hoi An during the full-moon lantern festival"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "a red paper lantern shaped like a star"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Four-year-old Linh and her grandmother Bà Nội make paper lanterns together. Bà Nội has grey hair in a bun and wears a purple áo dài. At the full-moon lantern festival in Hoi An, they float the lanterns on the river. This memory is special because it brings our family together and helps Linh feel proud of where we come from.",
+      "truncated_to": 200
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "expected_names": [
+    "Linh",
+    "Bà Nội (Grandma)",
+    "Bà Nội"
+  ],
+  "reading_age": 4.0,
+  "superseded_captures": [],
+  "version_changes": [],
+  "artifact_type": "Personalized children's storybook preview and checkout page",
+  "parts": [
+    {
+      "part": "Cover",
+      "text": "A StoryHearth original\nIllustration style: Pop-art comic",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says only \"Cover\".",
+      "reaction": "The title has a serious spelling mistake: \"Adventrue.\" The cover should show Linh, Bà Nội, and the star-shaped lantern so I can recognise our memory.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"The Magical Adventrue of Linh\"",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The visible cover text does not mention Bà Nội, the family, or the special red star lantern.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image itself is unavailable, and the alt text says only \"Cover\", so the cover cannot be checked.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "Linh's name is included in the title.",
+        "The page clearly states the requested illustration style."
+      ],
+      "suggested_change": "Correct the title and use a cover picture of Linh and Bà Nội holding the red star-shaped lantern beside the river in Hoi An.",
+      "rewrite": "The Star Lantern of Linh and Bà Nội\nA family story from Hoi An"
+    },
+    {
+      "part": "Title page",
+      "text": "For {{recipient_name}}, with love from {{sender_name}}",
+      "image_refs": [],
+      "picture_description": "No picture is listed.",
+      "reaction": "This looks unfinished because the names did not fill in. I would not want these code words printed in a book.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"For {{recipient_name}}, with love from {{sender_name}}\"",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "No completed recipient or sender name is shown.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The sentence is short and has a warm intention."
+      ],
+      "suggested_change": "Replace the placeholders with the real names, or remove this page if those names were not provided.",
+      "rewrite": ""
+    },
+    {
+      "part": "Page 1",
+      "text": "Once upon a time, in the river in Hoi An during the full-moon lantern festival, there lived a curious child named Linh. Linh was 4 years old and loved nothing more than a red paper lantern shaped like a star.",
+      "image_refs": [
+        "I2"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says \"Linh at the river in Hoi An during the full-moon lantern festival\".",
+      "reaction": "This page uses the correct name, age, place, festival, and red star lantern. The first sentence is long and awkward because it says Linh lived \"in the river.\"",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"in the river in Hoi An during the full-moon lantern festival, there lived a curious child named Linh\"",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested appearance \"long black hair with a red ribbon, round cheeks\" and grey hair, purple áo dài, and family relationship are not introduced.",
+          "severity": 2
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "Linh cannot live \"in the river\"; the intended location is beside the river.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "Linh's name and age are correct.",
+        "The Hoi An setting, full-moon festival, and red star-shaped lantern are included.",
+        "The alt text matches the main setting."
+      ],
+      "suggested_change": "Move Linh and Bà Nội to the riverbank and describe their appearance clearly.",
+      "rewrite": "On a bright full-moon night, four-year-old Linh stood beside the river in Hoi An. She had long black hair, round cheeks, and a red ribbon in her hair. Bà Nội held a red paper lantern shaped like a star.",
+      "metrics": {
+        "words": 39,
+        "avg_sentence_words": 19.5,
+        "fk_grade": 7.4,
+        "flesch_reading_ease": 76.4
+      }
+    },
+    {
+      "part": "Page 2",
+      "text": "One evening Linh gazed upward. The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.",
+      "image_refs": [
+        "I3"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says \"Linh looking at the evening sky\".",
+      "reaction": "These are difficult, strange words, and I do not understand what the sentence is trying to say. It does not feel like a story for a four-year-old.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "\"The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "The sentence uses ten advanced, long words and has no clear meaning for a young child.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "Bà Nội is absent even though the submitted memory said Linh and her grandmother make the lantern together.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The idea of Linh looking at the evening sky is connected to the lantern festival."
+      ],
+      "suggested_change": "Replace the sentence with simple words about the moon, lanterns, and Linh's feelings.",
+      "rewrite": "Linh looked up at the round moon. Hundreds of little lanterns shone on the river. \"They look like stars,\" she said.",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 19.8,
+        "flesch_reading_ease": -27.4
+      }
+    },
+    {
+      "part": "Page 3",
+      "text": "Then the rain began to pour. Big grey drops splashed into the puddles as Lin pulled up her hood and ran for shelter, holding a red paper lantern shaped like a star tight.",
+      "image_refs": [
+        "I4"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says \"Linh outside\".",
+      "reaction": "The website changed Linh's name to \"Lin.\" The rain and hood were invented, and they take the story away from Linh and Bà Nội.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "\"Lin pulled up her hood\" instead of \"Linh.\"",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"holding a red paper lantern shaped like a star tight\"",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The rain, hood, and shelter are not part of the submitted family memory.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The red star-shaped lantern is still present.",
+        "The description of the rain is easy to understand."
+      ],
+      "suggested_change": "Keep Linh's full name, remove the invented rain, and continue the activity with Bà Nội.",
+      "rewrite": "Linh and Bà Nội held the lantern together. It was soft and light. Linh smiled when the warm paper glowed.",
+      "metrics": {
+        "words": 33,
+        "avg_sentence_words": 16.5,
+        "fk_grade": 5.1,
+        "flesch_reading_ease": 87.5
+      }
+    },
+    {
+      "part": "Page 4",
+      "text": "Uncle Bartholomew\nSuddenly, Uncle Bartholomew appeared with a lantern. \"Linh, follow me!\" he called, and he followed him along the winding path.",
+      "image_refs": [
+        "I5"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says \"Linh and Uncle Bartholomew\".",
+      "reaction": "I did not ask for Uncle Bartholomew. He is not part of our family memory, and the last sentence is confusing.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "\"Suddenly, Uncle Bartholomew appeared with a lantern.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "\"Linh, follow me!\" he called, and he followed him along the winding path.\" It is unclear who follows whom.",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "The heading \"Uncle Bartholomew\" appears as a separate, unexplained line.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The dialogue is short.",
+        "Linh's name is spelled correctly here."
+      ],
+      "suggested_change": "Remove Uncle Bartholomew and the winding path. Bring Bà Nội and Linh back into the story.",
+      "rewrite": "Bà Nội smiled and gave Linh the lantern. \"We will float it on the river together,\" she said.",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 64.7
+      }
+    },
+    {
+      "part": "Page 5",
+      "text": "Deep in the woods, the shadows grew teeth and whispered that no one would ever find Linh again. Linh clutched a shiny red balloon and trembled in the dark.",
+      "image_refs": [
+        "I6"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says \"Linh in the dark woods\".",
+      "reaction": "This is dark and frightening for a four-year-old, and the special lantern has become a balloon. It does not feel like our family story.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "\"the shadows grew teeth and whispered that no one would ever find Linh again\"",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The story moves to \"Deep in the woods\" and replaces the star-shaped paper lantern with \"a shiny red balloon.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The Hoi An river and Bà Nội disappear without explanation.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The alt text supports the frightening woods scene, but that scene conflicts with the submitted family memory and special object.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The sentence about the red object is short and easy to read."
+      ],
+      "suggested_change": "Delete this frightening scene and return to the warm river setting with Bà Nội.",
+      "rewrite": "The river water moved slowly under the moon. Linh saw the reflection of her lantern and held Bà Nội's hand.",
+      "metrics": {
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 90.0
+      }
+    },
+    {
+      "part": "Page 6",
+      "text": "Once upon a time, in the river in Hoi An during the full-moon lantern festival, there lived a curious child named Linh. At last the sun came out, and Linh skipped all the way home, happier than ever.",
+      "image_refs": [
+        "I7"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says \"Linh going home\".",
+      "reaction": "This repeats the first sentence almost exactly. The ending is too quick, and Linh goes home without Bà Nội or the special family memory.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The first sentence repeats the opening sentence from Page 1.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "\"At last the sun came out\" appears without explaining why Linh needed sunshine after the frightening woods.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "Bà Nội and the shared lantern activity are missing from the ending.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "Linh \"skipped all the way home, happier than ever\" is generic and does not express the family connection in the submitted memory.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "Linh's name is correct.",
+        "The final action is positive.",
+        "The alt text matches Linh going home."
+      ],
+      "suggested_change": "Remove the repeated opening and give the ending a clear, personal moment between Linh and Bà Nội.",
+      "rewrite": "Linh and Bà Nội watched their lantern shine on the water. \"This is our family's story,\" Bà Nội said. Linh smiled and held her hand.",
+      "metrics": {
+        "words": 38,
+        "avg_sentence_words": 19.0,
+        "fk_grade": 7.0,
+        "flesch_reading_ease": 78.5
+      }
+    },
+    {
+      "part": "Page 7",
+      "text": "The End\nAnd from that day on, whenever Linh looked up at the sky, she would always remember\nThe End",
+      "image_refs": [
+        "I8"
+      ],
+      "picture_description": "The actual picture is unavailable. Its alt text says \"The End\".",
+      "reaction": "The last sentence stops after \"remember,\" and \"The End\" is printed twice. This looks broken, not ready to buy.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"she would always remember\" ends without saying what Linh would remember or having final punctuation.",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"The End\" appears twice.",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The ending does not mention Bà Nội, Vietnamese family pride, or the shared lantern memory.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The final thought tries to connect the story with Linh's later life."
+      ],
+      "suggested_change": "Complete the sentence, keep only one \"The End,\" and explain what Linh remembers.",
+      "rewrite": "The End\nFrom then on, whenever Linh saw a lantern, she remembered the night she made one with Bà Nội. She felt proud of her family and of home.",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      }
+    },
+    {
+      "part": "Checkout",
+      "text": "Checkout\nYour price is reserved for 09:18\nHardcover: The Magical Adventrue of Linh\t£24.99\n Premium gift wrap\t£7.99\nShipping & handling\t£12.99\nTotal\t£45.97\nDelivery\nAddress\nPayment\nCard number\nExpiry\nCVC\nPay now",
+      "image_refs": [],
+      "picture_description": "No picture is listed.",
+      "reaction": "I can see the total, but the title is wrong and I cannot check the delivery time or expected address. I would not pay until the book and delivery details are fixed.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"The Magical Adventrue of Linh\" remains misspelled at checkout.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The product does not match the requested family memory because the story changes names, characters, objects, and events.",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"Your price is reserved for 09:18\" does not clearly say whether this is a countdown or how long the price is held.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The individual prices and the £45.97 total are shown.",
+        "The gift wrap is listed as a separate item.",
+        "The checkout gives clear sections for delivery, address, and payment."
+      ],
+      "suggested_change": "Do not allow checkout until the book is corrected and previewed. Add a clear delivery estimate, a full address summary, and an explanation of the reservation timer.",
+      "rewrite": "Checkout\nYour price is held for 9 minutes and 18 seconds.\nPersonalised hardcover: The Star Lantern of Linh and Bà Nội — £24.99\nPremium gift wrap — £7.99\nShipping and handling — £12.99\nTotal — £45.97\n\nDelivery address: [confirmed address]\nEstimated delivery: [clear date range]\nPayment\nCard number: [card field]\nExpiry: [expiry field]\nSecurity code: [CVC field]\n\nReview and pay",
+      "metrics": {
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 8.0,
+        "flesch_reading_ease": 57.2
+      }
+    }
+  ],
+  "criteria": {
+    "fidelity": {
+      "evidence": "The book uses Linh's name, age, Hoi An, the full-moon lantern festival, and the red star-shaped lantern, but it changes Linh to Lin, invents Uncle Bartholomew, rain, woods, a hood, and a red balloon, and removes Bà Nội entirely. Linh's appearance and Bà Nội's grey bun and purple áo dài are also missing.",
+      "score": 1
+    },
+    "coherence": {
+      "evidence": "The story jumps from the river to rain, then to Uncle Bartholomew and a dark forest, repeats the opening on the last story page, and ends without completing the final sentence.",
+      "score": 1
+    },
+    "age_fit": {
+      "evidence": "The text includes \"ephemeral luminescence,\" \"crepuscular firmament,\" \"ineffable wonder,\" and \"existential trepidation.\" It also includes frightening images of shadows with teeth and a child who may never be found.",
+      "score": 1
+    },
+    "language": {
+      "evidence": "Visible problems include \"Adventrue,\" unreplaced placeholders, \"Lin\" instead of Linh, a repeated sentence, awkward wording such as \"living in the river,\" a duplicated \"The End,\" and an unfinished final sentence.",
+      "score": 1
+    },
+    "text_image_fit": {
+      "evidence": "The actual pictures cannot be seen, so visual matching cannot be judged fully. The available alt text generally describes the generated scenes, but Page 5's alt text supports the invented dark-woods scene rather than the requested family memory.",
+      "score": "n/a"
+    },
+    "character_consistency": {
+      "evidence": "No actual character pictures or photos are available for comparison. The written description of Linh is omitted, so visual identity and appearance consistency cannot be judged.",
+      "score": "n/a"
+    },
+    "visual_quality": {
+      "evidence": "The actual images, faces, hands, lettering, and picture artefacts are unavailable, so visual quality cannot be judged.",
+      "score": "n/a"
+    },
+    "emotional_resonance": {
+      "evidence": "The submitted memory was about Linh and Bà Nội making a lantern together and feeling connected to their family and Vietnam. The output turns it into a generic adventure with an invented uncle, frightening woods, and no grandmother.",
+      "score": 1
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "The child's name is mostly shown as Linh.",
+      "The child's age is four.",
+      "The child is referred to as \"she.\"",
+      "The setting is the river in Hoi An.",
+      "The full-moon lantern festival is named.",
+      "The red paper lantern shaped like a star appears several times.",
+      "The premium gift wrap is added and charged for."
+    ],
+    "missing": [
+      "Bà Nội is missing completely.",
+      "The relationship between Linh and her grandmother is missing.",
+      "Linh's long black hair, red ribbon, and round cheeks are missing.",
+      "Bà Nội's grey hair in a bun and purple áo dài are missing.",
+      "The shared activity of making the lantern is missing.",
+      "Floating the lantern on the river is missing.",
+      "The meaning of the memory as family connection and Vietnamese pride is missing."
+    ],
+    "changed": [
+      "Linh is incorrectly changed to Lin on Page 3.",
+      "The special red star-shaped lantern becomes a shiny red balloon on Page 5.",
+      "The warm family river memory becomes a dark forest adventure.",
+      "The cover and checkout title use the misspelling \"Adventrue.\"",
+      "The generated style is identified as \"Pop-art comic,\" although the chosen input style is not available in the captured form."
+    ],
+    "invented": [
+      "Rain and puddles.",
+      "A hood.",
+      "Uncle Bartholomew.",
+      "A winding path.",
+      "A dark forest with shadows that have teeth.",
+      "Threats that no one will find Linh again.",
+      "A shiny red balloon.",
+      "A sudden appearance of the sun."
+    ]
+  },
+  "safety_concerns": [
+    "The dark-woods passage and the line \"no one would ever find Linh again\" may frighten a four-year-old."
+  ],
+  "overall_reaction": "I am disappointed and worried about paying for this. It changes my daughter's name, leaves out Bà Nội, replaces our special lantern with a balloon, and adds a frightening stranger and forest. The placeholders, spelling mistakes, repeated words, and unfinished ending also make the book look unfinished.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — I would not pay £45.97 for a book that does not keep my family's memory, names, or important details correctly.",
+  "top_changes": [
+    "Put Linh and Bà Nội at the centre and use both names correctly on every page.",
+    "Rewrite the story around making and floating the red star-shaped lantern on the Hoi An river, with simple words suitable for a four-year-old.",
+    "Remove Uncle Bartholomew, the dark forest, the balloon, and the frightening language.",
+    "Fix \"Adventrue,\" fill or remove all template placeholders, remove repeated text, and complete the final sentence.",
+    "Show the requested character details and use pictures that clearly match every page before allowing checkout."
+  ],
+  "images": [],
+  "variant": {
+    "name": "novision",
+    "vision": false,
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 2753,
+      "completion_tokens": 6057,
+      "seconds": 53.2,
+      "by_purpose": {
+        "output_assessment": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

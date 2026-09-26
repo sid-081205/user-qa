@@ -1,0 +1,188 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not use this website frequently because I would be concerned about my child's data and the result was not good enough to keep.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The forms were fairly straightforward, but the technical language, unexplained errors and unclear pricing made the overall experience more complicated than necessary.",
+      "rating": 2
+    },
+    {
+      "item": 3,
+      "reason": "I could complete the creation steps without much difficulty, but several results and explanations made the experience unreliable rather than genuinely easy.",
+      "rating": 4
+    },
+    {
+      "item": 4,
+      "reason": "I did not need technical support to complete the form, although I would want clearer explanations of the generation process, privacy and account controls.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The basic flow from login to book creation was reasonably integrated, but the incorrect illustration style, missing personal details and silent loading step made the handoff feel disconnected.",
+      "rating": 3
+    },
+    {
+      "item": 6,
+      "reason": "There was considerable inconsistency: I selected watercolour but received pop-art, the title was misspelled, and the story did not reliably follow the supplied details.",
+      "rating": 4
+    },
+    {
+      "item": 7,
+      "reason": "Most people would probably complete the form quickly, but the confusing story output, checkout tactics and privacy language would reduce their confidence.",
+      "rating": 3
+    },
+    {
+      "item": 8,
+      "reason": "The booking process itself was not especially cumbersome, but silent loading, poor labels, low-contrast links and unclear results made it feel awkward.",
+      "rating": 2
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident entering ordinary story details, but I did not feel confident trusting the site with a child's photo or personal information.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not have to learn a great deal to use the form, but I had to work out unclear terms such as Lexile and interpret several unexplained messages myself.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 4
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 4
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 4
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 3
+    }
+  ],
+  "nps": 1,
+  "interview": {
+    "purpose": "This is a website for creating personalised storybooks featuring children and other people. It could be especially appealing to parents who want a reassuring story about their child, but it is not currently suitable for handling children's data responsibly.",
+    "worst_moment": "The checkout page was the most disturbing moment: “Premium gift wrap” was already selected and the countdown said, “Your price is reserved for 09:57.” That made the £45.97 total feel deliberately pressured, especially when the basic delivered cost was not shown before the add-on.",
+    "best_moment": "The story details form was the best part because the prompts helped me describe Nikolai's first morning at school and his smooth grey brave stone without forcing me to upload a photograph. It felt possible that the story could have been genuinely comforting.",
+    "abandon": "Yes, I would probably have stopped at checkout until the optional gift wrap was unticked and the real price was explained. More seriously, I would have abandoned the purchase after reading the privacy notice, because it did not explain children's data, AI training, retention, technology partners, deletion or account control.",
+    "missing": "I expected a clear explanation of what happens to Nikolai's details, whether they are used to train AI, who can access them, how long they are kept and how to delete them. I also expected a complete proof before payment, accurate watercolour illustrations, a finished story, the basic price, and plain-language cancellation and refund terms.",
+    "trust": "No, I would not trust this website with my family's information. Phrases such as “may be retained” and “may be processed by our technology partners” are too vague, and there was no privacy explanation beside the child-photo upload. The unexplained sync error, wrong illustration style and dishonest-feeling checkout patterns reduced my trust further.",
+    "willingness_to_pay": "I would not pay £45.97 for this version. After removing the unnecessary gift wrap, £37.98 still felt too much for a book with spelling errors, an incomplete ending, inaccurate illustrations and a reading level of 8.3 for a six-year-old. I might consider paying around £20 to £25 if the story were genuinely reassuring, properly edited, accurately illustrated and backed by clear privacy, refund and cancellation information.",
+    "output_verdict": "I can see the seed of a comforting story about Nikolai and his brave stone, but this version feels unreliable and disappointing. The title misspelling, unfinished sentence, wrong pronouns, invented uncle, frightening forest scene, inaccurate illustrations and missing emotional resolution would make it unsuitable as a keepsake."
+  },
+  "recommendations": [
+    {
+      "change": "Replace the invented and frightening plot with a short, reassuring story about Mama helping Nikolai enter his new school, using the brave stone as the emotional focus.",
+      "page": "Generated storybook preview",
+      "why": "Nikolai is six and anxious about starting school; the book should support his confidence rather than introduce threatening shadows and an unnecessary fantasy adventure.",
+      "priority": "high"
+    },
+    {
+      "change": "Proof the entire output before presenting it: correct “Adventrue,” “Nikola,” pronouns, placeholders, duplicated text, grammar and the incomplete final sentence.",
+      "page": "Generated storybook preview",
+      "why": "A keepsake with obvious editing failures feels careless and makes the rest of the personalisation untrustworthy.",
+      "priority": "high"
+    },
+    {
+      "change": "Ensure the selected illustration style is actually applied, and generate watercolour illustrations that consistently show Nikolai as blond and gap-toothed in his yellow raincoat, with Mama included.",
+      "page": "Reading level and illustration style / Generated storybook preview",
+      "why": "The images should reflect the personal details and chosen style, otherwise the book does not feel made for Nikolai.",
+      "priority": "high"
+    },
+    {
+      "change": "Do not pre-tick “Premium gift wrap,” remove the countdown, show the base hardcover price and total before optional purchases, and state the conditions for any reservation.",
+      "page": "Hardcover checkout",
+      "why": "Pre-ticked add-ons and “reserved for 09:57” pressure are exactly the sort of deceptive patterns that make me leave a site.",
+      "priority": "high"
+    },
+    {
+      "change": "Provide complete, prominent information about children's data: categories, purposes, technology partners, storage location, retention periods, AI or model use, deletion rights and account controls.",
+      "page": "Privacy notice and optional photo upload",
+      "why": "I need to know exactly who can see my child's details and whether they are used to train AI before uploading anything or entering sensitive information.",
+      "priority": "high"
+    },
+    {
+      "change": "Add a privacy summary and link directly beside the child-photo upload, with an explicit choice to continue using written details only.",
+      "page": "Optional photo upload",
+      "why": "The decision about a child's photograph should not require leaving the form or guessing what happens to the image.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the generation process with plain wording, estimated time, privacy reassurance, failure handling, and a way to stop or retry without submitting duplicate personal data.",
+      "page": "Book creation progress",
+      "why": "The silent spinner made me unsure whether the story was being generated, saved or merely loading.",
+      "priority": "high"
+    },
+    {
+      "change": "Add persistent visible labels to the email and password fields and improve the contrast of privacy, terms and contact links.",
+      "page": "Log in",
+      "why": "The placeholders disappeared when I typed, and the faint legal links were too easy to miss.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain reading levels in plain language, for example with an age range or a simple “for a six-year-old” label, rather than relying on Lexile codes.",
+      "page": "Reading level and illustration style",
+      "why": "“BR–200L” was not a useful description for choosing a story for a six-year-old, and the default may have been too advanced.",
+      "priority": "medium"
+    },
+    {
+      "change": "Remove opaque phrases such as “multimodal generative narrative engine” and “lived-experience corpus” from the family-facing homepage.",
+      "page": "Home page",
+      "why": "Plain language is more trustworthy and makes the benefit easier to understand without making the product sound needlessly technical.",
+      "priority": "medium"
+    },
+    {
+      "change": "Describe the main button's consequence clearly, such as “Start creating Nikolai's book,” and provide a useful text alternative for the decorative illustration.",
+      "page": "Home page",
+      "why": "The button should tell me what will happen, and the image should not be inaccessible or presented as essential without explanation.",
+      "priority": "low"
+    },
+    {
+      "change": "Explain the “profile sync incomplete” error in plain language and clarify whether any account or personal data is affected.",
+      "page": "My books dashboard",
+      "why": "An unexplained error code made me question the reliability of the account and the data involved.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "The idea could be lovely, but I would not trust this version with Nikolai's data or pay for such an inaccurate and pressure-driven checkout.",
+  "sus_score": {
+    "score": 52.5,
+    "grade": "D",
+    "above_average_68": false,
+    "mean_positive_items": 2.6,
+    "mean_negative_items": 2.4,
+    "inconsistent_pairs": 2,
+    "consistency_flag": true
+  },
+  "ueq_s_score": {
+    "pragmatic": -0.5,
+    "hedonic": 0.0,
+    "overall": -0.25
+  }
+}

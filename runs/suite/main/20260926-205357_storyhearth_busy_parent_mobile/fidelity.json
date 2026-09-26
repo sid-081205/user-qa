@@ -1,0 +1,48 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "Priya stays strongly task-focused, moving quickly toward a birthday present for Aarav and persisting through creation and preview despite problems (steps 1–10). Abandoning checkout at the unexpected £45.97 total is consistent with her high price sensitivity and wish to know the full cost upfront (steps 11–12)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She skims, notices prominent cues, ignores low-priority information such as the profile-sync warning, and focuses on the big action buttons (steps 1–5). She also selectively reads what matters to price, style, privacy, and story quality (steps 8–12)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "She is comfortable completing familiar online forms and uses step-by-step progress confidently (steps 2–8). She also correctly diagnoses suspicious defaults and system mistakes without blaming herself, though the simulation shows little uncertainty when interpreting the flow."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "Her risk aversion is clear: she avoids the optional child-photo upload without reassurance (step 8), rejects unexplained paid regeneration (step 10), and refuses to enter card details when gift wrap and pricing are unclear (steps 11–12)."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She follows the process sequentially, uses the large primary controls, and checks that entered choices and totals have updated correctly (steps 4–7 and 11–12). This strongly matches her preference for step-by-step guidance."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The thoughts are consistently brief, informal, and pragmatic, such as 'I’ll tap that' and 'I’m definitely stopping' (steps 6, 8, and 11). Some phrasing is slightly more polished or analytical than a tired nurse speaking in short bursts, but the voice remains credible."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is clearly Priya rather than a generic shopper: she is making Aarav a birthday present, includes Meera as his sister, uses the supplied Abbey Park memory and Rory detail, protects children's privacy, and reacts as a family-budget-conscious parent and shift worker (steps 4–12)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural, with nuanced reactions such as tolerating an error, carefully avoiding photo upload, and calculating the effect of removing gift wrap. It becomes mildly checklist-like when every concern aligns perfectly with the persona specification.",
+    "examples": [
+      "The concern about hidden fees and card entry closely mirrors the stated price and privacy attitudes (steps 11–12).",
+      "The optional child-photo privacy hesitation reinforces the persona's risk aversion very explicitly (step 8)."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear use of outside technical knowledge, hidden navigation, developer terminology, or information Priya could not reasonably infer from the interface and her supplied personal details."
+  },
+  "realism_overall": {
+    "score": 5,
+    "why": "A time-pressed, experienced mobile shopper could plausibly complete the straightforward portions quickly, then stop when the generated book is defective and checkout reveals a preselected charge and unexpectedly high total. Her willingness to spend 21 seconds awaiting creation also fits her motivation to finish a meaningful birthday present (step 8)."
+  }
+}

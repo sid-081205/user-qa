@@ -1,0 +1,645 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 179,
+      "sentences": 14,
+      "avg_sentence_words": 12.8,
+      "flesch_reading_ease": 71.4,
+      "fk_grade": 6.5,
+      "polysyllabic_ratio": 0.106,
+      "long_words": [
+        "Bartholomew",
+        "crepuscular",
+        "ephemeral",
+        "existential",
+        "ineffable",
+        "inexplicable",
+        "juxtaposing",
+        "luminescence",
+        "melancholy",
+        "trepidation"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 5.0,
+    "per_part": [
+      {
+        "part": "auto: The Magical Adventrue of Sam",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 2",
+        "words": 8,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.8,
+        "flesch_reading_ease": 82.4
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 3",
+        "words": 26,
+        "avg_sentence_words": 13.0,
+        "fk_grade": 4.0,
+        "flesch_reading_ease": 89.5
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 4",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 19.8,
+        "flesch_reading_ease": -27.4
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 5",
+        "words": 28,
+        "avg_sentence_words": 14.0,
+        "fk_grade": 4.6,
+        "flesch_reading_ease": 86.9
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 6",
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 64.7
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 7",
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 90.0
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 8",
+        "words": 30,
+        "avg_sentence_words": 15.0,
+        "fk_grade": 4.0,
+        "flesch_reading_ease": 92.9
+      },
+      {
+        "part": "The Magical Adventrue of Sam page 9",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      }
+    ],
+    "names": {
+      "Sam": {
+        "token": "Sam",
+        "mentions": 9,
+        "near_miss_variants": [
+          "Samn"
+        ]
+      },
+      "Grandpa Joe": {
+        "token": "Joe",
+        "mentions": 0,
+        "near_miss_variants": []
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Samn",
+      "Bartholomew"
+    ],
+    "placeholders": [
+      "{{recipient_name}}",
+      "{{sender_name}}",
+      "{recipient_name}",
+      "{sender_name}"
+    ],
+    "repeated_sentences": [
+      "Once upon a time, in the beach, there lived a curious child named Sam."
+    ],
+    "truncated_ending": true,
+    "out_of_dictionary_words": [
+      "crepuscular"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Sam"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "5"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "she / her"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "brown hair"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Grandpa Joe"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "the beach"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "a yellow bucket"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "A day at the beach building sandcastles with Grandpa Joe."
+    },
+    {
+      "field": "Lexile BR–200L",
+      "action": "choose",
+      "value": "BR-200L"
+    }
+  ],
+  "expected_names": [
+    "Sam",
+    "Grandpa Joe"
+  ],
+  "reading_age": 5.0,
+  "superseded_captures": [],
+  "artifact_type": "Nine-page personalized children's storybook preview",
+  "parts": [
+    {
+      "part": "Cover / Title page",
+      "text": "A StoryHearth original\nIllustration style: Pop-art comic",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "A very basic flat-color drawing of a small child labeled Sam, with short brown hair and a green shirt, standing between blue water, a strip of green land, a yellow star, and a large sun. The title is printed above the child.",
+      "reaction": "The misspelling 'Adventrue' immediately makes the cover look careless. The picture is also far too generic and flat for the soft Watercolour style I selected.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The title reads 'The Magical Adventrue of Sam.'",
+          "severity": 3
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The cover is labeled 'Illustration style: Pop-art comic' and consists of plain geometric shapes rather than Watercolour artwork.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "Sam has short brown hair, but the drawing gives no other clear features that establish the requested appearance.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The child's name and short brown hair are visible."
+      ],
+      "suggested_change": "Correct the title to 'The Magical Adventure of Sam' and replace the generic flat drawing with a soft Watercolour cover showing Sam with brown hair, Grandpa Joe, a yellow bucket, and a sandcastle at the beach.",
+      "rewrite": "The Magical Beach Adventure of Sam"
+    },
+    {
+      "part": "Page 2",
+      "text": "For {{recipient_name}}, with love from {{sender_name}}",
+      "image_refs": [
+        "I2"
+      ],
+      "picture_description": "The website preview frame is visible around a mostly blank white page containing the unresolved dedication in the center.",
+      "reaction": "I would not accept unresolved template brackets on a finished keepsake. This looks like a preview error rather than intentional personalization.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The page displays 'For {{recipient_name}}, with love from {{sender_name}}' with both template placeholders still visible.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "An unresolved generic dedication does not feel personally made.",
+          "severity": 3
+        }
+      ],
+      "strengths": [],
+      "suggested_change": "Ask for the intended recipient and sender names, populate the fields, and remove all braces before generating the book.",
+      "rewrite": ""
+    },
+    {
+      "part": "Page 3",
+      "text": "Once upon a time, in the beach, there lived a curious child named Sam. Sam was 5 years old and loved nothing more than a yellow bucket.",
+      "image_refs": [
+        "I3"
+      ],
+      "picture_description": "Sam stands in a simple seaside scene with blue water, a green shoreline, a yellow star, and a bright sun. There is no yellow bucket, Grandpa Joe, sandcastle, shovel, or visible beach activity.",
+      "reaction": "The story starts naming the right age and object, but the grammar is poor and the picture leaves out almost everything that made the requested beach memory special.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The phrase 'in the beach' should be 'at the beach.'",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The text says Sam loves a yellow bucket, but the picture does not contain one and neither Grandpa Joe nor the requested sandcastle-building event appears.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image shows only Sam near water and omits the yellow bucket central to this page.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "Sam's name and age are stated correctly.",
+        "The yellow bucket is included in the text.",
+        "The setting is generally recognizable as a seaside location."
+      ],
+      "suggested_change": "Rewrite this as a direct scene of Sam and Grandpa Joe building a sandcastle together, and make sure the image clearly shows both characters, the yellow bucket, and a shovel.",
+      "rewrite": "Sam and Grandpa Joe went to the beach to build a sandcastle. Sam carried her favorite yellow bucket, and Grandpa Joe brought a small shovel.",
+      "metrics": {
+        "words": 26,
+        "avg_sentence_words": 13.0,
+        "fk_grade": 4.0,
+        "flesch_reading_ease": 89.5
+      }
+    },
+    {
+      "part": "Page 4",
+      "text": "One evening Sam gazed upward. The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.",
+      "image_refs": [
+        "I4"
+      ],
+      "picture_description": "Sam stands beneath a purple and pink evening sky dotted with a few stars, while the same blue water and green shoreline remain below.",
+      "reaction": "This sentence is far too advanced and abstract for a five-year-old. It is also disconnected from a cheerful day of building sandcastles with Grandpa Joe.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "The sentence uses words such as 'ephemeral,' 'crepuscular,' 'engendered,' 'juxtaposing,' 'ineffable,' and 'existential trepidation.' The measured reading level is grade 6.5, not BR-200L.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The story abruptly changes from Sam loving a yellow bucket to an unexplained evening meditation with no beach activity or Grandpa Joe.",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The obscure melancholy and existential language makes the requested happy family memory feel cold and impersonal.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The purple evening sky broadly supports the mention of evening."
+      ],
+      "suggested_change": "Replace the sentence with short, concrete language about Sam and Grandpa Joe noticing the evening sky after building their sandcastle.",
+      "rewrite": "When the sky grew dark, Sam and Grandpa Joe stopped to look at the first stars. Sam smiled because their sandcastle was still standing by the sea.",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 19.8,
+        "flesch_reading_ease": -27.4
+      }
+    },
+    {
+      "part": "Page 5",
+      "text": "Then the rain began to pour. Big grey drops splashed into the puddles as Samn pulled up her hood and ran for shelter, holding a yellow bucket tight.",
+      "image_refs": [
+        "I5"
+      ],
+      "picture_description": "The picture is almost identical to the sunny cover: Sam stands near blue water and green land beneath a bright yellow sun and beside a yellow star. There are no raindrops, puddles, hood, or bucket.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "Sam's name is misspelled as 'Samn.'",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text describes pouring rain, grey drops, puddles, a hood, and a yellow bucket, while the image shows sunshine, a star, no rain, and no bucket.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The rain and shelter are invented events, and Grandpa Joe is inexplicably absent.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The pronoun 'her' is consistent with the requested she/her pronouns."
+      ],
+      "suggested_change": "Remove the invented rain sequence or redraw it accurately. For this beach memory, a better page would continue the sandcastle activity with Sam and Grandpa Joe.",
+      "rewrite": "A big wave splashed near their sandcastle. Sam laughed and held her yellow bucket tightly while Grandpa Joe helped her rebuild the castle.",
+      "metrics": {
+        "words": 28,
+        "avg_sentence_words": 14.0,
+        "fk_grade": 4.6,
+        "flesch_reading_ease": 86.9
+      }
+    },
+    {
+      "part": "Page 6",
+      "text": "Uncle Bartholomew\nSuddenly, Uncle Bartholomew appeared with a lantern. \"Sam, follow me!\" he called, and he followed him along the winding path.",
+      "image_refs": [
+        "I6"
+      ],
+      "picture_description": "Sam stands beside a taller figure labeled 'Uncle Bartholomew' in a muted outdoor scene. A small yellow rectangle appears beside the taller figure, but there is no visible lantern, winding path, beach, or Grandpa Joe.",
+      "reaction": "This introduces someone I never mentioned and removes the grandfather who was central to the memory. The pronoun sentence is also confusing.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The page invents 'Uncle Bartholomew' while omitting Grandpa Joe, whom I explicitly included.",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "'He called, and he followed him' does not clearly establish who follows whom.",
+          "severity": 2
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "A lantern and winding path appear without explanation after Sam has supposedly run away from rain at the beach.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image labels Uncle Bartholomew but does not clearly depict the promised lantern or winding path.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The named adult is visually distinguished from Sam."
+      ],
+      "suggested_change": "Delete Uncle Bartholomew and replace him with Grandpa Joe. Make Grandpa Joe the person helping Sam at the beach, and remove the unexplained path and lantern.",
+      "rewrite": "\"Look, Grandpa Joe! I made a castle!\" Sam called. Grandpa Joe smiled and helped her pat the sand into a tall tower.",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 64.7
+      }
+    },
+    {
+      "part": "Page 7",
+      "text": "Deep in the woods, the shadows grew teeth and whispered that no one would ever find Sam again. Sam clutched a shiny red balloon and trembled in the dark.",
+      "image_refs": [
+        "I7"
+      ],
+      "picture_description": "Sam stands beside a red balloon near a few simple trees under a crescent moon and starry sky. The trees have rounded canopies without visible teeth.",
+      "reaction": "This is a sudden, frightening detour that does not belong in the requested beach memory. For an early-reader story, the threat of never being found is more alarming than the supplied idea requires.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The dark woods, threatening shadows, lost-forever threat, and red balloon are all invented and replace the requested sandcastle outing.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The story moves from a beach and winding path to 'Deep in the woods' without explaining how Sam got there or why.",
+          "severity": 4
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "The shadows 'grew teeth' and whisper that no one will ever find Sam, creating avoidable fear for a five-year-old.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The picture shows ordinary rounded trees and does not show shadows with teeth, whispering figures, trembling, or Sam being lost.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The red balloon and nighttime setting are at least visible in the picture."
+      ],
+      "suggested_change": "Remove the threatening forest scene entirely and keep the action at the beach with Sam and Grandpa Joe.",
+      "rewrite": "Sam and Grandpa Joe found one smooth shell near the water. Sam put it in her yellow bucket to add to her beach treasures.",
+      "metrics": {
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 90.0
+      }
+    },
+    {
+      "part": "Page 8",
+      "text": "Once upon a time, in the beach, there lived a curious child named Sam. At last the sun came out, and Sam skipped all the way home, happier than ever.",
+      "image_refs": [
+        "I8"
+      ],
+      "picture_description": "Sam stands alone in another generic sunny seaside image with blue water, green land, a yellow star, and a large sun. There is no visible path home, sandcastle, Grandpa Joe, bucket, or home.",
+      "reaction": "Repeating the opening almost word for word makes the ending feel like a reset rather than a conclusion. The image also fails to show the promised trip home.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "The sentence 'Once upon a time, in the beach, there lived a curious child named Sam' repeats the opening instead of advancing the story.",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "'In the beach' is repeated and should be 'at the beach.'",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "Sam skips home alone even though the requested memory was a day at the beach building sandcastles with Grandpa Joe.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text says Sam skipped all the way home, but the image shows her standing in the same seaside setting with no movement or destination.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The sunny image supports the text's mention of sunshine."
+      ],
+      "suggested_change": "End the actual beach-day sequence with Sam and Grandpa Joe saying goodbye after completing the sandcastle, and show them together in the image.",
+      "rewrite": "Sam and Grandpa Joe packed their shovel after one last look at the sandcastle. Sam waved goodbye, carrying her yellow bucket as they walked home.",
+      "metrics": {
+        "words": 30,
+        "avg_sentence_words": 15.0,
+        "fk_grade": 4.0,
+        "flesch_reading_ease": 92.9
+      }
+    },
+    {
+      "part": "Page 9",
+      "text": "The End\nAnd from that day on, whenever Sam looked up at the sky, she would always remember\nThe End",
+      "image_refs": [
+        "I9"
+      ],
+      "picture_description": "Sam stands alone against a flat orange background with 'The End' printed above her. The beach, Grandpa Joe, yellow bucket, and sandcastle are absent.",
+      "reaction": "The last thought stops in the middle of a sentence, and 'The End' is duplicated. This is not a finished keepsake.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "'she would always remember' is an unfinished sentence, and 'The End' appears twice.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The intended final memory never identifies what Sam remembered, so the ending does not complete the personal story.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The page says Sam would remember something when looking at the sky, but the picture has no sky and does not show what she remembers.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The page clearly signals that an ending was intended."
+      ],
+      "suggested_change": "Complete the final sentence, print 'The End' only once, and either add a relevant image or turn the page into a clean closing page featuring Sam's sandcastle.",
+      "rewrite": "The End\nFrom then on, whenever Sam saw a sandy castle, she remembered the happy day she built one with Grandpa Joe.",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      }
+    }
+  ],
+  "criteria": {
+    "fidelity": {
+      "evidence": "The output correctly uses Sam, age 5, she/her, brown hair in the simple drawings, the beach, and the yellow bucket. However, Grandpa Joe appears zero times, sandcastle building is omitted, the original memory is replaced by invented rain, lantern, woods, balloon, and Uncle Bartholomew scenes, and the title introduces an unwanted magical adventure.",
+      "score": 1
+    },
+    "coherence": {
+      "evidence": "There is an opening and a nominal ending, but the plot jumps from a beach to an unexplained evening, heavy rain, a lantern, a winding path, dark woods, threatening shadows, sunshine, and home. The opening sentence is repeated on Page 8, and the final memory is incomplete.",
+      "score": 2
+    },
+    "age_fit": {
+      "evidence": "The passage 'The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation' is unsuitable for age five. Automatic measurement also gives grade 6.5, and the toothy shadows and threat that Sam will never be found add avoidable fear.",
+      "score": 1
+    },
+    "language": {
+      "evidence": "Visible errors include 'Adventrue,' 'Samn,' 'in the beach,' unresolved '{{recipient_name}}' and '{{sender_name}}' placeholders, a duplicated 'The End,' and the unfinished sentence 'she would always remember.'",
+      "score": 1
+    },
+    "text_image_fit": {
+      "evidence": "The pictures are often generic or contradictory: Page 5 shows sun and no rain, bucket, puddles, or hood; Page 6 omits the winding path and does not clearly show a lantern; Page 7 shows ordinary trees rather than shadows with teeth; and several beach pages omit the sandcastle, Grandpa Joe, and bucket.",
+      "score": 1
+    },
+    "character_consistency": {
+      "evidence": "Sam generally retains the same round face, short brown hair, green shirt, dark trousers, and label across the pictures. There is some drift in proportions and no strong visual indication that Sam is a girl, but no outright identity change is visible.",
+      "score": 4
+    },
+    "visual_quality": {
+      "evidence": "The artwork is extremely basic, with flat geometric shapes, minimal detail, repeated scenery, and labels under characters. The output explicitly says 'Illustration style: Pop-art comic' despite the selected Watercolour style, and several images contradict their text.",
+      "score": 1
+    },
+    "emotional_resonance": {
+      "evidence": "The story does not develop the supplied memory with Grandpa Joe and does not feel like a personal keepsake. Broken placeholders, the wrong style, invented frightening characters, and an unfinished final sentence make the result disappointing and unreliable.",
+      "score": 1
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "Sam's first name is generally spelled correctly except for the single typo 'Samn.'",
+      "The age five is stated correctly.",
+      "The pronoun 'her' is used for Sam.",
+      "The drawings depict Sam with short brown hair.",
+      "The beach is repeatedly used as the setting.",
+      "The yellow bucket is named in the text."
+    ],
+    "missing": [
+      "Grandpa Joe never appears.",
+      "Building sandcastles is omitted from the actual story and pictures.",
+      "The requested personal memory does not form the plot.",
+      "The intended Watercolour style is not used."
+    ],
+    "changed": [
+      "A cheerful sandcastle-building day with Grandpa Joe was replaced with a dark fantasy adventure.",
+      "The requested relationship with Grandpa Joe was changed to an invented Uncle Bartholomew.",
+      "The special yellow object remains in the prose but is repeatedly absent from the illustrations."
+    ],
+    "invented": [
+      "A magical adventure.",
+      "Uncle Bartholomew.",
+      "Evening existential melancholy.",
+      "Heavy rain and puddles.",
+      "A lantern and winding path.",
+      "Dark woods with shadows that grow teeth.",
+      "A threat that no one will ever find Sam.",
+      "A shiny red balloon.",
+      "A trip home."
+    ]
+  },
+  "safety_concerns": [
+    "The phrase that the shadows 'grew teeth' and whispered that no one would ever find Sam is frightening and unnecessarily intense for a five-year-old.",
+    "The isolated dark-woods sequence also creates an avoidable sense of entrapment and abandonment."
+  ],
+  "overall_reaction": "I read all nine pages, and this does not feel like the story I asked for. Grandpa Joe and the sandcastle memory are missing, while serious vocabulary, a scary invented adventure, spelling errors, placeholders, and an unfinished ending make the result feel unreliable. The flat pictures also do not match the Watercolour style I selected.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — I would not pay for a broken preview with unresolved placeholders, major personal-detail omissions, an unfinished ending, and the wrong illustration style.",
+  "top_changes": [
+    "Rebuild the story around Sam and Grandpa Joe building sandcastles together at the beach; remove Uncle Bartholomew and the dark-woods adventure.",
+    "Fix every production error: 'Adventure,' 'Sam,' 'at the beach,' remove unresolved template placeholders, complete the final sentence, and print 'The End' only once.",
+    "Replace the advanced sentence with BR-200L-appropriate vocabulary and short, concrete sentences for a five-year-old.",
+    "Use soft Watercolour illustrations and ensure every image includes the correct characters, setting, actions, yellow bucket, and sandcastle.",
+    "End with a complete, personal thought about Sam remembering her day with Grandpa Joe."
+  ],
+  "images": [
+    {
+      "ref": "I1",
+      "path": "artifacts/capture_01/img_00.jpg",
+      "desc": "capture 1, 714x469, alt \"Cover\""
+    },
+    {
+      "ref": "I2",
+      "path": "artifacts/capture_03/view_00.jpg",
+      "desc": "capture 2, screenshot of the page"
+    },
+    {
+      "ref": "I3",
+      "path": "artifacts/capture_04/img_00.jpg",
+      "desc": "capture 3, 714x469, alt \"Sam at the beach\""
+    },
+    {
+      "ref": "I4",
+      "path": "artifacts/capture_05/img_00.jpg",
+      "desc": "capture 4, 714x469, alt \"Sam looking at the evening sky\""
+    },
+    {
+      "ref": "I5",
+      "path": "artifacts/capture_06/img_00.jpg",
+      "desc": "capture 5, 714x469, alt \"Sam outside\""
+    },
+    {
+      "ref": "I6",
+      "path": "artifacts/capture_07/img_00.jpg",
+      "desc": "capture 6, 714x469, alt \"Sam and Uncle Bartholomew\""
+    },
+    {
+      "ref": "I7",
+      "path": "artifacts/capture_08/img_00.jpg",
+      "desc": "capture 7, 714x469, alt \"Sam in the dark woods\""
+    },
+    {
+      "ref": "I8",
+      "path": "artifacts/capture_09/img_00.jpg",
+      "desc": "capture 8, 714x469, alt \"Sam going home\""
+    },
+    {
+      "ref": "I9",
+      "path": "artifacts/capture_10/img_00.jpg",
+      "desc": "capture 9, 714x469, alt \"The End\""
+    }
+  ]
+}

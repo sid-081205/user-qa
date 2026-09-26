@@ -1,0 +1,200 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would like the idea of making a family storybook, but this version is not good enough for me to use frequently.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The three-step structure seemed simple, but the technical wording, unexplained error, and unclear labels made it feel more complicated than necessary.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "The forms were generally straightforward, but the reading level, photo upload, navigation symbol, and checkout details required some guessing.",
+      "rating": 3
+    },
+    {
+      "item": 4,
+      "reason": "I could manage without technical help, but I would have wanted someone to explain a few of the unclear terms and errors.",
+      "rating": 3
+    },
+    {
+      "item": 5,
+      "reason": "The steps followed one another reasonably well, but the dashboard error and the changes between the book and checkout made me feel less confident that everything was connected properly.",
+      "rating": 3
+    },
+    {
+      "item": 6,
+      "reason": "The misspelled title, changing character details, unfinished ending, and unexpected checkout extra showed several inconsistencies.",
+      "rating": 4
+    },
+    {
+      "item": 7,
+      "reason": "Most people familiar with websites might manage the basic steps, but the jargon and unexplained error would trouble many people.",
+      "rating": 3
+    },
+    {
+      "item": 8,
+      "reason": "It was not extremely awkward, although the unclear error, jargon, tiny controls, and detached gift-wrap checkbox made it feel awkward at times.",
+      "rating": 2
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident entering ordinary story details, but the error message and unexpected preselected charge reduced my confidence.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I had to learn what Lexile meant and work out several unclear controls and checkout details before proceeding.",
+      "rating": 3
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 4
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 4
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 4
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 4
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 3
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 3
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 4
+    }
+  ],
+  "nps": 1,
+  "interview": {
+    "purpose": "StoryHearth appears to be a website for creating personalised storybooks in which a child or family member is the hero. It seems intended for parents and grandparents who want to turn a family memory into a keepsake.",
+    "worst_moment": "The most frustrating moment was seeing the generated book: it misspelled 'Adventure', included unfinished and repeated text, changed the names, and did not actually show Oliver and Grandma Maggie flying the kite together. The unexplained 'Profile sync incomplete' message also made me doubt whether my information was safe.",
+    "best_moment": "The best moment was entering the family memory, because the form was calm and easy to read, and I could describe Oliver, the blue kite, and the windy hill in Wales without feeling that I was giving away unnecessary information.",
+    "abandon": "I would probably have given up after reading the finished preview, especially if I had reached the checkout and been asked to pay for such a poor result. I would not want to spend money on a book that was misspelled, unfinished, and not faithful to our family memory.",
+    "missing": "I expected a clear explanation of what each technical term meant, especially Lexile, and a way to see and correct the story before paying. I also expected a proper illustration of Oliver with Grandma Maggie and the blue kite, rather than generic or unrelated artwork.",
+    "trust": "I was willing to share ordinary story details, but I was cautious about uploading a photograph of Oliver because the site did not explain how a child's picture would be stored or used. The unexplained profile error and the preselected gift-wrap charge made me less willing to trust the site with payment or personal information.",
+    "willingness_to_pay": "I would pay about £25 for a well-made hardcover if the story, illustrations, and ending were genuinely good and the delivery charge were clearly explained. I would pay more for excellent artwork, a faithful story, and a finished keepsake, but not for spelling errors, unfinished text, or unexpected extras.",
+    "output_verdict": "I am very disappointed. Oliver, the blue kite, and the Welsh hill are present, but Grandma Maggie is missing, the important shared kite-flying scene is absent, and the spelling, reading level, pictures, and ending need substantial correction. I would not give this version to Oliver or print it as a treasured keepsake."
+  },
+  "recommendations": [
+    {
+      "change": "Rewrite the story so Oliver and Grandma Maggie fly the blue kite together on the windy Welsh hill, making clear that Margaret's father made it from the old blue shirt.",
+      "page": "Generated book preview",
+      "why": "This is the central family memory, and the current version does not capture or personalise it properly.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove the invented Uncle Bartholomew, frightening dark-woods scene, red balloon, and other unrelated adventure material, and use short, warm sentences suitable for a five-year-old.",
+      "page": "Generated book preview",
+      "why": "The story should be comforting and age-appropriate, not threatening or filled with material I did not request.",
+      "priority": "high"
+    },
+    {
+      "change": "Correct 'Adventrue' to 'Adventure', replace template placeholders, correct 'Olive' to Oliver, complete the final sentence, remove duplicated text, and check the reading level.",
+      "page": "Generated book preview",
+      "why": "These errors make the book look careless and undermine its value as a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Redraw Oliver with brown curly hair, freckles, and green wellies, and use the requested classic, timeless ink-and-colour style.",
+      "page": "Generated book cover and illustrations",
+      "why": "The pictures should reflect the child and the special style I selected, not show a generic character in an unrelated style.",
+      "priority": "high"
+    },
+    {
+      "change": "Ensure every illustration matches its page, particularly the rain, the kite, Oliver, Grandma Maggie, and the final shared kite-flying scene.",
+      "page": "Generated book illustrations",
+      "why": "A picture that contradicts the text, or leaves out an important character, makes the story feel poorly made.",
+      "priority": "high"
+    },
+    {
+      "change": "Do not preselect optional gift wrap, and show the base book price, delivery, and each extra as separate, clearly labelled charges before payment.",
+      "page": "Hardcover checkout",
+      "why": "I need to know exactly what I am paying for and must not discover an unexpected cost at the final step.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the meaning and purpose of the price-reservation timer, or remove it if it is not essential.",
+      "page": "Hardcover checkout",
+      "why": "An unexplained countdown can feel like pressure and may prevent me from taking time to read the small print.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace 'Profile sync incomplete' with a plain-language explanation of what happened, whether any information was affected, and how to recover.",
+      "page": "My books dashboard",
+      "why": "Technical errors without consequences or a way forward make me worry that I have lost information or done something wrong.",
+      "priority": "high"
+    },
+    {
+      "change": "Use the account holder's name in the personal greeting instead of an account placeholder.",
+      "page": "My books dashboard",
+      "why": "It would make the site feel more carefully made and reassure me that I am in the correct account.",
+      "priority": "low"
+    },
+    {
+      "change": "Replace technical marketing language such as 'multimodal generative narrative engine' with a simple explanation of what the service does.",
+      "page": "Home page",
+      "why": "Plain English would tell me more quickly whether this is the right service for me.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain Lexile in ordinary language and clearly label the level recommended for a five-year-old.",
+      "page": "Reading level and illustration style",
+      "why": "I should not have to guess which range is suitable for my grandson.",
+      "priority": "medium"
+    },
+    {
+      "change": "Show the full story description after submission and warn me if text has been shortened or removed.",
+      "page": "Story memory form",
+      "why": "A silent truncation may lose important details from the memory I want preserved.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain how a child's photograph would be stored, used, shared, and deleted before I upload it.",
+      "page": "Optional photo upload",
+      "why": "I am cautious about sharing information about a child and need a clear reason before giving consent.",
+      "priority": "high"
+    },
+    {
+      "change": "Give the email and password fields permanent, visible labels, improve the contrast of footer text, and describe decorative images.",
+      "page": "Log in, home page, and footer areas",
+      "why": "These changes would make the site easier to read and more accessible, especially as I get older.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "A promising idea, but the result felt generic and unreliable, and I would not trust it with a cherished family story or my money until the story, pictures, explanations, and checkout were properly corrected.",
+  "sus_score": {
+    "score": 45.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.6,
+    "mean_negative_items": 3.0,
+    "inconsistent_pairs": 0,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": 0.0,
+    "hedonic": -0.5,
+    "overall": -0.25
+  }
+}

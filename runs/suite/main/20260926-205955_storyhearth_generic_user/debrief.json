@@ -1,0 +1,182 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "The idea of making a personalised family storybook appeals to me, but I would not want to use this version often because the result was unreliable.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "Most of the site was straightforward, but technical wording, unexplained options, and the confusing generated book made the overall experience feel more complex than necessary.",
+      "rating": 2
+    },
+    {
+      "item": 3,
+      "reason": "The forms were generally easy to scan and complete, and I could create and flip through a book without serious difficulty.",
+      "rating": 4
+    },
+    {
+      "item": 4,
+      "reason": "I did not need a technical person for the basic process, although the errors and inconsistencies would have made me contact support before paying.",
+      "rating": 1
+    },
+    {
+      "item": 5,
+      "reason": "The creation steps mostly led logically from one page to the next, but the character details, chosen illustration style, and book title were not carried through consistently.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "There were many visible inconsistencies, including different product names, spelling mistakes, wrong artwork, changed character details, and technical error messages.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people would probably learn the basic form-filling process quickly, even though judging whether the finished book was correct would be difficult.",
+      "rating": 4
+    },
+    {
+      "item": 8,
+      "reason": "The process was not particularly awkward to operate, but reviewing such a poor result and then unticking an unwanted checkout extra was cumbersome.",
+      "rating": 2
+    },
+    {
+      "item": 9,
+      "reason": "I became more confident while entering the details, but the raw dashboard error, incorrect story output, and preselected gift wrap quickly reduced that confidence.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I could get going without much instruction, though I had to work out what terms such as Lexile meant and how some earlier details were being handled.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 4
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 2
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 4
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 2
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 5
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 5
+    }
+  ],
+  "nps": 0,
+  "interview": {
+    "purpose": "This is for creating and buying a personalised printed storybook based on a child's details and a family memory. It seems intended for parents or other family members wanting a keepsake for a young child.",
+    "worst_moment": "The worst moment was seeing the finished book after all the effort of entering the memory. It replaced the central sandcastle activity with Grandpa Joe with an invented uncle and frightening forest story, while also using the wrong illustration style and leaving an unfinished sentence.",
+    "best_moment": "The best part was entering the beach, yellow bucket, and memory of Sam building sandcastles with Grandpa Joe. That felt warm, personal, and exactly the sort of experience I hoped the site would create.",
+    "abandon": "In real life, I probably would not have abandoned the form at the checkout, but I would have stopped before paying when I saw that the output missed Grandpa Joe, the sandcastles, and the selected watercolour style. The £45.97 initial total with gift wrap already selected would also have made me hesitate.",
+    "missing": "I expected a coherent, polished story about Sam and Grandpa Joe building sandcastles at the beach, with matching watercolour illustrations and a complete ending. I also expected saved character details to be shown clearly and the final cost to separate the hardcover, postage, and optional extras plainly.",
+    "trust": "I was willing to enter the fictional child and family details, but I would not trust this site with sensitive family information. The raw error message on the dashboard, the inaccurate generated story, and the raw placeholder variables made me worry about how data was being stored and used.",
+    "willingness_to_pay": "I would pay for a genuinely usable personalised keepsake, but not for this result. Around £25 to £30 including reasonable postage would feel fair, and I might pay more if the book accurately captured the requested memory, had consistent age-appropriate illustrations, and offered a clear editable preview before checkout.",
+    "output_verdict": "The output felt generic, frightening, and completely untrustworthy rather than personal or keepsake-worthy. It was not ready for me to buy because it failed the basic purpose of the product."
+  },
+  "recommendations": [
+    {
+      "change": "Rebuild the generated story around the actual memory: Sam and Grandpa Joe building sandcastles with the yellow bucket at the beach.",
+      "page": "Your storybook / book.html",
+      "why": "The central family memory was the whole point of making a personalised book, and it was almost entirely missing from the result.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove the invented uncle, dark forest, threatening shadows, disappearance threat, and unrelated magical objects, or make any additions clearly appropriate and supportive of the submitted memory.",
+      "page": "Your storybook / book.html",
+      "why": "The story felt frightening and inappropriate for a five-year-old, and the invented content replaced my intended family moment.",
+      "priority": "high"
+    },
+    {
+      "change": "Regenerate unique watercolour illustrations that consistently show Grandpa Joe, sandcastles, the yellow bucket, the beach setting, and Sam's consistent brown hair.",
+      "page": "Your storybook / book.html",
+      "why": "The selected style was ignored, the artwork did not fit the memory, and the visual inconsistency made the book look cheap and unpolished.",
+      "priority": "high"
+    },
+    {
+      "change": "Add a clear review and edit step before purchase so I can confirm the child, character, memory, title, dedication, and illustration style in the final book.",
+      "page": "Create your book / create.html and Your storybook / book.html",
+      "why": "I had no confidence that the submitted details and family memory would actually be used correctly.",
+      "priority": "high"
+    },
+    {
+      "change": "Fix the spelling, grammar, pronoun, duplicate-text, placeholder-variable, and incomplete-ending errors throughout the generated book.",
+      "page": "Your storybook / book.html",
+      "why": "Typos and unfinished or unresolved text made the finished product look broken and unsuitable as a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove gift wrap as the default and show a simple itemised price for the essential hardcover, postage, and any optional extras before the final total.",
+      "page": "Checkout / checkout.html",
+      "why": "The initial £45.97 total was higher than I expected because an optional extra was selected without me choosing it.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace the raw dashboard error with a reassuring, understandable message that explains whether the account or book data is affected.",
+      "page": "My books / dashboard.html",
+      "why": "The technical error made me suspicious that my account data was incomplete or unsafe.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace the technical homepage phrase with plain language explaining that the site creates personalised illustrated stories.",
+      "page": "Homepage",
+      "why": "The multimodal generative narrative wording was unnecessarily confusing and made a family website sound like a sales pitch.",
+      "priority": "medium"
+    },
+    {
+      "change": "Add visible labels to the login fields, a persistent label for the photo upload, and stronger contrast for footer text and links.",
+      "page": "Log in / login.html and Create your book / create.html",
+      "why": "These accessibility and clarity issues made otherwise simple forms harder to trust and use.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain unfamiliar options such as the reading level and preselected choices in ordinary language, and confirm when character details have been saved.",
+      "page": "Create your book / create.html",
+      "why": "I did not understand what the reading level meant or whether details such as Grandpa Joe's appearance had been recorded.",
+      "priority": "medium"
+    },
+    {
+      "change": "Make the story details field for the family memory more obvious on the first creation step, while clearly explaining the default relationship choice.",
+      "page": "Create your book / create.html",
+      "why": "I initially could not tell where the actual memory would be entered, and the automatic Grandparent relationship was unexpected.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "Warm idea and easy forms, but the inaccurate, frightening, unfinished book would make me walk away without paying.",
+  "sus_score": {
+    "score": 55.0,
+    "grade": "D",
+    "above_average_68": false,
+    "mean_positive_items": 2.8,
+    "mean_negative_items": 2.4,
+    "inconsistent_pairs": 2,
+    "consistency_flag": true
+  },
+  "ueq_s_score": {
+    "pragmatic": -0.75,
+    "hedonic": 0.25,
+    "overall": -0.25
+  }
+}

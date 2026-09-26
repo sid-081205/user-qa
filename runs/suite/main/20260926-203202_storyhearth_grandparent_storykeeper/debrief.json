@@ -1,0 +1,176 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I liked the idea, but I would not want to use the current version often because the story was not good enough for a keepsake.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The technical language, unexplained reading levels, and unclear options made the website more complicated than necessary.",
+      "rating": 4
+    },
+    {
+      "item": 3,
+      "reason": "The main steps were reasonably straightforward, but several labels, explanations, and messages were unclear.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I could manage most of it alone, although I would have wanted someone to explain the reading-level choices and technical errors.",
+      "rating": 3
+    },
+    {
+      "item": 5,
+      "reason": "The functions followed a sensible order, but the unclear loading screen, book preview, and checkout did not feel properly joined together.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The spelling errors, incomplete ending, technical error code, unexplained terminology, and preselected gift wrap made the site feel inconsistent.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people familiar with ordinary websites might get started, but I think many people would hesitate over the jargon and unclear choices.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "The site was not painfully awkward throughout, but the unexplained options, poor labelling, and confusing checkout were cumbersome.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably capable while filling in the story details, but the errors and poor-quality book left me far from confident.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not need extensive instruction, but I had to work out several things such as Lexile, the loading process, and the checkout extras.",
+      "rating": 3
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 5
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 5
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 4
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 3
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 5
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 3
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 3
+    }
+  ],
+  "nps": 2,
+  "interview": {
+    "purpose": "This is a website for making personalised storybooks in which a child and a loved one can be the stars. It could be especially useful for grandparents who want to turn a real family memory into something a child can keep.",
+    "worst_moment": "The checkout was the most frustrating moment because gift wrap was selected without my permission, the extra cost was not clearly separated, and the site asked for payment and personal details before giving me enough useful information. I do not like being asked for those details when the consequences are unclear.",
+    "best_moment": "The best moment was entering the family memory and seeing that I could make Oliver the hero with Grandma Maggie beside him. The story-entry pages were calm and reasonably easy to follow, and I felt reassured that uploading a photograph was optional.",
+    "abandon": "I would probably have stopped at the checkout until the price, delivery information, and optional extras were explained properly. If I had reached checkout and found a surprise charge, I would have left without paying; if the website had damaged the story or asked for payment before I approved it, I would have given up altogether.",
+    "missing": "I expected to be able to review a faithful, polished story with Oliver, Grandma Maggie, the blue kite, Grandpa, and the Welsh hill before paying. I also expected to know exactly what would happen after pressing the main button, what the reading-level choices meant, and how any photograph of a child would be stored and used.",
+    "trust": "I was willing to share information when the purpose was clear, but I did not upload Oliver's photograph because the website did not explain the privacy arrangements. The unexplained error message after login also made me wonder whether my details were safe, and the technical wording made me distrustful without giving me any reassurance.",
+    "willingness_to_pay": "I would pay for a genuinely personalised, well-written hardcover book, but not for the version I saw. A fair price would be around £15 to £20, provided that printing, postage, delivery time, and any optional extras were shown clearly beforehand; I would pay more for excellent illustrations, accurate proofreading, and a meaningful keepsake presentation.",
+    "output_verdict": "I was pleased that a book appeared, but I would not recognise it as the family story I asked for. The spelling mistake, unfinished sentence, invented frightening adventure, advanced vocabulary, and missing Grandma Maggie meant that I would want a corrected preview before considering payment."
+  },
+  "recommendations": [
+    {
+      "change": "Rewrite the story around the actual memory, with Oliver and Grandma Maggie flying the blue kite made from Grandpa's old blue shirt on the windy Welsh hill.",
+      "page": "Your storybook – preview",
+      "why": "This is the central purpose of the book, and the current plot has lost the family connection that made me want to make it.",
+      "priority": "high"
+    },
+    {
+      "change": "Repair the text before checkout: correct “Adventrue,” replace “Olive” with “Oliver,” fix the pronoun errors, remove placeholders, complete the final sentence, and remove the duplicate “The End.”",
+      "page": "Your storybook – preview",
+      "why": "These errors make the book look careless and prevent me from trusting that it is suitable for my grandson or worth paying for.",
+      "priority": "high"
+    },
+    {
+      "change": "Use short, warm sentences and ordinary vocabulary for a five-year-old, removing words such as “ephemeral,” “crepuscular,” and “juxtaposing,” as well as frightening dark-woods material.",
+      "page": "Your storybook – preview",
+      "why": "The reading level was far too advanced for Oliver, and the frightening material was not what I intended to pass on to him.",
+      "priority": "high"
+    },
+    {
+      "change": "Redesign the illustrations to show Oliver with brown curly hair, freckles, and green wellies, with Grandma Maggie, the blue kite, the hill, and the farmhouse appearing naturally in the story.",
+      "page": "Your storybook – preview",
+      "why": "The pictures should make the book personal and reassure me that the website has understood the people and memory I entered.",
+      "priority": "high"
+    },
+    {
+      "change": "Make gift wrap unselected by default, show the total price and delivery cost separately, and explain postage, delivery time, returns, and optional extras before requesting payment or a full address.",
+      "page": "Checkout",
+      "why": "I need to understand precisely what I am paying for and must not be pressured into buying something I did not choose.",
+      "priority": "high"
+    },
+    {
+      "change": "Show a clear confirmation that the complete memory was saved, explain what happens after pressing the main button, and provide an option to cancel or leave while the book is being prepared.",
+      "page": "Story details and book generation",
+      "why": "I was unsure whether my details had been accepted, and the silent spinner made me anxious about a keepsake involving my family.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace technical terms such as “Lexile” with a simple explanation and give a recommended choice for a five-year-old.",
+      "page": "Reading level and illustration style",
+      "why": "I do not know what the ranges mean, and guessing made me worry that I had chosen the wrong setting.",
+      "priority": "high"
+    },
+    {
+      "change": "Add proper visible labels to the login and photo-upload fields, mark story fields as required or optional, and improve the contrast and size of small footer text.",
+      "page": "Log in and story details",
+      "why": "Clear labels and larger, higher-contrast text would help me understand the forms without having to guess or strain to read them.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain how Oliver's photograph would be used, retained, protected, and deleted, and make clear that it is genuinely optional.",
+      "page": "Optional photo upload",
+      "why": "A child's photograph is personal information, and I would only share it if I understood the reason and safeguards.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace unexplained error codes such as “0x80070057” with a plain-English explanation and a clear next step, and address the user by the correct account name.",
+      "page": "My books",
+      "why": "A technical code gives me no idea whether my account or information is safe, and “Demo” makes the service feel impersonal.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "The idea is appealing, but the book was not personal, polished, or trustworthy enough to pay for, and the site needs clearer explanations and a much more faithful story.",
+  "sus_score": {
+    "score": 30.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.0,
+    "mean_negative_items": 3.6,
+    "inconsistent_pairs": 0,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": 0.25,
+    "hedonic": -0.5,
+    "overall": -0.125
+  }
+}

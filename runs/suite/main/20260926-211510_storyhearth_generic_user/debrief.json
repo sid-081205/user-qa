@@ -1,0 +1,176 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "The personalised-story idea appealed to me, but I would not want to use a site that produced such a poor, inconsistent book.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The forms were fairly straightforward, and the confusing technical wording and jargon were not enough to make the whole site feel unnecessarily complex.",
+      "rating": 2
+    },
+    {
+      "item": 3,
+      "reason": "I could complete the process without much difficulty, but the unclear error, jargon, and final result stopped me from finding it genuinely easy to use.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I did not need a technical person to complete the process, although the unexplained error code felt like something a developer would need to interpret.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The steps led logically from login to creation and checkout, but the generated book ignored important inputs and the selected illustration style.",
+      "rating": 1
+    },
+    {
+      "item": 6,
+      "reason": "The site contradicted itself about the illustration style, showed incorrect or incomplete story content, and had several inconsistent labels and placeholders.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people would probably learn the form workflow quickly, but they would still be confused by the dashboard error, Lexile jargon, and poor output.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "The overall process was not especially cumbersome, though the wait and the need to inspect the generated result carefully were irritating.",
+      "rating": 2
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident entering ordinary details, but the unexpected errors and badly mismatched output meant I did not feel confident in the service.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not have to learn a lot just to complete the forms, but the unexplained concepts and poor generated content required extra interpretation.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 5
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 4
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 4
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 4
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 3
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 5
+    }
+  ],
+  "nps": 0,
+  "interview": {
+    "purpose": "StoryHearth is for creating personalised digital storybooks that feature a child and a meaningful family memory. It appears aimed at parents or family members wanting a personalised keepsake for a child.",
+    "worst_moment": "The most frustrating moment was seeing the generated book: it misspelled the title, ignored Grandpa Joe and the sandcastles, contradicted the selected watercolour style, and ended with an incomplete sentence. I also nearly felt pressured by the checkout because gift wrap was already selected and there was an artificial countdown.",
+    "best_moment": "The best moment was entering the beach memory and yellow bucket because the three questions and examples made that part of the process clear and encouraging. Untickling the gift wrap was also reassuring because the total immediately became clear.",
+    "abandon": "I would probably have abandoned the service at the book preview rather than pay for the hardcover. At that point the result looked unfinished and clearly did not represent the family memory I entered.",
+    "missing": "I expected a complete, age-appropriate story about Sam, Grandpa Joe, the beach, the yellow bucket, and the sandcastles, with illustrations that matched those details. I also expected a properly labelled photo upload, a clear reading-level explanation, and an obviously optional purchase with the real cost visible before any extras are added.",
+    "trust": "I was willing to type basic account details, but I would not trust the site with more sensitive family information unless it explained how the data was used and stored. The mismatched output made me suspicious that my inputs were not being handled reliably.",
+    "willingness_to_pay": "I would not pay for this version. A fair price might be around £10 to £15 for a good digital book, or roughly £20 to £25 for a genuinely well-produced hardcover; I would pay more only if the story and artwork were personalised, polished, and clearly matched the requested memory.",
+    "output_verdict": "I am disappointed and suspicious. It looks like an unfinished generic template rather than a personalised keepsake, and I would not be comfortable giving it as a gift."
+  },
+  "recommendations": [
+    {
+      "change": "Rebuild the story around the supplied family memory, including Grandpa Joe, the sandcastles, the beach, and the yellow bucket, instead of inventing an unrelated adventure.",
+      "page": "Generated storybook preview",
+      "why": "Personalisation is the entire purpose of the product, and the current result does not capture the keepsake I entered.",
+      "priority": "high"
+    },
+    {
+      "change": "Ensure the generated illustration style always matches the style selected during setup, and replace contradictory or generic artwork with relevant beach scenes.",
+      "page": "Reading level and illustration style / Generated storybook preview",
+      "why": "Choosing a style and seeing a completely different result makes the service feel unreliable and dishonest.",
+      "priority": "high"
+    },
+    {
+      "change": "Correct spelling and grammar errors, remove unresolved placeholders and repeated text, fix character names and pronouns, and complete the final sentence.",
+      "page": "Generated storybook preview",
+      "why": "The obvious errors make the book look unfinished and unsuitable for a child or a gift.",
+      "priority": "high"
+    },
+    {
+      "change": "Rewrite the text at the requested beginner reading level with short sentences, common vocabulary, a clear beginning, middle, and end, and no frightening or age-inappropriate language.",
+      "page": "Generated storybook preview",
+      "why": "A personalised children's book must be readable for the selected age and emotionally suitable for the child.",
+      "priority": "high"
+    },
+    {
+      "change": "Make the purchase clearly optional, show the basic delivered price prominently, do not preselect extras, and remove artificial reservation pressure.",
+      "page": "Hardcover checkout",
+      "why": "I nearly believed the full price included an unwanted gift-wrap charge, and the countdown felt like pressure rather than helpful information.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace the technical dashboard error with a plain-language explanation and give users a clear recovery action.",
+      "page": "My books dashboard",
+      "why": "An unexplained error code is worrying and makes me doubt whether the account or my data is safe.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain Lexile levels in ordinary language and recommend an option based on the child's age.",
+      "page": "Reading level and illustration style",
+      "why": "I had to guess what BR–200L meant, which adds unnecessary jargon to an otherwise straightforward form.",
+      "priority": "medium"
+    },
+    {
+      "change": "Add persistent visible labels to the login fields and a proper label to the photo upload explaining whose photo it is and what it is used for.",
+      "page": "Log in / Optional photo upload",
+      "why": "Placeholders disappear while typing, and the file control did not make clear what photo was being requested.",
+      "priority": "medium"
+    },
+    {
+      "change": "Simplify the landing-page language, describe the product in concrete terms, and add a description for the decorative image.",
+      "page": "StoryHearth landing page",
+      "why": "Phrases such as “multimodal generative narrative engine” sound needlessly technical for creating a bedtime story, and the missing image description reduces accessibility.",
+      "priority": "medium"
+    },
+    {
+      "change": "Increase the contrast of footer text and links, and label the book-navigation symbol clearly.",
+      "page": "Story details form / Generated storybook preview",
+      "why": "Low-contrast text and an unlabelled control made otherwise easy pages harder to read and navigate.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "The idea is exciting, but the poor personalised output makes the service feel unreliable and completely unsuitable for paying or giving as a keepsake.",
+  "sus_score": {
+    "score": 37.5,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 1.6,
+    "mean_negative_items": 2.6,
+    "inconsistent_pairs": 4,
+    "consistency_flag": true
+  },
+  "ueq_s_score": {
+    "pragmatic": 0.0,
+    "hedonic": 0.0,
+    "overall": 0.0
+  }
+}

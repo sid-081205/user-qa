@@ -1,0 +1,44 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "Margaret stays focused on producing a personal, high-quality keepsake for Oliver. She supplies specific story details, checks the generated result carefully, and abandons checkout only after confirming the full cost, as in steps 4–11."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She gathers comprehensive information before acting: she notices jargon, reads the checkout page, removes gift wrap, verifies the reduction, and itemises the remaining charges in steps 1, 6, and 10–11."
+    },
+    "self_efficacy": {
+      "score": 3,
+      "why": "Her cautious language and uncertainty about terms such as 'Lexile' fit low confidence with unfamiliar software (steps 1 and 6). However, she rarely interprets problems as her own fault and remains notably assured while creating the book, so the low-self-efficacy facet is only partly expressed."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "Her behaviour is strongly risk-averse. She avoids Oliver's photograph until storage and use are explained (step 7), pauses over unfinished or generic output before payment (steps 8–9), and declines to provide payment details after clarifying costs (step 10–11)."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She follows the process sequentially, uses visible structure as reassurance, and wants plain explanations before proceeding. This appears in her reaction to the three-step introduction, her step-by-step form completion, and her careful inspection of each stage (steps 1, 4–7, and 10–11)."
+    }
+  },
+  "voice_consistency": {
+    "score": 5,
+    "why": "The think-aloud is consistently polite, precise, and formal, with a teacher-like attention to literacy and completeness. Phrases such as 'I shall not upload a photograph' and her immediate concern about 'Adventrue' and an unfinished sentence strongly fit the specified voice."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific rather than generic. She consistently uses Oliver's age and appearance, her relationship to him, the kite made from Grandpa's shirt, the Welsh hill, and her preference for a proper ending, all drawn from the persona specification."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural, though it occasionally becomes implausibly polished and slogan-like. Repeated phrases about being 'reassured,' 'straightforward,' and a 'proper keepsake' make Margaret sound somewhat like an idealised elderly customer rather than an entirely spontaneous person, while the stereotypes about her generation are restrained."
+  },
+  "knowledge_leakage": {
+    "score": 2,
+    "why": "There is little substantive knowledge leakage, and Margaret does not successfully use developer or product jargon. The main mild leakage is her study-awareness in saying she will enter details 'supplied for this visit' (step 2), plus her ability to infer that the first reading-level range is probably appropriate for Oliver without an explanation (step 6)."
+  },
+  "realism_overall": {
+    "score": 4,
+    "why": "The behaviour is highly plausible for a careful, privacy-conscious older user: she completes the creative task, scrutinises the output, notices quality failures, clarifies optional charges, and declines payment. The main artificial elements are the unusually complete narration, the study-oriented phrase in step 2, and the absence of the self-blame the low-self-efficacy specification might predict."
+  }
+}
