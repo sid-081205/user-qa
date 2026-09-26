@@ -89,8 +89,8 @@
     "voice_consistency": 5,
     "individuation": 5,
     "caricature": 2,
-    "knowledge_leakage": 3,
-    "realism_overall": 3
+    "knowledge_leakage": 1,
+    "realism_overall": 4
   },
   "llm_usage": {
     "calls": 40,
@@ -124,5 +124,18 @@
       "stealth/space-bunny-alpha": 7
     }
   },
-  "reassessed": true
+  "reassessed": true,
+  "llm_usage_reaudit": {
+    "calls": 1,
+    "failed_calls": 0,
+    "prompt_tokens": 6101,
+    "completion_tokens": 844,
+    "seconds": 11.5,
+    "by_purpose": {
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 1
+    }
+  }
 }

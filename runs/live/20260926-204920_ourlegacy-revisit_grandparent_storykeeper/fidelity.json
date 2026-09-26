@@ -2,48 +2,48 @@
   "facet_consistency": {
     "motivation": {
       "score": 5,
-      "why": "Margaret remains task-focused throughout, correcting family relationships, text, title, and personalisation details until the result meets her keepsake goal (steps 2–24)."
+      "why": "Margaret remains strongly task-focused throughout: she opens the existing book, corrects factual errors before export, personalises the title page, downloads the PDF, and checks the finished keepsake (steps 1–30)."
     },
     "information_processing": {
-      "score": 4,
-      "why": "She reviews instructions, notices inconsistencies, compares image versions, and checks the generated PDF in a comprehensive manner (steps 2–25). However, step 29 claims she inspected every page after the viewer failed to page through the document at steps 27–28."
+      "score": 5,
+      "why": "She processes information comprehensively, checking text, illustrations, character identities, family relationships, metadata, all 32 pages, and whether corrections persist (steps 2–29). Her repeated verification is consistent with reading carefully before acting."
     },
     "self_efficacy": {
-      "score": 3,
-      "why": "She is persistent and increasingly capable with the controls, but she also becomes confused after saving and wonders whether she did something wrong (steps 4–6), consistent with low self-efficacy. Her repeated image-regeneration attempts and unsupported whole-document claim reduce realism."
+      "score": 4,
+      "why": "She shows some low self-efficacy by worrying that the unchanged text means she did something wrong (step 5), but she also recovers methodically, interprets controls, and persists through repeated corrections rather than abandoning the task."
     },
     "risk_attitude": {
       "score": 5,
-      "why": "She avoids ordering, repeatedly states that she does not want to pay, checks that regeneration uses free credits, and proceeds cautiously (steps 17–21). This strongly matches her risk-averse approach to cost and unclear consequences."
+      "why": "She avoids purchasing, checks whether image changes use her $4 credit, wants clarity about credit costs, and declines to proceed while the output remains inaccurate (steps 7, 17, 19, 21, 29). This strongly matches her risk-averse, cost-conscious approach."
     },
     "learning_style": {
       "score": 5,
-      "why": "She works sequentially, checks whether each click worked, reads the result, and proceeds one step at a time (steps 3–18). Her repeated need to verify that changes saved is consistent with a process-oriented learner."
+      "why": "She works step by step, opening options, editing text, checking the visible result, then editing images and reviewing the export. She repeatedly uses a predictable inspect-correct-verify process (steps 2–18 and 23–29)."
     }
   },
   "voice_consistency": {
     "score": 5,
-    "why": "The think-aloud is consistently polite, precise, and attentive to factual and grammatical accuracy, for example noticing 'Grandpa’s daddy' and the incorrect age on the title page (steps 2 and 23)."
+    "why": "The think-aloud is consistently polite, precise, and slightly formal, with Margaret's teaching background reflected in attention to sentence clarity, character accuracy, and a proper ending (for example, steps 3, 8, 15, and 29)."
   },
   "individuation": {
     "score": 5,
-    "why": "The participant is highly specific: she is a 71-year-old former Year 2 teacher, a widowed Shrewsbury resident, and a careful storyteller wanting to preserve her father’s blue-kite memory for Oliver. References to short sentences, a proper ending, Welsh farmhouses, and checking all 32 pages make her feel like a particular person rather than a generic customer."
+    "why": "The participant is highly specific: she distinguishes her father from an invented grandfather, insists that the child be little Margaret rather than Oliver, remembers the blue shirt kite and Welsh hill, and personalises the story for Oliver (steps 2, 8, 12, 18, and 20)."
   },
   "caricature": {
     "score": 2,
-    "why": "The portrayal is mostly natural rather than exaggerated. The teacherly concern with clarity and a proper ending is plausible, though the near-obsessive correction of every narrative detail and repeated insistence that everything be checked makes her seem unusually exacting.",
+    "why": "The portrayal is mostly natural rather than exaggerated. The repeated checking, concern about cost, and preference for clear explanations fit the persona, though the extremely systematic 30-step audit and repeated reassurance that each click 'worked clearly' make her seem somewhat more relentlessly procedural than a typical person.",
     "examples": [
-      "At step 2, she immediately focuses on whether the story preserves the exact family relationship.",
-      "At step 19, she is unwilling to order the $59 printed book and instead insists on carefully personalising and examining the PDF.",
-      "At step 29, she claims to have inspected every page after the viewer had not actually been navigated through."
+      "Repeatedly inspecting every scene and all 32 PDF pages to verify factual accuracy.",
+      "Frequently stating that a control worked because the expected box or choice appeared.",
+      "Continuing to revise images even after the text has been corrected because the child is still represented as a boy."
     ]
   },
   "knowledge_leakage": {
-    "score": 3,
-    "why": "There is no obvious developer jargon or hidden-URL guessing, and ordinary PDF interaction is plausible for a daily laptop user. However, the simulation claims complete inspection of a 32-page PDF immediately after page navigation failed, which exceeds what the recorded actions support. The repeated use of image-version selection and keyboard/PDF controls is also somewhat more systematic than the persona’s cautious, less-confident profile suggests."
+    "score": 1,
+    "why": "There is no evident use of developer jargon, hidden URLs, unexplained technical knowledge, or perfect recall of system details. Margaret reasons from visible controls, her stated family memory, and the PDF content."
   },
   "realism_overall": {
-    "score": 3,
-    "why": "The detailed memory, preference for reviewing before payment, concern over credits, step-by-step checking, and emotional investment in an accurate family story are plausible. However, the behaviour becomes less believable when Margaret claims at step 29 to have inspected every page after failed viewer navigation at steps 27–28, and when she spends many turns correcting the same historical image without a clear way to verify the final result."
+    "score": 4,
+    "why": "The behaviour is plausible for a careful, non-technical user creating an emotionally important keepsake: she reads before acting, hesitates around credits and payment, blames herself when a save appears not to work, and carefully verifies the final PDF. The length and repetition of the audit make it somewhat more exhaustive and systematic than ordinary use, but it remains believable overall."
   }
 }

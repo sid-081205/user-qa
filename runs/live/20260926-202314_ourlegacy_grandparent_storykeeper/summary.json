@@ -72,11 +72,11 @@
     }
   ],
   "fidelity": {
-    "voice_consistency": 4,
+    "voice_consistency": 5,
     "individuation": 5,
     "caricature": 2,
     "knowledge_leakage": 1,
-    "realism_overall": 4
+    "realism_overall": 5
   },
   "llm_usage": {
     "calls": 21,
@@ -109,5 +109,18 @@
       "stealth/space-bunny-alpha": 1
     }
   },
-  "reassessed": true
+  "reassessed": true,
+  "llm_usage_reaudit": {
+    "calls": 1,
+    "failed_calls": 0,
+    "prompt_tokens": 3668,
+    "completion_tokens": 916,
+    "seconds": 11.6,
+    "by_purpose": {
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 1
+    }
+  }
 }
