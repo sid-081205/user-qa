@@ -225,7 +225,7 @@ def _ahash(path: Path) -> Optional[int]:
     try:
         from PIL import Image
 
-        px = list(Image.open(path).convert("L").resize((16, 16)).getdata())
+        px = list(Image.open(path).convert("L").resize((16, 16)).tobytes())
     except Exception:
         return None
     avg = sum(px) / len(px)
