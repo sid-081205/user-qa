@@ -205,17 +205,32 @@ def valence_series(run: dict) -> list[float]:
     return out
 
 
+def stack(*lines: str) -> str:
+    """A column header set on several lines, so that a label does not make a numeric column wider than its values."""
+    return "\\begin{tabular}[b]{@{}c@{}}" + "\\\\".join(lines) + "\\end{tabular}"
+
+
+WRAP = ">{\\raggedright\\arraybackslash}X"
+
+
 def latex_table(path: Path, header: list[str], rows: list[list[str]], caption: str, label: str, colspec: str | None = None,
-                rule_before: tuple[int, ...] = (), wide: bool = False) -> None:
+                rule_before: tuple[int, ...] = (), wide: bool = False, size: str = "\\small", tabcolsep: str | None = None,
+                width: str | None = None) -> None:
+    """With `width` the table is a tabularx of that width, and `colspec` needs a WRAP column to take up the slack."""
     colspec = colspec or ("l" + "c" * (len(header) - 1))
     env = "table*" if wide else "table"
-    lines = [f"\\begin{{{env}}}[t]", "\\centering", "\\small", f"\\caption{{{caption}}}", f"\\label{{{label}}}",
-             f"\\begin{{tabular}}{{{colspec}}}", "\\toprule", " & ".join(header) + " \\\\", "\\midrule"]
+    tab = "tabularx" if width else "tabular"
+    lines = [f"\\begin{{{env}}}[t]", "\\centering", size]
+    if tabcolsep:
+        lines.append(f"\\setlength{{\\tabcolsep}}{{{tabcolsep}}}")
+    lines += [f"\\caption{{{caption}}}", f"\\label{{{label}}}",
+              f"\\begin{{{tab}}}" + (f"{{{width}}}" if width else "") + f"{{{colspec}}}",
+              "\\toprule", " & ".join(header) + " \\\\", "\\midrule"]
     for i, r in enumerate(rows):
         if i in rule_before:
             lines.append("\\midrule")
         lines.append(" & ".join(r) + " \\\\")
-    lines += ["\\bottomrule", "\\end{tabular}", f"\\end{{{env}}}"]
+    lines += ["\\bottomrule", f"\\end{{{tab}}}", f"\\end{{{env}}}"]
     path.write_text("\n".join(lines) + "\n")
 
 
@@ -380,14 +395,15 @@ def main() -> int:
     res["overall"] = pooled(runs)
     res["overall_personas"] = pooled(persona_runs)
     res["overall_generic"] = pooled(generic_runs) if generic_runs else None
-    rows.append(row("\\textit{All persona sessions}", persona_runs, res["overall_personas"]))
+    rows.append(row("\\textit{All personas}", persona_runs, res["overall_personas"]))
     latex_table(out / "tables" / "detection.tex",
-                ["Persona", "$n$", "UX recall", "UX recall (exp.)", "Output recall", "Prec. (strict)", "Prec. (lenient)", "Findings", "LLM calls", "Minutes"],
+                ["Persona", "$n$", stack("UX", "recall"), stack("UX recall", "(exposed)"), stack("Output", "recall"), stack("Precision", "(strict)"),
+                 stack("Precision", "(lenient)"), "Findings", stack("LLM", "calls"), "Minutes"],
                 rows, "Seeded-defect detection on StoryHearth per persona (mean $\\pm$ SD over repetitions; LLM-judge matching). "
-                "UX recall over 17 seeded UX defects (raw, and over the defects the session was exposed to); output recall over 14 "
+                "UX (usability) recall over 17 seeded UX defects, raw and over the defects the session was exposed to; output recall over 14 "
                 "seeded output defects. Strict precision: share of findings matching a seeded defect; lenient additionally counts "
                 "findings judged valid but unseeded. The generic agent is the no-persona ablation.", "tab:detection",
-                rule_before=(len(personas),), wide=True)
+                rule_before=(len(personas),), wide=True, tabcolsep="5pt")
     if generic_runs:
         tests = {}
         for key, fn in (("ux_raw", lambda r: len(r["g"]["judge"]["ux"]["detected"]) / len(UX)),
@@ -453,7 +469,6 @@ def main() -> int:
         for j, v in enumerate(row):
             if v:
                 ax.text(j, i, f"{v:.1f}".rstrip("0").rstrip(".") if v < 1 else "1", ha="center", va="center", fontsize=6.5, color="white" if v > 0.6 else "black")
-    ax.set_title("Detection rate of each seeded defect by persona (UX defects left, output defects right)", fontsize=10)
     fig.colorbar(im, ax=ax, fraction=0.02, pad=0.01)
     save_fig(fig, out, "heatmap")
 
@@ -501,11 +516,12 @@ def main() -> int:
         qrows.append([SHORT.get(p, p), fmt(*sus, digits=1), fmt(*prag), fmt(*hed), fmt(*nps, digits=1), fmt(*keep, digits=1), fmt(*val),
                       f"{flags}/{len(rs)}", fmt(*real, digits=1), fmt(*car, digits=1), fmt(*leak, digits=1)])
     latex_table(out / "tables" / "questionnaires.tex",
-                ["Persona", "SUS", "UEQ-S prag.", "UEQ-S hed.", "Recommend", "Keepsake", "Valence", "SUS flag", "Realism", "Caricature", "Leakage"],
+                ["Persona", "SUS", stack("UEQ-S", "pragmatic"), stack("UEQ-S", "hedonic"), "Recommend", "Keepsake", "Valence", stack("SUS", "flag"),
+                 "Realism", "Caricature", "Leakage"],
                 qrows, "Post-session self-report by persona (mean $\\pm$ SD): SUS (0--100), UEQ-S pragmatic/hedonic ($-3$..$3$), "
                 "likelihood to recommend (0--10), keepsake-worthiness of the generated book (1--5), mean in-session valence ($-2$..$2$), "
                 "SUS acquiescence-consistency flags, and the persona-fidelity audit (1--5; lower caricature/leakage is better).", "tab:questionnaires",
-                wide=True)
+                wide=True, size="\\footnotesize", tabcolsep="3.5pt")
 
     # ---- Valence trajectories
     fig, ax = plt.subplots(figsize=(5.6, 3.3))
@@ -529,9 +545,9 @@ def main() -> int:
     llm_rate = {d: st.mean([1.0 if d in r["g"]["judge"]["output"]["detected"] else 0.0 for r in runs]) for d in OUT}
     res["output_llm_vs_deterministic"] = {"llm": llm_rate, "deterministic": det_rate}
     orows = [[d, titles_short(d), f"{llm_rate[d]:.2f}", f"{det_rate[d]:.2f}"] for d in OUT]
-    latex_table(out / "tables" / "output_defects.tex", ["ID", "Seeded output defect", "Persona judge", "Metrics only"], orows,
+    latex_table(out / "tables" / "output_defects.tex", ["ID", "Seeded output defect", stack("Output", "critic"), stack("Metrics", "only")], orows,
                 "Share of sessions in which each seeded output defect was reported by the persona-grounded output assessment versus "
-                "flagged by the deterministic text metrics alone.", "tab:output", colspec="llcc")
+                "flagged by the deterministic text metrics alone.", "tab:output", colspec=f"@{{}}l{WRAP}cc@{{}}", width="\\columnwidth")
 
     # ---- Judge vs keyword agreement
     a_, b_ = [], []
@@ -581,9 +597,10 @@ def main() -> int:
                                     "recall_no_vision": mean_sd([len(out_det(vb[x]) & set(ids)) / max(1, len(ids)) for x in paired])}
         res["vision_ablation"] = abl
         orows = [[d, titles_short(d), f"{abl['per_defect'][d]['vision']:.2f}", f"{abl['per_defect'][d]['no_vision']:.2f}"] for d in OUT]
-        latex_table(out / "tables" / "vision_ablation.tex", ["ID", "Seeded output defect", "With pictures", "Text + alt only"], orows,
+        latex_table(out / "tables" / "vision_ablation.tex", ["ID", "Seeded output defect", stack("With", "pictures"), stack("Text and", "alt text")], orows,
                     f"Paired vision ablation: share of the {len(paired)} sessions in which the re-run output assessment reported each seeded "
-                    "output defect when it could see the pictures versus text and alt text only (same captured outputs).", "tab:vision", colspec="llcc")
+                    "output defect when it could see the pictures versus text and alt text only (same captured outputs).", "tab:vision",
+                    colspec=f"@{{}}l{WRAP}cc@{{}}", width="\\columnwidth")
 
     # ---- Reliability of the output assessment: two independent re-runs with the same code and inputs (test-retest),
     # and the original in-session assessment (earlier assessor version) against the first re-run.
