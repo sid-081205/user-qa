@@ -51,6 +51,14 @@ MAX_FILE_PAGES = 48
 CHALLENGE_HOSTS = ("challenges.cloudflare.com", "hcaptcha.com", "recaptcha", "google.com/recaptcha")
 AUTH_HOSTS = ("clerk.", "accounts.google.com", "auth0.com", "stripe.com", "challenges.cloudflare.com")
 
+_SECRET_PARAM = re.compile(r"([?&#](?:[\w-]*token|code|key|sig|signature|jwt|x-amz-[\w-]+|session[\w-]*)=)[^&#\s\"']+", re.I)
+_JWT = re.compile(r"\beyJ[\w-]{10,}\.[\w-]{10,}\.[\w-]*")
+
+
+def redact_secrets(text: str) -> str:
+    """Blank out tokens, codes and signatures in URLs and logs so run records can be shared."""
+    return _JWT.sub("<redacted-jwt>", _SECRET_PARAM.sub(r"\1<redacted>", text or ""))
+
 
 # ----------------------------------------------------------------- safety
 @dataclass
@@ -250,7 +258,7 @@ class BrowserEnv:
     def _wire(self, page: Page) -> None:
         page.on("dialog", self._on_dialog)
         page.on("response", self._on_response)
-        page.on("console", lambda m: self.console_errors.append(m.text[:300]) if m.type == "error" else None)
+        page.on("console", lambda m: self.console_errors.append(redact_secrets(m.text)[:300]) if m.type == "error" else None)
         page.on("download", lambda d: self._downloads.append(d))
 
     def _on_new_page(self, page: Page) -> None:
@@ -296,7 +304,7 @@ class BrowserEnv:
     def _on_response(self, resp) -> None:
         try:
             if resp.status >= 400 and resp.request.resource_type in ("document", "xhr", "fetch"):
-                self.http_errors.append({"url": resp.url[:200], "status": resp.status, "t": time.time()})
+                self.http_errors.append({"url": redact_secrets(resp.url)[:200], "status": resp.status, "t": time.time()})
         except PWError:
             pass
 
@@ -319,7 +327,7 @@ class BrowserEnv:
         except PWTimeout:
             return ActionResult({"type": "goto", "url": url}, False, "page took too long to load")
         self._settle()
-        self.page_loads.append({"url": self.page.url, "seconds": round(time.time() - t0, 2)})
+        self.page_loads.append({"url": redact_secrets(self.page.url), "seconds": round(time.time() - t0, 2)})
         return ActionResult({"type": "goto", "url": url}, True, f"opened {self.page.url}", navigated=True)
 
     def _settle(self, quiet_ms: int = 500, max_ms: int = 6000) -> None:

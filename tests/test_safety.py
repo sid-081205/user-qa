@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from userqa.browser.env import SafetyPolicy
+from userqa.browser.env import SafetyPolicy, redact_secrets
 
 
 @pytest.mark.parametrize("label", ["Pay now", "Buy now", "Purchase", "Place my order", "Confirm payment", "Subscribe", "Upgrade to Pro",
@@ -46,3 +46,13 @@ def test_domain_allow_list_admits_subdomains_and_sign_in_providers():
     assert not policy.domain_allowed("https://example.com/")
     assert not policy.domain_allowed("https://ourlegacy.family.evil.test/")
     assert SafetyPolicy().domain_allowed("https://anything.test/")
+
+
+def test_tokens_and_codes_are_redacted_from_logged_urls():
+    jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.c2lnbmF0dXJlLXZhbHVl"
+    msg = f"WebSocket connection to 'wss://api.example.test/connect?token={jwt}' failed"
+    assert jwt not in redact_secrets(msg) and "?token=<redacted>" in redact_secrets(msg)
+    assert redact_secrets(f"bearer {jwt}") == "bearer <redacted-jwt>"
+    url = "https://site.test/verify?email=a%40b.test&code=482913&X-Amz-Signature=abc123&page=2"
+    assert redact_secrets(url) == "https://site.test/verify?email=a%40b.test&code=<redacted>&X-Amz-Signature=<redacted>&page=2"
+    assert redact_secrets("https://site.test/book?promo_code=SPRING&id=7") == "https://site.test/book?promo_code=SPRING&id=7"
