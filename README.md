@@ -61,7 +61,7 @@ Each command prints the run directory. Open `report.html` in it.
 | `llm_calls.jsonl` | Every LLM request and response, with images replaced by a digest |
 | `screenshots/`, `artifacts/` | Step screenshots; captured outputs (`text.txt` plus picture crops, PDF pages, video frames) |
 
-`python -m userqa report <run-dir>` re-renders a report. `python -m userqa reassess <run-dir>` re-runs only the output assessment without browsing again, for example after changing the assessor. `--variant NAME` writes `output_assessment.NAME.json` and leaves the run otherwise untouched, and `--no-vision` gives the assessor alt text instead of pictures.
+`python -m userqa report <run-dir>` re-renders a report. `python -m userqa reassess <run-dir>` re-runs only the output assessment without browsing again, for example after changing the assessor. `--variant NAME` writes `output_assessment.NAME.json` and leaves the run otherwise untouched, and `--no-vision` gives the assessor alt text instead of pictures. `python -m userqa reaudit <run-dir>` re-runs only the persona-fidelity audit from the trace and keeps the previous one as `fidelity.prev.json`.
 
 ## Personas
 

@@ -69,6 +69,9 @@ def main(argv=None) -> int:
     ra.add_argument("--no-vision", action="store_true", help="assess without looking at pictures (alt text only)")
     ra.add_argument("--variant", default="", help="write output_assessment.<variant>.json and leave the run otherwise untouched")
 
+    au = sub.add_parser("reaudit", help="re-run a finished run's persona-fidelity audit from its trace")
+    au.add_argument("run_dirs", nargs="+")
+
     sub.add_parser("quota", help="show OpenRouter key limits / free-model quota")
 
     a = ap.parse_args(argv)
@@ -119,14 +122,17 @@ def main(argv=None) -> int:
         render_report(Path(a.run_dir))
         print(Path(a.run_dir) / "report.html")
         return 0
-    if a.cmd == "reassess":
-        from .runner import reassess_run
+    if a.cmd in ("reassess", "reaudit"):
+        from .runner import reassess_run, reaudit_run
 
         for d in a.run_dirs:
             try:
-                reassess_run(Path(d), with_debrief=a.with_debrief, vision=False if a.no_vision else None, variant=a.variant)
+                if a.cmd == "reaudit":
+                    reaudit_run(Path(d))
+                else:
+                    reassess_run(Path(d), with_debrief=a.with_debrief, vision=False if a.no_vision else None, variant=a.variant)
             except Exception as e:  # one broken run must not stop a batch
-                print(f"[reassess] {d}: ERROR {type(e).__name__}: {e}")
+                print(f"[{a.cmd}] {d}: ERROR {type(e).__name__}: {e}")
         return 0
     if a.cmd == "quota":
         q = LLMClient(max_calls=0).quota()

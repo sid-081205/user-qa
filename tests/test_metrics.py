@@ -14,7 +14,7 @@ from userqa.evaluation.metrics import (
     truncated_ending,
     unexpected_names,
 )
-from userqa.evaluation.questionnaires import score_sus, score_ueqs
+from userqa.evaluation.questionnaires import journey_digest, score_sus, score_ueqs
 
 
 def test_shared_phrases_finds_the_users_own_wording_in_the_output():
@@ -117,3 +117,24 @@ def test_sus_rejects_incomplete_answers():
 def test_ueq_s_scoring():
     assert score_ueqs([7] * 4 + [1] * 4) == {"pragmatic": 3.0, "hedonic": -3.0, "overall": 0.0}
     assert score_ueqs([4] * 7)["pragmatic"] is None
+
+
+def test_journey_digest_says_what_the_browser_reported_before_each_step():
+    click = {"action": {"type": "click", "id": 4}, "ok": False, "message": "no element [4]"}
+    trace = [
+        {"step": 1, "url": "https://x.test/review", "title": "Review", "output": {"emotion": "hopeful", "valence": 1, "ease": 5,
+         "think_aloud": "I will export the book."}, "results": [{**click, "ok": True}], "events": []},
+        {"step": 2, "url": "https://x.test/review", "title": "Review", "output": {"emotion": "relieved", "valence": 1, "ease": 4,
+         "think_aloud": "I have now looked at every page."}, "results": [click],
+         "events": ['The site gave you a PDF "book.pdf" (opened in a new tab); you opened it and looked through all 32 pages.',
+                    "You finished reading the PDF and went back to the website's tab."]},
+        {"step": 3, "url": "https://x.test/review", "error": "timeout"},
+    ]
+    lines = journey_digest(trace, {}, [{"step": 1, "seconds": 21.4}]).splitlines()
+    assert lines[0] == ("Step 1 on 'Review' (https://x.test/review): felt hopeful (valence 1, ease 5). "
+                        'Thought: "I will export the book." Did: click.')
+    assert lines[1] == ("Step 2 on 'Review' (https://x.test/review): the browser had just told you: The site gave you a PDF \"book.pdf\" "
+                        "(opened in a new tab); you opened it and looked through all 32 pages. You finished reading the PDF and went back "
+                        "to the website's tab. Then you felt relieved (valence 1, ease 4). "
+                        'Thought: "I have now looked at every page." Did: click (failed).')
+    assert lines[2:] == ["You waited 21 s for the site at step 1."]

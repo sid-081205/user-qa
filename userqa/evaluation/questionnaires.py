@@ -156,14 +156,21 @@ def _int(v: Any):
 
 
 def journey_digest(trace: list[dict], pages: dict, waits: list[dict]) -> str:
+    """The session as the participant lived it, for the debrief and the fidelity audit.
+
+    A step's events (a file the site gave them and they read, a pop-up, a new tab) are what the browser told the
+    participant just before that step's thought: some of what they saw came from no action of theirs."""
     lines = []
     for t in trace:
         if "error" in t:
             continue
         o = t.get("output", {})
         acts = ", ".join(str(r["action"].get("type")) + ("" if r["ok"] else " (failed)") for r in t.get("results", []))
+        seen = " ".join(str(e) for e in t.get("events") or [])
         lines.append(
-            f"Step {t['step']} on '{t.get('title', '')[:50]}' ({t['url'][:80]}): felt {o.get('emotion')} (valence {o.get('valence')}, ease {o.get('ease')}). "
+            f"Step {t['step']} on '{t.get('title', '')[:50]}' ({t['url'][:80]}): "
+            + (f"the browser had just told you: {seen[:600]} Then you " if seen else "")
+            + f"felt {o.get('emotion')} (valence {o.get('valence')}, ease {o.get('ease')}). "
             f"Thought: \"{str(o.get('think_aloud', ''))[:260]}\" Did: {acts}."
         )
     for w in waits:

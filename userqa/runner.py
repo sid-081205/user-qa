@@ -322,6 +322,38 @@ def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: O
     return run_dir
 
 
+def reaudit_run(run_dir: Path, log=print) -> Path:
+    """Re-run the persona-fidelity audit of a finished run from its trace, keeping everything else.
+
+    The previous audit is kept as fidelity.prev.json."""
+    load_env_file()
+    run_dir = Path(run_dir)
+    cfg = json.loads((run_dir / "config.json").read_text())
+    session = json.loads((run_dir / "session.json").read_text())
+    persona = load_persona(str(run_dir / "persona.yaml"))
+    trace = [json.loads(ln) for ln in (run_dir / "trace.jsonl").read_text().splitlines()]
+    llm = LLMClient(model=cfg.get("model", DEFAULT_MODEL), fallbacks=cfg.get("fallbacks"), max_calls=3,
+                    log_path=run_dir / "llm_calls.jsonl", temperature=float(cfg.get("temperature", 0.7)))
+    if (run_dir / "fidelity.json").exists():
+        (run_dir / "fidelity.prev.json").write_text((run_dir / "fidelity.json").read_text())
+    fidelity = audit_fidelity(llm, persona, journey_digest(trace, session.get("pages") or {}, session.get("waits") or []))
+    (run_dir / "fidelity.json").write_text(json.dumps(fidelity, indent=2, ensure_ascii=False))
+    if (run_dir / "summary.json").exists():
+        summary = json.loads((run_dir / "summary.json").read_text())
+        summary["fidelity"] = fidelity_scores(fidelity)
+        summary["llm_usage_reaudit"] = llm.usage.to_json()
+        (run_dir / "summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False))
+    from .report.render import render_report
+
+    render_report(run_dir)
+    log(f"[reaudit] {run_dir.name}: {json.dumps(fidelity_scores(fidelity))}")
+    return run_dir
+
+
+def fidelity_scores(fidelity: dict) -> dict:
+    return {k: (v.get("score") if isinstance(v, dict) else v) for k, v in (fidelity or {}).items() if k != "facet_consistency"}
+
+
 def build_summary(run_dir, persona, session, assessment, debrief, fidelity, llm, seconds, model) -> dict:
     issues = flatten_issues(session["pages"])
     unique = cluster_issues(issues)
@@ -369,7 +401,7 @@ def build_summary(run_dir, persona, session, assessment, debrief, fidelity, llm,
         "min_valence": min(valences) if valences else None,
         "abandonment": session.get("abandonment"),
         "waits": session.get("waits"),
-        "fidelity": {k: (v.get("score") if isinstance(v, dict) else v) for k, v in (fidelity or {}).items() if k != "facet_consistency"},
+        "fidelity": fidelity_scores(fidelity),
         "llm_usage": llm.usage.to_json(),
         "wall_seconds": round(seconds, 1),
     }
