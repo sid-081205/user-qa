@@ -29,6 +29,8 @@ DEFAULT_GOAL = (
 
 def main(argv=None) -> int:
     load_env_file()
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(line_buffering=True)
     ap = argparse.ArgumentParser(prog="userqa", description="Persona-grounded agentic UX and output evaluation")
     sub = ap.add_subparsers(dest="cmd", required=True)
 

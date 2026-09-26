@@ -103,8 +103,11 @@ def _compact_profile(p: Persona) -> str:
     return "\n".join(bits)
 
 
+_PAGER = re.compile(r"^\s*(page\s*)?\d+\s*(/|of)\s*\d+\s*$|^[\s‹›<>«»←→]+$", re.I)
+
+
 def _strip_boilerplate(captures: list[dict]) -> list[str]:
-    texts = [c.get("text", "") for c in captures]
+    texts = ["\n".join(l for l in c.get("text", "").splitlines() if not _PAGER.match(l)) for c in captures]
     if len(texts) < 3:
         return texts
     line_sets = [set(l.strip() for l in t.splitlines() if l.strip()) for t in texts]
@@ -115,7 +118,13 @@ def _strip_boilerplate(captures: list[dict]) -> list[str]:
 
 def _prose(text: str) -> str:
     """Keep sentence-like lines (UI chrome is mostly short labels)."""
-    keep = [l.strip() for l in text.splitlines() if len(l.split()) >= 6 or re.search(r"[.!?]\s*$", l.strip()) and len(l.split()) >= 3]
+    keep = []
+    for line in text.splitlines():
+        s = line.strip()
+        if not s or _PAGER.match(s):
+            continue
+        if len(s.split()) >= 6 or (re.search(r"[.!?\"”]\s*$", s) and len(s.split()) >= 3):
+            keep.append(s)
     return "\n".join(keep)
 
 
@@ -257,8 +266,10 @@ class OutputAssessor:
             result["error"] = str(e)
         for p in result.get("parts", []) or []:
             if isinstance(p, dict) and p.get("text"):
-                r = metrics.readability(p["text"])
-                p["metrics"] = {k: r.get(k) for k in ("words", "avg_sentence_words", "fk_grade", "flesch_reading_ease")}
+                prose = _prose(str(p["text"]))
+                if len(prose.split()) >= 8:
+                    r = metrics.readability(prose)
+                    p["metrics"] = {k: r.get(k) for k in ("words", "avg_sentence_words", "fk_grade", "flesch_reading_ease")}
         result["images"] = [{"ref": f"I{i + 1}", "path": pth, "desc": d} for i, (pth, d) in enumerate(images)]
         return result
 
