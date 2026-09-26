@@ -9,11 +9,20 @@ from userqa.evaluation.metrics import (
     placeholders,
     readability,
     repeated_sentences,
+    shared_phrases,
     syllables,
     truncated_ending,
     unexpected_names,
 )
 from userqa.evaluation.questionnaires import score_sus, score_ueqs
+
+
+def test_shared_phrases_finds_the_users_own_wording_in_the_output():
+    story = "My father made me a kite out of an old blue shirt. This time I help him fly Grandpa’s blue kite, and he is so happy."
+    output = "Grandpa's Blue Kite. One summer, Grandpa's daddy made a kite out of an old blue shirt. And he is so proud of it."
+    assert shared_phrases(output, [story]) == ["a kite out of an old blue shirt", "grandpa's blue kite"]
+    assert shared_phrases(output, []) == []
+    assert shared_phrases("and he is so", ["and he is so"]) == []
 
 
 def test_syllable_heuristic():

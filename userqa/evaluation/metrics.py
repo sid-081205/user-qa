@@ -172,6 +172,50 @@ def unexpected_names(output_text: str, expected_names: Iterable[str], min_count:
     return sorted([w for w, c in counts.items() if c >= min_count], key=lambda w: -counts[w])[:15]
 
 
+_FUNCTION_WORDS = set(
+    "a an the and or but of to in on at for with from by as into onto up down out over is are was were be been being it its this that "
+    "these those he she they we i you him her them me us his hers their our my your so then than there here not no".split()
+)
+
+
+def _tokens(text: str) -> list[str]:
+    return [w.lower() for w in _WORD.findall(text.replace("’", "'").replace("‘", "'"))]
+
+
+def shared_phrases(output_text: str, inputs: Iterable[str], min_words: int = 3, limit: int = 12) -> list[str]:
+    """Longest runs of words the output repeats from the user's own inputs.
+
+    A generated detail that comes from the user's own wording is not the website's invention; without this the judge
+    blames the site for what the user typed (e.g. a title built from the user's phrase "Grandpa's blue kite")."""
+    out = _tokens(output_text)
+    found: dict[str, int] = {}
+    for text in inputs:
+        src = _tokens(text)
+        starts: dict[tuple, list[int]] = {}
+        for j in range(len(src) - min_words + 1):
+            starts.setdefault(tuple(src[j : j + min_words]), []).append(j)
+        i = 0
+        while i <= len(out) - min_words:
+            best = 0
+            for j in starts.get(tuple(out[i : i + min_words]), []):
+                k = min_words
+                while i + k < len(out) and j + k < len(src) and out[i + k] == src[j + k]:
+                    k += 1
+                best = max(best, k)
+            if best and sum(1 for w in out[i : i + best] if w not in _FUNCTION_WORDS) >= 2:
+                phrase = " ".join(out[i : i + best])
+                found[phrase] = best
+                i += best
+            else:
+                i += 1
+    ranked = sorted(found, key=lambda p: -found[p])
+    kept: list[str] = []
+    for p in ranked:
+        if not any(p in q for q in kept):
+            kept.append(p)
+    return kept[:limit]
+
+
 def analyse_parts(parts: list[dict], expected_names: Iterable[str], reading_age: Optional[float]) -> dict:
     """``parts`` = [{"part": "Page 1", "text": "...", "artifact": "optional id of the file/page it belongs to"}]."""
     expected_names = list(expected_names)

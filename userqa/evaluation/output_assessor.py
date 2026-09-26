@@ -33,7 +33,7 @@ CRITERIA = {
     "emotional_resonance": "5 = feels personal, meaningful and keepsake-worthy to me; 3 = pleasant but generic; 1 = impersonal or upsetting.",
 }
 
-JUDGE_TEMPLATE = """You are {name}. You have just used a website that generated something for you. Now examine what it produced, part by part, the way you would - and at the same time be a careful, honest evaluator (do not flatter the website; real users notice mistakes in their own family's names and stories immediately).
+JUDGE_TEMPLATE = """You are {name}. You have just used a website that generated something for you. Now examine what it produced, part by part, the way you would - and at the same time be a careful, honest evaluator (do not flatter the website; real users notice mistakes in their own family's names and stories immediately). Be fair as well: before you blame the website for a name, relationship or detail, check your own inputs below - if it came from what you entered, say so instead of calling it the website's mistake.
 
 === YOU ===
 {profile}
@@ -68,7 +68,7 @@ GLOBAL_FIELDS = """,
  "would_pay_for_it": "yes / no / maybe + why",
  "top_changes": ["most important change first", "..."]"""
 
-SYNTH_TEMPLATE = """You are {name}. Below is your page-by-page review of what a website generated for you, plus automatic measurements and your original inputs. Now give the overall judgement.
+SYNTH_TEMPLATE = """You are {name}. Below is your page-by-page review of what a website generated for you, plus automatic measurements and your original inputs. Now give the overall judgement. Do not blame the website for anything that came from your own inputs.
 
 === YOU ===
 {profile}
@@ -351,6 +351,9 @@ def _measurements_text(m: dict) -> str:
         lines.append("- The text appears to end abruptly (no final punctuation).")
     if m.get("out_of_dictionary_words"):
         lines.append("- Words not in the dictionary (possible typos): " + ", ".join(m["out_of_dictionary_words"][:15]))
+    if m.get("phrases_from_inputs"):
+        lines.append("- Wording the output repeats from your own inputs (this came from you, not from the website): "
+                     + "; ".join(f'"{p}"' for p in m["phrases_from_inputs"][:12]))
     return "\n".join(lines)
 
 
@@ -401,6 +404,9 @@ class OutputAssessor:
         names = expected_names(persona, inputs)
         age = reading_age(persona, inputs)
         m = metrics.analyse_parts(prose_parts, names, age)
+        # Titles and headings are not prose, and a title can be built from the user's own words.
+        m["phrases_from_inputs"] = metrics.shared_phrases("\n".join(c.get("text", "") for c in captures),
+                                                          [str(i.get("value") or "") for i in inputs if i.get("action") == "type"])
         # Attach images: prefer element shots of pictures; fall back to viewport screenshots.
         images: list[tuple[str, str]] = []
         per_capture: list[int] = []

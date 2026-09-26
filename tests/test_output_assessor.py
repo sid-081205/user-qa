@@ -253,6 +253,18 @@ def test_assess_tells_the_judge_what_changed_in_a_revised_page(tmp_path, persona
     assert n_images(llm.calls[0]["messages"]) == 1
 
 
+def test_assess_tells_the_judge_which_wording_came_from_the_users_own_inputs(tmp_path, persona, scripted_llm):
+    llm = scripted_llm(_judge_reply)
+    story = "I help him fly Grandpa's blue kite on the windy hill."
+    page = write_capture(tmp_path, 1, "Page 1\nOliver and Grandpa fly Grandpa's blue kite together.\nThe kite climbs above the farmhouse.",
+                         "https://x.test/book", label="Page 1", image_color=(255, 255, 255))
+    res = OutputAssessor(llm, tmp_path).assess(persona, [{"field": "Story Narrative", "action": "type", "value": story}], [page], [])
+    text = prompt_text(llm.calls[0]["messages"])
+    assert "Wording the output repeats from your own inputs (this came from you, not from the website): \"fly grandpa's blue kite\"" in text
+    assert "check your own inputs below" in text
+    assert res["measurements"]["phrases_from_inputs"] == ["fly grandpa's blue kite"]
+
+
 def test_assess_without_captures_is_skipped(tmp_path, persona, scripted_llm):
     llm = scripted_llm(_judge_reply)
     assert OutputAssessor(llm, tmp_path).assess(persona, [], [], [])["skipped"] is True
