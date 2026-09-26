@@ -377,7 +377,7 @@ class PersonaAgent:
         info = self.env._info(a.get("id")) if a.get("id") is not None else None
         field_name = (info or {}).get("name") or (info or {}).get("placeholder") or f"[{a.get('id')}]"
         if kind in INPUT_ACTIONS and res.ok:
-            value = a.get("text") or a.get("option") or a.get("value") or a.get("file")
+            value = str(a.get("text") or "") if kind == "type" else a.get("option") or a.get("value") or a.get("file")
             if (info or {}).get("type") == "password":
                 value = "(password)"
             self.result.inputs.append({"field": field_name, "action": kind, "value": value, **({"truncated_to": res.data["truncated_to"]} if res.data.get("truncated_to") else {})})

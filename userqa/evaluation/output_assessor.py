@@ -305,11 +305,14 @@ def reading_age(persona: Persona, inputs: list[dict]) -> Optional[float]:
 def _inputs_text(inputs: list[dict]) -> str:
     if not inputs:
         return "(no inputs were recorded)"
+    last = {str(i.get("field")): n for n, i in enumerate(inputs)}
     lines = []
-    for i in inputs:
-        v = str(i.get("value", ""))
+    for n, i in enumerate(inputs):
+        v = i.get("value")
+        shown = "(you cleared this field)" if v is None or str(v) == "" else f'"{str(v)[:1500]}"'
         trunc = f"  [NOTE: the site cut this to {i['truncated_to']} characters]" if i.get("truncated_to") else ""
-        lines.append(f'- {i.get("field")}: "{v[:1500]}"{trunc}')
+        later = "  [you changed this later; only your last entry counts]" if last[str(i.get("field"))] != n else ""
+        lines.append(f'- {i.get("field")}: {shown}{trunc}{later}')
     return "\n".join(lines)
 
 
