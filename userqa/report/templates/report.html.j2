@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UserQA - {{ persona.name }} on {{ config.site.url }}</title>
+<style>
+  :root { --ink:#111827; --muted:#6b7280; --line:#e5e7eb; --bg:#f8fafc; --card:#fff; --accent:#4f46e5; --ok:#16a34a; --warn:#d97706; --bad:#dc2626; }
+  * { box-sizing: border-box; }
+  body { margin:0; font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  header { background: linear-gradient(135deg,#312e81,#4f46e5 60%,#7c3aed); color:#fff; padding: 28px 32px 22px; }
+  header h1 { margin: 0 0 6px; font-size: 24px; }
+  header .meta { opacity:.9; font-size: 14px; }
+  .chips span { display:inline-block; background: rgba(255,255,255,.16); border-radius: 999px; padding: 2px 10px; margin: 6px 6px 0 0; font-size: 12.5px; }
+  main { max-width: 1180px; margin: 0 auto; padding: 24px 20px 60px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; margin: 18px 0; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
+  h2 { margin: 0 0 12px; font-size: 19px; }
+  h3 { margin: 18px 0 8px; font-size: 16px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap: 12px; }
+  .kpi { border:1px solid var(--line); border-radius: 12px; padding: 12px 14px; background:#fcfcfd; }
+  .kpi .v { font-size: 26px; font-weight: 700; }
+  .kpi .l { color: var(--muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; }
+  table { width:100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align:left; vertical-align: top; padding: 7px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: .03em; }
+  .sev { display:inline-block; min-width: 22px; text-align:center; border-radius: 6px; padding: 1px 6px; font-weight:700; color:#fff; }
+  .sev0,.sev1 { background:#9ca3af; } .sev2 { background: var(--warn); } .sev3 { background:#ea580c; } .sev4 { background: var(--bad); }
+  .code { font: 12px ui-monospace, monospace; background:#eef2ff; color:#3730a3; padding: 1px 6px; border-radius: 5px; white-space: nowrap; }
+  .page { display:grid; grid-template-columns: 340px 1fr; gap: 20px; border-top: 1px solid var(--line); padding-top: 16px; margin-top: 16px; }
+  .page:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+  .page img, .part img { width:100%; border:1px solid var(--line); border-radius: 10px; }
+  .quote { border-left: 4px solid var(--accent); background:#f5f3ff; padding: 8px 12px; border-radius: 0 8px 8px 0; font-style: italic; }
+  .muted { color: var(--muted); }
+  .bar { height: 10px; background:#eef2ff; border-radius: 99px; overflow:hidden; }
+  .bar > i { display:block; height:100%; background: linear-gradient(90deg,#6366f1,#8b5cf6); }
+  .part { display:grid; grid-template-columns: 300px 1fr; gap: 18px; border-top:1px solid var(--line); padding-top: 14px; margin-top: 14px; }
+  .imgs { display:grid; gap: 8px; }
+  .storytext { background:#fffbeb; border:1px solid #fde68a; border-radius: 10px; padding: 10px 12px; font-family: Georgia, serif; }
+  .rewrite { background:#ecfdf5; border:1px solid #a7f3d0; border-radius: 10px; padding: 10px 12px; font-family: Georgia, serif; }
+  .pill { display:inline-block; border-radius: 999px; padding: 1px 9px; font-size: 12px; background:#f3f4f6; margin: 2px 4px 2px 0; }
+  .pill.bad { background:#fee2e2; color:#991b1b; } .pill.good { background:#dcfce7; color:#166534; } .pill.warn { background:#fef3c7; color:#92400e; }
+  details summary { cursor:pointer; color: var(--accent); }
+  @media (max-width: 860px) { .page, .part { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>{{ persona.name }} ({{ persona.age }}) tries <u>{{ config.site.url }}</u></h1>
+  <div class="meta">{{ persona.tagline }}</div>
+  <div class="chips">
+    {% for k, v in (persona.facets or {}).items() %}<span>{{ k.replace('_',' ') }}: {{ v }}</span>{% endfor %}
+    <span>device: {{ persona.device }}</span><span>attention: {{ persona.attention }}</span><span>model: {{ summary.model }}</span>
+  </div>
+</header>
+<main>
+
+<section>
+  <h2>At a glance</h2>
+  <div class="grid">
+    <div class="kpi"><div class="l">Outcome</div><div class="v">{{ summary.status }}</div><div class="muted">{{ summary.steps }} steps · {{ summary.wall_seconds }} s</div></div>
+    <div class="kpi"><div class="l">SUS</div><div class="v">{{ summary.sus if summary.sus is not none else '–' }}</div><div class="muted">grade {{ summary.sus_grade or '–' }} · avg = 68{% if summary.sus_consistency_flag %} · ⚠ inconsistent{% endif %}</div></div>
+    <div class="kpi"><div class="l">UEQ-S pragmatic / hedonic</div><div class="v">{{ (summary.ueq_s or {}).get('pragmatic', '–') }} / {{ (summary.ueq_s or {}).get('hedonic', '–') }}</div><div class="muted">range −3 … +3</div></div>
+    <div class="kpi"><div class="l">Recommend (0–10)</div><div class="v">{{ summary.nps if summary.nps is not none else '–' }}</div></div>
+    <div class="kpi"><div class="l">Issues found</div><div class="v">{{ summary.issues }}</div><div class="muted">{% for k, v in (summary.issues_by_severity or {}).items() %}{% if v %}sev{{k}}: {{v}} {% endif %}{% endfor %}</div></div>
+    <div class="kpi"><div class="l">Output keepsake score</div><div class="v">{{ summary.keepsake_worthiness if summary.keepsake_worthiness is not none else '–' }}</div><div class="muted">1–5 · {{ summary.output_parts }} parts assessed</div></div>
+    <div class="kpi"><div class="l">LLM calls</div><div class="v">{{ (summary.llm_usage or {}).get('calls') }}</div><div class="muted">{{ (summary.llm_usage or {}).get('failed_calls') }} failed / retried</div></div>
+  </div>
+  {% if debrief.one_line_verdict %}<p class="quote" style="margin-top:14px">“{{ debrief.one_line_verdict }}” — {{ persona.name }}</p>{% endif %}
+  {% if summary.abandonment %}<p><span class="pill bad">Would have abandoned</span> at step {{ summary.abandonment.step }} ({{ summary.abandonment.page }}): {{ summary.abandonment.reason }} <span class="muted">[{{ summary.abandonment.source }}]</span></p>{% endif %}
+</section>
+
+<section>
+  <h2>What the agent understood this website to be</h2>
+  {% set sm = session.site_model or {} %}
+  <table>
+    {% for k in ['what_it_is','who_it_is_for','value_proposition','pricing_model','fit_for_me'] %}{% if sm.get(k) %}<tr><th style="width:190px">{{ k.replace('_',' ') }}</th><td>{{ sm.get(k) }}</td></tr>{% endif %}{% endfor %}
+    {% if sm.get('main_tasks') %}<tr><th>main tasks</th><td>{% for t in sm.main_tasks %}<span class="pill">{{ t }}</span>{% endfor %}</td></tr>{% endif %}
+    {% if sm.get('trust_signals') %}<tr><th>trust signals</th><td>{% for t in sm.trust_signals %}<span class="pill good">{{ t }}</span>{% endfor %}</td></tr>{% endif %}
+  </table>
+</section>
+
+<section>
+  <h2>Emotional journey</h2>
+  <p class="muted">Self-reported valence (−2 … +2) at each step, in the persona's frame. Hover the dots for the emotion and screen.</p>
+  {{ valence_svg | safe }}
+</section>
+
+<section>
+  <h2>Top issues (by severity)</h2>
+  <table>
+    <tr><th>Sev</th><th>Code</th><th>Page</th><th>Issue</th><th>Evidence</th><th>Suggested fix</th></tr>
+    {% for i in top_issues %}
+    <tr><td><span class="sev sev{{ i|sev }}">{{ i.severity }}</span></td><td><span class="code" title="{{ heuristics.get((i.code or '')|string|upper, '') }}">{{ i.code }}</span></td><td>{{ i.page }}</td><td><b>{{ i.title }}</b><br><span class="muted">{{ i.why_it_matters_to_me }}</span></td><td>{{ i.evidence }}</td><td>{{ i.fix }}</td></tr>
+    {% endfor %}
+  </table>
+</section>
+
+<section>
+  <h2>Page-by-page review</h2>
+  {% for p in pages %}{% set rv = p.review or {} %}
+  <div class="page">
+    <div>
+      {% if p.screenshot %}<a href="{{ p.screenshot }}"><img src="{{ p.screenshot }}" alt="Screenshot of {{ rv.page_name or p.title }}"></a>{% endif %}
+      <div class="muted" style="font-size:12.5px;word-break:break-all">step {{ p.first_step }} · {{ p.url }}{% if p.visits > 1 %} · seen {{ p.visits }}×{% endif %}</div>
+      <div style="margin-top:6px">
+        {% set a = p.a11y or {} %}
+        {% if a.low_contrast_texts %}<span class="pill warn">{{ a.low_contrast_texts }} low-contrast texts</span>{% endif %}
+        {% if a.images_missing_alt %}<span class="pill warn">{{ a.images_missing_alt }} images w/o alt</span>{% endif %}
+        {% if a.unnamed_controls %}<span class="pill warn">{{ a.unnamed_controls }} unnamed controls</span>{% endif %}
+        {% if a.placeholder_only_fields %}<span class="pill warn">{{ a.placeholder_only_fields }} placeholder-only fields</span>{% endif %}
+        {% if a.small_targets %}<span class="pill warn">{{ a.small_targets }} small targets</span>{% endif %}
+      </div>
+    </div>
+    <div>
+      <h3 style="margin-top:0">{{ rv.page_name or p.title }} <span class="pill">{{ p.emotion }}{% if p.valence is not none %} ({{ p.valence }}){% endif %}</span>{% if rv.would_abandon_here %}<span class="pill bad">would abandon</span>{% endif %}</h3>
+      {% if rv.purpose %}<p><b>Purpose.</b> {{ rv.purpose }}</p>{% endif %}
+      <p><b>What's happening.</b> {{ rv.what_is_happening or p.observation }}</p>
+      <p class="quote">“{{ rv.first_impression or p.think_aloud }}”</p>
+      {% if rv.walkthrough %}<details><summary>Cognitive walkthrough</summary><ul>
+        <li><b>Q1 would try:</b> {{ rv.walkthrough.q1_would_try }}</li><li><b>Q2 notices control:</b> {{ rv.walkthrough.q2_notice_control }}</li><li><b>Q3 label matches goal:</b> {{ rv.walkthrough.q3_label_matches_goal }}</li></ul></details>{% endif %}
+      {% if p.issues_sorted %}
+      <table style="margin-top:8px"><tr><th>Sev</th><th>Issue</th><th>Evidence</th><th>Fix</th></tr>
+      {% for i in p.issues_sorted %}<tr><td><span class="sev sev{{ i|sev }}">{{ i.severity }}</span> <span class="code">{{ i.code }}</span></td><td><b>{{ i.title }}</b>{% if i.later %} <span class="pill">noticed later</span>{% endif %}<br><span class="muted">{{ i.why_it_matters_to_me }}</span></td><td>{{ i.evidence }}</td><td>{{ i.fix }}</td></tr>{% endfor %}
+      </table>{% endif %}
+      {% if rv.positives %}<p>{% for x in rv.positives %}<span class="pill good">+ {{ x }}</span>{% endfor %}</p>{% endif %}
+      {% if rv.would_abandon_here %}<p><span class="pill bad">Would abandon here</span> {{ rv.abandon_reason }}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% if assessment and not assessment.skipped %}
+<section>
+  <h2>Assessment of what the website generated</h2>
+  <p><b>{{ assessment.artifact_type }}</b></p>
+  {% if assessment.overall_reaction %}<p class="quote">“{{ assessment.overall_reaction }}”</p>{% endif %}
+  <table>
+    <tr><th style="width:190px">Criterion</th><th style="width:220px">Score (1–5)</th><th>Evidence</th></tr>
+    {% for r in criteria %}<tr><td>{{ r.name }}</td><td><div class="bar"><i style="width:{{ r.pct }}%"></i></div> {{ r.score }}</td><td>{{ r.evidence }}</td></tr>{% endfor %}
+  </table>
+  {% set fid = assessment.input_fidelity or {} %}
+  {% if fid %}<h3>Did it use what I gave it?</h3><p>
+    {% for x in fid.used_correctly or [] %}<span class="pill good">✓ {{ x }}</span>{% endfor %}
+    {% for x in fid.missing or [] %}<span class="pill bad">missing: {{ x }}</span>{% endfor %}
+    {% for x in fid.changed or [] %}<span class="pill warn">changed: {{ x }}</span>{% endfor %}
+    {% for x in fid.invented or [] %}<span class="pill warn">invented: {{ x }}</span>{% endfor %}</p>{% endif %}
+  {% set m = assessment.measurements or {} %}
+  <details><summary>Automatic measurements</summary><pre style="white-space:pre-wrap;font-size:12.5px">{{ m | tojson_pretty }}</pre></details>
+  <h3>Part by part</h3>
+  {% for part in assessment.parts or [] %}
+  <div class="part">
+    <div class="imgs">{% for ref in part.image_refs or [] %}{% set im = images.get(ref) %}{% if im %}<a href="{{ im.path }}"><img src="{{ im.path }}" alt="{{ ref }}"></a>{% endif %}{% endfor %}</div>
+    <div>
+      <h3 style="margin-top:0">{{ part.part }} {% if part.metrics and part.metrics.fk_grade is not none %}<span class="pill">FK grade {{ part.metrics.fk_grade }}</span>{% endif %}</h3>
+      {% if part.text %}<div class="storytext">{{ part.text }}</div>{% endif %}
+      {% if part.picture_description %}<p class="muted"><b>Picture:</b> {{ part.picture_description }}</p>{% endif %}
+      <p class="quote">“{{ part.reaction }}”</p>
+      {% for pr in part.problems or [] %}<div><span class="sev sev{{ pr|sev }}">{{ pr.severity }}</span> <span class="code">{{ pr.criterion }}</span> {{ pr.evidence }}</div>{% endfor %}
+      {% for s in part.strengths or [] %}<span class="pill good">+ {{ s }}</span>{% endfor %}
+      {% if part.suggested_change %}<p><b>Change I'd make:</b> {{ part.suggested_change }}</p>{% endif %}
+      {% if part.rewrite %}<div class="rewrite"><b>Suggested rewrite:</b> {{ part.rewrite }}</div>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  {% if assessment.top_changes %}<h3>Top changes to the output</h3><ol>{% for x in assessment.top_changes %}<li>{{ x }}</li>{% endfor %}</ol>{% endif %}
+  {% if assessment.would_pay_for_it %}<p><b>Would pay for it?</b> {{ assessment.would_pay_for_it }}</p>{% endif %}
+</section>
+{% elif assessment.reason %}
+<section><h2>Assessment of generated output</h2><p class="muted">Not assessed: {{ assessment.reason }}</p></section>
+{% endif %}
+
+{% if debrief.recommendations %}
+<section>
+  <h2>What {{ persona.name.split(' ')[0] }} would change (prioritised)</h2>
+  <table><tr><th>Priority</th><th>Change</th><th>Page</th><th>Why</th></tr>
+  {% for r in debrief.recommendations %}<tr><td><span class="pill {{ 'bad' if r.priority == 'high' else 'warn' if r.priority == 'medium' else '' }}">{{ r.priority }}</span></td><td><b>{{ r.change }}</b></td><td>{{ r.page }}</td><td>{{ r.why }}</td></tr>{% endfor %}
+  </table>
+</section>
+{% endif %}
+
+<section>
+  <h2>Post-session questionnaire &amp; interview</h2>
+  <div class="grid" style="grid-template-columns: 1fr 1fr">
+    <div>
+      <h3>System Usability Scale</h3>
+      <table><tr><th>Statement</th><th>1–5</th></tr>
+      {% for s in sus_items %}<tr><td>{{ s.q }}<br><span class="muted">{{ s.reason }}</span></td><td><b>{{ s.rating }}</b></td></tr>{% endfor %}</table>
+    </div>
+    <div>
+      <h3>UEQ-S</h3>
+      <table><tr><th>Pair</th><th>1–7</th></tr>{% for u in ueq_items %}<tr><td>{{ u.left }} … {{ u.right }} <span class="muted">({{ u.scale }})</span></td><td><b>{{ u.rating }}</b></td></tr>{% endfor %}</table>
+      <h3>Interview</h3>
+      {% for q, a in interview %}{% if a %}<p><b>{{ q }}</b><br>{{ a }}</p>{% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if fidelity and not fidelity.skipped and not fidelity.error %}
+<section>
+  <h2>Simulation fidelity audit</h2>
+  <p class="muted">An independent judge call rates whether the simulated participant behaved like the specified persona (1–5; for caricature and knowledge leakage lower is better).</p>
+  <table>
+    {% for k in ['voice_consistency','individuation','realism_overall','caricature','knowledge_leakage'] %}{% set v = fidelity.get(k) or {} %}<tr><th style="width:200px">{{ k.replace('_',' ') }}</th><td><b>{{ v.score }}</b> — {{ v.why }} {% for e in v.examples or [] %}<span class="pill">{{ e }}</span>{% endfor %}</td></tr>{% endfor %}
+    {% for k, v in (fidelity.facet_consistency or {}).items() %}<tr><th>facet: {{ k.replace('_',' ') }}</th><td><b>{{ v.score }}</b> — {{ v.why }}</td></tr>{% endfor %}
+  </table>
+</section>
+{% endif %}
+
+<section>
+  <h2>Full session log</h2>
+  <table>
+    <tr><th>#</th><th>Screen</th><th>Feeling</th><th>Think-aloud</th><th>Actions → result</th></tr>
+    {% for t in trace %}{% set o = t.output or {} %}
+    <tr><td>{{ t.step }}</td><td style="max-width:180px">{{ t.title }}<br><span class="muted" style="font-size:12px;word-break:break-all">{{ t.url }}</span></td><td>{{ o.emotion }} ({{ o.valence }})<br><span class="muted">ease {{ o.ease }}</span></td><td>“{{ o.think_aloud }}”{% if o.last_action_feedback %}<br><span class="muted">Q4: {{ o.last_action_feedback }}</span>{% endif %}</td>
+      <td>{% for r in t.results or [] %}<div><span class="code">{{ r.action.type }}</span> {% if not r.ok %}<span class="pill bad">failed</span>{% endif %} <span class="muted">{{ r.message[:160] }}</span></div>{% endfor %}</td></tr>
+    {% endfor %}
+  </table>
+</section>
+
+<section>
+  <h2>Technical appendix</h2>
+  <details><summary>Page loads, waits, HTTP &amp; console errors</summary>
+    <pre style="white-space:pre-wrap;font-size:12.5px">{{ {'waits': session.waits, 'page_loads': (session.env or {}).get('page_loads'), 'http_errors': (session.env or {}).get('http_errors'), 'console_errors': (session.env or {}).get('console_errors')} | tojson_pretty }}</pre></details>
+  <details><summary>LLM usage</summary><pre style="font-size:12.5px">{{ summary.llm_usage | tojson_pretty }}</pre></details>
+  <details><summary>Inputs the persona gave the website</summary><pre style="white-space:pre-wrap;font-size:12.5px">{{ session.inputs | tojson_pretty }}</pre></details>
+</section>
+<p class="muted" style="text-align:center">Generated by UserQA · simulated users are a complement to, not a replacement for, research with real people.</p>
+</main>
+</body>
+</html>
