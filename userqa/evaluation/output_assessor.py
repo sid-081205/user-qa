@@ -281,13 +281,20 @@ def expected_names(persona: Persona, inputs: list[dict]) -> list[str]:
     return out
 
 
+_NOT_READER = re.compile(r"teller|narrator|author|\byour\b|\bmy\b", re.I)
+
+
 def reading_age(persona: Persona, inputs: list[dict]) -> Optional[float]:
+    """The age the output is for: the last value entered in an age field that is not about the storyteller."""
+    age = None
     for i in inputs:
-        f = str(i.get("field", "")).lower()
-        if "age" in f or "reading" in f:
-            m = re.search(r"\d+(\.\d+)?", str(i.get("value", "")))
+        f = str(i.get("field", ""))
+        if re.search(r"\bage\b|read", f, re.I) and not _NOT_READER.search(f):
+            m = re.search(r"\d+(\.\d+)?", str(i.get("value") or ""))
             if m:
-                return float(m.group(0))
+                age = float(m.group(0))
+    if age is not None:
+        return age
     ra = (persona.domain_context or {}).get("reading_age")
     try:
         return float(ra) if ra is not None else None
