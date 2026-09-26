@@ -87,10 +87,11 @@
 
 <section>
   <h2>Top issues (by severity)</h2>
+  <p class="muted">Duplicates reported on several screens are merged; the page column lists every screen where the problem was seen.</p>
   <table>
-    <tr><th>Sev</th><th>Code</th><th>Page</th><th>Issue</th><th>Evidence</th><th>Suggested fix</th></tr>
+    <tr><th>Sev</th><th>Code</th><th>Page(s)</th><th>Issue</th><th>Evidence</th><th>Suggested fix</th></tr>
     {% for i in top_issues %}
-    <tr><td><span class="sev sev{{ i|sev }}">{{ i.severity }}</span></td><td><span class="code" title="{{ heuristics.get((i.code or '')|string|upper, '') }}">{{ i.code }}</span></td><td>{{ i.page }}</td><td><b>{{ i.title }}</b><br><span class="muted">{{ i.why_it_matters_to_me }}</span></td><td>{{ i.evidence }}</td><td>{{ i.fix }}</td></tr>
+    <tr><td><span class="sev sev{{ i.max_severity }}">{{ i.max_severity }}</span></td><td><span class="code" title="{{ heuristics.get((i.code or '')|string|upper, '') }}">{{ i.code }}</span></td><td>{{ (i.pages or [i.page])|join(', ') }}{% if i.occurrences > 1 %} <span class="muted">(×{{ i.occurrences }})</span>{% endif %}</td><td><b>{{ i.title }}</b><br><span class="muted">{{ i.why_it_matters_to_me }}</span></td><td>{{ i.evidence }}{% if i.evidence_check and i.evidence_check.verified == false %} <span class="pill warn" title="The quoted text was not found verbatim on the page">quote not verbatim</span>{% endif %}</td><td>{{ i.fix }}</td></tr>
     {% endfor %}
   </table>
 </section>

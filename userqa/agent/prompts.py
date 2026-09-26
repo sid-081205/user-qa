@@ -87,7 +87,7 @@ Page content (numbered items are things you can interact with; "----- fold" mean
   "emotion": "one of {emotions}",
   "valence": -2 to 2,
   "ease": 1-7 (how easy this step feels; 1 very difficult, 7 very easy),
-  {q4}{site_model}{page_review}"new_issues": [ ...same issue format, only for NEW problems on already-reviewed pages... ],
+  {q4}{site_model}{page_review}"new_issues": [{{"title": "...", "evidence": "exact quote or [id]", "code": "...", "severity": 0-4, "why_it_matters_to_me": "...", "fix": "..."}}] (only NEW problems you just noticed on an already-reviewed screen; [] if none),
   "output_present": true/false,
   "output_reaction": "in character reaction to generated content, if any",
   "memory_note": "optional short fact to remember for later (e.g. a price or code)",

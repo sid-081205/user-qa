@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -284,12 +285,29 @@ class PersonaAgent:
         return self.result
 
     # --------------------------------------------------------- bookkeeping
+    def _clean_issues(self, issues: Any, obs: Observation) -> list[dict]:
+        out = []
+        page_text = obs.text + "\n" + obs.full_text + "\n" + obs.title
+        for i in issues if isinstance(issues, list) else []:
+            if not isinstance(i, dict):
+                continue
+            if not i.get("title"):
+                basis = str(i.get("why_it_matters_to_me") or i.get("evidence") or i.get("fix") or "").strip()
+                if not basis:
+                    continue
+                i["title"] = basis.split(". ")[0][:90]
+            i["evidence_check"] = verify_evidence(str(i.get("evidence", "")), page_text)
+            out.append(i)
+        return out
+
     def _record_understanding(self, step: int, obs: Observation, out: dict, new_page: bool, shot: Optional[str]) -> None:
         if step == 1 and isinstance(out.get("site_model"), dict):
             self.result.site_model = out["site_model"]
         elif isinstance(out.get("site_model"), dict) and out["site_model"]:
             self.result.site_model.update({k: v for k, v in out["site_model"].items() if v})
         review = out.get("page_review") if new_page else None
+        if isinstance(review, dict):
+            review["issues"] = self._clean_issues(review.get("issues"), obs)
         if new_page:
             self.result.pages[obs.page_key] = {
                 "page_key": obs.page_key,
@@ -310,7 +328,7 @@ class PersonaAgent:
             pg = self.result.pages.get(obs.page_key)
             if pg:
                 pg["visits"] += 1
-        extra = [i for i in (out.get("new_issues") or []) if isinstance(i, dict) and i.get("title")]
+        extra = self._clean_issues(out.get("new_issues"), obs)
         if extra:
             tgt = self.result.pages.get(obs.page_key)
             if tgt is not None:
@@ -369,6 +387,25 @@ class PersonaAgent:
             return
         self._capture_hashes.add(h)
         self.result.captures.append(cap)
+
+
+_QUOTE_RE = re.compile(r"“([^”]{4,200})”|\"([^\"]{4,200})\"|‘([^’]{4,200})’(?![a-z])|(?<![A-Za-z])'([^']{4,200})'(?![A-Za-z])")
+
+
+def _norm(s: str) -> str:
+    s = s.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"').replace("–", "-").replace("—", "-")
+    return re.sub(r"\s+", " ", s).strip().lower()
+
+
+def verify_evidence(evidence: str, page_text: str) -> dict:
+    """Check that quoted evidence actually occurs on the page (guards against paraphrased or 'corrected' quotes)."""
+    quotes = [next(g for g in m if g).strip(" .,;:…") for m in _QUOTE_RE.findall(evidence)]
+    quotes = [q for q in quotes if len(q) >= 4]
+    if not quotes:
+        return {"quotes": 0, "verified": None}
+    hay = _norm(page_text)
+    found = sum(1 for q in quotes if _norm(q) in hay)
+    return {"quotes": len(quotes), "found": found, "verified": found == len(quotes)}
 
 
 def _fmt_action(a: dict, obs: Optional[Observation] = None) -> str:

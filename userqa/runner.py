@@ -15,6 +15,7 @@ import yaml
 from .agent.loop import AgentConfig, PersonaAgent
 from .browser.env import BrowserEnv, SafetyPolicy
 from .evaluation.fidelity import audit_fidelity
+from .evaluation.issues import cluster_issues, flatten_issues
 from .evaluation.output_assessor import OutputAssessor
 from .evaluation.questionnaires import journey_digest, run_debrief
 from .llm import DEFAULT_MODEL, BudgetExceeded, LLMClient
@@ -203,19 +204,11 @@ def run_session(
     return run_dir
 
 
-def all_issues(pages: dict) -> list[dict]:
-    out = []
-    for key, p in pages.items():
-        rv = p.get("review") or {}
-        for src, lst in (("first_visit", rv.get("issues") or []), ("later", p.get("later_issues") or [])):
-            for i in lst:
-                if isinstance(i, dict) and i.get("title"):
-                    out.append({**i, "page": rv.get("page_name") or p.get("title"), "page_key": key, "source": src})
-    return out
-
-
 def build_summary(run_dir, persona, session, assessment, debrief, fidelity, llm, seconds, model) -> dict:
-    issues = all_issues(session["pages"])
+    issues = flatten_issues(session["pages"])
+    unique = cluster_issues(issues)
+    checks = [i.get("evidence_check") or {} for i in issues]
+    quoted = [c for c in checks if c.get("quotes")]
     sev = [int(i.get("severity", 0) or 0) for i in issues if str(i.get("severity", "")).strip().isdigit()]
     valences = []
     for line in (Path(run_dir) / "trace.jsonl").read_text().splitlines() if (Path(run_dir) / "trace.jsonl").exists() else []:
@@ -241,6 +234,8 @@ def build_summary(run_dir, persona, session, assessment, debrief, fidelity, llm,
         "steps": session["steps"],
         "pages_reviewed": len(session["pages"]),
         "issues": len(issues),
+        "unique_issues": len(unique),
+        "evidence_quotes_verified": round(sum(1 for c in quoted if c.get("verified")) / len(quoted), 3) if quoted else None,
         "issues_by_severity": {str(s): sev.count(s) for s in range(5)},
         "issues_by_code": _count([str(i.get("code", "?")).split()[0].upper() for i in issues]),
         "reached_output": bool(session["captures"]),

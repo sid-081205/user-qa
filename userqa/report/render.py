@@ -10,6 +10,7 @@ import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from ..agent.prompts import HEURISTICS
+from ..evaluation.issues import cluster_issues, flatten_issues
 from ..evaluation.questionnaires import INTERVIEW, SUS_ITEMS, UEQS_ITEMS
 
 TEMPLATES = Path(__file__).parent / "templates"
@@ -96,8 +97,7 @@ def render_report(run_dir: Path) -> None:
         rv = p.get("review") or {}
         issues = [i for i in (rv.get("issues") or []) if isinstance(i, dict)] + [dict(i, later=True) for i in (p.get("later_issues") or []) if isinstance(i, dict)]
         p["issues_sorted"] = sorted(issues, key=lambda i: -_sev(i))
-    all_issues = [dict(i, page=(p.get("review") or {}).get("page_name") or p.get("title")) for p in pages for i in p["issues_sorted"]]
-    top_issues = sorted(all_issues, key=lambda i: -_sev(i))[:12]
+    top_issues = cluster_issues(flatten_issues(session.get("pages") or {}))[:15]
     images = {im["ref"]: im for im in assessment.get("images", [])}
     sus_items = []
     for x in debrief.get("sus", []) if isinstance(debrief.get("sus"), list) else []:
@@ -160,7 +160,8 @@ def render_markdown(c: dict) -> str:
     L.append("| Sev | Code | Page | Issue | Evidence | Suggested fix |")
     L.append("|---|---|---|---|---|---|")
     for i in c["top_issues"]:
-        L.append(f"| {i.get('severity')} | {_md(i.get('code'))} | {_md(i.get('page'))} | {_md(i.get('title'))} | {_md(i.get('evidence'))[:160]} | {_md(i.get('fix'))[:200]} |")
+        where = ", ".join(i.get("pages") or [i.get("page") or ""]) + (f" (x{i['occurrences']})" if i.get("occurrences", 1) > 1 else "")
+        L.append(f"| {i.get('max_severity', i.get('severity'))} | {_md(i.get('code'))} | {_md(where)} | {_md(i.get('title'))} | {_md(i.get('evidence'))[:160]} | {_md(i.get('fix'))[:200]} |")
     L.append("")
     L.append("## Page-by-page")
     for pg in c["pages"]:
