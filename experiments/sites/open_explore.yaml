@@ -1,0 +1,10 @@
+name: open-explore
+url: https://ourlegacy.family/
+site_hint: an unknown website
+goal: |
+  You have just landed on this website and know nothing about it. Work out what it is, who it is
+  for and whether it is for you. Explore it the way you naturally would (without creating an
+  account), then say what you think. Do not pay money or give personal details.
+allowed_domains: [ourlegacy.family]
+max_steps: 10
+max_llm_calls: 16
