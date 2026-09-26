@@ -8,6 +8,7 @@ so simulated users *cannot* see what their real counterparts could not.
 """
 from __future__ import annotations
 
+import base64
 import hashlib
 import io
 import json
@@ -42,6 +43,10 @@ DEVICE_PROFILES: dict[str, dict] = {
     # 200 % browser zoom on a 1280x800 screen == 640x400 CSS px rendered at 2x.
     "zoom200": dict(viewport={"width": 640, "height": 400}, device_scale_factor=2),
 }
+
+IMAGE_EXT = (".png", ".jpg", ".jpeg", ".webp", ".gif")
+VIDEO_EXT = (".mp4", ".webm", ".mov", ".m4v")
+MAX_FILE_PAGES = 48
 
 CHALLENGE_HOSTS = ("challenges.cloudflare.com", "hcaptcha.com", "recaptcha", "google.com/recaptcha")
 AUTH_HOSTS = ("clerk.", "accounts.google.com", "auth0.com", "stripe.com", "challenges.cloudflare.com")
@@ -202,6 +207,11 @@ class BrowserEnv:
         self.page_loads: list[dict] = []
         self._last_obs: Optional[Observation] = None
         self._capture_count = 0
+        self._downloads: list = []
+        self._pdf_tabs: list[tuple[Page, Optional[Page]]] = []
+        self._files_seen: set[str] = set()
+        self._srcs_seen: set[str] = set()
+        self.files: list[dict] = []
 
     # --------------------------------------------------------------- setup
     def start(self) -> None:
@@ -240,16 +250,27 @@ class BrowserEnv:
         page.on("dialog", self._on_dialog)
         page.on("response", self._on_response)
         page.on("console", lambda m: self.console_errors.append(m.text[:300]) if m.type == "error" else None)
-        page.on("download", lambda d: self._events.append(f"A file download started: {d.suggested_filename}"))
+        page.on("download", lambda d: self._downloads.append(d))
 
     def _on_new_page(self, page: Page) -> None:
+        opener = self.page
         self._wire(page)
         self.page = page
         try:
             page.wait_for_load_state("domcontentloaded", timeout=15000)
         except PWError:
             pass
-        self._events.append(f"A new browser tab opened ({page.url}); you are now looking at it.")
+        if self._is_pdf(page):
+            self._pdf_tabs.append((page, opener))
+        else:
+            self._events.append(f"A new browser tab opened ({page.url}); you are now looking at it.")
+
+    @staticmethod
+    def _is_pdf(page: Page) -> bool:
+        try:
+            return urlparse(page.url).path.lower().endswith(".pdf") or page.evaluate("document.contentType") == "application/pdf"
+        except PWError:
+            return False
 
     def _on_dialog(self, dialog) -> None:
         self._events.append(f'A browser pop-up ({dialog.type}) said: "{dialog.message[:300]}" (it was accepted)')
@@ -777,6 +798,164 @@ class BrowserEnv:
         cap = {"label": label, "url": self.page.url, "text": text[:30000], "views": shots, "images": imgs, "dir": str(cdir.relative_to(self.run_dir))}
         (cdir / "capture.json").write_text(json.dumps({k: v for k, v in cap.items() if k != "text"}, indent=2))
         return cap
+
+    # --------------------------------------------------------- file outputs
+    def collect_file_outputs(self) -> list[dict]:
+        """Turn files the site produced (downloads, PDFs opened in a tab or embedded in the page) into captures.
+
+        A person would open such a file and look through it, so each page / frame becomes a capture that
+        the output assessment reviews like any on-page output.
+        """
+        caps: list[dict] = []
+        while self._downloads:
+            d = self._downloads.pop(0)
+            name = re.sub(r"[^\w.\-]+", "_", d.suggested_filename or "download")
+            path = self._file_path(name)
+            try:
+                d.save_as(str(path))
+            except PWError as e:
+                self._events.append(f'The download "{name}" failed ({str(e).splitlines()[0][:80]}).')
+                continue
+            caps += self._file_captures(path, origin=d.url, how="downloaded")
+        while self._pdf_tabs:
+            tab, opener = self._pdf_tabs.pop(0)
+            data = self._fetch_bytes(tab.url, [opener, tab])
+            if data and data[:4] == b"%PDF":
+                path = self._file_path("document.pdf" if tab.url.startswith("blob:") else (Path(urlparse(tab.url).path).name or "document.pdf"), ".pdf")
+                path.write_bytes(data)
+                caps += self._file_captures(path, origin=tab.url, how="opened in a new tab")
+            if opener is not None and not opener.is_closed():
+                try:
+                    tab.close()
+                except PWError:
+                    pass
+                self.page = opener
+                self._events.append("You finished reading the PDF and went back to the website's tab.")
+        try:
+            srcs = self.page.evaluate(
+                "Array.from(document.querySelectorAll('embed,object,iframe')).map(e => e.src || e.data || '')"
+                ".filter(u => /\\.pdf($|[?#])/i.test(u) || /^blob:/.test(u))"
+            )
+        except PWError:
+            srcs = []
+        for src in srcs:
+            if src in self._srcs_seen:
+                continue
+            self._srcs_seen.add(src)
+            data = self._fetch_bytes(src, [self.page])
+            if data and data[:4] == b"%PDF":
+                path = self._file_path(Path(urlparse(src).path).name or "embedded.pdf", ".pdf")
+                path.write_bytes(data)
+                caps += self._file_captures(path, origin=src, how="shown inside the page")
+        return caps
+
+    def _file_path(self, name: str, ext: str = "") -> Path:
+        d = self.run_dir / "artifacts" / "files"
+        d.mkdir(parents=True, exist_ok=True)
+        name = name if not ext or name.lower().endswith(ext) else name + ext
+        n = 1 + sum(1 for _ in d.iterdir())
+        return d / f"{n:02d}_{name}"
+
+    def _fetch_bytes(self, url: str, pages: list) -> Optional[bytes]:
+        if not url.startswith(("blob:", "data:")):
+            try:
+                r = self.context.request.get(url, timeout=60000)
+                if r.ok:
+                    return r.body()
+            except PWError:
+                pass
+        for pg in pages:  # blob URLs only resolve inside the page that created them
+            if pg is None or pg.is_closed():
+                continue
+            try:
+                b64 = pg.evaluate(
+                    """async u => { const b = await (await fetch(u)).blob();
+                        return await new Promise(res => { const r = new FileReader(); r.onload = () => res(String(r.result).split(',')[1]); r.readAsDataURL(b); }); }""",
+                    url,
+                )
+                return base64.b64decode(b64)
+            except PWError:
+                continue
+        return None
+
+    def _file_captures(self, path: Path, origin: str = "", how: str = "downloaded") -> list[dict]:
+        data = path.read_bytes()
+        digest = hashlib.sha1(data).hexdigest()
+        if digest in self._files_seen:
+            return []
+        self._files_seen.add(digest)
+        suffix = path.suffix.lower()
+        pages: list[tuple[str, bytes]] = []  # (text, jpeg)
+        kind = "file"
+        try:
+            if data[:4] == b"%PDF":
+                kind = "PDF"
+                import pymupdf
+
+                with pymupdf.open(path) as doc:
+                    total = doc.page_count
+                    for pg in list(doc)[:MAX_FILE_PAGES]:
+                        pix = pg.get_pixmap(matrix=pymupdf.Matrix(1100 / max(pg.rect.width, 1), 1100 / max(pg.rect.width, 1)))
+                        buf = io.BytesIO()
+                        Image.frombytes("RGB", (pix.width, pix.height), pix.samples).save(buf, "JPEG", quality=70)
+                        pages.append((pg.get_text(), buf.getvalue()))
+            elif suffix in IMAGE_EXT:
+                kind, total = "image", 1
+                buf = io.BytesIO()
+                im = Image.open(path).convert("RGB")
+                im.thumbnail((1400, 1400))
+                im.save(buf, "JPEG", quality=75)
+                pages.append(("", buf.getvalue()))
+            elif suffix in VIDEO_EXT:
+                kind = "video"
+                pages = self._video_frames(path)
+                total = len(pages)
+        except Exception as e:  # a broken file is itself a finding, but must not end the session
+            self._events.append(f'You tried to open "{path.name[3:]}" but it would not open ({type(e).__name__}).')
+            return []
+        rec = {"file": str(path.relative_to(self.run_dir)), "kind": kind, "origin": origin[:200], "how": how, "pages": len(pages), "bytes": len(data)}
+        self.files.append(rec)
+        if not pages:
+            self._events.append(f'The site gave you a file "{path.name[3:]}" ({kind}, {len(data) // 1024} KB) that you cannot open here.')
+            return []
+        caps = []
+        for i, (text, jpg) in enumerate(pages):
+            self._capture_count += 1
+            cdir = self.run_dir / "artifacts" / f"capture_{self._capture_count:02d}"
+            cdir.mkdir(parents=True, exist_ok=True)
+            (cdir / "text.txt").write_text(text)
+            (cdir / "view_00.jpg").write_bytes(jpg)
+            w, h = Image.open(io.BytesIO(jpg)).size
+            rel = str((cdir / "view_00.jpg").relative_to(self.run_dir))
+            unit = "frame" if kind == "video" else "page"
+            cap = {"label": f"{path.name[3:]} {unit} {i + 1} of {total}", "url": f"file://{path.name}/{unit}-{i + 1}", "text": text,
+                   "views": [rel], "images": [{"path": rel, "alt": f"{kind} {unit} {i + 1}", "w": w, "h": h}],
+                   "dir": str(cdir.relative_to(self.run_dir)), "source": "file", "dedupe_key": f"{digest}:{i}"}
+            (cdir / "capture.json").write_text(json.dumps({k: v for k, v in cap.items() if k != "text"}, indent=2))
+            caps.append(cap)
+        first = re.sub(r"\s+", " ", pages[0][0]).strip()[:160]
+        self._events.append(
+            f'The site gave you a {kind} "{path.name[3:]}" ({how}); you opened it and looked through all {len(pages)} '
+            f"{'frames' if kind == 'video' else 'pages'}" + (f'. It begins: "{first}"' if first else ".")
+        )
+        return caps
+
+    def _video_frames(self, path: Path, n: int = 8) -> list[tuple[str, bytes]]:
+        import subprocess
+
+        try:
+            dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                                       capture_output=True, text=True, timeout=30).stdout.strip() or 0)
+        except (OSError, ValueError, subprocess.SubprocessError):
+            dur = 0.0
+        frames = []
+        for i in range(n if dur > 0 else 1):
+            t = dur * (i + 0.5) / n if dur > 0 else 0
+            out = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t:.2f}", "-i", str(path), "-frames:v", "1", "-vf", "scale=1000:-2",
+                                  "-f", "image2", "-c:v", "mjpeg", "pipe:1"], capture_output=True, timeout=60)
+            if out.stdout:
+                frames.append((f"(video frame at {t:.0f} s of {dur:.0f} s; the soundtrack/narration is not assessed)", out.stdout))
+        return frames
 
     def _toggle_overlays(self, hide: bool) -> None:
         """Hide fixed/sticky bars so element screenshots of generated images are not occluded."""

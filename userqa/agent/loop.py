@@ -228,6 +228,7 @@ class PersonaAgent:
                 res = self.env.execute(a)
                 results.append(res)
                 self._record_input(a, res)
+                self._collect_files()
                 if kind in ("wait", "wait_for_change") and res.data.get("waited_s"):
                     self.result.waits.append({"step": step, "seconds": res.data["waited_s"], "timeout": res.data.get("timeout", False), "url": obs.url})
                 if kind == "read_inbox" and res.data.get("code"):
@@ -282,8 +283,16 @@ class PersonaAgent:
             self.result.status = "max_steps"
         if self.result.status == "running":
             self.result.status = "max_steps"
+        self._collect_files()
         self.result.ended = time.time()
         return self.result
+
+    def _collect_files(self) -> None:
+        try:
+            for cap in self.env.collect_file_outputs():
+                self._register_capture(cap)
+        except Exception as e:  # file handling must never kill a session
+            self.log(f"  file capture failed: {e}")
 
     # --------------------------------------------------------- bookkeeping
     def _clean_issues(self, issues: Any, obs: Observation) -> list[dict]:
@@ -383,7 +392,7 @@ class PersonaAgent:
         self._register_capture(cap)
 
     def _register_capture(self, cap: dict) -> None:
-        h = hashlib.md5(cap["text"].encode()).hexdigest()
+        h = hashlib.md5((cap.get("dedupe_key") or cap["text"]).encode()).hexdigest()
         if h in self._capture_hashes:
             return
         self._capture_hashes.add(h)
