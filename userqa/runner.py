@@ -107,6 +107,8 @@ def run_session(
         assets=assets,
         inbox=inbox,
         locale=persona.locale,
+        auto_captcha=bool(site.get("auto_captcha", True)),
+        timezone_id=site.get("timezone_id"),
     )
     cfg = AgentConfig(
         start_url=site["url"],
@@ -148,7 +150,8 @@ def run_session(
                 env.save_storage_state(storage_path)
         except Exception:
             pass
-        env_stats = {"http_errors": env.http_errors[-50:], "console_errors": env.console_errors[-30:], "page_loads": env.page_loads}
+        env_stats = {"http_errors": env.http_errors[-50:], "console_errors": env.console_errors[-30:], "page_loads": env.page_loads,
+                     "captcha": env.challenge_log}
         env.close()
     session_json = {
         "status": session.status,

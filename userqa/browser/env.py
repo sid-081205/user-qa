@@ -11,6 +11,7 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import os
 import random
 import re
 import time
@@ -170,6 +171,8 @@ class BrowserEnv:
         locale: str = "en-GB",
         action_delay: tuple[float, float] = (0.4, 1.0),
         record_video: bool = False,
+        auto_captcha: bool = True,
+        timezone_id: Optional[str] = None,
     ):
         self.run_dir = Path(run_dir)
         (self.run_dir / "screenshots").mkdir(parents=True, exist_ok=True)
@@ -184,6 +187,11 @@ class BrowserEnv:
         self.locale = locale
         self.action_delay = action_delay
         self.record_video = record_video
+        self.auto_captcha = auto_captcha
+        self.timezone_id = timezone_id
+        self.challenge_log: list[dict] = []
+        self._challenge_clicks: dict[str, int] = {}
+        self._frame_ids: dict[str, int] = {}
         self._pw = None
         self.browser = None
         self.context = None
@@ -199,14 +207,25 @@ class BrowserEnv:
     def start(self) -> None:
         self._pw = sync_playwright().start()
         args = ["--disable-blink-features=AutomationControlled", "--no-first-run", "--no-default-browser-check"]
+        launch_env = None
+        if self.locale:
+            # Set the language on the browser itself, not via CDP locale emulation: emulation does not
+            # reach web workers, and a window/worker navigator.language mismatch makes CAPTCHAs
+            # (e.g. Cloudflare Turnstile) reject the browser.
+            base = self.locale.split("-")[0]
+            args += [f"--lang={self.locale}", f"--accept-lang={self.locale},{base}"]
+            launch_env = {**os.environ, "LANGUAGE": f"{self.locale.replace('-', '_')}:{base}", "LANG": f"{self.locale.replace('-', '_')}.UTF-8"}
         self.browser = self._pw.chromium.launch(
             headless=self.headless,
             executable_path=self.executable_path,
             args=args,
             ignore_default_args=["--enable-automation"],
+            env=launch_env,
         )
         prof = dict(DEVICE_PROFILES[self.device])
-        ctx_kw: dict[str, Any] = dict(prof, locale=self.locale, timezone_id="Europe/London", accept_downloads=True)
+        ctx_kw: dict[str, Any] = dict(prof, accept_downloads=True)
+        if self.timezone_id:
+            ctx_kw["timezone_id"] = self.timezone_id
         if self.storage_state and Path(self.storage_state).exists():
             ctx_kw["storage_state"] = str(self.storage_state)
         if self.record_video:
@@ -309,26 +328,87 @@ class BrowserEnv:
             host = urlparse(f.url).hostname or ""
             if not host:
                 continue
+            challenge = any(h in f.url for h in CHALLENGE_HOSTS)
             try:
                 el = f.frame_element()
                 box = el.bounding_box()
-                uqa = el.get_attribute("data-uqa-id")
+                uqa = None if challenge else el.get_attribute("data-uqa-id")
             except PWError:
                 box, uqa = None, None
             if not box or box["width"] < 20:
                 continue
             txt = ""
-            try:
-                txt = f.evaluate("document.body ? document.body.innerText.slice(0, 200) : ''")
-            except PWError:
-                pass
-            out.append({"host": host, "box": box, "id": int(uqa) if uqa else None, "text": re.sub(r"\s+", " ", txt).strip(),
-                        "challenge": any(h in f.url for h in CHALLENGE_HOSTS)})
+            if not challenge:  # never run script inside CAPTCHA frames: challenge scripts detect it and fail
+                try:
+                    txt = f.evaluate("document.body ? document.body.innerText.slice(0, 200) : ''")
+                except PWError:
+                    pass
+            fid = self._frame_ids.get(f.url) if challenge else (int(uqa) if uqa else None)
+            out.append({"host": host, "url": f.url, "box": box, "id": fid, "text": re.sub(r"\s+", " ", txt).strip(),
+                        "challenge": challenge, "handle": el})
         return out
+
+    def _main_signature(self) -> str:
+        try:
+            t = self.page.evaluate("document.body ? document.body.innerText : ''")
+        except PWError:
+            t = ""
+        return hashlib.md5((self.page.url + t).encode()).hexdigest()
+
+    def _challenge_token(self) -> bool:
+        try:
+            return bool(self.page.evaluate("() => { const i = document.querySelector('[name=cf-turnstile-response],[name=g-recaptcha-response],[name=h-captcha-response]'); return !!(i && i.value); }"))
+        except PWError:
+            return False
+
+    def _handle_challenges(self, max_clicks: int = 3, resolve_s: float = 12.0) -> None:
+        """Tick 'verify you are human' widgets straight away, as a person would.
+
+        The widget can expire while the model is thinking, so ticking it is treated as a reflex of the
+        environment rather than a decision of the agent; every click and its outcome are logged. The
+        widget's own content is unreadable (closed shadow DOM), so success is judged from the host page:
+        the frame goes away, the page moves on, or a challenge token appears.
+        """
+        frames = [f for f in self._frames_info() if f["challenge"]]
+        if not frames or self._challenge_token():
+            return
+        fr = frames[0]
+        n = self._challenge_clicks.get(fr["url"], 0)
+        if n >= max_clicks:
+            return
+        before = self._main_signature()
+        time.sleep(random.uniform(0.8, 1.6) if n == 0 else 0.3)
+        b = fr["box"]
+        self._human_move_click(b["x"] + 30, b["y"] + b["height"] / 2)
+        self._challenge_clicks[fr["url"]] = n + 1
+        self._events.append('A "Verify you are human" security check appeared and you ticked its box.')
+        t0 = time.time()
+        while time.time() - t0 < resolve_s:
+            time.sleep(1.0)
+            try:
+                body = self.page.evaluate("document.body ? document.body.innerText : ''").lower()
+            except PWError:
+                body = ""
+            failed = re.search(r"captcha (failed|error)|verification failed|security check failed|unsupported browser", body)
+            if failed:
+                self.challenge_log.append({"t": round(t0, 1), "result": "failed", "click": n + 1, "message": failed.group(0)})
+                return
+            gone = not any(f["challenge"] for f in self._frames_info())
+            if self._challenge_token() or (gone and self._main_signature() != before):
+                self.challenge_log.append({"t": round(t0, 1), "result": "passed", "click": n + 1, "seconds": round(time.time() - t0, 1)})
+                self._events.append("The security check accepted you.")
+                self._settle()
+                return
+        self.challenge_log.append({"t": round(t0, 1), "result": "unresolved", "click": n + 1, "seconds": resolve_s})
 
     # ---------------------------------------------------------- observing
     def observe(self, attention: str = "full", max_text: int = 9000, with_screenshot: bool = True, include_full_text: bool = True) -> Observation:
         self._settle(quiet_ms=300, max_ms=3000)
+        if self.auto_captcha:
+            try:
+                self._handle_challenges()
+            except PWError:
+                pass
         raw = None
         for _ in range(3):
             try:
@@ -341,9 +421,30 @@ class BrowserEnv:
             raw = {"url": self.page.url, "title": "", "text": "(the page could not be read)", "elements": [], "images": [],
                    "headings": [], "dialogs": [], "a11y": {}, "viewport": {}}
         frames = self._frames_info()
+        known = {e["id"] for e in raw.get("elements", [])}
+        for fr in frames:
+            if fr["id"] is None or (fr["challenge"] and fr["id"] not in known):
+                # Frames inside closed shadow roots (e.g. CAPTCHA widgets) are invisible to observe.js.
+                # CAPTCHA frames are never tagged in the DOM; their ids live only on this side.
+                try:
+                    if fr["id"] is None:
+                        fr["id"] = int(self.page.evaluate("() => window.__uqaNext++"))
+                        if fr["challenge"]:
+                            self._frame_ids[fr["url"]] = fr["id"]
+                        elif fr.get("handle") is not None:
+                            fr["handle"].evaluate("(e, id) => e.setAttribute('data-uqa-id', String(id))", fr["id"])
+                    raw.setdefault("elements", []).append(
+                        {"id": fr["id"], "role": "iframe", "tag": "iframe", "name": "security check" if fr["challenge"] else "embedded frame",
+                         "src": fr["host"], "frame_url": fr["url"],
+                         "bbox": [round(fr["box"]["x"]), round(fr["box"]["y"]), round(fr["box"]["width"]), round(fr["box"]["height"])]}
+                    )
+                except PWError:
+                    pass
         text = raw["text"]
         for fr in frames:
             label = "security check (CAPTCHA) widget" if fr["challenge"] else "embedded frame"
+            if fr["challenge"] and self._challenge_clicks.get(fr["url"]):
+                label += " (you have already ticked it)"
             ref = f"[{fr['id']}]" if fr["id"] else "(no id)"
             text += f"\n{ref} iframe {label} from {fr['host']}" + (f': "{fr["text"][:120]}"' if fr["text"] else "")
         shot = None
