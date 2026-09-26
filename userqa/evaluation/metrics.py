@@ -143,9 +143,11 @@ def truncated_ending(text: str) -> bool:
 
 def name_fidelity(output_text: str, expected_names: Iterable[str]) -> dict:
     """For each expected name: exact mentions and near-miss variants (possible misspellings)."""
-    caps = [w for w in _WORD.findall(output_text) if w[0].isupper() and w not in STOP_CAPS]
+    expected_names = [n for n in expected_names if n]
+    known = {t.lower() for n in expected_names for t in re.findall(r"[A-Za-z]+", n)}
+    caps = [w for w in _WORD.findall(output_text) if w[0].isupper() and w not in STOP_CAPS and w.lower() not in known]
     res = {}
-    for name in {n.strip() for n in expected_names if n and len(n.strip()) >= 2}:
+    for name in {n.strip() for n in expected_names if len(n.strip()) >= 2}:
         first = name.split()[-1] if name.split()[0].lower() in {"grandma", "grandpa", "uncle", "aunt", "mama", "dad"} else name.split()[0]
         exact = len(re.findall(rf"\b{re.escape(first)}\b", output_text))
         variants = sorted(
