@@ -21,7 +21,8 @@ from .evaluation.questionnaires import journey_digest, run_debrief
 from .llm import DEFAULT_MODEL, BudgetExceeded, LLMClient
 from .personas.schema import Persona, load_persona
 
-ROOT = Path(__file__).resolve().parent.parent
+# Experiment suites run a frozen copy of the package; USERQA_ROOT keeps .env, sites and secrets in the workspace.
+ROOT = Path(os.environ.get("USERQA_ROOT") or Path(__file__).resolve().parent.parent)
 
 
 def load_env_file(path: Path = ROOT / ".env") -> None:
@@ -151,7 +152,7 @@ def run_session(
         except Exception:
             pass
         env_stats = {"http_errors": env.http_errors[-50:], "console_errors": env.console_errors[-30:], "page_loads": env.page_loads,
-                     "captcha": env.challenge_log}
+                     "captcha": env.challenge_log, "files": env.files}
         env.close()
     session_json = {
         "status": session.status,

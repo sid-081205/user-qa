@@ -6,12 +6,17 @@
 Each session is a separate ``python -m userqa run`` process (own browser, own LLM budget), so one
 failure never takes down the grid. ``manifest.json`` in the suite directory records every session
 and is rewritten after each one finishes; ``--resume`` skips sessions that already succeeded.
+
+Sessions run from a frozen copy of the package (``<suite>/_code``, taken when the suite is first
+started or with ``--refresh-code``), so editing the code while a suite runs cannot change it; the
+git revision and uncommitted diff at snapshot time are recorded in the manifest.
 """
 from __future__ import annotations
 
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
 import threading
@@ -65,6 +70,7 @@ def main() -> int:
     ap.add_argument("--temperature", type=float)
     ap.add_argument("--no-fidelity", action="store_true")
     ap.add_argument("--resume", action="store_true")
+    ap.add_argument("--refresh-code", action="store_true", help="re-snapshot the package before running")
     ap.add_argument("--stagger", type=float, default=20.0, help="seconds between session launches")
     a = ap.parse_args()
     sys.stdout.reconfigure(line_buffering=True)
@@ -76,7 +82,16 @@ def main() -> int:
     (suite_dir / "logs").mkdir(parents=True, exist_ok=True)
     manifest_path = suite_dir / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {"sessions": []}
-    manifest["suite"] = {k: v for k, v in vars(a).items() if k != "resume"} | {"site_url": site["url"]}
+    manifest["suite"] = {k: v for k, v in vars(a).items() if k not in ("resume", "refresh_code")} | {"site_url": site["url"]}
+    code_dir = suite_dir / "_code"
+    if a.refresh_code or not (code_dir / "userqa").exists():
+        shutil.rmtree(code_dir, ignore_errors=True)
+        shutil.copytree(ROOT / "userqa", code_dir / "userqa", ignore=shutil.ignore_patterns("__pycache__"))
+        git = lambda *args: subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True).stdout.strip()  # noqa: E731
+        manifest.setdefault("code_snapshots", []).append(
+            {"taken": time.strftime("%Y-%m-%dT%H:%M:%S"), "git_head": git("rev-parse", "HEAD"), "dirty": git("status", "--porcelain", "userqa"),
+             "diff": git("diff", "HEAD", "--", "userqa")[:20000]}
+        )
     done = {(s["persona"], s["rep"]) for s in manifest["sessions"] if s.get("returncode") == 0 and a.resume}
     manifest["sessions"] = [s for s in manifest["sessions"] if (s["persona"], s["rep"]) in done]
     lock = threading.Lock()
@@ -107,7 +122,8 @@ def main() -> int:
         log = suite_dir / "logs" / f"{persona}_r{rep}.log"
         t0 = time.time()
         with log.open("w") as fh:
-            rc = subprocess.call(cmd, cwd=ROOT, stdout=fh, stderr=subprocess.STDOUT, env={**os.environ, "PYTHONUNBUFFERED": "1"})
+            rc = subprocess.call(cmd, cwd=code_dir, stdout=fh, stderr=subprocess.STDOUT,
+                                 env={**os.environ, "PYTHONUNBUFFERED": "1", "USERQA_ROOT": str(ROOT)})
         lines = [ln.strip() for ln in log.read_text().splitlines() if ln.strip()]
         run_dir = next((ln for ln in reversed(lines) if Path(ln).is_dir() and str(suite_dir) in ln), None)
         rec = {"persona": persona, "rep": rep, "returncode": rc, "seconds": round(time.time() - t0, 1),
