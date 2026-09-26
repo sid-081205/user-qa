@@ -119,520 +119,509 @@
 - **Positives:** The regenerated PDF opened successfully.; The title is now “The Blue Kite.”; The credit correctly says “told by Margaret Ellison” and no longer attaches Oliver's age to me.; The page indicator confirms that the complete preview has 32 pages.
 
 ## Generated output assessment
-*Artifact:* Website-generated personalised children's storybook and 32-page PDF
+*Artifact:* Personalized illustrated digital storybook and printable keepsake preview
 
-> This does not yet feel like my family story, and I would not recognise the people in it. The pictures are pretty and the blue kite is clear, but the invented Grandpa and the repeated changes from little Margaret to a boy undermine the whole keepsake. I would want the relationships, title, characters, and final PDF corrected before considering it for Oliver.
+> The pictures are pretty and the blue kite, Welsh hill and Oliver's details are warm, but I cannot accept this as our family book while my father is turned into Grandpa and I am replaced by an elderly man. The loving words and gentle story are not enough to overcome such a central mistake, and I would need every relevant scene and relationship checked and corrected before trusting it.
 
 | Criterion | Score (1-5) | Evidence |
 |---|---|---|
-| fidelity | 1 | The requested title, author details, family relationships, and character appearances are repeatedly changed or contradicted. The book invents Grandpa, changes the title to "Grandpa's Blue Kite," and often shows an older  |
-| coherence | 1 | The story has a beginning, middle, and ending, but the relationships shift from Margaret and her father to an invented Grandpa and Oliver. The heading disagrees with the title field, the teller age changes from 5 to Opti |
-| age fit | 3 | The simple sentences and warm kite theme are broadly suitable for a five-year-old, but the measured reading level is grade 4.3, with longer and more literary phrases such as "the best feeling in the whole world" and "mad |
-| language | 2 | Many individual sentences are grammatically clear, but the text contains serious factual and relationship errors such as "Grandpa's daddy" and "Grandpa helped Oliver." There is a blank cast page, a blank page, inconsiste |
-| text image fit | 1 | The kite, farmhouse, Welsh hill, and kite-flying activity are generally represented well, but many pictures contradict the intended identities and relationships. Images show a generic child, a boy, or an invented grandfa |
-| character consistency | 1 | The requested child is repeatedly depicted without short silver hair, round glasses, or a blue cardigan, and sometimes changes from a girl to a boy. The father changes age and appearance, while the invented grandfather b |
-| visual quality | 3 | The watercolour-style artwork is generally attractive and the blue kite is clear, but the deliverable includes preview watermarks, tiny thumbnails, blank or placeholder-like pages, and no convenient full-size page-by-pag |
-| emotional resonance | 1 | The kite story could be a warm and meaningful keepsake, but the invented grandfather changes the central relationship and prevents Margaret from recognising her own memory. The later scenes do not show Margaret sharing t |
+| fidelity | 1 | The book preserves many supplied details, including the blue kite, old blue shirt, Welsh farmhouse, windy hill, Oliver's curls, freckles and green wellies, the dedication, and the childhood kite-flying memory. However, i |
+| coherence | 1 | The story has a recognizable beginning, middle and end, but the family relationships change abruptly. The father becomes "Grandpa's daddy," little Margaret becomes a boy, and Oliver is presented as the grandson of an inv |
+| age fit | 3 | The sentences are mostly short, gentle and emotionally suitable for a five-year-old, with no frightening or inappropriate content. The automatic reading level is grade 4.3 despite the requested reading age of five, so so |
+| language | 2 | The prose is generally clear and readable, and the dedication is warmly expressed. There are important presentation and clarity problems: the heading does not match the entered title, the $4.00 charge is unexplained, the |
+| text image fit | 2 | Many watercolor images beautifully establish the blue kite, Welsh hill, farmhouse and kite flight. Nevertheless, many pictures contradict their text: the text calls the adult Margaret's father while the image shows an el |
+| character consistency | 1 | Oliver is reasonably consistent in the later scenes, with brown curly hair, freckles and green wellies. The other characters are not: the child changes from a girl to a boy and loses the specified short silver hair, roun |
+| visual quality | 3 | The watercolor illustrations are attractive, warm and generally clear, especially the countryside, farmhouse and kite scenes. The finished book feels unfinished because of the blank cover and duplicate title pages, empty |
+| emotional resonance | 2 | The book has real emotional potential because it uses Margaret's family memory, Oliver's appearance, the Welsh setting, the blue kite and the loving dedication. At present, however, the invented grandfather and the repea |
 
-- **used correctly:** The title field was entered as "The Blue Kite."; The author name Margaret Ellison was entered.; Oliver's name and ownership were included.; The dedication names Oliver and Grandma Maggie.; The old blue shirt, blue kite, farmhouse, Welsh setting, windy hill, and kite-flying activity were retained.; The opening supplied sentence was reproduced correctly.; The warm watercolour-style visual direction was broadly followed.
-- **missing:** A faithful depiction of little Margaret with short silver hair, round glasses, and a blue cardigan.; A consistent older Welsh father in the remembered scenes.; A present-day Margaret sharing the kite experience with Oliver.; A correct cast of characters.; A reliable full-size, page-by-page preview before ordering.
-- **changed:** The displayed title was changed to "Grandpa's Blue Kite."; The teller age changed from 5 to Optional.; The requested father-and-daughter memory was changed into a grandfather-and-grandson story.; The child was sometimes changed from a girl to a boy.; The supplied Welsh context was inconsistently replaced by generic or contradictory family labels.; The date September 2026 was added without being supplied.
-- **invented:** Grandpa.; Grandpa's daddy.; A grandfather-and-Oliver relationship.; An unspecified story date of September 2026.; A listening code page and related delivery information inside the book.
+- **used correctly:** The blue kite made from an old blue shirt; Margaret's father making the kite and teaching her to fly it; The windy hill behind the old farmhouse in Wales; Oliver's brown curly hair, freckles and green wellies; The intended present-day relationship in which Oliver is the hero and Margaret helps him fly the kite; The title input "The Blue Kite" in the title field; The author name Margaret Ellison; The dedication to Oliver; The ownership name Oliver Ellison; The watercolor style and reading-age request
+- **missing:** A consistent visual identity for little Margaret with short silver hair, round glasses and a blue cardigan; A consistent present-day depiction of Margaret as Oliver's grandmother; A clear cover showing Oliver and Margaret with the kite; A real cast-of-characters page; A clear explanation of what the $4.00 charge includes; A clear explanation of the hardcover price and its current availability; A full-size way to inspect and correct every scene before choosing the final PDF
+- **changed:** The entered title "The Blue Kite" is replaced by the displayed heading "Grandpa's Blue Kite"; Margaret's father is changed into an invented Grandpa or "Grandpa's daddy"; Little Margaret is changed into a generic brown-haired girl and later a boy; Margaret is replaced in the present-day scenes by an elderly silver-haired man; Oliver is made the grandson of the invented Grandpa rather than Margaret's grandson; The original "today" visit is changed into an invented "next day" trip back to Wales; The joint promise between Margaret and Oliver is weakened into an unnamed "they"
+- **invented:** An invented Grandpa character; The relationship "Grandpa's daddy"; A story in which Oliver is Grandpa's grandson; An automatic story date that was not supplied; A story in which the present-day adult is an elderly man rather than Margaret
 
 ### Part by part
-#### Storybook listing and cover preview
+#### Storybook cover/listing
 ![I1](artifacts/capture_01/img_00.jpg)
-> OurLegacy My Storybooks $4.00 My Storybooks 1 storybook Create New Grandpa's Blue Kite Watercolor 10 scenes
-- *Picture:* A warm, softly coloured watercolor-style illustration inside a farmhouse kitchen. A brown-haired boy in a white shirt helps a brown-haired adult man attach or adjust a large blue kite. Blue pieces of cloth and lengths of string lie across the wooden floor. The man does not clearly appear to be an older Welshman, and the child is not a little Margaret with short silver hair, round glasses, and a blue cardigan. No printed title is visible on the pictured cover itself.
-- *Reaction:* The farmhouse colours and blue kite are appealing, but this is not recognisably my family. Calling the book “Grandpa's Blue Kite” and showing a man with a boy instead of my father with little Margaret undermines the whole keepsake.
-  - [fidelity, sev 4] The requested title was “The Blue Kite,” but the listing says “Grandpa's Blue Kite.” The preview also shows a man and a boy rather than my father and me as a little girl.
-  - [coherence, sev 3] The image depicts kite-making, but its family labels contradict the story: “Grandpa” is used where the maker should be “my father.”
-  - [text_image_fit, sev 3] The kite and making activity broadly match the story, but the pictured child is plainly a brown-haired boy, contradicting the repeated request to show little Margaret as a young girl.
-  - [character_consistency, sev 3] Only one scene is visible, so consistency across all 10 scenes cannot be judged. In this image, the child lacks the specified short silver hair, round glasses, and blue cardigan, and the man is not clearly an older Welshman.
-  - [emotional_resonance, sev 3] The gentle watercolor style has some warmth, but the invented Grandpa relationship and wrong child make it feel like someone else's family story.
-- **Change I'd make:** Retitle the book “The Blue Kite.” Regenerate this cover or opening scene with my father depicted as an older Welshman making the kite with me as a little girl. I should have short silver hair, round glasses, and a blue cardigan. Do not call him Grandpa and do not show any other family members.
-- **Suggested rewrite:** The Blue Kite Margaret Ellison For Oliver, with love from Grandma Maggie
-
-#### Output page: title, preview, and printed-book offer
-![I2](artifacts/capture_19/view_00.jpg)
-> Grandpa's Blue Kite Make a digital PDF, a narrated video, or order a printed book. Generate Book Preview Preview A watermarked preview of the exact 32-page book you can order — personalize it below; what you preview is what gets printed. Title The Blue Kite Author Margaret Ellison Teller’s age 5 Story told on 26/09/2026 Printed Book Keepsake A real hardcover keepsake shipped to your door. Hardcover $59 Order Printed Book Printing is coming soon ✨
-- *Picture:* The website interface identifies the output as “Grandpa's Blue Kite,” while its editable title is “The Blue Kite.” It offers a $59 hardcover but also says that printing is coming soon.
-- *Reaction:* I would be uneasy about ordering anything here. The heading calls my father “Grandpa,” although I specifically said not to invent or show a grandfather, and the printed book is offered even though it says printing is not yet available.
-  - [fidelity, sev 3] The page heading says “Grandpa's Blue Kite,” although the requested title is “The Blue Kite” and the instructions say, “Do not show any invented family members.”
-  - [coherence, sev 3] The page offers “Order Printed Book” while immediately stating “Printing is coming soon ✨.”
-  - [language, sev 2] The top of the page shows “$4.00,” while the hardcover is marked “$59,” without explaining whether $4.00 is a credit, a balance, or money already paid.
-  - [fidelity, sev 2] The field “Story told on” has been filled with “26/09/2026,” although no story date was supplied in the inputs.
-- **Change I'd make:** Change the output heading to “The Blue Kite,” remove the invented “Grandpa” wording, and either disable the printed-book button until ordering is genuinely available or explain clearly when it will open. Show the full price, currency, delivery charge, and whether the displayed $4.00 is a credit before I commit.
+> My Storybooks $4.00 My Storybooks 1 storybook Create New Grandpa's Blue Kite Watercolor \| 10 scenes 22 minutes ago
+- *Picture:* A warm watercolor-style picture set in a farmhouse kitchen. An adult man and a brown-haired boy are making or repairing a large blue kite from pieces of blue fabric. The kite is clearly visible, but the child is a boy rather than little Margaret.
+- *Reaction:* The picture is pretty and the blue kite is easy to recognise, but I would not recognise my family in it. My father made the kite with me when I was a little girl, not with a boy called Grandpa.
+  - [fidelity, sev 4] The listing calls the book "Grandpa's Blue Kite," although my chosen title was "The Blue Kite" and my corrected family story identifies the kite-maker as my father.
+  - [fidelity, sev 4] The picture shows an adult man and a boy in a kitchen, rather than my father and little Margaret carrying the finished kite on the windy Welsh hill. This contradicts my later corrections, which explicitly said, "Replace the boy with little Margaret, a young girl."
+  - [character_consistency, sev 3] The child has short brown hair and no visible round glasses or blue cardigan, so he does not match the requested depiction of little Margaret.
+  - [text_image_fit, sev 3] The blue kite matches the central object, but the image does not show the corrected event or setting: Margaret and her father carrying it up the windy hill behind the old farmhouse in Wales.
+  - [emotional_resonance, sev 4] The attractive picture feels like a pleasant generic kite story, but calling my father "Grandpa" and showing a boy instead of me would make this unsuitable as a personal family keepsake.
+- **Change I'd make:** Change the title to "The Blue Kite" and replace this picture with a clear watercolor scene of my father, an older Welsh man, making or carrying the kite with little Margaret. Margaret should be recognisably a young girl, with short silver hair, round glasses, and a blue cardigan, on the windy hill behind the old farmhouse in Wales. Do not show Oliver, Grandpa, or any invented relative.
 - **Suggested rewrite:** The Blue Kite
 
-#### Personalization fields and generation status
+#### Export page header and purchase options
+![I2](artifacts/capture_19/view_00.jpg)
+![I4](artifacts/capture_55/view_00.jpg)
+> OurLegacy My Storybooks $4.00 Create Review 3 Output Back to review Grandpa's Blue Kite Make a digital PDF, a narrated video, or order a printed book. Generate Book Preview Preview A watermarked preview of the exact 32-page book you can order — personalize it below; what you preview is what gets printed. Title The Blue Kite Author Margaret Ellison Teller’s age 5 Story told on 26/09/2026 Printed Book Keepsake A real hardcover keepsake shipped to your door. Hardcover $59 Order Printed Book Printing is coming soon ✨
+- *Picture:* A clean export page headed “Grandpa’s Blue Kite.” Below it are a book-preview panel and a printed-book panel. The $59 hardcover button is pale and unavailable, with “Printing is coming soon” underneath.
+- *Reaction:* I can see the price, but the $4.00 in the navigation has no explanation, and I still cannot order the $59 book. More importantly, the heading says “Grandpa’s Blue Kite” even though the field beneath correctly says “The Blue Kite.”
+  - [fidelity, sev 3] The page heading says “Grandpa's Blue Kite,” although the Title field says “The Blue Kite.”
+  - [language, sev 2] The page shows “$4.00” at the top and “Hardcover $59” without explaining whether the $4.00 is a charge, a credit, or something else.
+  - [language, sev 2] “Make a digital PDF, a narrated video, or order a printed book” promises a narrated-video option, but no narration control is shown in this capture.
+  - [visual_quality, sev 1] The explanatory text and some controls are small and grey, making them harder to read.
+- **Change I'd make:** Change the page heading and filename description to “The Blue Kite,” explain exactly what the $4.00 charge covers, and label the hardcover as “$59 — not yet available to order.” I would also show a clear narration option if one is actually offered.
+- **Suggested rewrite:** The Blue Kite Create a preview and choose a download or printed-book option. Hardcover: $59. Printed books are not yet available to order.
+
+#### Preview settings and cover
 ![I3](artifacts/capture_19/view_01.jpg)
 > Title The Blue Kite Author Margaret Ellison Teller’s age 5 Story told on 26/09/2026 Dedication For Oliver, with love from Grandma Maggie. May w This book belongs to Oliver Ellison Cover image Scene 8 Change Generation in progress... Generated Exports PDF Generating...
-- *Picture:* The lower portion of the personalization panel shows the dedication and ownership fields, a small selected cover thumbnail labeled “Scene 8,” and status messages saying that both book generation and the PDF are still in progress.
-- *Reaction:* The dedication and ownership details look broadly right, but I cannot judge the actual keepsake from this screen because the book itself is not open. The truncated dedication and generation messages also leave me unsure whether anything has been completed correctly.
-  - [language, sev 2] The dedication field visibly ends at “For Oliver, with love from Grandma Maggie. May w,” with no indication that this is merely a horizontally clipped field rather than a truncated dedication.
-  - [visual_quality, sev 2] The selected “Scene 8” cover is only a tiny thumbnail here, so facial identity, requested clothing, the Welsh farmhouse, and image artefacts cannot be checked reliably.
-- **Change I'd make:** Show the entire dedication in a wrapping, readable field and provide a clearly labeled “Open full preview” button. A full-size cover preview should appear before the PDF is generated.
+- *Picture:* The lower portion of the preview panel shows the dedication and ownership fields. A small watercolor cover thumbnail labelled “Scene 8” depicts a blue kite above an adult man and a child standing outdoors. A generation message and a generating PDF status appear below.
+- *Reaction:* The blue kite is easy to recognise, but the cover does not show the present-day relationship I wanted between Oliver and his grandmother. I cannot tell from this thumbnail whether it has also confused the child as a boy.
+  - [fidelity, sev 3] The cover thumbnail shows an adult man and a child, rather than five-year-old Oliver with his grandmother as in the family story’s present-day ending.
+  - [text_image_fit, sev 3] The cover is labelled “Scene 8,” but the selected picture does not visibly present the relationship emphasized in my original ending, where Oliver is the hero and I help him fly the kite.
+  - [fidelity, sev 2] The dedication is visibly cut off after “For Oliver, with love from Grandma Maggie. May w,” so the full wording cannot be checked here.
+- **Change I'd make:** Use a cover showing five-year-old Oliver in green wellies flying the blue kite with his grandmother, rather than an adult man and a child. Display the dedication across enough space to show the whole sentence, and let me enlarge the cover before accepting it.
+- **Suggested rewrite:** For Oliver, with love from Grandma Maggie. May we always keep the old blue kite safe.
 
-#### Regenerated preview header and metadata
+#### Final export settings after generation
 ![I4](artifacts/capture_55/view_00.jpg)
-> Grandpa's Blue Kite Make a digital PDF, a narrated video, or order a printed book. Generate Book Preview Preview A watermarked preview of the exact 32-page book you can order — personalize it below; what you preview is what gets printed. Title The Blue Kite Author Margaret Ellison Teller’s age Optional Story told on 26/09/2026 Dedication For Oliver, with love from Grandma Maggie. May w This book belongs to Oliver Ellison
-- *Picture:* After generation, the same output page still has the heading “Grandpa's Blue Kite,” but the teller-age field now says “Optional” rather than the previously entered value of 5.
-- *Reaction:* This does not feel like a faithful final version. Although the entered title is “The Blue Kite,” the page still calls it “Grandpa's Blue Kite,” and my age setting has silently changed from 5 to “Optional.”
-  - [fidelity, sev 3] The entered “Teller’s age” is visibly “5” in the earlier view but “Optional” in the final view.
-  - [fidelity, sev 3] The final output heading remains “Grandpa's Blue Kite” rather than using the requested title, “The Blue Kite.”
-  - [coherence, sev 3] The editable metadata and the main output heading disagree: the field says “The Blue Kite,” while the heading says “Grandpa's Blue Kite.”
-- **Change I'd make:** Regenerate the output from the current fields, preserve the teller age of 5, and make every visible title update automatically. Do not present this version as final until the heading, metadata, illustrations, and PDF all agree.
-- **Suggested rewrite:** The Blue Kite Teller’s age: 5
+> OurLegacy My Storybooks $4.00 Create Review 3 Output Back to review Grandpa's Blue Kite Make a digital PDF, a narrated video, or order a printed book. Generate Book Preview Preview A watermarked preview of the exact 32-page book you can order — personalize it below; what you preview is what gets printed. Title The Blue Kite Author Margaret Ellison Teller’s age Optional Story told on 26/09/2026 Dedication For Oliver, with love from Grandma Maggie. May w Printed Book Keepsake A real hardcover keepsake shipped to your door. Hardcover $59 Order Printed Book Printing is coming soon ✨
+- *Picture:* This is the same export page after generation. The teller’s age field now reads “Optional,” while the cover gallery is lower on the page. The printed-book button remains unavailable.
+- *Reaction:* “Optional” is not a mistake: I deliberately cleared the teller’s age on my last visit. The unresolved “Grandpa’s Blue Kite” heading and the unexplained date “26/09/2026” still need attention.
+  - [fidelity, sev 3] The final page still says “Grandpa's Blue Kite” even though my submitted title was “The Blue Kite.”
+  - [fidelity, sev 2] “Story told on 26/09/2026” is displayed even though I did not enter a story date in the information provided.
+  - [language, sev 2] The label “Story told on” does not explain whether the date means when the memory happened, when I told the story, or when the file was created.
+- **Change I'd make:** Synchronize the heading with the accepted title, and do not insert a date automatically. Ask me to choose “No story date” or clearly label an automatically added date as the file-generation date.
+- **Suggested rewrite:** The Blue Kite Teller’s age: Optional Story date: Not supplied
 
-#### Cover-image gallery and generated PDF files
+#### Final cover gallery and PDF downloads
 ![I5](artifacts/capture_55/view_01.jpg)
-> Cover image Scene 8 Done 1 2 3 4 5 6 7 8 9 10 Regenerate PDF Generated Exports PDF Sep 26, 2026, 8:57 PM • 2.4 MB Custom title Author: Margaret Ellison Dedication Bookplate Cover: Scene 8 Download PDF Sep 26, 2026, 8:56 PM • 2.4 MB Custom title Author: Margaret Ellison Dedication Bookplate Cover: Scene 8 Download
-- *Picture:* Ten small scene thumbnails are shown, with Scene 8 outlined as the cover. The thumbnails appear to show kite-flying scenes with an adult man and a child, but they are too small here to verify the child’s identity, requested appearance, or the stated relationships. Two apparently identical PDF files are listed one minute apart.
-- *Reaction:* The kite and outdoor scenes are visible, but I still cannot inspect the people closely enough to accept them as my family. Two PDFs have been created even though the website says the text did not change, and the final files are not opened for review on this page.
-  - [character_consistency, sev 2] The ten thumbnails are too small to verify that little Margaret has short silver hair, round glasses, and a blue cardigan, or that the same child and father remain consistent throughout.
-  - [text_image_fit, sev 2] Only thumbnail images are supplied; the associated story text and full-size page spreads are not visible, so the claim that “what you preview is what gets printed” cannot be checked.
-  - [visual_quality, sev 2] The selected cover and all ten scenes are reduced to thumbnails, preventing inspection for distorted faces, extra fingers, garbled lettering, or other artefacts.
-  - [coherence, sev 2] Two 2.4 MB PDFs are listed at 8:56 PM and 8:57 PM, while the note says “the text did not change.” The interface does not explain why both files were generated or which one should be used.
-  - [emotional_resonance, sev 3] The gallery does not show enough of the actual book to demonstrate that the story is faithful to Margaret’s father and childhood memory.
-- **Change I'd make:** Open a full-size, page-by-page preview before ordering. Check every illustration against the text, ensuring the child is clearly Margaret—a girl with short silver hair, round glasses, and a blue cardigan—and that the only family member shown is her Welsh father. Remove the duplicate PDF and label the latest verified file clearly.
+> Cover image Scene 8 Done 1 2 3 4 5 6 7 8 9 10 Regenerate PDF Generated Exports PDF Sep 26, 2026, 8:57 PM 2.4 MB Custom title Author: Margaret Ellison Dedication Bookplate Cover: Scene 8 Download PDF Sep 26, 2026, 8:56 PM 2.4 MB Custom title Author: Margaret Ellison Dedication Bookplate Cover: Scene 8 Download
+- *Picture:* A gallery of ten small watercolor scene thumbnails is shown, with Scene 8 outlined as the cover. Several thumbnails appear to show a taller dark-haired male figure with a child, while others show kite-making or kite-flying scenes. Two PDF entries, one minute apart, are listed with Download buttons.
+- *Reaction:* The pictures are attractive as small thumbnails, but they still do not make me recognise my family; the child and relationships need careful checking at full size. I also cannot tell which of the two nearly identical PDFs is the final one.
+  - [fidelity, sev 3] Several thumbnails show a taller male figure with a child, rather than clearly showing little Margaret as a silver-haired girl in a blue cardigan or the intended present-day pairing of Margaret and Oliver.
+  - [character_consistency, sev 3] The gallery thumbnails do not consistently make the intended child and adult characters recognisable; the cover and several scenes appear to use a generic man-and-child pairing.
+  - [emotional_resonance, sev 3] The selected cover is described in the interface only as “Scene 8” and, at the thumbnail size shown, does not convey the personal relationship that would make this a family keepsake.
+  - [language, sev 2] The two downloads are distinguished only by timestamps, “Sep 26, 2026, 8:57 PM” and “Sep 26, 2026, 8:56 PM”; neither is marked “Latest” or “Earlier version.”
+  - [visual_quality, sev 1] The thumbnails are too small in this view to inspect faces, hands, clothing, or the kite construction properly.
+- **Change I'd make:** Let me open each scene at a large size and correct the characters before regenerating the PDF. Mark the 8:57 file as “Latest PDF” and the 8:56 file as “Earlier version,” and make the selected cover show Oliver and his grandmother with the blue kite if that is the ending I am keeping.
+- **Suggested rewrite:** Latest PDF — Sep 26, 2026, 8:57 PM Earlier version — Sep 26, 2026, 8:56 PM
 
-#### Page 1
+#### Cover / Title page / Page 1
 ![I6](artifacts/capture_60/view_00.jpg)
 > The Blue Kite told by Margaret Ellison September 2026
-- *Picture:* A very pale title page with the navy title, a smaller byline, a September 2026 date, a large diagonal 'OurLegacy PREVIEW' watermark, and a small 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY' notice.
-- *Reaction:* The title and name are clear, but the preview watermark and the extra date make it feel like a website proof rather than a finished keepsake. I also do not need the child's age here, but I would want the finished printed page to have no preview markings.
-  - [language, sev 2] The page visibly carries a large 'OurLegacy PREVIEW' watermark and 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY'.
-  - [visual_quality, sev 2] The page is mostly empty and the pale watermark crosses the title area.
-- **Change I'd make:** Remove the watermark and preview notice from the finished copy, and keep only the title, author credit, and date unless I specifically want the date included.
+- *Picture:* A plain white title page with the navy title, a small author line, a date, a large pale 'OurLegacy PREVIEW' watermark, and small preview text at the bottom. There is no actual cover illustration.
+- *Reaction:* The title and author are clear, but this does not look like an attractive keepsake cover, and I would be disappointed to see a preview watermark across a family book.
+  - [visual_quality, sev 3] The page is almost entirely blank, with 'OurLegacy PREVIEW' and 'PREVIEW · NOT FOR RESALE' visible.
+  - [fidelity, sev 2] The page says 'told by Margaret Ellison' correctly, but there is no cover image showing the blue kite, Wales, or the family.
+  - [language, sev 1] The date 'September 2026' was not part of my supplied story details and appears to have been added by the website.
+- **Change I'd make:** Use a real watercolor cover showing the old blue kite flying above the Welsh farmhouse, with Margaret and Oliver clearly identifiable, and remove the preview watermark from the final file.
 
-#### Page 2
+#### Title page / Page 2
 ![I7](artifacts/capture_61/view_00.jpg)
 > The Blue Kite
-- *Picture:* A mostly blank pale title page with a small centered 'The Blue Kite', the diagonal preview watermark, and the preview notice at the bottom.
-- *Reaction:* This repeats the title without adding a picture or useful information. It is a wasted page in a children's book and makes the opening feel padded rather than carefully made.
-  - [coherence, sev 2] Page 1 already says 'The Blue Kite' and page 2 repeats only 'The Blue Kite'.
-  - [visual_quality, sev 2] The page contains a large diagonal preview watermark and a small preview notice.
-- **Change I'd make:** Replace this blank repeated title page with the requested cover illustration: little Margaret as a girl with short silver hair, round glasses, and a blue cardigan, beside her father and the clearly recognisable blue kite, with the farmhouse behind them.
+- *Picture:* Another almost blank white page with the title repeated and the pale 'OurLegacy PREVIEW' watermark.
+- *Reaction:* Repeating the title on an empty page makes the book feel unfinished rather than special.
+  - [visual_quality, sev 3] The page contains no illustration and is dominated by the 'OurLegacy PREVIEW' watermark.
+  - [emotional_resonance, sev 2] The second title page adds no family picture or meaningful introduction.
+- **Change I'd make:** Replace this duplicate blank page with a warm watercolor family scene or remove it and begin the story on this page.
 
-#### Page 3
+#### Dedication / Page 3
 ![I8](artifacts/capture_62/view_00.jpg)
 > For Oliver, with love from Grandma Maggie. May we always keep the old blue kite safe.
-- *Picture:* A pale dedication page with the dedication in italic type and a small blue kite illustration beneath it. The page also carries the preview watermark and notice.
-- *Reaction:* The dedication is lovely and personal, and Oliver's name is exactly right. The little kite is a nice touch, although the preview markings must not appear in the final book.
-  - [language, sev 1] The page visibly contains 'OurLegacy PREVIEW' and 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY'.
-- **Change I'd make:** Keep the wording, remove the preview markings, and enlarge the small kite illustration if the final design permits.
+- *Picture:* A white dedication page with italic text and a very small blue kite illustration beneath it, partly obscured by the pale preview watermark.
+- *Reaction:* The words are loving and exactly reflect my intention, but the little kite is too small to give the page warmth.
+  - [visual_quality, sev 2] The kite illustration is tiny and faint, while the large watermark cuts across the page.
+  - [emotional_resonance, sev 1] The personal dedication is strong, but the page does not show Margaret and Oliver or their relationship.
+- **Change I'd make:** Keep the dedication but add a gentle watercolor of Oliver holding the kite with Margaret, and remove the watermark.
 
-#### Page 4
+#### Cast of characters / Page 4
 ![I9](artifacts/capture_63/view_00.jpg)
 > Cast of characters
-- *Picture:* A nearly blank pale page with only the heading 'Cast of characters', the preview watermark, and the preview notice.
-- *Reaction:* A cast page would be helpful if it actually identified the people, but this page contains no characters or descriptions at all. It is an obvious unfinished section.
-  - [fidelity, sev 3] The heading promises a list of characters, but the page shows none.
-  - [coherence, sev 3] The page is a placeholder-like section with no content after the heading.
-- **Change I'd make:** Either remove this page or add clear short descriptions of little Margaret, her father, and Oliver, explicitly stating that there is no Grandpa character in this story.
-- **Suggested rewrite:** Little Margaret — the little girl with short silver hair, round glasses, and a blue cardigan. Her father — an older Welsh man who makes the blue kite. Oliver — Margaret's grandson.
+- *Picture:* A blank white page with only the heading 'Cast of characters' and the preview watermark.
+- *Reaction:* I would expect this page to tell me who is in our story, but nobody is actually introduced.
+  - [fidelity, sev 2] The page lists no characters despite the story needing Margaret as a child, her father, and Oliver.
+  - [language, sev 2] The heading promises a cast list, but no names or descriptions follow.
+  - [visual_quality, sev 3] The page is empty apart from the heading and watermark.
+- **Change I'd make:** Add a short illustrated cast list: little Margaret, her father, and Oliver, with the relationships clearly stated.
+- **Suggested rewrite:** This is our family: Margaret, who made this kite when she was a little girl. Her father, who taught her how to fly it. Oliver, Margaret's grandson and the hero of our story.
 
-#### Page 5
+#### This book belongs to / Page 5
 ![I10](artifacts/capture_64/view_00.jpg)
 > This book belongs to Oliver Ellison signed
-- *Picture:* A pale ownership page with a thin rectangular border, Oliver's name, a blank signing line, and the preview watermark and notice.
-- *Reaction:* This is a useful and personal page, and the name is correct. The blank signing line is a sensible keepsake detail, but the preview markings should be removed.
-  - [language, sev 1] The page visibly carries 'OurLegacy PREVIEW' and 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY'.
-- **Change I'd make:** Keep the ownership page, enlarge the text slightly for comfortable reading, and remove the preview markings.
+- *Picture:* A simple ownership page with Oliver Ellison's name inside a pale rectangular box and a signing line.
+- *Reaction:* This is a nice personal touch, and Oliver's name is correct, though the page is very plain.
+  - [visual_quality, sev 1] The ownership page is plain and the preview watermark crosses the page.
+- **Change I'd make:** Keep the ownership wording, perhaps with a small watercolor kite in the corner and no watermark.
 
-#### Page 6
+#### Story opening / Page 6
 ![I11](artifacts/capture_65/view_00.jpg)
 > One summer, my father made me something very special. He cut up an old blue shirt and made it into a kite!
-- *Picture:* A pale text page with the two story sentences, a small kite illustration, the preview watermark, and the preview notice.
-- *Reaction:* The opening words are exactly the memory I supplied and are simple enough for a young child. I would want the following illustration to show me as a little girl, not a boy, but this page's text itself is good.
-  - [language, sev 1] The page includes the visible preview watermark and 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY'.
-- **Change I'd make:** Keep the text, remove the preview markings, and pair it with an illustration of little Margaret clearly identifiable as a girl with short silver hair, round glasses, and a blue cardigan.
+- *Picture:* A white text page with the sentence centered in dark blue type. A very small kite illustration appears below, partly covered by the watermark.
+- *Reaction:* This is a clear and faithful beginning, with short sentences that a five-year-old could follow.
+  - [text_image_fit, sev 1] The tiny kite is decorative, but it does not show my father making the kite from the old blue shirt.
+  - [visual_quality, sev 2] The pale preview watermark and very small illustration make the page look like a draft rather than a finished keepsake.
+- **Change I'd make:** Use a full-page watercolor of my father making the kite while I watch, clearly showing the old blue shirt and the kite frame.
 
-#### Page 7
+#### Making the kite / Page 7
 ![I12](artifacts/capture_66/view_00.jpg)
-- *Picture:* A warm watercolor farmhouse interior showing a brown-haired little girl in ordinary clothes helping a young adult man make a kite from a blue shirt. The kite frame and fabric are clearly visible on the floor.
-- *Reaction:* The picture is attractive and the making of the kite is clear, but it does not show my family as I described. The child has brown hair, no glasses, and no blue cardigan, and the man looks young rather than older; this needs correcting before I would trust it as my story.
-  - [fidelity, sev 3] The picture shows a brown-haired child in a white shirt and grey shorts, not short silver hair, round glasses, and a blue cardigan.
-  - [text_image_fit, sev 2] The text says 'my father made me' but the illustration does not provide the requested child appearance or clearly establish the older Welsh father.
-  - [character_consistency, sev 3] The child shown here has brown hair and no glasses, unlike the requested little Margaret.
-- **Change I'd make:** Regenerate the scene with little Margaret as a young girl, not a boy, with short silver hair, round glasses, and a blue cardigan, beside her older Welsh father in the warm farmhouse.
+- *Picture:* A watercolor scene inside a farmhouse kitchen. A young girl with brown hair kneels beside a man who is attaching spars and string to a blue kite made from fabric; scraps of blue shirt and ribbon lie on the floor.
+- *Reaction:* The picture is attractive and the making of the kite is easy to understand, but the child looks like an ordinary brown-haired girl rather than the specified little Margaret with short silver hair, round glasses, and a blue cardigan.
+  - [character_consistency, sev 3] The girl has long brown hair, no visible round glasses, and no blue cardigan; the instructions specifically requested short silver hair, round glasses, and a blue cardigan.
+  - [fidelity, sev 2] The man is shown making the kite with a child, but the picture does not clearly identify the child as Margaret.
+  - [character_consistency, sev 1] The man's appearance here must remain consistent with the later hill and kite-flying scenes.
+- **Change I'd make:** Regenerate the image with a little Margaret who has short silver hair, round glasses, and a blue cardigan, and show my father, an older Welsh man, making the kite from the old blue shirt.
 
-#### Page 8
+#### Walking up the hill / Page 8
 ![I13](artifacts/capture_67/view_00.jpg)
 > The blue kite was ready! My father and I carried it up the big windy hill behind the old farmhouse.
-- *Picture:* A pale text page with the story sentence, a small blue kite illustration, the preview watermark, and the preview notice.
-- *Reaction:* The sentence is simple, clear, and faithful to the place and action I gave. The page should not have the preview markings in the final copy.
-  - [language, sev 1] The page visibly contains 'OurLegacy PREVIEW' and 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY'.
-- **Change I'd make:** Keep the text and remove the preview markings; enlarge the text if needed for comfortable reading.
+- *Picture:* A white text page with the sentence centered in dark blue type. A tiny kite illustration is visible below the text beneath the watermark.
+- *Reaction:* The sentence is easy to understand and follows the memory, but the small image does not show the walk.
+  - [text_image_fit, sev 2] The page says my father and I carried the kite up the hill, but the tiny decorative image does not depict either of us or the farmhouse.
+  - [fidelity, sev 1] Wales is not named in this page's text, although it is part of the memory and appears elsewhere.
+- **Change I'd make:** Replace the tiny decoration with a full-page watercolor of little Margaret and her father carrying the kite up the hill behind the old farmhouse in Wales.
+- **Suggested rewrite:** The blue kite was ready! My father and I carried it up the big, windy hill behind the old farmhouse in Wales.
 
-#### Page 9
+#### Hill scene / Page 9
 ![I14](artifacts/capture_68/view_00.jpg)
-- *Picture:* A watercolor landscape of a child and a young adult man walking up a green hill while carrying a blue kite, with a farmhouse in the distance. The child has brown hair and no glasses or blue cardigan; the man is not visibly older.
-- *Reaction:* The hill, farmhouse, wind, and blue kite are all there, so the event is easy to follow. However, the child is not recognisably me as described, and the man does not look like the older Welsh father I asked for.
-  - [fidelity, sev 3] The image shows a brown-haired child without short silver hair, round glasses, or a blue cardigan.
-  - [character_consistency, sev 3] The child in this picture does not match the requested appearance of little Margaret and also appears different from the child on Page 7.
-  - [text_image_fit, sev 2] The image supports the hill and kite but does not clearly match the requested identities of Margaret and her father.
-- **Change I'd make:** Regenerate the image with the same little Margaret appearance on every page: short silver hair, round glasses, blue cardigan, and clearly a girl, with her older Welsh father carrying the kite beside her.
+- *Picture:* A broad watercolor landscape shows a man and a child carrying a blue kite up a green hill, with a stone wall, countryside, and an old farmhouse in the distance.
+- *Reaction:* This is a lovely picture of the hill and the kite, but the child is shown as a boy with short brown hair, not as little Margaret.
+  - [character_consistency, sev 3] The child appears to be a boy; the requested character was little Margaret, a young girl, with short silver hair, round glasses, and a blue cardigan.
+  - [fidelity, sev 2] The picture does not visibly establish that the child is my father's daughter or that she is Margaret.
+  - [text_image_fit, sev 2] The image complements the hill scene, although the identity of the child is wrong.
+- **Change I'd make:** Regenerate the image with little Margaret, clearly a girl with short silver hair, round glasses, and a blue cardigan, walking beside her father.
 
-#### Page 10
+#### First kite flight / Page 10
 ![I15](artifacts/capture_69/view_00.jpg)
 > Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in the bright blue sky!
-- *Picture:* A pale text page with the story sentence, a small kite illustration, the preview watermark, and the preview notice.
-- *Reaction:* This is a serious family error. My father made the kite and was with me as a child; he is not 'Grandpa's daddy', and I explicitly asked for no invented Grandpa.
-  - [fidelity, sev 4] The text says "Grandpa's daddy" and substitutes an invented relationship for my father.
-  - [language, sev 1] The page visibly contains the preview watermark and 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY'.
-- **Change I'd make:** Replace the relationship with 'my father' and ensure the illustration shows my older father launching the kite with little Margaret beside him.
-- **Suggested rewrite:** My father threw the kite up into the wind. Up, up, up it went — dancing in the bright blue sky!
+- *Picture:* A white text page with the sentence centered in dark blue type and a tiny kite illustration below it beneath the watermark.
+- *Reaction:* This is where the story goes seriously wrong: my father has been changed into 'Grandpa's daddy,' and the page does not show the first kite flight.
+  - [fidelity, sev 4] The text says "Grandpa's daddy" although the person making and flying the kite is my father, not an invented grandfather.
+  - [coherence, sev 4] The relationship suddenly changes from 'my father' to 'Grandpa's daddy' without any explanation.
+  - [text_image_fit, sev 2] The page describes the kite going up, but the visible image is only a tiny decorative kite.
+- **Change I'd make:** Replace the relationship with 'my father' and use the full-page watercolor of my father helping little Margaret launch the kite.
+- **Suggested rewrite:** My father threw the kite up into the wind. Up, up, up it went, dancing in the bright blue sky!
 
-#### Page 11
+#### Flying the kite / Page 11
 ![I16](artifacts/capture_70/view_00.jpg)
-- *Picture:* A watercolor sky scene showing a young adult man launching a blue kite while a child jumps beside him. The child has brown hair, no glasses, no blue cardigan, and is not clearly recognisable as little Margaret; the man is young rather than older.
-- *Reaction:* The kite is beautifully visible and the excitement is clear, but the people are still wrong. It also contradicts the requested family story by presenting a young man and a generic child instead of my older Welsh father and little Margaret.
-  - [fidelity, sev 4] The image shows a young man and a brown-haired child without the requested older Welsh father or little Margaret's silver hair, glasses, and blue cardigan.
-  - [character_consistency, sev 4] The child and man have not retained the requested identities or appearance from the preceding scenes.
-  - [text_image_fit, sev 2] The image supports the kite-launch action but does not support the corrected relationship that the man is Margaret's father.
-- **Change I'd make:** Regenerate the picture with my older Welsh father launching the kite and little Margaret beside him, preserving her short silver hair, round glasses, and blue cardigan.
+- *Picture:* A watercolor scene shows an older man and a boy flying a blue kite high in a cloudy sky. The boy is jumping with both arms raised.
+- *Reaction:* The kite and sky are lovely, but this is not our family: the child is a boy and the man has been presented as an invented grandfather rather than my father and little Margaret.
+  - [character_consistency, sev 4] The child is visibly a boy with short hair, not little Margaret in a blue cardigan and round glasses.
+  - [fidelity, sev 4] The picture shows the wrong generation and relationships, matching the invented 'Grandpa's daddy' in the preceding text.
+  - [text_image_fit, sev 2] The image shows a kite flying upward, but it does not show the requested father and daughter launching it.
+- **Change I'd make:** Regenerate the scene with my father and little Margaret flying the kite together, keeping the same Welsh hill and sky.
 
-#### Page 12
+#### Teaching Margaret / Page 12
 ![I17](artifacts/capture_71/view_00.jpg)
 > Grandpa's daddy showed him how to hold the string. 'Let out a little more when the wind blows strong,' he said.
-- *Picture:* A pale text page with the sentence, a small kite illustration, the preview watermark, and the preview notice.
-- *Reaction:* This repeats the same unacceptable family mistake and also uses 'him' without clearly saying whether the child or adult is being taught. It must be rewritten before I could consider the book a faithful family keepsake.
-  - [fidelity, sev 4] The text again says "Grandpa's daddy" instead of identifying the person as my father.
-  - [coherence, sev 2] The phrase 'showed him how to hold the string' has an unclear pronoun after the incorrect 'Grandpa's daddy' label.
-  - [language, sev 1] The page visibly contains the preview watermark and 'PREVIEW - NOT FOR RESALE - OURLEGACY.FAMILY'.
-- **Change I'd make:** Identify my father directly and name me as the child being taught, for example: 'My father showed me how to hold the string. He said, “Let out a little more when the wind blows strong.”'
-- **Suggested rewrite:** My father showed me how to hold the string. He said, “Let out a little more when the wind blows strong.”
+- *Picture:* A white text page with the sentence centered in dark blue type and a small kite illustration below it beneath the watermark.
+- *Reaction:* The advice itself is warm and close to my memory, but the words have changed the people and gender of the story, and the picture does not show the lesson.
+  - [fidelity, sev 4] The text says "Grandpa's daddy showed him" even though my father taught me, a girl, how to hold the string.
+  - [coherence, sev 4] The pronoun 'him' conflicts with the earlier first-person memory and the requested child Margaret.
+  - [text_image_fit, sev 2] The page describes teaching someone to hold the string, but the visible image is only a tiny kite.
+  - [age_fit, sev 3] The dialogue is understandable, but the incorrect family language makes the page confusing rather than comforting for a five-year-old.
+- **Change I'd make:** Correct the relationship and pronoun, and illustrate my father showing little Margaret how to hold the string on the windy hill.
+- **Suggested rewrite:** My father showed me how to hold the string. 'Let out a little more when the wind blows strong,' he said.
 
 #### Page 13
 ![I18](artifacts/capture_72/view_00.jpg)
-- *Picture:* A blue kite string rises out of the picture while an older white-haired man helps a young boy hold the reel. They stand on a green hill above a farmhouse.
-- *Reaction:* This is a pretty picture, but it is not my family memory. The child is a boy and the older man has been turned into Grandpa, rather than my father teaching little Margaret.
-  - [fidelity, sev 4] The picture shows a young boy and an older man, although the requested memory is little Margaret with her father.
-  - [text_image_fit, sev 3] The picture continues the story of the kite lesson, but it contradicts the requested identity of the child and father.
-  - [character_consistency, sev 4] The child is consistently shown as a boy rather than a little girl with short silver hair, round glasses and a blue cardigan.
-  - [visual_quality, sev 1] The illustration is attractive and clean, but the preview watermark says 'PREVIEW - NOT FOR RESALE'.
-- **Change I'd make:** Replace the boy with little Margaret, a young girl, and show her father teaching her. Keep the hill, farmhouse and kite, but do not show Grandpa.
+- *Picture:* A watercolor landscape shows an elderly silver-haired man helping a small fair-haired boy hold a kite reel on the windy Welsh hillside, with the farmhouse below.
+- *Reaction:* The picture is attractive and the kite and hill are easy to recognise, but the people are wrong. This is supposed to show my father teaching little Margaret, not an old man and a boy.
+  - [fidelity, sev 4] The image shows an elderly man and a small boy where the story requires my father and his young daughter, Margaret.
+  - [text_image_fit, sev 3] The illustration continues the book's invented 'Grandpa' story and does not support the preceding instruction that my father showed me how to hold the string.
+  - [character_consistency, sev 4] The child is a fair-haired boy in a white shirt and shorts, not little Margaret as explicitly requested.
+- **Change I'd make:** Redraw this as little Margaret as a clearly female five-year-old child with short silver hair, round glasses, and a blue cardigan, holding the reel while my older Welsh father helps her.
 
 #### Page 14
 ![I19](artifacts/capture_73/view_00.jpg)
 > Many, many years went by. Now Grandpa was old — and he had a grandson of his own. His name was Oliver.
-- *Picture:* A white title page with a faint diagonal OurLegacy preview watermark, a small teal line above the text, and a preview notice at the bottom.
-- *Reaction:* This is a serious family error. Oliver is my grandson, but he is not Grandpa's grandson, and I never asked for a character called Grandpa.
-  - [fidelity, sev 4] The text says, 'Now Grandpa was old — and he had a grandson of his own.'
-  - [coherence, sev 4] The text makes Margaret's narrator's family relationship change from 'my father' to 'Grandpa' without explanation.
-  - [language, sev 2] The sentence is grammatically clear, but the invented family relationship makes the wording factually wrong for the requested story.
-- **Change I'd make:** Remove Grandpa entirely and make the later relationship explicitly Margaret and her grandson Oliver.
-- **Suggested rewrite:** Many years went by. Now I was old too. My grandson Oliver came to visit me in Wales.
+- *Picture:* A white text page with a pale diagonal 'OurLegacy PREVIEW' watermark, a short green rule, and a small decorative blue kite-like flourish.
+- *Reaction:* This sentence is plainly wrong: Oliver is my grandson, not the grandson of an invented Grandpa. The layout is calm and readable, but the family history at its heart is untrue.
+  - [fidelity, sev 4] The text says, 'Grandpa was old — and he had a grandson of his own,' contradicting my input that Oliver is my grandson and my narrator's grandson.
+  - [coherence, sev 4] The subject changes from the remembered Margaret-and-father story to an old man named Grandpa, even though I specifically requested, 'Do not show Grandpa or any invented family members.'
+  - [character_consistency, sev 4] The new central character is 'Grandpa,' who was never part of the requested family story.
+- **Change I'd make:** Replace the invented Grandpa with the true relationship: years later, Margaret has a grandson named Oliver, whom she has told the story.
+- **Suggested rewrite:** Many years later, I told my grandson Oliver about the day my father and I flew the blue kite.
 
 #### Page 15
 ![I20](artifacts/capture_74/view_00.jpg)
-- *Picture:* An older white-haired man sits in an armchair holding a blue kite while a curly-haired boy kneels beside him. A fire burns in the foreground, and green wellies are visible near the door.
-- *Reaction:* The scene looks cosy and the kite is easy to recognise, but it is the wrong family altogether. The older man is supposed to be my father in the memory, not an invented Grandpa.
-  - [fidelity, sev 4] The picture shows an elderly man with Oliver rather than my father and little Margaret, even though this is the old-memory portion of the story.
-  - [text_image_fit, sev 4] The picture supports the generated 'Grandpa' text, but it does not support the family story I supplied.
-  - [character_consistency, sev 4] The same older man continues to be used as Grandpa, while the requested child is repeatedly represented as a boy.
-  - [visual_quality, sev 1] The watercolor-like artwork is attractive, but the preview watermark is printed across the picture.
-- **Change I'd make:** Show little Margaret as a girl with short silver hair, round glasses and a blue cardigan, beside my father as he handles the kite. Do not show an elderly Grandpa.
+- *Picture:* Indoors, an elderly silver-haired man sits by a fire holding the folded blue kite while a curly-haired, freckled five-year-old boy in a red top and green trousers kneels beside him. Green wellies stand near the door.
+- *Reaction:* Oliver's curls, freckles, and green wellies are recognisable, but the adult must be me, his grandmother. Instead, the picture makes the old man my grandfather and us a different family pair.
+  - [fidelity, sev 4] The picture shows Oliver with an elderly man and the kite indoors, rather than with his grandmother Margaret after she has told him the family story.
+  - [text_image_fit, sev 3] This image follows the wrong claim that Oliver is the grandson of an old man named Grandpa.
+  - [character_consistency, sev 4] The adult is consistently wrong: he has been generated as my father, then as an invented Grandpa, rather than distinguishing me as an older woman and my father as the kite-maker.
+- **Change I'd make:** Show Margaret at 71, with short silver hair, round glasses, and a blue cardigan, showing or retelling the story to Oliver. Do not add a grandfather.
 
 #### Page 16
 ![I21](artifacts/capture_75/view_00.jpg)
 > The next day, they went back to Wales! Oliver put on his green wellies and they picked up the old blue kite.
-- *Picture:* A white text page with a small teal line, a faint diagonal OurLegacy preview watermark, and the preview notice at the bottom.
-- *Reaction:* The sentence is easy to understand, but 'they' is vague after the invented Grandpa scene. I would want this to say plainly that Oliver and I returned to Wales.
-  - [fidelity, sev 2] The text uses 'they' without making clear that the intended pair is Margaret and Oliver.
-  - [coherence, sev 3] The preceding page introduced Grandpa, but this page suddenly refers to 'they' and does not repair the relationship error.
-  - [age_fit, sev 1] The sentence is short and the action is clear, but 'wellies' may need explanation for a five-year-old audience unfamiliar with the British word.
-- **Change I'd make:** Name Margaret and Oliver directly, and use 'boots' or explain the word wellies.
-- **Suggested rewrite:** The next day, Oliver and I went back to Wales. He put on his green boots, and we picked up the old blue kite.
+- *Picture:* A white text page with a pale diagonal preview watermark, a green rule, and a small blue decorative mark.
+- *Reaction:* The green wellies and blue kite come from my own memory, but 'the next day' and going back to Wales have been invented. My memory said that today we climb the same hill together; it did not say we had just returned the previous day.
+  - [fidelity, sev 2] The text invents 'The next day, they went back to Wales,' while my input said, 'Today we climb the same hill together.'
+  - [fidelity, sev 4] The word 'they' avoids naming the adult, leaving the companion to be understood as the invented Grandpa from the previous page.
+  - [coherence, sev 2] No earlier supplied event says that Oliver and Margaret had travelled to Wales and then gone back the next day.
+- **Change I'd make:** Name Margaret explicitly and remove the invented travel schedule. State that Oliver and Margaret are going to fly the kite on the Welsh hill that day.
+- **Suggested rewrite:** Oliver put on his green wellies. Then we picked up the old blue kite and went out together.
 
 #### Page 17
 ![I22](artifacts/capture_76/view_00.jpg)
-- *Picture:* An older man stands in the doorway of a stone farmhouse holding the blue kite and its string while a curly-haired boy bends down to put on green boots.
-- *Reaction:* The farmhouse and Wales setting are good, but the people are still wrong. I wanted a present-day Margaret with Oliver, not an older man playing my father.
-  - [fidelity, sev 4] The picture shows an older man and a boy, while the requested present-day pair is Margaret, a 71-year-old woman, and her grandson Oliver.
-  - [character_consistency, sev 4] The older man has the same visual identity as the invented Grandpa, and the child remains a boy.
-  - [text_image_fit, sev 3] The picture does show the kite and wellies, but it does not show the correct people named by the story.
-  - [visual_quality, sev 1] The illustration is polished, although the preview watermark remains visible.
-- **Change I'd make:** Show Margaret as a 71-year-old woman with short silver hair, round glasses and a blue cardigan, standing with Oliver as they leave the farmhouse.
+- *Picture:* Outside a stone farmhouse, an elderly silver-haired man carries the blue kite and string while a curly-haired, freckled boy pulls on one green welling boot.
+- *Reaction:* The farmhouse, wellies, and kite are welcome, but I am not in this picture at all. The adult has again been made into my male partner or grandfather rather than me, Margaret.
+  - [fidelity, sev 4] Margaret is absent; the visible adult is an elderly man who has repeatedly replaced the correct family member.
+  - [text_image_fit, sev 1] The text says Oliver puts on 'his green wellies,' but the image shows him pulling on only one boot while the other green wellie is absent from his feet.
+  - [character_consistency, sev 4] The recurring adult is wrong, and no short-haired, glasses-wearing older Margaret is kept consistent across the present-day scenes.
+- **Change I'd make:** Replace the elderly man with Margaret, described as 71 with short silver hair, round glasses, and a blue cardigan. Show Oliver pulling on both green wellies while Margaret holds the kite.
 
 #### Page 18
 ![I23](artifacts/capture_77/view_00.jpg)
 > Up the big hill they climbed together. The wind was blowing just like it did long, long ago.
-- *Picture:* A white text page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* The sentence is gentle and has a nice link back to the memory, but the hidden 'they' leaves the wrong family relationship in place. I would want the names Margaret and Oliver here.
-  - [fidelity, sev 3] The text says only 'they' and therefore does not identify the correct present-day pair.
-  - [coherence, sev 3] The story shifts from the invented Grandpa to an unnamed pair without correcting the relationship.
-  - [age_fit, sev 1] The long phrase 'just like it did long, long ago' is understandable but slightly more literary than a typical five-year-old reading level.
-- **Change I'd make:** Name Margaret and Oliver and simplify the sentence slightly.
-- **Suggested rewrite:** Oliver and I climbed the big hill together. The wind blew just as it had long ago.
+- *Picture:* A white text page with a pale diagonal 'OurLegacy PREVIEW' watermark, a short green rule, and a small decorative flourish.
+- *Reaction:* The sentence itself is gentle and preserves the windy hill, but 'they' again refers to Margaret and the wrong elderly man. That vague phrasing hides rather than fixes the relationship error.
+  - [fidelity, sev 4] The unnamed 'they' follows the previous page's elderly man, although the remembered pair who climbed the hill was Margaret and her father, and the present pair should be Margaret and Oliver.
+  - [coherence, sev 3] The transition is smooth, but its characters are inconsistent with the requested family relationships and even with the truthful source story.
+- **Change I'd make:** Name Oliver and Margaret so that the relationship is unambiguous and separate the childhood climb from the present-day climb.
+- **Suggested rewrite:** Oliver and I climbed the big hill together. The wind blew just as it had when I was little.
 
 #### Page 19
 ![I24](artifacts/capture_78/view_00.jpg)
-- *Picture:* An older man and a curly-haired boy climb a green hillside together. The older man carries the folded blue kite, with a stone farmhouse visible in the distance.
-- *Reaction:* The hill, farmhouse and kite are all right, but this is still not the family I wanted to pass on. The older man is being used where I asked for my father or present-day Margaret.
-  - [fidelity, sev 4] The picture shows an older man and a boy rather than little Margaret and her father in the memory, or Margaret and Oliver in the present.
-  - [text_image_fit, sev 3] The picture supports the hill-climbing action but contradicts the requested family identities.
-  - [character_consistency, sev 4] The same older man and boy are repeated instead of maintaining the requested Margaret and Oliver identities.
-- **Change I'd make:** For the remembered scene, show little Margaret and her father. For the later scene, show Margaret and Oliver. Keep the same hill and farmhouse.
+- *Picture:* An elderly silver-haired man and a curly-haired, freckled boy climb a green hillside together. The man carries the folded blue kite, with a farmhouse and valley far below.
+- *Reaction:* This is a lovely watercolor of the right hill and kite, but it is the wrong family. I should be climbing beside Oliver as his 71-year-old grandmother, not as an elderly male grandfather.
+  - [fidelity, sev 4] The adult companion is an elderly man, while the present-day adult in my memory is Margaret, Oliver's grandmother.
+  - [text_image_fit, sev 2] The illustration generally matches 'they climbed together,' but visually confirms the incorrect identity concealed by the pronoun.
+  - [character_consistency, sev 4] The same incorrect elderly man is reused from page to page instead of preserving the specified appearance of Margaret.
+- **Change I'd make:** Redraw Margaret and Oliver climbing the hill together, with Margaret carrying the kite and using the specified short silver hair, round glasses, and blue cardigan.
 
 #### Page 20
 ![I25](artifacts/capture_79/view_00.jpg)
 > Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer sky — just like before!
-- *Picture:* A white text page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* The flying kite is an important part of the memory, but the sentence invents Grandpa again. It should be Margaret helping Oliver, or my father helping little Margaret in the earlier scene.
-  - [fidelity, sev 4] The text explicitly says, 'Grandpa helped Oliver hold the string.'
-  - [coherence, sev 4] This repeats the incorrect family relationship introduced earlier instead of continuing the requested father-and-daughter memory.
-  - [age_fit, sev 1] The repeated 'up, up' is lively and child-friendly, although the long sentence is somewhat dense for a five-year-old.
-- **Change I'd make:** Change the helper to the correct person for the scene and split the sentence into two short sentences.
-- **Suggested rewrite:** My father helped me hold the string. The blue kite flew up, up, into the summer sky!
+- *Picture:* A white text page with a pale preview watermark, a short green rule, and a small blue decorative flourish.
+- *Reaction:* The flying-kite image and repeated upward movement are appropriate, but 'Grandpa' is an invented and incorrect relationship. This is the central error I would not allow in a family keepsake.
+  - [fidelity, sev 4] The text says, 'Grandpa helped Oliver hold the string,' but I am Oliver's grandmother, and I specifically asked not to show an invented grandfather.
+  - [coherence, sev 4] This continues the website's invented Grandpa storyline instead of returning to the true present-day relationship in the source narrative.
+- **Change I'd make:** Replace Grandpa with Grandma Margaret and identify Oliver as the hero holding the string.
+- **Suggested rewrite:** I helped Oliver hold the string. Up, up went the blue kite into the summer sky!
 
 #### Page 21
 ![I26](artifacts/capture_80/view_00.jpg)
-- *Picture:* An older man helps a curly-haired boy hold a blue kite reel on a sunny hillside. The kite flies high in the sky, with a farmhouse below.
-- *Reaction:* The picture is cheerful and the kite is unmistakable, but I would not recognise my family in it. My grandson should be with me, Margaret, not with an invented elderly man.
-  - [fidelity, sev 4] The picture shows an older man and a boy, not Margaret and her grandson Oliver.
-  - [character_consistency, sev 4] The older man has the appearance of the repeatedly invented Grandpa, while the requested child Margaret is absent.
-  - [text_image_fit, sev 4] The picture matches the generated 'Grandpa helped Oliver' text, but that text itself is wrong for the supplied family story.
-  - [visual_quality, sev 1] The watercolor artwork is attractive, but a preview watermark is visible.
-- **Change I'd make:** Show Margaret, wearing her blue cardigan, helping Oliver hold the reel. Preserve the hill, bright sky and blue kite.
+- *Picture:* A curly-haired, freckled boy in a red top, green trousers, and green wellies laughs while holding the kite reel. An elderly silver-haired man stands closely behind him as the blue kite flies high in a cloudy sky.
+- *Reaction:* The joy is warm and Oliver looks appealing, but the person helping him should be me. This attractive picture would be much more personal with my own silver hair, glasses, and blue cardigan beside him.
+  - [fidelity, sev 4] The elderly man replaces Margaret and is presented as the family member helping Oliver fly the kite.
+  - [character_consistency, sev 4] Margaret is still absent and does not match the requested present-day description of a 71-year-old woman with short silver hair, round glasses, and a blue cardigan.
+- **Change I'd make:** Show Oliver holding the reel while Margaret stands beside him in her blue cardigan, with a warm but age-appropriate expression.
 
 #### Page 22
 ![I27](artifacts/capture_81/view_00.jpg)
 > Oliver laughed and laughed as the kite swooped and danced. It was the best feeling in the whole world!
-- *Picture:* A white text page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* The words sound happy and would suit a five-year-old, but they are attached to the wrong family scene. The sentence is also a little large for the requested reading age.
-  - [age_fit, sev 2] The sentence contains the longer phrase 'the best feeling in the whole world' and runs on across two clauses.
-  - [fidelity, sev 3] The text is about Oliver, but it follows the invented Grandpa relationship and does not identify Margaret as the person sharing the moment.
-  - [coherence, sev 2] The sentence makes sense on its own but continues the unresolved Grandpa substitution.
-- **Change I'd make:** Say that Oliver laughed while I helped him fly the kite, and shorten the final sentence.
-- **Suggested rewrite:** Oliver laughed as the kite swooped and danced. It was the best feeling in the world!
+- *Picture:* A white text page with a pale diagonal preview watermark, a green rule, and a small decorative flourish.
+- *Reaction:* This is a warm, simple ending to the flight, and 'the kite swooped and danced' is close to the wording in my own memory. I do not object to the flourish 'the best feeling in the whole world.'
+  - [fidelity, sev 2] This text does not identify the incorrect adult, but it depends on the preceding page where Oliver was wrongly shown with an invented Grandpa.
+- **Change I'd make:** Retain the wording if the preceding image and relationship are corrected; no substantial text change is needed.
 
 #### Page 23
 ![I28](artifacts/capture_82/view_00.jpg)
-- *Picture:* A curly-haired boy in a red top and green trousers laughs with his arms wide open beside an older man in a blue jacket. A blue kite is partly visible overhead.
-- *Reaction:* The joy in this illustration is genuine and the colours are warm, but it again shows the wrong adult. I wanted to see myself sharing the moment with Oliver.
-  - [fidelity, sev 4] The picture shows an older man with Oliver rather than Margaret with Oliver.
-  - [character_consistency, sev 4] The older man continues to look like the invented Grandpa, not like the 71-year-old Margaret described in the request.
-  - [text_image_fit, sev 3] The picture complements the joy of the text but does not show the correct relationship.
-- **Change I'd make:** Replace the older man with Margaret, keeping Oliver, the blue kite and the happy hillside moment.
+- *Picture:* The curly-haired boy spreads his arms and laughs beneath the partly visible blue kite. The same elderly silver-haired man stands beside him on the sunny hillside.
+- *Reaction:* It is a cheerful illustration, and Oliver's appearance is consistent, but the wrong elderly man again displaces me. I would treasure this picture much more if it showed my actual relationship with him.
+  - [fidelity, sev 4] Margaret is missing from the central present-day memory, replaced throughout by an invented elderly male relative.
+  - [text_image_fit, sev 2] The image complements Oliver laughing after the kite swoops and dances, but it also reinforces the wrong family pairing.
+  - [character_consistency, sev 4] Oliver remains broadly consistent, but the adult's identity has remained consistently incorrect throughout the present-day sequence.
+- **Change I'd make:** Replace the elderly man with Margaret while preserving Oliver's joyful pose. Keep Oliver's brown curly hair, freckles, red top, green trousers, and green wellies.
 
 #### Page 24
 ![I29](artifacts/capture_83/view_00.jpg)
 > They promised to keep the old blue kite safe for ever. Every time they came to Wales, they would fly it together.
-- *Picture:* A white text page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* This is a nice closing sentiment, but 'they' hides the important error. I would want the promise to belong to Margaret and Oliver, not to an invented Grandpa and Oliver.
-  - [fidelity, sev 4] The text says only 'They promised' and 'they would fly it,' without correcting the invented Grandpa relationship.
-  - [coherence, sev 4] The promise depends on the wrong pair of characters established earlier, so the ending does not belong to the supplied family story.
-  - [language, sev 1] 'for ever' is a valid British spelling choice, but it may be unfamiliar to some readers and is less immediate than 'forever'.
-- **Change I'd make:** Name Margaret and Oliver explicitly and use the more familiar spelling 'forever' unless the British spelling is intentional.
-- **Suggested rewrite:** Oliver and I promised to keep the old blue kite safe forever. Every time we came to Wales, we would fly it together.
+- *Picture:* A white text page with a pale diagonal 'OurLegacy PREVIEW' watermark, a short green rule, and a small blue decorative flourish.
+- *Reaction:* This is a proper closing thought, but it is spoiled by 'they.' I had promised with Oliver to keep the old blue kite safe and bring it whenever our family visited Wales.
+  - [fidelity, sev 3] The text changes my joint promise with Oliver into a vague promise by an unspecified 'they,' following the invented Grandpa storyline.
+  - [fidelity, sev 2] The input said, 'We promise to keep the old blue kite safe and to bring it whenever our family visits Wales,' but the output has shifted the focus to 'they would fly it together.'
+  - [coherence, sev 3] The pronoun is unclear after the previous page's incorrect pairing of Oliver with an elderly man.
+- **Change I'd make:** Name Oliver and Margaret and restore the promise to keep the kite safe and bring it on family visits to Wales.
+- **Suggested rewrite:** Oliver and I promised to keep the old blue kite safe. Whenever our family visited Wales, we would bring it out again.
 
 #### Page 25
 ![I30](artifacts/capture_84/view_00.jpg)
-- *Picture:* A white blank-looking page with a faint diagonal OurLegacy preview watermark and a preview notice along the bottom edge; no substantive illustration is visible.
-- *Reaction:* This page appears unfinished or accidentally blank. I would not want to pay for a keepsake with an unexplained empty page.
-  - [visual_quality, sev 3] The page is essentially blank apart from the preview watermark and footer.
-  - [text_image_fit, sev 3] There is no visible picture or text to connect with the kite story.
-  - [language, sev 2] The page contains no story text, leaving a gap in the sequence.
-- **Change I'd make:** Remove this blank page or replace it with a full-page illustration of Margaret and Oliver keeping the blue kite safe.
+- *Picture:* A watercolor-style view from a grassy hill above a Welsh-looking farmhouse at sunset. Oliver, with brown curly hair, freckles, a red top, green trousers, and green wellies, stands beside an elderly silver-haired man in a blue jacket. The man has one arm around Oliver. A blue kite with crossed spars and long trailing ribbons lies in the foreground.
+- *Reaction:* The countryside and Oliver look warm and attractive, but I cannot accept this picture as our family memory. The man is presented as Grandpa, although the present-day person with Oliver should be me, Margaret.
+  - [fidelity, sev 4] The picture shows Oliver with an elderly silver-haired man, although my input says, "Today we climb the same hill together" and Oliver is my grandson.
+  - [character_consistency, sev 4] Margaret does not appear at all; the site replaces her with an unnamed elderly man.
+  - [text_image_fit, sev 4] This is the illustration following the promise that they would always fly the kite together, but it contradicts the supplied relationship by showing the wrong adult.
+  - [emotional_resonance, sev 4] The tender hilltop pose is moving, but it is not my relationship with Oliver and therefore is not a faithful keepsake for me.
+- **Change I'd make:** Redraw the scene with Margaret Ellison, not an elderly man. Show Margaret as a 71-year-old woman with short silver hair, round glasses, and a blue cardigan, standing or crouching beside Oliver while he holds the kite string. Keep Oliver's brown curly hair, freckles, green wellies, the farmhouse, and the blue kite.
 
 #### Page 26
 ![I31](artifacts/capture_85/view_00.jpg)
 > The End Made with love, and kept forever.
-- *Picture:* A white closing page with a small teal line above the text, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* The ending is warm and clearly marked, but it is rather generic. I would prefer a personal sign-off from Grandma Maggie to Oliver.
-  - [fidelity, sev 2] The closing line, 'Made with love, and kept forever,' does not identify the people or relationship behind the keepsake.
-  - [emotional_resonance, sev 2] The wording is pleasant but could have been written for almost any personalised book.
-  - [language, sev 1] The page is grammatically correct, but 'kept forever' does not add a new story detail.
-- **Change I'd make:** Add a personal closing line that names Oliver and Grandma Maggie and refers to their promise.
-- **Suggested rewrite:** The End For Oliver, with love from Grandma Maggie. We will always remember the blue kite.
+- *Picture:* A softly painted closing scene with the blue kite resting beside a stone wall and an old stone farmhouse, surrounded by grass and wildflowers in warm evening light. The words “The End” and “Made with love, and kept forever.” are placed over the picture. A diagonal OurLegacy preview watermark and a small “PREVIEW · NOT FOR RESALE · OURLEGACY FAMILY” label are visible.
+- *Reaction:* This is a proper, quiet ending, and the saved kite beside the farmhouse suits the promise in our story. The lettering is clear, although I would not want the preview watermarks in a purchased copy.
+  - [visual_quality, sev 1] A large diagonal “OurLegacy PREVIEW” watermark and a “PREVIEW · NOT FOR RESALE” label cross the picture.
+- **Change I'd make:** Remove all preview watermarks and labels from the purchased version. Otherwise, retain the simple final wording and closing illustration.
 
 #### Page 27
 ![I32](artifacts/capture_86/view_00.jpg)
+![I34](artifacts/capture_88/view_00.jpg)
 > The story behind these pages “The blue kite flew up, up into the summer sky — just like before!” The summer my father made me a kite out of an old blue shirt. We carried it up the windy hill behind the old farmhouse in Wales, and the bright blue kite danced high in the sky. My father taught me how to hold the string and how to let out a little more when the wind grew strong. Years later, I told the story to my grandson Oliver. Today we climb the same hill together. Oliver has brown curly hair and freckles, and he is wearing his green wellies. This time Oliver is the hero, and I help him fly Grandpa's blue kite. The kite climbs above the farmhouse and the summer clouds, and Oliver laughs as it swoops and dances. We promise to keep the old blue kite safe and to bring it whenever our family v
-- *Picture:* A white text page headed 'The story behind these pages', with a long paragraph of story notes and a footer identifying Margaret Ellison, September 2026 and OurLegacy.
-- *Reaction:* This page restores some of the real memory, including my father, the Welsh farmhouse and Oliver, but then it contradicts itself by saying we fly 'Grandpa's blue kite.' That one error is enough to stop me trusting the whole keepsake.
-  - [fidelity, sev 4] The page says, 'I help him fly Grandpa's blue kite,' although the kite was made by my father and I asked for no Grandpa.
-  - [coherence, sev 4] The first paragraph correctly says 'My father taught me,' but the next paragraph changes the kite's owner to Grandpa.
-  - [character_consistency, sev 4] The story notes name Margaret, her father and Oliver, but the main pages have used an invented older man and a boy instead.
-  - [age_fit, sev 1] The story-behind-the-pages text is adult-facing and contains longer sentences and vocabulary such as 'afterwards' and 'family visits.'
-  - [language, sev 3] The page includes the unexplained possessive phrase 'Grandpa's blue kite,' which is a factual and grammatical relationship error in this family story.
-- **Change I'd make:** Correct every reference to Grandpa, and make this page agree with the illustrations: my father made the kite, while today Margaret and Oliver fly it together.
-- **Suggested rewrite:** The story behind these pages “The blue kite flew up, up into the summer sky — just like before!” One summer, my father made me a kite out of an old blue shirt. We carried it up the windy hill behind the old farmhouse in Wales, and the blue kite danced high in the sky. My father taught me how to hold the string and how to let out a little more when the wind grew strong. Years later, I told the story to my grandson Oliver. Today we climb the same hill together. Oliver has brown curly hair and freckles, and he is wearing his green wellies. This time Oliver is the hero, and I help him fly my father's blue kite. The kite climbs above the farmhouse and the summer clouds, and Oliver laughs as it swoops and dances. We promise to keep the old blue kite safe and to bring it whenever our family visits Wales. As told by Margaret Ellison · September 2026 · OurLegacy
+- *Picture:* A white reference page headed “The story behind these pages.” It reproduces the supplied family narrative in a long paragraph, with a large, faint diagonal OurLegacy preview watermark and small footer text.
+- *Reaction:* This page faithfully reproduces what I entered, including the phrase “Grandpa's blue kite,” so that wording came from me rather than being invented here. I can recognise my memory in it, though it does not repair the different family story printed in the main tale.
+  - [coherence, sev 3] This reference account says, "Today we climb the same hill together" and Oliver is my grandson, while the illustrated story has treated Oliver as Grandpa's grandson and paired him with an elderly man.
+  - [visual_quality, sev 1] A large diagonal “OurLegacy PREVIEW” watermark crosses the otherwise plain reference page.
+- **Change I'd make:** Keep this page as the source record, but remove the preview watermark and ensure the main story follows the same relationships. If “Grandpa's blue kite” means Oliver's grandfather, retain it here because that phrase came from my input; otherwise change it consistently throughout.
 
 #### Page 28
 ![I33](artifacts/capture_87/view_00.jpg)
 > In your own words Do you remember the first time you ever watched a kite climb into a summer sky?
-- *Picture:* A white activity page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* This is a pleasant prompt for remembering, but 'the first time you ever' is a little formal for a five-year-old. It also does not ask about my actual family memory.
-  - [age_fit, sev 1] The phrase 'the first time you ever watched' is longer and more formal than the simple story language elsewhere.
-  - [fidelity, sev 2] The prompt asks about a generic first kite experience rather than the old blue shirt, my father or the Welsh farmhouse.
-- **Change I'd make:** Ask Oliver to remember the specific blue kite and the windy hill.
-- **Suggested rewrite:** In your own words Do you remember watching our old blue kite climb into the summer sky?
-
-#### Page 29
-![I34](artifacts/capture_88/view_00.jpg)
-> Add your photos When you read this at sixteen, what do you think it will feel like to hold that old blue kite?
-- *Picture:* A white activity page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* The future-looking question is thoughtful, but I do not want the book to assume Oliver will read it at sixteen. That is an invented detail about him.
-  - [fidelity, sev 3] The text says, 'When you read this at sixteen,' although Oliver is five and no reading age of sixteen was supplied.
-  - [age_fit, sev 2] The reflective question is more mature than the rest of the five-year-old story.
-  - [emotional_resonance, sev 2] The page is thoughtful, but assuming a distant future reading occasion makes it feel less personal to the present relationship.
-- **Change I'd make:** Ask about reading the book now or adding a family photograph, without assigning Oliver a future age.
-- **Suggested rewrite:** Add your photos What do you think it will feel like to hold our old blue kite?
+- *Picture:* A white writing page with a bold heading, one italic question, and nine pale ruled lines for a reply. A large diagonal preview watermark crosses the page.
+- *Reaction:* This gives Oliver room to say what the story means to him and is a thoughtful addition. The question and the writing lines are rather small, so I would enlarge them for comfortable reading and writing.
+  - [visual_quality, sev 2] The italic question and ruled lines are small and pale against the white page.
+  - [visual_quality, sev 1] A large diagonal “OurLegacy PREVIEW” watermark covers the writing area.
+- **Change I'd make:** Enlarge the question and increase the contrast and spacing of the writing lines. Remove the preview watermark from the purchased copy.
+- **Suggested rewrite:** What is your favourite moment from flying the blue kite?
 
 #### Page 30
 ![I35](artifacts/capture_89/view_00.jpg)
 > Notes & Memories What moment with Oliver made your heart feel fullest on that windy Welsh hill?
-- *Picture:* A white notes page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* This is a thoughtful family-memory prompt, and it is one of the better pages. I would still prefer 'you' to mean Margaret explicitly, because the current story has confused who is speaking.
-  - [fidelity, sev 1] The prompt names Oliver and the windy Welsh hill, but the pronoun 'your' does not clearly identify Margaret as the intended respondent.
-  - [age_fit, sev 1] The phrase 'made your heart feel fullest' is more literary than necessary for a five-year-old activity page.
-- **Change I'd make:** Simplify the wording and make Margaret the intended speaker.
-- **Suggested rewrite:** Notes & Memories What was your favourite moment with Oliver on the windy Welsh hill?
+- *Picture:* A white notes page with a bold heading, one italic question, and nine pale horizontal writing lines. A diagonal preview watermark crosses the page.
+- *Reaction:* This is a thoughtful place for me to add the particular moment I want Oliver to remember. The question is rather small and abstract for a five-year-old, although it is meant for an adult writing in the keepsake.
+  - [visual_quality, sev 2] The question and writing lines are small and low-contrast.
+  - [age_fit, sev 1] "What moment with Oliver made your heart feel fullest" uses an abstract expression that is less direct for a child beginning to read.
+  - [visual_quality, sev 1] A large diagonal “OurLegacy PREVIEW” watermark covers part of the notes page.
+- **Change I'd make:** Enlarge the question and ruled lines, remove the preview watermark, and use plainer wording suitable for Margaret to read comfortably.
+- **Suggested rewrite:** Notes & Memories What was the happiest moment you and Oliver shared on the windy hill in Wales?
 
 #### Page 31
 ![I36](artifacts/capture_90/view_00.jpg)
-> Hear it read aloud Your private listening code  is created with your  printed book Every printed book includes a code your family can scan to hear the story read aloud.
-- *Picture:* A white information page with a small teal line, a faint diagonal OurLegacy preview watermark, and a preview notice at the bottom.
-- *Reaction:* This is a useful feature, but it interrupts the family story with a sales and delivery explanation. The word 'private' also needs a clear explanation of what information the code contains and how it is protected.
-  - [emotional_resonance, sev 1] The page shifts suddenly from a personal keepsake to an explanation of a 'private listening code.'
-  - [language, sev 2] The line breaks make 'Your private listening code is created with your printed book' look fragmented, and the privacy of the code is not explained.
-  - [age_fit, sev 2] This is adult-facing explanatory copy inside a book intended for a five-year-old.
-- **Change I'd make:** Move this information to the website or a separate family-information page, and explain simply what the code does and what information it stores.
-- **Suggested rewrite:** Hear the story A printed book includes a code so your family can scan it and hear the story read aloud.
+> Hear it read aloud Your private listening code is created with your printed book Every printed book includes a code your family can scan to hear the story read aloud.
+- *Picture:* A mostly white information page headed “Hear it read aloud.” An empty outlined square in the centre contains the message about a listening code, with a short explanation below. A diagonal preview watermark crosses the page.
+- *Reaction:* I understand that the code is supplied with the printed book rather than with this PDF, and an audio version could be useful. In the preview the key information is very small, and “private” should be explained more clearly before I trust it with a family code.
+  - [language, sev 2] "Your private listening code is created with your printed book" does not say whether the code is unique, whether it expires, or whether accessing the recording requires an account.
+  - [visual_quality, sev 2] The central code message and lower explanatory sentence are very small, with a large diagonal preview watermark across the page.
+- **Change I'd make:** Use larger type and explain the privacy and access terms plainly. State whether the code is unique to our order, whether anyone with it can hear the recording, and whether an account or further payment is required.
+- **Suggested rewrite:** Hear the story aloud Your printed book will include a private listening code. Scan the code with a phone or tablet to hear The Blue Kite read aloud. No extra account is needed. Keep the code private because other people may be able to use it to hear the recording.
 
 #### Page 32
 ![I37](artifacts/capture_91/view_00.jpg)
 > OurLegacy Illustrated in watercolors · An OurLegacy Original Printed by OurLegacy · 2026 © 2026 Margaret Ellison. Story told by Margaret Ellison · September 2026. First printed 2026
-- *Picture:* A white publication page with a small teal line, a faint diagonal OurLegacy preview watermark, a preview notice, and centred production and copyright text.
-- *Reaction:* The copyright credit is clear enough, and the incorrect 'age 5' has been removed. However, 'Illustrated in watercolors' is a production claim I would want checked rather than accept without seeing the final printed quality.
-  - [language, sev 2] The page says, 'Illustrated in watercolors,' although the pictures appear to be digitally rendered or reproduced rather than actual watercolors.
-  - [fidelity, sev 1] The page says, 'Story told by Margaret Ellison,' but it does not correct the invented Grandpa and the wrong child shown throughout the main story.
-  - [visual_quality, sev 1] The page still carries the 'PREVIEW - NOT FOR RESALE' watermark, so it is not a finished purchase-ready file.
-- **Change I'd make:** Correct the main story and illustrations first, then remove the preview watermark and use accurate wording such as 'Illustrated in a watercolor style' if that is what the service actually provides.
-- **Suggested rewrite:** OurLegacy Illustrated in a watercolor style · An OurLegacy Original Printed by OurLegacy · 2026 © 2026 Margaret Ellison. Story told by Margaret Ellison · September 2026. First printed 2026
+- *Picture:* A restrained white publication page with the OurLegacy name centred above small publication and copyright details. A large, faint diagonal preview watermark crosses the page.
+- *Reaction:* This is orderly and the erroneous “age 5” has been removed, which is an improvement. I would still want “Printed by OurLegacy” confirmed if that is meant literally as the printer, rather than simply the company that produced the book.
+  - [language, sev 1] "Printed by OurLegacy" may misleadingly claim that OurLegacy is the physical printer when it may only be the book-making platform.
+  - [visual_quality, sev 1] A large diagonal “OurLegacy PREVIEW” watermark crosses the publication page.
+- **Change I'd make:** Remove the preview watermark. Confirm who physically printed the book, and change the line to “Published by OurLegacy” if OurLegacy did not print it. Retain the corrected attribution without “age 5.”
+- **Suggested rewrite:** OurLegacy Illustrated in watercolors · An OurLegacy Original Published by OurLegacy · 2026 © 2026 Margaret Ellison. Story told by Margaret Ellison. First published September 2026.
 
-#### Output review page
+#### Output page / title and controls
 > OurLegacy My Storybooks $4.00 Create 2 Review 3 Output Grandpa's Blue Kite Complete Export Storybook
-- *Picture:* No cover or title-page illustration is shown. This capture shows the website's navigation, price, progress labels, storybook title, completion status, and export button.
-- *Reaction:* The website has called my book “Grandpa's Blue Kite,” which is not the title I gave, and I cannot see my name, dedication, or ownership details here. I also cannot tell from this page alone what the $4.00 pays for or whether another cost will appear.
-  - [fidelity, sev 3] The displayed title is “Grandpa's Blue Kite,” although the title I supplied was “The Blue Kite.” The requested author name, dedication, and “This book belongs to: Oliver Ellison” are not visible in this output capture.
-  - [language, sev 2] The interface uses the unexplained name “OurLegacy,” while “$4.00” and “Export Storybook” are presented without an explanation of what will be purchased or exported.
-  - [visual_quality, sev 1] The review controls appear as small interface text, which is less readable for someone with mild presbyopia.
-- **Change I'd make:** Restore the title to “The Blue Kite,” show “By Margaret Ellison,” include the dedication to Oliver, and state plainly what the $4.00 pays for, whether it includes printing or shipping, and whether any further charge is possible.
-- **Suggested rewrite:** The Blue Kite By Margaret Ellison For Oliver, with love from Grandma Maggie. May we always keep the old blue kite safe.
+- *Picture:* No separate cover or title-page picture is included in the supplied pictures; this is the website's output-review interface with the story title, price and export control.
+- *Reaction:* The title is not the one I entered, and calling it “Grandpa's Blue Kite” confirms the relationship mistake before I have even opened the scenes. The £4.00 figure is clear, but this capture does not explain what buying it includes.
+  - [fidelity, sev 3] The page calls the book “Grandpa's Blue Kite,” although my entered title was “The Blue Kite.”
+  - [emotional_resonance, sev 3] The displayed title makes the book about a grandfather, although the real relationship is my daughter’s son Oliver and his grandmother.
+- **Change I'd make:** Change the title to “The Blue Kite” and retain “Author: Margaret Ellison,” “For Oliver” and the entered dedication. Before payment, show plainly what the $4.00 charge includes, whether it is a charge per book, and whether any shipping or additional exports cost extra.
+- **Suggested rewrite:** The Blue Kite
 
 #### Scene 1
 ![I38](artifacts/capture_93/img_00.jpg)
 > One summer, my father made me something very special. He cut up an old blue shirt and made it into a kite!
-- *Picture:* In a warm farmhouse room, a brown-haired adult man kneels beside a little brown-haired girl as they make a blue kite. A cut-up blue shirt and lengths of blue cloth lie on the floor.
-- *Reaction:* The workshop, old shirt, and blue kite are easy to recognise, so this is a good beginning. However, the child is not the short-silver-haired girl in round glasses and a blue cardigan that I asked for, and my father does not appear to be the older Welsh man I described.
-  - [fidelity, sev 3] The picture shows a short-brown-haired girl in pale clothing without round glasses or a blue cardigan, alongside a brown-haired middle-aged man rather than an older Welsh father.
-  - [character_consistency, sev 3] The child and father do not match the explicit descriptions “little Margaret,” “short silver hair,” “round glasses,” “blue cardigan,” and “older Welsh man.”
-- **Change I'd make:** Redraw the child as a clearly little girl with short silver hair, round glasses, and a blue cardigan. Redraw her father as an older Welsh man, while retaining the shirt, kite-making, and farmhouse setting.
+- *Picture:* In a warm watercolor farmhouse room, a dark-haired adult man kneels beside a young brown-haired girl as they make a kite from a blue shirt. The man has dark hair, while the girl has no visible glasses or blue cardigan.
+- *Reaction:* The first sentence now says “my father” and “me,” so that important correction has come from my own revised input. The picture is warm and clearly shows the shirt and kite, but the child does not look like the little Margaret I specifically requested.
+  - [character_consistency, sev 3] The requested little Margaret has short silver hair, round glasses and a blue cardigan, but I38 shows a brown-haired girl in a pale top and grey skirt or shorts.
+  - [fidelity, sev 2] I38 broadly matches “my father made me a kite,” but omits the three identifying features entered for Margaret.
+- **Change I'd make:** Redraw the child as little Margaret with short silver hair, round glasses and a blue cardigan, while keeping the father, shirt, kite and farmhouse. Make it unmistakable that the adult is her father.
 
 #### Scene 2
 ![I39](artifacts/capture_93/img_01.jpg)
 > The blue kite was ready! My father and I carried it up the big windy hill behind the old farmhouse.
-- *Picture:* A brown-haired man and a little brown-haired girl walk beside a stone wall on a green hill. The girl holds the finished blue kite overhead, with a small farmhouse in the valley behind them.
-- *Reaction:* The Welsh-looking hill, farmhouse, and blue kite are lovely and the wording now has the correct relationship. The people still are not my specified little Margaret and older Welsh father, and only Margaret appears to be carrying the kite.
-  - [fidelity, sev 3] The child has brown hair, no visible round glasses, and no blue cardigan; the man also looks too young and has no clear Welsh character cues.
-  - [character_consistency, sev 3] Neither figure matches the appearance established in the requested corrections.
-  - [text_image_fit, sev 1] The text says “My father and I carried it,” while the picture shows the child carrying the kite and the man walking with empty hands.
-- **Change I'd make:** Show the silver-haired, bespectacled little girl in a blue cardigan and the older Welsh father sharing the kite's weight as they climb together.
+- *Picture:* A dark-haired man and a young brown-haired girl climb a green hill together. The girl holds the blue kite above her head, and an old farmhouse appears in the distance.
+- *Reaction:* The Welsh hill, old farmhouse and shared journey are easy to see. However, I still do not recognise myself as the child, because the requested silver hair, glasses and blue cardigan are missing.
+  - [character_consistency, sev 3] I39 again shows a brown-haired girl without glasses or a blue cardigan, unlike the supplied description of little Margaret.
+  - [fidelity, sev 2] The text and setting match the supplied memory, but Margaret's requested identifying appearance is absent from the picture.
+  - [emotional_resonance, sev 2] Although the hill and kite are personal, the missing visual details of Margaret weaken the family resemblance.
+- **Change I'd make:** Keep the composition but redraw little Margaret with short silver hair, round glasses and a blue cardigan. Keep the father recognisably the same man shown in Scene 1.
 
 #### Scene 3
 ![I40](artifacts/capture_93/img_02.jpg)
 > Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in the bright blue sky!
-- *Picture:* A middle-aged man and a little brown-haired girl jump for joy beneath a blue kite flying high in a cloudy sky.
-- *Reaction:* The flying kite and shared excitement are good, but “Grandpa's daddy” invents a grandfather who was never part of my memory. This should say that my father and I flew the kite.
-  - [fidelity, sev 4] The phrase “Grandpa's daddy” introduces the grandfather whom I expressly said not to show, and the picture does not depict my specified little Margaret.
-  - [coherence, sev 3] Scenes 1 and 2 establish “my father and I,” but Scene 3 abruptly changes to an unstated “Grandpa's daddy.”
-  - [text_image_fit, sev 2] The text names “Grandpa's daddy,” but the picture contains only a man and a child, with no grandfather present.
-  - [character_consistency, sev 3] The girl again has brown hair and lacks the specified round glasses and blue cardigan.
-- **Change I'd make:** Replace “Grandpa's daddy” with “My father” and redraw little Margaret as the silver-haired girl with round glasses and a blue cardigan, flying the kite with her father.
-- **Suggested rewrite:** My father threw the kite up into the wind. Up, up, up it went, dancing in the bright blue sky!
+- *Picture:* A dark-haired man and a young girl stand on a windy hill beneath a blue kite. The girl has both arms raised, while the man appears to hold the string.
+- *Reaction:* This sentence has replaced my father with “Grandpa's daddy,” which is not something I entered. The picture is lively, but it cannot repair the wrong family relationship in the text.
+  - [fidelity, sev 4] The text says “Grandpa's daddy,” but the entered memory says “my father,” and I was expressly instructed to show my father making and flying the kite.
+  - [coherence, sev 4] Scenes 1 and 2 use “my father and I,” but Scene 3 abruptly changes to “Grandpa's daddy” without establishing a new narrator or relationship.
+  - [character_consistency, sev 3] The little girl in I40 has short brown hair and no glasses or blue cardigan, and the adult no longer matches the clearly dark-haired father in I38–I39.
+  - [text_image_fit, sev 2] The picture shows a man and child beneath a rising kite, but it is unclear which person has just thrown it because the man remains with the string while the child raises both arms.
+- **Change I'd make:** Replace the relationship wording and redraw the same father and little Margaret from Scene 2. Show my father releasing the line while Margaret watches.
+- **Suggested rewrite:** My father let out the string. Up, up, up went the blue kite! It danced in the bright blue sky.
 
 #### Scene 4
 ![I41](artifacts/capture_93/img_03.jpg)
 > Grandpa's daddy showed him how to hold the string. 'Let out a little more when the wind blows strong,' he said.
-- *Picture:* An elderly white-haired man stands behind a young brown-haired boy and helps him wind or hold a wooden kite reel. A farmhouse and rolling hills appear behind them.
-- *Reaction:* This page makes the mistake even more obvious: the child has changed from a girl into a boy, and the older man has been turned into a grandfather. It is not the little girl learning from her own father.
-  - [fidelity, sev 4] The text says “Grandpa's daddy” and the image shows an elderly grandfather figure with a boy, contrary to the requested father and little Margaret.
-  - [coherence, sev 3] The pronoun “him” grammatically refers to Grandpa, but the picture shows him helping a young boy. The intended learner is unclear.
-  - [text_image_fit, sev 3] “Grandpa's daddy showed him” does not match a picture in which an old man helps a boy rather than a grandfather.
-  - [character_consistency, sev 4] The brown-haired girl in the earlier scenes has become a boy, while the father has become an elderly man.
-- **Change I'd make:** Show my older Welsh father standing behind little Margaret and helping her hold the reel. Preserve her short silver hair, round glasses, and blue cardigan in every panel.
-- **Suggested rewrite:** My father showed me how to hold the string. “Let out a little more when the wind blows strong,” he said.
+- *Picture:* An elderly white-haired man stands behind a young brown-haired boy and helps him hold a kite string. The farmhouse and hills are visible in the background.
+- *Reaction:* This is plainly the wrong family scene: the child has become a boy and my father has become an old grandfather. I would not want Oliver to inherit this relationship error in our family book.
+  - [fidelity, sev 4] The entered instruction was “My father and I” and “little Margaret, a young girl, clearly not a boy,” but the text says “Grandpa's daddy” and “him.”
+  - [text_image_fit, sev 4] I41 shows an elderly man teaching a boy, which supports the wrong wording but contradicts the corrected family story in Scenes 1 and 2.
+  - [character_consistency, sev 4] The brown-haired girl from I39–I40 becomes a brown-haired boy, and the dark-haired father becomes an elderly man.
+  - [coherence, sev 4] The child changes sex and the adult changes identity across successive memories without any explanation.
+- **Change I'd make:** Replace both sentences and redraw my father teaching little Margaret, with the same short silver hair, round glasses and blue cardigan shown consistently. Do not show an elderly grandfather.
+- **Suggested rewrite:** My father showed me how to hold the string. “Let out a little more when the wind grows strong,” he said.
 
 #### Scene 5
 ![I42](artifacts/capture_93/img_04.jpg)
 > Many, many years went by. Now Grandpa was old — and he had a grandson of his own. His name was Oliver.
-- *Picture:* An elderly white-haired man sits in an armchair holding the blue kite while a curly-haired boy in a red shirt and green trousers kneels beside him in a firelit room.
-- *Reaction:* Oliver has been put under an invented grandfather rather than under me, and the picture shows precisely the grandfather I asked the website not to invent. I would not recognise my family in this keepsake.
-  - [fidelity, sev 4] “Now Grandpa was old — and he had a grandson of his own” directly replaces Margaret with an invented grandfather, despite the instruction “Do not show Grandpa or any invented family members.”
-  - [character_consistency, sev 4] The elderly figure is male and is paired with Oliver as though he were the family member who inherited the memory.
-  - [emotional_resonance, sev 4] The central relationship is changed from Margaret remembering her father to an unrelated grandfather, making the story feel generic and potentially upsetting.
-- **Change I'd make:** Replace the old man with older Margaret, recognisable as short-haired, wearing round glasses and a blue cardigan, showing the kite to her grandson Oliver.
-- **Suggested rewrite:** Many, many years went by. Now I was old, too — and I had a grandson named Oliver.
+- *Picture:* A silver-haired elderly man sits beside a curly-haired boy in a red jumper and green trousers. They hold a blue kite together in a living room with a fire.
+- *Reaction:* Oliver is drawn warmly, but the story has made him the grandson of the wrong man. It is my memory, my father’s kite, and Oliver’s relationship is with me, his grandmother.
+  - [fidelity, sev 4] The text says “Grandpa was old — and he had a grandson of his own,” but the entered story says Oliver is my grandson and that I tell him my father’s story.
+  - [coherence, sev 4] The narration shifts from Margaret's first-person memory to an unexplained third-person account of Grandpa and Oliver.
+  - [text_image_fit, sev 4] I42 does show an old man and curly-haired boy with the kite, but it therefore illustrates the invented relationship rather than the requested one.
+  - [emotional_resonance, sev 4] The image is affectionate, but it presents Margaret's memory as Grandpa and Oliver's shared story.
+- **Change I'd make:** Redraw the scene with me as an older Margaret sharing the kite story with Oliver. I should have short silver hair, round glasses and a blue cardigan, and Oliver should be recognisably the same curly-haired boy.
+- **Suggested rewrite:** Many years went by. Now I was older. I told my grandson Oliver the story of the blue kite my father made.
 
 #### Scene 6
 ![I43](artifacts/capture_93/img_05.jpg)
 > The next day, they went back to Wales! Oliver put on his green wellies and they picked up the old blue kite.
-- *Picture:* A curly-haired boy pulls on tall green boots outside a stone building while an elderly bespectacled man stands in the doorway holding the folded blue kite.
-- *Reaction:* The picture is cheerful, but it is the wrong family arrangement: an old man is preparing to fly the kite with Oliver. “The next day” also arrives without a clear present-day event having been established.
-  - [fidelity, sev 4] The image again shows the prohibited grandfather rather than Margaret with Oliver, and the text leaves “they” deliberately vague.
-  - [coherence, sev 2] “The next day” follows a general statement that many years went by but gives no event from which a present-day trip can clearly follow.
-  - [character_consistency, sev 4] The old man remains the central adult rather than changing to Margaret; Oliver is the same curly-haired boy throughout these scenes.
-- **Change I'd make:** Show older Margaret in her blue cardigan helping Oliver into his wellies and carrying the kite with him. Name Margaret in the text so there is no uncertainty.
-- **Suggested rewrite:** The next day, Oliver and I went back to Wales. Together we picked up the old blue kite.
+- *Picture:* Outside a stone farmhouse, a curly-haired boy pulls on green wellies while an elderly silver-haired man holds the blue kite.
+- *Reaction:* The green wellies and Welsh farmhouse are good details, but I can see at once that the adult is an old man rather than me. Calling this “the next day” also feels vague after the time jump in the previous scene.
+  - [fidelity, sev 4] The entered story says that today Oliver and I climb the same hill and that I help him fly Grandpa's blue kite; the text and I43 instead pair Oliver with an unnamed elderly man.
+  - [character_consistency, sev 4] The silver-haired man in I43 is presented as Oliver's companion, but the supplied character description identifies short silver hair, round glasses and a blue cardigan as Grandma Margaret.
+  - [text_image_fit, sev 3] The picture supports the wellies, kite and departure from a farmhouse, but supports the wrong adult companion.
+  - [coherence, sev 2] “The next day” has no clearly established trip or plan in the preceding scene.
+- **Change I'd make:** Replace the elderly man with Grandma Maggie, wearing her blue cardigan and round glasses, and say why Oliver and Margaret are going to Wales. Keep the green wellies and old kite.
+- **Suggested rewrite:** One day, Oliver and I took the old blue kite back to Wales. Oliver put on his green wellies, and we set off together.
 
 #### Scene 7
 ![I44](artifacts/capture_93/img_06.jpg)
 > Up the big hill they climbed together. The wind was blowing just like it did long, long ago.
-- *Picture:* An elderly man in a blue coat and a curly-haired boy in green trousers climb a windy hill together. A stone farmhouse is visible below.
-- *Reaction:* The hill and wind recall the right family memory, but this is once again the invented grandfather and Oliver rather than Margaret and Oliver. I want my own place in the story restored.
-  - [fidelity, sev 4] The picture shows an old man and Oliver, not older Margaret and her grandson.
-  - [character_consistency, sev 4] The central adult remains male throughout the present-day sequence, contrary to the requested family relationships.
-- **Change I'd make:** Keep the landscape but replace the old man with an older Margaret wearing round glasses and a blue cardigan, matching the established illustration style.
-- **Suggested rewrite:** Oliver and I climbed the big hill together. The wind blew just as it had long, long ago.
+- *Picture:* A curly-haired boy in a red jumper climbs ahead of an elderly silver-haired man on a green hill. The man carries the folded blue kite, with a winding road and old farmhouse below.
+- *Reaction:* The hill and farmhouse are recognisable, and the boy is lively, but this is another picture of Oliver with his grandfather rather than with me. I would need the whole scene redrawn.
+  - [fidelity, sev 4] The supplied story places Oliver and Margaret on the hill together; I44 substitutes an elderly man for Margaret.
+  - [text_image_fit, sev 4] The picture does show two people climbing a hill, but its adult figure contradicts the intended identity of the person in the entered story.
+  - [character_consistency, sev 4] I44 continues the invented silver-haired male grandfather rather than depicting short silver-haired, bespectacled Grandma Maggie in a blue cardigan.
+- **Change I'd make:** Redraw the pair as Oliver and Grandma Maggie. Show Maggie in round glasses and a blue cardigan, with the same kite and farmhouse, and preserve Oliver's curly hair, red jumper and green trousers.
 
 #### Scene 8
 ![I45](artifacts/capture_93/img_07.jpg)
 > Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer sky — just like before!
-- *Picture:* An elderly man stands behind Oliver and helps him hold the kite string while the blue kite flies high over the green hills and farmhouse.
-- *Reaction:* The action is warm and the kite is beautifully visible, but “Grandpa” is the wrong name and the wrong person. The picture is polished; the family story is not mine.
-  - [fidelity, sev 4] The sentence explicitly says “Grandpa helped Oliver,” and the illustration confirms the invented male relative.
-  - [character_consistency, sev 4] The old man and curly-haired boy are consistent with the website's invented story but inconsistent with the family relationship I supplied.
-- **Change I'd make:** Change the adult to older Margaret and preserve her round glasses, short silver hair, and blue cardigan as she helps Oliver hold the string.
-- **Suggested rewrite:** I helped Oliver hold the string. The blue kite flew up, up into the summer sky — just like before!
+- *Picture:* An elderly silver-haired man helps a curly-haired boy hold a kite string while a blue kite flies over the green hills and distant farmhouse.
+- *Reaction:* The flying kite and the link between the present and my childhood are lovely, but the central relationship is wrong. Oliver should be flying his grandmother's kite with me beside him.
+  - [fidelity, sev 4] The entered story says “I help him fly Grandpa's blue kite,” but the output says “Grandpa helped Oliver.”
+  - [text_image_fit, sev 4] I45 directly illustrates an elderly man helping Oliver, so the picture reinforces the invented relationship rather than the corrected one.
+  - [character_consistency, sev 4] The adult has the wrong identity and lacks the entered blue cardigan; no round glasses are visible.
+  - [emotional_resonance, sev 4] The affectionate shared action could be meaningful, but it belongs to Oliver and his grandfather rather than Oliver and his grandmother.
+- **Change I'd make:** Change “Grandpa” to “Grandma” or “I,” and redraw the helper as Grandma Maggie with short silver hair, round glasses and a blue cardigan. Keep Oliver's pose and the kite's flight.
+- **Suggested rewrite:** I helped Oliver hold the string. Up, up went the blue kite into the summer sky, just like before!
 
 #### Scene 9
 ![I46](artifacts/capture_93/img_08.jpg)
 > Oliver laughed and laughed as the kite swooped and danced. It was the best feeling in the whole world!
-- *Picture:* Oliver stands with his arms spread wide and laughs beside an elderly man. Part of the blue kite and its curling ribbon are visible above them in a golden sky.
-- *Reaction:* Oliver's delight is captured well, but the scene remains generic because I am absent and an invented grandfather is standing beside him. The ending should connect his joy to my own memory of flying that kite.
-  - [fidelity, sev 4] The picture shows Oliver with the invented grandfather, with no visual sign of Margaret or the Welsh father from the opening memory.
-  - [emotional_resonance, sev 3] “It was the best feeling in the whole world!” is a broad generic statement rather than a specific feeling rooted in Margaret's remembered experience.
-  - [age_fit, sev 1] Most of the sentence is very accessible, but “swooped” and the broad claim “the whole world” add a little unnecessary abstraction for a five-year-old listener.
-- **Change I'd make:** Show older Margaret sharing Oliver's delight, and tie the moment explicitly to her memory of the kite flying with her father.
-- **Suggested rewrite:** Oliver laughed as the blue kite danced in the summer sky. It felt like all those summers long ago.
+- *Picture:* Oliver laughs with his arms open beside an elderly silver-haired man. Only the lower edge of the blue kite and its ribbon are visible at the top of the picture.
+- *Reaction:* Oliver's joy is warm and genuine, but the adult is still the wrong person and most of the kite has been cropped out. I would prefer a picture that shows both Oliver's face and the kite dancing in the sky.
+  - [fidelity, sev 4] I46 shows Oliver celebrating with an elderly man rather than with his grandmother.
+  - [text_image_fit, sev 3] The text says the kite “swooped and danced,” but only a small part of the kite is visible at the top edge, so that important action is not shown clearly.
+  - [character_consistency, sev 4] The adult is the same invented old man and does not match Grandma Maggie's entered appearance.
+  - [visual_quality, sev 2] The accidental cropping of the kite weakens an otherwise attractive illustration.
+- **Change I'd make:** Redraw Grandma Maggie beside Oliver in her blue cardigan and glasses, while including the complete kite swooping above them. Keep Oliver's joyful expression.
 
 #### Scene 10
 ![I47](artifacts/capture_93/img_09.jpg)
 > They promised to keep the old blue kite safe for ever. Every time they came to Wales, they would fly it together.
-- *Picture:* An elderly man places an arm around Oliver as they look across the Welsh hills. The old blue kite lies folded in the grass in the foreground.
-- *Reaction:* The sunset and folded kite give the page a proper visual ending, but it ends the wrong relationship. It needs Margaret and Oliver making the promise so the book feels like my family's keepsake rather than someone else's.
-  - [fidelity, sev 4] The picture again shows the explicitly prohibited invented grandfather with Oliver, and the text never names Margaret.
-  - [character_consistency, sev 4] The elderly male character and curly-haired boy remain unchanged, but neither belongs to the family structure requested for the present-day scenes.
-  - [emotional_resonance, sev 4] The final promise could be moving, but because it is made by the wrong adult it does not connect the kite to Margaret's memory of her father.
-- **Change I'd make:** Show Margaret with her arm around Oliver, both looking across the Welsh hills, and make their promise explicitly theirs. Preserve the folded kite as the closing image.
-- **Suggested rewrite:** Oliver and I promised to keep the old blue kite safe forever. Every time we came to Wales, we would fly it together.
+- *Picture:* At sunset, an elderly silver-haired man places an arm around Oliver. The blue kite lies folded on the grass in the foreground, with the old farmhouse and hills behind them.
+- *Reaction:* This makes a gentle ending, and the kite is safely kept, but it belongs to Oliver and his grandfather rather than Oliver and me. Because the kite is lying on the ground, the picture also does not fully show the promised future flights.
+  - [fidelity, sev 4] The entered dedication and ending are about “we” — Margaret and Oliver — but the text and I47 leave the pair as an unnamed “they” and depict an elderly man.
+  - [text_image_fit, sev 2] The sentence says they would fly the kite together, while I47 shows the kite resting on the ground and the characters embracing.
+  - [character_consistency, sev 4] The ending continues the invented grandfather instead of showing short silver-haired, bespectacled Grandma Maggie in a blue cardigan.
+  - [emotional_resonance, sev 4] The sunset embrace is touching, but the wrong relationship makes this particular family keepsake unacceptable without redrawing.
+- **Change I'd make:** Redraw the ending with Oliver and Grandma Maggie, keeping her short silver hair, round glasses and blue cardigan. Make the language name the pair directly, and either show the kite flying in the distance or make clear that it is being carefully put away after their flight.
+- **Suggested rewrite:** Oliver and I promised to keep the old blue kite safe. Whenever we visited Wales, we would take it out and fly it together.
 
-**Top changes to the output:** 1. Remove every invented Grandpa reference and restore the relationship: Margaret's father made the kite and taught little Margaret to fly it. | 2. Regenerate every remembered-scene illustration with little Margaret clearly shown as a girl with short silver hair, round glasses, and a blue cardigan, alongside her older Welsh father. | 3. Rewrite the present-day scenes with older Margaret and Oliver flying the kite together, naming them directly and removing vague references such as "they." | 4. Use "The Blue Kite" consistently everywhere and preserve the teller age of 5. | 5. Remove the blank and placeholder pages, add or remove the cast page deliberately, and provide a full-size preview of every page before purchase. | 6. Clarify the price, currency, delivery charge, and what the $4.00 and $59 amounts represent.
+**Top changes to the output:** 1. Correct the entire story so the kite-maker is Margaret's father, the childhood child is clearly little Margaret, and the present-day pair is Margaret and Oliver; remove every invented Grandpa reference. | 2. Regenerate the illustrations with consistent character identities: little Margaret as a girl with short silver hair, round glasses and a blue cardigan, and present-day Margaret as a 71-year-old woman with short silver hair, round glasses and a blue cardigan. | 3. Restore the entered title "The Blue Kite" everywhere and remove the unexplained automatic story date. | 4. Use a proper cover and meaningful cast page showing the blue kite, the Welsh farmhouse, Margaret and Oliver, rather than blank pages or an unrelated man-and-child scene. | 5. Show the complete kite and the relevant action on each illustrated page, and provide large, easily inspected scene previews with clear labels for the latest PDF. | 6. Explain exactly what the $4.00 charge covers, whether any shipping or export costs are extra, and that the $59 hardcover is unavailable rather than presenting an unexplained or disabled purchase option. | 7. Remove preview watermarks and labels from the purchased file, enlarge small grey text and writing lines, and keep the simple, warm ending and dedication.
 
 ## Recommendations (participant's priorities)
 - **[high] Correct every scene so my father makes the kite, little Margaret is clearly the child in the childhood scenes, and present-day Margaret and Oliver are the central characters; remove all invented Grandpa references.** (Review Storybook, all scenes) - These errors change the people and relationships at the heart of the memory, so I could not give the book to Oliver.

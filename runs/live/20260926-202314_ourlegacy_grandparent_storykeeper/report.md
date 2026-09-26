@@ -147,147 +147,129 @@
 - **Positives:** The large text and strong contrast are comfortable to read.; The first two watercolour pictures are attractive, warm, and clearly show the kite-making setting.; The numbered scenes make the sequence easy to understand.; The progress bar and exact scene count provide useful structure.
 
 ## Generated output assessment
-*Artifact:* Ten-scene watercolor children's storybook titled "Grandpa's Blue Kite," presented on a storybook-generation website
+*Artifact:* A completed ten-scene illustrated digital storybook draft with a title page, export control, and a displayed price of $4.00.
 
-> The pictures are lovely, the sentences are gentle, and the ending has a proper calmness, but I would not recognise this as my family's story. My father has been renamed, I have been removed, Oliver has been given the wrong grandfather, and the website has apparently ignored the repeated request for Grandma Maggie. I would want these relationships corrected before paying for it.
+> As a teacher, I think the short sentences, watercolours, and strong kite pictures would hold a young child's attention. But a family keepsake must get the family right, and this version has changed my father into someone called Grandpa and removed me from the story altogether. It is a pleasant draft, not yet the personal book I wanted to give Oliver.
 
 | Criterion | Score (1-5) | Evidence |
 |---|---|---|
-| fidelity | 1 | The output changes the central relationships throughout: "Grandpa's daddy" replaces my father, Oliver is made Grandpa's grandson rather than my grandson, and the requested Grandma Maggie never appears. The old blue shirt |
-| coherence | 2 | The story has a clear beginning, memory, present-day kite flight, and ending, but the relationship logic is inconsistent. The father becomes "Grandpa," Oliver is called his grandson, and the present-day adult is a man ra |
-| age fit | 4 | The short sentences, repeated phrases, simple action, and gentle ending suit Oliver's reading age. However, the automatic measurement reports Flesch-Kincaid grade 3.0, and words such as "strong," "threw," and "Grandpa's  |
-| language | 4 | The spelling and grammar are generally clean, and the text has no visible placeholders. "For ever" is acceptable in British English, though "forever" is more common in children's books. The repeated label "Grandpa's dadd |
-| text image fit | 3 | Most images show kite-making or kite-flying in attractive settings, but several pictures contradict the people described. In I2, I3, and I4, the text says "Grandpa's daddy" while the pictures show an elderly man and a yo |
-| character consistency | 2 | The adult changes from a dark-haired working father in I1 to an elderly man in I2-I4 and then a silver-haired man in I5-I10. Oliver's hair changes from red in I5 to brown curls in I6-I10, and Maggie is not drawn as the r |
-| visual quality | 4 | The watercolor illustrations are warm, clear, and broadly attractive, with no obvious garbled lettering or severe drawing artefacts. The main defects are narrative and character errors rather than production defects. I9  |
-| emotional resonance | 2 | The kite, farmhouse, Welsh hill, and promise of future family visits are meaningful, and the gentle ending could become a lovely keepsake. As written, though, Margaret has been erased and her father has been turned into  |
+| fidelity | 1 | The output preserves the blue shirt, kite, windy Welsh hill, farmhouse, green wellies, Oliver, and the promise to keep the kite. However, it changes the central relationship from "my father made me a kite" to "Grandpa's  |
+| coherence | 3 | The draft has a clear childhood kite flight, a time jump, a present-day return, and a promise for the future. Nevertheless, "The next day, they went back to Wales" is abrupt, and the transition removes the crucial fact t |
+| age fit | 3 | The sentences are short and the action is child-friendly, with a successful rhythm in "Up, up, up." Words such as "carried," "threw," "swooped," and "promised" may need adult help for an independent five-year-old, and th |
+| language | 4 | The prose is grammatical, fluent, and free of obvious spelling mistakes. "Grandpa's daddy" is awkward and inaccurate for the intended story, "for ever" is a style choice rather than an error, and "Now Grandpa was old" is |
+| text image fit | 4 | Most pictures closely illustrate the generated sentences: making the kite, carrying it uphill, flying it, teaching the child, climbing, and keeping the kite at the end. On Scene 9, however, the kite is mostly outside the |
+| character consistency | 1 | Oliver is recognisable as a curly-haired boy in most present-day pictures, and the recurring older man is broadly consistent. The specified character, however, was a silver-haired grandmother with round glasses and a blu |
+| visual quality | 4 | The watercolours are attractive, warm, and coherent, with good countryside, farmhouse, clothing, and kite details. There are no obvious garbled words, distorted faces, or severe anatomical artefacts in the supplied image |
+| emotional resonance | 2 | The handmade kite, Welsh setting, Oliver's laughter, and sunset promise are lovely and could become a treasured family story. As written, however, it feels like a pleasant generic story about someone else's grandfather,  |
 
-- **used correctly:** The old blue shirt made into a kite.; The windy hill behind the old farmhouse in Wales.; The bright blue kite flying in the summer sky.; The instruction to let out a little more when the wind grew strong.; Oliver's name and his role as the five-year-old flyer.; Oliver's green wellies.; The present-day return to the hill.; The old kite being kept safe and flown on family visits.
-- **missing:** Margaret Ellison as the narrator and child in the original memory.; Grandma Maggie as the present-day helper.; My father as the kite-maker and teacher.; Margaret's short silver hair, round glasses, and blue cardigan.; Oliver's brown curly hair and freckles as a consistent visual description.; The explicit promise to bring the kite whenever the family visits Wales.
-- **changed:** My father was changed into "Grandpa's daddy."; Margaret was changed into "Grandpa."; Oliver was changed from my grandson into Grandpa's grandson.; The present-day helper was changed from Grandma Maggie into an elderly man.; The original family promise was softened into a general promise to fly the kite when they came to Wales.; The repeated character description identifying Maggie as Oliver's grandmother was not used at all.
-- **invented:** An elderly male grandfather character.; A living-room scene in which an elderly man and child handle the kite.; A child accompanying the kite-maker indoors, which was not part of the supplied memory.; The claim that the child remembered as Grandpa later had a grandson of his own.
+- **used correctly:** The kite was made from an old blue shirt.; The kite was blue.; The original kite flight happened on a windy hill behind an old farmhouse in Wales.; The father taught the child to hold the string and let out more when the wind grew strong.; The kite danced high in the bright blue sky.; Oliver is Oliver's grandson and the present-day hero.; Oliver has brown curly hair, freckles, and green wellies.; The present-day kite flight follows the childhood memory.; Oliver laughs as the kite swoops and dances.; The old blue kite is to be kept safe and brought on family visits to Wales.
+- **missing:** Margaret is never named or represented.; Margaret's role as the person who later told the memory to Oliver is missing.; Margaret's present-day role in helping Oliver fly the kite is missing.; The short silver hair, round glasses, and blue cardigan supplied for the grandmother are not used.; The explicit idea that the kite is Grandpa's, meaning Margaret's father, is not retained in the action.
+- **changed:** "My father made me a kite" became "Grandpa's daddy" making a kite.; Margaret as the child in the memory was replaced by a curly-haired boy who appears to be Oliver.; Margaret as the present-day helper was replaced by Grandpa.; The family relationship was changed so that Oliver is the invented grandfather's grandson.; The present-day transition was changed to an unexplained visit on "The next day."; "Our family visits" was narrowed to "they" flying it together.; The supplied character label "Grandma Maggie" was omitted entirely.
+- **invented:** A character called Grandpa became the narrator and central family member.; Grandpa is described as old and as having a grandson.; The present-day kite trip is placed on an unexplained next day.; The website inferred that the curly-haired child in the childhood pictures is Oliver.
 
 ### Part by part
-#### Title page
+#### Cover / Title page
 > Grandpa's Blue Kite
-- *Picture:* No title-page picture is shown.
-- *Reaction:* The title is clear and inviting, but calling the kite "Grandpa's" signals that the website has changed the family relationships before I have even reached the story.
-  - [fidelity, sev 3] The title says "Grandpa's Blue Kite," although the kite was made by my father and was then flown with my grandson Oliver.
-  - [emotional_resonance, sev 2] The title centers Grandpa rather than Margaret, her father, or Oliver.
-- **Change I'd make:** Rename the book "Oliver and the Old Blue Kite" or "My Father's Blue Kite."
-- **Suggested rewrite:** Oliver and the Old Blue Kite
+- *Picture:* No cover illustration is shown; only the title appears above the first scene.
+- *Reaction:* The title is warm and easy to read, and it could suit the family story. However, there is no cover picture or indication whose story this is.
+  - [fidelity, sev 3] The title is fine as a name for the kite, but the story has silently changed Margaret into a male narrator called Grandpa.
+- **Change I'd make:** Keep the title, but add a small line such as "A story for Oliver from Grandma Margaret" and include a proper cover illustration showing Margaret helping Oliver fly the kite.
 
-#### Scene 1
+#### Page 1
 ![I1](artifacts/capture_02/img_00.jpg)
 > Scene 1  One summer, Grandpa's daddy made something very special. He cut up an old blue shirt and made it into a kite!
-- *Picture:* In a warm farmhouse kitchen, an adult man works on a blue kite while a young boy watches. A cut-up blue shirt lies on the floor.
-- *Reaction:* The picture makes the making of the kite clear and attractive, but the man should be my father, not somebody called "Grandpa's daddy."
-  - [fidelity, sev 4] "Grandpa's daddy" replaces the correct relationship: the maker was my father, and the child in the memory was me.
-  - [emotional_resonance, sev 4] The story removes Margaret as the child holding the kite and makes her absent from her own family memory.
-  - [character_consistency, sev 3] The child shown does not establish Margaret's later appearance, silver hair, round glasses, or blue cardigan.
-- **Change I'd make:** Show my father making the kite for me as a little girl, and identify me as Maggie rather than turning me into Grandpa.
-- **Suggested rewrite:** One summer, my father made me a kite. He cut up an old blue shirt and made it just right for me.
+- *Picture:* In a cosy farmhouse kitchen, an older grey-haired man helps a curly-haired boy assemble a blue kite from an old blue shirt. Cut fabric and long pieces of string lie on the floor.
+- *Reaction:* The warm kitchen picture and the idea of turning an old shirt into a kite are genuinely appealing. The words are wrong for my family story, however: this was my father making the kite for me, not a grandfather making it for a grandson.
+  - [fidelity, sev 4] My input said, "The summer my father made me a kite out of an old blue shirt." The output changes this to "Grandpa's daddy" and makes a child who appears to be Oliver stand where I should be.
+- **Change I'd make:** Restore Margaret as the child in this memory and identify the maker as her father. Regenerate the picture so it shows my father helping me rather than an older man helping Oliver.
+- **Suggested rewrite:** One summer, my father made something very special. He cut up an old blue shirt and made it into a kite!
 
-#### Scene 2
+#### Page 2
 ![I2](artifacts/capture_02/img_01.jpg)
 > Scene 2  The blue kite was ready! Grandpa and his daddy carried it up the big windy hill behind the old farmhouse.
-- *Picture:* An older man and a young boy climb a grassy hill beside a stone wall, with the old farmhouse below. The kite is tucked behind the older man.
-- *Reaction:* The hill and farmhouse look right, but the people in the picture do not match the words: an old man and a child are shown, not my father carrying me or helping me carry the kite.
-  - [fidelity, sev 4] "Grandpa and his daddy" invents two male generations even though the memory concerns my father and me.
-  - [text_image_fit, sev 3] The text says "Grandpa and his daddy," but the picture shows one older man and one young boy.
-  - [emotional_resonance, sev 4] The person whose memory this is has disappeared from the hill-climbing scene.
-- **Change I'd make:** Show my father and five-year-old Maggie carrying the kite together, or make Maggie old enough to recall carrying it with him.
+- *Picture:* An older white-haired man and a curly-haired boy walk uphill beside a dry-stone wall. The man carries the blue kite, and a small stone farmhouse can be seen below.
+- *Reaction:* The Welsh hillside, stone wall, farmhouse, and windy sky are lovely, and the picture does show the journey described here. It still shows the wrong pair of people for the memory I supplied.
+  - [fidelity, sev 4] The input said, "We carried it up the windy hill behind the old farmhouse in Wales." I was the child who went with my father, but the output substitutes "Grandpa and his daddy" and the picture appears to use Oliver.
+- **Change I'd make:** Use Margaret and her father in both text and picture. Mention Wales here, since the place was supplied and is important to the family memory.
 - **Suggested rewrite:** The blue kite was ready! My father and I carried it up the windy hill behind the old farmhouse in Wales.
 
-#### Scene 3
+#### Page 3
 ![I3](artifacts/capture_02/img_02.jpg)
 > Scene 3  Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in the bright blue sky!
-- *Picture:* An older man raises the kite string while a young boy reaches upward on a windy hill. The blue kite dances high in a cloudy sky.
-- *Reaction:* The lovely repeated phrase and flying kite work well, but again the picture has put an old man and a young boy in a scene that should show my father teaching me.
-  - [fidelity, sev 4] "Grandpa's daddy" is not the person named in the family memory.
-  - [text_image_fit, sev 3] The words describe Grandpa's daddy, but the image shows an old man and a young boy.
-  - [character_consistency, sev 3] Maggie is not depicted consistently as the five-year-old in the memory or as the silver-haired grandmother in the present-day scenes.
-- **Change I'd make:** Show my father helping me raise the kite while I hold the string, with both characters consistent with the rest of the book.
-- **Suggested rewrite:** My father helped me throw the kite into the wind. Up, up, up it went, dancing in the bright blue sky!
+- *Picture:* A grey-haired man and a curly-haired boy stand on a grassy hill with their arms raised. A blue kite and its long, curling tails fly high in a cloudy sky.
+- *Reaction:* The repeated phrase "Up, up, up" has a nice rhythm, and the flying kite is exciting. The people are again based on the site's invented grandfather-and-boy story rather than my father teaching me.
+  - [fidelity, sev 4] The input said, "The bright blue kite danced high in the sky." It did not introduce a Grandpa; the output changes both the relationship and the person receiving the lesson.
+- **Change I'd make:** Make my father the kite-maker and me the child watching the kite rise. Keep the effective repeated rhythm.
+- **Suggested rewrite:** My father threw the kite up into the wind. Up, up, up it went, dancing high in the bright blue sky!
 
-#### Scene 4
+#### Page 4
 ![I4](artifacts/capture_02/img_03.jpg)
 > Scene 4  Grandpa's daddy showed him how to hold the string. 'Let out a little more when the wind blows strong,' he said.
-- *Picture:* An elderly white-haired man stands behind a young boy and helps him hold a kite reel. A farmhouse and rolling hills appear in the distance.
-- *Reaction:* The teaching is clear, but the relationship is wrong and the man looks much too old to be the father in my childhood memory.
-  - [fidelity, sev 4] The remembered lesson was given by my father to me, not by "Grandpa's daddy" to Grandpa.
-  - [text_image_fit, sev 3] The text says Grandpa's daddy is teaching Grandpa, while the picture shows an old man teaching a young boy.
-  - [character_consistency, sev 3] The adult in I4 has white hair and an elderly appearance, unlike the adult shown in I1.
-- **Change I'd make:** Replace the elderly man with my father and the boy with Maggie, keeping their appearances consistent with Scene 1.
-- **Suggested rewrite:** My father showed me how to hold the string. "Let out a little when the wind blows strong," he said.
+- *Picture:* A silver-haired man stands behind a curly-haired boy and helps him wind or hold a reel of kite string. The farmhouse and rolling hills are in the distance.
+- *Reaction:* This is a gentle, useful teaching moment, and the picture makes the action easy to understand. The father-and-child relationship and quoted instruction have simply been reassigned to invented characters.
+  - [fidelity, sev 4] My input said, "My father taught me how to hold the string and how to let out a little more when the wind grew strong." The output says "Grandpa's daddy showed him," changing me into him.
+- **Change I'd make:** Restore the original relationship and pronouns. The picture should show my father teaching me unless the design deliberately places me in the present-day story.
+- **Suggested rewrite:** My father showed me how to hold the string. "Let out a little more when the wind grows strong," he said.
 
-#### Scene 5
+#### Page 5
 ![I5](artifacts/capture_02/img_04.jpg)
 > Scene 5  Many, many years went by. Now Grandpa was old — and he had a grandson of his own. His name was Oliver.
-- *Picture:* An elderly white-haired man sits beside a young red-haired boy in a living room. They hold a blue kite together near a fireplace.
-- *Reaction:* This page makes Oliver the old man's grandson and gives him red hair rather than the requested brown curls and freckles. It also omits me entirely.
-  - [fidelity, sev 4] Oliver is my grandson and the old man's great-grandson, but the text says, "he had a grandson of his own."
-  - [fidelity, sev 4] The requested present-day character, "Grandma Maggie," is absent.
-  - [character_consistency, sev 3] Oliver is shown with bright red hair and no clear freckles instead of brown curly hair and freckles.
-  - [text_image_fit, sev 2] The text identifies Oliver as the old man's grandson, while the picture does not make the relationship clear and introduces an indoor kite-handling scene not described in the text.
-- **Change I'd make:** Make the central elderly character Maggie and show Oliver as her five-year-old grandson, with his specified brown curls and freckles.
-- **Suggested rewrite:** Many years went by. Now I was grown up, and my grandson Oliver came to visit. He was five, with brown curly hair and freckles.
+- *Picture:* An older white-haired man sits in an armchair beside a kneeling curly-haired boy. They handle the blue kite beside a lit fireplace.
+- *Reaction:* The indoor memory scene is comfortable, but the transition has made the old man the central family member. I am the person who remembers this summer and later tells it to Oliver; calling that person Grandpa changes the heart of the story.
+  - [fidelity, sev 4] The input said, "Years later, I told the story to my grandson Oliver." The output instead says, "Now Grandpa was old — and he had a grandson of his own," replacing Margaret with Grandpa.
+  - [coherence, sev 3] The jump from my father teaching me to the same man becoming Oliver's grandfather skips the essential step of my retelling the memory.
+- **Change I'd make:** Make Margaret the one who remembers and retells the story, and show her telling Oliver about her own father. Do not describe a real relative as merely "old."
+- **Suggested rewrite:** Many years went by. I told Oliver the story of the blue kite my father and I flew in Wales. Now I was the grandparent, and Oliver was ready to fly it too.
 
-#### Scene 6
+#### Page 6
 ![I6](artifacts/capture_02/img_05.jpg)
 > Scene 6  The next day, they went back to Wales! Oliver put on his green wellies and they picked up the old blue kite.
-- *Picture:* An elderly man holding the blue kite stands in a farmhouse doorway while a curly-haired boy pulls on a green wellington boot. The setting is rural.
-- *Reaction:* Oliver's green wellies are a nice retained detail, but the website has once again turned me into an elderly man and has not shown my blue cardigan or round glasses.
-  - [fidelity, sev 4] The story says "they" after making Oliver the old man's grandson, but the correct present-day pair is Grandma Maggie and Oliver.
-  - [character_consistency, sev 3] The requested Maggie has short silver hair, round glasses, and a blue cardigan; the image instead shows a silver-haired man in dark clothing with no glasses.
-  - [coherence, sev 2] The previous scene says Oliver has just appeared in the story, then this scene says "The next day," without explaining the visit or travel.
-- **Change I'd make:** Draw Maggie in a blue cardigan and round glasses, with Oliver wearing his green wellies, and explain that they returned to the Welsh farmhouse.
-- **Suggested rewrite:** The next day, Oliver and I went back to Wales. He put on his green wellies, and we picked up the old blue kite.
+- *Picture:* Outside a stone farmhouse, a curly-haired boy pulls on one green welling boot while a silver-haired man stands in the doorway holding the folded blue kite.
+- *Reaction:* Oliver's curly hair and green wellies are recognisable, and the picture is cheerful. The companion should be Margaret, not Grandpa, and the abrupt wording about going back "the next day" needs smoothing.
+  - [fidelity, sev 4] The input says, "Today we climb the same hill together... I help him fly Grandpa's blue kite." The output removes Margaret and substitutes Grandpa.
+  - [coherence, sev 2] "The next day, they went back to Wales" is not prepared by the previous page and leaves the present-day transition feeling abrupt.
+- **Change I'd make:** Put Margaret beside Oliver in a blue cardigan, and connect this page directly to the present-day return to the family kite.
+- **Suggested rewrite:** Today, Oliver and I went to the old farmhouse in Wales. Oliver put on his green wellies, and we picked up Grandpa's blue kite.
 
-#### Scene 7
+#### Page 7
 ![I7](artifacts/capture_02/img_06.jpg)
 > Scene 7  Up the big hill they climbed together. The wind was blowing just like it did long, long ago.
-- *Picture:* A silver-haired elderly man carrying the blue kite climbs a green hill beside a curly-haired boy in green boots. A farmhouse and stone walls are visible below.
-- *Reaction:* The hill, farmhouse, wind, and old kite all fit the place, but I have been replaced by a man. That makes the book feel like someone else's memory.
-  - [fidelity, sev 4] The requested action is "Today we climb the same hill together," with Oliver and his grandmother; the image shows an elderly man and Oliver.
-  - [character_consistency, sev 3] Maggie's specified blue cardigan, round glasses, and female appearance are not shown.
-- **Change I'd make:** Replace the elderly man with Maggie, keeping Oliver's appearance and green wellies consistent.
-- **Suggested rewrite:** Oliver and I climbed the hill together. The wind blew just as it had long, long ago.
+- *Picture:* A curly-haired boy in green wellies leads an older silver-haired man uphill beside a stone wall, with the kite folded under the man's arm.
+- *Reaction:* The movement up the Welsh hill is clear and the comparison with the earlier day works well. The older companion is still the wrong person, though.
+  - [fidelity, sev 4] The input said, "Today we climb the same hill together." Because the site has made the companion Grandpa, the picture and text no longer represent Margaret climbing with Oliver.
+- **Change I'd make:** Show Margaret, with short silver hair, round glasses, and a blue cardigan, climbing with Oliver. Retain the hill and "long, long ago" comparison.
+- **Suggested rewrite:** Oliver and I climbed the windy hill. The wind blew just as it had when I was a little girl.
 
-#### Scene 8
+#### Page 8
 ![I8](artifacts/capture_02/img_07.jpg)
 > Scene 8  Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer sky — just like before!
-- *Picture:* An elderly silver-haired man stands behind a curly-haired boy and helps him hold a kite string. The blue kite flies high above them in a bright sky.
-- *Reaction:* The flying action is clear and the picture is attractive, but it continues the serious error of calling the helper Grandpa instead of Grandma Maggie.
-  - [fidelity, sev 4] The text says "Grandpa helped Oliver," but the supplied memory says "I help him fly Grandpa's blue kite."
-  - [character_consistency, sev 3] The adult in I8 is an elderly man without the requested round glasses and blue cardigan.
-  - [text_image_fit, sev 3] The picture broadly matches the action of helping Oliver hold the string, but it contradicts the intended identity of the helper.
-- **Change I'd make:** Show Maggie helping Oliver hold the string, and include her blue cardigan, round glasses, and short silver hair.
-- **Suggested rewrite:** I helped Oliver hold the string. The blue kite flew up, up into the summer sky, just like before!
+- *Picture:* A silver-haired man stands behind a curly-haired boy and helps him hold the kite string. The blue kite flies high against large white clouds.
+- *Reaction:* This is a strong, happy picture of the kite finally rising, and Oliver is clearly the child at the centre. I should be the one helping him, and I should be shown as the silver-haired woman in a blue cardigan.
+  - [fidelity, sev 4] The input explicitly said, "This time Oliver is the hero, and I help him fly Grandpa's blue kite." The output changes "I help him" to "Grandpa helped Oliver."
+  - [character_consistency, sev 4] The supplied description requires Grandma Maggie to have short silver hair, round glasses, and a blue cardigan, but the picture instead shows an older man in dark trousers and a blue jacket.
+- **Change I'd make:** Replace the older man with Margaret and preserve Oliver's central action. She should stand close behind him, guiding his hands as they fly the kite.
+- **Suggested rewrite:** I helped Oliver hold the string. Up, up flew the blue kite into the summer sky, just like before!
 
-#### Scene 9
+#### Page 9
 ![I9](artifacts/capture_02/img_08.jpg)
 > Scene 9  Oliver laughed and laughed as the kite swooped and danced. It was the best feeling in the whole world!
-- *Picture:* A curly-haired boy in green boots laughs with his arms open while an elderly silver-haired man holds the kite string. The kite itself is only partly visible near the top of the image.
-- *Reaction:* Oliver's happiness comes through, but the page loses the personal connection because Maggie has been replaced by an elderly man and the kite is almost cut off.
-  - [fidelity, sev 4] The intended image is Oliver laughing while his grandmother helps him fly the kite; the adult shown is an elderly man.
-  - [character_consistency, sev 3] Maggie's specified appearance is absent again.
-  - [text_image_fit, sev 2] The kite is mostly outside the frame, although the text emphasizes that it swoops and dances.
-- **Change I'd make:** Show Oliver laughing while Maggie watches, and include more of the kite in the picture so the action is fully visible.
-- **Suggested rewrite:** Oliver laughed as the kite swooped and danced. "It's flying high!" he shouted.
+- *Picture:* A curly-haired boy laughs with his arms spread wide on the hillside while an older silver-haired man smiles beside him. The kite itself is mostly outside the top of the frame, with part of its curling tail visible.
+- *Reaction:* Oliver's joy comes through very well, and this is one of the most emotionally effective pictures. The text is also lively, but it would be more personal if it showed my pride in him rather than leaving Margaret out entirely.
+  - [fidelity, sev 3] The input said, "Oliver laughs as it swoops and dances," and this part preserves that detail, but again omits my role in helping him.
+  - [text_image_fit, sev 1] The text says the kite swooped and danced, but only a small part of the blue kite's tail is visible at the top; the kite is not clearly shown doing either action.
+- **Change I'd make:** Show Margaret beside Oliver and make more of the kite visible in the sky. Add one small personal reaction from her, such as pride, without interrupting Oliver's moment.
+- **Suggested rewrite:** Oliver laughed as the kite swooped and danced. "Look at it!" I cried. His laughter made my whole heart smile.
 
-#### Scene 10
-![I10](artifacts/capture_02/img_09.jpg)
+#### Page 10
 > Scene 10  They promised to keep the old blue kite safe for ever. Every time they came to Wales, they would fly it together.
-- *Picture:* A curly-haired boy in green boots and an elderly silver-haired man stand together on a hill at sunset. The blue kite lies safely on the grass in front of them, with the farmhouse glowing in the distance.
-- *Reaction:* The ending has a gentle, proper sense of closure and the farmhouse is attractive, but it is the wrong family ending: the helper should be me, and the promise should include bringing the kite on family visits.
-  - [fidelity, sev 2] The story changes the promise about bringing the kite whenever "our family visits Wales" into a vaguer promise that they would fly it when they came to Wales.
-  - [character_consistency, sev 3] The final elderly man is not the requested Grandma Maggie and does not wear her blue cardigan or round glasses.
-  - [emotional_resonance, sev 4] Because Maggie is absent from the present-day story, the ending does not feel like a keepsake passed from Margaret to Oliver.
-- **Change I'd make:** End with Maggie and Oliver making the original promise about keeping the kite safe and bringing it whenever the family visits Wales.
-- **Suggested rewrite:** We promised to keep the old blue kite safe. Whenever our family visited Wales, Oliver and I would bring it to the hill and fly it together.
+- *Picture:* An older silver-haired man stands with his arm around a curly-haired boy overlooking a warmly lit farmhouse at sunset. The blue kite lies on the grass in the foreground.
+- *Reaction:* The sunset and quiet promise give the book a proper ending, and the kite resting safely nearby is a touching detail. It is still the wrong ending for my family because the central pair should be Margaret and Oliver.
+  - [fidelity, sev 4] The input said, "We promise to keep the old blue kite safe and to bring it whenever our family visits Wales." The general promise is retained, but Margaret is again removed and the wording changes our family promise into an invented pair's promise.
+  - [character_consistency, sev 4] The final image still shows the recurring older man rather than the specified short-haired, round-glasses grandmother in a blue cardigan.
+- **Change I'd make:** Show Margaret and Oliver together at sunset, with the kite beside them. Restore the family promise more closely to the words I supplied and add a final first-person or dedicatory line to Oliver.
+- **Suggested rewrite:** Oliver and I promised to keep the old blue kite safe. Whenever our family came to Wales, we would bring it and fly it together. Now it belonged to both of us.
 
-**Top changes to the output:** 1. Correct the entire family relationship structure: my father made the kite, I was the child in the memory, and Oliver is my grandson. | 2. Include Grandma Maggie in every present-day scene with short silver hair, round glasses, and a blue cardigan; remove the invented elderly grandfather. | 3. Keep Oliver visually consistent as a five-year-old with brown curly hair, freckles, and green wellies. | 4. Restore the original ending: we promise to keep the old blue kite safe and bring it whenever our family visits Wales. | 5. Review every illustration against its scene so the people in the pictures match the names and relationships in the text.
+**Top changes to the output:** 1. Restore the actual story: my father taught me to fly the kite, years later I told Oliver, and today I help Oliver fly it. | 2. Resolve my conflicting character entries by asking whether the present-day helper should be Margaret or my mother; do not silently invent a male Grandpa. | 3. Regenerate the pictures with Margaret as short-haired, round-glasses, blue-cardigan grandmother where appropriate, while keeping Oliver as the five-year-old hero. | 4. Use the family promise more faithfully and add a warm dedication or final first-person sentence from Margaret to Oliver. | 5. Proof the revised text at a genuinely accessible reading age for a five-year-old, while retaining the short rhythms that work so well.
 
 ## Recommendations (participant's priorities)
 - **[high] Correct the family relationships and preserve the exact three-generation chain: my father taught me to fly the kite, I tell Oliver the memory, and I help Oliver fly it.** (Generated storybook review) - This is the most important fault. A keepsake that gets the family relationships wrong is not personal and would be upsetting to give to Oliver.

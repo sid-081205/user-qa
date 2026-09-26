@@ -29,16 +29,16 @@
     "H3": 1
   },
   "reached_output": true,
-  "output_parts": 48,
+  "output_parts": 47,
   "output_criteria": {
     "fidelity": 1.0,
     "coherence": 1.0,
     "age_fit": 3.0,
     "language": 2.0,
-    "text_image_fit": 1.0,
+    "text_image_fit": 2.0,
     "character_consistency": 1.0,
     "visual_quality": 3.0,
-    "emotional_resonance": 1.0
+    "emotional_resonance": 2.0
   },
   "keepsake_worthiness": 1,
   "sus": 25.0,
@@ -113,9 +113,9 @@
   "llm_usage_reassess": {
     "calls": 7,
     "failed_calls": 0,
-    "prompt_tokens": 91545,
-    "completion_tokens": 32500,
-    "seconds": 306.1,
+    "prompt_tokens": 97678,
+    "completion_tokens": 29752,
+    "seconds": 245.6,
     "by_purpose": {
       "output_assessment": 6,
       "output_synthesis": 1

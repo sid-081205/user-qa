@@ -29,15 +29,15 @@
     "H3": 1
   },
   "reached_output": true,
-  "output_parts": 63,
+  "output_parts": 48,
   "output_criteria": {
     "fidelity": 1.0,
     "coherence": 1.0,
     "age_fit": 3.0,
-    "language": 3.0,
+    "language": 2.0,
     "text_image_fit": 1.0,
     "character_consistency": 1.0,
-    "visual_quality": 4.0,
+    "visual_quality": 3.0,
     "emotional_resonance": 1.0
   },
   "keepsake_worthiness": 1,
@@ -109,5 +109,20 @@
       "stealth/space-bunny-alpha": 40
     }
   },
-  "wall_seconds": 1006.5
+  "wall_seconds": 1006.5,
+  "llm_usage_reassess": {
+    "calls": 7,
+    "failed_calls": 0,
+    "prompt_tokens": 91545,
+    "completion_tokens": 32500,
+    "seconds": 306.1,
+    "by_purpose": {
+      "output_assessment": 6,
+      "output_synthesis": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 7
+    }
+  },
+  "reassessed": true
 }
