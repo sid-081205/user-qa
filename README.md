@@ -123,7 +123,7 @@ python experiments/analyze.py --main runs/suite/main --out paper/generated
 cd paper && tectonic main.tex
 ```
 
-The seeded defects are in `demo_sites/storyhearth/ground_truth.json`, outside the web root. `experiments/audit/valid_unseeded_audit.json` is the hand audit of a random sample of findings that the judge accepted as valid but unseeded. `runs/` contains the sessions reported in the paper. Screenshots and captured pictures are not committed, but all JSON, traces and captured output text are, so steps 3 and 4 reproduce every number without new LLM calls.
+The seeded defects are in `demo_sites/storyhearth/ground_truth.json`, outside the web root. `experiments/audit/valid_unseeded_audit.json` is an audit of a random sample of findings that the judge accepted as valid but unseeded. It was labelled by the AI coding assistant that built StoryHearth, not by a person, and should be repeated by a human annotator. `runs/` contains the sessions reported in the paper. Screenshots and captured pictures are not committed, but all JSON, traces and captured output text are, so steps 3 and 4 reproduce every number without new LLM calls.
 
 ## Tests
 

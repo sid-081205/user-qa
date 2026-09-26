@@ -1,5 +1,5 @@
 {
- "description": "Hand audit of 40 findings the ground-truth judge classed as 'valid_unseeded', sampled uniformly at random (random.Random(7).shuffle over all such findings in runs/suite/main/*/gt_scores.json, 18 runs). Single annotator (the benchmark author), checked against the site source, captured text and screenshots.",
+ "description": "Audit of 40 findings the ground-truth judge classed as 'valid_unseeded', sampled uniformly at random (random.Random(7).shuffle over all such findings in runs/suite/main/*/gt_scores.json, 18 runs). Single annotator: the AI coding assistant that built StoryHearth and ran the experiments, not a person. Each finding was checked against the site source, captured text and screenshots. A human annotator should repeat it.",
  "labels": {
   "valid": "a real problem with the site or its output",
   "valid_overlaps_seeded": "real, but it is (part of) a seeded defect",

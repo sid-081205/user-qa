@@ -559,7 +559,7 @@ def main() -> int:
     res["judge_keyword_kappa"] = cohen_kappa(a_, b_)
     res["judge_keyword_agreement"] = sum(1 for x, y in zip(a_, b_) if x == y) / len(a_)
 
-    # ---- Hand audit of the judge's "valid but unseeded" class -> audit-adjusted lenient precision (pooled over findings)
+    # ---- Audit of the judge's "valid but unseeded" class -> audit-adjusted lenient precision (pooled over findings)
     classes = {k: sum(r["g"]["judge"]["classes"][k] for r in runs) for k in ("matched", "duplicate", "valid_unseeded", "incorrect")}
     total = sum(classes.values())
     res["pooled_classes"] = classes | {"total": total, "p_strict": (classes["matched"] + classes["duplicate"]) / total,
