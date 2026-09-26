@@ -15,3 +15,6 @@ paper/*.blg
 paper/*.toc
 paper/*.synctex.gz
 runs/**/_code/
+
+build/
+dist/

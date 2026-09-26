@@ -1,0 +1,10 @@
+playwright>=1.44
+requests>=2.31
+PyYAML>=6.0
+Jinja2>=3.1
+Pillow>=10.0
+PyMuPDF>=1.24
+# experiments/analyze.py
+matplotlib>=3.8
+# tests
+pytest>=8.0
