@@ -82,7 +82,9 @@ def main() -> int:
     (suite_dir / "logs").mkdir(parents=True, exist_ok=True)
     manifest_path = suite_dir / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {"sessions": []}
-    manifest["suite"] = {k: v for k, v in vars(a).items() if k not in ("resume", "refresh_code")} | {"site_url": site["url"]}
+    args = {k: v for k, v in vars(a).items() if k not in ("resume", "refresh_code")} | {"site_url": site["url"]}
+    manifest.setdefault("suite", args)
+    manifest.setdefault("invocations", []).append(args | {"started": time.strftime("%Y-%m-%dT%H:%M:%S")})
     code_dir = suite_dir / "_code"
     if a.refresh_code or not (code_dir / "userqa").exists():
         shutil.rmtree(code_dir, ignore_errors=True)
