@@ -283,7 +283,10 @@
     }
     let faint = false;
     if (["button", "link", "clickable", "tab", "menuitem"].includes(role) && textOf(el) && r.width > 0) {
-      faint = isFaint(checkTextPerception(el, textOf(el), id));
+      // Measure the element that actually paints the text (a link may wrap a styled button).
+      const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: n => n.textContent.trim() ? 1 : 3 });
+      const tn = tw.nextNode();
+      faint = isFaint(checkTextPerception(tn && tn.parentElement ? tn.parentElement : el, textOf(el), id));
     }
     elements.push(info);
     const bits = [`[${id}] ${role}`];
@@ -411,6 +414,21 @@
       lines.push(describe(el, "file-upload") + " (hidden file input; use upload action)");
     }
   });
+
+  // WCAG 2.5.8 spacing exception: an undersized target passes if a 24px circle on its centre touches no other target.
+  const byId = new Map(elements.map(e => [e.id, e]));
+  const small = new Set(a11y.small_targets.map(t => t.id));
+  for (const t of a11y.small_targets) {
+    const e = byId.get(t.id);
+    const [x, y, w, h] = e.bbox, cx = x + w / 2, cy = y + h / 2;
+    t.spacing_ok = !elements.some(o => {
+      if (o.id === t.id || !o.bbox || o.bbox[2] <= 0) return false;
+      const [ox, oy, ow, oh] = o.bbox;
+      if (small.has(o.id)) return Math.hypot(ox + ow / 2 - cx, oy + oh / 2 - cy) < 24;
+      const dx = Math.max(ox - cx, 0, cx - (ox + ow)), dy = Math.max(oy - cy, 0, cy - (oy + oh));
+      return Math.hypot(dx, dy) < 12;
+    });
+  }
 
   // Dedupe consecutive identical lines and cap length.
   const out = [];
