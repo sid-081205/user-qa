@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create your book – StoryHearth</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+<script>SH.requireLogin();</script>
+<script src="assets/story.js"></script>
+</head>
+<body>
+<div class="nav"><a class="logo" href="index.html">Story<span>Hearth</span></a><nav id="navlinks"></nav></div>
+
+<form class="wizard" id="wiz" onsubmit="return false">
+  <div class="step active" data-step="1">
+    <h2>Who's the star of the story?</h2>
+    <div class="row">
+      <div><label class="f" for="hero">Child's first name</label><input type="text" id="hero"></div>
+      <div><label class="f" for="age">Age</label>
+        <select id="age"><option value="">Select…</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></div>
+    </div>
+    <div class="row">
+      <div><label class="f" for="pronoun">Pronouns</label>
+        <select id="pronoun"><option value="">Select…</option><option value="she">she / her</option><option value="he">he / him</option><option value="they">they / them</option></select></div>
+      <div><label class="f" for="looks">What do they look like? (optional)</label><input type="text" id="looks" placeholder="e.g. curly red hair, green wellies"></div>
+    </div>
+    <div class="row">
+      <div><label class="f" for="companion">Who else is in the story?</label><input type="text" id="companion" placeholder="e.g. Grandma Rose"></div>
+      <div><label class="f" for="relation">Relationship</label>
+        <select id="relation"><option>Grandparent</option><option>Parent</option><option>Sibling</option><option>Friend</option><option>Pet</option><option>Other</option></select></div>
+    </div>
+    <div class="actions"><span></span><button class="btn" type="button" onclick="go(2)">Next</button></div>
+  </div>
+
+  <div class="step" data-step="2">
+    <h2>Your story</h2>
+    <label class="f" for="place">Where does the story happen?</label><input type="text" id="place" placeholder="e.g. the beach at Grandma's">
+    <label class="f" for="object">A special object</label><input type="text" id="object" placeholder="e.g. a yellow bucket">
+    <label class="f" for="idea">Tell us the memory or idea behind your story</label>
+    <textarea id="idea" rows="5" maxlength="200" placeholder="What happened? Why does it matter to your family?"></textarea>
+    <div class="actions"><button class="btn secondary" type="button" onclick="go(1)">Back</button><button class="btn" type="button" onclick="go(3)">Next</button></div>
+  </div>
+
+  <div class="step" data-step="3">
+    <h2>Choose the look &amp; feel</h2>
+    <p class="f" style="font:600 14px system-ui">Reading level</p>
+    <label class="choice"><input type="radio" name="level" value="BR-200L"><span><b>Lexile BR–200L</b></span></label>
+    <label class="choice"><input type="radio" name="level" value="200L-500L" checked><span><b>Lexile 200L–500L</b></span></label>
+    <label class="choice"><input type="radio" name="level" value="500L-800L"><span><b>Lexile 500L–800L</b></span></label>
+    <label class="choice"><input type="radio" name="level" value="800L+"><span><b>Lexile 800L+</b></span></label>
+    <p class="f" style="font:600 14px system-ui;margin-top:18px">Illustration style</p>
+    <label class="choice"><input type="radio" name="style" value="Watercolour" checked><span><b>Watercolour</b> — soft and dreamy</span></label>
+    <label class="choice"><input type="radio" name="style" value="Crayon"><span><b>Crayon</b> — like a child drew it</span></label>
+    <label class="choice"><input type="radio" name="style" value="Classic"><span><b>Storybook classic</b> — timeless ink and colour</span></label>
+    <div class="actions"><button class="btn secondary" type="button" onclick="go(2)">Back</button><button class="btn" type="button" onclick="go(4)">Next</button></div>
+  </div>
+
+  <div class="step" data-step="4">
+    <h2>Add a photo (optional)</h2>
+    <p>Upload a clear photo of your child's face so the illustrations look like them.</p>
+    <input type="file" id="photo" accept="image/*">
+    <p id="photoName" class="muted" style="font-family:system-ui;font-size:14px"></p>
+    <div class="actions"><button class="btn secondary" type="button" onclick="go(3)">Back</button><button class="btn teal" type="button" id="make" onclick="makeBook()">Create my book</button></div>
+  </div>
+
+  <div class="step" data-step="5" id="working">
+    <div class="spinner"></div>
+  </div>
+  <div id="err" class="error" style="display:none;margin-top:12px"></div>
+</form>
+<footer id="footer"></footer>
+<script>
+  function go(n) {
+    document.querySelectorAll(".step").forEach(s => s.classList.toggle("active", s.dataset.step == n));
+    window.scrollTo(0, 0);
+  }
+  document.getElementById("photo").addEventListener("change", e => {
+    const f = e.target.files[0];
+    document.getElementById("photoName").textContent = f ? "Selected: " + f.name : "";
+  });
+  function val(id) { return document.getElementById(id).value.trim(); }
+  function makeBook() {
+    const err = document.getElementById("err");
+    err.style.display = "none";
+    if (!val("hero")) { err.textContent = "Something is missing (E-17). Please check your answers."; err.style.display = "block"; return; }
+    const inputs = {
+      hero: val("hero"), age: val("age") || "5", pronoun: val("pronoun") || "they", looks: val("looks"),
+      companion: val("companion"), relation: val("relation"), place: val("place") || "a faraway land",
+      object: val("object") || "a little red wagon", idea: val("idea"),
+      level: (document.querySelector("input[name=level]:checked") || {}).value,
+      style: (document.querySelector("input[name=style]:checked") || {}).value,
+      photo: !!document.getElementById("photo").files.length,
+    };
+    go(5);
+    setTimeout(() => {
+      const book = StoryHearth.generate(inputs);
+      localStorage.setItem("sh_inputs", JSON.stringify(inputs));
+      localStorage.setItem("sh_book", JSON.stringify(book));
+      location.href = "book.html";
+    }, 15000);
+  }
+</script>
+</body>
+</html>

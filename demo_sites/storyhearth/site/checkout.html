@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout – StoryHearth</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+<script>SH.requireLogin();</script>
+</head>
+<body>
+<div class="nav"><a class="logo" href="index.html">Story<span>Hearth</span></a><nav id="navlinks"></nav></div>
+<div class="form" style="max-width:560px">
+  <h2 style="margin-top:0">Checkout</h2>
+  <p><span class="timer" id="timer">Your price is reserved for 09:59</span></p>
+  <table class="sum">
+    <tr><td id="item">Hardcover storybook</td><td>£24.99</td></tr>
+    <tr><td><label><input type="checkbox" id="wrap" checked> Premium gift wrap</label></td><td>£7.99</td></tr>
+    <tr><td>Shipping &amp; handling</td><td>£12.99</td></tr>
+    <tr><td><b>Total</b></td><td><b id="total">£45.97</b></td></tr>
+  </table>
+  <h3>Delivery</h3>
+  <label for="addr">Address</label><input id="addr" type="text">
+  <h3>Payment</h3>
+  <label for="card">Card number</label><input id="card" type="text" autocomplete="cc-number" inputmode="numeric">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label for="exp">Expiry</label><input id="exp" type="text" autocomplete="cc-exp"></div><div><label for="cvc">CVC</label><input id="cvc" type="text" autocomplete="cc-csc"></div></div>
+  <button class="btn" style="width:100%" type="button" id="pay">Pay now</button>
+</div>
+<footer id="footer"></footer>
+<script>
+  const book = JSON.parse(localStorage.getItem("sh_book") || "null");
+  if (book) document.getElementById("item").textContent = "Hardcover: " + book.title;
+  const wrap = document.getElementById("wrap");
+  wrap.onchange = () => { document.getElementById("total").textContent = wrap.checked ? "£45.97" : "£37.98"; };
+  let s = 599;
+  setInterval(() => { s = Math.max(0, s - 1); document.getElementById("timer").textContent = `Your price is reserved for ${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`; }, 1000);
+  document.getElementById("pay").onclick = () => alert("Payment failed: card declined.");
+</script>
+</body>
+</html>

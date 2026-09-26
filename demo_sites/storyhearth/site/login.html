@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in – StoryHearth</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+</head>
+<body>
+<div class="nav"><a class="logo" href="index.html">Story<span>Hearth</span></a><nav id="navlinks"></nav></div>
+<form class="form" id="f" autocomplete="on">
+  <h2 style="margin-top:0">Welcome back</h2>
+  <div id="err" class="error" style="display:none"></div>
+  <input type="email" id="email" placeholder="Email" autocomplete="username">
+  <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+  <button class="btn" style="width:100%" type="submit">Log in</button>
+  <p class="muted" style="font-family:system-ui;font-size:14px">New to StoryHearth? <a href="signup.html">Create an account</a></p>
+</form>
+<footer id="footer"></footer>
+<script>
+  document.getElementById("f").addEventListener("submit", e => {
+    e.preventDefault();
+    const ok = SH.login(document.getElementById("email").value, document.getElementById("password").value);
+    if (!ok) {
+      const err = document.getElementById("err");
+      err.textContent = "Error AUTH-4012: request could not be completed.";
+      err.style.display = "block";
+      return;
+    }
+    const next = new URLSearchParams(location.search).get("next") || "dashboard.html";
+    location.href = next;
+  });
+</script>
+</body>
+</html>

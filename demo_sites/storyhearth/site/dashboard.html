@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My books – StoryHearth</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+<script>SH.requireLogin();</script>
+</head>
+<body>
+<div class="nav"><a class="logo" href="index.html">Story<span>Hearth</span></a><nav id="navlinks"></nav></div>
+<div class="wrap">
+  <div class="banner">&#9888; Error 0x80070057: profile sync incomplete.</div>
+  <h1 id="hi">My books</h1>
+  <div id="books" class="cards"></div>
+  <p style="margin-top:24px"><a class="btn" href="create.html">+ Create a new book</a></p>
+</div>
+<footer id="footer"></footer>
+<script>
+  const u = SH.currentUser();
+  if (u) document.getElementById("hi").textContent = "Welcome back, " + u.name.split(" ")[0];
+  const book = JSON.parse(localStorage.getItem("sh_book") || "null");
+  document.getElementById("books").innerHTML = book
+    ? `<div class="card"><h3>${book.title}</h3><p class="muted">Preview ready</p><a class="btn secondary" href="book.html">Open</a></div>`
+    : '<p class="muted">You have no books yet.</p>';
+</script>
+</body>
+</html>

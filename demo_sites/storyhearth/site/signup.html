@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account – StoryHearth</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+</head>
+<body>
+<div class="nav"><a class="logo" href="index.html">Story<span>Hearth</span></a><nav id="navlinks"></nav></div>
+<form class="form" id="f">
+  <h2 style="margin-top:0">Create your account</h2>
+  <div id="err" class="error" style="display:none"></div>
+  <label for="name">Your name</label><input id="name" type="text">
+  <label for="email">Email</label><input id="email" type="email">
+  <label for="password">Password</label><input id="password" type="password">
+  <button class="btn" style="width:100%" type="submit">Create account</button>
+</form>
+<footer id="footer"></footer>
+<script>
+  document.getElementById("f").addEventListener("submit", e => {
+    e.preventDefault();
+    const pw = document.getElementById("password").value;
+    const err = document.getElementById("err");
+    if (pw.length < 10 || !/[^A-Za-z0-9]/.test(pw) || !/[0-9]/.test(pw)) {
+      err.textContent = "Password invalid. Passwords must be at least 10 characters and include a number and a symbol.";
+      err.style.display = "block";
+      return;
+    }
+    SH.signup(document.getElementById("name").value, document.getElementById("email").value, pw);
+    location.href = "dashboard.html";
+  });
+</script>
+</body>
+</html>
