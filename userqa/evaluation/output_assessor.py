@@ -201,10 +201,11 @@ def _measurements_text(m: dict) -> str:
 
 
 class OutputAssessor:
-    def __init__(self, llm: LLMClient, run_dir: Path, max_images_per_call: int = 12):
+    def __init__(self, llm: LLMClient, run_dir: Path, max_images_per_call: int = 12, vision: bool = True):
         self.llm = llm
         self.run_dir = Path(run_dir)
         self.max_images = max_images_per_call
+        self.vision = vision
 
     def assess(self, persona: Persona, inputs: list[dict], captures: list[dict], reactions: list[dict]) -> dict:
         if not captures:
@@ -216,24 +217,30 @@ class OutputAssessor:
         m = metrics.analyse_parts(prose_parts, names, age)
         # Attach images: prefer element shots of pictures; fall back to viewport screenshots.
         images: list[tuple[str, str]] = []
+        per_capture: list[int] = []
         for ci, c in enumerate(captures):
+            before = len(images)
             imgs = c.get("images") or []
-            if imgs:
+            if not self.vision:
+                pass
+            elif imgs:
                 for im in imgs:
                     images.append((im["path"], f"capture {ci + 1}, {im['w']}x{im['h']}" + (f', alt "{im["alt"][:60]}"' if im.get("alt") else "")))
             else:
                 for v in (c.get("views") or [])[:3]:
                     images.append((v, f"capture {ci + 1}, screenshot of the page"))
+            per_capture.append(len(images) - before)
         artifact_blocks = []
         idx = 0
-        img_refs = []
         for ci, (c, t) in enumerate(zip(captures, texts)):
             refs = []
-            n_imgs = len(c.get("images") or []) or min(3, len(c.get("views") or []))
-            for _ in range(n_imgs):
+            for _ in range(per_capture[ci]):
                 idx += 1
                 refs.append(f"I{idx}")
-            img_refs.append(refs)
+            if not self.vision:
+                alts = [im.get("alt") for im in (c.get("images") or []) if im.get("alt")]
+                if alts:
+                    refs.append("(you cannot see the pictures; their alt text says: " + "; ".join(alts)[:300] + ")")
             artifact_blocks.append(
                 f'[Capture {ci + 1}: "{c.get("label", "")}" - {c.get("url", "")}]\ntext:\n{t[:12000]}\npictures in this capture: {", ".join(refs) or "none"}'
             )

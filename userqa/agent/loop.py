@@ -260,6 +260,7 @@ class PersonaAgent:
                 "results": [x.to_json() for x in results],
                 "a11y": obs.a11y,
                 "events": obs.events,
+                "page_text": obs.text,
             }
             self.result.trace.append(record)
             with trace_path.open("a") as f:

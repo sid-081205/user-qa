@@ -175,7 +175,7 @@ def run_session(
     llm.max_calls = max(llm.max_calls, llm.usage.calls + extra_budget)
     assessment: dict[str, Any] = {}
     try:
-        assessment = OutputAssessor(llm, run_dir).assess(persona, session.inputs, session.captures, session.output_reactions)
+        assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, session.inputs, session.captures, session.output_reactions)
     except BudgetExceeded:
         assessment = {"skipped": True, "reason": "LLM budget exhausted"}
     (run_dir / "output_assessment.json").write_text(json.dumps(assessment, indent=2, ensure_ascii=False))
