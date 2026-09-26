@@ -44,6 +44,21 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:40]
 
 
+def previous_visit_note(prev: Path) -> str:
+    """What a returning user remembers of their earlier session: how it ended and what they wanted changed."""
+    prev = Path(prev)
+    s = json.loads((prev / "session.json").read_text())
+    a = json.loads((prev / "output_assessment.json").read_text()) if (prev / "output_assessment.json").exists() else {}
+    bits = []
+    if s.get("final_summary"):
+        bits.append("How your last visit ended: " + str(s["final_summary"]))
+    if a.get("overall_reaction"):
+        bits.append("What you thought of what the site made for you: " + str(a["overall_reaction"]))
+    if a.get("top_changes"):
+        bits.append("What you wanted changed: " + "; ".join(str(x) for x in a["top_changes"][:4]))
+    return "\n".join(bits)
+
+
 def run_session(
     site: dict,
     persona: Persona,
@@ -57,9 +72,11 @@ def run_session(
     abandon_mode: str = "note",
     temperature: float = 0.7,
     skip_fidelity: bool = False,
+    previous_run: Optional[Path] = None,
     log=print,
 ) -> Path:
     load_env_file()
+    previous_run = previous_run or (ROOT / site["previous_run"] if site.get("previous_run") else None)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     run_dir = Path(out_dir) / f"{stamp}_{_slug(site.get('name', 'site'))}_{persona.id}"
     run_dir.mkdir(parents=True, exist_ok=True)
@@ -111,9 +128,12 @@ def run_session(
         auto_captcha=bool(site.get("auto_captcha", True)),
         timezone_id=site.get("timezone_id"),
     )
+    goal = site["goal"].strip()
+    if previous_run:
+        goal += "\n\nYOU HAVE USED THIS SITE BEFORE. What you remember from last time:\n" + previous_visit_note(previous_run)
     cfg = AgentConfig(
         start_url=site["url"],
-        goal=site["goal"].strip(),
+        goal=goal,
         max_steps=max_steps or int(site.get("max_steps", 30)),
         vision=vision,
         abandon_mode=abandon_mode,
@@ -136,6 +156,7 @@ def run_session(
         "attention": persona.attention,
         "started_utc": stamp,
         "inbox": inbox.mailbox.address if inbox else None,
+        "previous_run": str(previous_run) if previous_run else None,
     }
     (run_dir / "config.json").write_text(json.dumps(config_record, indent=2))
     log(f"[run] {run_dir.name}: persona={persona.id} model={model} url={site['url']}")

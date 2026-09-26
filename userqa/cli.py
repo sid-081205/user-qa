@@ -50,6 +50,7 @@ def main(argv=None) -> int:
     r.add_argument("--no-vision", action="store_true", help="do not send screenshots to the model")
     r.add_argument("--abandon-mode", choices=["note", "stop"], default="note")
     r.add_argument("--no-fidelity", action="store_true", help="skip the persona-fidelity audit call")
+    r.add_argument("--previous-run", help="run dir of this persona's earlier session on the site (a returning visit)")
     r.add_argument("--out", default=str(ROOT / "runs"))
 
     p = sub.add_parser("personas", help="list / show / generate personas")
@@ -91,6 +92,7 @@ def main(argv=None) -> int:
             site, persona, Path(a.out), model=a.model, fallbacks=[m for m in a.fallbacks.split(",") if m],
             max_steps=a.max_steps, max_llm_calls=a.max_calls, headless=a.headless, vision=not a.no_vision,
             abandon_mode=a.abandon_mode, temperature=a.temperature, skip_fidelity=a.no_fidelity,
+            previous_run=Path(a.previous_run) if a.previous_run else None,
         )
         print(run_dir)
         return 0
