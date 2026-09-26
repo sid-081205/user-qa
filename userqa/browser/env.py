@@ -49,7 +49,11 @@ AUTH_HOSTS = ("clerk.", "accounts.google.com", "auth0.com", "stripe.com", "chall
 # ----------------------------------------------------------------- safety
 @dataclass
 class SafetyPolicy:
-    """Guard-rails for running autonomous agents on production websites."""
+    """Guard-rails for running autonomous agents on production websites.
+
+    Hard blocks can never be lifted; soft blocks (any control showing a price) can be lifted by a
+    site config's ``allow_click_patterns``, e.g. to spend a new account's free starter credits.
+    """
 
     blocked_click_patterns: list[str] = field(
         default_factory=lambda: [
@@ -60,12 +64,12 @@ class SafetyPolicy:
             r"\b(place|confirm|complete|submit)\s+(my\s+)?(order|purchase|payment)\b",
             r"\bsubscribe\b",
             r"\bupgrade\b",
-            r"\b(add|buy|top[- ]?up)\s+(more\s+)?credits?\b",
+            r"\b(add|buy|get|top[- ]?up)\s+(more\s+)?credits?\b",
             r"\badd (a )?(card|payment)",
             r"\bdelete (my )?account\b",
-            r"[$£€]\s?\d",
         ]
     )
+    soft_blocked_click_patterns: list[str] = field(default_factory=lambda: [r"[$£€]\s?\d"])
     allowed_click_patterns: list[str] = field(default_factory=list)
     blocked_field_patterns: list[str] = field(
         default_factory=lambda: [r"card", r"\bcvc\b", r"\bcvv\b", r"security code", r"\biban\b", r"sort code", r"account number", r"expir"]
@@ -74,11 +78,14 @@ class SafetyPolicy:
 
     def check_click(self, name: str) -> Optional[str]:
         n = (name or "").lower()
-        if any(re.search(p, n, re.I) for p in self.allowed_click_patterns):
-            return None
         for p in self.blocked_click_patterns:
             if re.search(p, n, re.I):
                 return f"blocked by safety policy (would spend money or be irreversible: matches /{p}/)"
+        if any(re.search(p, n, re.I) for p in self.allowed_click_patterns):
+            return None
+        for p in self.soft_blocked_click_patterns:
+            if re.search(p, n, re.I):
+                return f"blocked by safety policy (this button shows a price: matches /{p}/)"
         return None
 
     def check_field(self, info: dict) -> Optional[str]:
