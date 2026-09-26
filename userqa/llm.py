@@ -109,9 +109,8 @@ def parse_json_lenient(text: str) -> Any:
 
 
 def _balanced_slice(t: str, start: int) -> str:
-    open_ch = t[start]
-    close_ch = "}" if open_ch == "{" else "]"
-    depth, in_str, esc = 0, False, False
+    closers: list[str] = []
+    in_str, esc = False, False
     for i in range(start, len(t)):
         ch = t[i]
         if in_str:
@@ -125,12 +124,14 @@ def _balanced_slice(t: str, start: int) -> str:
         if ch == '"':
             in_str = True
         elif ch in "{[":
-            depth += 1
+            closers.append("}" if ch == "{" else "]")
         elif ch in "}]":
-            depth -= 1
-            if depth == 0:
+            if closers:
+                closers.pop()
+            if not closers:
                 return t[start : i + 1]
-    return t[start:] + (close_ch * max(depth, 0))
+    # A completion cut off by the token limit: close the open string and brackets innermost first.
+    return t[start:] + ('"' if in_str else "") + "".join(reversed(closers))
 
 
 def _repair(s: str) -> str:
