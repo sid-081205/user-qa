@@ -229,11 +229,12 @@ def run_session(
     return run_dir
 
 
-def reassess_run(run_dir: Path, with_debrief: bool = False, log=print) -> Path:
+def reassess_run(run_dir: Path, with_debrief: bool = False, log=print, vision: Optional[bool] = None, variant: str = "") -> Path:
     """Re-run the post-session output assessment (and optionally the debrief) of a finished run.
 
     Used when the assessment stage changes after sessions were collected: the browsing session itself
-    is not repeated, so live sites are not visited (or charged) again.
+    is not repeated, so live sites are not visited (or charged) again. With ``variant`` (e.g. a paired
+    no-vision ablation) the result goes to output_assessment.<variant>.json and the run is otherwise untouched.
     """
     load_env_file()
     run_dir = Path(run_dir)
@@ -244,9 +245,15 @@ def reassess_run(run_dir: Path, with_debrief: bool = False, log=print) -> Path:
     for c in session.get("captures") or []:
         t = run_dir / c.get("dir", "") / "text.txt"
         captures.append({**c, "text": t.read_text() if t.exists() else ""})
-    llm = LLMClient(model=cfg.get("model", DEFAULT_MODEL), fallbacks=cfg.get("fallbacks"), max_calls=12,
+    llm = LLMClient(model=cfg.get("model", DEFAULT_MODEL), fallbacks=cfg.get("fallbacks"), max_calls=40,
                     log_path=run_dir / "llm_calls.jsonl", temperature=float(cfg.get("temperature", 0.7)))
-    vision = bool(cfg.get("vision", True))
+    vision = bool(cfg.get("vision", True)) if vision is None else vision
+    if variant:
+        assessment = OutputAssessor(llm, run_dir, vision=vision).assess(persona, session.get("inputs") or [], captures, session.get("output_reactions") or [])
+        assessment["variant"] = {"name": variant, "vision": vision, "llm_usage": llm.usage.to_json()}
+        (run_dir / f"output_assessment.{variant}.json").write_text(json.dumps(assessment, indent=2, ensure_ascii=False))
+        log(f"[reassess:{variant}] {run_dir.name}: {len(assessment.get('parts') or [])} parts, LLM calls {llm.usage.calls}")
+        return run_dir
     for name in ("output_assessment.json", "debrief.json", "summary.json"):
         if (run_dir / name).exists() and (name != "debrief.json" or with_debrief):
             (run_dir / name).with_suffix(".prev.json").write_text((run_dir / name).read_text())

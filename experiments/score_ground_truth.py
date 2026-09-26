@@ -54,9 +54,10 @@ def page_file(ref: str) -> str:
     return path.split("#")[0].rstrip("/").split("/")[-1] or "index.html"
 
 
-def load_run(run_dir: Path) -> dict:
+def load_run(run_dir: Path, variant: str = "") -> dict:
     session = json.loads((run_dir / "session.json").read_text())
-    assessment = json.loads((run_dir / "output_assessment.json").read_text()) if (run_dir / "output_assessment.json").exists() else {}
+    af = run_dir / (f"output_assessment.{variant}.json" if variant else "output_assessment.json")
+    assessment = json.loads(af.read_text()) if af.exists() else {}
     trace = [json.loads(ln) for ln in (run_dir / "trace.jsonl").read_text().splitlines()] if (run_dir / "trace.jsonl").exists() else []
     captures = []
     for c in session.get("captures") or []:
@@ -115,6 +116,12 @@ def exposure(defects: list[dict], run: dict) -> dict[str, bool]:
     return out
 
 
+def _kw(k: str) -> re.Pattern:
+    """Short keywords match whole words ('alt' is not 'salt' or 'alternative'); longer ones match word prefixes."""
+    k = k.lower()
+    return re.compile(r"\b" + re.escape(k) + (r"\b" if len(k) <= 4 else ""))
+
+
 def keyword_match(f: dict, defects: list[dict]) -> str | None:
     text = f"{f['title']} {f['evidence']} {f.get('why', '')}".lower()
     best, hits = None, 0
@@ -123,7 +130,7 @@ def keyword_match(f: dict, defects: list[dict]) -> str | None:
             continue
         if d["kind"] == "ux" and d["page"] != "*" and d["page"] != f["where"]:
             continue
-        n = sum(1 for k in d.get("keywords") or [] if k.lower() in text)
+        n = sum(1 for k in d.get("keywords") or [] if _kw(k).search(text))
         if n > hits:
             best, hits = d["id"], n
     return best
@@ -157,6 +164,8 @@ def judge(findings: list[dict], defects: list[dict], llm, cache: Path, rejudge: 
         data = json.loads(cache.read_text())
         if data.get("n_findings") == len(findings):
             return {j["f"]: j for j in data["judgements"]}
+    if llm is None:
+        return {}
     dlist = "\n".join(f'{d["id"]} [{d["kind"]}; {d.get("page") or d.get("part")}] {d["title"]}: {d["description"]}' for d in defects)
     judgements: dict[str, dict] = {}
     for start in range(0, len(findings), 45):
@@ -184,12 +193,13 @@ def judge(findings: list[dict], defects: list[dict], llm, cache: Path, rejudge: 
     return judgements
 
 
-def score_run(run_dir: Path, gt: dict, llm, rejudge: bool = False) -> dict:
+def score_run(run_dir: Path, gt: dict, llm, rejudge: bool = False, variant: str = "") -> dict:
     defects = gt["defects"]
-    run = load_run(run_dir)
+    run = load_run(run_dir, variant)
     findings = findings_for(run)
     exp = exposure(defects, run)
-    judged = judge(findings, defects, llm, run_dir / "gt_judge.json", rejudge) if llm and findings else {}
+    sfx = f".{variant}" if variant else ""
+    judged = judge(findings, defects, llm, run_dir / f"gt_judge{sfx}.json", rejudge) if findings else {}
     kinds = {"ux": [d["id"] for d in defects if d["kind"] == "ux"], "output": [d["id"] for d in defects if d["kind"] == "output"]}
     det_judge: dict[str, list[str]] = {}
     det_kw: dict[str, list[str]] = {}
@@ -229,7 +239,8 @@ def score_run(run_dir: Path, gt: dict, llm, rejudge: bool = False) -> dict:
     result = {
         "run": run_dir.name,
         "persona": cfg.get("persona"),
-        "vision": cfg.get("vision", True),
+        "variant": variant or None,
+        "vision": (run["assessment"].get("variant") or {}).get("vision", cfg.get("vision", True)),
         "model": cfg.get("model"),
         "status": run["session"].get("status"),
         "steps": run["session"].get("steps"),
@@ -244,7 +255,7 @@ def score_run(run_dir: Path, gt: dict, llm, rejudge: bool = False) -> dict:
         "deterministic_output_baseline": {"detected": det_base, "raw": round(len(det_base) / len(kinds["output"]), 3)},
         "findings": findings,
     }
-    (run_dir / "gt_scores.json").write_text(json.dumps(result, indent=1, ensure_ascii=False))
+    (run_dir / f"gt_scores{sfx}.json").write_text(json.dumps(result, indent=1, ensure_ascii=False))
     return result
 
 
@@ -264,6 +275,7 @@ def main() -> int:
     ap.add_argument("--no-judge", action="store_true", help="keyword baseline only (no LLM calls)")
     ap.add_argument("--rejudge", action="store_true")
     ap.add_argument("--judge-model")
+    ap.add_argument("--variant", default="", help="score output_assessment.<variant>.json (e.g. a no-vision re-assessment)")
     a = ap.parse_args()
     gt = json.loads(GT_PATH.read_text())
     llm = None
@@ -274,8 +286,10 @@ def main() -> int:
         load_env_file()
         llm = LLMClient(model=a.judge_model or DEFAULT_MODEL, fallbacks=[], max_calls=400, temperature=0.0)
     for run_dir in discover_runs(a.paths):
+        if a.variant and not (run_dir / f"output_assessment.{a.variant}.json").exists():
+            continue
         try:
-            r = score_run(run_dir, gt, llm, a.rejudge)
+            r = score_run(run_dir, gt, llm, a.rejudge, a.variant)
         except Exception as e:  # keep scoring the rest of the suite
             print(f"{run_dir.name}: ERROR {e}")
             continue

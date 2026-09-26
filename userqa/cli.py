@@ -66,6 +66,8 @@ def main(argv=None) -> int:
     ra = sub.add_parser("reassess", help="re-run a finished run's output assessment without browsing again")
     ra.add_argument("run_dirs", nargs="+")
     ra.add_argument("--with-debrief", action="store_true", help="also re-run the SUS/UEQ-S debrief")
+    ra.add_argument("--no-vision", action="store_true", help="assess without looking at pictures (alt text only)")
+    ra.add_argument("--variant", default="", help="write output_assessment.<variant>.json and leave the run otherwise untouched")
 
     sub.add_parser("quota", help="show OpenRouter key limits / free-model quota")
 
@@ -121,7 +123,10 @@ def main(argv=None) -> int:
         from .runner import reassess_run
 
         for d in a.run_dirs:
-            reassess_run(Path(d), with_debrief=a.with_debrief)
+            try:
+                reassess_run(Path(d), with_debrief=a.with_debrief, vision=False if a.no_vision else None, variant=a.variant)
+            except Exception as e:  # one broken run must not stop a batch
+                print(f"[reassess] {d}: ERROR {type(e).__name__}: {e}")
         return 0
     if a.cmd == "quota":
         q = LLMClient(max_calls=0).quota()
