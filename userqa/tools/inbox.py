@@ -47,10 +47,16 @@ class Inbox:
     def create(cls, prefix: str = "userqa") -> "Inbox":
         domains = requests.get(f"{API}/domains", timeout=20).json()["hydra:member"]
         domain = next(d["domain"] for d in domains if d.get("isActive"))
-        local = f"{prefix}{secrets.token_hex(4)}".lower()
         password = "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(20))
-        r = requests.post(f"{API}/accounts", json={"address": f"{local}@{domain}", "password": password}, timeout=20)
-        r.raise_for_status()
+        for attempt in range(4):
+            # mail.tm rejects some usernames (e.g. containing blocklisted words); fall back to a neutral prefix.
+            local = f"{prefix if attempt == 0 else 'qa'}{secrets.token_hex(4)}".lower()
+            r = requests.post(f"{API}/accounts", json={"address": f"{local}@{domain}", "password": password}, timeout=20)
+            if r.status_code in (422, 429) and attempt < 3:  # address taken or rate-limited: retry with a new address
+                time.sleep(2 + 3 * attempt)
+                continue
+            r.raise_for_status()
+            break
         # mail.tm normalises the local part, so the canonical address is the one it returns.
         return cls(Mailbox(address=r.json()["address"], password=password))
 
