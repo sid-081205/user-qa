@@ -1,0 +1,18 @@
+{
+  "label": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 17 of 32",
+  "url": "file://02_storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf/page-17",
+  "views": [
+    "artifacts/capture_76/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_76/view_00.jpg",
+      "alt": "PDF page 17",
+      "w": 1100,
+      "h": 831
+    }
+  ],
+  "dir": "artifacts/capture_76",
+  "source": "file",
+  "dedupe_key": "ca9b805b8f055415a557ddbc11e3392a4250170b:16"
+}

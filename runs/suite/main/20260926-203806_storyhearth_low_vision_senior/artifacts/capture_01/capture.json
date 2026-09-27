@@ -1,0 +1,18 @@
+{
+  "label": "auto: The Magical Adventrue of Lily",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_01/view_00.jpg",
+    "artifacts/capture_01/view_01.jpg",
+    "artifacts/capture_01/view_02.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_01/img_00.jpg",
+      "alt": "Cover",
+      "w": 531,
+      "h": 348
+    }
+  ],
+  "dir": "artifacts/capture_01"
+}

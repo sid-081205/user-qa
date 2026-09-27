@@ -1,0 +1,49 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "Daniel is consistently driven by first-hand evaluation of the AI rather than marketing claims. He moves quickly through the workflow, tests generation quality in steps 8–13, and is motivated by producing a genuinely good book for Zara, while also investigating child-photo handling in steps 9 and 15–16."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "He selectively processes the interface and follows prominent cues: the login action, Create button, Next, and Order hardcover. He does not dwell on long explanations, but critically checks concrete details such as selected style, supplied appearance, truncated input, pricing, and privacy language in steps 3–16."
+    },
+    "self_efficacy": {
+      "score": 5,
+      "why": "The participant behaves like a confident technical user who explores, uses Back navigation, checks form-state corruption, and diagnoses ambiguous system feedback without hesitation. He attributes failures to the product rather than his own misunderstanding, especially in steps 3, 6, 10, and 13."
+    },
+    "risk_attitude": {
+      "score": 4,
+      "why": "He is generally willing to try the product and proceed through generation, but is appropriately cautious around Zara's photos and payment details. He skips the optional upload in step 9, avoids entering payment information in step 14, and investigates the privacy notice in steps 15–16."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "He learns by tinkering and experimentation: he logs in, creates a character setup, changes the relationship, tests back-navigation, inspects the generated output, removes gift wrap, and opens the privacy policy. These actions directly reflect the specified exploratory learning style."
+    }
+  },
+  "voice_consistency": {
+    "score": 5,
+    "why": "The think-aloud is blunt, technical, precise, and focused on implementation and observable states. Phrases such as “weak system feedback,” “corrupt at the 200-character boundary,” “plainly broken,” and “not enough to establish child-image safety” fit Daniel's persona throughout."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific to Daniel's life and priorities. He consistently uses Zara's age, appearance, pronouns, the cardboard rocket memory, the purple sock, Manchester-family context, his engineering perspective, and his concern about child-photo retention rather than behaving like a generic evaluator."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural rather than exaggerated. Daniel's technical scrutiny, preference for exploration, and concern about child data are plausible and consistently expressed, though the repeated emphasis on engineering terminology and defects makes him somewhat idealized as the technically exacting early adopter.",
+    "examples": [
+      "Diagnoses a silent 200-character truncation and attempts to repair it through Back navigation in steps 6–7.",
+      "Immediately compares the generated style and character details against the requested inputs in steps 11–13.",
+      "Declines the upload until child-photo retention and processing are clarified in steps 9 and 15–16."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear evidence of knowledge beyond what the interface exposes and what a technically experienced user could reasonably infer. He does not guess hidden URLs, invoke internal implementation details, or display privileged product knowledge; observations are grounded in visible states and copy in steps 3–16."
+  },
+  "realism_overall": {
+    "score": 5,
+    "why": "The sequence is highly plausible for this persona: a busy, technically confident parent would likely try the product quickly, test form edge cases, scrutinize AI fidelity and consistency, avoid uploading a child's photo without privacy assurances, and inspect hidden costs before payment. The behavior remains coherent from initial curiosity through distrust of the final result."
+  }
+}

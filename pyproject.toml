@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "userqa"
+version = "0.1.0"
+description = "Persona-grounded agentic UX and generated-output evaluation of websites with LLM-simulated users"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.44",
+    "requests>=2.31",
+    "PyYAML>=6.0",
+    "Jinja2>=3.1",
+    "Pillow>=10.0",
+    "PyMuPDF>=1.24",
+]
+
+[project.optional-dependencies]
+experiments = ["matplotlib>=3.8"]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+userqa = "userqa.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["userqa*"]
+
+[tool.setuptools.package-data]
+userqa = ["browser/observe.js", "personas/library/*.yaml", "report/templates/*.j2", "ui/static/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

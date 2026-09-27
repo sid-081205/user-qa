@@ -1,0 +1,16 @@
+{
+  "label": "The Magical Adventrue of Oliver page 3",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_04/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_04/img_00.jpg",
+      "alt": "Oliver at The windy hill behind the old farmhouse in Wales",
+      "w": 714,
+      "h": 469
+    }
+  ],
+  "dir": "artifacts/capture_04"
+}

@@ -1,0 +1,86 @@
+{
+  "run": "20260926-203628_storyhearth_esl_parent",
+  "persona": "esl_parent",
+  "persona_name": "Minh Tran",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 12,
+  "pages_reviewed": 9,
+  "issues": 26,
+  "unique_issues": 25,
+  "evidence_quotes_verified": 0.833,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 6,
+    "2": 10,
+    "3": 9,
+    "4": 1
+  },
+  "issues_by_code": {
+    "H2": 8,
+    "ACC": 5,
+    "CONTENT": 5,
+    "VALUE": 4,
+    "H9": 1,
+    "H6": 1,
+    "H5": 1,
+    "DECEPTIVE": 1
+  },
+  "reached_output": true,
+  "output_parts": 10,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 1.0,
+    "character_consistency": 2.0,
+    "visual_quality": 2.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 22.5,
+  "sus_grade": "F",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": 1.0,
+    "hedonic": 1.0,
+    "overall": 1.0
+  },
+  "nps": 0,
+  "mean_valence": -0.17,
+  "min_valence": -2.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 7,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 4,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 1,
+    "realism_overall": 5
+  },
+  "llm_usage": {
+    "calls": 15,
+    "failed_calls": 0,
+    "prompt_tokens": 76940,
+    "completion_tokens": 21843,
+    "seconds": 238.0,
+    "by_purpose": {
+      "step": 12,
+      "output_assessment": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 15
+    }
+  },
+  "wall_seconds": 324.8
+}

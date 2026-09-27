@@ -1,0 +1,37 @@
+{
+  "label": "auto: Your Storybook",
+  "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148",
+  "views": [
+    "artifacts/capture_01/view_00.jpg",
+    "artifacts/capture_01/view_01.jpg",
+    "artifacts/capture_01/view_02.jpg",
+    "artifacts/capture_01/view_03.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_01/img_00.jpg",
+      "alt": "Scene 2: The blue kite was ready! Grandpa and his daddy carried it up the big windy hill ",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_01/img_01.jpg",
+      "alt": "Scene 3: Grandpa's daddy threw the kite up into the wind. Up, up, up it went \u2014 dancing in",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_01/img_02.jpg",
+      "alt": "Scene 9: Oliver laughed and laughed as the kite swooped and danced. It was the best feeli",
+      "w": 402,
+      "h": 301
+    },
+    {
+      "path": "artifacts/capture_01/img_03.jpg",
+      "alt": "Scene 10: They promised to keep the old blue kite safe for ever. Every time they came to W",
+      "w": 402,
+      "h": 301
+    }
+  ],
+  "dir": "artifacts/capture_01"
+}

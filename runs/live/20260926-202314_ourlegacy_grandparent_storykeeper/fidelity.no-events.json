@@ -1,0 +1,60 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "She is consistently task-focused on creating a personal keepsake for Oliver, chooses to write the real kite memory herself, specifies the characters, and rejects output that is not faithful to the family story (Steps 7-12, 14-16)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She reads carefully, checks the email address and verification code, notices ambiguous wording and relationship errors, reviews the complete story, and records multiple specific problems rather than acting on the first cue (Steps 1-6, 11, 14-16)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "She shows some uncertainty about unfamiliar interfaces and the timeout, but she does understand the task well and does not blame herself when the product changes the family relationships. Her cautious, self-directed recovery after the failed verification is consistent with low-to-moderate self-efficacy (Steps 5-6, 13-16)."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She avoids Google sign-in, declines to upload Oliver's photograph, checks the $1 charge and free-credit balance, and pauses to correct story details before generating; this strongly matches a risk-averse participant (Steps 2-3, 7, 9, 11-12)."
+    }
+  },
+  "learning_style": {
+    "score": 5,
+    "why": "She follows the process step by step, uses labelled fields and sequential actions, checks each stage, and reviews the result before deciding whether it is acceptable (Steps 3-14)."
+  },
+  "voice_consistency": {
+    "score": 5,
+    "why": "The think-aloud is polite, precise, formal, and attentive to clarity, spelling, grammar, pricing, privacy, and readability. Phrases such as 'I shall enter it now' and her concern about 'unexplained' information sound consistent throughout (Steps 1-16)."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific to Margaret's life: the kite made by her father, the hill in Wales, Oliver's appearance and wellies, Grandma Maggie's appearance, her concern about uploading a child's photograph, and her preference for free credit rather than payment details (Steps 7-12, 14-16)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural rather than exaggerated. It uses a few familiar older-user cues—large text, careful reading, caution about technology, and concern about privacy—but these are integrated into a coherent individual with specific memories and goals. The consistently flawless identification of every UI and narrative problem makes the participant somewhat idealized, as in 'she has now looked through every scene' and her highly systematic review (Steps 14-16)."
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no meaningful use of developer terminology, hidden URLs, or specialist technical knowledge. She uses only information presented by the site, the verification email, and her own family details; the $5 credit and $1 charge are observed interface values rather than unexplained knowledge (Steps 1-13)."
+  },
+  "realism_overall": {
+    "score": 4,
+    "why": "A real person could plausibly proceed this way: she would carefully create an account, avoid unnecessary data sharing, use free credit, correct an important relationship error, and reject a technically attractive but factually wrong keepsake. The only slightly unrealistic aspect is the consistently exhaustive observation and reporting of every narrative, privacy, pricing, and accessibility issue without any sign of fatigue or uncertainty."
+  },
+  "control": {
+    "journey": "the digest with every step's browser events removed, as before the fix",
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 3637,
+      "completion_tokens": 882,
+      "seconds": 13.0,
+      "by_purpose": {
+        "fidelity_audit": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

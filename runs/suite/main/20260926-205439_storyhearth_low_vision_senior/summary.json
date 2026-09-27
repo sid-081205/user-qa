@@ -1,0 +1,88 @@
+{
+  "run": "20260926-205439_storyhearth_low_vision_senior",
+  "persona": "low_vision_senior",
+  "persona_name": "Harold Brooks",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 13,
+  "pages_reviewed": 9,
+  "issues": 32,
+  "unique_issues": 26,
+  "evidence_quotes_verified": 0.88,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 4,
+    "2": 17,
+    "3": 11,
+    "4": 0
+  },
+  "issues_by_code": {
+    "ACC": 16,
+    "H2": 4,
+    "CONTENT": 3,
+    "H7": 2,
+    "DECEPTIVE": 2,
+    "H9": 1,
+    "H1": 1,
+    "H6": 1,
+    "H5": 1,
+    "VALUE": 1
+  },
+  "reached_output": true,
+  "output_parts": 9,
+  "output_criteria": {
+    "fidelity": 2.0,
+    "coherence": 2.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 1.0,
+    "character_consistency": 2.0,
+    "visual_quality": 2.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 45.0,
+  "sus_grade": "F",
+  "sus_consistency_flag": true,
+  "ueq_s": {
+    "pragmatic": -0.5,
+    "hedonic": -0.5,
+    "overall": -0.5
+  },
+  "nps": 3,
+  "mean_valence": 0.62,
+  "min_valence": -1.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 9,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 4,
+    "individuation": 5,
+    "caricature": 3,
+    "knowledge_leakage": 1,
+    "realism_overall": 4
+  },
+  "llm_usage": {
+    "calls": 16,
+    "failed_calls": 0,
+    "prompt_tokens": 87263,
+    "completion_tokens": 22551,
+    "seconds": 226.7,
+    "by_purpose": {
+      "step": 13,
+      "output_assessment": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 16
+    }
+  },
+  "wall_seconds": 315.1
+}

@@ -1,0 +1,176 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not want to use this website frequently because the generated book was wrong and the checkout felt deceptive.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The form itself was fairly straightforward, but the technical wording, unexplained error, and broken output made the overall site feel unnecessarily complex.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "I could get through the setup steps, but the errors, confusing preview, and difficult checkout meant I did not find the whole site easy to use.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I did not need a technical person to complete the form, but the unexplained error and unresolved placeholders would have made me ask someone for help.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The pages mostly connected logically, but the selected illustration style did not carry through to the generated book.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "There were serious inconsistencies between my choices and the result, including the style, story content, spelling, placeholders, and ending.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people could probably complete the setup, but I doubt the site would be easy to trust or learn without encountering the bugs I saw.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "It was not especially cumbersome during the form, but the confusing errors and checkout made the overall process feel awkward.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I felt confident entering the form details, but I lost confidence once the book ignored my choices and contained obvious errors.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not have to learn a lot to start the form, but the confusing technical wording and unexplained problems required extra investigation.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 2
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 2
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 4
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 3
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 3
+    }
+  ],
+  "nps": 0,
+  "interview": {
+    "purpose": "This website is for creating personalised storybooks featuring a child and people or memories important to them. It seems aimed at parents or family members wanting a keepsake story about a child.",
+    "worst_moment": "The most frustrating moment was seeing the completed book ignore Grandpa Joe and the sandcastle memory, use the wrong illustration style, contain spelling mistakes and placeholders, and end with an unfinished sentence. The preselected gift wrap at checkout also felt like a trap.",
+    "best_moment": "The book setup form was fairly clear and reassuring. I liked that I could enter Sam's details, describe the memory, choose a reading level, and select an illustration style without much difficulty.",
+    "abandon": "Yes. I would probably have abandoned the site after reading the generated story, especially once I saw that it was not about the memory I entered and could not repair the ending. I also would not have continued to payment after seeing the £45.97 total with gift wrap preselected.",
+    "missing": "I expected the story to be about Sam and Grandpa Joe building sandcastles at the beach, with the yellow bucket included. I also expected an obvious way to edit or regenerate the title and story for free, and I did not see a way to fix the incomplete ending before paying.",
+    "trust": "I would be cautious about entering family information after seeing the unexplained technical error and the generated story include unresolved template placeholders. The wrong style and missing family member made me doubt whether the site handled my information and instructions reliably.",
+    "willingness_to_pay": "I would not pay £4.99 to regenerate this result, and I would not pay £45.97 for a hardcover with these problems. If the story were accurate, polished, clearly illustrated, and suitable for a five-year-old, a lower-cost digital version might be worth paying for; I would consider more for a genuinely well-made physical keepsake.",
+    "output_verdict": "I would reject this book. It does not feel personal or reliable because the key people and memory are missing, the language is too advanced and frightening for Sam, the illustrations are generic and wrong for the chosen style, and the text contains serious production errors."
+  },
+  "recommendations": [
+    {
+      "change": "Make the generated story faithfully include the named characters, relationship, setting, objects, and supplied memory, especially Sam and Grandpa Joe building sandcastles.",
+      "page": "Generated storybook preview",
+      "why": "The personalisation is the main reason to use the site, and omitting the most important people and memory makes the result worthless as a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Fix the story before showing paid regeneration: spell the title and names correctly, remove unresolved placeholders, remove duplicated text, and complete the final sentence.",
+      "page": "Generated storybook preview",
+      "why": "Obvious errors made the book look unfinished and made me unwilling to spend even £4.99 to try to improve it.",
+      "priority": "high"
+    },
+    {
+      "change": "Use age-appropriate vocabulary, shorter concrete sentences, and a complete, positive ending for the selected reading level.",
+      "page": "Choose the look & feel / Generated storybook preview",
+      "why": "Sam is five, and the advanced vocabulary, frightening shadows, and incomplete ending were not suitable for her.",
+      "priority": "high"
+    },
+    {
+      "change": "Apply the selected Watercolour style consistently and make each illustration match the text, characters, beach, yellow bucket, sandcastles, and action on that page.",
+      "page": "Generated storybook preview",
+      "why": "The output said it used Pop-art comic despite my Watercolour selection, and mismatched pictures further reduced my trust.",
+      "priority": "high"
+    },
+    {
+      "change": "Do not preselect paid gift wrap, and show a clear breakdown of the item, gift wrap, shipping, and total before the user reaches checkout.",
+      "page": "Checkout",
+      "why": "The £45.97 total was much higher than the initial £4.99 regeneration price, and the already-selected gift wrap felt misleading.",
+      "priority": "high"
+    },
+    {
+      "change": "Add a clear free correction or regeneration path for factual mistakes, spelling errors, missing requested details, and incomplete text.",
+      "page": "Generated storybook preview",
+      "why": "I need control over errors that are clearly the website's fault before being asked to pay for another version.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace the unexplained dashboard error with a plain-language explanation and give me a useful recovery action.",
+      "page": "My books dashboard",
+      "why": "The error code told me nothing about what was wrong or whether my account and saved data were safe.",
+      "priority": "medium"
+    },
+    {
+      "change": "Provide permanent, accessible labels for the email, password, and photo-upload fields.",
+      "page": "Log in / Optional photo upload",
+      "why": "Clear labels would make the forms easier to understand and use with assistive technology.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace technical homepage wording with simple language and make the primary action clearly say that it leads to logging in.",
+      "page": "StoryHearth homepage",
+      "why": "The wording sounded aimed at specialists rather than ordinary parents and the initial action was not completely obvious.",
+      "priority": "medium"
+    },
+    {
+      "change": "Increase the contrast of footer text and links and add a descriptive alternative text or description for the main image.",
+      "page": "Homepage / My books dashboard / Book setup form / Optional photo upload",
+      "why": "The low-contrast text was difficult to read and the missing image description reduced accessibility.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "The setup was promising, but the broken, inaccurate book and misleading checkout made me distrust the site and reject the result.",
+  "sus_score": {
+    "score": 35.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 1.8,
+    "mean_negative_items": 3.0,
+    "inconsistent_pairs": 2,
+    "consistency_flag": true
+  },
+  "ueq_s_score": {
+    "pragmatic": -1.5,
+    "hedonic": -0.25,
+    "overall": -0.875
+  }
+}

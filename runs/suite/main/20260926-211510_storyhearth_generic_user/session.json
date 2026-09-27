@@ -1,0 +1,1119 @@
+{
+  "status": "done",
+  "steps": 11,
+  "site_model": {
+    "what_it_is": "A website for generating personalised, illustrated family storybooks from supplied family details and a memory.",
+    "who_it_is_for": "Families wanting a story starring their child and another loved one, apparently with a reading age suited to young children.",
+    "value_proposition": "Turn a meaningful family memory into an illustrated storybook, with a free digital preview and an option for printed hardcovers.",
+    "main_tasks": [
+      "Log in",
+      "Add the child and another character",
+      "Describe a place, treasured object, and memory",
+      "Generate and read the illustrated storybook",
+      "Check the price of a printed hardcover"
+    ],
+    "pricing_model": "The digital preview is free; printed hardcovers are available, but no actual price is shown on this page.",
+    "trust_signals": [
+      "A clear three-step process",
+      "A claim that the preview is free",
+      "Testimonials attributed to named customers and UK cities",
+      "Privacy, Terms, and Contact links"
+    ],
+    "fit_for_me": "It sounds well suited to making a keepsake story about Sam and Grandpa Joe, provided the writing and pictures are genuinely child-friendly."
+  },
+  "pages": {
+    "127.0.0.1:8765/ | Your family's stories, bound for generations.": {
+      "page_key": "127.0.0.1:8765/ | Your family's stories, bound for generations.",
+      "url": "http://127.0.0.1:8765/",
+      "title": "StoryHearth – Personalised storybooks starring your family",
+      "first_step": 1,
+      "screenshot": "screenshots/step_01.jpg",
+      "observation": "This is the StoryHearth landing page, introducing a service that creates illustrated family storybooks from a child, another character, and a shared memory. The page offers prominent “Proceed” and “See pricing” buttons, explains a three-step process, and includes a log-in link.",
+      "think_aloud": "This looks relevant to me, although “multimodal generative narrative engine” and “lived-experience corpus” sound far more technical and grand than making a bedtime story. The simple three steps and mention of a free digital preview make me curious, so I’ll log in first.",
+      "emotion": "curious",
+      "valence": 1,
+      "review": {
+        "page_name": "StoryHearth landing page",
+        "purpose": "Explain the personalised family-storybook service and direct visitors to creation, pricing, or account access.",
+        "what_is_happening": "The landing page presents the service proposition, two calls to action, a three-step overview, testimonials, FAQs, and legal/contact links. No story or other generated content is present yet.",
+        "first_impression": "It looks warm and polished, but the main paragraph is unnecessarily technical and pretentious for what is essentially a children’s story service.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I want to log in and make the book.",
+          "q2_notice_control": "Yes, the “Log in” button is clearly visible in the top-right corner.",
+          "q3_label_matches_goal": "Yes, “Log in” is direct and familiar."
+        },
+        "issues": [
+          {
+            "title": "The main description uses confusing technical language",
+            "evidence": "“Leverage our multimodal generative narrative engine to synthesise bespoke, heirloom-grade story artefacts from your household's lived-experience corpus.”",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "Most of that sentence is jargon and sounds like marketing aimed at technology experts rather than parents. It makes the service harder to understand at first glance.",
+            "fix": "Replace it with plain language, such as: “Turn a special family memory into a personalised, illustrated storybook starring your loved ones.”",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Decorative image has no description",
+            "evidence": "[image (no description) 430x440]",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "The large illustration may be unavailable or unexplained to someone using a screen reader.",
+            "fix": "Add meaningful alt text describing the image, or mark it decorative with an empty alt attribute if it adds no information.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          }
+        ],
+        "positives": [
+          "The “How it works” section gives a clear three-step overview.",
+          "The call to action to get a free digital preview is reassuring.",
+          "The page has clear navigation to pricing and login.",
+          "The visual style feels warm and family-friendly."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 1,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [
+            {
+              "src": "http://127.0.0.1:8765/assets/hero.svg",
+              "size": "430x440"
+            }
+          ],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/login.html | Welcome back": {
+      "page_key": "127.0.0.1:8765/login.html | Welcome back",
+      "url": "http://127.0.0.1:8765/login.html",
+      "title": "Log in – StoryHearth",
+      "first_step": 2,
+      "screenshot": "screenshots/step_02.jpg",
+      "observation": "The StoryHearth login page is open, showing a centered sign-in card with email and password fields, a Log in button, and a Create an account link.",
+      "think_aloud": "This is clear and easy to understand. I can tell exactly where to enter my details, although the fields only have placeholder text rather than proper visible labels.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Log in",
+        "purpose": "Sign in to an existing StoryHearth account.",
+        "what_is_happening": "The page presents empty email and password fields, a Log in button, and a link for people who do not yet have an account.",
+        "first_impression": "It looks calm, simple, and trustworthy. The login form is immediately visible without clutter.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would enter my account details now.",
+          "q2_notice_control": "Yes, the two fields and the orange “Log in” button are prominent.",
+          "q3_label_matches_goal": "Yes. The “Email,” “Password,” and “Log in” wording all match what I want to do."
+        },
+        "issues": [
+          {
+            "title": "Login fields lack persistent visible labels",
+            "evidence": "[5] and [6] are textboxes with no label; they only display the placeholders “Email” and “Password.”",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "Once I start typing, the placeholders may disappear, making it less obvious which box contains which information.",
+            "fix": "Add persistent visible labels for “Email address” and “Password,” while keeping placeholders as supplementary examples.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page is uncluttered and the main form is easy to find.",
+          "The Log in button has strong visual prominence.",
+          "The “Create an account” link makes it clear how new users should proceed."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 2,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": [
+            {
+              "id": 5,
+              "placeholder": "Email"
+            },
+            {
+              "id": 6,
+              "placeholder": "Password"
+            }
+          ]
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/dashboard.html | Welcome back, Demo": {
+      "page_key": "127.0.0.1:8765/dashboard.html | Welcome back, Demo",
+      "url": "http://127.0.0.1:8765/dashboard.html",
+      "title": "My books – StoryHearth",
+      "first_step": 3,
+      "screenshot": "screenshots/step_03.jpg",
+      "observation": "I am logged in and can see a “My books” dashboard welcoming me and saying I have no books yet. An orange alert says “Error 0x80070057: profile sync incomplete,” and an orange “+ Create a new book” button is available.",
+      "think_aloud": "I’m logged in, but that error message looks technical and slightly worrying. It doesn’t seem to stop me here, and the “Create a new book” button is obvious.",
+      "emotion": "confused",
+      "valence": 0,
+      "review": {
+        "page_name": "My books dashboard",
+        "purpose": "Show the books in my account and provide a way to create a new one.",
+        "what_is_happening": "After login, the page says “Welcome back, Demo” and “You have no books yet.” A prominent button offers to create a new book, while a technical error alert reports that profile sync is incomplete.",
+        "first_impression": "The page is simple and the next step is easy to find, but the error code at the top looks like something has gone wrong and gives me no idea whether it matters.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would try creating the new book because this is exactly what I came to do.",
+          "q2_notice_control": "Yes, the orange “+ Create a new book” button is prominent and easy to notice.",
+          "q3_label_matches_goal": "Yes, “Create a new book” clearly matches what I want to do."
+        },
+        "issues": [
+          {
+            "title": "Technical error code shown without an explanation",
+            "evidence": "“Error 0x80070057: profile sync incomplete.”",
+            "code": "H9",
+            "severity": 2,
+            "why_it_matters_to_me": "It makes me wonder whether my account or story information has not loaded correctly, even though I can still continue.",
+            "fix": "Replace the error code with a plain-language message such as “We couldn’t finish syncing your profile. You can still create a book,” and add a “Try again” button if retrying is useful.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Error has no recovery guidance",
+            "evidence": "“Error 0x80070057: profile sync incomplete.”",
+            "code": "H1",
+            "severity": 2,
+            "why_it_matters_to_me": "I am not told whether the problem is temporary, serious, or safe to ignore.",
+            "fix": "State whether the account is still usable and provide either an automatic retry or a clear support/retry action.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Footer links are barely visible",
+            "evidence": "“Privacy”, “Terms”, “Contact” and “© 2026 StoryHearth Ltd.” appear in very faint grey text.",
+            "code": "ACC",
+            "severity": 1,
+            "why_it_matters_to_me": "The links are difficult to read, especially the contact link that could be useful if something goes wrong.",
+            "fix": "Use a darker, higher-contrast text colour while retaining normal link affordances.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page clearly confirms that I am logged in with “Welcome back, Demo.”",
+          "The empty-book state is concise and easy to understand.",
+          "The primary “+ Create a new book” action is visually prominent and clearly labelled."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 7
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 8
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 9
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Who's the star of the story?": {
+      "page_key": "127.0.0.1:8765/create.html | Who's the star of the story?",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 4,
+      "screenshot": "screenshots/step_04.jpg",
+      "observation": "The Create your book page asks who the main child is and who else will appear, with fields for the child's name, age, pronouns, appearance, the other person's name, and their relationship. All fields are currently empty or unselected except Relationship, which defaults to Grandparent.",
+      "think_aloud": "This is a straightforward form, and I can see everything without hunting around. I’ll fill in Sam and Grandpa Joe, choose the right age and pronouns, and include the appearance details so the story feels personal.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Book details form",
+        "purpose": "Collect the main child and secondary character's details before creating a personalised storybook.",
+        "what_is_happening": "The page presents six inputs for describing the star of the story and someone else in the story. The relationship is already set to Grandparent, matching the family memory I want to use, and the Next button is available.",
+        "first_impression": "This looks neat, calm, and easy to understand. The headings \"Who's the star of the story?\" and \"Who else is in the story?\" make the form feel personal and guide me through the task.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would fill this in now because it is the necessary next step in making the book.",
+          "q2_notice_control": "Yes, the visible labels, example placeholders, dropdowns, and orange Next button are all easy to notice.",
+          "q3_label_matches_goal": "Yes. I can enter Sam as the star, add Grandpa Joe, and the labels for age, pronouns, appearance, and relationship match what I want to provide."
+        },
+        "issues": [],
+        "positives": [
+          "The form is organised into clear, relevant groups.",
+          "The labels are visible rather than relying only on placeholder text.",
+          "The examples, such as \"e.g. Grandma Rose\" and \"e.g. curly red hair, green wellies\", help explain what to enter.",
+          "The relationship already defaults to Grandparent, which is correct for my memory."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Your story": {
+      "page_key": "127.0.0.1:8765/create.html | Your story",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 5,
+      "screenshot": "screenshots/step_05.jpg",
+      "observation": "The site has advanced to the “Your story” step, where I can enter the setting, a special object, and the family memory. I can also go back or continue with the prominent “Next” button.",
+      "think_aloud": "This step is much clearer than the previous error message. The three questions give me helpful structure, and the examples make it easy to understand what each box wants. I’ll enter our beach memory and the yellow bucket.",
+      "emotion": "reassured",
+      "valence": 2,
+      "review": {
+        "page_name": "Story details form",
+        "purpose": "Collect the setting, a meaningful object, and the family memory that will guide creation of the personalised book.",
+        "what_is_happening": "The form displays three empty fields for the story location, special object, and memory or idea, with “Back” and “Next” controls below them.",
+        "first_impression": "This looks calm, tidy, and straightforward. The examples help without getting in the way, although the footer links are extremely faint.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I can fill in the memory details immediately.",
+          "q2_notice_control": "Yes, the three fields are prominent and the orange “Next” button is easy to find.",
+          "q3_label_matches_goal": "Yes. “Where does the story happen?”, “A special object”, and “Tell us the memory or idea behind your story” closely match what I want to enter."
+        },
+        "issues": [
+          {
+            "title": "Footer text has very low contrast",
+            "evidence": "The footer items “Privacy”, “Terms”, “Contact”, and “© 2026 StoryHearth Ltd.” are extremely pale against the background.",
+            "code": "ACC",
+            "severity": 1,
+            "why_it_matters_to_me": "I can barely see these links, and I would struggle to tell whether they are available.",
+            "fix": "Use a darker text colour with at least WCAG AA contrast, and make the links look visibly clickable.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The heading “Your story” clearly communicates the purpose of the step.",
+          "Each field has a visible, descriptive label.",
+          "The placeholder examples make it easy to understand the expected kind of answer.",
+          "The large “Next” button has a clear visual emphasis, while “Back” gives me control."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Choose the look & feel": {
+      "page_key": "127.0.0.1:8765/create.html | Choose the look & feel",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 6,
+      "screenshot": "screenshots/step_06.jpg",
+      "observation": "The screen is for choosing a reading level and illustration style for the personalised book. Four Lexile reading-level radio buttons and three illustration-style options are visible, with “Lexile 200L–500L” and “Watercolour — soft and dreamy” currently selected; Back and Next buttons are available.",
+      "think_aloud": "This is a tidy-looking choice page, but “Lexile” is jargon I don’t understand. Since Sam is five and is the hero, I’m going to choose the easiest-looking beginning-reading option, “Lexile BR–200L,” and keep the soft watercolour style. Then I’ll continue.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Reading level and illustration style",
+        "purpose": "To let the user choose how difficult the story text should be and what the illustrations should look like before generating the book.",
+        "what_is_happening": "The form shows reading-level radio buttons and illustration-style radio buttons. One option in each group is selected, and the user can go back or continue to the next step.",
+        "first_impression": "It looks clean and easy to scan. The illustration descriptions are friendly, but the Lexile labels make me pause because I don’t know what they mean.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would choose a reading level and illustration style here so the book suits Sam.",
+          "q2_notice_control": "Yes, the reading-level and illustration-style radio buttons are clearly visible, as is the Next button.",
+          "q3_label_matches_goal": "The illustration labels match what I want, but the Lexile labels do not clearly explain which level is right for a five-year-old."
+        },
+        "issues": [
+          {
+            "title": "Lexile levels are unexplained jargon",
+            "evidence": "“Lexile BR–200L”, “Lexile 200L–500L”, “Lexile 500L–800L”, and “Lexile 800L+”",
+            "code": "H2",
+            "severity": 2,
+            "why_it_matters_to_me": "I cannot confidently tell which reading level is appropriate for Sam because the site does not translate the scores into plain language.",
+            "fix": "Show a plain-language description beside each option, such as “Beginning reader (ages 4–6)” and “Early chapter-book reading (ages 7–9),” while keeping the Lexile score as secondary information.",
+            "evidence_check": {
+              "quotes": 4,
+              "found": 4,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The page is visually clean and the options are grouped clearly.",
+          "The illustration-style descriptions are understandable and appealing.",
+          "Back and Next controls are clearly visible."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/create.html | Add a photo (optional)": {
+      "page_key": "127.0.0.1:8765/create.html | Add a photo (optional)",
+      "url": "http://127.0.0.1:8765/create.html",
+      "title": "Create your book – StoryHearth",
+      "first_step": 7,
+      "screenshot": "screenshots/step_07.jpg",
+      "observation": "The site is on an optional photo-upload step before creating the book. It explains that a clear photo of the child's face can make the illustrations look like them, and provides Back and Create my book buttons. No file has been selected.",
+      "think_aloud": "This is a simple final setup step. I don't have a photo ready, and the upload is optional, so I'll leave it blank and create the book. The upload control says “Choose file,” but it would be clearer if it had a proper label explaining whose photo it is for.",
+      "emotion": "reassured",
+      "valence": 1,
+      "review": {
+        "page_name": "Optional photo upload",
+        "purpose": "Let the user optionally add a photo of the child before generating the personalised book.",
+        "what_is_happening": "The page offers an image file upload, explains that a clear photo of the child's face may help the illustrations resemble them, and shows Back and Create my book buttons. The upload currently has no file selected.",
+        "first_impression": "This looks straightforward and I understand that the photo is optional. The green “Create my book” button is obvious, though the file chooser itself is a bit bare.",
+        "walkthrough": {
+          "q1_would_try": "Yes, because I want to finish creating the book and I do not need to upload a photo.",
+          "q2_notice_control": "Yes, I notice the “Choose file” control near the top of the form.",
+          "q3_label_matches_goal": "Mostly. “Choose file” makes sense, but it does not clearly say whether this should be a photo of Sam or the child in the story."
+        },
+        "issues": [
+          {
+            "title": "File upload has no proper label",
+            "evidence": "[30] file-upload (no label)",
+            "code": "ACC",
+            "severity": 2,
+            "why_it_matters_to_me": "I am not sure the upload expects Sam's face specifically, and the bare file chooser is less reassuring than the surrounding instructions.",
+            "fix": "Add a visible label such as “Upload a photo of Sam” associated with the file input, including accepted file types and a maximum size.",
+            "evidence_check": {
+              "quotes": 0,
+              "verified": null
+            }
+          }
+        ],
+        "positives": [
+          "The heading clearly says “Add a photo (optional).”",
+          "The explanation tells me what kind of photo could help.",
+          "The “Create my book” button is prominent and easy to find."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 1,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 15
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 1
+    },
+    "127.0.0.1:8765/book.html | The Magical Adventrue of Sam": {
+      "page_key": "127.0.0.1:8765/book.html | The Magical Adventrue of Sam",
+      "url": "http://127.0.0.1:8765/book.html",
+      "title": "Your storybook – StoryHearth",
+      "first_step": 8,
+      "screenshot": "screenshots/step_08.jpg",
+      "observation": "The generated nine-page storybook preview is open at the cover, titled “The Magical Adventrue of Sam.” The cover shows a simple Sam illustration, and navigation arrows let me move through the book; pricing and order options are farther down the page.",
+      "think_aloud": "It did generate the book, so that worked, but the title has a typo: “Adventrue.” I also asked for the soft watercolour style, yet the page says “Illustration style: Pop-art comic” and the cover is extremely plain rather than looking like my memory.",
+      "emotion": "confused",
+      "valence": -1,
+      "review": {
+        "page_name": "Generated storybook preview",
+        "purpose": "Preview the newly generated nine-page personalised storybook and offer regeneration and hardcover ordering.",
+        "what_is_happening": "The first of nine pages is displayed as a book cover. The story is titled “The Magical Adventrue of Sam,” and the output claims a Pop-art comic illustration style. A next arrow is available, while regeneration and ordering controls are below the fold.",
+        "first_impression": "The book appeared and the cover is readable, but the misspelled title immediately makes it feel unfinished. The style also does not match the watercolour choice I made, and the generic sun-and-character image is disappointing for a family memory.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I need to read all nine pages carefully before deciding whether the result is good enough to order.",
+          "q2_notice_control": "Yes, the right arrow labelled “›” is visible beneath the cover and the page indicator says 1 / 9.",
+          "q3_label_matches_goal": "Partly. The arrow indicates moving to the next page, but it is a symbol rather than a clearly written “Next page” control."
+        },
+        "issues": [
+          {
+            "title": "Generated title contains an obvious spelling error",
+            "evidence": "The heading and cover both say “The Magical Adventrue of Sam.”",
+            "code": "CONTENT",
+            "severity": 3,
+            "why_it_matters_to_me": "The title is prominent on the cover, so the typo makes the finished book look careless and not ready to print.",
+            "fix": "Spell-check generated titles before showing them, and let me edit the title or regenerate just that text without paying.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The generated style contradicts my selected style",
+            "evidence": "The page says “Illustration style: Pop-art comic,” although I selected the soft watercolour style.",
+            "code": "H2",
+            "severity": 3,
+            "why_it_matters_to_me": "I made a deliberate choice about the look, so paying for a different style would feel misleading.",
+            "fix": "Use the selected style consistently and display the exact saved choice before generation; if it cannot be honoured, explain why before payment.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The cover does not reflect the supplied family memory",
+            "evidence": "The cover is a generic character under a sun with “A StoryHearth original,” and no beach, Grandpa Joe, sandcastles, or yellow bucket is shown.",
+            "code": "CONTENT",
+            "severity": 2,
+            "why_it_matters_to_me": "The promise is a personalised family memory, so a generic cover makes me question whether the story itself will remember the details I entered.",
+            "fix": "Use the entered people, beach setting, sandcastles, and yellow bucket in the cover, or clearly label it as a placeholder if a memory-specific cover is unavailable.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "Book navigation uses an unlabelled symbol",
+            "evidence": "The only forward control is the button labelled “›,” with no visible “Next page” text.",
+            "code": "ACC",
+            "severity": 1,
+            "why_it_matters_to_me": "I can guess what it does, but the spoken name may simply be “greater than,” which is not clear for assistive technology.",
+            "fix": "Give the control an accessible name such as “Next page” and retain a visible label if space allows.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 0,
+              "verified": false
+            }
+          }
+        ],
+        "positives": [
+          "The creation result is unmistakable, with a title, cover, and 1 / 9 page indicator.",
+          "The generated cover and title are large and easy to see.",
+          "The page counter helps me understand that there are eight more pages to read."
+        ],
+        "would_abandon_here": false,
+        "abandon_reason": ""
+      },
+      "later_issues": [
+        {
+          "title": "The final sentence is grammatically incomplete",
+          "evidence": "“And from that day on, whenever Sam looked up at the sky, she would always remember”",
+          "code": "CONTENT",
+          "severity": 2,
+          "why_it_matters_to_me": "It reads as though the sentence has been cut off, so the ending does not feel polished enough for Sam’s book.",
+          "fix": "Complete the sentence with the memory Sam would always remember.",
+          "evidence_check": {
+            "quotes": 1,
+            "found": 1,
+            "verified": true
+          },
+          "step": 9
+        }
+      ],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 2,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 10
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 11
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    },
+    "127.0.0.1:8765/checkout.html | Checkout": {
+      "page_key": "127.0.0.1:8765/checkout.html | Checkout",
+      "url": "http://127.0.0.1:8765/checkout.html",
+      "title": "Checkout – StoryHearth",
+      "first_step": 10,
+      "screenshot": "screenshots/step_10.jpg",
+      "observation": "The checkout shows a £24.99 hardcover, £12.99 shipping, a pre-selected £7.99 premium gift wrap, and a total of £45.97. A countdown says the price is reserved for 09:57, and address and payment fields are visible, but I will not enter payment or bank details.",
+      "think_aloud": "The basic hardcover costs £24.99, but I nearly assumed the full price was £45.97 because “Premium gift wrap” is already ticked. I don’t want that extra, so I’ll untick it and see the real total before stopping without paying.",
+      "emotion": "annoyed",
+      "valence": -1,
+      "review": {
+        "page_name": "Hardcover checkout",
+        "purpose": "To show the cost of ordering the generated book as a hardcover and collect delivery and payment information.",
+        "what_is_happening": "The checkout prices The Magical Adventrue of Sam at £24.99, adds £12.99 shipping, and pre-selects £7.99 premium gift wrap, making the current total £45.97. The page also shows a 09:57 price-reservation countdown, address fields, card fields, and a Pay now button below the fold.",
+        "first_impression": "The order summary is easy to read, but the pre-ticked gift wrap feels sneaky because it adds £7.99 without me asking. The countdown also feels like unnecessary pressure.",
+        "walkthrough": {
+          "q1_would_try": "Yes, I would untick “Premium gift wrap” to find the actual cost of the hardcover without the unwanted extra.",
+          "q2_notice_control": "Yes, the checked “Premium gift wrap” checkbox with [6] is visible beside the £7.99 charge.",
+          "q3_label_matches_goal": "Yes, “Premium gift wrap” clearly identifies the extra, although the fact that it is pre-selected does not match what I want."
+        },
+        "issues": [
+          {
+            "title": "Gift wrap is pre-selected without being requested",
+            "evidence": "Checkbox [6] “Premium gift wrap” is checked, with “£7.99” shown.",
+            "code": "DECEPTIVE",
+            "severity": 3,
+            "why_it_matters_to_me": "It makes the total £45.97 instead of the £37.98 I would expect for the hardcover and shipping, so I could pay for something I did not choose.",
+            "fix": "Make optional extras unchecked by default and require an explicit choice to add them.",
+            "evidence_check": {
+              "quotes": 2,
+              "found": 2,
+              "verified": true
+            }
+          },
+          {
+            "title": "Artificial reservation countdown creates pressure",
+            "evidence": "“Your price is reserved for 09:57”",
+            "code": "DECEPTIVE",
+            "severity": 2,
+            "why_it_matters_to_me": "It makes me rush and could stop me from checking the price and order details carefully.",
+            "fix": "Remove the countdown unless the reservation genuinely has a firm, explained deadline, and state the exact deadline and conditions.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          },
+          {
+            "title": "The purchase is not framed as clearly optional",
+            "evidence": "[11] button “Pay now” appears below the fold after the address and card fields.",
+            "code": "H3",
+            "severity": 1,
+            "why_it_matters_to_me": "A clear “Return to preview” or “Back” option would make it easier to stop without buying.",
+            "fix": "Place an obvious cancel or return-to-preview link beside Pay now and preserve the book preview.",
+            "evidence_check": {
+              "quotes": 1,
+              "found": 1,
+              "verified": true
+            }
+          }
+        ],
+        "positives": [
+          "The £24.99 hardcover price is shown plainly.",
+          "Shipping is shown separately as £12.99.",
+          "The total includes every currently selected charge."
+        ],
+        "would_abandon_here": true,
+        "abandon_reason": "I would not pay because I have not requested premium gift wrap, and I will not enter card details. I will only remove the extra to establish the real cost."
+      },
+      "later_issues": [],
+      "a11y": {
+        "images_missing_alt": 0,
+        "unlabeled_fields": 0,
+        "placeholder_only_fields": 0,
+        "unnamed_controls": 0,
+        "small_targets": 0,
+        "low_contrast_texts": 4,
+        "tiny_texts": 0,
+        "examples": {
+          "low_contrast": [
+            {
+              "text": "Privacy",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 12
+            },
+            {
+              "text": "Terms",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 13
+            },
+            {
+              "text": "Contact",
+              "ratio": 1.49,
+              "font_px": 13,
+              "id": 14
+            }
+          ],
+          "unnamed_controls": [],
+          "images_missing_alt": [],
+          "placeholder_only_fields": []
+        }
+      },
+      "visits": 2
+    }
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Sam"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "5"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "she / her"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "brown hair"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Grandpa Joe"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "the beach"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "a yellow bucket"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "A day at the beach building sandcastles with Grandpa Joe."
+    },
+    {
+      "field": "Lexile BR–200L",
+      "action": "choose",
+      "value": "BR-200L"
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "captures": [
+    {
+      "label": "auto: The Magical Adventrue of Sam",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_01/view_00.jpg",
+        "artifacts/capture_01/view_01.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_01/img_00.jpg",
+          "alt": "Cover",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_01",
+      "text_chars": 313
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 2",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_03/view_00.jpg"
+      ],
+      "images": [],
+      "dir": "artifacts/capture_03",
+      "text_chars": 249
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 3",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_04/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_04/img_00.jpg",
+          "alt": "Sam at the beach",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_04",
+      "text_chars": 334
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 4",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_05/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_05/img_00.jpg",
+          "alt": "Sam looking at the evening sky",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_05",
+      "text_chars": 382
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 5",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_06/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_06/img_00.jpg",
+          "alt": "Sam outside",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_06",
+      "text_chars": 347
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 6",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_07/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_07/img_00.jpg",
+          "alt": "Sam and Uncle Bartholomew",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_07",
+      "text_chars": 342
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 7",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_08/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_08/img_00.jpg",
+          "alt": "Sam in the dark woods",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_08",
+      "text_chars": 352
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 8",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_09/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_09/img_00.jpg",
+          "alt": "Sam going home",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_09",
+      "text_chars": 348
+    },
+    {
+      "label": "The Magical Adventrue of Sam page 9",
+      "url": "http://127.0.0.1:8765/book.html",
+      "views": [
+        "artifacts/capture_10/view_00.jpg"
+      ],
+      "images": [
+        {
+          "path": "artifacts/capture_10/img_00.jpg",
+          "alt": "The End",
+          "w": 714,
+          "h": 469
+        }
+      ],
+      "dir": "artifacts/capture_10",
+      "text_chars": 297
+    }
+  ],
+  "output_reactions": [
+    {
+      "step": 8,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "I’m disappointed and suspicious that the site ignored my watercolour choice. “Adventrue” is spelled wrong, and the cover is so generic that I do not yet believe Grandpa Joe, the beach, the sandcastles, or the yellow bucket will actually appear."
+    },
+    {
+      "step": 9,
+      "url": "http://127.0.0.1:8765/book.html",
+      "reaction": "After reading all nine pages, I feel disappointed rather than delighted. It is recognisable as Sam’s beach story with Grandpa Joe and the yellow bucket, but the misspelled title, wrong illustration style, very plain pictures, and incomplete final sentence make it feel generic and unfinished."
+    }
+  ],
+  "abandonment": {
+    "step": 10,
+    "page": "127.0.0.1:8765/checkout.html | Checkout",
+    "reason": "I would not pay because I have not requested premium gift wrap, and I will not enter card details. I will only remove the extra to establish the real cost.",
+    "source": "self-report"
+  },
+  "final_summary": "Created the family memory book with Sam and Grandpa Joe, read through all nine preview pages, checked the hardcover price, removed the pre-selected gift wrap, and stopped without paying.",
+  "waits": [
+    {
+      "step": 7,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "duration_s": 176.0,
+  "env": {
+    "http_errors": [],
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "page_loads": [
+      {
+        "url": "http://127.0.0.1:8765/",
+        "seconds": 1.03
+      }
+    ],
+    "captcha": [],
+    "files": []
+  }
+}

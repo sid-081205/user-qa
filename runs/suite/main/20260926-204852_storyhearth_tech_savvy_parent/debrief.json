@@ -1,0 +1,188 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not use this often because the generated book failed to preserve the memory, characters, or even basic story structure.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The flow was not unnecessarily complex, but the form, optional fields, and jargon added avoidable friction.",
+      "rating": 2
+    },
+    {
+      "item": 3,
+      "reason": "The main sequence was navigable without help, although weak labelling and several defaults made it feel unfinished.",
+      "rating": 3
+    },
+    {
+      "item": 4,
+      "reason": "I could complete the flow without technical support; the problems were product and content failures, not lack of computer literacy.",
+      "rating": 1
+    },
+    {
+      "item": 5,
+      "reason": "The functions were only partially integrated: the submitted story data was lost in generation, and checkout carried defects through from the book.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "There was significant inconsistency in the character illustrations, story text, submitted facts, defaults, and checkout state.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people could learn the basic flow quickly, but they would still be confused by the jargon, vague error, and unexplained checkout charges.",
+      "rating": 4
+    },
+    {
+      "item": 8,
+      "reason": "The website was somewhat awkward, particularly around the generation spinner, inaccessible controls, and mandatory-looking optional fields.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I was reasonably confident operating the site, but not confident that it was correctly processing or protecting the family data.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not need extensive instruction to start, but I had to work out ambiguous settings and privacy implications myself.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 6
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 5
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 4
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 3
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 3
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 3
+    }
+  ],
+  "nps": 0,
+  "interview": {
+    "purpose": "StoryHearth is meant to create personalised illustrated storybooks starring children and people they care about. In principle that is useful for families wanting a genuinely personal keepsake, but this execution did not deliver one.",
+    "worst_moment": "The generated book was the worst moment. It replaced Dad with an invented uncle, removed the cardboard rocket, thunderstorm, Moon journey, and most of Zara's defining appearance, then ended mid-sentence. On top of that, the title was misspelled as \"Adventrue\".",
+    "best_moment": "The best moment was entering the actual memory and briefly seeing the product take shape, because the concept felt relevant to Zara. The clean, compact form also made the input steps reasonably straightforward.",
+    "abandon": "I would have abandoned it at checkout. A personalised keepsake was not credible at £45.97, gift wrap was pre-selected, and there was no visible preview approval, return policy, delivery estimate, or correction path.",
+    "missing": "I expected controls to edit or regenerate an individual page, character, object, or sentence without rebuilding the whole book. I also expected a proper child-photo privacy notice, delivery and cancellation information, and a clear explanation of every checkout charge.",
+    "trust": "No, not with Zara's information or photos. The site did not immediately explain training use, retention, deletion, or third-party processing, and the unexplained profile-sync error made me question whether my data was being handled reliably.",
+    "willingness_to_pay": "I would pay for a genuinely good personalised book, but this output was not worth paying for. Around £20-25 would feel fair for a reliable digital or basic printed version; I would pay more only after seeing a faithful preview, consistent artwork, clear privacy controls, and the option to revise individual pages.",
+    "output_verdict": "It failed the basic test for a personalised AI keepsake. The result was generic, incoherent, frightening for a seven-year-old, and visibly broken, so I would not give it to Zara or put it in print."
+  },
+  "recommendations": [
+    {
+      "change": "Rebuild the narrative around the submitted father-daughter memory: Zara and Dad building a cardboard rocket in the living room during a thunderstorm, flying to the Moon, and planting the purple-sock flag.",
+      "page": "Generated book preview",
+      "why": "Fidelity to the supplied memory is the entire value proposition; the current book replaces the requested story with an unrelated template.",
+      "priority": "high"
+    },
+    {
+      "change": "Add release-blocking validation for incomplete sentences, unresolved placeholders, spelling errors, wrong names, pronoun errors, repeated passages, and contradictory image content before checkout is enabled.",
+      "page": "Generated book preview",
+      "why": "These obvious defects make the product look unfinished and unsuitable for a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Enforce Zara's black hair in two puffs, purple glasses, and astronaut hoodie consistently, and ensure Daniel is depicted and referred to as Dad throughout.",
+      "page": "Generated book preview",
+      "why": "Character consistency is a core test of a personalised storybook, and the current images do not represent the child entered by the parent.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace the generic repeated outdoor artwork with distinct scenes that match each page's text, including the living room, cardboard rocket, thunderstorm, Moon journey, and sock flag.",
+      "page": "Generated book preview",
+      "why": "The current text-image mismatch destroys the emotional and narrative value of the book.",
+      "priority": "high"
+    },
+    {
+      "change": "Add prominent, plain-language privacy information for children's photos covering training use, third-party processors, retention, deletion rights, and parent controls.",
+      "page": "Create book — optional photo and create",
+      "why": "I would not casually upload my daughter's face without knowing what happens to it.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove pre-ticked premium gift wrap and make checkout totals, shipping charges, and any add-ons fully transparent and persistent when navigating back.",
+      "page": "Hardcover checkout",
+      "why": "An unsolicited £7.99 add-on is a clear trust and control problem, and unexplained charges make the price difficult to justify.",
+      "priority": "high"
+    },
+    {
+      "change": "Show the delivery estimate, address requirements, preview approval, return policy, and a clear edit, cancel, or correction path before payment.",
+      "page": "Hardcover checkout",
+      "why": "A physical personalised product needs these controls before I enter payment information.",
+      "priority": "high"
+    },
+    {
+      "change": "Add per-page edit and regenerate controls for the text, illustration, character details, and props, while preserving approved content elsewhere.",
+      "page": "Generated book preview",
+      "why": "Regenerating everything for one bad page is inefficient and makes iterative quality control impossible.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace the anonymous spinner with a named progress state, submitted-story summary, and cancel or leave-generation action.",
+      "page": "Book generation loading state",
+      "why": "I could not tell what had actually been submitted or stop the operation if it went wrong.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain or recover from the profile-sync error instead of showing a raw error with no retry or recovery path.",
+      "page": "My books dashboard",
+      "why": "An unexplained sync failure makes the whole creation flow feel unreliable.",
+      "priority": "medium"
+    },
+    {
+      "change": "Remove unnecessary AI jargon from the landing page and make the primary call to action describe the concrete action.",
+      "page": "Landing page",
+      "why": "\"Multimodal generative narrative engine\" and similar terms do not tell me what I can actually make.",
+      "priority": "low"
+    },
+    {
+      "change": "Improve persistent field labels, page-navigation labels, required-field indicators, relationship defaults, and footer contrast.",
+      "page": "Login, create forms, book preview, and footer",
+      "why": "These are basic usability and accessibility issues that add friction even when the main flow works.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "The concept is relevant, but the output is not controlled enough to trust: it loses the memory, breaks the characters, contains obvious text errors, and charges for a keepsake I would not give my daughter.",
+  "sus_score": {
+    "score": 47.5,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.4,
+    "mean_negative_items": 2.6,
+    "inconsistent_pairs": 2,
+    "consistency_flag": true
+  },
+  "ueq_s_score": {
+    "pragmatic": 0.5,
+    "hedonic": -0.75,
+    "overall": -0.125
+  }
+}

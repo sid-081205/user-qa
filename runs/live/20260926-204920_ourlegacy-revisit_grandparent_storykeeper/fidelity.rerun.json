@@ -1,0 +1,64 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "The participant remains strongly focused on turning the supplied family memory into an accurate, personal keepsake. She repeatedly checks scene text, illustrations, character relationships, title-page details, and the complete PDF rather than treating generation as finished merely because an export is available (steps 2-18 and 22-30)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She processes the output comprehensively and sequentially, comparing scenes against the intended story, revising wording, checking pictures, selecting image versions, personalising metadata, and reviewing all 32 pages. She also notices small inconsistencies such as the stale page heading, unclear labels, and the incorrect teller age (steps 9-29)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "Her cautious, process-oriented behaviour fits low self-efficacy, especially when she wonders, 'whether I did something wrong' after the first text change appears not to save (step 5). She recovers methodically and gains confidence when controls visibly work, though the transcript never depicts severe helplessness or avoidance."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She avoids ordering or paying, checks what is available before committing, watches credits during image regeneration, and completes a free PDF rather than selecting the $59 printed book (steps 17-21). She also hesitates to claim full review when the PDF controls are unclear (steps 27-28), which is strongly risk-averse."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She follows a deliberate step-by-step method: open one control, make one change, wait for visible confirmation, verify the result, and then continue. She learns from visible feedback and repeats actions when the outcome is inadequate rather than improvising or experimenting broadly (steps 3-18 and 24-29)."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The voice is polite, precise, and mildly formal throughout, with characteristic phrases such as 'I shall,' careful attention to grammar and labels, and explicit reasoning before each action. It becomes somewhat formulaic because nearly every step uses the pattern 'the click worked clearly because,' which is less natural than Margaret's wider teaching-and-family voice would be."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific rather than generic: she cares about the blue kite made from an old shirt, little Margaret and her father, the Welsh hill, present-day silver hair and glasses, and making a meaningful book for five-year-old Oliver. Her checking behaviour also reflects a former teacher’s standards for pictures, short clear prose, and a proper ending (steps 2-18 and 22-30)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural and grounded in the supplied biography. Its mild exaggerations are the unusually systematic wording checks and the exceptionally thorough page-by-page audit, which make Margaret sound more like a formal usability-testing protocol than an ordinary 71-year-old, though they are still plausible for a meticulous retired teacher.",
+    "examples": [
+      "Nearly every action is prefaced with a formal verification such as 'the click worked clearly because' or 'the saving worked because' (steps 9-14).",
+      "She repeatedly inspects every scene and all 32 PDF pages, even after concluding that the underlying relationship error remains (steps 18-30)."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear use of hidden developer information, inaccessible implementation details, or privileged product knowledge. Her references to controls, credits, pricing, PDF pagination, and generation status arise from visible interface feedback, and her ordinary computer use is compatible with someone who reads instructions carefully."
+  },
+  "realism_overall": {
+    "score": 4,
+    "why": "The cautious revision, repeated verification, concern about cost and accuracy, and willingness to download a free preview before ordering are highly plausible. The main weaknesses are the overly uniform think-aloud phrasing and a continuity problem around PDF inspection: at steps 27-28 Margaret explicitly says she has not reviewed all pages, but step 29 then states that she looked through all 32 pages. The final critique also becomes inconsistent with the specified transformation, which asked for Oliver to be the hero flying the kite with Grandma Maggie, after much of the session focused on depicting Margaret as the child (steps 8-18 versus 29-30)."
+  },
+  "control": {
+    "journey": "a second audit of the digest with the browser events, as after the fix",
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 6101,
+      "completion_tokens": 1221,
+      "seconds": 11.8,
+      "by_purpose": {
+        "fidelity_audit": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

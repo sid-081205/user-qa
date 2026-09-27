@@ -1,0 +1,200 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not use this website often because the story did not represent our family memory correctly.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The website felt unnecessarily complicated because important information and costs were hidden.",
+      "rating": 4
+    },
+    {
+      "item": 3,
+      "reason": "The forms were mostly easy, but the confusing messages and difficult words made the website hard to use.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I could use the main steps, but I may need help with the unclear errors, loading screen, and checkout.",
+      "rating": 4
+    },
+    {
+      "item": 5,
+      "reason": "The steps worked together in general, but the book did not keep the important details from my answers.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "I found too much inconsistency in the words, pictures, reading level, and selected style.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "I do not think most people would learn everything quickly, especially people who are new to English.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "The website was awkward because it did not explain the loading, error, final cost, or book problems clearly.",
+      "rating": 4
+    },
+    {
+      "item": 9,
+      "reason": "I felt confident entering the family information, but I did not feel confident about the result or payment.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I had to learn what several technical words and buttons meant before I could continue.",
+      "rating": 4
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 5
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 5
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 4
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 5
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 4
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 3
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 3
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 3
+    }
+  ],
+  "nps": 0,
+  "interview": {
+    "purpose": "This website is for making personal storybooks with family members and memories. I think it is for parents who want a special story about their family and culture.",
+    "worst_moment": "The most frustrating moment was seeing the finished book. It changed Linh, left out Bà Nội, used the wrong pictures and style, and had spelling and ending problems. The unclear loading screen and profile sync error also made me worried.",
+    "best_moment": "The best moment was when I could see and change the total price after removing the premium gift wrap. I felt more in control when the site clearly showed that the price changed.",
+    "abandon": "I would probably have stopped before payment, when I saw that the book was not about our family memory. I would not want to pay for a keepsake that was not right.",
+    "missing": "I expected the book to show Linh and Bà Nội making and floating the red star-shaped lantern at the Hoi An festival. I also expected fields for Bà Nội's appearance and relationship, and a clear reading level for a four-year-old.",
+    "trust": "I would be careful about sharing family photos and personal information because the privacy and retention details were not explained on the upload page. I also did not trust the final book because it changed my family details.",
+    "willingty_to_pay": "I would pay about 10 to 15 pounds for a good online story, but I would pay more only after seeing correct pictures, a complete story, clear page count, and the full cost before checkout. I would not pay for this result.",
+    "output_verdict": "I am very disappointed. This does not feel like our family memory, and I would not give it to Linh or print it as a keepsake."
+  },
+  "recommendations": [
+    {
+      "change": "Rebuild the story around Linh and Bà Nội making the red star-shaped lantern and floating it on the river at the Hoi An festival.",
+      "page": "Generated storybook preview",
+      "why": "This is the most important memory, so the book must keep the family relationship, place, culture, and special object.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove unrelated and frightening things such as Uncle Bartholomew, the forest, heavy rain, and the red balloon.",
+      "page": "Generated storybook preview",
+      "why": "I want a warm family story for Linh, not a frightening or confusing adventure.",
+      "priority": "high"
+    },
+    {
+      "change": "Use simple English, short sentences, and vocabulary suitable for a four-year-old.",
+      "page": "Reading level and illustration style",
+      "why": "Words such as “ephemeral” are too difficult, and the story should be read aloud to Linh.",
+      "priority": "high"
+    },
+    {
+      "change": "Correct spelling and unfinished text, including “Adventure,” “Linh,” the repeated opening, and the incomplete final sentence.",
+      "page": "Generated storybook preview",
+      "why": "These errors make the book look unfinished and prevent me from giving it to my daughter.",
+      "priority": "high"
+    },
+    {
+      "change": "Make every picture match the words and use the selected soft watercolour style.",
+      "page": "Generated storybook preview",
+      "why": "The comic pictures did not match the story or my choice, so they did not feel like our memory.",
+      "priority": "high"
+    },
+    {
+      "change": "Keep Linh and Bà Nội consistent in every picture, with Linh's long black hair and red ribbon and Bà Nội's grey bun and purple áo dài.",
+      "page": "Generated storybook preview",
+      "why": "The characters are the heart of the story and must not be changed.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain every error and give clear steps for fixing it, especially “profile sync incomplete.”",
+      "page": "My books dashboard",
+      "why": "I did not know what the error meant or what I should do next.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the loading process and show the current step, with a safe way to stop or leave.",
+      "page": "Book creation loading page",
+      "why": "The loading circle made me think the book had failed or that I needed to press something.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain Lexile in plain English and show a clear reading level for children aged four.",
+      "page": "Reading level and illustration style",
+      "why": "I did not know what Lexile means, and the generated story was much too difficult for Linh.",
+      "priority": "high"
+    },
+    {
+      "change": "Show the complete price, currency, tax, postage, page count, and optional gift wrap before the user clicks “Order hardcover.”",
+      "page": "Pricing and Checkout",
+      "why": "I was surprised by the £45.97 total, the currency change, and gift wrap being selected by default.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the difference between the nine-page online story and the twenty-page hardcover, and let me order the current book from the pricing page.",
+      "page": "Simple pricing",
+      "why": "I need to know exactly what I would receive and what it would cost before leaving the book page.",
+      "priority": "medium"
+    },
+    {
+      "change": "Add clear fields for every important character, including appearance and relationship, and support Vietnamese names and cultural details.",
+      "page": "Create your book – character details",
+      "why": "I could not fully describe Bà Nội or confirm that “Bà Nội” would be kept correctly.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain photo privacy and how long uploaded photos are kept, and add a visible label for the upload area.",
+      "page": "Add a photo",
+      "why": "Family photos are private, and I need to know how they are used before uploading them.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace difficult marketing language and provide a visible way to recover a forgotten password.",
+      "page": "Home page and Log in",
+      "why": "The difficult words slowed me down, and I could not see how to recover my account if I forgot the password.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "The website helped me enter our memory, but the result changed our family story, so I would not use or recommend it yet.",
+  "sus_score": {
+    "score": 20.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 1.8,
+    "mean_negative_items": 4.2,
+    "inconsistent_pairs": 0,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": 0.75,
+    "hedonic": -0.75,
+    "overall": 0.0
+  }
+}

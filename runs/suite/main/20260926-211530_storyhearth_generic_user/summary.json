@@ -1,0 +1,88 @@
+{
+  "run": "20260926-211530_storyhearth_generic_user",
+  "persona": "generic_user",
+  "persona_name": "Test User",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 11,
+  "pages_reviewed": 9,
+  "issues": 22,
+  "unique_issues": 19,
+  "evidence_quotes_verified": 0.889,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 6,
+    "2": 10,
+    "3": 6,
+    "4": 0
+  },
+  "issues_by_code": {
+    "ACC": 6,
+    "CONTENT": 4,
+    "H2": 4,
+    "H9": 2,
+    "VALUE": 2,
+    "H3": 1,
+    "DECEPTIVE": 1,
+    "H1": 1,
+    "H8": 1
+  },
+  "reached_output": true,
+  "output_parts": 9,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 2.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 1.0,
+    "character_consistency": 4.0,
+    "visual_quality": 1.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 35.0,
+  "sus_grade": "F",
+  "sus_consistency_flag": true,
+  "ueq_s": {
+    "pragmatic": -1.5,
+    "hedonic": -0.25,
+    "overall": -0.875
+  },
+  "nps": 0,
+  "mean_valence": 0.27,
+  "min_valence": -1.0,
+  "abandonment": {
+    "step": 11,
+    "page": "127.0.0.1:8765/checkout.html | Checkout",
+    "reason": "I would stop here because I do not want to pay, and the pre-checked £7.99 gift wrap makes me uncomfortable about the £45.97 total.",
+    "source": "self-report"
+  },
+  "waits": [
+    {
+      "step": 7,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "skipped": true,
+    "reason": "baseline condition has no persona"
+  },
+  "llm_usage": {
+    "calls": 13,
+    "failed_calls": 0,
+    "prompt_tokens": 58781,
+    "completion_tokens": 16876,
+    "seconds": 154.5,
+    "by_purpose": {
+      "step": 11,
+      "output_assessment": 1,
+      "debrief": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 13
+    }
+  },
+  "wall_seconds": 237.7
+}

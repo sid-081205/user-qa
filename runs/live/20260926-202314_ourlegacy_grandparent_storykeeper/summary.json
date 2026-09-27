@@ -1,0 +1,126 @@
+{
+  "run": "20260926-202314_ourlegacy_grandparent_storykeeper",
+  "persona": "grandparent_storykeeper",
+  "persona_name": "Margaret Ellison",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 16,
+  "pages_reviewed": 8,
+  "issues": 28,
+  "unique_issues": 26,
+  "evidence_quotes_verified": 0.84,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 11,
+    "2": 10,
+    "3": 4,
+    "4": 3
+  },
+  "issues_by_code": {
+    "CONTENT": 9,
+    "H2": 4,
+    "ACC": 3,
+    "H8": 3,
+    "H1": 3,
+    "VALUE": 2,
+    "TRUST": 2,
+    "H3": 2
+  },
+  "reached_output": true,
+  "output_parts": 11,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 3.0,
+    "age_fit": 3.0,
+    "language": 4.0,
+    "text_image_fit": 4.0,
+    "character_consistency": 1.0,
+    "visual_quality": 4.0,
+    "emotional_resonance": 2.0
+  },
+  "keepsake_worthiness": 2,
+  "sus": 60.0,
+  "sus_grade": "D",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": -0.5,
+    "hedonic": 0.25,
+    "overall": -0.125
+  },
+  "nps": 2,
+  "mean_valence": 0.62,
+  "min_valence": -2.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 12,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "https://ourlegacy.family/create"
+    },
+    {
+      "step": 13,
+      "seconds": 75.1,
+      "timeout": false,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148"
+    },
+    {
+      "step": 14,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "https://ourlegacy.family/storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 5,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 1,
+    "realism_overall": 5
+  },
+  "llm_usage": {
+    "calls": 21,
+    "failed_calls": 0,
+    "prompt_tokens": 110727,
+    "completion_tokens": 26779,
+    "seconds": 293.8,
+    "by_purpose": {
+      "step": 16,
+      "output_assessment": 2,
+      "output_synthesis": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 21
+    }
+  },
+  "wall_seconds": 505.3,
+  "llm_usage_reassess": {
+    "calls": 1,
+    "failed_calls": 0,
+    "prompt_tokens": 4481,
+    "completion_tokens": 7879,
+    "seconds": 72.2,
+    "by_purpose": {
+      "output_assessment": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 1
+    }
+  },
+  "reassessed": true,
+  "llm_usage_reaudit": {
+    "calls": 1,
+    "failed_calls": 0,
+    "prompt_tokens": 3668,
+    "completion_tokens": 916,
+    "seconds": 11.6,
+    "by_purpose": {
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 1
+    }
+  }
+}

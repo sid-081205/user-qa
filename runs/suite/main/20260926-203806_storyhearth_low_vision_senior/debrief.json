@@ -1,0 +1,188 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would like to make books for Lily, but this one was not good enough for me to want to use the website often.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The form was long and the technical wording made it feel more complicated than it needed to be.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "The main buttons were easy to find, but the confusing messages and storybook controls made it awkward overall.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I managed without help, but I would probably have needed my grandson to explain some of the strange errors and settings.",
+      "rating": 3
+    },
+    {
+      "item": 5,
+      "reason": "The steps generally followed on from one another, but the book did not keep the important details from my story.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The spelling mistakes, wrong illustration style, technical errors, and incomplete ending did not fit together properly.",
+      "rating": 4
+    },
+    {
+      "item": 7,
+      "reason": "Most people familiar with ordinary websites might get started, but this would be difficult for anyone with poor eyesight or little technical confidence.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "The long form, tiny page arrows, scrolling at 200% zoom, and need to check everything carefully made it cumbersome.",
+      "rating": 4
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident filling in the form, but I did not feel confident that the finished book was correct.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I had to learn what terms like Lexile meant and work out what the errors and checkout choices meant.",
+      "rating": 3
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 5
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 4
+    }
+  ],
+  "nps": 2,
+  "interview": {
+    "purpose": "This website is for making personalised storybooks with family members and special memories. It seems intended for parents, grandparents, and other people wanting a keepsake for a child.",
+    "worst_moment": "The most frustrating moment was seeing the finished book. It had the wrong title spelling, did not use the Watercolour style I chose, left Conker out of the pictures, and ended with an unfinished sentence. It felt like the workshop had made the wrong box entirely.",
+    "best_moment": "The best moment was choosing the watercolour illustrations and pressing the large button to create the book. That part was clear and the orange button was easy to hit.",
+    "abandon": "I would not have given up while filling in the form, because the questions were mostly understandable. I would have stopped before paying because the book was not suitable, and I would have been worried about the gift wrap being ticked for me.",
+    "missing": "I expected to see Conker, Lily, Harold, the shed, Christmas, and the imaginary gallop across the Norfolk fields. I also expected a clear, large way to read every page and fix the story before ordering.",
+    "trust": "I was cautious about trusting it with family information. I entered the details because I was testing it, but the technical error, wrong pictures, unfinished ending, and pre-ticked gift wrap made me doubt whether it was handling my story properly.",
+    "willingty_to_pay": "I would not pay for this version. I would consider paying around £25 for a good hardcover if the story, pictures, and proof were right. I would pay more only if I could edit the book myself and be certain there were no extra charges.",
+    "output_verdict": "I was disappointed. The site remembered a few names, but it lost the heart of the story and produced something I would not give to Lily."
+  },
+  "recommendations": [
+    {
+      "change": "Make the book follow the real memory: Harold carving Conker, giving it to Lily at Christmas, and Lily riding it across the Norfolk fields.",
+      "page": "Storybook preview",
+      "why": "Those details are the whole reason I wanted to make the book.",
+      "priority": "high"
+    },
+    {
+      "change": "Fix all spelling, grammar, repeated sentences, unfinished sentences, and unresolved name placeholders.",
+      "page": "Storybook preview",
+      "why": "A book with obvious mistakes is not fit to give to a child or keep as a family memory.",
+      "priority": "high"
+    },
+    {
+      "change": "Use the selected Watercolour style and show Conker, Lily, Harold, the workshop, and the fields accurately in the pictures.",
+      "page": "Storybook preview",
+      "why": "The pictures should match the words and the style I chose, especially for a present.",
+      "priority": "high"
+    },
+    {
+      "change": "Use simple, warm language suitable for a four-year-old instead of words such as “ephemeral luminescence” and frightening toothed shadows.",
+      "page": "Storybook preview",
+      "why": "Lily is only four, and I want the story to be comforting and easy for her to hear.",
+      "priority": "high"
+    },
+    {
+      "change": "Make the preview a clear page-reading area with large, labelled Previous and Next buttons.",
+      "page": "Storybook preview",
+      "why": "The little arrow buttons were difficult to use at 200% zoom, and I need to inspect every page myself.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain clearly when information is saved, and say what Back and Next will do without losing later answers.",
+      "page": "Create your book",
+      "why": "I need to know my words are safe before carrying on.",
+      "priority": "high"
+    },
+    {
+      "change": "Show the 200-character limit before I reach it and tell me when text has been shortened.",
+      "page": "Create your book — story details",
+      "why": "I do not want the important parts of my memory to disappear without warning.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace pale text with darker, larger text and make footer and legal text readable.",
+      "page": "All pages",
+      "why": "Pale grey writing is almost invisible to me, and I must be able to read every instruction and detail.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove the unexplained technical error and replace it with a plain explanation of what happened and what I should do.",
+      "page": "My books",
+      "why": "An error after login made me wonder whether I had done something wrong.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain reading levels in ordinary language and suggest the right level for a four-year-old.",
+      "page": "Create your book — reading level",
+      "why": "“Lexile” is a workshop label I do not understand, and the chosen level was far too advanced.",
+      "priority": "medium"
+    },
+    {
+      "change": "Do not tick gift wrap automatically, and show every charge in one clear summary before payment.",
+      "page": "Checkout",
+      "why": "I do not want an extra £7.99 selected without my asking.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove the count-down pressure and provide a clear way to leave checkout without losing my place.",
+      "page": "Checkout",
+      "why": "I need time to read the costs and terms without being hurried.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "The workshop door was easy to find, but the book came out like the wrong piece of furniture, so I would not use it for Lily.",
+  "sus_score": {
+    "score": 32.5,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.0,
+    "mean_negative_items": 3.4,
+    "inconsistent_pairs": 0,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -1.0,
+    "hedonic": 0.5,
+    "overall": -0.25
+  }
+}

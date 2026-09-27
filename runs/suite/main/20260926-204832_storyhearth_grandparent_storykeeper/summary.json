@@ -1,0 +1,89 @@
+{
+  "run": "20260926-204832_storyhearth_grandparent_storykeeper",
+  "persona": "grandparent_storykeeper",
+  "persona_name": "Margaret Ellison",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 11,
+  "pages_reviewed": 9,
+  "issues": 30,
+  "unique_issues": 26,
+  "evidence_quotes_verified": 0.821,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 7,
+    "2": 16,
+    "3": 7,
+    "4": 0
+  },
+  "issues_by_code": {
+    "ACC": 9,
+    "H2": 7,
+    "CONTENT": 4,
+    "H1": 2,
+    "DECEPTIVE": 2,
+    "VALUE": 2,
+    "H9": 1,
+    "H6": 1,
+    "H5": 1,
+    "TRUST": 1
+  },
+  "reached_output": true,
+  "output_parts": 14,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 1.0,
+    "character_consistency": 2.0,
+    "visual_quality": 1.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 45.0,
+  "sus_grade": "F",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": 0.0,
+    "hedonic": -0.5,
+    "overall": -0.25
+  },
+  "nps": 1,
+  "mean_valence": 0.36,
+  "min_valence": -1.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 7,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 5,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 2,
+    "realism_overall": 4
+  },
+  "llm_usage": {
+    "calls": 16,
+    "failed_calls": 0,
+    "prompt_tokens": 85389,
+    "completion_tokens": 29053,
+    "seconds": 280.9,
+    "by_purpose": {
+      "step": 11,
+      "output_assessment": 2,
+      "output_synthesis": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 16
+    }
+  },
+  "wall_seconds": 367.3
+}

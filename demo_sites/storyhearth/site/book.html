@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your storybook – StoryHearth</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+<script>SH.requireLogin();</script>
+</head>
+<body>
+<div class="nav"><a class="logo" href="index.html">Story<span>Hearth</span></a><nav id="navlinks"></nav></div>
+<div class="wrap" style="padding-top:18px">
+  <div class="bookbar">
+    <h1 id="btitle" style="font-size:26px;margin:0"></h1>
+    <span class="muted" id="bmeta" style="font-size:14px"></span>
+  </div>
+  <div class="book" id="book">
+    <div class="pic" id="pic"></div>
+    <div class="text" id="text"></div>
+    <div class="pager"><button id="prev" type="button">&lsaquo;</button><span id="pos"></span><button id="next" type="button">&rsaquo;</button></div>
+  </div>
+  <div class="bookbar" style="margin-top:14px">
+    <button class="btn secondary" id="regen" type="button">Regenerate entire book – $4.99</button>
+    <a class="btn" href="checkout.html">Order hardcover</a>
+  </div>
+  <div id="regenmsg" class="banner" style="display:none;margin-top:12px;max-width:760px;margin-left:auto;margin-right:auto"></div>
+</div>
+<footer id="footer"></footer>
+<script>
+  const book = JSON.parse(localStorage.getItem("sh_book") || "null");
+  let i = 0;
+  function show() {
+    if (!book) { document.getElementById("text").textContent = "No book yet."; return; }
+    const p = book.pages[i];
+    document.getElementById("btitle").textContent = book.title;
+    document.getElementById("bmeta").textContent = "Preview · " + book.pages.length + " pages";
+    document.getElementById("pic").innerHTML = p.svg || "";
+    let t = "";
+    if (p.kind === "cover") t = `<div style="font-size:30px;font-weight:700">${p.title}</div><div class="muted">${p.subtitle}</div><div class="muted" style="font-size:14px">${p.info}</div>`;
+    else if (p.kind === "dedication") t = `<div style="padding:60px 0;font-style:italic">${p.text}</div>`;
+    else if (p.kind === "end") t = `${p.text}<div style="margin-top:14px;font-weight:700">The End</div>`;
+    else t = p.text;
+    document.getElementById("text").innerHTML = t;
+    document.getElementById("pos").textContent = (i + 1) + " / " + book.pages.length;
+    document.getElementById("prev").disabled = i === 0;
+    document.getElementById("next").disabled = i === book.pages.length - 1;
+  }
+  document.getElementById("prev").onclick = () => { if (i > 0) { i--; show(); } };
+  document.getElementById("next").onclick = () => { if (i < book.pages.length - 1) { i++; show(); } };
+  document.getElementById("regen").onclick = () => {
+    const m = document.getElementById("regenmsg");
+    m.textContent = "A new version costs $4.99. Please add a payment method to continue.";
+    m.style.display = "block";
+  };
+  show();
+</script>
+</body>
+</html>

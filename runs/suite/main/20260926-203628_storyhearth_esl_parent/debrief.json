@@ -1,0 +1,176 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not use this website often because the final book was not personal or good enough for Linh.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The website was more complicated than it needed to be because of technical words and unclear choices.",
+      "rating": 4
+    },
+    {
+      "item": 3,
+      "reason": "The forms were mostly easy to use, but the confusing preview and checkout made the whole experience difficult.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I could complete the form without technical help, but I would need help to understand some words and the errors.",
+      "rating": 3
+    },
+    {
+      "item": 5,
+      "reason": "The functions were not well integrated because the book, pictures, title, and checkout did not match each other.",
+      "rating": 1
+    },
+    {
+      "item": 6,
+      "reason": "I found many inconsistencies, including the wrong picture style, spelling mistakes, missing characters, and different titles.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "I do not think most people would learn it very quickly because important words and options were not explained.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "The website was cumbersome when the result was wrong and the price was not clear.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I felt confident entering the family information, but not confident after seeing the finished story.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I had to learn what Lexile meant and understand several unclear messages before I could finish.",
+      "rating": 4
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 5
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 4
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 6
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 5
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 6
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 6
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 4
+    }
+  ],
+  "nps": 0,
+  "interview": {
+    "purpose": "This website is for parents who want to make a special storybook with their child and family in it. I think it is mainly for people who want a personal present for a child, but the words were too difficult in places.",
+    "worst_moment": "The most frustrating moment was seeing the finished book. It changed the picture style, left out Bà Nội, changed the family memory, used difficult words, and had spelling and grammar mistakes. The unfinished last sentence made it look broken.",
+    "best_moment": "The best moment was entering Linh and Bà Nội into the form. It was clear, and I could explain the family details in my own words.",
+    "abandon": "Yes. I would probably stop before paying, after seeing the wrong pictures and missing Bà Nội. I would also worry about paying £45.97 for a book that is not ready.",
+    "missing": "I expected to see a clear preview of Linh and Bà Nội making and floating the red star lantern on the Hoi An river. I also expected a simple explanation of the reading level, full price, delivery cost, correction policy, and final proof before paying.",
+    "trust": "I was careful with my family information because the website asked for personal details. I did not trust it completely after the result changed our story and used the wrong pictures and names.",
+    "willingness_to_pay": "I would not pay £45.97 for this book. With a correct, personal story and clear pictures, maybe £20 to £30 would feel fair for the book and delivery. I would pay more only if I could see the complete finished preview and know exactly what is included.",
+    "output_verdict": "I feel disappointed and frustrated. The book is not a true story about Linh, Bà Nội, and our Vietnamese family memory, so I would not give it to Linh or keep it."
+  },
+  "recommendations": [
+    {
+      "change": "Correct the book title, names, grammar, pronouns, repeated text, placeholders, and unfinished final sentence before showing the finished book.",
+      "page": "Your storybook preview",
+      "why": "These mistakes make the book look broken and not ready to give to my daughter."
+    },
+    {
+      "change": "Use the selected watercolour style and show Linh with long black hair, a red ribbon, and round cheeks.",
+      "page": "Your storybook preview",
+      "why": "The pictures should show my daughter accurately and respect the style I chose."
+    },
+    {
+      "change": "Show Linh and Bà Nội making and floating the red paper star lantern together on the Hoi An river during the full-moon festival.",
+      "page": "Your storybook preview",
+      "why": "This family memory is the most important part of the story, so the pictures must show it clearly."
+    },
+    {
+      "change": "Use short, warm sentences suitable for a four-year-old instead of words such as “ephemeral,” “crepuscular,” and “melancholy.”",
+      "page": "Your storybook preview",
+      "why": "Linh is four, and I want her to enjoy the story and understand it with me."
+    },
+    {
+      "change": "Explain Lexile in simple words and explain why one reading level was selected.",
+      "page": "Choose the story look and feel",
+      "why": "I did not know what Lexile means or how to choose the right level for Linh."
+    },
+    {
+      "change": "Do not silently cut off the story text after 200 characters. Show a clear message and let me continue writing.",
+      "page": "Your story form",
+      "why": "My important details could be missing, and I could not tell what happened to the rest of the words."
+    },
+    {
+      "change": "Add clear labels and simple instructions to the email, password, relationship, and photo controls.",
+      "page": "Log in and Create your book",
+      "why": "I need to know exactly what each box asks and what information is optional."
+    },
+    {
+      "change": "Do not select Premium gift wrap by default. Explain what it includes and show the full price before I choose anything.",
+      "page": "Hardcover checkout",
+      "why": "I did not ask for gift wrap, and the extra £7.99 made me suspicious."
+    },
+    {
+      "change": "Show the complete price, delivery estimate, correction policy, and finished preview before asking for payment.",
+      "page": "Hardcover checkout",
+      "why": "I need to know what I am buying and avoid paying for a book that is not correct."
+    },
+    {
+      "change": "Make the dashboard error message explain what went wrong and what I should do to fix it.",
+      "page": "My books",
+      "why": "“Profile sync incomplete” is technical and worrying, so I do not know if my story is safe."
+    },
+    {
+      "change": "Use simple marketing language and explain the main purpose of the website without difficult technical words.",
+      "page": "Home page",
+      "why": "Words such as “multimodal generative narrative engine” make me stop and use translation."
+    },
+    {
+      "change": "Include names and family relationships from different cultures in the examples.",
+      "page": "Choose the story characters",
+      "why": "Examples with Bà Nội and Vietnamese family details would help me feel that my culture is welcome."
+    }
+  ],
+  "one_line_verdict": "The website was easy to start, but it made my family's special story wrong, confusing, and too expensive, so I would not use it or pay for it.",
+  "sus_score": {
+    "score": 22.5,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 1.6,
+    "mean_negative_items": 3.8,
+    "inconsistent_pairs": 0,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": 1.0,
+    "hedonic": 1.0,
+    "overall": 1.0
+  }
+}

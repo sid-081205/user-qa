@@ -1,0 +1,18 @@
+[run] 20260926-211450_storyhearth_generic_user: persona=generic_user model=stealth/space-bunny-alpha url=http://127.0.0.1:8765/
+  step  1 [127.0.0.1:8765/ | Your family's stories, bound for generatio] curious/1 -> click[4] "Log in"
+  step  2 [127.0.0.1:8765/login.html | Welcome back] reassured/1 -> type[5] "Email" 'demo.family@storyhearth.test', type[6] "Password" 'Bedtime-2026', click[7] "Log in"
+  step  3 [127.0.0.1:8765/dashboard.html | Welcome back, Demo] hesitant/0 -> click[6] "+ Create a new book"
+  step  4 [127.0.0.1:8765/create.html | Who's the star of the story?] neutral/1 -> type[6] "Child's first name" 'Sam', select[7] "Age" 5, select[8] "Pronouns" she / her, type[9] "What do they look like? (optional)" 'brown h
+  step  5 [127.0.0.1:8765/create.html | Who's the star of the story?] reassured/2 -> click[12] "Next"
+  step  6 [127.0.0.1:8765/create.html | Your story] reassured/2 -> type[16] "Where does the story happen?" 'the beach', type[17] "A special object" 'a yellow bucket', type[18] "Tell us the memory or idea beh
+  step  7 [127.0.0.1:8765/create.html | Choose the look & feel] reassured/1 -> click[29] "Next"
+  step  8 [127.0.0.1:8765/create.html | Add a photo (optional)] reassured/1 -> click[32] "Create my book"
+  step  9 [127.0.0.1:8765/create.html | ] neutral/0 -> wait_for_change
+  step 10 [127.0.0.1:8765/book.html | The Magical Adventrue of Sam] hesitant/-1 -> flip_through[7] "›"
+  step 11 [127.0.0.1:8765/book.html | The Magical Adventrue of Sam] frustrated/-1 -> scroll down
+  step 12 [127.0.0.1:8765/book.html | The Magical Adventrue of Sam] frustrated/-1 -> click[9] "Order hardcover"
+  step 13 [127.0.0.1:8765/checkout.html | Checkout] annoyed/-2 -> click[6] "Premium gift wrap", scroll down, read_page
+  step 14 [127.0.0.1:8765/checkout.html | Checkout] annoyed/-1 -> done
+[run] session ended: done after 14 steps, 10 pages, 11 output captures
+[run] report: /workspace/runs/suite/main/20260926-211450_storyhearth_generic_user/report.html  (LLM calls: 18, failed: 0)
+/workspace/runs/suite/main/20260926-211450_storyhearth_generic_user

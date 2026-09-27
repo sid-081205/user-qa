@@ -1,0 +1,176 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "It could be useful for a personalised birthday present, but the finished book was not good enough for me to use again.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The steps were fairly straightforward, but the confusing defaults, jargon and errors made it feel more complicated than necessary.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "I could scan the forms and complete them quickly, and the big buttons were easy to find.",
+      "rating": 4
+    },
+    {
+      "item": 4,
+      "reason": "I did not need technical help to complete the form, although the errors and confusing labels made me doubt whether I was doing it correctly.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The process moved logically from account to dashboard to book creation, but the sync error and book details getting lost made the integration feel unreliable.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The selected watercolour style did not match the output, the title was misspelled and some generated details contradicted my choices.",
+      "rating": 4
+    },
+    {
+      "item": 7,
+      "reason": "Most people familiar with online shopping would probably get started quickly because the main steps are short and obvious.",
+      "rating": 4
+    },
+    {
+      "item": 8,
+      "reason": "It was not painfully cumbersome, but the awkward mobile layout, tiny page buttons and repeated content made it annoying to use.",
+      "rating": 2
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident entering the story details, but the sync error, wrong output and checkout surprises reduced that confidence.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not need to learn much before starting, but I had to work out things like Lexile and the relationship fields as I went.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 5
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 4
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 5
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 3
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 4
+    }
+  ],
+  "nps": 2,
+  "interview": {
+    "purpose": "This is for making personalised birthday storybooks for children, with the child and their family appearing in the story. It is aimed at parents looking for a keepsake or present, especially people who want to choose the characters, memory and artwork themselves.",
+    "worst_moment": "The worst moment was seeing the finished book: it left out Meera and the cloud-shape memory, used the wrong style, called Aarav by the wrong name, changed his pronouns and had a spelling error. I also felt suspicious at checkout because gift wrap was preselected and the full cost was not obvious from the start.",
+    "best_moment": "The best moment was entering Aarav, Meera, Abbey Park and Rory into the short forms. Those steps were quick and easy, and it felt like I was building something personal rather than filling in a long generic questionnaire.",
+    "abandon": "Yes, I would probably have given up before entering payment details. The preview made the book clearly unsuitable, and the £45.97 starting total with £7.99 gift wrap and £12.99 delivery felt too much for a present I was not happy with.",
+    "missing": "I expected a story about Aarav teaching Meera to find shapes in the clouds at Abbey Park on his fifth birthday, with both children present throughout. I also expected the chosen watercolour style to be followed, a clear edit or regenerate option, and the full delivered price shown before checkout.",
+    "trust": "Only to a limited extent. I was happy to type in the children's names and story details, but the raw sync error made me wary, and I would not have trusted the site with payment while the title, characters, style and story content were clearly wrong.",
+    "willingness_to_pay": "I might pay around £20 to £30 for a good quality personalised hardcover if the story was accurate and the delivered price was completely clear. I would pay more for genuinely lovely, consistent artwork and a properly finished story, but not for gift wrap or a regeneration charge that was not explained.",
+    "output_verdict": "I would not keep this version or give it to Aarav. It used a few details correctly, such as his name, age, park and Rory, but missed the actual present I wanted and had enough spelling, wording, character and artwork problems to make it feel unfinished."
+  },
+  "recommendations": [
+    {
+      "change": "Rebuild the story around the requested memory: Aarav teaching Meera to find shapes in the clouds at Abbey Park on his fifth birthday, with both children present from beginning to end.",
+      "page": "Generated storybook preview",
+      "why": "The current book misses the central sibling memory and does not feel personal enough to give as a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Fix the title and all language errors, including the misspelling, the wrong name, the incorrect pronouns, the repeated opening, the template placeholders and the unfinished final sentence.",
+      "page": "Generated storybook preview",
+      "why": "These mistakes make the book look broken and immediately unsuitable as a birthday present.",
+      "priority": "high"
+    },
+    {
+      "change": "Use short, warm, age-appropriate language for a five-year-old and remove the threatening forest passage and difficult vocabulary.",
+      "page": "Choose the look and feel / Generated storybook preview",
+      "why": "I need a gentle bedtime story that Aarav can actually understand and enjoy.",
+      "priority": "high"
+    },
+    {
+      "change": "Match the generated illustrations to the selected Watercolour style and keep Aarav's appearance, clothing, Rory and the important story events consistent across the pages.",
+      "page": "Generated storybook preview",
+      "why": "The output ignored the chosen style and did not visually represent the family memory I entered.",
+      "priority": "high"
+    },
+    {
+      "change": "Show the book price, delivery charge and gift-wrap cost clearly before checkout, and make every optional extra unselected by default.",
+      "page": "Homepage and checkout",
+      "why": "I need to know the full cost upfront and do not want to pay for things I did not ask for.",
+      "priority": "high"
+    },
+    {
+      "change": "Add clear Edit and Regenerate controls, and explain any regeneration charge in pounds before I choose it.",
+      "page": "Generated storybook preview",
+      "why": "I need a way to fix a story that is not right without feeling trapped or pressured into paying.",
+      "priority": "high"
+    },
+    {
+      "change": "Make the relationship field apply clearly to each child and provide sensible options, with 'Sibling' available for Meera.",
+      "page": "Create your book – characters",
+      "why": "The default 'Grandparent' was confusing and made me question whether the rest of the family details would be correct.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace Lexile with plain-language reading levels such as 'Best for ages 4–6' and explain them in one short line.",
+      "page": "Choose the look and feel",
+      "why": "I do not know what Lexile means and just want to choose a suitable story for a five-year-old quickly.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace the technical sync error with a clear message that says whether my details were saved and what to do if they were not.",
+      "page": "My books dashboard",
+      "why": "The raw error made me worry that my family's information might disappear before I had even created the book.",
+      "priority": "medium"
+    },
+    {
+      "change": "Improve the mobile navigation, form labels, page buttons and low-contrast footer text.",
+      "page": "Throughout the website",
+      "why": "I am using this on a small phone with one free hand, so cramped navigation and tiny controls make it harder to use.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "Quick to start, but the wrong story, broken output and sneaky checkout extras mean I would not pay or recommend it.",
+  "sus_score": {
+    "score": 52.5,
+    "grade": "D",
+    "above_average_68": false,
+    "mean_positive_items": 2.8,
+    "mean_negative_items": 2.6,
+    "inconsistent_pairs": 1,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -0.25,
+    "hedonic": 0.25,
+    "overall": 0.0
+  }
+}

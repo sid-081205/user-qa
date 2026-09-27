@@ -1,0 +1,679 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 218,
+      "sentences": 14,
+      "avg_sentence_words": 15.6,
+      "flesch_reading_ease": 62.2,
+      "fk_grade": 8.5,
+      "polysyllabic_ratio": 0.147,
+      "long_words": [
+        "Bartholomew",
+        "crepuscular",
+        "ephemeral",
+        "existential",
+        "ineffable",
+        "inexplicable",
+        "juxtaposing",
+        "luminescence",
+        "melancholy",
+        "trepidation"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 5.0,
+    "per_part": [
+      {
+        "part": "auto: The Magical Adventrue of Oliver",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 2",
+        "words": 8,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.8,
+        "flesch_reading_ease": 82.4
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 3",
+        "words": 40,
+        "avg_sentence_words": 20.0,
+        "fk_grade": 7.8,
+        "flesch_reading_ease": 74.4
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 4",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.9,
+        "flesch_reading_ease": -35.1
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 5",
+        "words": 35,
+        "avg_sentence_words": 17.5,
+        "fk_grade": 5.4,
+        "flesch_reading_ease": 87.6
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 6",
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 7.1,
+        "flesch_reading_ease": 56.2
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 7",
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 78.3
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 8",
+        "words": 37,
+        "avg_sentence_words": 18.5,
+        "fk_grade": 7.6,
+        "flesch_reading_ease": 73.7
+      },
+      {
+        "part": "The Magical Adventrue of Oliver page 9",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 7.6,
+        "flesch_reading_ease": 69.0
+      },
+      {
+        "part": "auto: Checkout",
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 10.2,
+        "flesch_reading_ease": 41.9
+      }
+    ],
+    "names": {
+      "Grandma Maggie": {
+        "token": "Maggie",
+        "mentions": 0,
+        "near_miss_variants": [
+          "Magical"
+        ]
+      },
+      "Oliver": {
+        "token": "Oliver",
+        "mentions": 10,
+        "near_miss_variants": [
+          "Olive"
+        ]
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Wales",
+      "Olive",
+      "Bartholomew",
+      "Magical",
+      "Adventrue"
+    ],
+    "placeholders": [
+      "{{recipient_name}}",
+      "{{sender_name}}",
+      "{recipient_name}",
+      "{sender_name}"
+    ],
+    "repeated_sentences": [
+      "Once upon a time, in The windy hill behind the old farmhouse in Wales, there lived a curious child named Oliver."
+    ],
+    "truncated_ending": true,
+    "out_of_dictionary_words": [
+      "crepuscular"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Oliver"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "5"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "he / him"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "Brown curly hair, freckles, and green wellies."
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Grandma Maggie"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "The windy hill behind the old farmhouse in Wales"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "The blue kite Grandpa made from an old blue shirt"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "This is based on the summer my father made me a kite out of an old blue shirt. We flew it on the windy hill behind the old farmhouse in Wales. I want Oliver to be the hero, flying the blue kite with Grandma Maggie on the same hill. It should show Oliver in his green wellies, with his brown curly hair and freckles. The story should end happily with Oliver and Grandma Maggie watching the kite soar above the Welsh hill, so Oliver knows this special family memory belongs to him too.",
+      "truncated_to": 200
+    },
+    {
+      "field": "Lexile BR–200L",
+      "action": "choose",
+      "value": "BR-200L"
+    }
+  ],
+  "expected_names": [
+    "Oliver",
+    "Grandma Maggie"
+  ],
+  "reading_age": 5.0,
+  "superseded_captures": [],
+  "version_changes": [],
+  "artifact_type": "A generated personalized children's storybook and checkout page",
+  "parts": [
+    {
+      "part": "Cover / Title page",
+      "text": "A StoryHearth original\nIllustration style: Pop-art comic",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "I cannot see the cover image; the only available image information is the alt text \"Cover\".",
+      "reaction": "I am pleased that a book has been made, but the title misspells \"Adventure\" as \"Adventrue\". The cover information also gives me no useful sense of Oliver, the kite, or our family memory.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"The Magical Adventrue of Oliver\"",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The cover contains only \"A StoryHearth original\" and \"Illustration style: Pop-art comic\"; it does not identify the kite, the Welsh hill, or Grandma Maggie.",
+          "severity": 2
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The cover image itself is unavailable, so attractiveness and artefacts cannot be judged.",
+          "severity": 0
+        }
+      ],
+      "strengths": [
+        "It clearly presents itself as a storybook original."
+      ],
+      "suggested_change": "Correct the title and make the cover show Oliver in his green wellies flying the blue kite on the Welsh hill, with the title and dedication clearly readable.",
+      "rewrite": "The Magical Adventure of Oliver\nA StoryHearth original"
+    },
+    {
+      "part": "Dedication page",
+      "text": "For {{recipient_name}}, with love from {{sender_name}}",
+      "image_refs": [
+        "I2"
+      ],
+      "picture_description": "No picture is shown for this page.",
+      "reaction": "This is an important place for the personal touch, but the placeholders make the book look unfinished. I would not want to give this to Oliver as a keepsake.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"For {{recipient_name}}, with love from {{sender_name}}\"",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The intended recipient and sender are not filled in, despite Oliver and Margaret being supplied.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The wording itself is warm and appropriate for a family dedication."
+      ],
+      "suggested_change": "Replace the template fields with the actual names and add a short, truthful family message.",
+      "rewrite": "For Oliver, with love from Grandma Maggie"
+    },
+    {
+      "part": "Page 1",
+      "text": "Once upon a time, in The windy hill behind the old farmhouse in Wales, there lived a curious child named Oliver. Oliver was 5 years old and loved nothing more than The blue kite Grandpa made from an old blue shirt.",
+      "image_refs": [
+        "I3"
+      ],
+      "picture_description": "I cannot see the picture; its alt text says \"Oliver at The windy hill behind the old farmhouse in Wales\".",
+      "reaction": "This begins to use our details, including Oliver, the hill, Wales, and the kite. However, the capitalised \"The\" in the middle of the sentence feels like a pasted-in fragment, not a properly written story.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"in The windy hill\" and \"loved nothing more than The blue kite\"",
+          "severity": 2
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "The sentence is long and repeats a full descriptive phrase instead of using short, child-friendly sentences.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The alt text mentions Oliver at the hill, but the picture itself is unavailable, so the visual match cannot be confirmed.",
+          "severity": 0
+        }
+      ],
+      "strengths": [
+        "Oliver's name and age are used.",
+        "The old blue shirt kite and Welsh setting are retained.",
+        "The story begins with a clear setting."
+      ],
+      "suggested_change": "Break the description into short sentences and describe the hill and kite naturally, without capitalising the inserted object and place names.",
+      "rewrite": "Once upon a time, Oliver lived with Grandma Maggie near the old farmhouse in Wales. Behind the farmhouse was a windy hill. Oliver loved the blue kite Grandpa had made from an old blue shirt.",
+      "metrics": {
+        "words": 40,
+        "avg_sentence_words": 20.0,
+        "fk_grade": 7.8,
+        "flesch_reading_ease": 74.4
+      }
+    },
+    {
+      "part": "Page 2",
+      "text": "One evening Oliver gazed upward. The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.",
+      "image_refs": [
+        "I4"
+      ],
+      "picture_description": "I cannot see the picture; its alt text says \"Oliver looking at the evening sky\".",
+      "reaction": "This is far too difficult for a five-year-old and is not the warm, simple language I expect in a children's book. \"Crepuscular\" and \"existential trepidation\" would need explaining, and they make the memory feel cold rather than loving.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "\"ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation\"",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "The text-analysis tool also flags \"crepuscular\" as a possible non-dictionary word; the sentence is technically elaborate but unsuitable here.",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The passage describes unexplained melancholy and existential trepidation rather than a fond family memory.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The evening sky gives the illustrator a clear scene."
+      ],
+      "suggested_change": "Replace the abstract vocabulary with simple feelings and concrete actions: Oliver watches the sky, feels excited, and notices the kite moving in the wind.",
+      "rewrite": "The sun began to go down. Oliver looked up at the pink and blue sky. The breeze pulled gently at the blue kite. Oliver smiled and held the string tightly.",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.9,
+        "flesch_reading_ease": -35.1
+      }
+    },
+    {
+      "part": "Page 3",
+      "text": "Then the rain began to pour. Big grey drops splashed into the puddles as Olive pulled up his hood and ran for shelter, holding The blue kite Grandpa made from an old blue shirt tight.",
+      "image_refs": [
+        "I5"
+      ],
+      "picture_description": "I cannot see the picture; its alt text says \"Oliver outside\".",
+      "reaction": "The rain scene is understandable, but Olive is the wrong name and the repeated kite description is clumsy. More importantly, this turns a treasured memory into a problem that is not part of what I told you.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "\"as Olive pulled up his hood\"; the supplied name is Oliver.",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "\"holding The blue kite Grandpa made from an old blue shirt tight\"",
+          "severity": 2
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "Rain is introduced, but the story does not explain why it matters or how it connects to the family memory.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The alt text only says \"Oliver outside\" and does not confirm that the hood, rain, puddles, or kite are shown.",
+          "severity": 0
+        }
+      ],
+      "strengths": [
+        "The sentence about raindrops and puddles uses concrete, accessible language.",
+        "The kite remains connected to Grandpa."
+      ],
+      "suggested_change": "Correct Oliver's name and either remove the rain or make it a simple, cheerful challenge that Oliver and Grandma Maggie solve together.",
+      "rewrite": "Then the rain began to pour. Big drops splashed in the puddles. Oliver pulled up his hood and held the blue kite close. \"We'll wait under the old tree,\" said Grandma Maggie.",
+      "metrics": {
+        "words": 35,
+        "avg_sentence_words": 17.5,
+        "fk_grade": 5.4,
+        "flesch_reading_ease": 87.6
+      }
+    },
+    {
+      "part": "Page 4",
+      "text": "Uncle Bartholomew\nSuddenly, Uncle Bartholomew appeared with a lantern. \"Oliver, follow me!\" he called, and she followed him along the winding path.",
+      "image_refs": [
+        "I6"
+      ],
+      "picture_description": "I cannot see the picture; its alt text says \"Oliver and Uncle Bartholomew\".",
+      "reaction": "This introduces an important character who was never in our story and calls Oliver \"she,\" which is not a small mistake. A lantern, a winding path, and a mysterious uncle make the story feel like someone else's adventure.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "\"Uncle Bartholomew appeared\" although no Uncle Bartholomew was supplied.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "\"Oliver, follow me!\" he called, and she followed him\" uses the wrong pronoun.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "Oliver's stated pronouns are he/him, but the story says \"she.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The alt text says \"Oliver and Uncle Bartholomew,\" but the actual illustration is unavailable.",
+          "severity": 0
+        }
+      ],
+      "strengths": [
+        "The direct speech creates a potential moment of action."
+      ],
+      "suggested_change": "Remove Uncle Bartholomew and have Grandma Maggie be Oliver's companion. Keep the pronoun as \"he\" throughout.",
+      "rewrite": "Suddenly, Grandma Maggie appeared with a lantern. \"Follow me, Oliver!\" she called. He followed her along the winding path.",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 7.1,
+        "flesch_reading_ease": 56.2
+      }
+    },
+    {
+      "part": "Page 5",
+      "text": "Deep in the woods, the shadows grew teeth and whispered that no one would ever find Oliver again. Oliver clutched a shiny red balloon and trembled in the dark.",
+      "image_refs": [
+        "I7"
+      ],
+      "picture_description": "I cannot see the picture; its alt text says \"Oliver in the dark woods\".",
+      "reaction": "I would not give this frightening scene to a five-year-old without careful editing. The red balloon appears from nowhere, and the image of shadows with teeth is especially unsuitable for the happy family memory I wanted.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "\"the shadows grew teeth and whispered that no one would ever find Oliver again\"",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "\"a shiny red balloon\" is not among the supplied details.",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "Oliver is shown trembling and apparently lost, which conflicts with the requested happy ending and personal inheritance of the memory.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The alt text identifies Oliver in dark woods but does not confirm the shadows, teeth, whispers, balloon, or trembling shown in the text.",
+          "severity": 0
+        }
+      ],
+      "strengths": [
+        "The setting is visually clear from the alt text."
+      ],
+      "suggested_change": "Replace the threatening woods with the windy Welsh hill and have Oliver and Grandma Maggie work together to launch the kite.",
+      "rewrite": "The path became bumpy under Oliver's green wellies. Grandma Maggie held the blue kite high. \"Ready,\" she said. Oliver ran as the wind lifted the kite into the sky.",
+      "metrics": {
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 78.3
+      }
+    },
+    {
+      "part": "Page 6",
+      "text": "Once upon a time, in The windy hill behind the old farmhouse in Wales, there lived a curious child named Oliver. At last the sun came out, and Oliver skipped all the way home, happier than ever.",
+      "image_refs": [
+        "I8"
+      ],
+      "picture_description": "I cannot see the picture; its alt text says \"Oliver going home\".",
+      "reaction": "This repeats the opening almost word for word and then skips over the important ending I requested. Oliver goes home alone, with no kite soaring above the Welsh hill and no meaningful moment with Grandma Maggie.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "The opening sentence is repeated: \"Once upon a time, in The windy hill behind the old farmhouse in Wales, there lived a curious child named Oliver.\"",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested ending—Oliver and Grandma Maggie watching the kite soar above the Welsh hill—is absent.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "\"Oliver skipped all the way home, happier than ever\" is generic and does not explain why the family memory now belongs to Oliver too.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The alt text says Oliver is going home, but it does not confirm the Welsh hill, Grandma Maggie, or the kite.",
+          "severity": 0
+        }
+      ],
+      "strengths": [
+        "The sun coming out suggests a return to warmth and safety."
+      ],
+      "suggested_change": "Delete the repeated opening and make this the requested resolution, with Oliver and Grandma Maggie watching the kite together.",
+      "rewrite": "At last, the sun came out. Oliver and Grandma Maggie stood on the windy hill and watched the blue kite soar high above the Welsh hills. \"This is our kite now too,\" Grandma Maggie said. Oliver smiled.",
+      "metrics": {
+        "words": 37,
+        "avg_sentence_words": 18.5,
+        "fk_grade": 7.6,
+        "flesch_reading_ease": 73.7
+      }
+    },
+    {
+      "part": "Final page",
+      "text": "The End\nAnd from that day on, whenever Oliver looked up at the sky, he would always remember\nThe End",
+      "image_refs": [
+        "I9"
+      ],
+      "picture_description": "I cannot see the picture; its alt text says \"The End\".",
+      "reaction": "The final sentence is incomplete, and \"The End\" is repeated. This is the emotional high point of the book, yet it gives neither Oliver nor Grandma Maggie a proper farewell to the memory.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"he would always remember\" ends without an object or final punctuation, and \"The End\" appears twice.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The promised ending is replaced by an unfinished sentence.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested image of Oliver and Grandma Maggie watching the kite is missing from the text.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The page does not complete the thought that the family memory belongs to Oliver too.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The intention to end with Oliver looking at the sky is a suitable seed for the family memory."
+      ],
+      "suggested_change": "Complete the memory in one simple sentence and show Oliver and Grandma Maggie together beneath the flying kite.",
+      "rewrite": "And from that day on, whenever Oliver looked up at the sky, he remembered the windy hill, the blue kite, and flying it with Grandma Maggie. The End",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 7.6,
+        "flesch_reading_ease": 69.0
+      }
+    },
+    {
+      "part": "Checkout",
+      "text": "Checkout\nYour price is reserved for 09:44\nHardcover: The Magical Adventrue of Oliver\t£24.99\n Premium gift wrap\t£7.99\nShipping & handling\t£12.99\nTotal\t£45.97\nDelivery\nAddress\nPayment\nCard number\nExpiry\nCVC\nPay now",
+      "image_refs": [
+        "I10"
+      ],
+      "picture_description": "No picture is shown for the checkout page.",
+      "reaction": "Before paying, I need a clear explanation of every charge and why my address and card details are needed. The repeated title typo makes me distrust the order summary, and the gift-wrap charge is not explained.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"The Magical Adventrue of Oliver\" appears again in the purchase summary.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The checkout does not show a corrected title or a clear personalised-book confirmation.",
+          "severity": 2
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The visible typo on the purchase page makes the keepsake feel careless rather than precious.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The page displays the individual prices and total before payment.",
+        "The delivery, address, and payment fields are visibly separated."
+      ],
+      "suggested_change": "Correct the title, explain the £7.99 gift wrap and £12.99 shipping charge, show the delivery estimate and privacy explanation, and make the total and payment button easy to read.",
+      "rewrite": "Checkout\nHardcover: The Magical Adventure of Oliver — £24.99\nPremium gift wrap — £7.99\nShipping & handling — £12.99\nTotal — £45.97\n\nGift wrap is optional. Shipping includes delivery to the address entered below. Your details are used only to process and deliver this order.",
+      "metrics": {
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 10.2,
+        "flesch_reading_ease": 41.9
+      }
+    }
+  ],
+  "criteria": {
+    "fidelity": {
+      "evidence": "The book uses Oliver, Wales, the windy hill, the old blue-shirt kite, and the age five, but it changes Oliver to \"Olive,\" omits Grandma Maggie, invents Uncle Bartholomew and a red balloon, and never reaches the requested kite-soaring ending.",
+      "score": 1
+    },
+    "coherence": {
+      "evidence": "The opening is repeated on a later page; Oliver is called \"she\"; Uncle Bartholomew appears without explanation; and the final sentence is unfinished. The sequence jumps from a kite memory to rain, woods, danger, and going home.",
+      "score": 1
+    },
+    "age_fit": {
+      "evidence": "The tool reports an 8.5 reading grade for a requested reading age of five, and the text includes words such as \"ephemeral,\" \"crepuscular,\" \"juxtaposing,\" and \"existential trepidation.\" The threatening woods are also frightening for this age.",
+      "score": 1
+    },
+    "language": {
+      "evidence": "There is a title typo (\"Adventrue\"), the name error \"Olive,\" incorrect pronoun use, unexpanded placeholders, an uncapped inserted phrase, an unfinished final sentence, and repeated text.",
+      "score": 1
+    },
+    "text_image_fit": {
+      "evidence": "The actual pictures are unavailable, so I cannot verify whether they match the text or show the requested appearances. The alt text broadly corresponds to some scenes but does not confirm key details such as Grandma Maggie, the kite, green wellies, or the ending.",
+      "score": "n/a"
+    },
+    "character_consistency": {
+      "evidence": "The illustrations are unavailable, so visual consistency cannot be judged. The text itself is inconsistent because Oliver is referred to as \"she\" despite the supplied he/him pronouns.",
+      "score": "n/a"
+    },
+    "visual_quality": {
+      "evidence": "The actual cover and page images are not visible; only alt text and the stated pop-art style are available. Attractiveness, facial continuity, anatomy, and lettering artefacts therefore cannot be evaluated.",
+      "score": "n/a"
+    },
+    "emotional_resonance": {
+      "evidence": "The story feels like a generic fantasy adventure rather than my memory of flying Grandpa's kite with Oliver. Threatening shadows, an invented uncle, missing Grandma Maggie, and no kite-soaring ending remove the intended warmth and keepsake quality.",
+      "score": 1
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "Oliver's first name is used repeatedly, despite one later error.",
+      "Oliver's age of five is stated.",
+      "The windy hill behind the old farmhouse in Wales is named.",
+      "The blue kite made by Grandpa from an old blue shirt is retained.",
+      "The requested pop-art comic illustration style is recorded."
+    ],
+    "missing": [
+      "Grandma Maggie never appears in the story.",
+      "Oliver's brown curly hair, freckles, and green wellies are not mentioned in the text and cannot be confirmed from the unavailable images.",
+      "The requested final scene of Oliver and Grandma Maggie watching the kite soar above the Welsh hill is absent.",
+      "The explicit wish that the family memory belong to Oliver too is not meaningfully completed."
+    ],
+    "changed": [
+      "Oliver is called \"Olive\" on the rain page.",
+      "Oliver is referred to as \"she\" on the Uncle Bartholomew page.",
+      "The calm family kite memory is changed into a darker fantasy involving rain, a lantern, threatening woods, and being lost.",
+      "The input was truncated to 200 characters, so some details were not available to the generator."
+    ],
+    "invented": [
+      "Uncle Bartholomew",
+      "a shiny red balloon",
+      "a lantern and winding path",
+      "shadows with teeth that threaten Oliver"
+    ]
+  },
+  "safety_concerns": [
+    "The phrase \"the shadows grew teeth and whispered that no one would ever find Oliver again\" is frightening and may be unsuitable for a five-year-old.",
+    "Oliver is shown trembling in the dark and apparently separated from Grandma Maggie.",
+    "The uncle and lantern introduce an avoidable sense of danger without a clear, age-appropriate resolution."
+  ],
+  "overall_reaction": "I can see that the website has produced a complete-looking book, and some of my details are there, but I would not give this version to Oliver. The wrong name, wrong pronoun, unfinished ending, frightening invented scenes, and missing Grandma Maggie make it feel careless and unfaithful. I would want the whole story rewritten and checked before considering payment.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — the story contains serious name and continuity errors, is too frightening and difficult for Oliver, and does not include the family ending I requested.",
+  "top_changes": [
+    "Rewrite the story so Oliver and Grandma Maggie fly Grandpa's blue kite together on the windy Welsh hill.",
+    "Remove Uncle Bartholomew, the threatening woods, the red balloon, and the danger; correct \"Olive\" to \"Oliver\" and use he/him throughout.",
+    "Replace the advanced vocabulary with short, warm sentences suitable for a five-year-old.",
+    "Complete and personalise the final page with Oliver and Grandma Maggie watching the kite soar above the hill.",
+    "Fill in the dedication placeholders and correct \"Adventrue\" everywhere, including checkout.",
+    "Explain all checkout charges and the use of personal and payment information before asking for them."
+  ],
+  "images": [],
+  "variant": {
+    "name": "novision",
+    "vision": false,
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 2761,
+      "completion_tokens": 5384,
+      "seconds": 43.6,
+      "by_purpose": {
+        "output_assessment": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

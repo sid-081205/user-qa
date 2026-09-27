@@ -1,0 +1,89 @@
+{
+  "run": "20260926-203202_storyhearth_grandparent_storykeeper",
+  "persona": "grandparent_storykeeper",
+  "persona_name": "Margaret Ellison",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 11,
+  "pages_reviewed": 10,
+  "issues": 30,
+  "unique_issues": 27,
+  "evidence_quotes_verified": 0.864,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 5,
+    "2": 18,
+    "3": 7,
+    "4": 0
+  },
+  "issues_by_code": {
+    "ACC": 8,
+    "CONTENT": 6,
+    "H2": 4,
+    "H1": 2,
+    "TRUST": 2,
+    "VALUE": 2,
+    "DECEPTIVE": 2,
+    "H9": 1,
+    "H5": 1,
+    "H6": 1,
+    "H3": 1
+  },
+  "reached_output": true,
+  "output_parts": 10,
+  "output_criteria": {
+    "fidelity": 2.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 2.0,
+    "character_consistency": 2.0,
+    "visual_quality": 2.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 30.0,
+  "sus_grade": "F",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": 0.25,
+    "hedonic": -0.5,
+    "overall": -0.125
+  },
+  "nps": 2,
+  "mean_valence": 0.18,
+  "min_valence": -1.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 8,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 5,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 1,
+    "realism_overall": 4
+  },
+  "llm_usage": {
+    "calls": 14,
+    "failed_calls": 0,
+    "prompt_tokens": 73400,
+    "completion_tokens": 20643,
+    "seconds": 199.2,
+    "by_purpose": {
+      "step": 11,
+      "output_assessment": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 14
+    }
+  },
+  "wall_seconds": 266.2
+}

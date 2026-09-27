@@ -1,0 +1,16 @@
+{
+  "label": "The Magical Adventrue of Linh page 7",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_08/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_08/img_00.jpg",
+      "alt": "Linh in the dark woods",
+      "w": 714,
+      "h": 469
+    }
+  ],
+  "dir": "artifacts/capture_08"
+}

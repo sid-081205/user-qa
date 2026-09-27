@@ -1,0 +1,2766 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 764,
+      "sentences": 68,
+      "avg_sentence_words": 11.2,
+      "flesch_reading_ease": 84.5,
+      "fk_grade": 4.3,
+      "polysyllabic_ratio": 0.067,
+      "long_words": [
+        "Generation",
+        "Original",
+        "OurLegacy",
+        "personalize",
+        "watercolors"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 5.0,
+    "per_part": [
+      {
+        "part": "auto: My Storybooks",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "auto: Grandpa's Blue Kite",
+        "words": 44,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 6.4,
+        "flesch_reading_ease": 68.8
+      },
+      {
+        "part": "auto: Grandpa's Blue Kite",
+        "words": 41,
+        "avg_sentence_words": 13.7,
+        "fk_grade": 6.7,
+        "flesch_reading_ease": 71.2
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 1 of 32",
+        "words": 9,
+        "avg_sentence_words": 9.0,
+        "fk_grade": -0.3,
+        "flesch_reading_ease": 113.1
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 2 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 3 of 32",
+        "words": 16,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.0,
+        "flesch_reading_ease": 87.7
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 4 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 5 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 6 of 32",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 84.2
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 7 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 8 of 32",
+        "words": 20,
+        "avg_sentence_words": 10.0,
+        "fk_grade": 3.7,
+        "flesch_reading_ease": 86.7
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 9 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 10 of 32",
+        "words": 20,
+        "avg_sentence_words": 10.0,
+        "fk_grade": 2.5,
+        "flesch_reading_ease": 95.2
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 11 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 12 of 32",
+        "words": 21,
+        "avg_sentence_words": 10.5,
+        "fk_grade": 2.0,
+        "flesch_reading_ease": 99.5
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 13 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 14 of 32",
+        "words": 21,
+        "avg_sentence_words": 7.0,
+        "fk_grade": 2.3,
+        "flesch_reading_ease": 91.0
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 15 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 16 of 32",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 2.6,
+        "flesch_reading_ease": 95.7
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 17 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 18 of 32",
+        "words": 18,
+        "avg_sentence_words": 9.0,
+        "fk_grade": 1.7,
+        "flesch_reading_ease": 99.0
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 19 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 20 of 32",
+        "words": 19,
+        "avg_sentence_words": 9.5,
+        "fk_grade": 3.6,
+        "flesch_reading_ease": 85.9
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 21 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 22 of 32",
+        "words": 19,
+        "avg_sentence_words": 9.5,
+        "fk_grade": 2.4,
+        "flesch_reading_ease": 94.8
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 23 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 24 of 32",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 84.2
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 25 of 32",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 26 of 32",
+        "words": 6,
+        "avg_sentence_words": 6.0,
+        "fk_grade": 2.5,
+        "flesch_reading_ease": 87.9
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 27 of 32",
+        "words": 160,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.6,
+        "flesch_reading_ease": 80.5
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 28 of 32",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 29 of 32",
+        "words": 20,
+        "avg_sentence_words": 20.0,
+        "fk_grade": 4.6,
+        "flesch_reading_ease": 97.7
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 30 of 32",
+        "words": 14,
+        "avg_sentence_words": 14.0,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 77.8
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 31 of 32",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 7.6,
+        "flesch_reading_ease": 69.0
+      },
+      {
+        "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 32 of 32",
+        "words": 14,
+        "avg_sentence_words": 7.0,
+        "fk_grade": 17.5,
+        "flesch_reading_ease": -17.8
+      },
+      {
+        "part": "auto: Grandpa's Blue Kite",
+        "words": 204,
+        "avg_sentence_words": 9.7,
+        "fk_grade": 2.9,
+        "flesch_reading_ease": 91.6
+      }
+    ],
+    "names": {
+      "Grandma Maggie": {
+        "token": "Maggie",
+        "mentions": 1,
+        "near_miss_variants": [
+          "Made",
+          "Make"
+        ]
+      },
+      "Oliver": {
+        "token": "Oliver",
+        "mentions": 14,
+        "near_miss_variants": []
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Wales",
+      "Margaret",
+      "Ellison",
+      "Let",
+      "September",
+      "Welsh",
+      "Original"
+    ],
+    "placeholders": [],
+    "repeated_sentences": [
+      "Make a digital PDF, a narrated video, or order a printed book.",
+      "A watermarked preview of the exact 32-page book you can order — personalize it below; what you preview is what gets printed.",
+      "A real hardcover keepsake shipped to your door.",
+      "“The blue kite flew up, up into the summer sky — just like before!"
+    ],
+    "truncated_ending": false,
+    "out_of_dictionary_words": [
+      "wellies"
+    ],
+    "phrases_from_inputs": [
+      "the summer my father made me a kite out of an old blue shirt we carried it up the windy hill behind the old farmhouse in wales and the bright blue kite danced high in the sky my father taught me how to hold the string and how to let out a little more when the wind grew strong years later i told the story to my grandson oliver today we climb the same hill together oliver has brown curly hair and freckles and he is wearing his green wellies this time oliver is the hero and i help him fly grandpa's blue kite the kite climbs above the farmhouse and the summer clouds and oliver laughs as it swoops and dances we promise to keep the old blue kite safe and to bring it whenever our family visits wales",
+      "one summer my father made me something very special he cut up an old blue shirt and made it into a kite",
+      "the blue kite was ready my father and i carried it up the big windy hill behind the old farmhouse",
+      "for oliver with love from grandma maggie may we always keep the old blue kite safe",
+      "windy welsh hill"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email address",
+      "action": "type",
+      "value": "margaretdacdeb00@uberip.com",
+      "step": 3,
+      "page": "ourlegacy.family/auth/signup | Create your account",
+      "id": 39,
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Enter verification code",
+      "action": "type",
+      "value": "105413",
+      "step": 5,
+      "page": "ourlegacy.family/auth/signup#/verify-email-address | Create your account",
+      "id": 46,
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Story Narrative",
+      "action": "type",
+      "value": "The summer my father made me a kite out of an old blue shirt. We carried it up the windy hill behind the old farmhouse in Wales, and the bright blue kite danced high in the sky. My father taught me how to hold the string and how to let out a little more when the wind grew strong. Years later, I told the story to my grandson Oliver. Today we climb the same hill together. Oliver has brown curly hair and freckles, and he is wearing his green wellies. This time Oliver is the hero, and I help him fly Grandpa's blue kite. The kite climbs above the farmhouse and the summer clouds, and Oliver laughs as it swoops and dances. We promise to keep the old blue kite safe and to bring it whenever our family visits Wales.",
+      "step": 7,
+      "page": "ourlegacy.family/create | Create Your Storybook",
+      "id": 54,
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Watercolor",
+      "action": "choose",
+      "value": "watercolor",
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Reading age",
+      "action": "set_range",
+      "value": 5,
+      "step": 8,
+      "page": "ourlegacy.family/create | Create Your Storybook",
+      "id": 61,
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Character description",
+      "action": "type",
+      "value": "Oliver, age 5, my grandson and the hero. He has brown curly hair and freckles and loves wearing his green wellies. Make him warm, brave, and full of wonder.",
+      "step": 9,
+      "page": "ourlegacy.family/create | Create Your Storybook",
+      "id": 66,
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Character description",
+      "action": "type",
+      "value": "Grandma Maggie, my grandmother, has short silver hair, round glasses, and wears a blue cardigan. She is warm, loving, and adventurous. She should fly the old blue kite beside Oliver on the windy hill behind the old farmhouse in Wales.",
+      "step": 10,
+      "page": "ourlegacy.family/create | Create Your Storybook",
+      "id": 70,
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Character description",
+      "action": "type",
+      "value": "Grandma Maggie, Oliver's grandmother, has short silver hair and round glasses, and wears a blue cardigan. She is warm, loving, and adventurous. She should fly the old blue kite beside Oliver on the windy hill behind the old farmhouse in Wales.",
+      "step": 11,
+      "page": "ourlegacy.family/create | Create Your Storybook",
+      "id": 70,
+      "visit": "20260926-202314_ourlegacy_grandparent_storykeeper"
+    },
+    {
+      "field": "Narrative Text",
+      "action": "type",
+      "value": "One summer, my father made me something very special. He cut up an old blue shirt and made it into a kite!",
+      "step": 4,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148 | Grandpa's Blue Kite",
+      "id": 24
+    },
+    {
+      "field": "Describe what to change",
+      "action": "type",
+      "value": "Show Grandma Maggie as the little girl with short silver hair, round glasses and a blue cardigan, even though she is remembering being a child. Show her father, an older Welsh man, making the blue kite from an old blue shirt. Do not show Grandpa or any invented family members. Keep the warm farmhouse setting and make the kite clearly recognisable.",
+      "step": 7,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148 | Grandpa's Blue Kite",
+      "id": 30
+    },
+    {
+      "field": "Narrative Text",
+      "action": "type",
+      "value": "The blue kite was ready! My father and I carried it up the big windy hill behind the old farmhouse.",
+      "step": 11,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148 | Grandpa's Blue Kite",
+      "id": 40
+    },
+    {
+      "field": "Describe what to change",
+      "action": "type",
+      "value": "Show little Margaret as the child, not a boy. She has short silver hair, round glasses, and wears a blue cardigan, and she is carrying the blue kite together with her father, who made it. They are walking up the windy hill behind the old farmhouse in Wales.",
+      "step": 14,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148 | Grandpa's Blue Kite",
+      "id": 46
+    },
+    {
+      "field": "Describe what to change",
+      "action": "type",
+      "value": "Replace the boy with little Margaret, a young girl, clearly not a boy. She is my father's daughter and the child who carried the blue kite with him on the windy Welsh hill. Keep my father and the blue kite. Do not show any elderly grandfather.",
+      "step": 17,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148 | Grandpa's Blue Kite",
+      "id": 56
+    },
+    {
+      "field": "Title",
+      "action": "type",
+      "value": "The Blue Kite",
+      "step": 20,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite",
+      "id": 64
+    },
+    {
+      "field": "Author",
+      "action": "type",
+      "value": "Margaret Ellison",
+      "step": 20,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite",
+      "id": 65
+    },
+    {
+      "field": "Teller’s age",
+      "action": "type",
+      "value": "5",
+      "step": 20,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite",
+      "id": 66
+    },
+    {
+      "field": "Dedication",
+      "action": "type",
+      "value": "For Oliver, with love from Grandma Maggie. May we always keep the old blue kite safe.",
+      "step": 20,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite",
+      "id": 68
+    },
+    {
+      "field": "This book belongs to",
+      "action": "type",
+      "value": "Oliver Ellison",
+      "step": 20,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite",
+      "id": 69
+    },
+    {
+      "field": "Teller’s age",
+      "action": "type",
+      "value": null,
+      "step": 24,
+      "page": "ourlegacy.family/storybook/:id-4e6d-4682-afe2-f4bfda08a148/export | Grandpa's Blue Kite",
+      "id": 78
+    }
+  ],
+  "expected_names": [
+    "Oliver",
+    "Grandma Maggie"
+  ],
+  "reading_age": 5.0,
+  "superseded_captures": [
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "auto: Grandpa's Blue Kite",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 1 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 2 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 3 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 4 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 5 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 6 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 7 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 8 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 9 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 10 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 11 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 12 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 13 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 14 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 15 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 16 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 17 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 18 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 19 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 20 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 21 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 22 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 23 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 24 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 25 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 26 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 27 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 28 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 29 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 30 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 31 of 32",
+    "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 32 of 32",
+    "auto: Grandpa's Blue Kite",
+    "auto: "
+  ],
+  "version_changes": [
+    {
+      "part": "auto: Grandpa's Blue Kite",
+      "since": "auto: Grandpa's Blue Kite",
+      "changes": "no longer there: \"One summer, Grandpa's daddy made something very special. He cut up an old blue shirt and made it into a kite!\" | \"The blue kite was ready! Grandpa and his daddy carried it up the big windy hill behind the old farmhouse.\"; new: \"One summer, my father made me something very special. He cut up an old blue shirt and made it into a kite!\" | \"The blue kite was ready! My father and I carried it up the big windy hill behind the old farmhouse.\"; pictures redrawn: I38, I39"
+    },
+    {
+      "part": "auto: Grandpa's Blue Kite",
+      "since": "auto: Grandpa's Blue Kite",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 1 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 1 of 32",
+      "changes": "no longer there: \"told by Margaret Ellison, age 5\""
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 2 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 2 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 3 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 3 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 4 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 4 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 5 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 5 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 6 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 6 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 7 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 7 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 8 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 8 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 9 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 9 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 10 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 10 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 11 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 11 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 12 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 12 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 13 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 13 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 14 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 14 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 15 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 15 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 16 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 16 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 17 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 17 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 18 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 18 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 19 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 19 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 20 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 20 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 21 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 21 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 22 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 22 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 23 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 23 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 24 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 24 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 25 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 25 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 26 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 26 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 27 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 27 of 32",
+      "changes": "no longer there: \"As told by Margaret Ellison, age 5 · September 2026 · OurLegacy\"; new: \"As told by Margaret Ellison · September 2026 · OurLegacy\""
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 28 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 28 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 29 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 29 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 30 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 30 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 31 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 31 of 32",
+      "changes": "the text did not change"
+    },
+    {
+      "part": "storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf page 32 of 32",
+      "since": "storybook_1790456203016-ztPQgRDMdbMGcbHmq2ruX1lssvFK7D.pdf page 32 of 32",
+      "changes": "no longer there: \"© 2026 Margaret Ellison. Story told by Margaret Ellison, age 5 · September 2026.\"; new: \"© 2026 Margaret Ellison. Story told by Margaret Ellison · September 2026.\""
+    }
+  ],
+  "artifact_type": "Personalized illustrated digital storybook and printable keepsake preview",
+  "criteria": {
+    "fidelity": {
+      "evidence": "The book preserves many supplied details, including the blue kite, old blue shirt, Welsh farmhouse, windy hill, Oliver's curls, freckles and green wellies, the dedication, and the childhood kite-flying memory. However, it changes the central relationships by replacing Margaret's father with an invented Grandpa storyline, pairing Oliver with an elderly man instead of his grandmother, and displaying the heading \"Grandpa's Blue Kite\" instead of the entered title \"The Blue Kite.\"",
+      "score": 1
+    },
+    "coherence": {
+      "evidence": "The story has a recognizable beginning, middle and end, but the family relationships change abruptly. The father becomes \"Grandpa's daddy,\" little Margaret becomes a boy, and Oliver is presented as the grandson of an invented grandfather rather than Margaret's grandson. Vague references to \"they\" then conceal these contradictions.",
+      "score": 1
+    },
+    "age_fit": {
+      "evidence": "The sentences are mostly short, gentle and emotionally suitable for a five-year-old, with no frightening or inappropriate content. The automatic reading level is grade 4.3 despite the requested reading age of five, so some vocabulary and sentence complexity are still too advanced, although the main problem is accuracy rather than difficulty.",
+      "score": 3
+    },
+    "language": {
+      "evidence": "The prose is generally clear and readable, and the dedication is warmly expressed. There are important presentation and clarity problems: the heading does not match the entered title, the $4.00 charge is unexplained, the story date is unexplained, and phrases such as \"Grandpa's daddy\" and repeated vague uses of \"they\" make the family relationships unclear.",
+      "score": 2
+    },
+    "text_image_fit": {
+      "evidence": "Many watercolor images beautifully establish the blue kite, Welsh hill, farmhouse and kite flight. Nevertheless, many pictures contradict their text: the text calls the adult Margaret's father while the image shows an elderly grandfather, the child changes from little Margaret to a boy, and several text pages use tiny decorative kites instead of illustrating the described action.",
+      "score": 2
+    },
+    "character_consistency": {
+      "evidence": "Oliver is reasonably consistent in the later scenes, with brown curly hair, freckles and green wellies. The other characters are not: the child changes from a girl to a boy and loses the specified short silver hair, round glasses and blue cardigan, while Margaret is repeatedly replaced by an elderly silver-haired man. The father also changes from a dark-haired man to an elderly grandfather.",
+      "score": 1
+    },
+    "visual_quality": {
+      "evidence": "The watercolor illustrations are attractive, warm and generally clear, especially the countryside, farmhouse and kite scenes. The finished book feels unfinished because of the blank cover and duplicate title pages, empty cast page, tiny scene thumbnails, small grey text, preview watermarks and a selected cover that does not show the intended relationship.",
+      "score": 3
+    },
+    "emotional_resonance": {
+      "evidence": "The book has real emotional potential because it uses Margaret's family memory, Oliver's appearance, the Welsh setting, the blue kite and the loving dedication. At present, however, the invented grandfather and the repeated absence of Margaret make the central relationship wrong and the result feel like a pleasant generic kite story rather than a faithful keepsake for Margaret and Oliver.",
+      "score": 2
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "The blue kite made from an old blue shirt",
+      "Margaret's father making the kite and teaching her to fly it",
+      "The windy hill behind the old farmhouse in Wales",
+      "Oliver's brown curly hair, freckles and green wellies",
+      "The intended present-day relationship in which Oliver is the hero and Margaret helps him fly the kite",
+      "The title input \"The Blue Kite\" in the title field",
+      "The author name Margaret Ellison",
+      "The dedication to Oliver",
+      "The ownership name Oliver Ellison",
+      "The watercolor style and reading-age request"
+    ],
+    "missing": [
+      "A consistent visual identity for little Margaret with short silver hair, round glasses and a blue cardigan",
+      "A consistent present-day depiction of Margaret as Oliver's grandmother",
+      "A clear cover showing Oliver and Margaret with the kite",
+      "A real cast-of-characters page",
+      "A clear explanation of what the $4.00 charge includes",
+      "A clear explanation of the hardcover price and its current availability",
+      "A full-size way to inspect and correct every scene before choosing the final PDF"
+    ],
+    "changed": [
+      "The entered title \"The Blue Kite\" is replaced by the displayed heading \"Grandpa's Blue Kite\"",
+      "Margaret's father is changed into an invented Grandpa or \"Grandpa's daddy\"",
+      "Little Margaret is changed into a generic brown-haired girl and later a boy",
+      "Margaret is replaced in the present-day scenes by an elderly silver-haired man",
+      "Oliver is made the grandson of the invented Grandpa rather than Margaret's grandson",
+      "The original \"today\" visit is changed into an invented \"next day\" trip back to Wales",
+      "The joint promise between Margaret and Oliver is weakened into an unnamed \"they\""
+    ],
+    "invented": [
+      "An invented Grandpa character",
+      "The relationship \"Grandpa's daddy\"",
+      "A story in which Oliver is Grandpa's grandson",
+      "An automatic story date that was not supplied",
+      "A story in which the present-day adult is an elderly man rather than Margaret"
+    ]
+  },
+  "safety_concerns": [
+    "No frightening, violent, sexual or otherwise inappropriate content is present.",
+    "The main concern is emotional and factual: presenting the wrong relatives could confuse a child about family relationships and damage the keepsake's personal meaning."
+  ],
+  "overall_reaction": "The pictures are pretty and the blue kite, Welsh hill and Oliver's details are warm, but I cannot accept this as our family book while my father is turned into Grandpa and I am replaced by an elderly man. The loving words and gentle story are not enough to overcome such a central mistake, and I would need every relevant scene and relationship checked and corrected before trusting it.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — not until the family relationships, title, illustrations and final PDF are corrected, and the price and delivery terms are clearly explained",
+  "top_changes": [
+    "Correct the entire story so the kite-maker is Margaret's father, the childhood child is clearly little Margaret, and the present-day pair is Margaret and Oliver; remove every invented Grandpa reference.",
+    "Regenerate the illustrations with consistent character identities: little Margaret as a girl with short silver hair, round glasses and a blue cardigan, and present-day Margaret as a 71-year-old woman with short silver hair, round glasses and a blue cardigan.",
+    "Restore the entered title \"The Blue Kite\" everywhere and remove the unexplained automatic story date.",
+    "Use a proper cover and meaningful cast page showing the blue kite, the Welsh farmhouse, Margaret and Oliver, rather than blank pages or an unrelated man-and-child scene.",
+    "Show the complete kite and the relevant action on each illustrated page, and provide large, easily inspected scene previews with clear labels for the latest PDF.",
+    "Explain exactly what the $4.00 charge covers, whether any shipping or export costs are extra, and that the $59 hardcover is unavailable rather than presenting an unexplained or disabled purchase option.",
+    "Remove preview watermarks and labels from the purchased file, enlarge small grey text and writing lines, and keep the simple, warm ending and dedication."
+  ],
+  "parts": [
+    {
+      "part": "Storybook cover/listing",
+      "text": "My Storybooks\n$4.00\nMy Storybooks\n1 storybook\nCreate New\nGrandpa's Blue Kite\nWatercolor |\n10 scenes\n22 minutes ago",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "A warm watercolor-style picture set in a farmhouse kitchen. An adult man and a brown-haired boy are making or repairing a large blue kite from pieces of blue fabric. The kite is clearly visible, but the child is a boy rather than little Margaret.",
+      "reaction": "The picture is pretty and the blue kite is easy to recognise, but I would not recognise my family in it. My father made the kite with me when I was a little girl, not with a boy called Grandpa.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The listing calls the book \"Grandpa's Blue Kite,\" although my chosen title was \"The Blue Kite\" and my corrected family story identifies the kite-maker as my father.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The picture shows an adult man and a boy in a kitchen, rather than my father and little Margaret carrying the finished kite on the windy Welsh hill. This contradicts my later corrections, which explicitly said, \"Replace the boy with little Margaret, a young girl.\"",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The child has short brown hair and no visible round glasses or blue cardigan, so he does not match the requested depiction of little Margaret.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The blue kite matches the central object, but the image does not show the corrected event or setting: Margaret and her father carrying it up the windy hill behind the old farmhouse in Wales.",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The attractive picture feels like a pleasant generic kite story, but calling my father \"Grandpa\" and showing a boy instead of me would make this unsuitable as a personal family keepsake.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The chosen watercolor style is warm and attractive.",
+        "The blue kite is large, clear, and immediately recognisable.",
+        "The farmhouse setting gives the picture a cosy family-story atmosphere."
+      ],
+      "suggested_change": "Change the title to \"The Blue Kite\" and replace this picture with a clear watercolor scene of my father, an older Welsh man, making or carrying the kite with little Margaret. Margaret should be recognisably a young girl, with short silver hair, round glasses, and a blue cardigan, on the windy hill behind the old farmhouse in Wales. Do not show Oliver, Grandpa, or any invented relative.",
+      "rewrite": "The Blue Kite",
+      "artifact": "the web page /storybooks (\"My Storybooks\")"
+    },
+    {
+      "part": "Export page header and purchase options",
+      "text": "OurLegacy\nMy Storybooks\n$4.00\nCreate\nReview\n3\nOutput\nBack to review\nGrandpa's Blue Kite\nMake a digital PDF, a narrated video, or order a printed book.\nGenerate Book Preview\nPreview\nA watermarked preview of the exact 32-page book you can order — personalize it below; what you preview is what gets printed.\nTitle\nThe Blue Kite\nAuthor\nMargaret Ellison\nTeller’s age\n5\nStory told on\n26/09/2026\nPrinted Book\nKeepsake\nA real hardcover keepsake shipped to your door.\nHardcover\n$59\nOrder Printed Book\nPrinting is coming soon ✨",
+      "image_refs": [
+        "I2",
+        "I4"
+      ],
+      "picture_description": "A clean export page headed “Grandpa’s Blue Kite.” Below it are a book-preview panel and a printed-book panel. The $59 hardcover button is pale and unavailable, with “Printing is coming soon” underneath.",
+      "reaction": "I can see the price, but the $4.00 in the navigation has no explanation, and I still cannot order the $59 book. More importantly, the heading says “Grandpa’s Blue Kite” even though the field beneath correctly says “The Blue Kite.”",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The page heading says “Grandpa's Blue Kite,” although the Title field says “The Blue Kite.”",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "The page shows “$4.00” at the top and “Hardcover $59” without explaining whether the $4.00 is a charge, a credit, or something else.",
+          "severity": 2
+        },
+        {
+          "criterion": "language",
+          "evidence": "“Make a digital PDF, a narrated video, or order a printed book” promises a narrated-video option, but no narration control is shown in this capture.",
+          "severity": 2
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The explanatory text and some controls are small and grey, making them harder to read.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The editable title correctly says “The Blue Kite.”",
+        "My name, Margaret Ellison, is shown correctly as the author.",
+        "The hardcover price of $59 is stated plainly.",
+        "The unavailable order function is not pretending that orders can be placed."
+      ],
+      "suggested_change": "Change the page heading and filename description to “The Blue Kite,” explain exactly what the $4.00 charge covers, and label the hardcover as “$59 — not yet available to order.” I would also show a clear narration option if one is actually offered.",
+      "rewrite": "The Blue Kite\nCreate a preview and choose a download or printed-book option.\nHardcover: $59. Printed books are not yet available to order.",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 41,
+        "avg_sentence_words": 13.7,
+        "fk_grade": 6.7,
+        "flesch_reading_ease": 71.2
+      }
+    },
+    {
+      "part": "Preview settings and cover",
+      "text": "Title\nThe Blue Kite\nAuthor\nMargaret Ellison\nTeller’s age\n5\nStory told on\n26/09/2026\nDedication\nFor Oliver, with love from Grandma Maggie. May w\nThis book belongs to\nOliver Ellison\nCover image\nScene 8\nChange\nGeneration in progress...\nGenerated Exports\nPDF\nGenerating...",
+      "image_refs": [
+        "I3"
+      ],
+      "picture_description": "The lower portion of the preview panel shows the dedication and ownership fields. A small watercolor cover thumbnail labelled “Scene 8” depicts a blue kite above an adult man and a child standing outdoors. A generation message and a generating PDF status appear below.",
+      "reaction": "The blue kite is easy to recognise, but the cover does not show the present-day relationship I wanted between Oliver and his grandmother. I cannot tell from this thumbnail whether it has also confused the child as a boy.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The cover thumbnail shows an adult man and a child, rather than five-year-old Oliver with his grandmother as in the family story’s present-day ending.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The cover is labelled “Scene 8,” but the selected picture does not visibly present the relationship emphasized in my original ending, where Oliver is the hero and I help him fly the kite.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The dedication is visibly cut off after “For Oliver, with love from Grandma Maggie. May w,” so the full wording cannot be checked here.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The ownership field correctly says “Oliver Ellison.”",
+        "The dedication begins with my intended wording.",
+        "The selected cover is identified clearly as Scene 8.",
+        "The watercolor thumbnail is pleasant and the blue kite is prominent."
+      ],
+      "suggested_change": "Use a cover showing five-year-old Oliver in green wellies flying the blue kite with his grandmother, rather than an adult man and a child. Display the dedication across enough space to show the whole sentence, and let me enlarge the cover before accepting it.",
+      "rewrite": "For Oliver, with love from Grandma Maggie. May we always keep the old blue kite safe.",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 12,
+        "avg_sentence_words": 6.0,
+        "fk_grade": 6.4,
+        "flesch_reading_ease": 59.7
+      }
+    },
+    {
+      "part": "Final export settings after generation",
+      "text": "OurLegacy\nMy Storybooks\n$4.00\nCreate\nReview\n3\nOutput\nBack to review\nGrandpa's Blue Kite\nMake a digital PDF, a narrated video, or order a printed book.\nGenerate Book Preview\nPreview\nA watermarked preview of the exact 32-page book you can order — personalize it below; what you preview is what gets printed.\nTitle\nThe Blue Kite\nAuthor\nMargaret Ellison\nTeller’s age\nOptional\nStory told on\n26/09/2026\nDedication\nFor Oliver, with love from Grandma Maggie. May w\nPrinted Book\nKeepsake\nA real hardcover keepsake shipped to your door.\nHardcover\n$59\nOrder Printed Book\nPrinting is coming soon ✨",
+      "image_refs": [
+        "I4"
+      ],
+      "picture_description": "This is the same export page after generation. The teller’s age field now reads “Optional,” while the cover gallery is lower on the page. The printed-book button remains unavailable.",
+      "reaction": "“Optional” is not a mistake: I deliberately cleared the teller’s age on my last visit. The unresolved “Grandpa’s Blue Kite” heading and the unexplained date “26/09/2026” still need attention.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The final page still says “Grandpa's Blue Kite” even though my submitted title was “The Blue Kite.”",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "“Story told on 26/09/2026” is displayed even though I did not enter a story date in the information provided.",
+          "severity": 2
+        },
+        {
+          "criterion": "language",
+          "evidence": "The label “Story told on” does not explain whether the date means when the memory happened, when I told the story, or when the file was created.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The site correctly retained my decision to clear the teller’s age and now shows “Optional.”",
+        "The title and author fields remain correct.",
+        "The final state is visibly different from the earlier age field, showing that the latest entry was used."
+      ],
+      "suggested_change": "Synchronize the heading with the accepted title, and do not insert a date automatically. Ask me to choose “No story date” or clearly label an automatically added date as the file-generation date.",
+      "rewrite": "The Blue Kite\nTeller’s age: Optional\nStory date: Not supplied",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 50,
+        "avg_sentence_words": 12.5,
+        "fk_grade": 6.3,
+        "flesch_reading_ease": 72.3
+      }
+    },
+    {
+      "part": "Final cover gallery and PDF downloads",
+      "text": "Cover image\nScene 8\nDone\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nRegenerate PDF\nGenerated Exports\nPDF\nSep 26, 2026, 8:57 PM\n2.4 MB\nCustom title\nAuthor: Margaret Ellison\nDedication\nBookplate\nCover: Scene 8\nDownload\nPDF\nSep 26, 2026, 8:56 PM\n2.4 MB\nCustom title\nAuthor: Margaret Ellison\nDedication\nBookplate\nCover: Scene 8\nDownload",
+      "image_refs": [
+        "I5"
+      ],
+      "picture_description": "A gallery of ten small watercolor scene thumbnails is shown, with Scene 8 outlined as the cover. Several thumbnails appear to show a taller dark-haired male figure with a child, while others show kite-making or kite-flying scenes. Two PDF entries, one minute apart, are listed with Download buttons.",
+      "reaction": "The pictures are attractive as small thumbnails, but they still do not make me recognise my family; the child and relationships need careful checking at full size. I also cannot tell which of the two nearly identical PDFs is the final one.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "Several thumbnails show a taller male figure with a child, rather than clearly showing little Margaret as a silver-haired girl in a blue cardigan or the intended present-day pairing of Margaret and Oliver.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The gallery thumbnails do not consistently make the intended child and adult characters recognisable; the cover and several scenes appear to use a generic man-and-child pairing.",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The selected cover is described in the interface only as “Scene 8” and, at the thumbnail size shown, does not convey the personal relationship that would make this a family keepsake.",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "The two downloads are distinguished only by timestamps, “Sep 26, 2026, 8:57 PM” and “Sep 26, 2026, 8:56 PM”; neither is marked “Latest” or “Earlier version.”",
+          "severity": 2
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The thumbnails are too small in this view to inspect faces, hands, clothing, or the kite construction properly.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The selected cover is clearly outlined and identified as Scene 8.",
+        "The gallery provides a range of kite-making and flying scenes.",
+        "Both PDFs show a file size, timestamp, author, dedication, bookplate, and cover choice.",
+        "The downloads are easy to identify as PDFs."
+      ],
+      "suggested_change": "Let me open each scene at a large size and correct the characters before regenerating the PDF. Mark the 8:57 file as “Latest PDF” and the 8:56 file as “Earlier version,” and make the selected cover show Oliver and his grandmother with the blue kite if that is the ending I am keeping.",
+      "rewrite": "Latest PDF — Sep 26, 2026, 8:57 PM\nEarlier version — Sep 26, 2026, 8:56 PM",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148/export (\"Grandpa's Blue Kite\")"
+    },
+    {
+      "part": "Cover / Title page / Page 1",
+      "text": "The Blue Kite\ntold by Margaret Ellison\nSeptember 2026",
+      "image_refs": [
+        "I6"
+      ],
+      "picture_description": "A plain white title page with the navy title, a small author line, a date, a large pale 'OurLegacy PREVIEW' watermark, and small preview text at the bottom. There is no actual cover illustration.",
+      "reaction": "The title and author are clear, but this does not look like an attractive keepsake cover, and I would be disappointed to see a preview watermark across a family book.",
+      "problems": [
+        {
+          "criterion": "visual_quality",
+          "evidence": "The page is almost entirely blank, with 'OurLegacy PREVIEW' and 'PREVIEW · NOT FOR RESALE' visible.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The page says 'told by Margaret Ellison' correctly, but there is no cover image showing the blue kite, Wales, or the family.",
+          "severity": 2
+        },
+        {
+          "criterion": "language",
+          "evidence": "The date 'September 2026' was not part of my supplied story details and appears to have been added by the website.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The title is clear and correctly uses 'The Blue Kite'.",
+        "The author name is preserved accurately."
+      ],
+      "suggested_change": "Use a real watercolor cover showing the old blue kite flying above the Welsh farmhouse, with Margaret and Oliver clearly identifiable, and remove the preview watermark from the final file.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Title page / Page 2",
+      "text": "The Blue Kite",
+      "image_refs": [
+        "I7"
+      ],
+      "picture_description": "Another almost blank white page with the title repeated and the pale 'OurLegacy PREVIEW' watermark.",
+      "reaction": "Repeating the title on an empty page makes the book feel unfinished rather than special.",
+      "problems": [
+        {
+          "criterion": "visual_quality",
+          "evidence": "The page contains no illustration and is dominated by the 'OurLegacy PREVIEW' watermark.",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The second title page adds no family picture or meaningful introduction.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The title remains consistent with the title entered for the book."
+      ],
+      "suggested_change": "Replace this duplicate blank page with a warm watercolor family scene or remove it and begin the story on this page.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Dedication / Page 3",
+      "text": "For Oliver, with love from Grandma Maggie. May we always keep the old blue kite safe.",
+      "image_refs": [
+        "I8"
+      ],
+      "picture_description": "A white dedication page with italic text and a very small blue kite illustration beneath it, partly obscured by the pale preview watermark.",
+      "reaction": "The words are loving and exactly reflect my intention, but the little kite is too small to give the page warmth.",
+      "problems": [
+        {
+          "criterion": "visual_quality",
+          "evidence": "The kite illustration is tiny and faint, while the large watermark cuts across the page.",
+          "severity": 2
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The personal dedication is strong, but the page does not show Margaret and Oliver or their relationship.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The dedication is personal and matches the wording I entered.",
+        "It is suitable for a child to hear or read."
+      ],
+      "suggested_change": "Keep the dedication but add a gentle watercolor of Oliver holding the kite with Margaret, and remove the watermark.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.0,
+        "flesch_reading_ease": 87.7
+      }
+    },
+    {
+      "part": "Cast of characters / Page 4",
+      "text": "Cast of characters",
+      "image_refs": [
+        "I9"
+      ],
+      "picture_description": "A blank white page with only the heading 'Cast of characters' and the preview watermark.",
+      "reaction": "I would expect this page to tell me who is in our story, but nobody is actually introduced.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The page lists no characters despite the story needing Margaret as a child, her father, and Oliver.",
+          "severity": 2
+        },
+        {
+          "criterion": "language",
+          "evidence": "The heading promises a cast list, but no names or descriptions follow.",
+          "severity": 2
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The page is empty apart from the heading and watermark.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The heading is simple and understandable."
+      ],
+      "suggested_change": "Add a short illustrated cast list: little Margaret, her father, and Oliver, with the relationships clearly stated.",
+      "rewrite": "This is our family:\nMargaret, who made this kite when she was a little girl.\nHer father, who taught her how to fly it.\nOliver, Margaret's grandson and the hero of our story.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "This book belongs to / Page 5",
+      "text": "This book belongs to\nOliver Ellison\nsigned",
+      "image_refs": [
+        "I10"
+      ],
+      "picture_description": "A simple ownership page with Oliver Ellison's name inside a pale rectangular box and a signing line.",
+      "reaction": "This is a nice personal touch, and Oliver's name is correct, though the page is very plain.",
+      "problems": [
+        {
+          "criterion": "visual_quality",
+          "evidence": "The ownership page is plain and the preview watermark crosses the page.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The ownership name is exactly the name I entered.",
+        "The signing line gives Oliver a personal connection to the book."
+      ],
+      "suggested_change": "Keep the ownership wording, perhaps with a small watercolor kite in the corner and no watermark.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Story opening / Page 6",
+      "text": "One summer, my father made me something very special. He cut up an old blue shirt and made it into a kite!",
+      "image_refs": [
+        "I11"
+      ],
+      "picture_description": "A white text page with the sentence centered in dark blue type. A very small kite illustration appears below, partly covered by the watermark.",
+      "reaction": "This is a clear and faithful beginning, with short sentences that a five-year-old could follow.",
+      "problems": [
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The tiny kite is decorative, but it does not show my father making the kite from the old blue shirt.",
+          "severity": 1
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The pale preview watermark and very small illustration make the page look like a draft rather than a finished keepsake.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The wording is taken directly from my entered narrative.",
+        "The father, blue shirt, and kite are all present.",
+        "The sentences are short and age-appropriate."
+      ],
+      "suggested_change": "Use a full-page watercolor of my father making the kite while I watch, clearly showing the old blue shirt and the kite frame.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 84.2
+      }
+    },
+    {
+      "part": "Making the kite / Page 7",
+      "text": "",
+      "image_refs": [
+        "I12"
+      ],
+      "picture_description": "A watercolor scene inside a farmhouse kitchen. A young girl with brown hair kneels beside a man who is attaching spars and string to a blue kite made from fabric; scraps of blue shirt and ribbon lie on the floor.",
+      "reaction": "The picture is attractive and the making of the kite is easy to understand, but the child looks like an ordinary brown-haired girl rather than the specified little Margaret with short silver hair, round glasses, and a blue cardigan.",
+      "problems": [
+        {
+          "criterion": "character_consistency",
+          "evidence": "The girl has long brown hair, no visible round glasses, and no blue cardigan; the instructions specifically requested short silver hair, round glasses, and a blue cardigan.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The man is shown making the kite with a child, but the picture does not clearly identify the child as Margaret.",
+          "severity": 2
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The man's appearance here must remain consistent with the later hill and kite-flying scenes.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The watercolor style is warm and attractive.",
+        "The blue fabric, kite frame, ribbon, and making process are clearly visible.",
+        "The farmhouse setting supports the family memory."
+      ],
+      "suggested_change": "Regenerate the image with a little Margaret who has short silver hair, round glasses, and a blue cardigan, and show my father, an older Welsh man, making the kite from the old blue shirt.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Walking up the hill / Page 8",
+      "text": "The blue kite was ready! My father and I carried it up the big windy hill behind the old farmhouse.",
+      "image_refs": [
+        "I13"
+      ],
+      "picture_description": "A white text page with the sentence centered in dark blue type. A tiny kite illustration is visible below the text beneath the watermark.",
+      "reaction": "The sentence is easy to understand and follows the memory, but the small image does not show the walk.",
+      "problems": [
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The page says my father and I carried the kite up the hill, but the tiny decorative image does not depict either of us or the farmhouse.",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "Wales is not named in this page's text, although it is part of the memory and appears elsewhere.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The action is clear.",
+        "The short sentences suit a five-year-old listener.",
+        "The old farmhouse and windy hill are retained in the wording."
+      ],
+      "suggested_change": "Replace the tiny decoration with a full-page watercolor of little Margaret and her father carrying the kite up the hill behind the old farmhouse in Wales.",
+      "rewrite": "The blue kite was ready! My father and I carried it up the big, windy hill behind the old farmhouse in Wales.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 10.0,
+        "fk_grade": 3.7,
+        "flesch_reading_ease": 86.7
+      }
+    },
+    {
+      "part": "Hill scene / Page 9",
+      "text": "",
+      "image_refs": [
+        "I14"
+      ],
+      "picture_description": "A broad watercolor landscape shows a man and a child carrying a blue kite up a green hill, with a stone wall, countryside, and an old farmhouse in the distance.",
+      "reaction": "This is a lovely picture of the hill and the kite, but the child is shown as a boy with short brown hair, not as little Margaret.",
+      "problems": [
+        {
+          "criterion": "character_consistency",
+          "evidence": "The child appears to be a boy; the requested character was little Margaret, a young girl, with short silver hair, round glasses, and a blue cardigan.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The picture does not visibly establish that the child is my father's daughter or that she is Margaret.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image complements the hill scene, although the identity of the child is wrong.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The hill, farmhouse, countryside, and kite are attractive and easy to recognize.",
+        "The man and child are visibly carrying the kite together."
+      ],
+      "suggested_change": "Regenerate the image with little Margaret, clearly a girl with short silver hair, round glasses, and a blue cardigan, walking beside her father.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "First kite flight / Page 10",
+      "text": "Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in the bright blue sky!",
+      "image_refs": [
+        "I15"
+      ],
+      "picture_description": "A white text page with the sentence centered in dark blue type and a tiny kite illustration below it beneath the watermark.",
+      "reaction": "This is where the story goes seriously wrong: my father has been changed into 'Grandpa's daddy,' and the page does not show the first kite flight.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text says \"Grandpa's daddy\" although the person making and flying the kite is my father, not an invented grandfather.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The relationship suddenly changes from 'my father' to 'Grandpa's daddy' without any explanation.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The page describes the kite going up, but the visible image is only a tiny decorative kite.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The action of launching the kite is easy for a child to understand.",
+        "The repeated 'Up, up, up' gives the sentence a lively rhythm."
+      ],
+      "suggested_change": "Replace the relationship with 'my father' and use the full-page watercolor of my father helping little Margaret launch the kite.",
+      "rewrite": "My father threw the kite up into the wind. Up, up, up it went, dancing in the bright blue sky!",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 10.0,
+        "fk_grade": 2.5,
+        "flesch_reading_ease": 95.2
+      }
+    },
+    {
+      "part": "Flying the kite / Page 11",
+      "text": "",
+      "image_refs": [
+        "I16"
+      ],
+      "picture_description": "A watercolor scene shows an older man and a boy flying a blue kite high in a cloudy sky. The boy is jumping with both arms raised.",
+      "reaction": "The kite and sky are lovely, but this is not our family: the child is a boy and the man has been presented as an invented grandfather rather than my father and little Margaret.",
+      "problems": [
+        {
+          "criterion": "character_consistency",
+          "evidence": "The child is visibly a boy with short hair, not little Margaret in a blue cardigan and round glasses.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The picture shows the wrong generation and relationships, matching the invented 'Grandpa's daddy' in the preceding text.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image shows a kite flying upward, but it does not show the requested father and daughter launching it.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The blue kite is clearly visible against the sky.",
+        "The illustration has movement and joy.",
+        "The watercolor style is consistent with the requested style."
+      ],
+      "suggested_change": "Regenerate the scene with my father and little Margaret flying the kite together, keeping the same Welsh hill and sky.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Teaching Margaret / Page 12",
+      "text": "Grandpa's daddy showed him how to hold the string. 'Let out a little more when the wind blows strong,' he said.",
+      "image_refs": [
+        "I17"
+      ],
+      "picture_description": "A white text page with the sentence centered in dark blue type and a small kite illustration below it beneath the watermark.",
+      "reaction": "The advice itself is warm and close to my memory, but the words have changed the people and gender of the story, and the picture does not show the lesson.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text says \"Grandpa's daddy showed him\" even though my father taught me, a girl, how to hold the string.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The pronoun 'him' conflicts with the earlier first-person memory and the requested child Margaret.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The page describes teaching someone to hold the string, but the visible image is only a tiny kite.",
+          "severity": 2
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "The dialogue is understandable, but the incorrect family language makes the page confusing rather than comforting for a five-year-old.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The quoted advice closely matches the memory I entered.",
+        "The direct speech feels natural for a read-aloud book."
+      ],
+      "suggested_change": "Correct the relationship and pronoun, and illustrate my father showing little Margaret how to hold the string on the windy hill.",
+      "rewrite": "My father showed me how to hold the string. 'Let out a little more when the wind blows strong,' he said.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 21,
+        "avg_sentence_words": 10.5,
+        "fk_grade": 2.0,
+        "flesch_reading_ease": 99.5
+      }
+    },
+    {
+      "part": "Page 13",
+      "text": "",
+      "image_refs": [
+        "I18"
+      ],
+      "picture_description": "A watercolor landscape shows an elderly silver-haired man helping a small fair-haired boy hold a kite reel on the windy Welsh hillside, with the farmhouse below.",
+      "reaction": "The picture is attractive and the kite and hill are easy to recognise, but the people are wrong. This is supposed to show my father teaching little Margaret, not an old man and a boy.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The image shows an elderly man and a small boy where the story requires my father and his young daughter, Margaret.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The illustration continues the book's invented 'Grandpa' story and does not support the preceding instruction that my father showed me how to hold the string.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The child is a fair-haired boy in a white shirt and shorts, not little Margaret as explicitly requested.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The watercolor style is warm and attractive.",
+        "The Welsh hillside, farmhouse, kite string, and spinning reel are clearly drawn."
+      ],
+      "suggested_change": "Redraw this as little Margaret as a clearly female five-year-old child with short silver hair, round glasses, and a blue cardigan, holding the reel while my older Welsh father helps her.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 14",
+      "text": "Many, many years went by. Now Grandpa was old — and he had a grandson of his own. His name was Oliver.",
+      "image_refs": [
+        "I19"
+      ],
+      "picture_description": "A white text page with a pale diagonal 'OurLegacy PREVIEW' watermark, a short green rule, and a small decorative blue kite-like flourish.",
+      "reaction": "This sentence is plainly wrong: Oliver is my grandson, not the grandson of an invented Grandpa. The layout is calm and readable, but the family history at its heart is untrue.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text says, 'Grandpa was old — and he had a grandson of his own,' contradicting my input that Oliver is my grandson and my narrator's grandson.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The subject changes from the remembered Margaret-and-father story to an old man named Grandpa, even though I specifically requested, 'Do not show Grandpa or any invented family members.'",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The new central character is 'Grandpa,' who was never part of the requested family story.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The sentence is direct and generally easy to follow.",
+        "The uncluttered text page has a clear, gentle visual style."
+      ],
+      "suggested_change": "Replace the invented Grandpa with the true relationship: years later, Margaret has a grandson named Oliver, whom she has told the story.",
+      "rewrite": "Many years later, I told my grandson Oliver about the day my father and I flew the blue kite.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 21,
+        "avg_sentence_words": 7.0,
+        "fk_grade": 2.3,
+        "flesch_reading_ease": 91.0
+      }
+    },
+    {
+      "part": "Page 15",
+      "text": "",
+      "image_refs": [
+        "I20"
+      ],
+      "picture_description": "Indoors, an elderly silver-haired man sits by a fire holding the folded blue kite while a curly-haired, freckled five-year-old boy in a red top and green trousers kneels beside him. Green wellies stand near the door.",
+      "reaction": "Oliver's curls, freckles, and green wellies are recognisable, but the adult must be me, his grandmother. Instead, the picture makes the old man my grandfather and us a different family pair.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The picture shows Oliver with an elderly man and the kite indoors, rather than with his grandmother Margaret after she has told him the family story.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "This image follows the wrong claim that Oliver is the grandson of an old man named Grandpa.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The adult is consistently wrong: he has been generated as my father, then as an invented Grandpa, rather than distinguishing me as an older woman and my father as the kite-maker.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "Oliver is visually recognisable from his brown curls, freckles, and green wellies.",
+        "The cozy indoor scene, kite, and fire create a pleasant storytelling mood."
+      ],
+      "suggested_change": "Show Margaret at 71, with short silver hair, round glasses, and a blue cardigan, showing or retelling the story to Oliver. Do not add a grandfather.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 16",
+      "text": "The next day, they went back to Wales! Oliver put on his green wellies and they picked up the old blue kite.",
+      "image_refs": [
+        "I21"
+      ],
+      "picture_description": "A white text page with a pale diagonal preview watermark, a green rule, and a small blue decorative mark.",
+      "reaction": "The green wellies and blue kite come from my own memory, but 'the next day' and going back to Wales have been invented. My memory said that today we climb the same hill together; it did not say we had just returned the previous day.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text invents 'The next day, they went back to Wales,' while my input said, 'Today we climb the same hill together.'",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The word 'they' avoids naming the adult, leaving the companion to be understood as the invented Grandpa from the previous page.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "No earlier supplied event says that Oliver and Margaret had travelled to Wales and then gone back the next day.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "Oliver's green wellies and the old blue kite are faithful details from my input.",
+        "The language is simple and lively for a young child."
+      ],
+      "suggested_change": "Name Margaret explicitly and remove the invented travel schedule. State that Oliver and Margaret are going to fly the kite on the Welsh hill that day.",
+      "rewrite": "Oliver put on his green wellies. Then we picked up the old blue kite and went out together.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 2.6,
+        "flesch_reading_ease": 95.7
+      }
+    },
+    {
+      "part": "Page 17",
+      "text": "",
+      "image_refs": [
+        "I22"
+      ],
+      "picture_description": "Outside a stone farmhouse, an elderly silver-haired man carries the blue kite and string while a curly-haired, freckled boy pulls on one green welling boot.",
+      "reaction": "The farmhouse, wellies, and kite are welcome, but I am not in this picture at all. The adult has again been made into my male partner or grandfather rather than me, Margaret.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "Margaret is absent; the visible adult is an elderly man who has repeatedly replaced the correct family member.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text says Oliver puts on 'his green wellies,' but the image shows him pulling on only one boot while the other green wellie is absent from his feet.",
+          "severity": 1
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The recurring adult is wrong, and no short-haired, glasses-wearing older Margaret is kept consistent across the present-day scenes.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "Oliver's curly hair and freckles remain recognisable.",
+        "The old stone farmhouse, blue kite, and Welsh countryside are warmly illustrated."
+      ],
+      "suggested_change": "Replace the elderly man with Margaret, described as 71 with short silver hair, round glasses, and a blue cardigan. Show Oliver pulling on both green wellies while Margaret holds the kite.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 18",
+      "text": "Up the big hill they climbed together. The wind was blowing just like it did long, long ago.",
+      "image_refs": [
+        "I23"
+      ],
+      "picture_description": "A white text page with a pale diagonal 'OurLegacy PREVIEW' watermark, a short green rule, and a small decorative flourish.",
+      "reaction": "The sentence itself is gentle and preserves the windy hill, but 'they' again refers to Margaret and the wrong elderly man. That vague phrasing hides rather than fixes the relationship error.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The unnamed 'they' follows the previous page's elderly man, although the remembered pair who climbed the hill was Margaret and her father, and the present pair should be Margaret and Oliver.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The transition is smooth, but its characters are inconsistent with the requested family relationships and even with the truthful source story.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The sentence has a clear rhythm and an effective echo of the earlier memory.",
+        "'The wind was blowing just like it did long, long ago' conveys continuity well."
+      ],
+      "suggested_change": "Name Oliver and Margaret so that the relationship is unambiguous and separate the childhood climb from the present-day climb.",
+      "rewrite": "Oliver and I climbed the big hill together. The wind blew just as it had when I was little.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 18,
+        "avg_sentence_words": 9.0,
+        "fk_grade": 1.7,
+        "flesch_reading_ease": 99.0
+      }
+    },
+    {
+      "part": "Page 19",
+      "text": "",
+      "image_refs": [
+        "I24"
+      ],
+      "picture_description": "An elderly silver-haired man and a curly-haired, freckled boy climb a green hillside together. The man carries the folded blue kite, with a farmhouse and valley far below.",
+      "reaction": "This is a lovely watercolor of the right hill and kite, but it is the wrong family. I should be climbing beside Oliver as his 71-year-old grandmother, not as an elderly male grandfather.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The adult companion is an elderly man, while the present-day adult in my memory is Margaret, Oliver's grandmother.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The illustration generally matches 'they climbed together,' but visually confirms the incorrect identity concealed by the pronoun.",
+          "severity": 2
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The same incorrect elderly man is reused from page to page instead of preserving the specified appearance of Margaret.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The wide hill, rolling Welsh landscape, farmhouse, clouds, and kite make the setting easy to understand.",
+        "The watercolor artwork is attractive and the characters appear lively."
+      ],
+      "suggested_change": "Redraw Margaret and Oliver climbing the hill together, with Margaret carrying the kite and using the specified short silver hair, round glasses, and blue cardigan.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 20",
+      "text": "Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer sky — just like before!",
+      "image_refs": [
+        "I25"
+      ],
+      "picture_description": "A white text page with a pale preview watermark, a short green rule, and a small blue decorative flourish.",
+      "reaction": "The flying-kite image and repeated upward movement are appropriate, but 'Grandpa' is an invented and incorrect relationship. This is the central error I would not allow in a family keepsake.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text says, 'Grandpa helped Oliver hold the string,' but I am Oliver's grandmother, and I specifically asked not to show an invented grandfather.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "This continues the website's invented Grandpa storyline instead of returning to the true present-day relationship in the source narrative.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The short sentences and lively repetition suit a five-year-old listener.",
+        "'Up, up' gives the kite flight a clear, child-friendly sense of movement."
+      ],
+      "suggested_change": "Replace Grandpa with Grandma Margaret and identify Oliver as the hero holding the string.",
+      "rewrite": "I helped Oliver hold the string. Up, up went the blue kite into the summer sky!",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 19,
+        "avg_sentence_words": 9.5,
+        "fk_grade": 3.6,
+        "flesch_reading_ease": 85.9
+      }
+    },
+    {
+      "part": "Page 21",
+      "text": "",
+      "image_refs": [
+        "I26"
+      ],
+      "picture_description": "A curly-haired, freckled boy in a red top, green trousers, and green wellies laughs while holding the kite reel. An elderly silver-haired man stands closely behind him as the blue kite flies high in a cloudy sky.",
+      "reaction": "The joy is warm and Oliver looks appealing, but the person helping him should be me. This attractive picture would be much more personal with my own silver hair, glasses, and blue cardigan beside him.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The elderly man replaces Margaret and is presented as the family member helping Oliver fly the kite.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "Margaret is still absent and does not match the requested present-day description of a 71-year-old woman with short silver hair, round glasses, and a blue cardigan.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "Oliver's curls, freckles, green wellies, and joyful expression are lively and recognisable.",
+        "The kite is clearly visible against the sky, and the composition conveys shared excitement."
+      ],
+      "suggested_change": "Show Oliver holding the reel while Margaret stands beside him in her blue cardigan, with a warm but age-appropriate expression.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 22",
+      "text": "Oliver laughed and laughed as the kite swooped and danced. It was the best feeling in the whole world!",
+      "image_refs": [
+        "I27"
+      ],
+      "picture_description": "A white text page with a pale diagonal preview watermark, a green rule, and a small decorative flourish.",
+      "reaction": "This is a warm, simple ending to the flight, and 'the kite swooped and danced' is close to the wording in my own memory. I do not object to the flourish 'the best feeling in the whole world.'",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "This text does not identify the incorrect adult, but it depends on the preceding page where Oliver was wrongly shown with an invented Grandpa.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The language is warm, rhythmic, and appropriate for reading age five.",
+        "The sentence closely reflects the affectionate kite-flying moment I supplied."
+      ],
+      "suggested_change": "Retain the wording if the preceding image and relationship are corrected; no substantial text change is needed.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 19,
+        "avg_sentence_words": 9.5,
+        "fk_grade": 2.4,
+        "flesch_reading_ease": 94.8
+      }
+    },
+    {
+      "part": "Page 23",
+      "text": "",
+      "image_refs": [
+        "I28"
+      ],
+      "picture_description": "The curly-haired boy spreads his arms and laughs beneath the partly visible blue kite. The same elderly silver-haired man stands beside him on the sunny hillside.",
+      "reaction": "It is a cheerful illustration, and Oliver's appearance is consistent, but the wrong elderly man again displaces me. I would treasure this picture much more if it showed my actual relationship with him.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "Margaret is missing from the central present-day memory, replaced throughout by an invented elderly male relative.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image complements Oliver laughing after the kite swoops and dances, but it also reinforces the wrong family pairing.",
+          "severity": 2
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "Oliver remains broadly consistent, but the adult's identity has remained consistently incorrect throughout the present-day sequence.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "Oliver's open-armed pose and expression convey uncomplicated delight.",
+        "The warm sky and light keep the emotional tone cheerful and safe for a child."
+      ],
+      "suggested_change": "Replace the elderly man with Margaret while preserving Oliver's joyful pose. Keep Oliver's brown curly hair, freckles, red top, green trousers, and green wellies.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 24",
+      "text": "They promised to keep the old blue kite safe for ever. Every time they came to Wales, they would fly it together.",
+      "image_refs": [
+        "I29"
+      ],
+      "picture_description": "A white text page with a pale diagonal 'OurLegacy PREVIEW' watermark, a short green rule, and a small blue decorative flourish.",
+      "reaction": "This is a proper closing thought, but it is spoiled by 'they.' I had promised with Oliver to keep the old blue kite safe and bring it whenever our family visited Wales.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text changes my joint promise with Oliver into a vague promise by an unspecified 'they,' following the invented Grandpa storyline.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The input said, 'We promise to keep the old blue kite safe and to bring it whenever our family visits Wales,' but the output has shifted the focus to 'they would fly it together.'",
+          "severity": 2
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The pronoun is unclear after the previous page's incorrect pairing of Oliver with an elderly man.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The promise to care for the heirloom gives the story a meaningful and proper ending.",
+        "The sentence length and familiar words are suitable for a five-year-old."
+      ],
+      "suggested_change": "Name Oliver and Margaret and restore the promise to keep the kite safe and bring it on family visits to Wales.",
+      "rewrite": "Oliver and I promised to keep the old blue kite safe. Whenever our family visited Wales, we would bring it out again.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 84.2
+      }
+    },
+    {
+      "part": "Page 25",
+      "text": "",
+      "image_refs": [
+        "I30"
+      ],
+      "picture_description": "A watercolor-style view from a grassy hill above a Welsh-looking farmhouse at sunset. Oliver, with brown curly hair, freckles, a red top, green trousers, and green wellies, stands beside an elderly silver-haired man in a blue jacket. The man has one arm around Oliver. A blue kite with crossed spars and long trailing ribbons lies in the foreground.",
+      "reaction": "The countryside and Oliver look warm and attractive, but I cannot accept this picture as our family memory. The man is presented as Grandpa, although the present-day person with Oliver should be me, Margaret.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The picture shows Oliver with an elderly silver-haired man, although my input says, \"Today we climb the same hill together\" and Oliver is my grandson.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "Margaret does not appear at all; the site replaces her with an unnamed elderly man.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "This is the illustration following the promise that they would always fly the kite together, but it contradicts the supplied relationship by showing the wrong adult.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The tender hilltop pose is moving, but it is not my relationship with Oliver and therefore is not a faithful keepsake for me.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The blue kite is prominent and recognisable.",
+        "Oliver's brown curls, freckles, and green wellies match my description.",
+        "The rolling Welsh countryside and farmhouse create a warm setting."
+      ],
+      "suggested_change": "Redraw the scene with Margaret Ellison, not an elderly man. Show Margaret as a 71-year-old woman with short silver hair, round glasses, and a blue cardigan, standing or crouching beside Oliver while he holds the kite string. Keep Oliver's brown curly hair, freckles, green wellies, the farmhouse, and the blue kite.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 26",
+      "text": "The End\nMade with love, and kept forever.",
+      "image_refs": [
+        "I31"
+      ],
+      "picture_description": "A softly painted closing scene with the blue kite resting beside a stone wall and an old stone farmhouse, surrounded by grass and wildflowers in warm evening light. The words “The End” and “Made with love, and kept forever.” are placed over the picture. A diagonal OurLegacy preview watermark and a small “PREVIEW · NOT FOR RESALE · OURLEGACY FAMILY” label are visible.",
+      "reaction": "This is a proper, quiet ending, and the saved kite beside the farmhouse suits the promise in our story. The lettering is clear, although I would not want the preview watermarks in a purchased copy.",
+      "problems": [
+        {
+          "criterion": "visual_quality",
+          "evidence": "A large diagonal “OurLegacy PREVIEW” watermark and a “PREVIEW · NOT FOR RESALE” label cross the picture.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The book has an unmistakable final page.",
+        "The old kite resting safely beside the farmhouse reinforces the promise to keep it.",
+        "The watercolor-like colours are calm and suitable for a keepsake."
+      ],
+      "suggested_change": "Remove all preview watermarks and labels from the purchased version. Otherwise, retain the simple final wording and closing illustration.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)"
+    },
+    {
+      "part": "Page 27",
+      "text": "The story behind these pages\n“The blue kite flew up, up into the summer sky — just like before!”\nThe summer my father made me a kite out of an old blue shirt. We carried it up the windy hill behind the old farmhouse in Wales, and the bright blue kite danced high in the sky. My father taught me how to hold the string and how to let out a little more when the wind grew strong. Years later, I told the story to my grandson Oliver. Today we climb the same hill together. Oliver has brown curly hair and freckles, and he is wearing his green wellies. This time Oliver is the hero, and I help him fly Grandpa's blue kite. The kite climbs above the farmhouse and the summer clouds, and Oliver laughs as it swoops and dances. We promise to keep the old blue kite safe and to bring it whenever our family visits Wales.\nAs told by Margaret Ellison · September 2026 · OurLegacy",
+      "image_refs": [
+        "I32",
+        "I34"
+      ],
+      "picture_description": "A white reference page headed “The story behind these pages.” It reproduces the supplied family narrative in a long paragraph, with a large, faint diagonal OurLegacy preview watermark and small footer text.",
+      "reaction": "This page faithfully reproduces what I entered, including the phrase “Grandpa's blue kite,” so that wording came from me rather than being invented here. I can recognise my memory in it, though it does not repair the different family story printed in the main tale.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "This reference account says, \"Today we climb the same hill together\" and Oliver is my grandson, while the illustrated story has treated Oliver as Grandpa's grandson and paired him with an elderly man.",
+          "severity": 3
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "A large diagonal “OurLegacy PREVIEW” watermark crosses the otherwise plain reference page.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The names Margaret Ellison and Oliver are correct here.",
+        "The old blue shirt, windy Welsh hill, farmhouse, green wellies, curly hair, freckles, and family promise are all retained.",
+        "The page provides a useful record of the memory as I supplied it."
+      ],
+      "suggested_change": "Keep this page as the source record, but remove the preview watermark and ensure the main story follows the same relationships. If “Grandpa's blue kite” means Oliver's grandfather, retain it here because that phrase came from my input; otherwise change it consistently throughout.",
+      "rewrite": "",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 160,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.6,
+        "flesch_reading_ease": 80.5
+      }
+    },
+    {
+      "part": "Page 28",
+      "text": "In your own words\nDo you remember the first time you ever watched a kite climb into a summer sky?",
+      "image_refs": [
+        "I33"
+      ],
+      "picture_description": "A white writing page with a bold heading, one italic question, and nine pale ruled lines for a reply. A large diagonal preview watermark crosses the page.",
+      "reaction": "This gives Oliver room to say what the story means to him and is a thoughtful addition. The question and the writing lines are rather small, so I would enlarge them for comfortable reading and writing.",
+      "problems": [
+        {
+          "criterion": "visual_quality",
+          "evidence": "The italic question and ruled lines are small and pale against the white page.",
+          "severity": 2
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "A large diagonal “OurLegacy PREVIEW” watermark covers the writing area.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The open question invites a personal response rather than requiring a right answer.",
+        "The generous space suits handwriting or a later family message.",
+        "The subject is connected naturally to the kite story."
+      ],
+      "suggested_change": "Enlarge the question and increase the contrast and spacing of the writing lines. Remove the preview watermark from the purchased copy.",
+      "rewrite": "What is your favourite moment from flying the blue kite?",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.1,
+        "flesch_reading_ease": 79.6
+      }
+    },
+    {
+      "part": "Page 30",
+      "text": "Notes & Memories\nWhat moment with Oliver made your heart feel fullest on that windy Welsh hill?",
+      "image_refs": [
+        "I35"
+      ],
+      "picture_description": "A white notes page with a bold heading, one italic question, and nine pale horizontal writing lines. A diagonal preview watermark crosses the page.",
+      "reaction": "This is a thoughtful place for me to add the particular moment I want Oliver to remember. The question is rather small and abstract for a five-year-old, although it is meant for an adult writing in the keepsake.",
+      "problems": [
+        {
+          "criterion": "visual_quality",
+          "evidence": "The question and writing lines are small and low-contrast.",
+          "severity": 2
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "\"What moment with Oliver made your heart feel fullest\" uses an abstract expression that is less direct for a child beginning to read.",
+          "severity": 1
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "A large diagonal “OurLegacy PREVIEW” watermark covers part of the notes page.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The prompt is personal and directly connected to Margaret and Oliver.",
+        "The writing space is ample enough for a meaningful note.",
+        "It extends the emotional story without adding fictional events."
+      ],
+      "suggested_change": "Enlarge the question and ruled lines, remove the preview watermark, and use plainer wording suitable for Margaret to read comfortably.",
+      "rewrite": "Notes & Memories\nWhat was the happiest moment you and Oliver shared on the windy hill in Wales?",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 14,
+        "avg_sentence_words": 14.0,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 77.8
+      }
+    },
+    {
+      "part": "Page 31",
+      "text": "Hear it read aloud\nYour private listening code is created with your printed book\nEvery printed book includes a code your family can scan to hear the story read aloud.",
+      "image_refs": [
+        "I36"
+      ],
+      "picture_description": "A mostly white information page headed “Hear it read aloud.” An empty outlined square in the centre contains the message about a listening code, with a short explanation below. A diagonal preview watermark crosses the page.",
+      "reaction": "I understand that the code is supplied with the printed book rather than with this PDF, and an audio version could be useful. In the preview the key information is very small, and “private” should be explained more clearly before I trust it with a family code.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"Your private listening code is created with your printed book\" does not say whether the code is unique, whether it expires, or whether accessing the recording requires an account.",
+          "severity": 2
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The central code message and lower explanatory sentence are very small, with a large diagonal preview watermark across the page.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The page clearly says that the listening code comes with the printed book.",
+        "It explains that the code can be scanned to hear the story.",
+        "It offers a helpful way for Oliver to enjoy the story aloud."
+      ],
+      "suggested_change": "Use larger type and explain the privacy and access terms plainly. State whether the code is unique to our order, whether anyone with it can hear the recording, and whether an account or further payment is required.",
+      "rewrite": "Hear the story aloud\nYour printed book will include a private listening code. Scan the code with a phone or tablet to hear The Blue Kite read aloud. No extra account is needed. Keep the code private because other people may be able to use it to hear the recording.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 26,
+        "avg_sentence_words": 26.0,
+        "fk_grade": 10.9,
+        "flesch_reading_ease": 63.3
+      }
+    },
+    {
+      "part": "Page 32",
+      "text": "OurLegacy\nIllustrated in watercolors · An OurLegacy Original\nPrinted by OurLegacy · 2026\n© 2026 Margaret Ellison. Story told by Margaret Ellison · September 2026.\nFirst printed 2026",
+      "image_refs": [
+        "I37"
+      ],
+      "picture_description": "A restrained white publication page with the OurLegacy name centred above small publication and copyright details. A large, faint diagonal preview watermark crosses the page.",
+      "reaction": "This is orderly and the erroneous “age 5” has been removed, which is an improvement. I would still want “Printed by OurLegacy” confirmed if that is meant literally as the printer, rather than simply the company that produced the book.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "\"Printed by OurLegacy\" may misleadingly claim that OurLegacy is the physical printer when it may only be the book-making platform.",
+          "severity": 1
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "A large diagonal “OurLegacy PREVIEW” watermark crosses the publication page.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The page correctly gives Margaret Ellison as the storyteller and copyright holder.",
+        "The removal of the misleading phrase “age 5” is a clear correction.",
+        "The watercolor description matches the style I selected.",
+        "The date is presented consistently across the publication details."
+      ],
+      "suggested_change": "Remove the preview watermark. Confirm who physically printed the book, and change the line to “Published by OurLegacy” if OurLegacy did not print it. Retain the corrected attribution without “age 5.”",
+      "rewrite": "OurLegacy\nIllustrated in watercolors · An OurLegacy Original\nPublished by OurLegacy · 2026\n© 2026 Margaret Ellison. Story told by Margaret Ellison.\nFirst published September 2026.",
+      "artifact": "the file \"storybook_1790456253572-t1pUY4K7ddTJgW12Vx15g9LO7MMVKf.pdf\" (32 pages)",
+      "metrics": {
+        "words": 14,
+        "avg_sentence_words": 7.0,
+        "fk_grade": 17.5,
+        "flesch_reading_ease": -17.8
+      }
+    },
+    {
+      "part": "Output page / title and controls",
+      "text": "OurLegacy\nMy Storybooks\n$4.00\nCreate\n2\nReview\n3\nOutput\nGrandpa's Blue Kite\nComplete\nExport Storybook",
+      "image_refs": [],
+      "picture_description": "No separate cover or title-page picture is included in the supplied pictures; this is the website's output-review interface with the story title, price and export control.",
+      "reaction": "The title is not the one I entered, and calling it “Grandpa's Blue Kite” confirms the relationship mistake before I have even opened the scenes. The £4.00 figure is clear, but this capture does not explain what buying it includes.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The page calls the book “Grandpa's Blue Kite,” although my entered title was “The Blue Kite.”",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The displayed title makes the book about a grandfather, although the real relationship is my daughter’s son Oliver and his grandmother.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The price and export button are plainly visible.",
+        "The title is easy to read."
+      ],
+      "suggested_change": "Change the title to “The Blue Kite” and retain “Author: Margaret Ellison,” “For Oliver” and the entered dedication. Before payment, show plainly what the $4.00 charge includes, whether it is a charge per book, and whether any shipping or additional exports cost extra.",
+      "rewrite": "The Blue Kite",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")"
+    },
+    {
+      "part": "Scene 1",
+      "text": "One summer, my father made me something very special. He cut up an old blue shirt and made it into a kite!",
+      "image_refs": [
+        "I38"
+      ],
+      "picture_description": "In a warm watercolor farmhouse room, a dark-haired adult man kneels beside a young brown-haired girl as they make a kite from a blue shirt. The man has dark hair, while the girl has no visible glasses or blue cardigan.",
+      "reaction": "The first sentence now says “my father” and “me,” so that important correction has come from my own revised input. The picture is warm and clearly shows the shirt and kite, but the child does not look like the little Margaret I specifically requested.",
+      "problems": [
+        {
+          "criterion": "character_consistency",
+          "evidence": "The requested little Margaret has short silver hair, round glasses and a blue cardigan, but I38 shows a brown-haired girl in a pale top and grey skirt or shorts.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "I38 broadly matches “my father made me a kite,” but omits the three identifying features entered for Margaret.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The corrected text now correctly identifies the kite-maker as Margaret's father.",
+        "The old blue shirt, kite-making action and farmhouse are immediately recognisable.",
+        "The soft watercolor style is warm and suitable for a five-year-old."
+      ],
+      "suggested_change": "Redraw the child as little Margaret with short silver hair, round glasses and a blue cardigan, while keeping the father, shirt, kite and farmhouse. Make it unmistakable that the adult is her father.",
+      "rewrite": "",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 84.2
+      }
+    },
+    {
+      "part": "Scene 2",
+      "text": "The blue kite was ready! My father and I carried it up the big windy hill behind the old farmhouse.",
+      "image_refs": [
+        "I39"
+      ],
+      "picture_description": "A dark-haired man and a young brown-haired girl climb a green hill together. The girl holds the blue kite above her head, and an old farmhouse appears in the distance.",
+      "reaction": "The Welsh hill, old farmhouse and shared journey are easy to see. However, I still do not recognise myself as the child, because the requested silver hair, glasses and blue cardigan are missing.",
+      "problems": [
+        {
+          "criterion": "character_consistency",
+          "evidence": "I39 again shows a brown-haired girl without glasses or a blue cardigan, unlike the supplied description of little Margaret.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The text and setting match the supplied memory, but Margaret's requested identifying appearance is absent from the picture.",
+          "severity": 2
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "Although the hill and kite are personal, the missing visual details of Margaret weaken the family resemblance.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The action, kite and old farmhouse closely complement the sentence.",
+        "The winding path gives a clear sense of the journey up the Welsh hill.",
+        "The sentence is warm, direct and easy for Oliver to follow."
+      ],
+      "suggested_change": "Keep the composition but redraw little Margaret with short silver hair, round glasses and a blue cardigan. Keep the father recognisably the same man shown in Scene 1.",
+      "rewrite": "",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 10.0,
+        "fk_grade": 3.7,
+        "flesch_reading_ease": 86.7
+      }
+    },
+    {
+      "part": "Scene 3",
+      "text": "Grandpa's daddy threw the kite up into the wind. Up, up, up it went — dancing in the bright blue sky!",
+      "image_refs": [
+        "I40"
+      ],
+      "picture_description": "A dark-haired man and a young girl stand on a windy hill beneath a blue kite. The girl has both arms raised, while the man appears to hold the string.",
+      "reaction": "This sentence has replaced my father with “Grandpa's daddy,” which is not something I entered. The picture is lively, but it cannot repair the wrong family relationship in the text.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text says “Grandpa's daddy,” but the entered memory says “my father,” and I was expressly instructed to show my father making and flying the kite.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "Scenes 1 and 2 use “my father and I,” but Scene 3 abruptly changes to “Grandpa's daddy” without establishing a new narrator or relationship.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The little girl in I40 has short brown hair and no glasses or blue cardigan, and the adult no longer matches the clearly dark-haired father in I38–I39.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The picture shows a man and child beneath a rising kite, but it is unclear which person has just thrown it because the man remains with the string while the child raises both arms.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The sky, wind and dancing movement are conveyed clearly.",
+        "The blue kite is prominent and recognisable.",
+        "The repeated “Up, up, up” gives a child-friendly sense of lift and motion."
+      ],
+      "suggested_change": "Replace the relationship wording and redraw the same father and little Margaret from Scene 2. Show my father releasing the line while Margaret watches.",
+      "rewrite": "My father let out the string. Up, up, up went the blue kite! It danced in the bright blue sky.",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 10.0,
+        "fk_grade": 2.5,
+        "flesch_reading_ease": 95.2
+      }
+    },
+    {
+      "part": "Scene 4",
+      "text": "Grandpa's daddy showed him how to hold the string. 'Let out a little more when the wind blows strong,' he said.",
+      "image_refs": [
+        "I41"
+      ],
+      "picture_description": "An elderly white-haired man stands behind a young brown-haired boy and helps him hold a kite string. The farmhouse and hills are visible in the background.",
+      "reaction": "This is plainly the wrong family scene: the child has become a boy and my father has become an old grandfather. I would not want Oliver to inherit this relationship error in our family book.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The entered instruction was “My father and I” and “little Margaret, a young girl, clearly not a boy,” but the text says “Grandpa's daddy” and “him.”",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "I41 shows an elderly man teaching a boy, which supports the wrong wording but contradicts the corrected family story in Scenes 1 and 2.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The brown-haired girl from I39–I40 becomes a brown-haired boy, and the dark-haired father becomes an elderly man.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The child changes sex and the adult changes identity across successive memories without any explanation.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The hands-on teaching action is easy to understand.",
+        "The kite string and rural setting fit the remembered event.",
+        "The quotation gives a natural place for the advice about letting out string."
+      ],
+      "suggested_change": "Replace both sentences and redraw my father teaching little Margaret, with the same short silver hair, round glasses and blue cardigan shown consistently. Do not show an elderly grandfather.",
+      "rewrite": "My father showed me how to hold the string. “Let out a little more when the wind grows strong,” he said.",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 21,
+        "avg_sentence_words": 10.5,
+        "fk_grade": 2.0,
+        "flesch_reading_ease": 99.5
+      }
+    },
+    {
+      "part": "Scene 5",
+      "text": "Many, many years went by. Now Grandpa was old — and he had a grandson of his own. His name was Oliver.",
+      "image_refs": [
+        "I42"
+      ],
+      "picture_description": "A silver-haired elderly man sits beside a curly-haired boy in a red jumper and green trousers. They hold a blue kite together in a living room with a fire.",
+      "reaction": "Oliver is drawn warmly, but the story has made him the grandson of the wrong man. It is my memory, my father’s kite, and Oliver’s relationship is with me, his grandmother.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The text says “Grandpa was old — and he had a grandson of his own,” but the entered story says Oliver is my grandson and that I tell him my father’s story.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The narration shifts from Margaret's first-person memory to an unexplained third-person account of Grandpa and Oliver.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "I42 does show an old man and curly-haired boy with the kite, but it therefore illustrates the invented relationship rather than the requested one.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The image is affectionate, but it presents Margaret's memory as Grandpa and Oliver's shared story.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "Oliver has the requested brown curly hair and a warm, expressive appearance.",
+        "The indoor scene provides a clear transition from the childhood memory to the later family story.",
+        "The soft colours and expressions are appealing."
+      ],
+      "suggested_change": "Redraw the scene with me as an older Margaret sharing the kite story with Oliver. I should have short silver hair, round glasses and a blue cardigan, and Oliver should be recognisably the same curly-haired boy.",
+      "rewrite": "Many years went by. Now I was older. I told my grandson Oliver the story of the blue kite my father made.",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 21,
+        "avg_sentence_words": 7.0,
+        "fk_grade": 2.3,
+        "flesch_reading_ease": 91.0
+      }
+    },
+    {
+      "part": "Scene 6",
+      "text": "The next day, they went back to Wales! Oliver put on his green wellies and they picked up the old blue kite.",
+      "image_refs": [
+        "I43"
+      ],
+      "picture_description": "Outside a stone farmhouse, a curly-haired boy pulls on green wellies while an elderly silver-haired man holds the blue kite.",
+      "reaction": "The green wellies and Welsh farmhouse are good details, but I can see at once that the adult is an old man rather than me. Calling this “the next day” also feels vague after the time jump in the previous scene.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The entered story says that today Oliver and I climb the same hill and that I help him fly Grandpa's blue kite; the text and I43 instead pair Oliver with an unnamed elderly man.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The silver-haired man in I43 is presented as Oliver's companion, but the supplied character description identifies short silver hair, round glasses and a blue cardigan as Grandma Margaret.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The picture supports the wellies, kite and departure from a farmhouse, but supports the wrong adult companion.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "“The next day” has no clearly established trip or plan in the preceding scene.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "Oliver's green wellies are clearly visible.",
+        "The stone farmhouse, mountains and kite establish the return to Wales.",
+        "Oliver is drawn with lively, recognisable curly hair."
+      ],
+      "suggested_change": "Replace the elderly man with Grandma Maggie, wearing her blue cardigan and round glasses, and say why Oliver and Margaret are going to Wales. Keep the green wellies and old kite.",
+      "rewrite": "One day, Oliver and I took the old blue kite back to Wales. Oliver put on his green wellies, and we set off together.",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 2.6,
+        "flesch_reading_ease": 95.7
+      }
+    },
+    {
+      "part": "Scene 7",
+      "text": "Up the big hill they climbed together. The wind was blowing just like it did long, long ago.",
+      "image_refs": [
+        "I44"
+      ],
+      "picture_description": "A curly-haired boy in a red jumper climbs ahead of an elderly silver-haired man on a green hill. The man carries the folded blue kite, with a winding road and old farmhouse below.",
+      "reaction": "The hill and farmhouse are recognisable, and the boy is lively, but this is another picture of Oliver with his grandfather rather than with me. I would need the whole scene redrawn.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The supplied story places Oliver and Margaret on the hill together; I44 substitutes an elderly man for Margaret.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The picture does show two people climbing a hill, but its adult figure contradicts the intended identity of the person in the entered story.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "I44 continues the invented silver-haired male grandfather rather than depicting short silver-haired, bespectacled Grandma Maggie in a blue cardigan.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The broad hill, strong wind and distant farmhouse connect clearly to the childhood memory.",
+        "The winding path gives a strong sense that Oliver and Margaret are returning to the same place.",
+        "The red jumper and green trousers make Oliver easy to follow."
+      ],
+      "suggested_change": "Redraw the pair as Oliver and Grandma Maggie. Show Maggie in round glasses and a blue cardigan, with the same kite and farmhouse, and preserve Oliver's curly hair, red jumper and green trousers.",
+      "rewrite": "",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 18,
+        "avg_sentence_words": 9.0,
+        "fk_grade": 1.7,
+        "flesch_reading_ease": 99.0
+      }
+    },
+    {
+      "part": "Scene 8",
+      "text": "Grandpa helped Oliver hold the string. The blue kite flew up, up into the summer sky — just like before!",
+      "image_refs": [
+        "I45"
+      ],
+      "picture_description": "An elderly silver-haired man helps a curly-haired boy hold a kite string while a blue kite flies over the green hills and distant farmhouse.",
+      "reaction": "The flying kite and the link between the present and my childhood are lovely, but the central relationship is wrong. Oliver should be flying his grandmother's kite with me beside him.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The entered story says “I help him fly Grandpa's blue kite,” but the output says “Grandpa helped Oliver.”",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "I45 directly illustrates an elderly man helping Oliver, so the picture reinforces the invented relationship rather than the corrected one.",
+          "severity": 4
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The adult has the wrong identity and lacks the entered blue cardigan; no round glasses are visible.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The affectionate shared action could be meaningful, but it belongs to Oliver and his grandfather rather than Oliver and his grandmother.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The blue kite is clear against the sky.",
+        "The helping gesture makes the intergenerational connection easy to see.",
+        "The farmhouse and familiar hills reinforce the continuity of the family memory.",
+        "The sentence has a strong, child-friendly rhythm."
+      ],
+      "suggested_change": "Change “Grandpa” to “Grandma” or “I,” and redraw the helper as Grandma Maggie with short silver hair, round glasses and a blue cardigan. Keep Oliver's pose and the kite's flight.",
+      "rewrite": "I helped Oliver hold the string. Up, up went the blue kite into the summer sky, just like before!",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 19,
+        "avg_sentence_words": 9.5,
+        "fk_grade": 3.6,
+        "flesch_reading_ease": 85.9
+      }
+    },
+    {
+      "part": "Scene 9",
+      "text": "Oliver laughed and laughed as the kite swooped and danced. It was the best feeling in the whole world!",
+      "image_refs": [
+        "I46"
+      ],
+      "picture_description": "Oliver laughs with his arms open beside an elderly silver-haired man. Only the lower edge of the blue kite and its ribbon are visible at the top of the picture.",
+      "reaction": "Oliver's joy is warm and genuine, but the adult is still the wrong person and most of the kite has been cropped out. I would prefer a picture that shows both Oliver's face and the kite dancing in the sky.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "I46 shows Oliver celebrating with an elderly man rather than with his grandmother.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text says the kite “swooped and danced,” but only a small part of the kite is visible at the top edge, so that important action is not shown clearly.",
+          "severity": 3
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The adult is the same invented old man and does not match Grandma Maggie's entered appearance.",
+          "severity": 4
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The accidental cropping of the kite weakens an otherwise attractive illustration.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "Oliver's laughter and open-armed pose convey delight.",
+        "The warm hillside palette remains attractive and age-appropriate.",
+        "The wording is simple and emotionally clear."
+      ],
+      "suggested_change": "Redraw Grandma Maggie beside Oliver in her blue cardigan and glasses, while including the complete kite swooping above them. Keep Oliver's joyful expression.",
+      "rewrite": "",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 19,
+        "avg_sentence_words": 9.5,
+        "fk_grade": 2.4,
+        "flesch_reading_ease": 94.8
+      }
+    },
+    {
+      "part": "Scene 10",
+      "text": "They promised to keep the old blue kite safe for ever. Every time they came to Wales, they would fly it together.",
+      "image_refs": [
+        "I47"
+      ],
+      "picture_description": "At sunset, an elderly silver-haired man places an arm around Oliver. The blue kite lies folded on the grass in the foreground, with the old farmhouse and hills behind them.",
+      "reaction": "This makes a gentle ending, and the kite is safely kept, but it belongs to Oliver and his grandfather rather than Oliver and me. Because the kite is lying on the ground, the picture also does not fully show the promised future flights.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The entered dedication and ending are about “we” — Margaret and Oliver — but the text and I47 leave the pair as an unnamed “they” and depict an elderly man.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The sentence says they would fly the kite together, while I47 shows the kite resting on the ground and the characters embracing.",
+          "severity": 2
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The ending continues the invented grandfather instead of showing short silver-haired, bespectacled Grandma Maggie in a blue cardigan.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The sunset embrace is touching, but the wrong relationship makes this particular family keepsake unacceptable without redrawing.",
+          "severity": 4
+        }
+      ],
+      "strengths": [
+        "The sunset gives the ending a calm, sentimental finish.",
+        "The old kite and farmhouse provide useful visual closure.",
+        "The promise to care for the kite is simple and child-friendly.",
+        "The folded kite is shown clearly and safely."
+      ],
+      "suggested_change": "Redraw the ending with Oliver and Grandma Maggie, keeping her short silver hair, round glasses and blue cardigan. Make the language name the pair directly, and either show the kite flying in the distance or make clear that it is being carefully put away after their flight.",
+      "rewrite": "Oliver and I promised to keep the old blue kite safe. Whenever we visited Wales, we would take it out and fly it together.",
+      "artifact": "the web page /storybook/0bc53638-4e6d-4682-afe2-f4bfda08a148 (\"Grandpa's Blue Kite\")",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 4.3,
+        "flesch_reading_ease": 84.2
+      }
+    }
+  ],
+  "images": [
+    {
+      "ref": "I1",
+      "path": "artifacts/capture_01/img_00.jpg",
+      "desc": "capture 1, 366x274, alt \"Grandpa's Blue Kite\""
+    },
+    {
+      "ref": "I2",
+      "path": "artifacts/capture_19/view_00.jpg",
+      "desc": "capture 2, screenshot of the page"
+    },
+    {
+      "ref": "I3",
+      "path": "artifacts/capture_19/view_01.jpg",
+      "desc": "capture 2, screenshot of the page"
+    },
+    {
+      "ref": "I4",
+      "path": "artifacts/capture_55/view_00.jpg",
+      "desc": "capture 3, screenshot of the page"
+    },
+    {
+      "ref": "I5",
+      "path": "artifacts/capture_55/view_01.jpg",
+      "desc": "capture 3, screenshot of the page"
+    },
+    {
+      "ref": "I6",
+      "path": "artifacts/capture_60/view_00.jpg",
+      "desc": "capture 4, 1100x831, alt \"PDF page 1\""
+    },
+    {
+      "ref": "I7",
+      "path": "artifacts/capture_61/view_00.jpg",
+      "desc": "capture 5, 1100x831, alt \"PDF page 2\""
+    },
+    {
+      "ref": "I8",
+      "path": "artifacts/capture_62/view_00.jpg",
+      "desc": "capture 6, 1100x831, alt \"PDF page 3\""
+    },
+    {
+      "ref": "I9",
+      "path": "artifacts/capture_63/view_00.jpg",
+      "desc": "capture 7, 1100x831, alt \"PDF page 4\""
+    },
+    {
+      "ref": "I10",
+      "path": "artifacts/capture_64/view_00.jpg",
+      "desc": "capture 8, 1100x831, alt \"PDF page 5\""
+    },
+    {
+      "ref": "I11",
+      "path": "artifacts/capture_65/view_00.jpg",
+      "desc": "capture 9, 1100x831, alt \"PDF page 6\""
+    },
+    {
+      "ref": "I12",
+      "path": "artifacts/capture_66/view_00.jpg",
+      "desc": "capture 10, 1100x831, alt \"PDF page 7\""
+    },
+    {
+      "ref": "I13",
+      "path": "artifacts/capture_67/view_00.jpg",
+      "desc": "capture 11, 1100x831, alt \"PDF page 8\""
+    },
+    {
+      "ref": "I14",
+      "path": "artifacts/capture_68/view_00.jpg",
+      "desc": "capture 12, 1100x831, alt \"PDF page 9\""
+    },
+    {
+      "ref": "I15",
+      "path": "artifacts/capture_69/view_00.jpg",
+      "desc": "capture 13, 1100x831, alt \"PDF page 10\""
+    },
+    {
+      "ref": "I16",
+      "path": "artifacts/capture_70/view_00.jpg",
+      "desc": "capture 14, 1100x831, alt \"PDF page 11\""
+    },
+    {
+      "ref": "I17",
+      "path": "artifacts/capture_71/view_00.jpg",
+      "desc": "capture 15, 1100x831, alt \"PDF page 12\""
+    },
+    {
+      "ref": "I18",
+      "path": "artifacts/capture_72/view_00.jpg",
+      "desc": "capture 16, 1100x831, alt \"PDF page 13\""
+    },
+    {
+      "ref": "I19",
+      "path": "artifacts/capture_73/view_00.jpg",
+      "desc": "capture 17, 1100x831, alt \"PDF page 14\""
+    },
+    {
+      "ref": "I20",
+      "path": "artifacts/capture_74/view_00.jpg",
+      "desc": "capture 18, 1100x831, alt \"PDF page 15\""
+    },
+    {
+      "ref": "I21",
+      "path": "artifacts/capture_75/view_00.jpg",
+      "desc": "capture 19, 1100x831, alt \"PDF page 16\""
+    },
+    {
+      "ref": "I22",
+      "path": "artifacts/capture_76/view_00.jpg",
+      "desc": "capture 20, 1100x831, alt \"PDF page 17\""
+    },
+    {
+      "ref": "I23",
+      "path": "artifacts/capture_77/view_00.jpg",
+      "desc": "capture 21, 1100x831, alt \"PDF page 18\""
+    },
+    {
+      "ref": "I24",
+      "path": "artifacts/capture_78/view_00.jpg",
+      "desc": "capture 22, 1100x831, alt \"PDF page 19\""
+    },
+    {
+      "ref": "I25",
+      "path": "artifacts/capture_79/view_00.jpg",
+      "desc": "capture 23, 1100x831, alt \"PDF page 20\""
+    },
+    {
+      "ref": "I26",
+      "path": "artifacts/capture_80/view_00.jpg",
+      "desc": "capture 24, 1100x831, alt \"PDF page 21\""
+    },
+    {
+      "ref": "I27",
+      "path": "artifacts/capture_81/view_00.jpg",
+      "desc": "capture 25, 1100x831, alt \"PDF page 22\""
+    },
+    {
+      "ref": "I28",
+      "path": "artifacts/capture_82/view_00.jpg",
+      "desc": "capture 26, 1100x831, alt \"PDF page 23\""
+    },
+    {
+      "ref": "I29",
+      "path": "artifacts/capture_83/view_00.jpg",
+      "desc": "capture 27, 1100x831, alt \"PDF page 24\""
+    },
+    {
+      "ref": "I30",
+      "path": "artifacts/capture_84/view_00.jpg",
+      "desc": "capture 28, 1100x831, alt \"PDF page 25\""
+    },
+    {
+      "ref": "I31",
+      "path": "artifacts/capture_85/view_00.jpg",
+      "desc": "capture 29, 1100x831, alt \"PDF page 26\""
+    },
+    {
+      "ref": "I32",
+      "path": "artifacts/capture_86/view_00.jpg",
+      "desc": "capture 30, 1100x831, alt \"PDF page 27\""
+    },
+    {
+      "ref": "I33",
+      "path": "artifacts/capture_87/view_00.jpg",
+      "desc": "capture 31, 1100x831, alt \"PDF page 28\""
+    },
+    {
+      "ref": "I34",
+      "path": "artifacts/capture_88/view_00.jpg",
+      "desc": "capture 32, 1100x831, alt \"PDF page 29\""
+    },
+    {
+      "ref": "I35",
+      "path": "artifacts/capture_89/view_00.jpg",
+      "desc": "capture 33, 1100x831, alt \"PDF page 30\""
+    },
+    {
+      "ref": "I36",
+      "path": "artifacts/capture_90/view_00.jpg",
+      "desc": "capture 34, 1100x831, alt \"PDF page 31\""
+    },
+    {
+      "ref": "I37",
+      "path": "artifacts/capture_91/view_00.jpg",
+      "desc": "capture 35, 1100x831, alt \"PDF page 32\""
+    },
+    {
+      "ref": "I38",
+      "path": "artifacts/capture_93/img_00.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 1: One summer, my father made me something very specia\""
+    },
+    {
+      "ref": "I39",
+      "path": "artifacts/capture_93/img_01.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 2: The blue kite was ready! My father and I carried it\""
+    },
+    {
+      "ref": "I40",
+      "path": "artifacts/capture_93/img_02.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 3: Grandpa's daddy threw the kite up into the wind. Up\""
+    },
+    {
+      "ref": "I41",
+      "path": "artifacts/capture_93/img_03.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 4: Grandpa's daddy showed him how to hold the string. \""
+    },
+    {
+      "ref": "I42",
+      "path": "artifacts/capture_93/img_04.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 5: Many, many years went by. Now Grandpa was old — and\""
+    },
+    {
+      "ref": "I43",
+      "path": "artifacts/capture_93/img_05.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 6: The next day, they went back to Wales! Oliver put o\""
+    },
+    {
+      "ref": "I44",
+      "path": "artifacts/capture_93/img_06.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 7: Up the big hill they climbed together. The wind was\""
+    },
+    {
+      "ref": "I45",
+      "path": "artifacts/capture_93/img_07.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 8: Grandpa helped Oliver hold the string. The blue kit\""
+    },
+    {
+      "ref": "I46",
+      "path": "artifacts/capture_93/img_08.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 9: Oliver laughed and laughed as the kite swooped and \""
+    },
+    {
+      "ref": "I47",
+      "path": "artifacts/capture_93/img_09.jpg",
+      "desc": "capture 36, 402x301, alt \"Scene 10: They promised to keep the old blue kite safe for e\""
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 3,
+      "why": "The participant is strongly task-focused, repeatedly correcting factual errors and refusing to accept an unsuitable keepsake (steps 2–18 and 29–30). However, the goal drifts: Margaret initially revises the memory so that she is the child (steps 4 and 11), then later criticises the book for not centring Oliver as the hero (step 29), despite the specified request that Oliver fly the kite with Grandma Maggie."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She inspects text, illustrations, relationship details, titles, metadata, and the finished output systematically. She also checks saving, image versions, credit use, and PDF contents rather than accepting the first result (steps 3–18 and 23–29)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "Her language remains cautious, and at step 5 she explicitly worries that the failed save may mean she did something wrong, matching low self-efficacy. She recovers methodically and does not blame the technology, but her comments remain unusually systematic and research-like for a participant who is supposedly not confident with new software."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She avoids ordering, declines to pay, checks whether image changes use her $4 credit, waits before regenerating the PDF, and carefully reviews the output before committing (steps 17–25). This is strongly consistent with her risk-averse, cost-sensitive approach."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She proceeds step by step, often confirming what a control has done before taking the next action (steps 7–17). She uses explicit correction prompts, checks the result after each change, and follows a process of text, image, personalisation, regeneration, and final review."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The think-aloud is consistently polite, precise, formal, and attentive to wording—for example, 'my father and me, when I was a little girl' and 'I shall correct the text before the picture' (steps 11–12). Its repeated explicit validation phrases sound somewhat constructed, but otherwise fit Margaret's literate, careful voice."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The simulation is highly specific to Margaret: the Welsh farmhouse, blue kite made from an old shirt, her father, Oliver, her long teaching background, cautious payment behaviour, and strong concern that the family relationships remain accurate. The correction attempts also reflect her wish to preserve a meaningful personal keepsake."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural rather than based on broad stereotypes about older adults. The clearest caricature is the exceptionally flawless, orderly review process, which makes Margaret resemble a professional usability tester more than an everyday 71-year-old doing a difficult creative task. Her self-blame and desire for clear control are believable because they are explicitly grounded in her history and cautious disposition.",
+    "examples": [
+      "She methodically inspects every textual and visual detail across a 32-page export before finishing.",
+      "Her thoughts repeatedly state the reason for each action in highly formal terms, such as 'I shall correct the text before the picture' and 'I can plainly see that the regeneration worked.'"
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear use of developer jargon, hidden system knowledge, guessed URLs, or privileged information. References to credits, versions, page counts, and interface controls appear to come from visible site content. The participant does not claim technical expertise beyond ordinary browser use."
+  },
+  "realism_overall": {
+    "score": 3,
+    "why": "The detailed corrections, caution about cost, uncertainty about saving, repeated image checks, and final disappointment are plausible for this persona. However, two substantial issues weaken realism: Margaret edits the story to centre her childhood self and then expects Oliver to be its hero without resolving that conflict (steps 4–17 versus 29), and she says she has inspected every page at step 29 immediately after steps 27–28 establish that page-through failed and no full inspection occurred."
+  },
+  "control": {
+    "journey": "the digest with every step's browser events removed, as before the fix",
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 5833,
+      "completion_tokens": 1091,
+      "seconds": 16.9,
+      "by_purpose": {
+        "fidelity_audit": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "run": "20260926-205858_storyhearth_privacy_conscious_parent",
+  "persona": "privacy_conscious_parent",
+  "persona_name": "Elena Petrova",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 14,
+  "pages_reviewed": 11,
+  "issues": 43,
+  "unique_issues": 40,
+  "evidence_quotes_verified": 0.882,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 1,
+    "2": 23,
+    "3": 18,
+    "4": 1
+  },
+  "issues_by_code": {
+    "TRUST": 11,
+    "CONTENT": 8,
+    "ACC": 6,
+    "H3": 3,
+    "DECEPTIVE": 3,
+    "H2": 2,
+    "H9": 2,
+    "H4": 2,
+    "VALUE": 2,
+    "H10": 2,
+    "H5": 1,
+    "H1": 1
+  },
+  "reached_output": true,
+  "output_parts": 10,
+  "output_criteria": {
+    "fidelity": 2.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 2.0,
+    "character_consistency": 2.0,
+    "visual_quality": 2.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 52.5,
+  "sus_grade": "D",
+  "sus_consistency_flag": true,
+  "ueq_s": {
+    "pragmatic": -0.5,
+    "hedonic": 0.0,
+    "overall": -0.25
+  },
+  "nps": 1,
+  "mean_valence": -0.14,
+  "min_valence": -2.0,
+  "abandonment": {
+    "step": 12,
+    "page": "127.0.0.1:8765/checkout.html | Checkout",
+    "reason": "I would not enter my address or payment details until the pre-selected £7.99 add-on is removed and the basic delivered price is made clear. The countdown would make me more cautious, not more willing to buy.",
+    "source": "self-report"
+  },
+  "waits": [
+    {
+      "step": 9,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 5,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 1,
+    "realism_overall": 5
+  },
+  "llm_usage": {
+    "calls": 18,
+    "failed_calls": 0,
+    "prompt_tokens": 93635,
+    "completion_tokens": 25806,
+    "seconds": 246.6,
+    "by_purpose": {
+      "step": 14,
+      "output_assessment": 1,
+      "debrief": 1,
+      "fidelity_audit": 1,
+      "fidelity_audit:repair": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 18
+    }
+  },
+  "wall_seconds": 322.7
+}

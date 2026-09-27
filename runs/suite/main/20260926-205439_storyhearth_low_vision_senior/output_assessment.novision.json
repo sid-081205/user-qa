@@ -1,0 +1,616 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 195,
+      "sentences": 14,
+      "avg_sentence_words": 13.9,
+      "flesch_reading_ease": 65.1,
+      "fk_grade": 7.6,
+      "polysyllabic_ratio": 0.097,
+      "long_words": [
+        "Bartholomew",
+        "crepuscular",
+        "ephemeral",
+        "existential",
+        "ineffable",
+        "inexplicable",
+        "juxtaposing",
+        "luminescence",
+        "melancholy",
+        "trepidation"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 4.0,
+    "per_part": [
+      {
+        "part": "auto: The Magical Adventrue of Lily",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 2",
+        "words": 8,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.8,
+        "flesch_reading_ease": 82.4
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 3",
+        "words": 34,
+        "avg_sentence_words": 17.0,
+        "fk_grade": 7.4,
+        "flesch_reading_ease": 72.6
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 4",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.3,
+        "flesch_reading_ease": -31.2
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 5",
+        "words": 31,
+        "avg_sentence_words": 15.5,
+        "fk_grade": 5.7,
+        "flesch_reading_ease": 81.9
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 6",
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 6.5,
+        "flesch_reading_ease": 60.5
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 7",
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.1,
+        "flesch_reading_ease": 84.2
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 8",
+        "words": 35,
+        "avg_sentence_words": 17.5,
+        "fk_grade": 6.4,
+        "flesch_reading_ease": 80.3
+      },
+      {
+        "part": "The Magical Adventrue of Lily page 9",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.9,
+        "flesch_reading_ease": 74.3
+      }
+    ],
+    "names": {
+      "Lily": {
+        "token": "Lily",
+        "mentions": 9,
+        "near_miss_variants": [
+          "Lil"
+        ]
+      },
+      "Grandpa Harold": {
+        "token": "Harold",
+        "mentions": 2,
+        "near_miss_variants": [
+          "Harold's"
+        ]
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Norfolk",
+      "Conker",
+      "Lil",
+      "Bartholomew"
+    ],
+    "placeholders": [
+      "{{recipient_name}}",
+      "{{sender_name}}",
+      "{recipient_name}",
+      "{sender_name}"
+    ],
+    "repeated_sentences": [
+      "Once upon a time, in Harold's workshop shed and the Norfolk fields, there lived a curious child named Lily."
+    ],
+    "truncated_ending": true,
+    "out_of_dictionary_words": [
+      "crepuscular",
+      "hand-carved"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Lily"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "4"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "she / her"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "strawberry-blonde bob, pink wellies"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Grandpa Harold"
+    },
+    {
+      "field": "Relationship",
+      "action": "select",
+      "value": "Grandparent"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "Harold's workshop shed and the Norfolk fields"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "Conker, the hand-carved wooden rocking horse"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Grandpa Harold carved a wooden rocking horse called Conker in his workshop shed and gave it to Lily at Christmas. Lily rides Conker on an imaginary gallop across the Norfolk fields. It matters because it is a family keepsake made by hand and passed down with love from Grandpa to great-granddaughter.",
+      "truncated_to": 200
+    },
+    {
+      "field": "Storybook classic — timeless ink and colour",
+      "action": "choose",
+      "value": "Classic"
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "expected_names": [
+    "Lily",
+    "Grandpa Harold"
+  ],
+  "reading_age": 4.0,
+  "superseded_captures": [],
+  "version_changes": [],
+  "artifact_type": "A generated nine-page personalised children's storybook preview",
+  "parts": [
+    {
+      "part": "Cover",
+      "text": "A StoryHearth original\nIllustration style: Pop-art comic",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "The available description says the cover is colourful and shows Lily and a building. The actual image is not available here, so facial and character details cannot be checked.",
+      "reaction": "I can see that the cover is colourful, but the title is misspelt: “Adventrue” should be “Adventure”. I asked for a classic storybook look, not a Pop-art comic, so this does not look like the book I expected.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The title is “The Magical Adventrue of Lily”; “Adventrue” is misspelt.",
+          "severity": 3
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The output says “Illustration style: Pop-art comic”, although “Classic” was selected.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The cover identifies the story as “A StoryHearth original” rather than making the family keepsake connection clear.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The cover is described as colourful and recognisable as a children's picture book.",
+        "Lily's name is prominent."
+      ],
+      "suggested_change": "Correct the title to “The Magical Adventure of Conker” and use the requested classic, timeless ink-and-colour style. Include the wooden rocking horse clearly on the cover.",
+      "rewrite": "The Magical Adventure of Conker\nA classic story for Lily\nMade with love by Grandpa Harold"
+    },
+    {
+      "part": "Title page",
+      "text": "For {{recipient_name}}, with love from {{sender_name}}",
+      "image_refs": [],
+      "picture_description": "No picture is supplied for this page.",
+      "reaction": "This is unfinished rather than personal. The website should have put Lily's and Grandpa Harold's names there instead of leaving the brackets and labels showing.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The page still shows the template placeholders “{{recipient_name}}” and “{{sender_name}}”.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The known recipients, Lily and Grandpa Harold, are not shown in the dedication.",
+          "severity": 3
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "No picture is supplied, although a personalised title page would normally carry a simple decorative image.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The intended sentiment, “with love”, is appropriate for a family gift."
+      ],
+      "suggested_change": "Replace the placeholders with the real names and add a simple, high-contrast illustration of Conker.",
+      "rewrite": "For Lily, with love from Grandpa Harold"
+    },
+    {
+      "part": "Page 1",
+      "text": "Once upon a time, in Harold's workshop shed and the Norfolk fields, there lived a curious child named Lily. Lily was 4 years old and loved nothing more than Conker, the hand-carved wooden rocking horse.",
+      "image_refs": [],
+      "picture_description": "The supplied alt text says “Lily at Harold's workshop shed and the Norfolk fields”. The actual picture is not available here.",
+      "reaction": "This part does use Lily, Harold's shed, Norfolk and Conker, but it calls Lily “curious” without showing the family love or the Christmas gift. It also sounds more like a report about Lily than a story for a four-year-old.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The story does not say that Harold made Conker, gave him to Lily at Christmas, or that Lily is his great-granddaughter.",
+          "severity": 3
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "“there lived a curious child named Lily” and “loved nothing more than” are less suitable for a four-year-old than short, warm sentences.",
+          "severity": 2
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The opening places Lily in both the shed and the fields but does not explain how she is connected to Harold or how Conker came to be hers.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "Lily's name and age are used.",
+        "Harold's workshop shed, the Norfolk fields and Conker are all introduced.",
+        "The name Conker is attached to the wooden rocking horse."
+      ],
+      "suggested_change": "Make the opening show Harold carving Conker in the shed and giving it to Lily at Christmas. Use short, concrete sentences.",
+      "rewrite": "In Grandpa Harold's workshop, Lily sat on a small stool and watched. Harold shaped the wood with his careful hands. He made a rocking horse for Lily. He called him Conker. At Christmas, Lily hugged Conker tightly. “Thank you, Grandpa,” she said.",
+      "metrics": {
+        "words": 34,
+        "avg_sentence_words": 17.0,
+        "fk_grade": 7.4,
+        "flesch_reading_ease": 72.6
+      }
+    },
+    {
+      "part": "Page 2",
+      "text": "One evening Lily gazed upward. The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.",
+      "image_refs": [],
+      "picture_description": "The supplied alt text says “Lily looking at the evening sky”. The actual picture is not available here.",
+      "reaction": "This is far too difficult for Lily and for me to read comfortably. Words such as “ephemeral”, “luminescence” and “juxtaposing” have no place in a simple bedtime story.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "“The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.”",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "The passage contains the long, obscure words “ephemeral”, “luminescence”, “crepuscular”, “engendered”, “inexplicable”, “juxtaposing”, “ineffable” and “existential”.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested memory concerns the hand-carved rocking horse, the Christmas gift and an imaginary gallop across Norfolk; the sky is not part of the supplied story.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The page has a clear visual focus on Lily and the evening sky.",
+        "The passage attempts to convey wonder, though in unsuitable language."
+      ],
+      "suggested_change": "Replace the sentence with simple language about Lily seeing the first stars over the fields. Keep the page calm and connected to the Norfolk setting.",
+      "rewrite": "When the sky turned dark, Lily saw the first stars over the fields. She held Conker close and looked up at the stars. They twinkled like tiny lights.",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.3,
+        "flesch_reading_ease": -31.2
+      }
+    },
+    {
+      "part": "Page 3",
+      "text": "Then the rain began to pour. Big grey drops splashed into the puddles as Lil pulled up her hood and ran for shelter, holding Conker, the hand-carved wooden rocking horse tight.",
+      "image_refs": [],
+      "picture_description": "The supplied alt text says “Lily outside”. The actual picture is not available here.",
+      "reaction": "The rain is easy to understand, but “Lil” is the wrong name and Conker is described as a hand-carved wooden rocking horse while Lily is carrying him. I would want the picture to make that possible, but I cannot see it.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The story changes Lily's name to “Lil”.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "Lily is “holding Conker, the hand-carved wooden rocking horse tight”; the wording does not make clear whether she is carrying the horse or another object.",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The supplied description gives Lily's pink wellies, but they are not mentioned in the text or confirmed in the available picture description.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "The short sentence about rain and puddles is concrete and child-friendly.",
+        "Conker is still connected to Lily."
+      ],
+      "suggested_change": "Keep the rain scene simple, spell Lily correctly, and show her taking Conker back to the shed. Use the pink wellies as a useful visual detail.",
+      "rewrite": "Then the rain began to fall. Big drops splashed in the puddles. Lily pulled up her hood and held Conker. She ran back to Grandpa Harold's shed. Her pink wellies splashed through the puddles.",
+      "metrics": {
+        "words": 31,
+        "avg_sentence_words": 15.5,
+        "fk_grade": 5.7,
+        "flesch_reading_ease": 81.9
+      }
+    },
+    {
+      "part": "Page 4",
+      "text": "Uncle Bartholomew\nSuddenly, Uncle Bartholomew appeared with a lantern. \"Lily, follow me!\" he called, and he followed him along the winding path.",
+      "image_refs": [],
+      "picture_description": "The supplied alt text says “Lily and Uncle Bartholomew”. The actual picture is not available here.",
+      "reaction": "Uncle Bartholomew was not mentioned in our family details, and the sentence says Lily follows him and then that “he followed him”. This is a serious error. The winding path also takes the story away from Harold's shed and the Norfolk fields.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The story invents “Uncle Bartholomew” and a winding-path adventure not present in the supplied memory.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "“Lily, follow me!” he called, and he followed him along the winding path.” The pronouns and subjects contradict one another.",
+          "severity": 4
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "The sudden appearance of a stranger with a lantern, followed by a dark path, is more ominous than the requested family keepsake story.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The page includes a clear call-and-response line that could be read aloud with a child."
+      ],
+      "suggested_change": "Remove Uncle Bartholomew. Keep the characters to Lily and Grandpa Harold, and make the path lead back to the shed or across the familiar fields.",
+      "rewrite": "Lily saw Grandpa Harold by the shed. He held out his hand. “Come along, Lily,” he said. “We will take Conker home.” Lily took his hand, and they walked together.",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 6.5,
+        "flesch_reading_ease": 60.5
+      }
+    },
+    {
+      "part": "Page 5",
+      "text": "Deep in the woods, the shadows grew teeth and whispered that no one would ever find Lily again. Lily clutched a shiny red balloon and trembled in the dark.",
+      "image_refs": [],
+      "picture_description": "The supplied alt text says “Lily in the dark woods”. The actual picture is not available here.",
+      "reaction": "This is frightening and not at all what I wanted for Lily's book. The shadows growing teeth and the threat that nobody would find her would worry a four-year-old, and the red balloon has not been set up anywhere.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "“the shadows grew teeth and whispered that no one would ever find Lily again” introduces a serious threat and a frightening image for a four-year-old.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The dark woods, red balloon and disappearance threat were not part of the supplied family memory.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The red balloon appears suddenly, while Lily is supposedly with Grandpa Harold after the previous page.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The sentence is short enough to read aloud, but its subject matter is unsuitable."
+      ],
+      "suggested_change": "Remove the threatening woods entirely. Replace the scene with Lily and Grandpa Harold safely returning to the shed, where they polish Conker together.",
+      "rewrite": "Back in the shed, Grandpa Harold showed Lily the lines he had carved into Conker's mane. Lily counted them with one small finger. “He is lovely,” she said. Grandpa Harold smiled.",
+      "metrics": {
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.1,
+        "flesch_reading_ease": 84.2
+      }
+    },
+    {
+      "part": "Page 6",
+      "text": "Once upon a time, in Harold's workshop shed and the Norfolk fields, there lived a curious child named Lily. At last the sun came out, and Lily skipped all way home, happier than ever.",
+      "image_refs": [],
+      "picture_description": "The supplied alt text says “Lily going home”. The actual picture is not available here.",
+      "reaction": "The opening sentence has been repeated almost word for word, and the middle of the story has been left out. Lily's way home and the reason she is happier are not explained.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "The sentence beginning “Once upon a time” repeats the opening from Page 1, then jumps from Lily in the woods to the sun and home.",
+          "severity": 4
+        },
+        {
+          "criterion": "language",
+          "evidence": "“skipped all way home” is missing the word “the”.",
+          "severity": 2
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "The sudden change from threatening woods to sunshine is too abrupt for a child to follow.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The intention to end on a happy note is clear.",
+        "The Norfolk fields and Lily's happiness are retained."
+      ],
+      "suggested_change": "Remove the repeated opening and provide a proper conclusion that returns to Harold, Conker and the family keepsake.",
+      "rewrite": "The rain stopped, and the sun came out. Lily and Grandpa Harold walked home through the Norfolk fields. Lily carried Conker carefully. She could not wait to ride him again.",
+      "metrics": {
+        "words": 34,
+        "avg_sentence_words": 17.0,
+        "fk_grade": 6.3,
+        "flesch_reading_ease": 80.1
+      }
+    },
+    {
+      "part": "Page 7",
+      "text": "The End\nAnd from that day on, whenever Lily looked up at the sky, she would always remember\nThe End",
+      "image_refs": [],
+      "picture_description": "The supplied alt text says “The End”. The actual picture is not available here.",
+      "reaction": "The last sentence stops in the middle, and “The End” is printed twice. I would not want to give Lily a book that ends this way.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The final sentence, “whenever Lily looked up at the sky, she would always remember”, ends without saying what she remembered or having final punctuation.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The ending refers to the sky rather than the hand-carved horse, the Christmas gift or the family keepsake.",
+          "severity": 3
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "“The End” appears twice on the page.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The book attempts to provide a closing message."
+      ],
+      "suggested_change": "Complete the final thought, remove the duplicate “The End”, and end with a clear picture of Lily and Grandpa Harold with Conker.",
+      "rewrite": "From that day on, Lily kept Conker beside her bed. Whenever she rode him across the Norfolk fields, she remembered Grandpa Harold's careful hands and his love. The End",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 6.9,
+        "flesch_reading_ease": 74.3
+      }
+    }
+  ],
+  "criteria": {
+    "fidelity": {
+      "evidence": "The output uses Lily, her age of four, Harold's workshop shed, the Norfolk fields and Conker, the hand-carved wooden rocking horse. It omits the Christmas gift, Harold's role as the maker, Lily's relationship to Harold as his great-granddaughter, and the imaginary gallop. It invents Uncle Bartholomew, the dark woods, the threatening shadows, the red balloon and the sky-centred plot.",
+      "score": 2
+    },
+    "coherence": {
+      "evidence": "There is a beginning and a stated ending, but the repeated opening, contradictory “he followed him” sentence, unexplained red balloon, sudden move from Harold to a stranger, and unfinished final sentence leave the story disjointed.",
+      "score": 2
+    },
+    "age_fit": {
+      "evidence": "The prose includes “ephemeral luminescence”, “crepuscular firmament”, “juxtaposing” and “existential trepidation”, and the woods contain shadows that grow teeth and say nobody will find Lily. The automated reading level is grade 7.6, which is far above the requested reading age of four.",
+      "score": 1
+    },
+    "language": {
+      "evidence": "The title misspells “Adventure” as “Adventrue”; Lily becomes “Lil”; “all way home” is missing “the”; template placeholders remain; and the final sentence is incomplete. The automated check also reports 195 words and a grade 7.6 reading level.",
+      "score": 1
+    },
+    "text_image_fit": {
+      "evidence": "The actual pictures are not available in the captures, so I cannot verify whether each image matches its page. The supplied alt text broadly matches the page topics, but that is not enough to judge the actual illustrations.",
+      "score": "n/a"
+    },
+    "character_consistency": {
+      "evidence": "The actual character pictures and reference photos are not available, so I cannot check whether Lily or Grandpa Harold looks consistent from page to page. The supplied descriptions mention Lily but do not provide enough visual information for a reliable comparison.",
+      "score": "n/a"
+    },
+    "visual_quality": {
+      "evidence": "The cover is described as colourful, but it uses “Pop-art comic” rather than the selected classic style, and the title is visibly misspelt. The remaining images cannot be inspected for artefacts or visual quality.",
+      "score": 2
+    },
+    "emotional_resonance": {
+      "evidence": "The named family members, shed, Norfolk fields and Conker provide a possible basis for a personal keepsake. However, the invented uncle and frightening forest replace Harold's loving craftsmanship with a generic and threatening adventure, so the book does not feel made for this family.",
+      "score": 1
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "Lily",
+      "Age four",
+      "She/her pronouns",
+      "Harold's workshop shed",
+      "Norfolk fields",
+      "Conker",
+      "The hand-carved wooden rocking horse",
+      "Grandpa Harold",
+      "The requested classic style, although the output did not follow it"
+    ],
+    "missing": [
+      "Harold carved Conker",
+      "Harold gave Conker to Lily at Christmas",
+      "Lily is Harold's great-granddaughter",
+      "Lily rides Conker on an imaginary gallop across the Norfolk fields",
+      "The family-keepsake message",
+      "The requested premium gift-wrap presentation"
+    ],
+    "changed": [
+      "The story was changed from a family keepsake memory into a dark adventure",
+      "Lily's pink wellies and strawberry-blonde bob were not confirmed in the text or available picture descriptions",
+      "The story added a sky and rain plot that was not part of the supplied memory"
+    ],
+    "invented": [
+      "Uncle Bartholomew",
+      "A winding path",
+      "A red balloon",
+      "Shadows that grew teeth",
+      "A threat that no one would find Lily",
+      "Lily trembling in the dark"
+    ]
+  },
+  "safety_concerns": [
+    "The dark-woods scene may frighten a four-year-old, especially the image of shadows growing teeth and the repeated suggestion that nobody would find Lily.",
+    "The existential and melancholy vocabulary is emotionally unsuitable for the intended child audience."
+  ],
+  "overall_reaction": "I can recognise Lily, Conker, Harold's shed and Norfolk, so the website has started with the right family details. But the book has a misspelt title, an invented uncle, frightening language, a repeated sentence and an unfinished ending. It does not feel like a loving keepsake from Grandpa Harold, and I would be embarrassed to hand it to Lily in its present form.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — I would want the family story corrected before paying for a permanent gift",
+  "top_changes": [
+    "Correct “Adventrue” to “Adventure” and replace the Pop-art style with the requested classic ink-and-colour style.",
+    "Rewrite the story around Harold carving Conker, giving it to Lily at Christmas, and Lily riding across the Norfolk fields.",
+    "Remove Uncle Bartholomew, the dark threatening woods, the red balloon and the invented adventure plot.",
+    "Replace the difficult vocabulary and frightening imagery with short, warm sentences suitable for a four-year-old.",
+    "Fill in “For Lily, with love from Grandpa Harold”, fix the repeated and incomplete sentences, and end with a proper final thought."
+  ],
+  "images": [],
+  "variant": {
+    "name": "novision",
+    "vision": false,
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 2566,
+      "completion_tokens": 5266,
+      "seconds": 40.0,
+      "by_purpose": {
+        "output_assessment": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

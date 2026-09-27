@@ -1,0 +1,17 @@
+{
+  "label": "auto: My Storybooks",
+  "url": "https://ourlegacy.family/storybooks",
+  "views": [
+    "artifacts/capture_01/view_00.jpg",
+    "artifacts/capture_01/view_01.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_01/img_00.jpg",
+      "alt": "Grandpa's Blue Kite",
+      "w": 366,
+      "h": 274
+    }
+  ],
+  "dir": "artifacts/capture_01"
+}

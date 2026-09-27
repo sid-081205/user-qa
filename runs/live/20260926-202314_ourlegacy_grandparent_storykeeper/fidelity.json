@@ -1,0 +1,48 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "The participant remains focused on creating a personal, keepsake-quality story for Oliver, explicitly preferring the real kite memory over a sample and checking the characters and family relationships before generating it (steps 7–12)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "The participant carefully checks labels, credit information, privacy, optional uploads, the entered descriptions, and the resulting story. She notices incorrect relationship wording, unsupported details, and mismatched illustrations rather than accepting the first output (steps 1, 3, 6, 9–16)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "The participant is cautious about unfamiliar technology and hesitates over privacy and unclear actions, but she does not strongly blame herself when the timeout occurs; instead, she infers that the code was accepted from the changed screen and credit balance (steps 3, 5–6). This is broadly consistent, though the simulation shows somewhat more confident troubleshooting than the low-self-efficacy specification might suggest."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She avoids uploading Oliver's photograph until the purpose is clear, chooses ordinary email rather than Google because of possible information sharing, reads the free-credit explanation, and confirms that the £1 generation is covered before clicking (steps 2–3, 7, 9, 12)."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She proceeds step by step, follows labels, checks the current screen after each action, and reviews the complete generated result before deciding whether it is acceptable (steps 4–6, 8–16)."
+    }
+  },
+  "voice_consistency": {
+    "score": 5,
+    "why": "The think-aloud voice is consistently polite, precise, and mildly formal, with characteristic attention to clarity, spelling, privacy, and consequences. Phrases such as “I shall enter it now” and “I would not accept this as my family keepsake” fit the specified persona throughout."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific to Margaret's life and goals: the kite made by her father, the Welsh hill, Oliver's appearance, Grandma Maggie, reading age five, family privacy, and the desire to pass on a story. Her reactions are tied to her teaching background, age-related reading preferences, and relationship to the recipient rather than generic usability concerns."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural and grounded in the supplied persona. Some behaviours are highly polished and consistently aligned with the specification, such as noticing every relationship error and articulating accessibility concerns, which makes the simulation feel somewhat idealized, but it is not grossly exaggerated.",
+    "examples": [
+      "The participant notices the change from “my father” to “Grandpa” and distinguishes it from the later, unsupported “Grandpa” character (steps 14–16).",
+      "She explicitly checks the credit balance and generation charge before proceeding, reflecting the medium-high price sensitivity and risk aversion (steps 6 and 12)."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear evidence that the participant uses hidden system knowledge, developer terminology, or information unavailable from the interface. The security check, timeout, account state, and displayed credit are all based on visible feedback or ordinary browser behaviour."
+  },
+  "realism_overall": {
+    "score": 5,
+    "why": "A cautious, experienced computer user could plausibly complete this process in this way: she would prefer email, verify the code, avoid uploading a child's photograph, wait for generation, inspect the full story, and reject it because altered family relationships and mismatched characters undermine its keepsake value. The long waits and continued review after the error are also realistic, as is her response to the timeout (steps 5–6 and 12–16)."
+  }
+}

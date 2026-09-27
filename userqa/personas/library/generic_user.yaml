@@ -1,0 +1,38 @@
+id: generic_user
+name: Test User
+age: 35
+tagline: Baseline condition - a generic adult web user with no persona conditioning (ablation).
+occupation: ""
+household: ""
+locale: en-GB
+backstory: |
+  I am a typical adult internet user.
+goals: []
+experience_goals: []
+frustrations: []
+facets:
+  motivation: task-focused
+  information_processing: comprehensive
+  self_efficacy: medium
+  risk_attitude: risk-tolerant
+  learning_style: process-oriented
+big_five: {}
+tech_attitudes: {}
+accessibility: []
+language: {}
+device: desktop
+attention: full
+patience_steps: 6
+voice: ""
+domain_context:
+  email: test.user@example.com
+  children_in_story:
+    - {name: Sam, age: 5, relation: child, pronouns: she/her, looks: "brown hair"}
+  other_characters:
+    - {name: Grandpa Joe, relation: grandfather, looks: "grey hair"}
+  memory_to_tell: A day at the beach building sandcastles with Grandpa Joe.
+  favourite_object: a yellow bucket
+  place: the beach
+  reading_age: 5
+notes_for_simulation: []
+baseline: true

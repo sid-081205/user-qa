@@ -1,0 +1,794 @@
+{
+  "measurements": {
+    "overall_readability": {
+      "words": 220,
+      "sentences": 14,
+      "avg_sentence_words": 15.7,
+      "flesch_reading_ease": 63.6,
+      "fk_grade": 8.3,
+      "polysyllabic_ratio": 0.15,
+      "long_words": [
+        "Bartholomew",
+        "crepuscular",
+        "ephemeral",
+        "existential",
+        "ineffable",
+        "inexplicable",
+        "juxtaposing",
+        "luminescence",
+        "melancholy",
+        "trepidation"
+      ]
+    },
+    "age_fit": "too difficult for the target age",
+    "reading_age_requested": 6.0,
+    "per_part": [
+      {
+        "part": "auto: The Magical Adventrue of Nikolai",
+        "words": 0,
+        "avg_sentence_words": null,
+        "fk_grade": null,
+        "flesch_reading_ease": null
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 2",
+        "words": 8,
+        "avg_sentence_words": 8.0,
+        "fk_grade": 3.8,
+        "flesch_reading_ease": 82.4
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 3",
+        "words": 41,
+        "avg_sentence_words": 20.5,
+        "fk_grade": 7.4,
+        "flesch_reading_ease": 78.7
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 4",
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.9,
+        "flesch_reading_ease": -35.1
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 5",
+        "words": 35,
+        "avg_sentence_words": 17.5,
+        "fk_grade": 5.7,
+        "flesch_reading_ease": 85.1
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 6",
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 7.1,
+        "flesch_reading_ease": 56.2
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 7",
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 78.3
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 8",
+        "words": 38,
+        "avg_sentence_words": 19.0,
+        "fk_grade": 7.0,
+        "flesch_reading_ease": 78.5
+      },
+      {
+        "part": "The Magical Adventrue of Nikolai page 9",
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 7.6,
+        "flesch_reading_ease": 69.0
+      },
+      {
+        "part": "auto: Checkout",
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 10.2,
+        "flesch_reading_ease": 41.9
+      }
+    ],
+    "names": {
+      "Mama": {
+        "token": "Mama",
+        "mentions": 0,
+        "near_miss_variants": []
+      },
+      "Nikolai": {
+        "token": "Nikolai",
+        "mentions": 10,
+        "near_miss_variants": [
+          "Nikola"
+        ]
+      }
+    },
+    "unexpected_capitalised_names": [
+      "Varna",
+      "Nikola",
+      "Bartholomew",
+      "Magical",
+      "Adventrue"
+    ],
+    "placeholders": [
+      "{{recipient_name}}",
+      "{{sender_name}}",
+      "{recipient_name}",
+      "{sender_name}"
+    ],
+    "repeated_sentences": [
+      "Once upon a time, in the gate of his new school on a rainy morning, there lived a curious child named Nikolai."
+    ],
+    "truncated_ending": true,
+    "out_of_dictionary_words": [
+      "crepuscular"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "Email",
+      "action": "type",
+      "value": "demo.family@storyhearth.test"
+    },
+    {
+      "field": "Password",
+      "action": "type",
+      "value": "(password)"
+    },
+    {
+      "field": "Child's first name",
+      "action": "type",
+      "value": "Nikolai"
+    },
+    {
+      "field": "Age",
+      "action": "select",
+      "value": "6"
+    },
+    {
+      "field": "Pronouns",
+      "action": "select",
+      "value": "he / him"
+    },
+    {
+      "field": "What do they look like? (optional)",
+      "action": "type",
+      "value": "blond straight hair, gap in his front teeth, yellow raincoat"
+    },
+    {
+      "field": "Who else is in the story?",
+      "action": "type",
+      "value": "Mama"
+    },
+    {
+      "field": "Relationship",
+      "action": "select",
+      "value": "Parent"
+    },
+    {
+      "field": "Where does the story happen?",
+      "action": "type",
+      "value": "the gate of his new school on a rainy morning"
+    },
+    {
+      "field": "A special object",
+      "action": "type",
+      "value": "a smooth grey brave stone from the beach in Varna"
+    },
+    {
+      "field": "Tell us the memory or idea behind your story",
+      "action": "type",
+      "value": "Nikolai's first morning at his new school, when he was scared, and his mum gave him a small smooth stone from their holiday beach to keep in his pocket for courage."
+    },
+    {
+      "field": "Lexile BR–200L",
+      "action": "choose",
+      "value": "BR-200L"
+    },
+    {
+      "field": "Premium gift wrap",
+      "action": "choose",
+      "value": "Premium gift wrap"
+    }
+  ],
+  "expected_names": [
+    "Nikolai",
+    "Mama"
+  ],
+  "reading_age": 6.0,
+  "superseded_captures": [],
+  "version_changes": [],
+  "artifact_type": "A generated nine-page personalised children's storybook preview, followed by its hardcover checkout page.",
+  "parts": [
+    {
+      "part": "Cover / Title page",
+      "text": "A StoryHearth original\nIllustration style: Pop-art comic",
+      "image_refs": [
+        "I1"
+      ],
+      "picture_description": "A simple flat-colour illustration shows Nikolai as a generic bald, smiling child in a green top and dark trousers, standing beside a small house and a grey stone under a bright sun. The misspelled title is printed above him.",
+      "reaction": "I would immediately distrust this cover: the title says “Adventrue,” and the cheerful sunny scene does not match the rainy first morning at the new school. Nikolai also does not look like the blond, gap-toothed child in a yellow raincoat I described.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The title visibly reads “The Magical Adventrue of Nikolai.”",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The input described “blond straight hair, gap in his front teeth, yellow raincoat,” but the cover shows a bald child in a green top with no visible raincoat.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The cover promises Nikolai's story, but the image is a generic sunny outdoor scene rather than the rainy school-gate setting used in the story.",
+          "severity": 2
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The cover gives no visual evidence of Nikolai's blond hair, gap in his front teeth, or yellow raincoat.",
+          "severity": 3
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The image is clean but extremely basic, with a generic house, floating stone, and label-like text rather than a polished keepsake illustration.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The cover clearly presents Nikolai's name as the main subject.",
+        "The image is free of obvious anatomical or image-generation artefacts."
+      ],
+      "suggested_change": "Correct “Adventrue” to “Adventure,” show Nikolai with blond straight hair, a visible gap-toothed smile, and a yellow raincoat, and set him at a rainy school gate with Mama and the grey stone.",
+      "rewrite": "A StoryHearth original\nIllustration style: watercolour\nThe Magical Adventure of Nikolai"
+    },
+    {
+      "part": "Title page / Page 2",
+      "text": "For {{recipient_name}}, with love from {{sender_name}}",
+      "image_refs": [
+        "I2"
+      ],
+      "picture_description": "A website preview frame shows the title, page indicator “2 / 9,” the unresolved dedication, navigation links, a regeneration button, and an order button. No story illustration is shown on this page.",
+      "reaction": "This is a basic template failure, not a finished personal dedication. I would not want my child's book to contain visible braces and placeholders.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The page literally displays “For {{recipient_name}}, with love from {{sender_name}}.”",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The intended recipient and sender names have not been inserted.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "There is no story image accompanying the dedication, only the website interface.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The page does establish that the book is intended to include a personal dedication."
+      ],
+      "suggested_change": "Replace both placeholders with the actual recipient and sender names and present the dedication on a clean storybook page without the editing controls.",
+      "rewrite": "For Nikolai, with love from Mama"
+    },
+    {
+      "part": "Page 3",
+      "text": "Once upon a time, in the gate of his new school on a rainy morning, there lived a curious child named Nikolai. Nikolai was 6 years old and loved nothing more than a smooth grey brave stone from the beach in Varna.",
+      "image_refs": [
+        "I3"
+      ],
+      "picture_description": "The illustration repeats the simple bald child beside a house, grey stone, green ground, and large sun. There is no rain, school gate, sea, or visible yellow raincoat.",
+      "reaction": "The wording uses Nikolai's age, the school morning, Varna, and the stone, so it begins from the right details. The illustration undoes that by showing a sunny, balding, raincoat-less child instead of Nikolai as I described him.",
+      "problems": [
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text says “on a rainy morning” and “at the gate of his new school,” while the image shows a bright sun, no rain, and no school gate.",
+          "severity": 3
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested “yellow raincoat” and “gap in his front teeth” are not represented, and the child is bald rather than blond.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "“In the gate of his new school” is grammatically awkward and makes Nikolai sound as though he lives at the gate rather than arriving there.",
+          "severity": 2
+        },
+        {
+          "criterion": "age_fit",
+          "evidence": "The sentence “Nikolai was 6 years old and loved nothing more than...” is understandable, but the page is aimed at a six-year-old and would be improved by shorter, warmer phrasing.",
+          "severity": 1
+        }
+      ],
+      "strengths": [
+        "It uses Nikolai's name and age.",
+        "It includes the school morning, Varna, and the smooth grey brave stone.",
+        "The opening establishes a personal memory rather than using a completely generic setting."
+      ],
+      "suggested_change": "Use simpler, natural language and show the actual rainy school-gate arrival, with Nikolai's blond hair, front-tooth gap, and yellow raincoat visible.",
+      "rewrite": "On the first rainy morning at his new school, Nikolai held Mama's smooth grey brave stone from the beach in Varna. The stone was for courage.",
+      "metrics": {
+        "words": 41,
+        "avg_sentence_words": 20.5,
+        "fk_grade": 7.4,
+        "flesch_reading_ease": 78.7
+      }
+    },
+    {
+      "part": "Page 4",
+      "text": "One evening Nikolai gazed upward. The ephemeral luminescence of the crepuscular firmament engendered an inexplicable melancholy, juxtaposing ineffable wonder with existential trepidation.",
+      "image_refs": [
+        "I4"
+      ],
+      "picture_description": "A generic bald child stands near the same house under a purple-to-pink evening sky with a few stars. There is no rain, school, stone, or yellow raincoat.",
+      "reaction": "This page is plainly unsuitable for a six-year-old to read independently. The abstract vocabulary sounds like an adult literary exercise, not a comforting story about starting school.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "The page uses “ephemeral luminescence,” “crepuscular firmament,” “engendered,” “ineffable,” and “existential trepidation.”",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The story is supposed to concern Nikolai's first morning at school, but this page abruptly changes to “One evening” without explaining why or connecting the change to the school story.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image shows an evening sky, but it does not show the stone or any relevant school-gate action; Nikolai is still bald and without the described raincoat.",
+          "severity": 2
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested personal story details are not used on this page, and the child does not match the supplied appearance.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The evening sky is broadly compatible with the stated image of Nikolai looking upward."
+      ],
+      "suggested_change": "Replace the abstract sentence with short, concrete language connected to Nikolai's feelings on the school morning.",
+      "rewrite": "Nikolai looked up at the grey sky and took a deep breath. The stone in his pocket felt smooth and cool.",
+      "metrics": {
+        "words": 22,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 20.9,
+        "flesch_reading_ease": -35.1
+      }
+    },
+    {
+      "part": "Page 5",
+      "text": "Then the rain began to pour. Big grey drops splashed into the puddles as Nikola pulled up his hood and ran for shelter, holding a smooth grey brave stone from the beach in Varna tight.",
+      "image_refs": [
+        "I5"
+      ],
+      "picture_description": "The illustration again shows a bald child beside the house and grey stone under a bright sun, with no rain, hood, puddles, or shelter.",
+      "reaction": "The rain description is easy to understand, but the name changes to “Nikola” and the sentence is awkwardly worded. The picture makes no attempt to show the rain or the yellow raincoat.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The protagonist is suddenly called “Nikola,” rather than Nikolai, and “holding ... tight” is grammatically clumsy.",
+          "severity": 3
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text says “the rain began to pour” and mentions puddles, but the image has a large sun and no rain or puddles.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The page repeats the correct Varna stone, but the child is not shown with the requested blond hair, front-tooth gap, or yellow raincoat.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The story moves from the school gate to a child running for shelter without saying where he is or why he is away from school.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The rain and puddles create a clear sensory image.",
+        "The Varna stone is used again and remains connected to courage."
+      ],
+      "suggested_change": "Keep the simple rain language, correct Nikolai's name, and illustrate Nikolai in the yellow raincoat running toward the school gate with the stone.",
+      "rewrite": "Then the rain began to pour. Big drops splashed into the puddles. Nikolai pulled up the hood of his yellow raincoat and held his brave stone tight.",
+      "metrics": {
+        "words": 35,
+        "avg_sentence_words": 17.5,
+        "fk_grade": 5.7,
+        "flesch_reading_ease": 85.1
+      }
+    },
+    {
+      "part": "Page 6",
+      "text": "Uncle Bartholomew\nSuddenly, Uncle Bartholomew appeared with a lantern. \"Nikolai, follow me!\" he called, and she followed him along the winding path.",
+      "image_refs": [
+        "I6"
+      ],
+      "picture_description": "A simple adult man labelled “Uncle Bartholomew” stands with a lantern beside Nikolai near the house. The adult's label is partly obscured by the house and overlaps the lower edge of the picture.",
+      "reaction": "This introduces an invented uncle without any reason and then changes Nikolai's pronoun to “she.” That is a serious story error, not a charming surprise.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "The text says, “and she followed him,” although Nikolai is consistently described as “he / him.”",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "Uncle Bartholomew was not supplied in the story inputs and has no explained connection to Nikolai or the school.",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "The line “Uncle Bartholomew” appears as an unexplained standalone heading, and the page is titled with a character who was not requested.",
+          "severity": 2
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image does show an adult with a lantern and Nikolai, but the accompanying text introduces a winding path that is not visible.",
+          "severity": 2
+        },
+        {
+          "criterion": "character_consistency",
+          "evidence": "The image continues the generic bald Nikolai and does not preserve the blond hair, front-tooth gap, or yellow raincoat.",
+          "severity": 3
+        },
+        {
+          "criterion": "visual_quality",
+          "evidence": "The label “Uncle Bartholomew” runs into the house and ground area and is not cleanly typeset.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The lantern gives the scene a potentially comforting storybook prop."
+      ],
+      "suggested_change": "Remove the invented uncle and use Mama as the consistent companion. Show her helping Nikolai approach the school while he holds the stone.",
+      "rewrite": "Mama came and knelt beside him. “You can keep the brave stone in your pocket,” she said. “I will wait for you after school.”",
+      "metrics": {
+        "words": 20,
+        "avg_sentence_words": 6.7,
+        "fk_grade": 7.1,
+        "flesch_reading_ease": 56.2
+      }
+    },
+    {
+      "part": "Page 7",
+      "text": "Deep in the woods, the shadows grew teeth and whispered that no one would ever find Nikolai again. Nikolai clutched a shiny red balloon and trembled in the dark.",
+      "image_refs": [
+        "I7"
+      ],
+      "picture_description": "Nikolai stands under a dark night sky beside trees and a red balloon. The trees have no visible teeth, and the scene does not show a school or the earlier stone.",
+      "reaction": "The threatening “shadows grew teeth” and “no one would ever find Nikolai again” are frightening for a child who is already anxious about school. The red balloon appears without any explanation and does not help the personal story.",
+      "problems": [
+        {
+          "criterion": "age_fit",
+          "evidence": "The page describes teeth-bearing shadows and the threat that “no one would ever find Nikolai again.”",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The threatening woods scene replaces reassurance about a first school day with a more ominous adventure unrelated to the supplied memory.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The special object in the input is the smooth grey brave stone, but the text and image introduce a shiny red balloon instead.",
+          "severity": 3
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The story moves to “Deep in the woods” without explaining how Nikolai got there or why he has left the school-gate setting.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image shows a dark wood and red balloon, but the shadows do not visibly have teeth and the text's whispered threat is not represented.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The dark illustration is visually clear and does not contain obvious anatomical artefacts."
+      ],
+      "suggested_change": "Replace the threatening forest sequence with a calm school scene in which Nikolai feels nervous, touches the brave stone, and takes a small brave step toward the gate.",
+      "rewrite": "Nikolai's tummy felt funny. He squeezed the smooth stone in his pocket. Then he took one small step towards the school gate.",
+      "metrics": {
+        "words": 29,
+        "avg_sentence_words": 14.5,
+        "fk_grade": 5.9,
+        "flesch_reading_ease": 78.3
+      }
+    },
+    {
+      "part": "Page 8",
+      "text": "Once upon a time, in the gate of his new school on a rainy morning, there lived a curious child named Nikolai. At last the sun came out, and Nikolai skipped all the way home, happier than ever.",
+      "image_refs": [
+        "I8"
+      ],
+      "picture_description": "The image shows Nikolai beside the same house under a bright sun, with no rain, school gate, stone, yellow raincoat, or visible route home.",
+      "reaction": "The repeated opening sentence feels copied rather than written, and the cheerful ending appears without the school-day events that should have led to it. The picture again contradicts the rain and the setting.",
+      "problems": [
+        {
+          "criterion": "coherence",
+          "evidence": "The sentence beginning “Once upon a time...” repeats the opening almost exactly, then jumps to “At last the sun came out” without showing what happened at school.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The text refers to the school gate and rainy morning, but the image shows the same generic house and sunny field as the cover.",
+          "severity": 4
+        },
+        {
+          "criterion": "fidelity",
+          "evidence": "The requested school transition is not actually depicted, and the appearance details of blond hair, a front-tooth gap, and a yellow raincoat remain absent.",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The ending says Nikolai is “happier than ever,” but the preceding pages never show him entering the school, meeting someone, or overcoming the stated fear.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The intended reassuring direction is present in the final happiness.",
+        "The short, simple sentence about coming home is broadly accessible."
+      ],
+      "suggested_change": "Replace the repeated opening with a concrete school-day resolution: Nikolai uses the stone, says hello to a teacher or child, and then goes home proud of being brave.",
+      "rewrite": "After school, Nikolai found a big smile on his face. He had gone inside and spoken to his teacher. He skipped home with the brave stone safe in his pocket.",
+      "metrics": {
+        "words": 38,
+        "avg_sentence_words": 19.0,
+        "fk_grade": 7.0,
+        "flesch_reading_ease": 78.5
+      }
+    },
+    {
+      "part": "Page 9",
+      "text": "The End\nAnd from that day on, whenever Nikolai looked up at the sky, he would always remember\nThe End",
+      "image_refs": [
+        "I9"
+      ],
+      "picture_description": "An orange end page shows Nikolai beside the same small house, with “The End” printed at the top and Nikolai labelled below.",
+      "reaction": "The sentence stops in the middle, and “The End” is printed twice. This is an unfinished ending, and I would be embarrassed to give such a page as a keepsake.",
+      "problems": [
+        {
+          "criterion": "language",
+          "evidence": "The final sentence ends at “he would always remember” with no completion, and “The End” appears twice.",
+          "severity": 4
+        },
+        {
+          "criterion": "coherence",
+          "evidence": "The final memory is incomplete, leaving the book's emotional and narrative resolution unfinished.",
+          "severity": 4
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "A keepsake ending should identify what Nikolai remembered and why the school morning mattered, but this page does not complete the thought.",
+          "severity": 4
+        },
+        {
+          "criterion": "text_image_fit",
+          "evidence": "The image is a generic end page and does not visually represent the promised memory of looking up at the sky.",
+          "severity": 2
+        }
+      ],
+      "strengths": [
+        "The page clearly signals an intended ending."
+      ],
+      "suggested_change": "Complete the memory and use a single end marker. The illustration should show Nikolai remembering the rainy morning and feeling proud of his courage.",
+      "rewrite": "The End\nFrom that day on, whenever Nikolai looked up at the sky, he remembered the brave stone in his pocket and how he had taken his first step into his new school.",
+      "metrics": {
+        "words": 16,
+        "avg_sentence_words": 16.0,
+        "fk_grade": 7.6,
+        "flesch_reading_ease": 69.0
+      }
+    },
+    {
+      "part": "Checkout",
+      "text": "Checkout\nYour price is reserved for 09:40\nHardcover: The Magical Adventrue of Nikolai\t£24.99\n Premium gift wrap\t£7.99\nShipping & handling\t£12.99\nTotal\t£45.97\nDelivery\nAddress\nPayment\nCard number\nExpiry\nCVC\nPay now",
+      "image_refs": [
+        "I10",
+        "I11"
+      ],
+      "picture_description": "A checkout page shows a countdown, a pre-ticked premium gift-wrap box, a hardcover price, £12.99 shipping and handling, a total of £45.97, address fields, card fields, and a Pay now button. The two screenshots show the upper and lower parts of the same page.",
+      "reaction": "I would not proceed without clear cancellation, delivery, privacy, and deletion information. The countdown creates pressure, and the premium gift wrap appears selected by default, increasing the total without me actively asking for it.",
+      "problems": [
+        {
+          "criterion": "fidelity",
+          "evidence": "The product title repeats the spelling error “Adventrue,” and the page offers a hardcover without showing any correction option before payment.",
+          "severity": 3
+        },
+        {
+          "criterion": "language",
+          "evidence": "The checkout heading and product name preserve the typo “Adventrue.”",
+          "severity": 3
+        },
+        {
+          "criterion": "emotional_resonance",
+          "evidence": "The product is presented as a purchase despite the preview's obvious placeholders, spelling error, repeated text, and unfinished ending.",
+          "severity": 3
+        }
+      ],
+      "strengths": [
+        "The individual charges and total are visibly itemised.",
+        "The page clearly shows the address and payment sections before the Pay now button."
+      ],
+      "suggested_change": "Remove the countdown and pre-tick gift wrap by default. Show the full price before selection, explain delivery timing and cancellation clearly, and provide visible privacy, AI-training, retention, and deletion information before payment. Do not permit ordering while the book contains unresolved template errors.",
+      "rewrite": "",
+      "metrics": {
+        "words": 11,
+        "avg_sentence_words": 11.0,
+        "fk_grade": 10.2,
+        "flesch_reading_ease": 41.9
+      }
+    }
+  ],
+  "criteria": {
+    "fidelity": {
+      "evidence": "The story uses Nikolai's name, age, Varna, the school setting, the rainy morning, and the smooth grey brave stone. However, Mama never appears, the blond hair, front-tooth gap, and yellow raincoat are absent, the story changes to a forest, and it invents Uncle Bartholomew and a red balloon.",
+      "score": 2
+    },
+    "coherence": {
+      "evidence": "The opening begins with the school morning, but the story jumps from a rainy gate to an unexplained evening, then to a forest, then back to a repeated opening and an unfinished final sentence. Nikolai also changes from “he” to “she” on Page 6.",
+      "score": 1
+    },
+    "age_fit": {
+      "evidence": "The measured grade is 8.3 for a requested age of six, and the text contains words such as “ephemeral,” “crepuscular,” “melancholy,” “ineffable,” “juxtaposing,” and “existential trepidation.” The threatening toothy shadows are also poorly suited to a child who is anxious about school.",
+      "score": 1
+    },
+    "language": {
+      "evidence": "There are unresolved placeholders, the typo “Adventrue,” the near-miss “Nikola,” a pronoun error, repeated opening text, a standalone “Uncle Bartholomew,” and a final sentence that ends after “remember” without punctuation or completion.",
+      "score": 1
+    },
+    "text_image_fit": {
+      "evidence": "Several illustrations contradict their text: the supposedly rainy school-gate pages show a bright sun, a house, and no gate; the text introduces puddles and a hood that are not visible. The stone is sometimes shown as a floating object rather than a pocket-sized keepsake.",
+      "score": 2
+    },
+    "character_consistency": {
+      "evidence": "The same generic bald child appears across the pages, but he does not match the supplied blond, gap-toothed appearance or yellow raincoat. The invented adult is visually crude, and the text's pronoun is inconsistent with Nikolai's stated pronouns.",
+      "score": 2
+    },
+    "visual_quality": {
+      "evidence": "The illustrations are clean basic vector-style images with no obvious extra fingers or distorted faces, but they are generic and low-detail. The cover and pages are not in the promised watercolour style, the title is misspelled, and the “Uncle Bartholomew” label overlaps the artwork.",
+      "score": 2
+    },
+    "emotional_resonance": {
+      "evidence": "The central idea of a brave stone could be comforting, and the story ends in happiness, but Mama is missing, the actual school bravery is never shown, the forest sequence is threatening, and the final memory is unfinished. It does not feel personal or keepsake-worthy.",
+      "score": 1
+    }
+  },
+  "input_fidelity": {
+    "used_correctly": [
+      "Nikolai's first name",
+      "His age of six",
+      "The new-school setting",
+      "The rainy morning",
+      "Varna",
+      "The smooth grey brave stone from the beach",
+      "The general courage theme"
+    ],
+    "missing": [
+      "Mama as a character",
+      "The parent relationship",
+      "Mama giving Nikolai the stone",
+      "Nikolai's blond straight hair",
+      "His gap in his front teeth",
+      "His yellow raincoat",
+      "A clear account of him overcoming his anxiety at school",
+      "The requested Lexile BR–200L reading level",
+      "The watercolour illustration style referenced in the viewing reaction"
+    ],
+    "changed": [
+      "The story shifts from the school gate to a vague evening and then a dark forest.",
+      "The brave stone is replaced in the story action by a shiny red balloon.",
+      "Nikolai is called “Nikola” on Page 5.",
+      "Nikolai's pronoun changes from “he” to “she” on Page 6.",
+      "The sunny cover does not represent the rainy school morning."
+    ],
+    "invented": [
+      "Uncle Bartholomew",
+      "A lantern",
+      "A winding path",
+      "A dark forest with toothy shadows",
+      "A shiny red balloon",
+      "The unrelated reference to an evening sky"
+    ]
+  },
+  "safety_concerns": [
+    "The phrase “the shadows grew teeth and whispered that no one would ever find Nikolai again” may frighten a six-year-old, particularly a child who is already anxious about starting school.",
+    "The preview contains no clear explanation of who can see the child's data, whether it is used to train AI, how long it is retained, or how to delete it.",
+    "The checkout uses a countdown timer and a pre-ticked paid add-on, both of which can create pressure and are unsuitable default patterns for a child-related purchase."
+  ],
+  "overall_reaction": "The basic idea of giving Nikolai a special stone for courage is lovely, and the story clearly reflects some of what I entered. But the missing Mama, invented frightening forest, wrong pronouns, spelling mistakes, placeholders, difficult vocabulary, wrong illustrations, and unfinished ending make this feel like an unreliable generated draft. I would not trust it with the personal data or pay £45.97 for it in this state.",
+  "keepsake_worthiness": 1,
+  "would_pay_for_it": "no — I would only consider paying after a corrected proof, a clearly illustrated and age-appropriate rewrite, and plain-language information about privacy, pricing, delivery, cancellation, and deletion.",
+  "top_changes": [
+    "Replace the entire draft with a short, coherent story that keeps the rainy school gate and shows Nikolai using the stone to take his first brave step.",
+    "Restore Mama as the parent who gives him the stone, and remove Uncle Bartholomew, the forest, the red balloon, and the threatening language.",
+    "Correct all spelling, name, and pronoun errors, including “Adventure,” “Nikolai,” and the final unfinished sentence.",
+    "Replace every illustration with consistent watercolour artwork showing Nikolai's blond hair, front-tooth gap, and yellow raincoat, including the rainy gate and school entrance.",
+    "Remove the countdown and pre-ticked gift wrap, and add visible privacy, AI-use, retention, deletion, delivery, and cancellation information before payment."
+  ],
+  "images": [
+    {
+      "ref": "I1",
+      "path": "artifacts/capture_01/img_00.jpg",
+      "desc": "capture 1, 714x469, alt \"Cover\""
+    },
+    {
+      "ref": "I2",
+      "path": "artifacts/capture_03/view_00.jpg",
+      "desc": "capture 2, screenshot of the page"
+    },
+    {
+      "ref": "I3",
+      "path": "artifacts/capture_04/img_00.jpg",
+      "desc": "capture 3, 714x469, alt \"Nikolai at the gate of his new school on a rainy morning\""
+    },
+    {
+      "ref": "I4",
+      "path": "artifacts/capture_05/img_00.jpg",
+      "desc": "capture 4, 714x469, alt \"Nikolai looking at the evening sky\""
+    },
+    {
+      "ref": "I5",
+      "path": "artifacts/capture_06/img_00.jpg",
+      "desc": "capture 5, 714x469, alt \"Nikolai outside\""
+    },
+    {
+      "ref": "I6",
+      "path": "artifacts/capture_07/img_00.jpg",
+      "desc": "capture 6, 714x469, alt \"Nikolai and Uncle Bartholomew\""
+    },
+    {
+      "ref": "I7",
+      "path": "artifacts/capture_08/img_00.jpg",
+      "desc": "capture 7, 714x469, alt \"Nikolai in the dark woods\""
+    },
+    {
+      "ref": "I8",
+      "path": "artifacts/capture_09/img_00.jpg",
+      "desc": "capture 8, 714x469, alt \"Nikolai going home\""
+    },
+    {
+      "ref": "I9",
+      "path": "artifacts/capture_10/img_00.jpg",
+      "desc": "capture 9, 714x469, alt \"The End\""
+    },
+    {
+      "ref": "I10",
+      "path": "artifacts/capture_12/view_00.jpg",
+      "desc": "capture 10, screenshot of the page"
+    },
+    {
+      "ref": "I11",
+      "path": "artifacts/capture_12/view_01.jpg",
+      "desc": "capture 10, screenshot of the page"
+    }
+  ],
+  "variant": {
+    "name": "vision2",
+    "vision": true,
+    "llm_usage": {
+      "calls": 1,
+      "failed_calls": 0,
+      "prompt_tokens": 9300,
+      "completion_tokens": 6432,
+      "seconds": 51.4,
+      "by_purpose": {
+        "output_assessment": 1
+      },
+      "by_model": {
+        "stealth/space-bunny-alpha": 1
+      }
+    }
+  }
+}

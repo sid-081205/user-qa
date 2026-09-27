@@ -1,0 +1,87 @@
+{
+  "run": "20260926-203242_storyhearth_busy_parent_mobile",
+  "persona": "busy_parent_mobile",
+  "persona_name": "Priya Nair",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 12,
+  "pages_reviewed": 9,
+  "issues": 29,
+  "unique_issues": 24,
+  "evidence_quotes_verified": 0.923,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 7,
+    "2": 17,
+    "3": 5,
+    "4": 0
+  },
+  "issues_by_code": {
+    "ACC": 8,
+    "H8": 5,
+    "VALUE": 4,
+    "CONTENT": 3,
+    "H2": 3,
+    "H5": 2,
+    "DECEPTIVE": 2,
+    "H9": 1,
+    "H3": 1
+  },
+  "reached_output": true,
+  "output_parts": 9,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 2.0,
+    "character_consistency": 2.0,
+    "visual_quality": 2.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 52.5,
+  "sus_grade": "D",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": -0.25,
+    "hedonic": 0.25,
+    "overall": 0.0
+  },
+  "nps": 2,
+  "mean_valence": 0.42,
+  "min_valence": -2.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 8,
+      "seconds": 21.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 4,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 1,
+    "realism_overall": 5
+  },
+  "llm_usage": {
+    "calls": 15,
+    "failed_calls": 0,
+    "prompt_tokens": 79048,
+    "completion_tokens": 20931,
+    "seconds": 268.8,
+    "by_purpose": {
+      "step": 12,
+      "output_assessment": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 15
+    }
+  },
+  "wall_seconds": 349.4
+}

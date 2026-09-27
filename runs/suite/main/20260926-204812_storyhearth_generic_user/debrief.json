@@ -1,0 +1,188 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "The idea sounds appealing, but the errors and poor personalisation would make me reluctant to use it frequently.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The forms were mostly straightforward, but technical wording, unclear options, and unexplained states made the experience feel more complicated than necessary.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "I could complete the process, but several parts were confusing and the unclear loading screen made it far from easy overall.",
+      "rating": 2
+    },
+    {
+      "item": 4,
+      "reason": "I did not need technical help to use the forms, but the unexplained sync error and jargon made me think clearer guidance was needed.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The steps followed a logical sequence, but the generated book, selected style, and checkout pricing did not consistently reflect my choices.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The book ignored important personal details, displayed the wrong illustration style, and contained several text and layout inconsistencies.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people could probably complete the basic flow, but the unexplained loading, reading jargon, and checkout pricing could quickly create doubt.",
+      "rating": 2
+    },
+    {
+      "item": 8,
+      "reason": "It became awkward when the unexplained generation process ran and when the incorrect, unfinished book led into an unexpectedly expensive checkout.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I felt confident about entering the form details, but not about the output, price, or whether the site had applied my choices correctly.",
+      "rating": 1
+    },
+    {
+      "item": 10,
+      "reason": "I had to work out what Lexile meant, what the technical error meant, whether the story was still loading, and why the price was so high.",
+      "rating": 3
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 2
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 4
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 4
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 5
+    }
+  ],
+  "nps": 1,
+  "interview": {
+    "purpose": "This is a website for creating personalised children's storybooks featuring a child and other people they care about. It seems aimed mainly at parents or family members who want a keepsake story rather than just a generic children's book.",
+    "worst_moment": "The most frustrating moment was seeing the finished book ignore Grandpa Joe and the beach memory, then display a generic dark adventure with the wrong illustration style, spelling mistakes, unresolved placeholders, and an unfinished ending. The unexplained generation screen was also confusing, but the broken final result felt much worse.",
+    "best_moment": "The best moment was seeing that the site had actually generated a complete nine-page preview. The beginning was easy to understand and the idea of making a story starring Sam was exciting, even though the result did not meet my expectations.",
+    "abandon": "Yes. I would seriously consider giving up after reading the generated book, because it did not use the most important person in the story and was not presentation-ready. I would probably also pause at checkout, since the price was much higher than expected and premium gift wrap had been selected without me asking for it.",
+    "missing": "I expected fields for describing Grandpa Joe's appearance, such as his grey hair, and a way to include him consistently in the story and illustrations. I also wanted a clear reading-level recommendation for a five-year-old, a labelled and privacy-explained photo upload, useful loading status, a complete review of the story before ordering, and an obvious explanation of the price and reservation deadline.",
+    "trust": "I would not yet trust the site with payment or sensitive family photos. The unexplained sync message, unclear photo handling, silent truncation, and inaccurate output made me worry that the site was not handling my information or choices reliably.",
+    "willingness_to_pay": "I would not pay for this version. Even for a well-made personalised hardcover, I would expect around £25-£30, with any gift wrap, shipping, and other extras shown separately before checkout. I might pay more if the book accurately featured Sam and Grandpa Joe, had excellent age-appropriate language and illustrations, and included a clear proof before payment.",
+    "output_verdict": "I was pleasantly surprised that a complete preview appeared, but the finished book felt like a generic dark adventure rather than a personal keepsake. The missing Grandpa Joe, frightening and unrelated content, wrong style, spelling errors, unresolved placeholders, mismatched pictures, and incomplete ending would make me distrust the product and regenerate it rather than order it."
+  },
+  "recommendations": [
+    {
+      "change": "Rebuild the story around the supplied memory, including Sam, Grandpa Joe, the beach, the yellow bucket, and building sandcastles together.",
+      "page": "Generated storybook preview and generation logic",
+      "why": "Personalisation is the entire point of the product, and the current output omitted the most important relationship and events.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove invented dark-adventure content such as Uncle Bartholomew, threatening shadows, rain, woods, the lantern, and the red balloon unless it is actually based on the user's story.",
+      "page": "Generated storybook preview",
+      "why": "The unexpected dark and frightening material does not match the happy family memory and may not be appropriate for a young child.",
+      "priority": "high"
+    },
+    {
+      "change": "Make the final page a complete, meaningful ending that resolves the beach memory and includes “The End” only once.",
+      "page": "Generated storybook preview",
+      "why": "The unfinished sentence makes the book look broken and prevents it from feeling like a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Correct spelling and language errors, remove unresolved template placeholders, repeated text, truncation, and grammar mistakes, and prevent checkout until automated checks pass.",
+      "page": "Generated storybook preview and checkout",
+      "why": "These visible defects made the story look unprofessional and made me unwilling to pay.",
+      "priority": "high"
+    },
+    {
+      "change": "Add appearance fields for every important character, including Grandpa Joe, and carry those descriptions into the illustrations consistently.",
+      "page": "Create your book — characters and Story details form",
+      "why": "I could describe Sam but had no way to record Grandpa Joe's grey hair or ensure he appeared in the finished book.",
+      "priority": "high"
+    },
+    {
+      "change": "Regenerate illustrations so Grandpa Joe appears, Sam is clearly a brown-haired girl, the yellow bucket and sandcastles are visible, and each image matches its page.",
+      "page": "Generated storybook preview",
+      "why": "The current pictures were sparse, reused, sometimes mismatched, and did not support the story.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the book-generation state, show what is happening, and provide a safe way to leave or retry without losing entered information.",
+      "page": "Book generation loading",
+      "why": "The blank loading experience left me unsure whether to wait, go back, or refresh.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain reading levels in plain language and recommend a suitable range based on the child's age, while still allowing me to choose another range.",
+      "page": "Choose look and feel",
+      "why": "I did not know what Lexile meant or which range was appropriate for a five-year-old.",
+      "priority": "high"
+    },
+    {
+      "change": "Show the basic book price, shipping, gift wrap, taxes, and total separately, and do not preselect premium gift wrap.",
+      "page": "Hardcover checkout",
+      "why": "The £45.97 total was surprising, and an unwanted add-on was already selected when I arrived.",
+      "priority": "high"
+    },
+    {
+      "change": "Clarify exactly when a reserved price expires and what happens if the timer expires.",
+      "page": "Hardcover checkout",
+      "why": "The countdown felt pressuring because the site did not explain what was being reserved or when the offer would end.",
+      "priority": "medium"
+    },
+    {
+      "change": "Add proper visible labels, password recovery, stronger footer contrast, and a specific label for the photo upload.",
+      "page": "Log in, homepage, and Optional photo upload",
+      "why": "Placeholders, faint footer text, and an unlabelled file control made basic tasks less accessible and less clear.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain photo privacy, storage, and deletion, and explain any sync errors instead of displaying technical wording.",
+      "page": "Log in, Optional photo upload, and My books dashboard",
+      "why": "Unclear data handling and unexplained errors would make me hesitant to provide family photos or personal information.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "Promising idea and a quick-looking preview, but too many serious personalisation, writing, visual, loading, and pricing problems for me to trust or pay for it.",
+  "sus_score": {
+    "score": 32.5,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 1.8,
+    "mean_negative_items": 3.2,
+    "inconsistent_pairs": 1,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -1.25,
+    "hedonic": 0.5,
+    "overall": -0.375
+  }
+}

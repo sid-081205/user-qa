@@ -1,0 +1,10 @@
+{
+  "label": "auto: Checkout",
+  "url": "http://127.0.0.1:8765/checkout.html",
+  "views": [
+    "artifacts/capture_12/view_00.jpg",
+    "artifacts/capture_12/view_01.jpg"
+  ],
+  "images": [],
+  "dir": "artifacts/capture_12"
+}

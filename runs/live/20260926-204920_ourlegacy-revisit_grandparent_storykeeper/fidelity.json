@@ -1,0 +1,49 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "Margaret remains strongly task-focused throughout: she opens the existing book, corrects factual errors before export, personalises the title page, downloads the PDF, and checks the finished keepsake (steps 1–30)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She processes information comprehensively, checking text, illustrations, character identities, family relationships, metadata, all 32 pages, and whether corrections persist (steps 2–29). Her repeated verification is consistent with reading carefully before acting."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "She shows some low self-efficacy by worrying that the unchanged text means she did something wrong (step 5), but she also recovers methodically, interprets controls, and persists through repeated corrections rather than abandoning the task."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She avoids purchasing, checks whether image changes use her $4 credit, wants clarity about credit costs, and declines to proceed while the output remains inaccurate (steps 7, 17, 19, 21, 29). This strongly matches her risk-averse, cost-conscious approach."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She works step by step, opening options, editing text, checking the visible result, then editing images and reviewing the export. She repeatedly uses a predictable inspect-correct-verify process (steps 2–18 and 23–29)."
+    }
+  },
+  "voice_consistency": {
+    "score": 5,
+    "why": "The think-aloud is consistently polite, precise, and slightly formal, with Margaret's teaching background reflected in attention to sentence clarity, character accuracy, and a proper ending (for example, steps 3, 8, 15, and 29)."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific: she distinguishes her father from an invented grandfather, insists that the child be little Margaret rather than Oliver, remembers the blue shirt kite and Welsh hill, and personalises the story for Oliver (steps 2, 8, 12, 18, and 20)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural rather than exaggerated. The repeated checking, concern about cost, and preference for clear explanations fit the persona, though the extremely systematic 30-step audit and repeated reassurance that each click 'worked clearly' make her seem somewhat more relentlessly procedural than a typical person.",
+    "examples": [
+      "Repeatedly inspecting every scene and all 32 PDF pages to verify factual accuracy.",
+      "Frequently stating that a control worked because the expected box or choice appeared.",
+      "Continuing to revise images even after the text has been corrected because the child is still represented as a boy."
+    ]
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no evident use of developer jargon, hidden URLs, unexplained technical knowledge, or perfect recall of system details. Margaret reasons from visible controls, her stated family memory, and the PDF content."
+  },
+  "realism_overall": {
+    "score": 4,
+    "why": "The behaviour is plausible for a careful, non-technical user creating an emotionally important keepsake: she reads before acting, hesitates around credits and payment, blames herself when a save appears not to work, and carefully verifies the final PDF. The length and repetition of the audit make it somewhat more exhaustive and systematic than ordinary use, but it remains believable overall."
+  }
+}

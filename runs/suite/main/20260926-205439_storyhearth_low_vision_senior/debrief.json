@@ -1,0 +1,176 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would use the website if it produced a proper book about Lily and Conker, but not in its present form.",
+      "rating": 2
+    },
+    {
+      "item": 2,
+      "reason": "The forms were fairly straightforward, but the technical wording, hidden fields and confusing errors made the whole job more complicated than necessary.",
+      "rating": 2
+    },
+    {
+      "item": 3,
+      "reason": "I could manage the form with clear labels and large buttons, but the tiny page controls and weak grey text made it tiring at 200% zoom.",
+      "rating": 3
+    },
+    {
+      "item": 4,
+      "reason": "I managed the basic steps without help, but I would want someone to show me how to fix the story, pictures and payment problems.",
+      "rating": 3
+    },
+    {
+      "item": 5,
+      "reason": "The steps generally followed in order, but the choices did not carry through properly to the finished book.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The selected style, title, story, pictures and checkout details did not agree with one another.",
+      "rating": 4
+    },
+    {
+      "item": 7,
+      "reason": "A person with steady eyesight might get on quickly, but small controls, pale text and unexplained choices would stop many older people.",
+      "rating": 3
+    },
+    {
+      "item": 8,
+      "reason": "It was not dreadful to fill in, but I had to work hard to read the small controls and check the finished pages.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I felt fairly confident filling in the form, but not confident about the book, the unexpected gift wrap or the final cost.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not need a long lesson, but I did need to learn what several technical words meant.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 4
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 4
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 4
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 3
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 2
+    }
+  ],
+  "nps": 3,
+  "interview": {
+    "purpose": "This is for making a personalised storybook featuring a child and the people and memories that matter to them. It is especially for parents or relatives who want to keep a story for a child.",
+    "worst_moment": "The finished book was the worst moment. The title was misspelt, the pictures were in the wrong style, Conker was missing and the story ended in the middle of a sentence. I could not give that to Lily as a proper keepsake.",
+    "best_moment": "The best moment was entering the memory in my own words and choosing the classic storybook pictures. The steps felt reassuringly simple once the questions were clear.",
+    "abandon": "I would probably have given up when the book came out with the wrong title, wrong style, missing Conker and an unfinished ending. At 200% zoom, the tiny page arrows would also have made me stop if I could not read or hit them.",
+    "missing": "I expected a simple story about me carving Conker, giving it to Lily at Christmas and riding it with her across the Norfolk fields. I also expected to edit the story, see every page comfortably, and check that the pictures and words matched before paying.",
+    "trust": "I would be careful about entering family information until I knew the site would keep it safe and use it properly. I was particularly wary of the preselected £7.99 gift wrap and the countdown pressuring me at checkout.",
+    "willingness_to_pay": "I would pay about £10 for a proper digital storybook if it were correct, and perhaps £15 to £20 for a nicely printed copy. I would pay more only after seeing the corrected title, complete story, correct pictures and clear total price with no surprise extras.",
+    "output_verdict": "I was disappointed and frustrated. It was not the loving book I wanted for Lily, and I would not trust it as a keepsake without a great deal of checking and correcting."
+  },
+  "recommendations": [
+    {
+      "change": "Rewrite the story as a short, simple memory about Harold carving Conker, giving it to Lily at Christmas and taking her on an imaginary gallop across the Norfolk fields.",
+      "page": "Generated storybook preview",
+      "why": "The story must sound like my family memory and be suitable for a four-year-old, not a frightening generic adventure full of grandadventure words.",
+      "priority": "high"
+    },
+    {
+      "change": "Correct “Adventrue”, “Lil”, “all way home” and every other visible spelling or template error, complete the final sentence and remove repeated text and the duplicated “The End”.",
+      "page": "Generated storybook preview",
+      "why": "A keepsake with obvious mistakes would be embarrassing to hand to Lily and would make me doubt the whole book.",
+      "priority": "high"
+    },
+    {
+      "change": "Redraw Lily with her strawberry-blonde bob and pink wellies, and show Harold and Conker consistently in the relevant pictures.",
+      "page": "Generated storybook preview",
+      "why": "The people and the hand-carved horse are the heart of the story. Conker being absent from the pictures makes the book miss its purpose.",
+      "priority": "high"
+    },
+    {
+      "change": "Use the requested classic ink-and-colour storybook style instead of changing it to Pop-art comic, and check that each picture matches the words on its page.",
+      "page": "Choose the look & feel / Generated storybook preview",
+      "why": "I selected a particular style, and I need to know the finished book looks like the one I ordered.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace tiny icon-only page arrows and other small controls with large, clearly labelled buttons such as “Previous page” and “Next page”.",
+      "page": "Generated storybook preview",
+      "why": "At 200% zoom the arrows were hard to see and difficult to hit. I should be able to inspect all nine pages independently.",
+      "priority": "high"
+    },
+    {
+      "change": "Make all text and important instructions high contrast, especially the home page explanation, form examples and footer links.",
+      "page": "Home page / Create your book / all pages",
+      "why": "Pale grey writing is effectively invisible to me and turns ordinary reading into a struggle.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove the countdown and do not preselect paid gift wrap or any other extra that I did not request.",
+      "page": "Hardcover checkout",
+      "why": "A countdown makes a straightforward purchase feel hurried, and the unexpected £7.99 made me suspicious of the total.",
+      "priority": "high"
+    },
+    {
+      "change": "Explain the reading-level choices in plain English and state why a level was selected for a four-year-old.",
+      "page": "Choose the look & feel",
+      "why": "“Lexile 200L–500L” is workshop jargon to me, and I should understand an important choice before I make it.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain the dashboard error and profile-sync problem, with a clear way to recover without making me think I have done something wrong.",
+      "page": "My books",
+      "why": "The unexplained error worried me and made the account seem unreliable.",
+      "priority": "medium"
+    },
+    {
+      "change": "Keep important fields and the Next button visible where possible, with proper visible labels for login fields and the photo upload.",
+      "page": "Log in / Create your book / Optional photo upload",
+      "why": "I should not have to hunt for the next action or guess what an empty box means, especially at high zoom.",
+      "priority": "medium"
+    }
+  ],
+  "one_line_verdict": "The site took my details and made a book, but the result was more like a rough plank with the nails showing than a keepsake I would be proud to give Lily.",
+  "sus_score": {
+    "score": 45.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.4,
+    "mean_negative_items": 2.8,
+    "inconsistent_pairs": 2,
+    "consistency_flag": true
+  },
+  "ueq_s_score": {
+    "pragmatic": -0.5,
+    "hedonic": -0.5,
+    "overall": -0.5
+  }
+}

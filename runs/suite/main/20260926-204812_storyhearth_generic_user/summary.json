@@ -1,0 +1,85 @@
+{
+  "run": "20260926-204812_storyhearth_generic_user",
+  "persona": "generic_user",
+  "persona_name": "Test User",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 12,
+  "pages_reviewed": 10,
+  "issues": 26,
+  "unique_issues": 25,
+  "evidence_quotes_verified": 0.792,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 3,
+    "2": 17,
+    "3": 6,
+    "4": 0
+  },
+  "issues_by_code": {
+    "CONTENT": 5,
+    "ACC": 5,
+    "H2": 3,
+    "H1": 3,
+    "H3": 2,
+    "TRUST": 2,
+    "DECEPTIVE": 2,
+    "H9": 1,
+    "H6": 1,
+    "H5": 1,
+    "VALUE": 1
+  },
+  "reached_output": true,
+  "output_parts": 10,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 2.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 2.0,
+    "character_consistency": 3.0,
+    "visual_quality": 2.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 32.5,
+  "sus_grade": "F",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": -1.25,
+    "hedonic": 0.5,
+    "overall": -0.375
+  },
+  "nps": 1,
+  "mean_valence": -0.08,
+  "min_valence": -2.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 8,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "skipped": true,
+    "reason": "baseline condition has no persona"
+  },
+  "llm_usage": {
+    "calls": 14,
+    "failed_calls": 0,
+    "prompt_tokens": 66311,
+    "completion_tokens": 25497,
+    "seconds": 306.2,
+    "by_purpose": {
+      "step": 12,
+      "output_assessment": 1,
+      "debrief": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 14
+    }
+  },
+  "wall_seconds": 372.9
+}

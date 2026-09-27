@@ -1,0 +1,188 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not want to use it frequently because the story it produced did not preserve the family memory I entered.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The website was more complicated than necessary because of technical wording, unexplained errors, and an unclear creation process.",
+      "rating": 3
+    },
+    {
+      "item": 3,
+      "reason": "The forms and main buttons were generally easy to follow, but the result and checkout were frustrating.",
+      "rating": 3
+    },
+    {
+      "item": 4,
+      "reason": "I did not need a technical person to complete the basic process, although the sync error made me uneasy.",
+      "rating": 2
+    },
+    {
+      "item": 5,
+      "reason": "The steps were reasonably connected, but the preview did not match my choices and the checkout introduced an unexpected charge.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "There was substantial inconsistency between the requested story, the selected reading level, the illustration style, and the generated book.",
+      "rating": 5
+    },
+    {
+      "item": 7,
+      "reason": "Most people could probably learn the forms quickly, but the technical language and errors would reduce their confidence.",
+      "rating": 3
+    },
+    {
+      "item": 8,
+      "reason": "The overall process was somewhat awkward because of the unexplained loading state, mismatched output, and confusing checkout pricing.",
+      "rating": 3
+    },
+    {
+      "item": 9,
+      "reason": "I felt confident while filling in the form, but not when the book appeared or when I reached checkout.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "I did not have to learn many functions, but the site failed to explain several important states and costs.",
+      "rating": 2
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 2
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 3
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 5
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 4
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 6
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 6
+    }
+  ],
+  "nps": 1,
+  "interview": {
+    "purpose": "This is a website for creating personalised storybooks starring children and important people in their lives, then optionally ordering a printed keepsake. It seems aimed at parents and families who want to turn a personal memory into a children's book.",
+    "worst_moment": "The most frustrating moment was seeing the finished preview: it replaced Grandpa Joe with an invented uncle, used frightening and advanced material for a five-year-old, contained serious language errors, and used pop-art images instead of the soft watercolour style I selected. The default premium gift wrap at checkout made the purchase feel deceptive as well.",
+    "best_moment": "The best moment was entering the beach memory through the clear creation form. The questions about the people, place, object, and memory made it easy to explain what I wanted the story to include.",
+    "abandon": "I would probably have given up when I saw the generated book, because it did not represent the family memory I supplied. If I had continued to checkout, the unexpected price and preselected gift wrap would have been another strong reason to stop.",
+    "missing": "I expected the book to show Sam and Grandpa Joe building sandcastles together at the beach, using the yellow bucket and soft watercolour illustrations. I also expected to see the full price, shipping, delivery information, and any optional charges clearly before choosing to order.",
+    "trust": "I was willing to enter the story details, but the unexplained profile sync error made me hesitate about how my information was being handled. The mismatch between the requested content and the output also made me trust the site less with a family keepsake.",
+    "willingness_to_pay": "I would not pay for this result. Even for a good version, a fair price would probably be around £20-£25 including ordinary shipping; I would pay more only if the story accurately captured the requested characters and memory, the illustrations were consistently high quality, and all costs were transparent. I would not pay extra for gift wrap unless I actively selected it.",
+    "output_verdict": "I am very disappointed. The output does not tell the family memory I supplied, replaces Grandpa Joe with an invented uncle, includes unsuitable language and frightening material, and looks generic and unfinished. I would not accept it as proof or pay for it."
+  },
+  "recommendations": [
+    {
+      "change": "Rewrite the story around the supplied memory, keeping the requested people, relationship, place, object, and main event, with a clear and emotionally satisfying ending.",
+      "page": "Generated storybook preview",
+      "why": "The most important purpose of the product is to preserve a personal family memory, and this output failed at that basic purpose.",
+      "priority": "high"
+    },
+    {
+      "change": "Apply the selected illustration style consistently and require the images to match the text and the supplied character details.",
+      "page": "Generated storybook preview",
+      "why": "Paying for a keepsake would be pointless if the pictures do not represent the selected style or the people in the story.",
+      "priority": "high"
+    },
+    {
+      "change": "Use simple, warm, age-appropriate language for a five-year-old and remove frightening, advanced, or unfinished material.",
+      "page": "Generated storybook preview",
+      "why": "The story should be engaging and comforting for Sam, not confusing, threatening, or written at an unexpectedly advanced level.",
+      "priority": "high"
+    },
+    {
+      "change": "Run an automatic final check for spelling, grammar, repeated text, unresolved placeholders, incomplete sentences, and character consistency before showing the book.",
+      "page": "Generated storybook preview",
+      "why": "Typos, awkward sentences, and unfinished output make the book look careless and undermine confidence in the product.",
+      "priority": "high"
+    },
+    {
+      "change": "Show the full hardcover price, shipping, delivery details, and any optional extras before the user clicks Order hardcover.",
+      "page": "Generated storybook preview",
+      "why": "I should not discover the final cost only after starting checkout.",
+      "priority": "high"
+    },
+    {
+      "change": "Do not preselect premium gift wrap or any other paid extra.",
+      "page": "Hardcover checkout",
+      "why": "I felt annoyed because I had not requested gift wrap and did not expect it to increase the total.",
+      "priority": "high"
+    },
+    {
+      "change": "Make the total, shipping charge, delivery information, and optional charges understandable at a glance.",
+      "page": "Hardcover checkout",
+      "why": "The final cost was not clear enough, and the countdown-style reservation added unnecessary pressure.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace technical homepage phrases such as “multimodal generative narrative engine” and “lived-experience corpus” with plain explanations.",
+      "page": "StoryHearth homepage",
+      "why": "The technical wording sounds more complicated than the family activity needs to be.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace the unexplained technical sync error with a clear, reassuring message and a recovery action.",
+      "page": "My books dashboard",
+      "why": "The error made me wonder whether my details were safe and whether I could continue using the account.",
+      "priority": "medium"
+    },
+    {
+      "change": "Explain what is happening during the creation loading state and indicate that the book is being generated and saved.",
+      "page": "Create your book – Creating book",
+      "why": "The spinner alone did not tell me whether the process was still working or had encountered a problem.",
+      "priority": "medium"
+    },
+    {
+      "change": "Use persistent, accessible labels for the login fields and file upload, and improve the low-contrast footer text.",
+      "page": "Log in and Optional photo upload",
+      "why": "Clear labels and readable text would make these parts easier and more reassuring to use, especially for less technical users.",
+      "priority": "medium"
+    },
+    {
+      "change": "Make the ordering control visible earlier and keep the paid regeneration option less prominent than the option to review or edit the book.",
+      "page": "Generated storybook preview",
+      "why": "The most important action was below the fold, while an extra paid action was too prominent.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "Easy enough to fill in, but the final book was so inaccurate, frightening, unfinished, and expensive that I would not use it or recommend it.",
+  "sus_score": {
+    "score": 40.0,
+    "grade": "F",
+    "above_average_68": false,
+    "mean_positive_items": 2.2,
+    "mean_negative_items": 3.0,
+    "inconsistent_pairs": 1,
+    "consistency_flag": false
+  },
+  "ueq_s_score": {
+    "pragmatic": -1.25,
+    "hedonic": 1.25,
+    "overall": 0.0
+  }
+}

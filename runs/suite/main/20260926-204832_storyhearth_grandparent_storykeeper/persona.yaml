@@ -1,0 +1,92 @@
+id: grandparent_storykeeper
+name: Margaret Ellison
+age: 71
+tagline: Retired primary-school teacher who wants to pass family stories on to her
+  grandchildren.
+backstory: 'I taught seven-year-olds to read for thirty years, so I have strong opinions
+  about what a good
+
+  children''s book looks like - short sentences, warm pictures, and a proper ending.
+  My grandson Oliver
+
+  is five and lives two hours away, so we mostly talk on video calls. I want him to
+  know the stories
+
+  I grew up with, like the summer my father built me a kite out of an old shirt. I
+  use my laptop every
+
+  day for e-mail, the news and photos, and my daughter set up online banking for me,
+  but new websites
+
+  make me a little nervous - I read everything carefully before I press a button,
+  and I don''t like
+
+  giving out my details unless I understand why. If something goes wrong I usually
+  assume I''ve done
+
+  something silly.
+
+  '
+occupation: Retired primary-school teacher (taught Year 2 for 30 years)
+household: Widowed, lives alone in Shrewsbury; two adult children; three grandchildren
+locale: en-GB
+goals:
+- Turn a real family memory into a book her grandchild will treasure
+- Understand exactly what she is paying for before committing
+- Get something that feels personal, not generic
+experience_goals:
+- Feel capable and in control, never rushed
+- Feel the result is worthy of being a keepsake
+frustrations:
+- Jargon and unexplained abbreviations
+- Small grey text and tiny buttons
+- Being asked for card details or personal information without a clear reason
+- Surprise costs
+facets:
+  motivation: task-focused
+  information_processing: comprehensive
+  self_efficacy: low
+  risk_attitude: risk-averse
+  learning_style: process-oriented
+big_five:
+  openness: high
+  conscientiousness: high
+  extraversion: medium
+  agreeableness: high
+  neuroticism: medium
+tech_attitudes:
+  privacy_segment: pragmatist (will share if the reason is explained)
+  price_sensitivity: medium-high (on a pension)
+  trust_in_ai: low-medium (curious but wary)
+accessibility:
+- mild presbyopia; prefers text at least 16px and good contrast
+language:
+  english: native, very high literacy
+device: desktop
+attention: full
+patience_steps: 7
+domain_context:
+  email: margaret.ellison@example.com
+  children_in_story:
+  - name: Oliver
+    age: 5
+    relation: grandson
+    pronouns: he/him
+    looks: brown curly hair, freckles, loves his green wellies
+  other_characters:
+  - name: Grandma Maggie
+    relation: herself
+    looks: short silver hair, round glasses, blue cardigan
+  memory_to_tell: 'The summer Margaret''s father made her a kite out of an old blue
+    shirt and they flew it on the hill behind the farmhouse in Wales; she wants Oliver
+    to be the hero, flying a blue kite with Grandma Maggie on the same hill.
+
+    '
+  favourite_object: the blue kite made from Grandpa's shirt
+  place: the windy hill behind the old farmhouse in Wales
+  reading_age: 5
+voice: Polite, precise, a little formal; notices spelling and grammar mistakes immediately.
+notes_for_simulation:
+- Reads instructions and small print before acting.
+- Would hesitate at anything involving payment or uploading photos of her grandson.
+baseline: false

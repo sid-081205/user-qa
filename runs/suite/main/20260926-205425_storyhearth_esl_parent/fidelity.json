@@ -1,0 +1,44 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "The participant consistently focuses on completing the storybook task and checking that it includes Linh, Bà Nội, Hoi An, and the red star-shaped lantern (steps 4–5, 9–11)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "The participant gathers detailed information before acting, reads all nine pages, checks spelling, artwork, cultural details, page count, shipping, tax, currency, and optional charges (steps 9–17)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "The participant does not blame themselves when the result is poor. They ask what unclear words mean, such as “multimodal generative narrative engine” and “Lexile,” and seek clearer explanations (steps 1, 6, 8)."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "The participant avoids irreversible or costly actions, removes the unwanted gift wrap, refuses to enter payment details, and checks the final cost before buying (steps 11–17)."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "The participant follows the process step by step, explains what they are entering, uses the clearest available options, and pauses when the system does not explain what is happening (steps 3–8)."
+    }
+  },
+  "voice_consistency": {
+    "score": 4,
+    "why": "The think-aloud uses simple English, occasional imperfect grammar, and direct questions about difficult terms, such as “I do not know what ‘Lexile’ means” (step 6). It remains consistent with a B1 English speaker, although some thoughts are polished or slightly incomplete."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is clearly Minh rather than a generic user. They use specific family details consistently: Linh’s red ribbon and age, Bà Nội in a purple áo dài, the Hoi An lantern festival, and the red star-shaped paper lantern (steps 4–5, 9–11)."
+  },
+  "caricature": {
+    "score": 1,
+    "why": "The portrayal is natural and avoids stereotypical behavior. Minh’s caution is explained by the persona’s price sensitivity, privacy concerns, English proficiency, and care about cultural accuracy rather than by a broad cultural stereotype."
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "The participant does not use hidden URLs, developer terminology, or advanced technical knowledge. They explicitly report unfamiliar terms instead of explaining them as an expert (steps 1 and 6)."
+  },
+  "realism_overall": {
+    "score": 5,
+    "why": "The session is highly plausible: Minh completes the form carefully, becomes frustrated by a misspelled title and culturally incomplete story, checks every page, investigates hidden costs, removes an unwanted add-on, and stops before paying. The reactions are consistent and grounded in the supplied persona details."
+  }
+}

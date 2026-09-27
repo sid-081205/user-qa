@@ -1,0 +1,44 @@
+{
+  "facet_consistency": {
+    "motivation": {
+      "score": 5,
+      "why": "Margaret remains focused on creating a meaningful, personalised keepsake for Oliver. She deliberately makes him the hero, includes Grandma Maggie, preserves the kite memory, and judges the result against what would be treasured (steps 4–10)."
+    },
+    "information_processing": {
+      "score": 5,
+      "why": "She examines explanations, choices, costs, and consequences before acting. She notices technical terms, checks whether the long memory was retained, reads checkout details, and stops when consent or information is unclear (steps 1, 6, 7, 9, and 11)."
+    },
+    "self_efficacy": {
+      "score": 4,
+      "why": "She handles the form competently but becomes unsettled by unfamiliar errors and outcomes beyond her control. The unexplained sync error and silent loading state make her question what happened and whether she has made a mistake (steps 3 and 8), consistent with low self-efficacy without becoming wholly incapable."
+    },
+    "risk_attitude": {
+      "score": 5,
+      "why": "She is appropriately cautious about privacy, payment, and irreversible or costly actions. She declines to upload Oliver's photo without an explanation, notices the unexplained regeneration price, and stops before supplying personal or payment details when gift wrap is preselected (steps 7, 9, and 11)."
+    },
+    "learning_style": {
+      "score": 5,
+      "why": "She follows the process sequentially and wants visible confirmation at each stage. She prefers straightforward fields and step-by-step reassurance, becomes uncomfortable when the interface offers unexplained jargon or no progress explanation, and evaluates the completed narrative in order (steps 2, 4–10)."
+    }
+  },
+  "voice_consistency": {
+    "score": 5,
+    "why": "The tone is consistently polite, precise, and slightly formal, with phrases such as “I shall,” “I can see,” and “I want to be clear.” Her attention to literacy, grammar, reading suitability, privacy, and proper endings strongly fits a retired primary-school teacher (steps 1, 6, 9, and 10)."
+  },
+  "individuation": {
+    "score": 5,
+    "why": "The participant is highly specific rather than generic: she adapts her father’s Welsh kite memory so Oliver is the hero, uses her own “Grandma Maggie” identity, values a proper ending, declines her grandson’s photo, and cares deeply about the blue kite and the relationship being represented (steps 4–10)."
+  },
+  "caricature": {
+    "score": 2,
+    "why": "The portrayal is mostly natural and grounded in Margaret's biography, though it occasionally feels unusually polished and audit-like. Her systematically precise observations of accessibility, accessibility labels, progress, and interface language resemble a UX reviewer more than an ordinary participant, particularly when nearly every screen receives a formal diagnostic."
+  },
+  "knowledge_leakage": {
+    "score": 1,
+    "why": "There is no clear use of hidden system knowledge, guessed URLs, technical expertise, or developer information. Her uncertainty about “Lexile,” question about data safety, and reliance on visible explanations are appropriate to the persona (especially steps 6–8)."
+  },
+  "realism_overall": {
+    "score": 4,
+    "why": "The session is highly plausible for a cautious, experienced older laptop user who wants clear costs, privacy explanations, reading-age guidance, and a polished keepsake. The main slight artificiality is the near-perfect consistency and researcher-like thoroughness of her critique, but her hesitation and stopping at checkout are believable."
+  }
+}

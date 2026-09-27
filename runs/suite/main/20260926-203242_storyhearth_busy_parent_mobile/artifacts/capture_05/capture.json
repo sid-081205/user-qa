@@ -1,0 +1,16 @@
+{
+  "label": "The Magical Adventrue of Aarav page 4",
+  "url": "http://127.0.0.1:8765/book.html",
+  "views": [
+    "artifacts/capture_05/view_00.jpg"
+  ],
+  "images": [
+    {
+      "path": "artifacts/capture_05/img_00.jpg",
+      "alt": "Aarav looking at the evening sky",
+      "w": 296,
+      "h": 194
+    }
+  ],
+  "dir": "artifacts/capture_05"
+}

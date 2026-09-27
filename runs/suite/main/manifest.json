@@ -1,0 +1,191 @@
+{
+  "sessions": [
+    {
+      "persona": "grandparent_storykeeper",
+      "rep": 1,
+      "returncode": 0,
+      "seconds": 266.4,
+      "run_dir": "runs/suite/main/20260926-203202_storyhearth_grandparent_storykeeper",
+      "log": "runs/suite/main/logs/grandparent_storykeeper_r1.log"
+    },
+    {
+      "persona": "tech_savvy_parent",
+      "rep": 1,
+      "returncode": 0,
+      "seconds": 344.7,
+      "run_dir": "runs/suite/main/20260926-203222_storyhearth_tech_savvy_parent",
+      "log": "runs/suite/main/logs/tech_savvy_parent_r1.log"
+    },
+    {
+      "persona": "busy_parent_mobile",
+      "rep": 1,
+      "returncode": 0,
+      "seconds": 349.7,
+      "run_dir": "runs/suite/main/20260926-203242_storyhearth_busy_parent_mobile",
+      "log": "runs/suite/main/logs/busy_parent_mobile_r1.log"
+    },
+    {
+      "persona": "esl_parent",
+      "rep": 1,
+      "returncode": 0,
+      "seconds": 325.1,
+      "run_dir": "runs/suite/main/20260926-203628_storyhearth_esl_parent",
+      "log": "runs/suite/main/logs/esl_parent_r1.log"
+    },
+    {
+      "persona": "low_vision_senior",
+      "rep": 1,
+      "returncode": 0,
+      "seconds": 340.8,
+      "run_dir": "runs/suite/main/20260926-203806_storyhearth_low_vision_senior",
+      "log": "runs/suite/main/logs/low_vision_senior_r1.log"
+    },
+    {
+      "persona": "privacy_conscious_parent",
+      "rep": 1,
+      "returncode": 0,
+      "seconds": 404.3,
+      "run_dir": "runs/suite/main/20260926-203831_storyhearth_privacy_conscious_parent",
+      "log": "runs/suite/main/logs/privacy_conscious_parent_r1.log"
+    },
+    {
+      "persona": "tech_savvy_parent",
+      "rep": 2,
+      "returncode": 0,
+      "seconds": 305.6,
+      "run_dir": "runs/suite/main/20260926-204852_storyhearth_tech_savvy_parent",
+      "log": "runs/suite/main/logs/tech_savvy_parent_r2.log"
+    },
+    {
+      "persona": "generic_user",
+      "rep": 1,
+      "returncode": 0,
+      "seconds": 373.2,
+      "run_dir": "runs/suite/main/20260926-204812_storyhearth_generic_user",
+      "log": "runs/suite/main/logs/generic_user_r1.log"
+    },
+    {
+      "persona": "grandparent_storykeeper",
+      "rep": 2,
+      "returncode": 0,
+      "seconds": 367.6,
+      "run_dir": "runs/suite/main/20260926-204832_storyhearth_grandparent_storykeeper",
+      "log": "runs/suite/main/logs/grandparent_storykeeper_r2.log"
+    },
+    {
+      "persona": "busy_parent_mobile",
+      "rep": 2,
+      "returncode": 0,
+      "seconds": 300.8,
+      "run_dir": "runs/suite/main/20260926-205357_storyhearth_busy_parent_mobile",
+      "log": "runs/suite/main/logs/busy_parent_mobile_r2.log"
+    },
+    {
+      "persona": "low_vision_senior",
+      "rep": 2,
+      "returncode": 0,
+      "seconds": 315.3,
+      "run_dir": "runs/suite/main/20260926-205439_storyhearth_low_vision_senior",
+      "log": "runs/suite/main/logs/low_vision_senior_r2.log"
+    },
+    {
+      "persona": "esl_parent",
+      "rep": 2,
+      "returncode": 0,
+      "seconds": 398.4,
+      "run_dir": "runs/suite/main/20260926-205425_storyhearth_esl_parent",
+      "log": "runs/suite/main/logs/esl_parent_r2.log"
+    },
+    {
+      "persona": "generic_user",
+      "rep": 2,
+      "returncode": 0,
+      "seconds": 254.9,
+      "run_dir": "runs/suite/main/20260926-205955_storyhearth_generic_user",
+      "log": "runs/suite/main/logs/generic_user_r2.log"
+    },
+    {
+      "persona": "privacy_conscious_parent",
+      "rep": 2,
+      "returncode": 0,
+      "seconds": 323.0,
+      "run_dir": "runs/suite/main/20260926-205858_storyhearth_privacy_conscious_parent",
+      "log": "runs/suite/main/logs/privacy_conscious_parent_r2.log"
+    },
+    {
+      "persona": "generic_user",
+      "rep": 4,
+      "returncode": 0,
+      "seconds": 242.3,
+      "run_dir": "runs/suite/main/20260926-211510_storyhearth_generic_user",
+      "log": "runs/suite/main/logs/generic_user_r4.log"
+    },
+    {
+      "persona": "generic_user",
+      "rep": 5,
+      "returncode": 0,
+      "seconds": 237.9,
+      "run_dir": "runs/suite/main/20260926-211530_storyhearth_generic_user",
+      "log": "runs/suite/main/logs/generic_user_r5.log"
+    },
+    {
+      "persona": "generic_user",
+      "rep": 3,
+      "returncode": 0,
+      "seconds": 329.2,
+      "run_dir": "runs/suite/main/20260926-211450_storyhearth_generic_user",
+      "log": "runs/suite/main/logs/generic_user_r3.log"
+    },
+    {
+      "persona": "generic_user",
+      "rep": 6,
+      "returncode": 0,
+      "seconds": 252.2,
+      "run_dir": "runs/suite/main/20260926-211912_storyhearth_generic_user",
+      "log": "runs/suite/main/logs/generic_user_r6.log"
+    }
+  ],
+  "suite": {
+    "site": "storyhearth",
+    "personas": "grandparent_storykeeper,tech_savvy_parent,busy_parent_mobile,esl_parent,low_vision_senior,privacy_conscious_parent,generic_user",
+    "reps": 2,
+    "name": "main",
+    "parallel": 3,
+    "model": null,
+    "fallbacks": null,
+    "no_vision": false,
+    "max_steps": null,
+    "max_calls": null,
+    "temperature": null,
+    "no_fidelity": false,
+    "stagger": 20.0,
+    "site_url": "http://127.0.0.1:8765/"
+  },
+  "code_snapshots": [
+    {
+      "taken": "2026-09-26T20:48:11",
+      "git_head": "dcc36778bd9e71c6e2e17f570786ad7a250b5967",
+      "dirty": "",
+      "diff": ""
+    }
+  ],
+  "invocations": [
+    {
+      "site": "storyhearth",
+      "personas": "generic_user",
+      "reps": 6,
+      "name": "main",
+      "parallel": 3,
+      "model": null,
+      "fallbacks": null,
+      "no_vision": false,
+      "max_steps": null,
+      "max_calls": null,
+      "temperature": null,
+      "no_fidelity": false,
+      "stagger": 20.0,
+      "site_url": "http://127.0.0.1:8765/",
+      "started": "2026-09-26T21:14:50"
+    }
+  ]
+}

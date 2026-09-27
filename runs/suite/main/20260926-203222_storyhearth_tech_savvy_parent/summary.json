@@ -1,0 +1,89 @@
+{
+  "run": "20260926-203222_storyhearth_tech_savvy_parent",
+  "persona": "tech_savvy_parent",
+  "persona_name": "Daniel Okafor",
+  "model": "stealth/space-bunny-alpha",
+  "status": "done",
+  "steps": 16,
+  "pages_reviewed": 11,
+  "issues": 46,
+  "unique_issues": 37,
+  "evidence_quotes_verified": 0.854,
+  "issues_by_severity": {
+    "0": 0,
+    "1": 7,
+    "2": 22,
+    "3": 15,
+    "4": 2
+  },
+  "issues_by_code": {
+    "CONTENT": 12,
+    "ACC": 12,
+    "TRUST": 6,
+    "H3": 3,
+    "DECEPTIVE": 3,
+    "H5": 2,
+    "H2": 2,
+    "H1": 2,
+    "VALUE": 2,
+    "H6": 1,
+    "H9": 1
+  },
+  "reached_output": true,
+  "output_parts": 10,
+  "output_criteria": {
+    "fidelity": 1.0,
+    "coherence": 1.0,
+    "age_fit": 1.0,
+    "language": 1.0,
+    "text_image_fit": 1.0,
+    "character_consistency": 1.0,
+    "visual_quality": 1.0,
+    "emotional_resonance": 1.0
+  },
+  "keepsake_worthiness": 1,
+  "sus": 30.0,
+  "sus_grade": "F",
+  "sus_consistency_flag": false,
+  "ueq_s": {
+    "pragmatic": 1.5,
+    "hedonic": 0.0,
+    "overall": 0.75
+  },
+  "nps": 0,
+  "mean_valence": -0.75,
+  "min_valence": -2.0,
+  "abandonment": null,
+  "waits": [
+    {
+      "step": 10,
+      "seconds": 9.0,
+      "timeout": false,
+      "url": "http://127.0.0.1:8765/create.html"
+    }
+  ],
+  "fidelity": {
+    "voice_consistency": 5,
+    "individuation": 5,
+    "caricature": 2,
+    "knowledge_leakage": 1,
+    "realism_overall": 5
+  },
+  "llm_usage": {
+    "calls": 19,
+    "failed_calls": 0,
+    "prompt_tokens": 100596,
+    "completion_tokens": 26319,
+    "seconds": 263.9,
+    "by_purpose": {
+      "step": 16,
+      "output_assessment": 1,
+      "debrief": 1,
+      "fidelity_audit": 1
+    },
+    "by_model": {
+      "stealth/space-bunny-alpha": 19
+    }
+  },
+  "wall_seconds": 344.4
+}

@@ -1,0 +1,182 @@
+{
+  "sus": [
+    {
+      "item": 1,
+      "reason": "I would not use it frequently because the finished story was not faithful enough to be worth keeping.",
+      "rating": 1
+    },
+    {
+      "item": 2,
+      "reason": "The forms were fairly simple, but technical wording, vague errors, and unexplained options made the site feel more complicated than necessary.",
+      "rating": 2
+    },
+    {
+      "item": 3,
+      "reason": "I could complete the process, but the account error and incorrect generated book made the overall experience anything but easy.",
+      "rating": 3
+    },
+    {
+      "item": 4,
+      "reason": "I did not need technical help to complete the form, but the website should not require technical expertise to explain its errors or personalisation options.",
+      "rating": 1
+    },
+    {
+      "item": 5,
+      "reason": "The steps were connected well enough to reach a finished product, but my illustration choice and family-memory details were not carried through correctly.",
+      "rating": 2
+    },
+    {
+      "item": 6,
+      "reason": "The selected Watercolour style became Pop-art, the dashboard showed a vague sync error, and several text and checkout details were inconsistent.",
+      "rating": 4
+    },
+    {
+      "item": 7,
+      "reason": "Most people could learn the form quickly, although the technical language, unclear errors, and preview problems would cause confusion.",
+      "rating": 4
+    },
+    {
+      "item": 8,
+      "reason": "The main setup was not too awkward, but having to inspect a broken-looking book and uncover the delivered price made the process cumbersome.",
+      "rating": 2
+    },
+    {
+      "item": 9,
+      "reason": "I felt reasonably confident entering the details, but the misspellings, wrong visual style, and weak story destroyed my confidence in the result.",
+      "rating": 2
+    },
+    {
+      "item": 10,
+      "reason": "Very little needed to be learned in order to begin, as the three-step process explained the basic task.",
+      "rating": 1
+    }
+  ],
+  "ueq_s": [
+    {
+      "pair": "obstructive/supportive",
+      "rating": 3
+    },
+    {
+      "pair": "complicated/easy",
+      "rating": 5
+    },
+    {
+      "pair": "inefficient/efficient",
+      "rating": 3
+    },
+    {
+      "pair": "confusing/clear",
+      "rating": 3
+    },
+    {
+      "pair": "boring/exciting",
+      "rating": 3
+    },
+    {
+      "pair": "not interesting/interesting",
+      "rating": 5
+    },
+    {
+      "pair": "conventional/inventive",
+      "rating": 6
+    },
+    {
+      "pair": "usual/leading edge",
+      "rating": 5
+    }
+  ],
+  "nps": 1,
+  "interview": {
+    "purpose": "This is meant to turn a child's name, characteristics, and a family memory into a personalised storybook, apparently with an optional printed hardcover. It is aimed at parents or relatives wanting a keepsake featuring a child.",
+    "worst_moment": "The worst moment was opening the completed book: “Adventrue” was misspelled, the illustrations were labelled Pop-art after I selected Watercolour, and the story about Grandpa Joe and the sandcastles had been replaced with invented characters, threatening woods, and existential language.",
+    "best_moment": "The best part was entering the family memory about building sandcastles with Grandpa Joe using the yellow bucket, because the setup questions were clear and made me hopeful about the final result.",
+    "abandon": "I nearly gave up when the generated preview appeared obviously broken, and I definitely would not have continued to payment. I did look at checkout only to find out the real delivered cost.",
+    "missing": "I expected the finished story to centre on Sam and Grandpa Joe building sandcastles at the beach, with consistent characters, the yellow bucket, and Watercolour illustrations. I also expected a clear explanation of the sync error, proper labels and privacy information around child-photo upload, and the basic delivered hardcover price before checkout extras.",
+    "trust": "I was cautious about uploading a child's photo because there was no nearby privacy reassurance or clear upload label. I also trusted the generated result less because it ignored important family details, changed the requested visual style, and contained obvious errors.",
+    "willingness_to_pay": "I would not pay for this output. After correcting the story, illustrations, and text, roughly £25-£30 would feel fair for a digital keepsake, or around £35 for a decent printed hardcover; I might pay more for a polished, faithful book with a genuinely personalised narrative and reliable quality checks.",
+    "output_verdict": "I do not feel that this reflects my family's memory. Grandpa Joe and the sandcastles were missing, the selected style was wrong, the story contained frightening and age-inappropriate material, and the visible typos, placeholders, repetition, and incomplete ending made it look unfinished. I would not give it to Sam or keep it as a family keepsake."
+  },
+  "recommendations": [
+    {
+      "change": "Make the generated story faithfully centre on the submitted family memory, including Grandpa Joe, the sandcastles, the yellow bucket, and the supplied relationships, without replacing them with invented characters or events.",
+      "page": "Generated storybook preview",
+      "why": "Personalisation is the entire purpose of the product, and this was the main reason I did not consider the book worth keeping.",
+      "priority": "high"
+    },
+    {
+      "change": "Apply the selected Watercolour style consistently and generate images that actually match each page's events and characters.",
+      "page": "Generated storybook preview",
+      "why": "I explicitly selected Watercolour but received a Pop-art comic, making the book look wrong and unreliable.",
+      "priority": "high"
+    },
+    {
+      "change": "Remove unresolved placeholders, fix “Adventrue” and “Samn,” correct grammar, eliminate repeated text, and complete the final sentence before showing the preview.",
+      "page": "Generated storybook preview",
+      "why": "These visible mistakes make the story look broken and make it unsuitable as a keepsake.",
+      "priority": "high"
+    },
+    {
+      "change": "Rewrite the story with warm, concrete, age-five-appropriate vocabulary and remove threatening shadows, existential distress, and confusing pronoun errors.",
+      "page": "Generated storybook preview",
+      "why": "The prose was too advanced and frightening for a five-year-old and weakened the emotional purpose of the story.",
+      "priority": "high"
+    },
+    {
+      "change": "Ensure Sam has a consistent brown-haired appearance and that Grandpa Joe, the bucket, and the sandcastles are visibly represented in the relevant illustrations.",
+      "page": "Generated storybook preview",
+      "why": "A personalised book should be recognisably about the child and the actual family memory on every relevant page.",
+      "priority": "high"
+    },
+    {
+      "change": "Do not preselect premium gift wrap, and show the basic delivered hardcover price and total before any extras are added.",
+      "page": "Hardcover checkout",
+      "why": "I had to investigate checkout to discover the real price, and a default extra feels misleading rather than helpful.",
+      "priority": "high"
+    },
+    {
+      "change": "Replace the technical sync error with a plain-language explanation and provide a clear recovery action or support route.",
+      "page": "My books dashboard",
+      "why": "The error made me worry that my family details had not loaded, but it gave me no way to fix or understand the problem.",
+      "priority": "high"
+    },
+    {
+      "change": "Add a proper label and clear privacy reassurance beside the optional child-photo upload.",
+      "page": "Optional photo upload",
+      "why": "A parent should understand what the upload is for and how the child's image will be handled before uploading it.",
+      "priority": "medium"
+    },
+    {
+      "change": "Replace technical homepage and reading-level jargon with ordinary language, and provide meaningful alternative text or an accessible description for the main image.",
+      "page": "StoryHearth homepage and reading-level options",
+      "why": "The wording sounds aimed at specialists rather than families and makes the product harder to understand.",
+      "priority": "medium"
+    },
+    {
+      "change": "Use proper accessible labels for login and upload controls, improve footer contrast, and fix the logout link if it incorrectly returns to the dashboard.",
+      "page": "Log in, optional photo upload, and My books dashboard",
+      "why": "These details affect usability, accessibility, and confidence in basic account functions.",
+      "priority": "medium"
+    },
+    {
+      "change": "Clearly explain which fields are optional and what happens after each form step.",
+      "page": "Create your book",
+      "why": "I had to infer that the special object field was optional and that the memory would be asked for on the next screen.",
+      "priority": "low"
+    }
+  ],
+  "one_line_verdict": "The idea excited me, but the finished book ignored the most important family details and had too many obvious errors for me to trust or pay for.",
+  "sus_score": {
+    "score": 55.0,
+    "grade": "D",
+    "above_average_68": false,
+    "mean_positive_items": 2.4,
+    "mean_negative_items": 2.0,
+    "inconsistent_pairs": 2,
+    "consistency_flag": true
+  },
+  "ueq_s_score": {
+    "pragmatic": -0.5,
+    "hedonic": 0.75,
+    "overall": 0.125
+  }
+}

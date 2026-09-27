@@ -1,0 +1,40 @@
+{
+  "site": {
+    "name": "ourlegacy",
+    "url": "https://ourlegacy.family/",
+    "site_hint": "a website that turns family stories into illustrated keepsake storybooks",
+    "goal": "You heard about OurLegacy, a website that turns family stories into illustrated keepsake books.\nSign up or log in with your e-mail address (the site may e-mail you a code - check your inbox),\nthen create a storybook demo about the family memory in your profile, with your family as the\ncharacters. Look carefully at everything the site produces for you - every page of the story or\nbook and every picture - and give your honest opinion of each part. Do not pay real money.\n",
+    "inbox": "mailtm",
+    "inbox_file": ".secrets/ourlegacy_mailbox_{persona}.json",
+    "storage_state": ".secrets/ourlegacy_state_{persona}.json",
+    "save_session": true,
+    "reuse_session": false,
+    "allowed_domains": [
+      "ourlegacy.family"
+    ],
+    "allow_click_patterns": [
+      "generate",
+      "illustrat",
+      "^\\$?\\d+\\.\\d\\d$"
+    ],
+    "spend_rule": "New accounts get free starter credits; you may spend those free credits on creating your story (a button such as \"Generate Storybook - $1.00\" is paid from the free credits), but never enter payment details, buy credits or order a printed book.",
+    "max_steps": 40,
+    "max_llm_calls": 60
+  },
+  "persona": "grandparent_storykeeper",
+  "model": "stealth/space-bunny-alpha",
+  "fallbacks": [
+    "google/gemma-4-31b-it:free",
+    "qwen/qwen3.8-27b:free",
+    "openrouter/free"
+  ],
+  "max_steps": 40,
+  "max_llm_calls": 60,
+  "vision": true,
+  "abandon_mode": "note",
+  "temperature": 0.7,
+  "device": "desktop",
+  "attention": "full",
+  "started_utc": "20260926-202314",
+  "inbox": "margaretdacdeb00@uberip.com"
+}
