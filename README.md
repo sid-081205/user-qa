@@ -48,6 +48,16 @@ python -m userqa run --site ourlegacy_revisit --persona grandparent_storykeeper 
 
 Each command prints the run directory. Open `report.html` in it.
 
+## Watch a session live
+
+```bash
+python -m userqa ui      # then open http://127.0.0.1:8787
+```
+
+Enter a website, optionally pick a persona from the library or describe the kind of person who visits the site, optionally say what they should try to do, and press **Start session**. A browser window opens and the page fills in as the persona works. While the model is thinking you see the screen it is looking at. After each step you see its screenshot, what the persona thought aloud, how it felt, its review of a new page, the issues it noticed with evidence and a fix, and what it clicked or typed. When browsing ends, the page adds the part-by-part critique of everything the site produced, then the interview and questionnaire. **Stop and critique** ends browsing after the current step and still critiques what the persona saw. Every earlier session under `runs/` can be opened in the same view, including the ones on the real ourlegacy.family under `live/`.
+
+A URL on a host with a site profile in `experiments/sites/` uses that profile, so `https://ourlegacy.family` signs in through the persona's real inbox. Sessions started from the page are saved in `runs/ui/<session>/`, with the subprocess's console output in `console.log`. The model's free tier allows 50 requests a day, and each step is one request.
+
 ## What a run produces
 
 | File | Contents |
