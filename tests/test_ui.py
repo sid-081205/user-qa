@@ -87,6 +87,8 @@ def test_media_is_limited_to_pictures_inside_the_run(tmp_path, monkeypatch):
 def test_the_http_api_serves_the_page_the_run_list_and_a_runs_state(tmp_path, monkeypatch):
     runs = tmp_path / "runs"
     _run(runs / "live" / "r1")
+    _run(runs / "ui" / "job1" / "r2")
+    (runs / "ui" / "job1" / "r2" / "summary.json").write_text(json.dumps({"status": "done", "steps": 2}))
     monkeypatch.setattr(server, "RUNS_ROOT", runs)
     httpd = ThreadingHTTPServer(("127.0.0.1", 0), server.make_handler(server.App()))
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
@@ -95,7 +97,7 @@ def test_the_http_api_serves_the_page_the_run_list_and_a_runs_state(tmp_path, mo
         page = urllib.request.urlopen(base + "/").read().decode()
         assert "Start session" in page
         listed = json.loads(urllib.request.urlopen(base + "/api/runs").read())
-        assert [r["run"] for r in listed] == ["live/r1"]
+        assert {r["run"]: (r["folder"], r["status"]) for r in listed} == {"live/r1": ("live", "incomplete"), "ui/job1/r2": ("ui", "done")}
         st = json.loads(urllib.request.urlopen(base + "/api/state?run=live/r1&since=1").read())
         assert st["phase"] == "incomplete" and [s["step"] for s in st["steps"]] == [2]
         assert urllib.request.urlopen(base + "/media?run=live/r1&path=screenshots/step_01.jpg").read() == b"\xff\xd8jpeg"

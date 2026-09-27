@@ -237,10 +237,13 @@ def past_runs() -> list[dict]:
         c = _json(cfg, {})
         sm = _json(d / "summary.json", {})
         site = c.get("site") or {}
+        folder = str(d.parent.relative_to(RUNS_ROOT))
+        live = _json(d / "live.json", {})
+        active = not sm and live.get("phase") != "ended" and time.time() - float(live.get("t", 0)) < 600
         out.append({
-            "run": str(d.relative_to(RUNS_ROOT)), "folder": str(d.parent.relative_to(RUNS_ROOT)),
+            "run": str(d.relative_to(RUNS_ROOT)), "folder": "ui" if folder.startswith("ui/") else folder,
             "site": site.get("name"), "url": site.get("url"), "persona": c.get("persona"),
-            "started": c.get("started_utc"), "status": sm.get("status") or phase_of(d),
+            "started": c.get("started_utc"), "status": sm.get("status") or (phase_of(d) if active else "incomplete"),
             "steps": sm.get("steps"), "live_site": not str(site.get("url", "")).startswith("http://127.0.0.1"),
             "mtime": cfg.stat().st_mtime,
         })

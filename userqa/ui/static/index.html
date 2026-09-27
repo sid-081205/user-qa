@@ -56,6 +56,8 @@ main{min-width:0}
 .steps{display:flex;flex-direction:column;gap:14px;margin-top:16px}
 .step{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:16px}
 @media(max-width:900px){.step{grid-template-columns:1fr}}
+.step>div:first-child{position:sticky;top:66px;align-self:start}
+@media(max-width:900px){.step>div:first-child{position:static}}
 .step.fresh{animation:fresh 2s}
 @keyframes fresh{from{box-shadow:0 0 0 3px #7fc7a3}to{box-shadow:none}}
 .shot{width:100%;border-radius:8px;border:1px solid var(--line);cursor:zoom-in;display:block}
@@ -266,6 +268,7 @@ function render(first, freshSteps){
     ${p.backstory ? `<details><summary>Who this persona is</summary><p>${esc(p.backstory)}</p>${p.goals ? `<div class="k">Goals</div><ul>${p.goals.map(g => `<li>${esc(g)}</li>`).join("")}</ul>` : ""}${p.frustrations ? `<div class="k">Frustrations</div><ul>${p.frustrations.map(g => `<li>${esc(g)}</li>`).join("")}</ul>` : ""}</details>` : ""}
     ${site.goal ? `<details><summary>The task it was given</summary><p style="white-space:pre-wrap">${esc(site.goal)}</p></details>` : ""}
   </div>`;
+  if (running && S.phase === "browsing" && !(S.cmd || "").includes("--headless")) h += `<div class="warn">The persona uses its own browser window. Leave that window open and don't click in it: closing it ends the session, and clicks there confuse the persona.</div>`;
   if (S.summary) h += summaryCard();
   if (nowShot) h += `<div class="card now"><div>${img(nowShot.screenshot, "current screen")}</div><div><div class="k"><span class="pulse"></span>Step ${esc(nowShot.step)}: looking at this page and thinking</div><p><b>${esc(nowShot.title || "")}</b></p><div class="url">${esc(nowShot.url)}</div><p class="muted">The model is reading the page and the screenshot. Its thoughts appear below when it answers.</p></div></div>`;
   else if (S.phase === "preparing" && running) h += `<div class="card"><span class="pulse"></span>${pmodeLine()}</div>`;
