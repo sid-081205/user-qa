@@ -27,3 +27,4 @@ runs/**/report.html
 
 build/
 dist/
+explorer/

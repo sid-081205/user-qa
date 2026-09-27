@@ -72,6 +72,12 @@ def main(argv=None) -> int:
     au = sub.add_parser("reaudit", help="re-run a finished run's persona-fidelity audit from its trace")
     au.add_argument("run_dirs", nargs="+")
 
+    ex = sub.add_parser("explore", help="build a static website for browsing finished runs (prompts, inputs, outputs, critiques)")
+    ex.add_argument("paths", nargs="*", default=[str(ROOT / "runs")], help="run directories or folders containing them (default: runs/)")
+    ex.add_argument("--out", default=str(ROOT / "explorer"))
+    ex.add_argument("--copy-media", action="store_true", help="copy downscaled screenshots and pictures into the site so it can be shared")
+    ex.add_argument("--max-px", type=int, default=1000, help="longest side of copied pictures")
+
     sub.add_parser("quota", help="show OpenRouter key limits / free-model quota")
 
     a = ap.parse_args(argv)
@@ -115,6 +121,11 @@ def main(argv=None) -> int:
             if a.output:
                 Path(a.output).write_text(text)
             print(text)
+        return 0
+    if a.cmd == "explore":
+        from .report.explorer import build_explorer
+
+        print(build_explorer([Path(p) for p in a.paths], Path(a.out), copy_media=a.copy_media, max_px=a.max_px))
         return 0
     if a.cmd == "report":
         from .report.render import render_report
