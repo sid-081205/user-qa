@@ -77,6 +77,8 @@ def main(argv=None) -> int:
     ex.add_argument("--out", default=str(ROOT / "explorer"))
     ex.add_argument("--copy-media", action="store_true", help="copy downscaled screenshots and pictures into the site so it can be shared")
     ex.add_argument("--max-px", type=int, default=1000, help="longest side of copied pictures")
+    ex.add_argument("--export-media", action="store_true",
+                    help="first write downscaled copies of the runs' pictures to runs_media/, which is committed so that clones can show them")
 
     sub.add_parser("quota", help="show OpenRouter key limits / free-model quota")
 
@@ -123,8 +125,10 @@ def main(argv=None) -> int:
             print(text)
         return 0
     if a.cmd == "explore":
-        from .report.explorer import build_explorer
+        from .report.explorer import build_explorer, export_media
 
+        if a.export_media:
+            print(f"[media] wrote {export_media()} downscaled pictures to runs_media/")
         print(build_explorer([Path(p) for p in a.paths], Path(a.out), copy_media=a.copy_media, max_px=a.max_px))
         return 0
     if a.cmd == "report":

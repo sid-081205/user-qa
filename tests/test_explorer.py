@@ -29,6 +29,27 @@ def _write_run(d, persona_id: str, name: str) -> None:
     (d / "summary.json").write_text(json.dumps({"steps": 1, "sus": 40, "keepsake_worthiness": 2}))
 
 
+def test_media_copy_is_used_when_the_run_has_no_pictures(tmp_path, monkeypatch):
+    from PIL import Image
+
+    from userqa.report import explorer
+
+    runs, media = tmp_path / "runs", tmp_path / "runs_media"
+    _write_run(runs / "suite" / "r1", "grandparent", "Margaret")
+    shot = runs / "suite" / "r1" / "screenshots" / "step_01.jpg"
+    shot.parent.mkdir()
+    Image.new("RGB", (1600, 900), "white").save(shot)
+    assert explorer.export_media(runs, media, max_px=400) == 1
+    shot.unlink()
+    monkeypatch.setattr(explorer, "RUNS_ROOT", runs)
+    monkeypatch.setattr(explorer, "MEDIA_ROOT", media)
+    build_explorer([runs], tmp_path / "site")
+    html = (tmp_path / "site" / "runs" / "suite_r1.html").read_text()
+    assert "runs_media/suite/r1/screenshots/step_01.jpg" in html
+    with Image.open(media / "suite" / "r1" / "screenshots" / "step_01.jpg") as im:
+        assert max(im.size) == 400
+
+
 def test_explorer_shows_prompts_inputs_outputs_and_comparison(tmp_path):
     runs = tmp_path / "runs" / "suite"
     _write_run(runs / "r1", "grandparent", "Margaret")

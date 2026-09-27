@@ -23,6 +23,9 @@ from ..evaluation.questionnaires import INTERVIEW, SUS_ITEMS, UEQS_ITEMS
 
 ROOT = Path(__file__).resolve().parents[2]
 GT_PATH = ROOT / "demo_sites" / "storyhearth" / "ground_truth.json"
+RUNS_ROOT = ROOT / "runs"
+MEDIA_ROOT = ROOT / "runs_media"
+IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
 SEV_LABEL = {0: "none", 1: "cosmetic", 2: "minor", 3: "major", 4: "catastrophic"}
 NEW_PAGE = '<span class="badge">new page</span>'
 FOUND = '<span class="badge b-good">found</span>'
@@ -135,6 +138,39 @@ def discover(paths: list[Path]) -> list[Path]:
     return sorted(found)
 
 
+def media_copy_path(run_dir: Path, rel: str, runs_root: Path | None = None, media_root: Path | None = None) -> Path | None:
+    """Where the committed, downscaled copy of a run's picture lives. Run media is gitignored; the copy is not."""
+    runs_root, media_root = (runs_root or RUNS_ROOT).resolve(), media_root or MEDIA_ROOT
+    try:
+        run_rel = run_dir.resolve().relative_to(runs_root)
+    except ValueError:
+        return None
+    return (media_root / run_rel / rel).with_suffix(".jpg")
+
+
+def export_media(runs_root: Path | None = None, media_root: Path | None = None, max_px: int = 760, quality: int = 68) -> int:
+    """Write downscaled JPEG copies of every run's screenshots and captured pictures under `media_root`."""
+    from PIL import Image
+
+    runs_root, media_root = runs_root or RUNS_ROOT, media_root or MEDIA_ROOT
+    n = 0
+    for p in sorted(runs_root.rglob("*")):
+        if p.suffix.lower() not in IMAGE_SUFFIXES or {"_code", "_scratch"} & set(p.parts):
+            continue
+        run_dir = next((a for a in p.parents if (a / "trace.jsonl").exists()), None)
+        if run_dir is None:
+            continue
+        dest = media_copy_path(run_dir, p.relative_to(run_dir).as_posix(), runs_root, media_root)
+        if dest is None or (dest.exists() and dest.stat().st_mtime >= p.stat().st_mtime):
+            continue
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        with Image.open(p) as im:
+            im.thumbnail((max_px, max_px * 3))
+            im.convert("RGB").save(dest, "JPEG", quality=quality, optimize=True)
+        n += 1
+    return n
+
+
 class Media:
     """Resolves run-relative picture paths for a page, optionally copying downscaled versions into the site."""
 
@@ -146,7 +182,9 @@ class Media:
             return None
         path = run.dir / rel
         if not path.exists():
-            return None
+            path = media_copy_path(run.dir, rel)
+            if path is None or not path.exists():
+                return None
         target = path
         if self.copy:
             target = self.out / "media" / run.slug / rel
