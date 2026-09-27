@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>userqa live</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1d1d1f;--mute:#6b6b70;--line:#e4e2dc;--accent:#2f5d50;--accent2:#e6efe9;--bad:#b3261e;--badbg:#fbe9e7;--warn:#8a5a00;--warnbg:#fff4dc;--good:#1e6b3a;--goodbg:#e5f4ea}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header{display:flex;align-items:center;gap:14px;padding:12px 22px;border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:5}
+header h1{font-size:17px;margin:0}
+header .sub{color:var(--mute);font-size:13px}
+.layout{display:grid;grid-template-columns:340px 1fr;gap:18px;padding:18px 22px;align-items:start}
+@media(max-width:1000px){.layout{grid-template-columns:1fr}}
+aside{position:sticky;top:66px;max-height:calc(100vh - 80px);overflow:auto;display:flex;flex-direction:column;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h2{font-size:15px;margin:0 0 10px}
+label{display:block;font-weight:600;font-size:13px;margin:12px 0 4px}
+label .opt{font-weight:400;color:var(--mute)}
+input[type=text],input[type=number],select,textarea{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:64px;resize:vertical}
+.hint{font-size:12.5px;color:var(--mute);margin-top:4px}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:8px}
+.seg button{flex:1;border:0;background:#fff;padding:7px 4px;font:inherit;font-size:13px;cursor:pointer;color:var(--mute)}
+.seg button.on{background:var(--accent);color:#fff}
+.btn{display:inline-block;border:0;border-radius:8px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;background:var(--accent);color:#fff}
+.btn:disabled{opacity:.5;cursor:default}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn.danger{background:var(--bad)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.warn{background:var(--warnbg);color:var(--warn);border-radius:8px;padding:8px 10px;font-size:13px;margin-top:10px}
+.err{background:var(--badbg);color:var(--bad);border-radius:8px;padding:8px 10px;font-size:13px;margin-top:10px}
+details summary{cursor:pointer;font-weight:600;font-size:13px}
+.runs{display:flex;flex-direction:column;gap:2px;font-size:13px}
+.runs .grp{font-weight:700;color:var(--mute);margin:10px 0 2px;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.runs a{display:block;padding:6px 8px;border-radius:6px;color:inherit;text-decoration:none}
+.runs a:hover,.runs a.on{background:var(--accent2)}
+.runs small{color:var(--mute)}
+main{min-width:0}
+.empty{padding:60px 30px;text-align:center;color:var(--mute)}
+.empty h2{color:var(--ink)}
+.top{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start}
+.persona h3{margin:0;font-size:18px}
+.persona .tag{color:var(--mute)}
+.phases{display:flex;gap:6px;margin:14px 0 4px;flex-wrap:wrap}
+.phase{font-size:12.5px;padding:4px 10px;border-radius:99px;background:#efeee9;color:var(--mute)}
+.phase.done{background:var(--goodbg);color:var(--good)}
+.phase.now{background:var(--accent);color:#fff}
+.phase.fail{background:var(--badbg);color:var(--bad)}
+.now{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px;margin-top:14px}
+@media(max-width:1200px){.now{grid-template-columns:1fr}}
+.now img{width:100%;border-radius:8px;border:1px solid var(--line)}
+.pulse{display:inline-block;width:9px;height:9px;border-radius:50%;background:#2e9d6a;margin-right:6px;animation:p 1.2s infinite}
+@keyframes p{50%{opacity:.25}}
+.steps{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.step{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:16px}
+@media(max-width:900px){.step{grid-template-columns:1fr}}
+.step.fresh{animation:fresh 2s}
+@keyframes fresh{from{box-shadow:0 0 0 3px #7fc7a3}to{box-shadow:none}}
+.shot{width:100%;border-radius:8px;border:1px solid var(--line);cursor:zoom-in;display:block}
+.stephead{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
+.stephead b{font-size:16px}
+.url{color:var(--mute);font-size:12.5px;word-break:break-all}
+.badge{display:inline-block;font-size:12px;padding:2px 8px;border-radius:99px;background:#efeee9;white-space:nowrap}
+.v-pos{background:var(--goodbg);color:var(--good)}.v-neg{background:var(--badbg);color:var(--bad)}.v-neu{background:#efeee9}
+.s1,.s0{background:#efeee9}.s2{background:var(--warnbg);color:var(--warn)}.s3,.s4{background:var(--badbg);color:var(--bad)}
+blockquote{margin:6px 0 10px;padding:8px 12px;border-left:3px solid var(--accent);background:var(--accent2);border-radius:0 8px 8px 0;font-style:italic}
+.k{font-size:12px;font-weight:700;color:var(--mute);text-transform:uppercase;letter-spacing:.04em;margin-top:10px}
+.issue{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:6px 0;font-size:14px}
+.issue .ev{color:var(--mute);font-size:13px}
+.acts{margin:4px 0 0;padding-left:18px;font-size:14px}
+.acts .fail{color:var(--bad)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:900px){.grid2{grid-template-columns:1fr}}
+.crit{display:grid;grid-template-columns:170px 1fr 30px;gap:8px;align-items:center;font-size:14px;margin:4px 0}
+.bar{height:8px;background:#efeee9;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent)}
+.part{display:grid;grid-template-columns:200px 1fr;gap:14px;border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
+@media(max-width:900px){.part{grid-template-columns:1fr}}
+.part img{width:100%;border-radius:6px;border:1px solid var(--line);margin-bottom:6px;cursor:zoom-in}
+.rewrite{background:#faf9f6;border:1px dashed var(--line);border-radius:8px;padding:8px 10px;white-space:pre-wrap;font-size:14px}
+pre.log{background:#1e1f22;color:#d6d6d6;border-radius:8px;padding:10px;font-size:12px;max-height:260px;overflow:auto;white-space:pre-wrap}
+.section{margin-top:18px}
+.section>h2{font-size:17px;margin:0 0 10px}
+.muted{color:var(--mute)}
+#zoom{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
+#zoom img{max-width:95vw;max-height:95vh}
+.stat{display:inline-block;margin-right:18px}.stat b{font-size:20px;display:block}
+.qa dt{font-weight:600;margin-top:8px}.qa dd{margin:2px 0 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>userqa live</h1><span class="sub">Give it a website and, if you like, the kind of person who visits it. Watch what that person sees, thinks and runs into, step by step.</span>
+</header>
+<div class="layout">
+  <aside>
+    <form class="card" id="form" autocomplete="off">
+      <h2>New session</h2>
+      <label for="url">Website</label>
+      <input type="text" id="url" placeholder="https://ourlegacy.family" required>
+      <div class="hint" id="profileHint"></div>
+      <label>Visitor <span class="opt">(optional)</span></label>
+      <div class="seg" id="pmode">
+        <button type="button" data-m="none" class="on">Anyone</button>
+        <button type="button" data-m="lib">Pick a persona</button>
+        <button type="button" data-m="desc">Describe one</button>
+      </div>
+      <select id="persona" hidden></select>
+      <textarea id="ptype" hidden placeholder="e.g. a busy dad in his 40s who is good with tech and wants a bedtime book for his daughter"></textarea>
+      <div class="hint" id="pmodeHint">A generic first-time visitor with no particular background.</div>
+      <label for="goal">What should they try to do? <span class="opt">(optional)</span></label>
+      <textarea id="goal" placeholder="Leave empty to use the default task"></textarea>
+      <details style="margin-top:10px"><summary>More options</summary>
+        <label for="profile">Site profile</label>
+        <select id="profile"></select>
+        <div class="hint">A profile carries a site's default task, login details or real inbox, and spending rules.</div>
+        <label for="maxSteps">Maximum steps <span class="opt">(each step is one model request)</span></label>
+        <input type="number" id="maxSteps" min="1" max="80" placeholder="profile default">
+        <label style="font-weight:400"><input type="checkbox" id="headless"> Hide the browser window (headless)</label>
+      </details>
+      <div id="warns"></div>
+      <div class="row" style="margin-top:14px"><button class="btn" id="startBtn" type="submit">Start session</button></div>
+      <div id="formErr"></div>
+    </form>
+    <div class="card"><h2>Sessions</h2><div class="runs" id="runs"><span class="muted">Loading…</span></div></div>
+  </aside>
+  <main id="main">
+    <div class="card empty"><h2>No session open</h2><p>Start one on the left, or open an earlier session. The sessions on the real OurLegacy site are listed under <b>live</b>.</p></div>
+  </main>
+</div>
+<div id="zoom"><img alt=""></div>
+<script>
+const $ = s => document.querySelector(s);
+const esc = x => String(x ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const api = async (path, body) => {
+  const r = await fetch(path, body ? {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)} : {});
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || r.statusText); return j;
+};
+let META = null, pmode = "none", view = null, timer = null, S = null;
+
+// ---------------------------------------------------------------- form
+function hostOf(u){ try { return new URL(/^https?:\/\//.test(u) ? u : "https://" + u).hostname.replace(/^www\./, ""); } catch { return ""; } }
+function autoProfile(url){
+  const h = hostOf(url); if (!h) return null;
+  const same = META.profiles.filter(p => hostOf(p.url) === h);
+  if (!same.length) return null;
+  const label = h.split(".")[0];
+  return same.find(p => p.name === label || p.id === label) || same.find(p => p.url.replace(/\/$/,"") === url.replace(/\/$/,"")) || same[0];
+}
+function refreshProfile(){
+  const sel = $("#profile").value, url = $("#url").value.trim();
+  let p = sel === "auto" ? autoProfile(url) : META.profiles.find(x => x.id === sel);
+  if (sel === "none") p = null;
+  $("#profileHint").innerHTML = p ? `Using the <b>${esc(p.name)}</b> profile${p.signs_in ? ", which signs in (a real inbox receives the login code)" : ""}.` : (url ? "Open exploration of this address." : "");
+  $("#goal").placeholder = p ? "Default: " + p.goal.slice(0, 160) + (p.goal.length > 160 ? "…" : "") : "Default: work out what the site is for and try its main feature";
+  $("#maxSteps").placeholder = p && p.max_steps ? `profile default: ${p.max_steps}` : "default: 30";
+}
+function setMode(m){
+  pmode = m;
+  document.querySelectorAll("#pmode button").forEach(b => b.classList.toggle("on", b.dataset.m === m));
+  $("#persona").hidden = m !== "lib"; $("#ptype").hidden = m !== "desc";
+  $("#pmodeHint").textContent = {none:"A generic first-time visitor with no particular background.", lib:"A researched persona from the library, with a backstory, goals and frustrations.", desc:"The model writes a full persona from your description before the session starts."}[m];
+}
+async function loadMeta(){
+  META = await api("/api/meta");
+  $("#persona").innerHTML = META.personas.filter(p => p.id !== "generic_user").map(p => `<option value="${esc(p.id)}">${esc(p.label)}</option>`).join("");
+  $("#profile").innerHTML = `<option value="auto">Automatic (match the website)</option><option value="none">None (open exploration)</option>` + META.profiles.map(p => `<option value="${esc(p.id)}">${esc(p.name)} — ${esc(p.url)}</option>`).join("");
+  const w = [];
+  if (!META.key_present) w.push("OPENROUTER_API_KEY is not set, so sessions will fail. Put it in .env and restart.");
+  if (!META.display) w.push("No display was found, so the browser window cannot open here. Tick “Hide the browser window”, or run this on your own computer.");
+  $("#warns").innerHTML = w.map(x => `<div class="warn">${esc(x)}</div>`).join("");
+  refreshProfile();
+  const running = META.jobs.find(j => j.running);
+  if (running && !location.hash) location.hash = "job=" + running.job;
+}
+$("#url").addEventListener("input", refreshProfile);
+$("#profile").addEventListener("change", refreshProfile);
+document.querySelectorAll("#pmode button").forEach(b => b.onclick = () => setMode(b.dataset.m));
+$("#form").onsubmit = async ev => {
+  ev.preventDefault(); $("#formErr").innerHTML = "";
+  const prof = $("#profile").value;
+  const req = {url: $("#url").value.trim(), goal: $("#goal").value.trim(), headless: $("#headless").checked,
+    max_steps: $("#maxSteps").value ? +$("#maxSteps").value : null,
+    profile: prof === "auto" || prof === "none" ? "" : prof, auto_profile: prof === "auto"};
+  if (pmode === "lib") req.persona = $("#persona").value;
+  if (pmode === "desc") { req.persona_type = $("#ptype").value.trim(); if (!req.persona_type) { $("#formErr").innerHTML = `<div class="err">Describe the visitor, or choose “Anyone”.</div>`; return; } }
+  $("#startBtn").disabled = true;
+  try { const j = await api("/api/start", req); location.hash = "job=" + j.job; loadRuns(); }
+  catch (e) { $("#formErr").innerHTML = `<div class="err">${esc(e.message)}</div>`; }
+  finally { $("#startBtn").disabled = false; }
+};
+
+// ---------------------------------------------------------------- run list
+async function loadRuns(){
+  const runs = await api("/api/runs");
+  const groups = {};
+  for (const r of runs) (groups[r.folder] = groups[r.folder] || []).push(r);
+  const order = Object.keys(groups).sort((a, b) => rank(a) - rank(b) || groups[b].length - groups[a].length);
+  function rank(f){ return f.startsWith("ui") ? 0 : f.startsWith("live") ? 1 : 2; }
+  $("#runs").innerHTML = order.map(f => `<div class="grp">${esc(f)}${groups[f].some(r => r.live_site) ? " · real site" : ""}</div>` +
+    groups[f].map(r => `<a href="#run=${encodeURIComponent(r.run)}" data-run="${esc(r.run)}">${esc(r.site)} · ${esc(r.persona)}<br><small>${esc(r.started)} · ${esc(r.status)}${r.steps ? " · " + r.steps + " steps" : ""}</small></a>`).join("")).join("") || `<span class="muted">No sessions yet.</span>`;
+  markRun();
+}
+function markRun(){ document.querySelectorAll("#runs a").forEach(a => a.classList.toggle("on", view && view.run === a.dataset.run)); }
+
+// ---------------------------------------------------------------- session view
+function route(){
+  clearTimeout(timer); S = null;
+  const h = new URLSearchParams(location.hash.slice(1));
+  view = h.get("job") ? {job: h.get("job")} : h.get("run") ? {run: h.get("run")} : null;
+  markRun();
+  if (!view) return;
+  $("#main").innerHTML = `<div class="card empty">Loading…</div>`;
+  poll();
+}
+window.addEventListener("hashchange", route);
+
+async function poll(){
+  const v = view; if (!v) return;
+  const since = S ? S.steps.length : 0;
+  let st;
+  try { st = await api(`/api/state?${v.job ? "job=" + encodeURIComponent(v.job) : "run=" + encodeURIComponent(v.run)}&since=${since}`); }
+  catch (e) { $("#main").innerHTML = `<div class="card err">${esc(e.message)}</div>`; return; }
+  if (v !== view) return;
+  const fresh = st.steps || [];
+  if (S && S.run === st.run) { st.steps = S.steps.concat(fresh); } else { st.steps = fresh; S = null; }
+  const first = !S;
+  const sig = JSON.stringify([st.steps.length, st.phase, st.running, st.stop_requested, st.live && [st.live.step, st.live.phase], (st.log || []).slice(-1), !!st.assessment, !!st.debrief, !!st.summary]);
+  const changed = first || sig !== S.sig; st.sig = sig; S = st;
+  if (changed) render(first, first ? [] : fresh.map(x => x.step));
+  if (v.job && (st.running || st.phase !== "done" && st.phase !== "failed" && st.phase !== "stopped")) timer = setTimeout(poll, 1500);
+  else if (v.job) loadRuns();
+}
+
+const media = p => p ? `/media?run=${encodeURIComponent(S.run)}&path=${encodeURIComponent(p)}` : "";
+const img = (p, alt, cls = "shot") => p ? `<img class="${cls}" loading="lazy" src="${media(p)}" alt="${esc(alt)}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'muted',textContent:'(picture not in this copy)'}))">` : "";
+const vcls = v => v > 0 ? "v-pos" : v < 0 ? "v-neg" : "v-neu";
+const sev = s => `<span class="badge s${esc(s)}">severity ${esc(s)}</span>`;
+
+function phaseBar(){
+  const ph = S.phases, cur = S.phase; const idx = ph.findIndex(p => p[0] === cur);
+  const failed = cur === "failed" || cur === "stopped" || cur === "incomplete";
+  const at = failed ? phaseOf() : idx;
+  return `<div class="phases">` + ph.map((p, i) => `<span class="phase ${i < at || cur === "done" ? "done" : i === at ? (failed ? "fail" : "now") : ""}">${i === at && !failed && cur !== "done" ? '<span class="pulse"></span>' : ""}${esc(p[1])}</span>`).join("") +
+    (failed ? `<span class="phase fail">${esc({failed:"The session ended with an error (see the console below)", stopped:"Stopped", incomplete:"This session did not finish"}[cur])}</span>` : "") + `</div>`;
+  function phaseOf(){ if (S.summary) return 5; if (S.debrief) return 4; if (S.assessment) return 3; if (S.session) return 2; if (S.config && S.config.site) return 1; return 0; }
+}
+
+function render(first, freshSteps){
+  const follow = first || (window.innerHeight + window.scrollY >= document.body.scrollHeight - 200);
+  const c = S.config || {}, site = c.site || {}, p = S.persona || {};
+  const live = S.live || {};
+  const browsing = S.phase === "browsing" && S.running !== false;
+  const last = S.steps[S.steps.length - 1];
+  const nowShot = browsing && live.phase === "thinking" && (!last || live.step > last.step) ? live : null;
+  const running = !!S.running;
+  let h = `<div class="card"><div class="top"><div class="persona">
+      <h3>${esc(p.name || "Preparing persona…")}${p.age ? ", " + esc(p.age) : ""}</h3>
+      <div class="tag">${esc(p.tagline || "")}</div>
+      <div class="url">${esc(site.url || "")} ${site.name ? "· profile " + esc(site.name) : ""} ${c.model ? "· model " + esc(c.model) : ""} ${c.inbox ? "· inbox " + esc(c.inbox) : ""}</div>
+    </div><div class="row">
+      ${running ? `<button class="btn danger" onclick="stopJob(false)" ${S.stop_requested ? "disabled" : ""}>${S.stop_requested ? "Stopping after this step…" : "Stop and critique"}</button><button class="btn ghost" onclick="stopJob(true)" title="End the process now, without the critique">Force stop</button>` : ""}
+      ${S.report ? `<a class="btn ghost" target="_blank" href="/report?run=${encodeURIComponent(S.run)}">Full report</a>` : ""}
+    </div></div>${phaseBar()}
+    ${p.backstory ? `<details><summary>Who this persona is</summary><p>${esc(p.backstory)}</p>${p.goals ? `<div class="k">Goals</div><ul>${p.goals.map(g => `<li>${esc(g)}</li>`).join("")}</ul>` : ""}${p.frustrations ? `<div class="k">Frustrations</div><ul>${p.frustrations.map(g => `<li>${esc(g)}</li>`).join("")}</ul>` : ""}</details>` : ""}
+    ${site.goal ? `<details><summary>The task it was given</summary><p style="white-space:pre-wrap">${esc(site.goal)}</p></details>` : ""}
+  </div>`;
+  if (S.summary) h += summaryCard();
+  if (nowShot) h += `<div class="card now"><div>${img(nowShot.screenshot, "current screen")}</div><div><div class="k"><span class="pulse"></span>Step ${esc(nowShot.step)}: looking at this page and thinking</div><p><b>${esc(nowShot.title || "")}</b></p><div class="url">${esc(nowShot.url)}</div><p class="muted">The model is reading the page and the screenshot. Its thoughts appear below when it answers.</p></div></div>`;
+  else if (S.phase === "preparing" && running) h += `<div class="card"><span class="pulse"></span>${pmodeLine()}</div>`;
+  h += `<div class="section"><h2>Journey <span class="muted" style="font-weight:400">${S.steps.length} step${S.steps.length === 1 ? "" : "s"}</span></h2><div class="steps">` + S.steps.map(s => stepCard(s, freshSteps.includes(s.step))).join("") + `</div></div>`;
+  if (["critiquing", "questionnaire", "auditing"].includes(S.phase) && running) h += `<div class="card section"><span class="pulse"></span>${esc(S.phases.find(x => x[0] === S.phase)[1])}…</div>`;
+  if (S.session) h += sessionEnd();
+  if (S.assessment) h += assessment();
+  if (S.debrief) h += debrief();
+  if (S.log) h += `<details class="card section" ${S.phase === "failed" ? "open" : ""}><summary>Console</summary><div class="url" style="margin:6px 0">${esc(S.cmd || "")}</div><pre class="log">${esc(S.log.join("\n"))}</pre></details>`;
+  const y = window.scrollY;
+  const dkey = d => (d.closest("[id]") || {}).id + "|" + (d.querySelector("summary") || {}).textContent;
+  const open = new Set([...document.querySelectorAll("#main details[open]")].map(dkey));
+  $("#main").innerHTML = h;
+  if (!first) document.querySelectorAll("#main details").forEach(d => { if (open.has(dkey(d))) d.open = true; });
+  if (follow && !first && freshSteps.length) window.scrollTo(0, document.body.scrollHeight);
+  else window.scrollTo(0, y);
+}
+function pmodeLine(){ const l = (S.log || []).filter(x => x.startsWith("[persona]")).pop(); return l ? esc(l) : "Starting the browser and preparing the persona…"; }
+
+function stepCard(s, fresh){
+  if (s.error) return `<div class="card step"><div></div><div><b>Step ${esc(s.step)}</b> <span class="badge v-neg">model error</span><p class="muted">${esc(s.error)}</p></div></div>`;
+  const o = s.output || {}, pr = o.page_review || {};
+  const results = s.results || [];
+  const acts = results.length ? results.map(r => `<li class="${r.ok ? "" : "fail"}">${esc(r.message || JSON.stringify(r.action))}${r.ok ? "" : " (failed)"}</li>`).join("")
+    : (o.actions || []).map(a => `<li>${esc(JSON.stringify(a))}</li>`).join("");
+  const issues = (pr.issues || []).concat(o.new_issues || []);
+  return `<div class="card step ${fresh ? "fresh" : ""}" id="step-${esc(s.step)}"><div>${img(s.screenshot, "step " + s.step)}</div><div>
+    <div class="stephead"><b>Step ${esc(s.step)}</b>${s.new_page ? `<span class="badge">new page</span>` : ""}
+      ${o.emotion ? `<span class="badge ${vcls(o.valence)}">${esc(o.emotion)} (${o.valence > 0 ? "+" : ""}${esc(o.valence)})</span>` : ""}
+      ${o.ease != null ? `<span class="badge">ease ${esc(o.ease)}/7</span>` : ""}<span class="muted" style="font-size:12px">${esc(s.llm_seconds)} s</span></div>
+    <div class="url">${esc(s.title || "")} · ${esc(s.url)}</div>
+    ${o.think_aloud ? `<blockquote>${esc(o.think_aloud)}</blockquote>` : ""}
+    ${o.observation ? `<div class="k">What it sees</div><div>${esc(o.observation)}</div>` : ""}
+    ${pr.first_impression ? `<div class="k">Page review: ${esc(pr.page_name || "")}</div><div>${esc(pr.first_impression)}</div>${pr.purpose ? `<div class="muted" style="font-size:13px">Purpose as understood: ${esc(pr.purpose)}</div>` : ""}` : ""}
+    ${pr.walkthrough ? `<details><summary style="font-weight:400">Cognitive walkthrough</summary><ul>${Object.entries(pr.walkthrough).map(([k, v]) => `<li>${esc(v)}</li>`).join("")}</ul></details>` : ""}
+    ${issues.length ? `<div class="k">Issues noticed</div>` + issues.map(i => `<div class="issue">${sev(i.severity)} ${i.code ? `<span class="badge">${esc(i.code)}</span>` : ""} <b>${esc(i.title)}</b><div class="ev">${esc(i.evidence || "")}</div>${i.why_it_matters_to_me ? `<div>${esc(i.why_it_matters_to_me)}</div>` : ""}${i.fix ? `<div class="muted" style="font-size:13px">Fix: ${esc(i.fix)}</div>` : ""}</div>`).join("") : ""}
+    ${o.output_reaction ? `<div class="k">Reaction to what the site made</div><div>${esc(o.output_reaction)}</div>` : ""}
+    ${o.plan ? `<div class="k">Plan</div><div>${esc(o.plan)}</div>` : ""}
+    ${acts ? `<div class="k">Did</div><ul class="acts">${acts}</ul>` : ""}
+  </div></div>`;
+}
+
+function summaryCard(){
+  const m = S.summary;
+  const stat = (v, l) => v == null ? "" : `<span class="stat"><b>${esc(v)}</b><span class="muted">${esc(l)}</span></span>`;
+  return `<div class="card section"><h2 style="margin:0 0 8px;font-size:15px">At a glance</h2>
+    ${stat(m.status, "how it ended")}${stat(m.steps, "steps")}${stat(m.unique_issues, "issues")}${stat(m.output_parts, "output parts critiqued")}
+    ${stat(m.keepsake_worthiness != null ? m.keepsake_worthiness + "/5" : null, "keepsake worthiness")}${stat(m.sus != null ? m.sus + " (" + m.sus_grade + ")" : null, "SUS")}${stat(m.nps, "would recommend (0-10)")}
+    ${S.debrief && S.debrief.one_line_verdict ? `<blockquote>${esc(S.debrief.one_line_verdict)}</blockquote>` : ""}</div>`;
+}
+function sessionEnd(){
+  const s = S.session;
+  return `<div class="card section"><h2 style="margin:0 0 6px;font-size:15px">How the visit ended: ${esc(s.status)}</h2>${s.final_summary ? `<p>${esc(s.final_summary)}</p>` : ""}
+    ${s.abandonment ? `<p class="err">Would have given up: ${esc(s.abandonment.reason || JSON.stringify(s.abandonment))}</p>` : ""}
+    ${(s.inputs || []).length ? `<details><summary>Everything the persona typed or chose (${s.inputs.length})</summary><ul>${s.inputs.map(i => `<li><span class="muted">step ${esc(i.step)} · ${esc(i.label || i.type)}:</span> ${esc(i.value ?? i.text ?? "")}</li>`).join("")}</ul></details>` : ""}</div>`;
+}
+function assessment(){
+  const a = S.assessment;
+  if (a.skipped) return `<div class="card section"><h2 style="margin:0;font-size:15px">Output critique skipped</h2><p class="muted">${esc(a.reason || "Nothing was produced to critique.")}</p></div>`;
+  const imgs = Object.fromEntries((a.images || []).map(i => [i.ref, i]));
+  const crit = Object.entries(a.criteria || {}).map(([k, v]) => `<div class="crit"><span>${esc(k.replace(/_/g, " "))}</span><div class="bar"><i style="width:${(v.score || 0) * 20}%"></i></div><b>${esc(v.score)}</b></div>`).join("");
+  const parts = (a.parts || []).map(p => `<div class="part"><div>${(p.image_refs || []).map(r => imgs[r] ? img(imgs[r].path, imgs[r].desc, "") : "").join("")}${p.image_refs && p.image_refs.length ? "" : `<div class="muted" style="font-size:13px">(text only)</div>`}</div><div>
+      <b>${esc(p.part)}</b> <span class="muted" style="font-size:12.5px">${esc(p.artifact || "")}</span>
+      ${p.text ? `<details><summary style="font-weight:400">Text on this part</summary><div class="rewrite">${esc(p.text)}</div></details>` : ""}
+      ${p.picture_description ? `<div class="k">Picture</div><div>${esc(p.picture_description)}</div>` : ""}
+      ${p.reaction ? `<blockquote>${esc(p.reaction)}</blockquote>` : ""}
+      ${(p.strengths || []).length ? `<div class="k">Works</div><ul>${p.strengths.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+      ${(p.problems || []).length ? `<div class="k">Problems</div>` + p.problems.map(x => `<div class="issue">${sev(x.severity)} <span class="badge">${esc((x.criterion || "").replace(/_/g, " "))}</span> ${esc(x.evidence)}</div>`).join("") : ""}
+      ${p.suggested_change ? `<div class="k">Change</div><div>${esc(p.suggested_change)}</div>` : ""}
+      ${p.rewrite ? `<div class="k">Rewrite</div><div class="rewrite">${esc(p.rewrite)}</div>` : ""}
+    </div></div>`).join("");
+  return `<div class="card section"><h2 style="margin:0 0 8px;font-size:17px">Critique of what the site produced</h2>
+    ${a.overall_reaction ? `<blockquote>${esc(a.overall_reaction)}</blockquote>` : ""}
+    <div class="grid2"><div>${crit}</div><div>
+      ${a.keepsake_worthiness != null ? `<div><b>Keepsake worthiness:</b> ${esc(a.keepsake_worthiness)}/5</div>` : ""}
+      ${a.would_pay_for_it ? `<div><b>Would pay:</b> ${esc(a.would_pay_for_it)}</div>` : ""}
+      ${(a.top_changes || []).length ? `<div class="k">Top changes</div><ol>${a.top_changes.map(x => `<li>${esc(x)}</li>`).join("")}</ol>` : ""}
+    </div></div>
+    ${parts ? `<div class="k" style="margin-top:14px">Part by part (${a.parts.length})</div>${parts}` : ""}</div>`;
+}
+function debrief(){
+  const d = S.debrief;
+  if (d.error) return `<div class="card section muted">Questionnaire skipped: ${esc(d.error)}</div>`;
+  const qs = {purpose:"What is this site for?", best_moment:"Best moment", worst_moment:"Worst moment", abandon:"When would you give up?", missing:"What was missing?", trust:"Did you trust it?", willingness_to_pay:"Would you pay?", output_verdict:"What did you think of what it made?"};
+  const iv = d.interview || {};
+  return `<div class="card section"><h2 style="margin:0 0 8px;font-size:17px">Interview and questionnaire</h2>
+    <div class="grid2"><dl class="qa">${Object.entries(qs).filter(([k]) => iv[k]).map(([k, q]) => `<dt>${esc(q)}</dt><dd>${esc(iv[k])}</dd>`).join("")}</dl>
+    <div>${d.sus_score ? `<div><b>SUS:</b> ${esc(d.sus_score.score)} (grade ${esc(d.sus_score.grade)})</div>` : ""}${d.ueq_s_score ? `<div><b>UEQ-S:</b> pragmatic ${esc(d.ueq_s_score.pragmatic)}, hedonic ${esc(d.ueq_s_score.hedonic)}</div>` : ""}${d.nps != null ? `<div><b>Likely to recommend:</b> ${esc(d.nps)}/10</div>` : ""}
+    ${(d.recommendations || []).length ? `<div class="k">Recommendations</div>` + d.recommendations.map(r => `<div class="issue"><span class="badge ${r.priority === "high" ? "s3" : r.priority === "medium" ? "s2" : ""}">${esc(r.priority)}</span> <b>${esc(r.page || "")}</b><div>${esc(r.change)}</div><div class="ev">${esc(r.why || "")}</div></div>`).join("") : ""}</div></div></div>`;
+}
+
+async function stopJob(force){
+  if (force && !confirm("End the session now? The critique of what it saw will not run.")) return;
+  try { await api("/api/stop", {job: view.job, force}); } catch (e) { alert(e.message); }
+  clearTimeout(timer); poll();
+}
+document.addEventListener("click", e => {
+  if (e.target.tagName === "IMG" && e.target.closest("#main")) { $("#zoom img").src = e.target.src; $("#zoom").style.display = "flex"; }
+  else if (e.target.closest("#zoom")) $("#zoom").style.display = "none";
+});
+loadMeta().then(() => { loadRuns(); route(); });
+</script>
+</body>
+</html>

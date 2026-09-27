@@ -7,6 +7,7 @@ Examples
   python -m userqa personas list
   python -m userqa report runs/<run-dir>
   python -m userqa quota
+  python -m userqa ui            # start sessions and watch them live at http://127.0.0.1:8787
 """
 from __future__ import annotations
 
@@ -36,7 +37,7 @@ def main(argv=None) -> int:
 
     r = sub.add_parser("run", help="run one simulated-user session")
     r.add_argument("--site", help="site config name (experiments/sites/<name>.yaml) or path")
-    r.add_argument("--url", help="ad-hoc target URL (instead of --site)")
+    r.add_argument("--url", help="ad-hoc target URL, or with --site the page to start on")
     r.add_argument("--goal", help="task given to the persona (defaults to open exploration)")
     g = r.add_mutually_exclusive_group()
     g.add_argument("--persona", help="persona id from the library or a YAML path")
@@ -82,12 +83,19 @@ def main(argv=None) -> int:
 
     sub.add_parser("quota", help="show OpenRouter key limits / free-model quota")
 
+    ui = sub.add_parser("ui", help="web interface: give it a website and a persona, watch the session's analysis live")
+    ui.add_argument("--host", default="127.0.0.1")
+    ui.add_argument("--port", type=int, default=8787)
+    ui.add_argument("--open", action="store_true", help="open the page in your browser")
+
     a = ap.parse_args(argv)
     if a.cmd == "run":
         if a.site:
             site = load_site(a.site)
             if a.goal:
                 site["goal"] = a.goal
+            if a.url:
+                site["url"] = a.url
         elif a.url:
             from urllib.parse import urlparse
 
@@ -148,6 +156,11 @@ def main(argv=None) -> int:
                     reassess_run(Path(d), with_debrief=a.with_debrief, vision=False if a.no_vision else None, variant=a.variant)
             except Exception as e:  # one broken run must not stop a batch
                 print(f"[{a.cmd}] {d}: ERROR {type(e).__name__}: {e}")
+        return 0
+    if a.cmd == "ui":
+        from .ui.server import serve
+
+        serve(a.host, a.port, open_browser=a.open)
         return 0
     if a.cmd == "quota":
         q = LLMClient(max_calls=0).quota()

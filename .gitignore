@@ -28,3 +28,4 @@ runs/**/report.html
 build/
 dist/
 explorer/
+runs/ui/

@@ -28,7 +28,7 @@ userqa = "userqa.cli:main"
 include = ["userqa*"]
 
 [tool.setuptools.package-data]
-userqa = ["browser/observe.js", "personas/library/*.yaml", "report/templates/*.j2"]
+userqa = ["browser/observe.js", "personas/library/*.yaml", "report/templates/*.j2", "ui/static/*.html"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
