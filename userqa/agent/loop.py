@@ -17,6 +17,7 @@ from .memory import Memory, StepMemory
 
 INPUT_ACTIONS = {"type", "select", "set_range", "upload"}
 TERMINAL = {"done", "give_up"}
+STOP_FILE = "STOP"  # created by the live UI to end browsing early; the post-session critique still runs
 
 
 @dataclass
@@ -36,7 +37,7 @@ class AgentConfig:
 
 @dataclass
 class SessionResult:
-    status: str = "running"  # done | gave_up | abandoned | max_steps | budget | error
+    status: str = "running"  # done | gave_up | abandoned | max_steps | budget | error | stopped
     steps: int = 0
     site_model: dict = field(default_factory=dict)
     pages: dict = field(default_factory=dict)  # page_key -> review
@@ -172,10 +173,15 @@ class PersonaAgent:
         last_results = [r]
         trace_path = self.run_dir / "trace.jsonl"
         for step in range(1, self.cfg.max_steps + 1):
+            if (self.run_dir / STOP_FILE).exists():
+                self.result.status = "stopped"
+                self.result.final_summary = "The session was stopped by the person watching it."
+                break
             self.result.steps = step
             self._collect_files()
             obs = self.env.observe(attention=self.persona.attention, max_text=self.cfg.max_page_text, with_screenshot=True)
             shot_path = self.env.save_screenshot(obs.screenshot, f"step_{step:02d}.jpg") if obs.screenshot else None
+            self._write_live({"step": step, "phase": "thinking", "url": obs.url, "title": obs.title, "screenshot": shot_path})
             new_page = obs.page_key not in self.result.pages
             obs_hash = hashlib.md5((obs.url + obs.text).encode()).hexdigest()
             self._stuck_count = self._stuck_count + 1 if obs_hash == self._last_obs_hash else 0
@@ -286,7 +292,14 @@ class PersonaAgent:
             self.result.status = "max_steps"
         self._collect_files()
         self.result.ended = time.time()
+        self._write_live({"step": self.result.steps, "phase": "ended", "status": self.result.status})
         return self.result
+
+    def _write_live(self, state: dict) -> None:
+        try:
+            (self.run_dir / "live.json").write_text(json.dumps(state | {"t": time.time()}, ensure_ascii=False))
+        except OSError:
+            pass
 
     def _collect_files(self) -> None:
         try:
